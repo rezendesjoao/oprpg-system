@@ -365,7 +365,9 @@ export default class OPCharacterCreation extends Application5e {
       }
       case "skills": {
         const backgrounds = await this.#index("backgrounds");
-        const profissoes = await this.#index("profissoes");
+        // Remove a entrada de referência "Profissões — Regras e Graduações" (não é uma profissão).
+        const profissoes = (await this.#index("profissoes", ["system.identifier"]))
+          .filter(p => (p.system?.identifier !== "profissoes-regras-e-graduacoes") && !/Regras e Gradua/i.test(p.name));
         return {
           backgrounds: mark(backgrounds, sel("background")),
           bgChosen: c.background ? this.#cardInfo(c.background) : null,
@@ -733,6 +735,17 @@ export default class OPCharacterCreation extends Application5e {
         }
         if ( docs.length ) await this.actor.createEmbeddedDocuments("Item", docs);
       }
+
+      // 7b) Garante o vínculo Espécie/Antecedente na ficha. O `_onCreate` do item de raça/
+      //     antecedente liga `details.race`/`background` por um update assíncrono que o commit
+      //     do AdvancementManager NÃO espera — então um manager posterior (classe) clona o ator
+      //     com o vínculo ainda nulo e o sobrescreve. Reaplicamos aqui, depois de TODOS os managers.
+      const linkUpdate = {};
+      const raceItem = this.actor.itemTypes.race?.[0];
+      const bgItem = this.actor.itemTypes.background?.[0];
+      if ( raceItem && (this.actor.system.details.race?.id !== raceItem.id) ) linkUpdate["system.details.race"] = raceItem.id;
+      if ( bgItem && (this.actor.system.details.background?.id !== bgItem.id) ) linkUpdate["system.details.background"] = bgItem.id;
+      if ( !foundry.utils.isEmpty(linkUpdate) ) await this.actor.update(linkUpdate);
 
       // 8) Topo de PV.
       if ( this.actor.system.attributes.hp.max ) {
