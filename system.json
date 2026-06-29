@@ -183,6 +183,9 @@
     },
     {
       "src": "less/op-akuma.css"
+    },
+    {
+      "src": "less/op-character-creation.css"
     }
   ],
   "documentTypes": {

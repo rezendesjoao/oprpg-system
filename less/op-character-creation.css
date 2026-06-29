@@ -1,0 +1,221 @@
+/* ===========================================================================
+   Assistente de Criação de Personagem (OPRPG)
+   CSS puro (convenção do projeto: só less/dnd5e.less é compilado).
+   =========================================================================== */
+
+/* Botão de abertura no cabeçalho da ficha (nível 0 / sem classe). */
+.cc-start-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  padding: 4px 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.character-creation .window-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 12px;
+  max-height: 86vh;
+}
+
+.character-creation form,
+.character-creation .cc-root {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+  flex: 1;
+}
+
+/* --- Stepper --------------------------------------------------------------- */
+.character-creation .cc-steps {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--dnd5e-color-faint, #c9c7b8);
+  padding-bottom: 8px;
+}
+.character-creation .cc-step {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding: 4px 2px;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--color-text-dark-secondary, #4b4a44);
+  font-size: var(--font-size-11, 11px);
+  min-width: 70px;
+}
+.character-creation .cc-step:hover:not([disabled]) { background: rgba(0, 0, 0, 0.05); }
+.character-creation .cc-step[disabled] { opacity: 0.4; cursor: default; }
+.character-creation .cc-step-num {
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--dnd5e-color-gold, #9b8147);
+  font-weight: bold;
+}
+.character-creation .cc-step.active .cc-step-num {
+  background: var(--dnd5e-color-gold, #9b8147);
+  color: white;
+}
+.character-creation .cc-step.done .cc-step-num {
+  background: #4b7a4b;
+  border-color: #4b7a4b;
+  color: white;
+}
+.character-creation .cc-step.active .cc-step-label { font-weight: bold; }
+
+/* --- Corpo ----------------------------------------------------------------- */
+.character-creation .cc-body {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 220px;
+  padding-right: 4px;
+}
+.character-creation .cc-head { margin: 6px 0 8px; }
+.character-creation .cc-head.sub { margin-top: 14px; border-top: 1px dashed var(--dnd5e-color-faint, #c9c7b8); padding-top: 10px; }
+.character-creation .cc-head h2 { margin: 0; font-size: var(--font-size-20, 20px); }
+.character-creation .cc-head h3 { margin: 0; font-size: var(--font-size-15, 15px); }
+.character-creation .cc-head .hint { margin: 2px 0 0; font-size: var(--font-size-12, 12px); color: var(--color-text-dark-secondary, #4b4a44); }
+
+/* --- Grade de cards -------------------------------------------------------- */
+.character-creation .cc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 8px;
+}
+.character-creation .cc-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 4px;
+  background: rgba(0, 0, 0, 0.03);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: border-color 120ms, background 120ms;
+}
+.character-creation .cc-card:hover { background: rgba(0, 0, 0, 0.07); }
+.character-creation .cc-card.selected {
+  border-color: var(--dnd5e-color-gold, #9b8147);
+  background: rgba(155, 129, 71, 0.12);
+}
+.character-creation .cc-card img {
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
+  border: none;
+  border-radius: 6px;
+}
+.character-creation .cc-card.sm img { width: 40px; height: 40px; }
+.character-creation .cc-card span { font-size: var(--font-size-12, 12px); line-height: 1.1; }
+
+/* --- Perícias -------------------------------------------------------------- */
+.character-creation .cc-skill-group { margin: 8px 0; }
+.character-creation .cc-skill-label { font-weight: bold; margin-bottom: 4px; }
+.character-creation .cc-count { font-weight: normal; color: var(--dnd5e-color-gold, #9b8147); }
+.character-creation .cc-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.character-creation .cc-pill {
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--dnd5e-color-faint, #c9c7b8);
+  background: rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+  font-size: var(--font-size-12, 12px);
+}
+.character-creation .cc-pill.selected {
+  background: var(--dnd5e-color-gold, #9b8147);
+  border-color: var(--dnd5e-color-gold, #9b8147);
+  color: white;
+}
+.character-creation .cc-pill[disabled] { opacity: 0.4; cursor: default; }
+
+/* --- Atributos ------------------------------------------------------------- */
+.character-creation .cc-abilities { width: 100%; border-collapse: collapse; }
+.character-creation .cc-abilities th { text-align: left; font-size: var(--font-size-11, 11px); text-transform: uppercase; opacity: 0.7; padding: 2px 6px; }
+.character-creation .cc-abilities td { padding: 3px 6px; border-top: 1px solid var(--dnd5e-color-faint, #c9c7b8); }
+.character-creation .cc-abilities .cc-abl { font-weight: bold; }
+.character-creation .cc-abilities .cc-final { font-size: var(--font-size-16, 16px); font-weight: bold; }
+.character-creation .cc-abilities .cc-mod { color: var(--dnd5e-color-gold, #9b8147); }
+.character-creation .cc-abilities select { width: 64px; }
+.character-creation .cc-warn { color: #a33; font-size: var(--font-size-12, 12px); margin: 4px 0; }
+
+.character-creation .cc-asi {
+  margin-top: 10px;
+  padding: 8px;
+  border: 1px solid var(--dnd5e-color-faint, #c9c7b8);
+  border-radius: 8px;
+}
+.character-creation .cc-asi-head { font-weight: bold; margin-bottom: 6px; }
+.character-creation .cc-asi-rows { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px 12px; }
+.character-creation .cc-asi-row { display: flex; align-items: center; gap: 6px; }
+.character-creation .cc-asi-row .cc-abl { flex: 1; }
+.character-creation .cc-asi-val { min-width: 26px; text-align: center; font-weight: bold; }
+.character-creation .cc-step-btn {
+  width: 22px; height: 22px;
+  border-radius: 4px;
+  border: 1px solid var(--dnd5e-color-faint, #c9c7b8);
+  background: rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  line-height: 1;
+}
+.character-creation .cc-step-btn[disabled] { opacity: 0.35; cursor: default; }
+.character-creation .cc-hp { margin-top: 10px; font-size: var(--font-size-14, 14px); }
+
+/* --- Descrição ------------------------------------------------------------- */
+.character-creation .cc-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.character-creation .cc-field { display: flex; flex-direction: column; gap: 2px; }
+.character-creation .cc-field.wide { grid-column: 1 / -1; }
+.character-creation .cc-field span { font-size: var(--font-size-11, 11px); text-transform: uppercase; opacity: 0.7; }
+
+/* --- Equipamento ----------------------------------------------------------- */
+.character-creation .cc-capacity { font-size: var(--font-size-13, 13px); margin-bottom: 6px; }
+.character-creation .cc-capacity.over { color: #a33; font-weight: bold; }
+.character-creation .cc-equip { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.character-creation .cc-equip h4 { margin: 0 0 4px; }
+.character-creation .cc-equip-list { list-style: none; margin: 0; padding: 0; max-height: 300px; overflow-y: auto; }
+.character-creation .cc-equip-list li { display: flex; align-items: center; gap: 6px; padding: 2px 0; }
+.character-creation .cc-equip-list img { width: 24px; height: 24px; border: none; }
+.character-creation .cc-equip-name { flex: 1; font-size: var(--font-size-12, 12px); }
+.character-creation .cc-qty { font-weight: bold; }
+.character-creation .cc-mini {
+  width: 22px; height: 22px;
+  border-radius: 4px;
+  border: 1px solid var(--dnd5e-color-faint, #c9c7b8);
+  background: rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
+.character-creation .cc-mini.danger { color: #a33; }
+
+/* --- Rodapé ---------------------------------------------------------------- */
+.character-creation .cc-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid var(--dnd5e-color-faint, #c9c7b8);
+  padding-top: 8px;
+}
+.character-creation .cc-nav-btn {
+  flex: 0 0 auto;
+  padding: 6px 18px;
+  border-radius: 6px;
+  border: 1px solid var(--dnd5e-color-gold, #9b8147);
+  background: rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+  font-weight: bold;
+}
+.character-creation .cc-nav-btn.primary { background: var(--dnd5e-color-gold, #9b8147); color: white; }
+.character-creation .cc-nav-btn[disabled] { opacity: 0.4; cursor: default; }

@@ -1,0 +1,282 @@
+{{!-- Assistente de Criação de Personagem (OPRPG) --}}
+<div class="cc-root">
+
+{{!-- Stepper / navegação --}}
+<nav class="cc-steps">
+  {{#each steps}}
+  <button type="button" class="cc-step {{#if active}}active{{/if}} {{#if done}}done{{/if}}"
+          data-action="goStep" data-index="{{index}}" {{#if disabled}}disabled{{/if}}>
+    <span class="cc-step-num">{{#if done}}<i class="fa-solid fa-check"></i>{{else}}{{num}}{{/if}}</span>
+    <span class="cc-step-label">{{label}}</span>
+  </button>
+  {{/each}}
+</nav>
+
+<div class="cc-body">
+
+  {{!-- I — Espécie --}}
+  {{#if stepFlags.isSpecies}}
+  <section class="cc-section">
+    <header class="cc-head"><h2>{{localize "ONEPIECE.CharacterCreation.Step.Species"}}</h2>
+      <p class="hint">{{localize "ONEPIECE.CharacterCreation.Hint.Species"}}</p></header>
+    <div class="cc-grid">
+      {{#each data.species}}
+      <button type="button" class="cc-card {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="species" data-uuid="{{uuid}}">
+        <img src="{{img}}" alt=""><span>{{name}}</span>
+      </button>
+      {{/each}}
+    </div>
+
+    {{#if data.variant}}
+    <header class="cc-head sub"><h3>{{localize "ONEPIECE.CharacterCreation.Pick.Variant"}}</h3></header>
+    <div class="cc-grid">
+      {{#each data.variant.pool}}
+      <button type="button" class="cc-card sm {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="variant" data-uuid="{{uuid}}">
+        <img src="{{img}}" alt=""><span>{{name}}</span>
+      </button>
+      {{/each}}
+    </div>
+    {{/if}}
+
+    {{#if data.flaw}}
+    <header class="cc-head sub"><h3>{{localize "ONEPIECE.CharacterCreation.Pick.Flaw"}}</h3></header>
+    <div class="cc-grid">
+      {{#each data.flaw.pool}}
+      <button type="button" class="cc-card sm {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="flaw" data-uuid="{{uuid}}">
+        <img src="{{img}}" alt=""><span>{{name}}</span>
+      </button>
+      {{/each}}
+    </div>
+    {{/if}}
+  </section>
+  {{/if}}
+
+  {{!-- II — Estilo de Combate --}}
+  {{#if stepFlags.isClass}}
+  <section class="cc-section">
+    <header class="cc-head"><h2>{{localize "ONEPIECE.CharacterCreation.Step.Class"}}</h2>
+      <p class="hint">{{localize "ONEPIECE.CharacterCreation.Hint.Class"}}</p></header>
+    <div class="cc-grid">
+      {{#each data.classes}}
+      <button type="button" class="cc-card {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="class" data-uuid="{{uuid}}">
+        <img src="{{img}}" alt=""><span>{{name}}</span>
+      </button>
+      {{/each}}
+    </div>
+
+    {{#if data.hasSubclasses}}
+    <header class="cc-head sub"><h3>{{localize "ONEPIECE.CharacterCreation.Pick.Subclass"}}</h3>
+      <p class="hint">{{localize "ONEPIECE.CharacterCreation.Hint.Subclass"}}</p></header>
+    <div class="cc-grid">
+      {{#each data.subclasses}}
+      <button type="button" class="cc-card sm {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="subclass" data-uuid="{{uuid}}">
+        <img src="{{img}}" alt=""><span>{{name}}</span>
+      </button>
+      {{/each}}
+    </div>
+    {{/if}}
+  </section>
+  {{/if}}
+
+  {{!-- III — Antecedente & Perícias --}}
+  {{#if stepFlags.isSkills}}
+  <section class="cc-section">
+    <header class="cc-head"><h2>{{localize "ONEPIECE.CharacterCreation.Step.Skills"}}</h2>
+      <p class="hint">{{localize "ONEPIECE.CharacterCreation.Hint.Skills"}}</p></header>
+
+    <header class="cc-head sub"><h3>{{localize "ONEPIECE.CharacterCreation.Pick.Background"}}</h3></header>
+    <div class="cc-grid">
+      {{#each data.backgrounds}}
+      <button type="button" class="cc-card sm {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="background" data-uuid="{{uuid}}">
+        <img src="{{img}}" alt=""><span>{{name}}</span>
+      </button>
+      {{/each}}
+    </div>
+
+    <header class="cc-head sub"><h3>{{localize "ONEPIECE.CharacterCreation.Pick.Profissao"}} <em>({{localize "ONEPIECE.CharacterCreation.Optional"}})</em></h3></header>
+    <div class="cc-grid">
+      {{#each data.profissoes}}
+      <button type="button" class="cc-card sm {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="profissao" data-uuid="{{uuid}}">
+        <img src="{{img}}" alt=""><span>{{name}}</span>
+      </button>
+      {{/each}}
+    </div>
+
+    {{#if data.skills.length}}
+    <header class="cc-head sub"><h3>{{localize "ONEPIECE.CharacterCreation.Skills"}}</h3></header>
+    {{#each data.skills}}
+    <div class="cc-skill-group">
+      <div class="cc-skill-label">{{sourceLabel}} <span class="cc-count">{{current}}/{{count}}</span></div>
+      <div class="cc-pills">
+        {{#each options}}
+        <button type="button" class="cc-pill {{#if selected}}selected{{/if}}" data-action="toggleSkill"
+                data-adv-id="{{../advId}}" data-trait-key="{{traitKey}}" data-count="{{../count}}"
+                {{#if disabled}}disabled{{/if}}>{{label}}</button>
+        {{/each}}
+      </div>
+    </div>
+    {{/each}}
+    {{/if}}
+  </section>
+  {{/if}}
+
+  {{!-- IV — Atributos --}}
+  {{#if stepFlags.isAbilities}}
+  <section class="cc-section">
+    <header class="cc-head"><h2>{{localize "ONEPIECE.CharacterCreation.Step.Abilities"}}</h2>
+      <p class="hint">{{localize "ONEPIECE.CharacterCreation.Hint.Abilities"}}</p></header>
+
+    <table class="cc-abilities">
+      <thead><tr>
+        <th>{{localize "DND5E.Ability"}}</th>
+        <th>{{localize "ONEPIECE.CharacterCreation.Array"}}</th>
+        <th>{{localize "ONEPIECE.CharacterCreation.Final"}}</th>
+        <th>{{localize "DND5E.Modifier"}}</th>
+      </tr></thead>
+      <tbody>
+        {{#each data.rows}}
+        <tr>
+          <td class="cc-abl">{{label}}</td>
+          <td>
+            <select name="abil.{{key}}">
+              <option value="">—</option>
+              {{#each options}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{value}}</option>{{/each}}
+            </select>
+          </td>
+          <td class="cc-final">{{final}}</td>
+          <td class="cc-mod">{{mod}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    {{#unless data.arrayValid}}<p class="cc-warn">{{localize "ONEPIECE.CharacterCreation.ArrayHint"}}</p>{{/unless}}
+
+    {{#each data.asi}}
+    <div class="cc-asi">
+      <div class="cc-asi-head">{{label}} <span class="cc-count">{{localize "ONEPIECE.CharacterCreation.AsiRemaining"}}: {{remaining}}</span></div>
+      <div class="cc-asi-rows">
+        {{#each rows}}
+        <div class="cc-asi-row">
+          <span class="cc-abl">{{label}}</span>
+          <button type="button" class="cc-step-btn" data-action="adjustAsi" data-adv-id="{{../advId}}" data-ability="{{key}}" data-delta="-1" {{#unless canDec}}disabled{{/unless}}>−</button>
+          <span class="cc-asi-val">+{{value}}</span>
+          <button type="button" class="cc-step-btn" data-action="adjustAsi" data-adv-id="{{../advId}}" data-ability="{{key}}" data-delta="1" {{#unless canInc}}disabled{{/unless}}>+</button>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    {{/each}}
+
+    {{#if data.hp}}<p class="cc-hp">{{localize "ONEPIECE.CharacterCreation.HpPreview"}}: <strong>{{data.hp}}</strong></p>{{/if}}
+  </section>
+  {{/if}}
+
+  {{!-- V — Descrição --}}
+  {{#if stepFlags.isDescription}}
+  <section class="cc-section">
+    <header class="cc-head"><h2>{{localize "ONEPIECE.CharacterCreation.Step.Description"}}</h2>
+      <p class="hint">{{localize "ONEPIECE.CharacterCreation.Hint.Description"}}</p></header>
+
+    <div class="cc-fields">
+      <label class="cc-field"><span>{{localize "Name"}}</span><input type="text" name="text.name" value="{{data.text.name}}"></label>
+      <label class="cc-field"><span>{{localize "DND5E.Gender"}}</span><input type="text" name="text.gender" value="{{data.text.gender}}"></label>
+      <label class="cc-field"><span>{{localize "ONEPIECE.CharacterCreation.Dream"}}</span><input type="text" name="text.dream" value="{{data.text.dream}}"></label>
+      <label class="cc-field wide"><span>{{localize "DND5E.Appearance"}}</span><input type="text" name="text.appearance" value="{{data.text.appearance}}"></label>
+      <label class="cc-field wide"><span>{{localize "DND5E.Biography"}}</span><textarea name="text.bio" rows="3">{{data.text.bio}}</textarea></label>
+    </div>
+
+    <header class="cc-head sub"><h3>{{localize "ONEPIECE.CharacterCreation.Caminho"}} <em>({{localize "ONEPIECE.CharacterCreation.Optional"}})</em></h3></header>
+    <div class="cc-grid">
+      {{#each data.caminhos}}
+      <button type="button" class="cc-card sm {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="caminho" data-uuid="{{uuid}}">
+        <img src="{{img}}" alt=""><span>{{name}}</span>
+      </button>
+      {{/each}}
+    </div>
+
+    <header class="cc-head sub"><h3>{{localize "ONEPIECE.CharacterCreation.Codigo"}} <em>({{localize "ONEPIECE.CharacterCreation.Optional"}})</em></h3></header>
+    <div class="cc-grid">
+      {{#each data.codigos}}
+      <button type="button" class="cc-card sm {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="codigo" data-uuid="{{uuid}}">
+        <img src="{{img}}" alt=""><span>{{name}}</span>
+      </button>
+      {{/each}}
+    </div>
+
+    <header class="cc-head sub"><h3>{{localize "ONEPIECE.CharacterCreation.Singularidades"}} <em>({{localize "ONEPIECE.CharacterCreation.Optional"}})</em></h3></header>
+    <div class="cc-grid">
+      {{#each data.singularidades}}
+      <button type="button" class="cc-card sm {{#if selected}}selected{{/if}}" data-action="toggleMulti" data-group="singularidades" data-uuid="{{uuid}}">
+        <img src="{{img}}" alt=""><span>{{name}}</span>
+      </button>
+      {{/each}}
+    </div>
+
+    <header class="cc-head sub"><h3>{{localize "ONEPIECE.CharacterCreation.Defeitos"}} <em>({{localize "ONEPIECE.CharacterCreation.Optional"}})</em></h3></header>
+    <div class="cc-grid">
+      {{#each data.defeitos}}
+      <button type="button" class="cc-card sm {{#if selected}}selected{{/if}}" data-action="toggleMulti" data-group="defeitos" data-uuid="{{uuid}}">
+        <img src="{{img}}" alt=""><span>{{name}}</span>
+      </button>
+      {{/each}}
+    </div>
+  </section>
+  {{/if}}
+
+  {{!-- VI — Equipamento --}}
+  {{#if stepFlags.isEquipment}}
+  <section class="cc-section">
+    <header class="cc-head"><h2>{{localize "ONEPIECE.CharacterCreation.Step.Equipment"}}</h2>
+      <p class="hint">{{localize "ONEPIECE.CharacterCreation.Hint.Equipment"}}</p></header>
+
+    <div class="cc-capacity {{#if data.encumbered}}over{{/if}}">
+      {{localize "ONEPIECE.CharacterCreation.Capacity"}}: <strong>{{data.weight}}</strong> / {{data.capacity}} kg
+    </div>
+
+    <div class="cc-equip">
+      <div class="cc-equip-col">
+        <h4>{{localize "ONEPIECE.CharacterCreation.Available"}}</h4>
+        <ul class="cc-equip-list">
+          {{#each data.available}}
+          <li>
+            <img src="{{img}}" alt=""><span class="cc-equip-name">{{name}}</span>
+            <button type="button" class="cc-mini" data-action="addEquip" data-uuid="{{uuid}}" data-name="{{name}}" data-img="{{img}}" data-weight="{{system.weight.value}}"><i class="fa-solid fa-plus"></i></button>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="cc-equip-col">
+        <h4>{{localize "ONEPIECE.CharacterCreation.Chosen"}}</h4>
+        <ul class="cc-equip-list">
+          {{#each data.chosen}}
+          <li>
+            <img src="{{img}}" alt=""><span class="cc-equip-name">{{name}}</span>
+            {{#if (gt qty 1)}}<span class="cc-qty">×{{qty}}</span>{{/if}}
+            <button type="button" class="cc-mini danger" data-action="removeEquip" data-uuid="{{uuid}}"><i class="fa-solid fa-minus"></i></button>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </section>
+  {{/if}}
+
+</div>
+
+{{!-- Rodapé --}}
+<footer class="cc-footer">
+  <button type="button" class="cc-nav-btn" data-action="back" {{#unless canBack}}disabled{{/unless}}>
+    <i class="fa-solid fa-chevron-left"></i> {{localize "ONEPIECE.CharacterCreation.Back"}}
+  </button>
+  {{#if isLast}}
+  <button type="button" class="cc-nav-btn primary" data-action="finish" {{#unless canFinish}}disabled{{/unless}}>
+    <i class="fa-solid fa-check"></i> {{localize "ONEPIECE.CharacterCreation.Finish"}}
+  </button>
+  {{else}}
+  <button type="button" class="cc-nav-btn primary" data-action="next" {{#unless canNext}}disabled{{/unless}}>
+    {{localize "ONEPIECE.CharacterCreation.Next"}} <i class="fa-solid fa-chevron-right"></i>
+  </button>
+  {{/if}}
+</footer>
+
+</div>{{!-- /cc-root --}}

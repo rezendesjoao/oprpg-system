@@ -1,5 +1,6 @@
 import { formatNumber } from "../../utils.mjs";
 import AdvancementManager from "../advancement/advancement-manager.mjs";
+import OPCharacterCreation from "./character-creation.mjs";
 import CompendiumBrowser from "../compendium-browser.mjs";
 import ContextMenu5e from "../context-menu.mjs";
 import BaseActorSheet from "./api/base-actor-sheet.mjs";
@@ -53,6 +54,7 @@ export default class CharacterActorSheet extends BaseActorSheet {
   /** @override */
   static DEFAULT_OPTIONS = {
     actions: {
+      startCharacterCreation: CharacterActorSheet.#startCharacterCreation,
       deleteFavorite: CharacterActorSheet.#deleteFavorite,
       deleteOccupant: CharacterActorSheet.#deleteOccupant,
       findItem: CharacterActorSheet.#findItem,
@@ -566,6 +568,8 @@ context.skills = skillsSorted;
     // Visibility
     context.showExperience = game.settings.get("onepiece-system", "levelingMode") !== "noxp";
     context.showRests = game.user.isGM || (this.actor.isOwner && game.settings.get("onepiece-system", "allowRests"));
+    context.showCharacterCreation = this.isEditable
+      && (this.actor.system.details.level === 0) && !this.actor.itemTypes.class.length;
 
     return context;
   }
@@ -1197,7 +1201,23 @@ async _onRender(context, options) {
   /* -------------------------------------------- */
 
   /**
-   * Handle finding an available item of a given type.
+   * Open the step-by-step character creation wizard for a fresh (level 0, no class) actor.
+   * @this {CharacterActorSheet}
+   * @param {Event} event         Triggering click event.
+   * @param {HTMLElement} target  Button that was clicked.
+   */
+  static #startCharacterCreation(event, target) {
+    if ( !this.isEditable ) return;
+    if ( (this.actor.system.details.level !== 0) || this.actor.itemTypes.class.length ) {
+      return ui.notifications.warn(game.i18n.localize("ONEPIECE.CharacterCreation.AlreadyStarted"));
+    }
+    new OPCharacterCreation(this.actor).render({ force: true });
+  }
+
+  /* -------------------------------------------- */
+
+  /**
+   * Handle finding an item in a compendium.
    * @this {CharacterActorSheet}
    * @param {Event} event         Triggering click event.
    * @param {HTMLElement} target  Button that was clicked.

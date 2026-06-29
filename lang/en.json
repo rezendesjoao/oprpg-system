@@ -5611,5 +5611,58 @@
 "ONEPIECE.DevilFruit.StageActive": "Estágio Desperto ATIVO (−1 PP/turno)",
 "ONEPIECE.DevilFruit.Seawater": "Fraqueza: Água do Mar / Kairoseki (Enfraquecido)",
 "ONEPIECE.DevilFruit.Techniques": "Técnicas da Fruta",
-"ONEPIECE.DevilFruit.Grau": "Grau"
+"ONEPIECE.DevilFruit.Grau": "Grau",
+
+"ONEPIECE.CharacterCreation.Title": "Criação de Personagem",
+"ONEPIECE.CharacterCreation.Button": "Criar Personagem",
+"ONEPIECE.CharacterCreation.ButtonHint": "Abrir o assistente passo-a-passo de criação de personagem.",
+"ONEPIECE.CharacterCreation.AlreadyStarted": "Esta ficha já possui classe ou nível — o assistente é apenas para personagens novos.",
+"ONEPIECE.CharacterCreation.IncompleteWarning": "Complete todos os passos obrigatórios antes de concluir.",
+"ONEPIECE.CharacterCreation.Done": "Personagem {name} criado com sucesso!",
+"ONEPIECE.CharacterCreation.Error": "Ocorreu um erro ao montar a ficha. Verifique o console (F12).",
+
+"ONEPIECE.CharacterCreation.Step.Species": "Espécie",
+"ONEPIECE.CharacterCreation.Step.Class": "Estilo de Combate",
+"ONEPIECE.CharacterCreation.Step.Skills": "Antecedente",
+"ONEPIECE.CharacterCreation.Step.Abilities": "Atributos",
+"ONEPIECE.CharacterCreation.Step.Description": "Descrição",
+"ONEPIECE.CharacterCreation.Step.Equipment": "Equipamento",
+
+"ONEPIECE.CharacterCreation.Hint.Species": "Escolha a espécie do seu personagem (Humano, Homem-Peixe, Mink…). Algumas pedem uma variante e um aspecto de caráter.",
+"ONEPIECE.CharacterCreation.Hint.Class": "Escolha o Estilo de Combate — sua vocação, proficiências e técnicas.",
+"ONEPIECE.CharacterCreation.Hint.Subclass": "Alguns estilos oferecem um Caminho (subclasse) já no 1º nível.",
+"ONEPIECE.CharacterCreation.Hint.Skills": "Escolha um Antecedente e distribua as proficiências de perícia concedidas.",
+"ONEPIECE.CharacterCreation.Hint.Abilities": "Distribua os valores 15, 14, 13, 12, 10, 8 e aplique os aumentos de espécie e antecedente.",
+"ONEPIECE.CharacterCreation.Hint.Description": "Dê nome e personalidade ao personagem; escolha Caminho, Singularidades, Defeitos e Código.",
+"ONEPIECE.CharacterCreation.Hint.Equipment": "Selecione seu equipamento inicial respeitando a capacidade de carga (10 × Força).",
+
+"ONEPIECE.CharacterCreation.Pick.Variant": "Variante da Espécie",
+"ONEPIECE.CharacterCreation.Pick.Flaw": "Aspecto de Caráter",
+"ONEPIECE.CharacterCreation.Pick.Subclass": "Caminho (Subclasse)",
+"ONEPIECE.CharacterCreation.Pick.Background": "Antecedente",
+"ONEPIECE.CharacterCreation.Pick.Profissao": "Profissão",
+
+"ONEPIECE.CharacterCreation.Optional": "opcional",
+"ONEPIECE.CharacterCreation.Skills": "Perícias",
+"ONEPIECE.CharacterCreation.Array": "Distribuição",
+"ONEPIECE.CharacterCreation.Final": "Final",
+"ONEPIECE.CharacterCreation.ArrayHint": "Atribua cada um dos valores 15, 14, 13, 12, 10 e 8 a um atributo.",
+"ONEPIECE.CharacterCreation.AsiRemaining": "Pontos restantes",
+"ONEPIECE.CharacterCreation.HpPreview": "Pontos de Vida (prévia)",
+"ONEPIECE.CharacterCreation.Asi.Species": "Aumento de Atributo — Espécie",
+"ONEPIECE.CharacterCreation.Asi.Background": "Aumento de Atributo — Antecedente",
+
+"ONEPIECE.CharacterCreation.Dream": "Sonho",
+"ONEPIECE.CharacterCreation.Caminho": "Caminho",
+"ONEPIECE.CharacterCreation.Codigo": "Código de Honra",
+"ONEPIECE.CharacterCreation.Singularidades": "Singularidades",
+"ONEPIECE.CharacterCreation.Defeitos": "Defeitos",
+
+"ONEPIECE.CharacterCreation.Capacity": "Capacidade de Carga",
+"ONEPIECE.CharacterCreation.Available": "Disponível",
+"ONEPIECE.CharacterCreation.Chosen": "Escolhido",
+
+"ONEPIECE.CharacterCreation.Back": "Voltar",
+"ONEPIECE.CharacterCreation.Next": "Próximo",
+"ONEPIECE.CharacterCreation.Finish": "Concluir"
 }
