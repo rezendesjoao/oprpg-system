@@ -439,8 +439,8 @@
     },
     {
       "type": "setup",
-      "url": "systems/onepiece-system/ui/official/oprpg-wallpaper.webp",
-      "thumbnail": "systems/onepiece-system/ui/official/oprpg-wallpaper.webp",
+      "url": "systems/onepiece-system/ui/official/oprpgsystem.png",
+      "thumbnail": "systems/onepiece-system/ui/official/oprpgsystem.png",
       "loop": false,
       "flags": {}
     }
@@ -451,7 +451,7 @@
     "units": "m"
   },
   "primaryTokenAttribute": "attributes.hp",
-  "background": "systems/onepiece-system/ui/official/oprpg-wallpaper.webp",
+  "background": "systems/onepiece-system/ui/official/oprpgsystem.png",
   "flags": {
     "compendiumArtMappings": {
       "onepiece-system": {
