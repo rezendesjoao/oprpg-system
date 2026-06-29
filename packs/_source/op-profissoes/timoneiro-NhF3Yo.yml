@@ -1,0 +1,40 @@
+_id: NhF3Yo8ShOHpSZrk
+name: Timoneiro
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>Timoneiros são aqueles que conduzem embarcações com maestria, dominando os mares como se o próprio navio fosse uma extensão de seus corpos. São capazes de enfrentar tempestades, ondas colossais e as mais severas condições climáticas, mantendo o controle mesmo diante do caos do oceano.</p><p><strong>CONDUTOR DOS MARES</strong></p><p>Um bom timoneiro é capaz de transformar até o navio mais pesado em uma embarcação ágil e precisa. Sua experiência permite realizar manobras complexas, estabilizar o leme durante tempestades e conduzir a tripulação em meio às batalhas, coordenando ataques devastadores.</p><p><strong>COMBATE</strong></p><p>Usando seus conhecimentos e habilidades, você pode se focar inteiramente em operar o timão e definir os rumos das batalhas navais.</p><ul><li>Investida: Usando a Ação de Combate da embarcação, você atinge um navio ou outra estrutura a até 1,5 metro de distância com uma colisão controlada. Faça um Teste de Atributo de Força ou Sabedoria. Se o resultado for igual ou superior à CR do alvo, a colisão é um sucesso (regras no Capítulo 14), fazendo com que o seu navio sofre apenas 3d10 de dano.</li><li>Ritmo de Combate: Suas ordens guiam os tripulantes em movimentos rápidos e precisos. A embarcação realiza 3 ataques adicionais + 2 ataques para cada categoria de tamanho acima do Pequeno.</li><li>Estabilidade Absoluta: Desde que o timoneiro esteja dentro do efetivo que desempenha a função de navegação do navio, o dano de colisão é sempre reduzido pela metade.</li><li>Dados de Manobra: Você recebe dados que são sempre o d10, sendo 2 Dados de Manobra por nível de personagem (por exemplo, no 10º nível, terá 20d10).</li></ul><p>Sempre que o navio sofrer dano, você pode rolar e consumir esses dados para reduzir o dano recebido em uma quantidade igual ao resultado. Todos os Dados de Manobra são recuperados após um descanso longo.</p><p><strong>CONDUÇÃO</strong></p><p>A condução de uma embarcação é uma arte refinada que exige sincronia entre o timoneiro, a tripulação e o navio. Você é capaz de transformar movimentos sutis do leme em mudanças completas de direção, explorando o máximo potencial da embarcação.</p><ul><li>Manobras Ampliadas: Em vez de uma única Ação de Manobra, as embarcações conduzidas por você podem executar até 6 Ações de Manobra.</li><li>Eficiência da Tripulação: Desde que o timoneiro esteja dentro do efetivo que desempenha a função de navegação, a quantidade mínima e necessária de tripulantes é reduzida em 10 (mínimo de 1), conforme a coluna ''Navegação'' da tabela ''Efetivo de Acordo com o Tamanho do Navio'' (regras no Capítulo 14).</li><li>Ajudante Entendido: Ao auxiliar um carpinteiro na construção do navio, o tempo total de construção é reduzido pela metade.</li><li>Forçando Limites: As embarcações conduzidas por você ignoram a redução de velocidade causada por dano sofrido (regras no Capítulo 14).</li></ul><p><strong>CONTROLE</strong></p><p>Mesmo que o navegador seja quem define a rota, o timoneiro é quem faz o navio realmente segui-la. Seu domínio sobre o leme permite reagir às forças do mar com precisão incomparável.</p><ul><li>Cavalgar Correntes: Desde que não esteja em uma corrente de nível 0, você pode mover o navio como se a corrente estivesse em nível 2 a seu favor.</li><li>Direção Absoluta: Você sofre apenas metade da redução de velocidade proveniente de correntes marinhas e mantém o controle total da direção, mesmo em correntes de nível 3.</li><li>Impulso: Gastando 3 Ações de Manobra, você faz com que o navio se mova como se estivesse em uma corrente de nível 3 a seu favor, mantendo controle total sobre seu movimento.</li><li>Surf Naval: Gastando 4 Ações de Manobra, você faz com que o navio se mova de forma aleatória durante 1 minuto, fazendo com que todos os ataques contra ele recebam desvantagem.</li></ul><p><strong>MANOBRAR DESASTRES NATURAIS</strong></p><p>Além de considerar os Testes de Desastre Natural como testes relacionados à sua profissão, recebe os seguintes benefícios nesses testes.</p><ul><li>Resiliência Náutica: Caso falhe no teste, o dano recebido é reduzido pela metade, e em caso de sucesso, você não sofre nenhum dano.</li><li>Reação Instintiva: Caso o resultado do Teste de Navegação seja ''Maremoto'', ''Redemoinho'' ou ''Tufão'', você pode manobrar rapidamente o navio para sofrer os efeitos do resultado ''Chuva'' no lugar. Essa característica só pode ser usada uma vez por viagem.</li><li>Controle Sob Pressão: Quando falhar em um Teste de Desastre Natural, você pode, uma vez por viagem, tratar a falha como um sucesso.</li></ul><p><strong>Ferramentas:</strong> 1 mochila pequena, livros de navegação e comportamento humano, 1 tipo de bússola à sua escolha (bússola, log pose, log pose de 3 agulhas), 10 cordas e 1 tambor.</p>'
+    chat: ''
+  identifier: timoneiro
+  type:
+    value: profissao
+    subtype: ''
+  requirements: Profissão
+  properties: []
+  activities: {}
+  advancement:
+    - _id: 7nSvo28C6ygZNIy7
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:ath
+              - skills:prf
+              - skills:ins
+              - skills:prc
+              - skills:per
+              - skills:slt
+        mode: default
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!NhF3Yo8ShOHpSZrk'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,40 @@
+_id: tLsmn5soitmpttlP
+name: Cozinheiro
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>O responsável por assegurar que ninguém atravesse os mares de estômago vazio. Um mestre da culinária capaz de transformar até os ingredientes mais simples em verdadeiros banquetes, garantindo sabor, energia e os nutrientes essenciais para que a tripulação siga firme em sua jornada.</p><p><strong>REFEIÇÃO DO CHEF</strong></p><p>Você prepara pratos especiais, chamados de ''Refeições do Chef'', que vão além da culinária comum, trazendo nutrição excepcional e benefícios magníficos.</p><p>Desde que um personagem consuma ao menos uma Refeição do Chef, até o término do próximo descanso longo ele se beneficia das seguintes características:</p><p><strong>ALIMENTO MEDICINAL</strong></p><p>Um preparo minucioso, utilizando os melhores ingredientes, Técnicas adequadas de cocção e temperos selecionados, potencializa o valor nutritivo e medicinal da refeição.</p><ul><li>Ao realizar um descanso longo, o personagem recupera 1 Nível de Exaustão adicional, além do normal;</li><li>Se o personagem estiver sofrendo com uma doença, o tempo que pode sobreviver sem tratamento antes do óbito é dobrado, desde que continue consumindo as Refeições do Chef.</li></ul><p><strong>DESCANSO PLENO</strong></p><p>Uma refeição elaborada para garantir não apenas saciedade, mas também o perfeito funcionamento do organismo.</p><ul><li>Ao realizar um descanso curto, se gastar um ou mais Dados de Vida, o personagem recupera Dados de Vida adicionais equivalentes ao seu Bônus de Proficiência;</li><li>Ao subir de nível, caso o resultado no dado de vida para aumentar os PV máximos seja entre 1 e 3, o personagem deve rolar o dado novamente.</li></ul><p><strong>NUTRIÇÃO SUPERIOR</strong></p><p>Um preparo que leva o corpo além dos limites normais, reforçando a vitalidade e a resistência.</p><ul><li>Uma vez por dia, o personagem pode usar uma ação para recuperar um número de PV igual ao dobro do seu nível;</li><li>Sempre que a criatura recuperar Pontos de Vida com dados de cura o valor será maximizado.</li></ul><p>Custo: Sempre que você usar essa característica para fazer uma ''Refeição do Chef'', você gasta 1d4 kit de temperos e ฿ 3.000 em alimentos para cada prato.</p><p><strong>PREPARO PERFEITO</strong></p><p>Com um preparo cuidadoso, utilizando as formas corretas de cocção, escolhendo os melhores ingredientes e temperos, o cozinheiro consegue explorar e potencializar todas as propriedades dos alimentos.</p><p>Você prepara refeições aplicando todo o seu conhecimento culinário, com o objetivo de proporcionar um sabor divino aos seus degustadores, capaz de suprir qualquer necessidade.</p><p>Sempre que os personagens se alimentarem de ao menos uma ''Refeição do Chef'', poderão escolher um dos seguintes benefícios, desde que não estejam em um encontro de combate:</p><ul><li>Você pode recuperar 1 Nível de Exaustão;</li><li>Você recebe vantagem em Salvaguardas de Constituição, por até 1 minuto;</li><li>Você recupera 5 vezes o valor do seu modificador de Constituição em Pontos de Vida.</li></ul><p>Cada criatura pode se beneficiar dessa característica um número de vezes igual ao seu modificador de Constituição (mínimo de 1 vez e máximo de 3 vezes). Todos os usos são recuperados ao término de um descanso longo.</p><p><strong>ALIMENTO ENERGÉTICO</strong></p><p>Você prepara uma ''Refeição do Chef'' capaz de armazenar uma reserva energética chamada Dados Calóricos. Esses dados são sempre o d6, e você consegue cria 1 Dado Calórico e aumenta em 1 para cada 2 níveis do seu personagem (por exemplo, no 10º nível serão 6d6).</p><p>Sempre que um Dado Calórico for rolado, ele é gasto e recupera Pontos de Poder da criatura em um valor igual ao resultado. É possível infundir uma nova ''Refeição do Chef'' com todos os Dados Calóricos após um descanso longo.</p><p>Os Dados Calóricos são divididos igualmente entre todas as criaturas que consumirem a refeição. Caso a divisão não seja exata, você decide quem ficará com os dados restantes. Por exemplo, ao dividir 10 Dados Calóricos entre 3 criaturas, cada uma recebe 3, e você escolhe quem ficará com o dado restante.</p><p>Após a refeição, os Dados Calóricos permanecem disponíveis até o próximo descanso longo de cada criatura. Eles podem ser ativados a qualquer momento. Entretanto, caso sejam usados em um encontro de combate, a criatura deve gastar uma ação e o resultado obtido pelos dados será reduzido pela metade.</p><p>Independentemente da quantidade de alimentos, o corpo humano possui limitações. Assim, o máximo de Pontos de Poder que uma criatura pode recuperar por meio de nutrição, entre descansos longos, é igual a 2 vezes o nível do personagem.</p><p><strong>Ferramentas:</strong> 1 mochila pequena, livros gastronômicos, receitas e nutrição, 1 kit de cozinha, 3 kits de temperos, e 1 roupa de gala.</p>'
+    chat: ''
+  identifier: cozinheiro
+  type:
+    value: profissao
+    subtype: ''
+  requirements: Profissão
+  properties: []
+  activities: {}
+  advancement:
+    - _id: hwg56VN7O08Rsxhj
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:prf
+              - skills:ins
+              - skills:per
+              - skills:slt
+              - skills:prv
+              - skills:sur
+        mode: default
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!tLsmn5soitmpttlP'
+ownership:
+  default: 0
+flags: {}

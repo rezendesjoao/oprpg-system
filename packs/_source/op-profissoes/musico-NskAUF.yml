@@ -1,0 +1,41 @@
+_id: NskAUFqGgq9zafOh
+name: Músico
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>O representante dos sentimentos, indispensável para qualquer festa. O músico é quele que consegue transformar dificuldade em motivação, inspira seus companheiros e transforma todo o ambiente ao seu favor.</p><p><strong>ALMA DE ARTISTA</strong></p><p>Seu corpo e alma são devotados à arte da música, desta forma, você treinou arduamente com instrumentos e nos conhecimentos musicais. Isso lhe garante alguns benefícios como:</p><ul><li>Você é proficiente com qualquer tipo de instrumento musical e possui uma linda voz;</li><li>Você recebe vantagem em Testes de Atributo de Vontade (Percepção), relacionado à audição;</li><li>Quando uma criatura passar em uma Salvaguarda para resistir ao efeito de uma canção sua, você pode fazer com que a criatura repita o teste. Essa característica pode ser usada até 3 vezes e você recupera todos os seus usos ao término de um descanso longo.</li></ul><p><strong>REPERTÓRIO ENCANTADOR</strong></p><p>Como um músico extraordinário, você domina melodias especiais capazes de influenciar as emoções das pessoas de forma inacreditável. Suas características são:</p><ul><li>Você pode iniciar uma dessas músicas usando uma ação e uma ação bônus, no início de cada um dos seus turnos, para conseguir mantê-las;</li><li>Você só pode manter um tipo de música por vez. Caso a música não especifique duração, ela é considerada instantânea;</li><li>O alcance dos efeitos é de 15 metros, afetando criaturas de sua escolha ou todas dentro do alcance que:</li></ul><ul><li>Você consiga ver e possam te ouvir;</li><li>Falhem em uma Salvaguarda de Presença CD = 8 + seu Bônus de Proficiência + seu modificador de Presença.</li></ul><p><strong>MÚSICA DA PAZ</strong></p><p>Você tenta suprimir emoções fortes. Uma criatura que falhar na Salvaguarda ignora, por até 1 minuto, qualquer motivo que a leve à hostilidade. Depois desse tempo, ela volta a se irritar, a menos que a causa tenha sido resolvida.</p><p>Alternativamente, você pode tornar um alvo indiferente às criaturas escolhidas. Essa indiferença termina se o alvo for atacado, ferido ou testemunhar um aliado sendo ferido.</p><p><strong>MÚSICA DA SEDUÇÃO</strong></p><p>Você tenta enfeitiçar uma criatura humanoide. Ela tem vantagem na Salvaguarda se você ou seus companheiros estiverem lutando contra ela. Em falha, a criatura fica 'Enfeitiçada' por 1 hora, ou até que você ou seus aliados causem dano a ela ou uma criatura aliada dela. O alvo enfeitiçado trata você como amigável, mas, quando o efeito termina, sabe que foi enfeitiçado.</p><p><strong>MÚSICA DO HERÓI</strong></p><p>Você imbui uma criatura voluntária com bravura. Por até 1 minuto, ela fica imune à condição 'Amedrontado'.</p><p><strong>MÚSICA DE NINAR</strong></p><p>Você induz criaturas ao sono profundo. Role 30d10; o valor total determina a quantidade de Pontos de Vida que podem ser afetados.</p><p>As criaturas são escolhidas em ordem crescente de PV atuais. Se o PV da criatura for igual ou menor ao valor restante, ela cai inconsciente até sofrer dano ou ser despertada por uma ação (como ser sacudida ou esbofeteada).</p><p><strong>MÚSICA DA DISTRAÇÃO</strong></p><p>Você performa uma melodia chamativa por até 1 minuto. Criaturas incapazes de serem enfeitiçadas passam automaticamente na Salvaguarda.</p><p>Criaturas em combate contra você ou seus aliados têm vantagem na Salvaguarda. Em falha, o alvo sofre desvantagem em Testes de Atributo de Vontade (Percepção) para notar qualquer coisa além de você.</p><p><strong>MÚSICA DA DANÇA IRRESISTÍVEL</strong></p><p>Durante 1 minuto, criaturas afetadas devem realizar uma Salvaguarda. Alvos imunes a encantamento passam automaticamente. Em falha, você pode usar uma ação bônus em cada turno para designar uma direção. As criaturas afetadas devem se mover naquela direção em seu próximo turno, provocando ataques de oportunidade se necessário.</p><p>Um alvo não é forçado a se mover em direção a um perigo óbvio (como um abismo ou fogueira) e o efeito se encera caso receba qualquer tipo de dano. Após se mover, pode realizar nova Salvaguarda para encerrar o efeito.</p><p><strong>MÚSICA DO DESRESPEITO</strong></p><p>Você faz uma música voltada a insultar uma única criatura, o alvo deve ser bem-sucedido em uma Salvaguarda para não receber a condição 'Enfurecido'.</p><p><strong>Ferramentas:</strong> 1 mochila pequena, livros de canto, de instrumentos e partituras e 1 instrumento musical à sua escolha.</p>
+    chat: ''
+  identifier: musico
+  type:
+    value: profissao
+    subtype: ''
+  requirements: Profissão
+  properties: []
+  activities: {}
+  advancement:
+    - _id: GkKdpimKVTkZvZ6W
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:prf
+              - skills:dec
+              - skills:ste
+              - skills:itm
+              - skills:per
+              - skills:slt
+              - skills:prv
+        mode: default
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!NskAUFqGgq9zafOh'
+ownership:
+  default: 0
+flags: {}

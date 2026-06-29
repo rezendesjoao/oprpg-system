@@ -1,0 +1,40 @@
+_id: y9N4uBH6CrtacW2o
+name: Informante
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>Informantes são especialistas em obter, analisar e armazenar informações das mais diversas fontes. Eles verificam rumores, investigam eventos, rastreiam pessoas e conectam dados aparentemente irrelevantes, transformando tudo isso em conhecimento estratégico para a tripulação.</p><p><strong>CHANTAGEM</strong></p><p>Você pode acionar seus contatos e conduzir investigações específicas (determinadas pelo Narrador) para descobrir informações comprometedoras sobre uma pessoa, realizando um Teste de Atributo de Sabedoria CD 17. Caso obtenha sucesso e encontre algo relevante, o alvo pode reagir das seguintes maneiras:</p><ul><li>Vista Grossa: A pessoa ignora pequenas infrações, como permitir sua passagem por áreas restritas ou fechar os olhos para pequenos furtos. Ela não se envolve diretamente, mas também não tenta prejudicar você.</li><li>Cooperação Parcial: A pessoa auxilia em tarefas menores, desde que isso não coloque em risco sua própria vida, a vida de alguém importante para ela, superiores ou subordinados.</li><li>Cooperação Total: A pessoa o ajuda mesmo que isso a coloque em perigo. Os limites de sua ajuda são amplos e podem ser revelados — ou não — pelo Narrador, dependendo da situação.</li></ul><p>O Narrador não revela qual nível de cooperação o alvo adotou — o valor do resultado no teste pode ou não influenciar nisso — nem se a pessoa está apenas fingindo colaborar ou realmente se sente ameaçada. Mas tenha em mente que forçar demais a situação pode fazer com que o alvo se volte contra você.</p><p>Além disso, o Narrador pode determinar que o alvo simplesmente não possui informações comprometedoras.</p><p><strong>BUSCAR TRIPULANTE</strong></p><p>Ao chegar em uma ilha, você pode iniciar uma busca por pessoas com habilidades específicas. Durante os 3 primeiros dias, é possível encontrar um voluntário disposto a entrar na tripulação e que possua domínio na profissão desejada, desde que você passe no Teste de Atributo de Sabedoria indicado na tabela ''Busca de Tripulantes''.</p><p>Se permanecer na ilha por mais de 2 semanas, você pode repetir esse teste com vantagem no último dia de estadia. Arqueólogos e outros informantes não podem ser achados por esse método.</p><p><strong>BUSCA DE TRIPULANTES</strong></p><table><tr><th>Profissão</th><th>CD</th></tr><tr><td>Adestrador</td><td>14</td></tr><tr><td>Botânico</td><td>17</td></tr><tr><td>Caçador de Recompensas</td><td>14</td></tr><tr><td>Carpinteiro</td><td>14</td></tr><tr><td>Cientista</td><td>20</td></tr><tr><td>Contrabandista</td><td>16</td></tr><tr><td>Cozinheiro</td><td>14</td></tr><tr><td>Engenheiro</td><td>17</td></tr><tr><td>Espião</td><td>20</td></tr><tr><td>Farmacêutico</td><td>18</td></tr><tr><td>Ferreiro</td><td>15</td></tr><tr><td>Inventor</td><td>19</td></tr><tr><td>Jornalista</td><td>16</td></tr><tr><td>Médico</td><td>16</td></tr><tr><td>Músico</td><td>16</td></tr><tr><td>Navegador</td><td>14</td></tr><tr><td>Psiquiatra</td><td>16</td></tr><tr><td>Timoneiro</td><td>14</td></tr></table><p>Tripulantes recrutados por esse método são totalmente confiáveis, pois passam por uma investigação minuciosa conduzida pelo próprio informante, revelando qualquer antecedente relevante — como envolvimento prévio com pirataria, façanhas notáveis ou reputação local.</p><p><strong>SEMPRE INFORMADO</strong></p><p>O informante está sempre lendo jornais, coletando rumores e registrando dados que possam ser úteis, expandindo constantemente seu conhecimento sobre o mundo. Ele é capaz de se lembrar com precisão de qualquer coisa que tenha visto ou ouvido nos últimos 30 dias.</p><ul><li>O informante pode identificar figuras importantes com um Teste de Sabedoria CD 14, reconhecendo seus feitos e habilidades que sejam de conhecimento público;</li><li>Usando seu domínio sobre mercados, culturas e recursos regionais (e até segredos sujos do comerciante), o informante consegue negociar 40% de desconto em qualquer compra que ele intermedeie, barganhando com qualquer tipo de vendedor.</li></ul><p><strong>ANALISAR E BUSCAR INFORMAÇÕES</strong></p><p>Como um oficial de inteligência, o informante é capaz de localizar e interpretar praticamente qualquer tipo de informação. É comum que ele investigue, catalogue e armazene tudo que considere relevante.</p><p>Sempre que necessário, você pode consultar seus arquivos e realizar um Teste de Atributo de Sabedoria CD 15 para obter quase qualquer informação. Alguns exemplos incluem:</p><ul><li>A localização aproximada de um pirata;</li><li>Descobrir se uma notícia é verdadeira ou falsa;</li><li>Saber se certa figura esteve presente em um evento específico;</li><li>Identificar quais pessoas notáveis estão em determinada ilha;</li><li>Acessar informações secretas ou delicadas relacionadas ao Governo Mundial;</li><li>Perfil detalhado de pessoas públicas e infames.</li></ul><p>Ao investigar acontecimentos recentes, você pode realizar um Teste de Atributo de Sabedoria CD 17 para descobrir novas informações no intervalo de até 5 dias.</p><p><strong>Ferramentas:</strong> 1 mochila pequena, 1 caderno codificado, 1 mapa da cidade ou região de operação, ferramentas de comunicação discreta (sinalizadores, apitos, espelhos).</p>'
+    chat: ''
+  identifier: informante
+  type:
+    value: profissao
+    subtype: ''
+  requirements: Profissão
+  properties: []
+  activities: {}
+  advancement:
+    - _id: cOVptC9OGOd5zKWo
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:dec
+              - skills:ste
+              - skills:inv
+              - skills:ins
+              - skills:prc
+              - skills:per
+        mode: default
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!y9N4uBH6CrtacW2o'
+ownership:
+  default: 0
+flags: {}

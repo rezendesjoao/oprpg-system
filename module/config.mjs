@@ -1826,6 +1826,9 @@ DND5E.featureTypes = {
   codigoHonra: {
     label: "DND5E.Feature.OP.CodigoHonra"
   },
+  profissao: {
+    label: "DND5E.Feature.OP.Profissao"
+  },
   class: {
     label: "DND5E.Feature.Class.Label",
     subtypes: {

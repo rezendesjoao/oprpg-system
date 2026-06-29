@@ -1,0 +1,40 @@
+_id: ILA3nfBFRJdpdwn3
+name: Arqueólogo
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>Grandes estudiosos de línguas, povos e estruturas antigas, os arqueólogos são capazes de analisar ruínas e descobrir relíquias valiosas.</p><p><strong>EXPLORADOR ATENTO</strong></p><p>Graças ao seu conhecimento e experiência em exploração e ruínas, você está sempre atento a detalhes que podem revelar armadilhas, caminhos alternativos ou soluções para diferentes situações.</p><ul><li>Guia: Sempre que realizar Testes de Atributo ou Salvaguardas relacionados à exploração de locais e ruínas, você recebe vantagem. Além disso, caso seja bem-sucedido, todas as criaturas que presenciarem sua ação — ou que você instruir diretamente — obtêm sucesso automático nos mesmos testes, se forem feitos posteriormente aos seus.</li><li>Salvador: Quando uma criatura falhar em uma Salvaguarda contra perigos do ambiente ou armadilhas (como pedras caindo, chão desmoronando, dardos envenenados etc.), você pode usar sua reação para reduzir o dano pela metade ou anular seus efeitos (como veneno, queda em precipício ou separação do grupo). Para que isso seja possível, o Narrador pode exigir o uso de itens apropriados, como cordas ou chicote. Essa característica não poderá ser usada novamente até o término de um descanso curto ou longo.</li><li>Solucionador: Desde que possua suas ferramentas, ao se deparar com enigmas, puzzles, fechaduras ou outros tipos de barreiras que guardam passagens e tesouros, você pode decifrar usando um método de solução infalível. Essa característica pode ser usada uma vez a cada 5 explorações. Caso o Narrador não queira revelar diretamente a solução, ele deve ao menos fornecer uma dica generosa. Nessa situação, o uso da característica não conta para o limite de 1 vez a cada 5 explorações.</li></ul><p><strong>ENCONTRAR TESOURO</strong></p><p>Ao adentrar calabouços, ruínas ou cidades antigas, você pode utilizar seu conhecimento sobre estruturas antigas e costumes culturais de povos ancestrais para identificar acessos obstruídos, mecanismos ocultos e passagens secretas, revelando os mais variados tipos de tesouros.</p><p>No início de uma exploração, o Narrador pode solicitar que você realize um Teste de Atributo de Sabedoria. Em caso de sucesso, você encontra pistas que levam a um tesouro escondido.</p><p><strong>DESCOBRINDO TESOUROS</strong></p><p>Ao encontrar a câmara secreta, role um d8 e consulte a tabela ''Tesouros Perdidos'' para determinar o que foi achado.</p><ul><li>Artefatos: Caso o resultado seja um artefato (''Dial'', ''Arma Meito'', ''Equipamento Engenhado'' ou ''Akuma no Mi''), role também um d10 para definir qual subdivisão foi encontrada. O Narrador decide se o item está danificado ou em perfeito estado.</li><li>Riquezas: Caso o resultado da tabela seja ''Joias e Ouro'', você recebe riquezas no valor do seu nível de personagem × ฿ 500.000.000.</li></ul><p><strong>REGRAS ESPECIAIS</strong></p><ul><li>Dials: Ao encontrar um tesouro e o resultado for ''Dial'', você pode rolar duas vezes o d10 e recebe ambos os resultados.</li><li>Testando a Sorte: Ao encontrar tesouros que não sejam ''Joias e Ouro'', você pode rolar o dado da subdivisão duas vezes e escolher o resultado desejado.</li><li>Akuma no Mi: Ao encontrar uma, você pode realizar um Teste de Sabedoria para tentar identificar o poder do fruto.<ul><li>CD 15: Frutos historicamente relevantes.</li><li>CD 20: Frutos obscuros.</li><li>CD 25: Frutos desconhecidos.</li></ul></li></ul><p>Não é possível obter sucesso automático para identificar os frutos. Além disso, o Narrador pode decidir que o fruto é irreconhecível ou não catalogado.</p><p><strong>CONHECIMENTO PROIBIDO</strong></p><p>Os arqueólogos são indispensáveis para a interpretação dos Poneglyphs, capazes de compreendê-los parcialmente e, com dedicação ou mais estudos, decifrar por completo suas mensagens. Seus conhecimentos derivam de fragmentos dos ensinamentos de Ohara e de outros saberes espalhados pelo mundo.</p><p>No entanto, decifrar essas inscrições e conhecer a história do Século Vazio é considerado um crime, e qualquer informação relacionada é rigidamente protegida. Assim, o Narrador pode decidir que você ainda não possui o conhecimento necessário, introduzindo-o posteriormente na aventura — seja por meio de cadernos de anotações, antigos registros ou até mesmo através de um estudioso disposto a ensiná-lo.</p><p><strong>PONEGLYPHS</strong></p><p>As escrituras dos Poneglyphs são complexas e o acesso as informações para decifrar seus segredos já está perdido. Ainda assim, é possível aos arqueólogos, tentar entender seus significados com estudo e recolhendo informações.</p><ul><li>Poneglyphs Históricos: Poneglyphs Históricos falam da história ou trazem dicas do local, histórias do século perdido ou detêm recados para as próximas gerações. Para serem decifrados totalmente, é necessário ser bem-sucedido em um Teste de Atributo de Sabedoria CD 20.</li><li>Poneglyphs Instrutivos: Poneglyphs Instrutivos geralmente indicam onde podem ser encontrados outros Poneglyphs, armas antigas e objetos inestimáveis. Para serem decifrados totalmente, é necessário ser bem-sucedido em um Teste de Atributo de Sabedoria CD 25.</li><li>Poneglyphs Caminho: Existem 4 Poneglyphs Caminho, que indicam como chegar até Laugh Tale. Para serem decifrados totalmente, é necessário ser bem-sucedido em um Teste de Atributo com de Sabedoria CD 30.</li></ul><p><strong>FALHAR EM UMA TRADUÇÃO</strong></p><p>Caso falhe em decifrar as escrituras de um Poneglyph ou texto antigo, você ainda pode continuar tentando. Após estudar por 3 dias, você pode repetir o teste, reduzindo em 5 o CD, cada vez que você repetir a tentativa de tradução.</p><p><strong>Ferramentas:</strong> Ferramentas de Arqueólogo: 1 mochila pequena, 1 lanterna, 1 corda, 1 tenda, livros de história, geografia e culturas antigas, 1 chicote, 1 porta mapas, 1 caderno e caneta e 1 kit de escalada.</p>'
+    chat: ''
+  identifier: arqueologo
+  type:
+    value: profissao
+    subtype: ''
+  requirements: Profissão
+  properties: []
+  activities: {}
+  advancement:
+    - _id: 2ytB4hXroJw5TG4Q
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:his
+              - skills:ins
+              - skills:inv
+              - skills:prc
+              - skills:per
+              - skills:sur
+        mode: default
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!ILA3nfBFRJdpdwn3'
+ownership:
+  default: 0
+flags: {}

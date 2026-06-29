@@ -1,0 +1,40 @@
+_id: T4KlInBeUEcLWyzH
+name: Ferreiro
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>Ferreiros são mestres na arte de manipular o metal em forjas ardentes para criar armas e equipamentos extraordinários. Em especial, são capazes de produzir espadas e outras armas cortantes usadas na maioria dos confrontos pelo mundo.</p><p><strong>FORJAR EQUIPAMENTOS</strong></p><p>O ferreiro pode usar seus conhecimentos e habilidades de manufatura para criar qualquer arma ou equipamento presente no Capítulo 8.</p><p>O custo e os materiais podem variar conforme a avaliação do Narrador, e você deve ser bem-sucedido em um Teste de Atributo de Força, Destreza ou Sabedoria CD 16 para produzi-los.</p><p><strong>LÂMINAS</strong></p><p>A criação de lâminas, além de exigir grande habilidade manual, também é um processo espiritual. Durante a forja, o ferreiro imprime parte de sua vivência em cada criação.</p><p>O ferreiro recebe 1 Ponto de Forja (PF) para cada 10 anos de sua vida, podendo distribuir esses pontos entre diversas lâminas ou concentrá-los em apenas uma.</p><p>Ao escolher aprimorar a lâmina, o ferreiro atribui uma maldição (Yoto — descrita no Guia do Narrador). Além disso, a lâmina passa a receber as propriedades das armas lendárias (Meito — detalhes no Guia do Narrador), conforme a quantidade de Pontos de Forja investidos:</p><ul><li>Wazamano – 2 Pontos de Forja.</li><li>Ryo Wazamono – 4 Pontos de Forja.</li><li>Ô Wazamono – 6 Pontos de Forja.</li><li>Saijo Ô Wazamono – 10 Pontos de Forja.</li></ul><p>Alternativamente, o ferreiro pode obter 1 Ponto de Forja a cada 10 lâminas comuns produzidas ou 2 Pontos de Forja a cada graduação que alcançar na profissão de ferreiro.</p><p><strong>ANOS REGRESSOS</strong></p><p>Independentemente da idade do personagem antes do início da aventura, entende-se que parte de seus Pontos de Forja já possa ter sido consumida ao longo da vida, ou que suas experiências passadas ainda não tenham sido suficientes para despertar o potencial pleno de sua alma.</p><p>Por esse motivo, mesmo para espécies extremamente longevas, recomenda-se que o Narrador permita que os personagens iniciem com 2 a 4 PF, mantendo a progressão equilibrada.</p><p>Valores iniciais superiores só devem ser permitidos se o Narrador tiver planejado uma campanha em que isso não desequilibre a história ou comprometa a evolução dos demais personagens.</p><p>Além desses aprimoramentos, o ferreiro pode gastar PF para melhorar qualquer equipamento, não apenas lâminas:</p><ul><li>Expertise (1 PF): Altera a expertise da arma para qualquer uma das presentes no Capítulo 8 (cada arma só pode ter 1 expertise por esse método).</li><li>Supremacia (2 PF): Concede uma expertise adicional escolhida entre as presentes no Capítulo 8 (máximo de 2 expertises por esse método).</li><li>Densidade (1 PF): A arma ou suas munições ignoram resistências a um tipo de dano: escolhido entre Contundente, Cortante ou Perfurante.</li><li>Dureza (1 PF): A arma se torna indestrutível e nunca perde o fio, caso possua uma lâmina.</li><li>Balanço (2 PF): A arma ou suas munições ignoram invulnerabilidade a um tipo de dano: escolhido entre Contundente, Cortante ou Perfurante (é necessário que a arma já ignore resistências ao tipo de dano escolhido).</li><li>Fio (2 PF): O dano da arma aumenta de um passo. Esse aumento sendo: 1 para 1d4; 1d4 para 1d6; 1d6 para 1d8; 1d8 para 1d10; 1d10 para 1d12; 1d12 para 2d6; e 2d6 para 3d6.</li></ul><p>Custo: Sempre que você usar essa característica, você gasta 1 lingote de metal e mais ฿ 20.000 ou 20% do valor de compra do equipamento (o que for mais caro e mais apropriado).</p><p><strong>APRIMORAR/CONSERTAR EQUIPAMENTO</strong></p><p>É possível para o ferreiro, ao fazer um Teste de Atributo de Força, Destreza ou Sabedoria CD 16, realizar consertos e aprimoramentos em armas que não possuam nenhum tipo de modificação. Cada item pode receber uma vez as seguintes modificações por meio desta característica.</p><ul><li>Revestir 1 arma ou munições (10 por vez) com Kairoseki;</li><li>Criar 20 munições que causam 1d12 de dano Contundente ou Perfurante;</li><li>Ampliar o alcance de armas à distância aumentando suas duas distâncias em 6 metros;</li><li>Adicionar bônus de +3 na jogada de ataque (comum ou Técnicas) da arma (reduzindo esse bônus de acerto em 1 a cada 3 encontros em que for utilizada, até perder o bônus);</li><li>Reparar uma arma ou equipamento que não esteja completamente destruído.</li></ul><p>Na tentativa de melhorar um equipamento, se o resultado no d20 for 1, ele quebra automaticamente sem forma de reparo.</p><p>Custo: Sempre que você usar essa característica, você gasta 1 lingote de metal e mais ฿ 20.000 ou 20% do valor de compra do equipamento (o que for mais caro e mais apropriado).</p><p><strong>Ferramentas:</strong> 1 mochila pequena, livros de metalurgia e armas, 1 martelo de forja pequeno, ferramentas de metal, 1 pedra de amolar, 1 bigorna pequena e 1 molde simples.</p>'
+    chat: ''
+  identifier: ferreiro
+  type:
+    value: profissao
+    subtype: ''
+  requirements: Profissão
+  properties: []
+  activities: {}
+  advancement:
+    - _id: sqwOVZvXdctIp9Q6
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:ath
+              - skills:his
+              - skills:ins
+              - skills:inv
+              - skills:prc
+              - skills:slt
+        mode: default
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!T4KlInBeUEcLWyzH'
+ownership:
+  default: 0
+flags: {}

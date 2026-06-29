@@ -1,0 +1,21 @@
+_id: LvEvn6ug5C8bV5Xf
+name: Profissões — Regras e Graduações
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p><em>Item de referência. As Profissões representam ocupações em que o personagem se destaca. A partir do 1º nível você escolhe uma Profissão e recebe seus benefícios.</em></p><p><strong>Benefícios da Profissão</strong></p><ul><li>Pode adicionar o Bônus de Proficiência em Testes de Atributo relacionados à profissão escolhida (a critério do Narrador);</li><li>Recebe as características únicas da profissão escolhida;</li><li>Recebe proficiência nas ferramentas da profissão escolhida;</li><li>Apenas na profissão de 1º nível: escolha de 2 perícias e o conjunto de ferramentas/equipamento inicial.</li></ul><p><strong>Adquirindo Novas Profissões</strong></p><p>A cada 5 níveis de personagem (5º, 10º, 15º e 20º) você pode aprender uma nova profissão, desde que, antes de atingir esses níveis, tenha lido um Livro de Profissão (item raro) ou recebido instrução de um tutor — ao menos 2 horas por dia durante 90 dias, ou após o avanço de 2 níveis (o que ocorrer primeiro). Ao adquirir uma profissão após o 1º nível, você não recebe proficiências em perícias nem equipamento inicial; porém, pode substituir uma de suas perícias por uma das opções da nova profissão.</p><p><strong>Feitos, Reconhecimentos e Graduações</strong></p><p>O progresso de uma profissão segue: Profissional (inicial) → Especialista → Mestre → Grão-Mestre, mantendo os benefícios anteriores. As graduações podem ser conquistadas por Grandes Feitos (ações notáveis ou um Teste relacionado com CD 26+ em uma única jogada, sem vantagem/rerrolagem) ou por Avanço Planejado nos níveis 5/10/15/20 (elevar a graduação de uma profissão em vez de aprender uma nova).</p><p><em>Neste sistema, ao atingir os níveis 5/10/15/20 com uma profissão na ficha, surge um aviso para elevar a graduação de uma profissão à sua escolha (você também pode optar por aprender uma nova profissão arrastando-a para a ficha).</em></p><ul><li><strong>Especialista:</strong> você pode ter vantagem em qualquer Teste de Atributo relacionado à sua profissão — 3 vezes por descanso longo.</li><li><strong>Mestre:</strong> em Testes relacionados à sua profissão, trata qualquer resultado de 9 ou menos no d20 como 10.</li><li><strong>Grão-Mestre:</strong> ao falhar em um Teste relacionado à sua profissão, pode considerá-lo bem-sucedido — 3 vezes, recuperando 1 uso por descanso longo.</li></ul><p><strong>Aperfeiçoamento Profissional</strong> (substitui os valores anteriores conforme a graduação):</p><table><tr><td><strong>Graduação</strong></td><td><strong>Desconto em Valores</strong></td><td><strong>Redução na CD</strong></td><td><strong>Aumento de Passo</strong></td></tr><tr><td>Especialista</td><td>10%</td><td>−1</td><td>d8</td></tr><tr><td>Mestre</td><td>20%</td><td>−2</td><td>d10</td></tr><tr><td>Grão-Mestre</td><td>50%</td><td>−3</td><td>d12</td></tr></table><p>Desconto em Valores reduz custos predeterminados; Redução na CD diminui CDs predeterminadas; Aumento de Passo eleva o tipo de dado predeterminado das características da profissão.</p>'
+    chat: ''
+  identifier: profissoes-regras-e-graduacoes
+  type:
+    value: profissao
+    subtype: ''
+  requirements: Referência
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!LvEvn6ug5C8bV5Xf'
+ownership:
+  default: 0
+flags: {}

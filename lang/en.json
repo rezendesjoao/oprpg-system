@@ -2235,7 +2235,8 @@
     "Caminho": "Caminho",
     "Singularidade": "Singularidade",
     "Defeito": "Defeito",
-    "CodigoHonra": "Código de Honra"
+    "CodigoHonra": "Código de Honra",
+    "Profissao": "Profissão"
   },
   "Class": {
     "Label": "Habilidade de Classe",

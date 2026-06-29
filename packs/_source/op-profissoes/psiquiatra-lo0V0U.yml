@@ -1,0 +1,40 @@
+_id: lo0V0UPQLDTpbMIC
+name: Psiquiatra
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>Psiquiatras são especialistas na mente e no comportamento humano, compreendendo motivações, traumas e distúrbios psicológicos. Eles conseguem tratar instabilidades emocionais, moldar padrões mentais e antecipar colapsos antes que ocorram — seja para manter uma tripulação unida sob pressão ou para desestabilizar alguém com palavras precisas.</p><p><strong>PERSPICÁCIA PSICOLÓGICA</strong></p><p>Ao conversar ou analisar uma criatura por pelo menos 5 minutos, você pode realizar um Teste de Atributo de Sabedoria (Intuição) CD 16 para identificar uma ou mais das seguintes informações, conforme o Narrador julgar apropriado:</p><ul><li>Estado emocional atual da criatura;</li><li>Gatilhos psicológicos relevantes, presença de traumas, compulsões ou instabilidade emocional;</li><li>Fragilidades mentais, como medo, vício, insegurança, dependência emocional ou pressão psicológica.</li></ul><p><strong>ANÁLISE COMPORTAMENTAL</strong></p><p>Caso deseje analisar um grupo de pessoas, após observá-lo por pelo menos 5 minutos, você pode realizar o mesmo teste anterior. Em caso de sucesso, você descobre:</p><ul><li>A hierarquia interna do grupo;</li><li>Se alguém está mentindo ou agindo de forma suspeita;</li><li>Quem teme quem dentro do grupo;</li><li>Quem é mais influenciável e quem exerce maior controle ou manipulação;</li><li>A intenção predominante do grupo (como atacar, fugir, enganar, negociar, recrutar, entre outras).</li></ul><p><strong>TÁTICAS MENTAIS</strong></p><p>Você domina Técnicas avançadas de influência emocional, manipulação verbal e controle mental indireto.</p><p><strong>DIAGNOSTICANDO</strong></p><p>A cada 1 minuto ouvindo uma criatura falar — ou ao perceber algo relevante sobre sua personalidade (descrito ao Narrador) — você pode tomar notas, mentalmente ou em um caderno, e acumular 1 Ponto Mental.</p><p>Esses pontos podem ser gastos para receber +5 em Testes de Atributo de Presença relacionados especificamente à criatura analisada.</p><p>Você pode acumular até 3 Pontos Mentais por criatura, recuperando a capacidade de gerar novos pontos após o término de um descanso longo.</p><p>Além disso, Testes de Atributo de Presença relacionados às características da sua profissão podem ser realizados utilizando Sabedoria em vez de Presença.</p><p><strong>TERAPIA DE CRISE</strong></p><p>Você aprendeu Técnicas mentais rápidas, capazes tanto de estabilizar quanto de confrontar uma criatura com verdades duras. Usando uma reação ou ação bônus, você pode encerrar em uma criatura uma das seguintes condições de uma criatura: ''Amedrontado'', ''Empoderado'', ''Enfeitiçado'' e ''Enfurecido''.</p><p><strong>DISCURSO DESMOTIVACIONAL</strong></p><p>Após analisar uma criatura e trazer à tona suas inseguranças por meio de palavras cruéis e certeiras, você pode realizar um Teste de Atributo de Sabedoria (Intuição) CD 17.</p><p>Em caso de sucesso, a criatura sofre desvantagem em todos os Testes de Atributo por até 5 minutos. Além disso, sempre que falhar em um desses testes durante esse período, recebe –1 adicional em testes subsequentes, acumulando até o fim da duração.</p><p>Essa característica só volta a surtir efeito em uma criatura após o término de um descanso longo.</p><p><strong>XADREZ MENTAL</strong></p><p>Desde que você já tenha ouvido uma criatura falar por pelo menos 5 minutos, é possível iniciar um exercício mental para tentar prever suas próximas ações. Para isso, realize um Teste de Atributo de Sabedoria (Intuição), com CD determinada pelo Narrador (que pode optar por não revelar a dificuldade nem se o teste foi bem-sucedido).</p><p>Após o teste, o Narrador revela as ações previstas da criatura. Caso o teste tenha sido um fracasso, essas informações podem ser imprecisas ou completamente falsas.</p><p><strong>APRIMORAR PERSONALIDADE</strong></p><p>Desde que você dedique a primeira hora de cada dia a consultas psicológicas com seus companheiros, mantendo essa rotina por pelo menos 1 semana ininterrupta, eles recebem 1 Singularidade Leve adicional e deixam de sofrer as penalidades associadas aos Defeitos das Singularidades (ver Capítulo 5). A Singularidade escolhida e os Defeitos anulados não podem estar relacionados a:</p><ul><li>Pessoas ou fatores externos (como ''Má Fama'', ''Casamento Marcado'', ''Chantagem'', etc.);</li><li>Limitações físicas ou condições externas (como ''Estudioso'', ''Churriado'', ''Dívida de Jogo'', entre outras).</li></ul><p>Após um período prolongado, o Narrador pode decidir que esse efeito se tornou permanente.</p><p>Além disso, você também se torna imune a esses Defeitos e recebe 1 Singularidade Suave adicional, obedecendo às mesmas restrições aplicadas aos seus companheiros.</p><p><strong>Ferramentas:</strong> 1 mochila pequena, livros de psicologia, psiquiatria e comportamento humano, 1 caderno para anotações clínicas, 1 kit médico.</p>'
+    chat: ''
+  identifier: psiquiatra
+  type:
+    value: profissao
+    subtype: ''
+  requirements: Profissão
+  properties: []
+  activities: {}
+  advancement:
+    - _id: 362HPdrJ6TJm1O9G
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:ins
+              - skills:inv
+              - skills:med
+              - skills:prc
+              - skills:per
+              - skills:prv
+        mode: default
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!lo0V0UPQLDTpbMIC'
+ownership:
+  default: 0
+flags: {}

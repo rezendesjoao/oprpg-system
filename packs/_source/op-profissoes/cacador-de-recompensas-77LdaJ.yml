@@ -1,0 +1,40 @@
+_id: 77LdaJOdisKVpkde
+name: Caçador de Recompensas
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>Caçadores de recompensas são a melhor opção para rastrear inimigos e negociar com todo tipo de organização.</p><p><strong>ENCONTRAR UM ALVO</strong></p><p>A dificuldade em determinar a localização de um alvo depende da disponibilidade de informações, que varia conforme o tipo de pessoa: alguns são discretos e zelam por sua privacidade, enquanto outros fazem questão de se exibir.</p><p>As informações necessárias não se limitam apenas ao alvo, mas também a suas conexões locais e distantes. É importante saber o nível de ameaça que representa, tanto individualmente quanto por meio de subordinados ou companheiros. Além disso, o caçador deve reunir dados sobre hábitos, rotinas, fraquezas e capacidades de combate.</p><p>Na maioria dos casos, os alvos se encaixam nas categorias abaixo, embora alguns possam pertencer a mais de uma. Nestes casos, o Narrador decide qual categoria é a mais relevante:</p><ul><li>Pessoa Comum (CD 12): Indivíduos que levam uma vida normal e, em geral, nem suspeitam que podem estar sendo caçados. Isso facilita o rastreamento e a coleta de informações.</li><li>Figura Pública (CD 14): Governantes, políticos, celebridades ou qualquer pessoa de destaque. Embora rastrear seja fácil, as informações obtidas costumam ser superficiais, distorcidas ou falsas.</li><li>Criminoso Procurado (CD 16): Alvo mais comum para caçadores. Alguns são experientes e sabem ocultar rastros ou silenciar delatores; outros, mais reclusos ou novatos, chamam pouca atenção, dificultando sua localização.</li><li>Identidade Oculta (CD 25): Pessoas influentes no submundo que mantêm anonimato para proteger status ou títulos. Costumam ter organizações e usar pseudônimos, tornando extremamente difícil obter suas informações.</li><li>Entidade (CD 30): O tipo mais desafiador. Sua própria existência é incerta, baseada apenas em boatos ou associações de eventos misteriosos a uma figura ou criatura. Há indícios, mas nunca provas concretas.</li></ul><p>O caçador pode realizar um Teste de Atributo Sabedoria para reunir informações suficientes que permitam localizar o alvo. Um Primeiro Teste pode ser feito assim que o caçador toma ciência do alvo — por exemplo, ao ver um cartaz de procurado ou ao receber uma missão — para verificar se já existem conhecimentos prévios.</p><p>Se o teste falhar, novos testes podem ser realizados a cada 2 dias ou sempre que surgirem informações relevantes (por exemplo: ao entrar em uma cidade ligada ao alvo, ao conversar com alguém que possua dados úteis, ao acessar uma nova pista ou em outras situações que o Narrador julgar apropriadas). A CD para localizar o alvo reduz em 2 a cada novo teste realizado.</p><p>Custo: Sempre que fizer um teste dessa característica, o caçador deve gastar uma quantia de dinheiro determinada pelo Narrador, geralmente entre ฿ 5.000 e ฿ 25.000, representando subornos, presentes ou pagamentos para as fontes de informação.</p><p><strong>ALVO MARCADO</strong></p><p>Quando você passa em um Teste de Atributo de Sabedoria com a característica ''Encontrar um Alvo'', você pode escolher marcar este alvo e receber alguns bônus durante sua caçada.</p><p>Você pode manter até 3 criatura ao mesmo tempo, caso desista de marcar a criatura, terá até 3 dias para marcá-la novamente sem precisar repetir testes. Você recebe os seguintes benefícios ao marcar um alvo:</p><ul><li>Marca do Caçador: Você sempre sabe aonde o alvo está e recebe vantagem em Testes de Atributo de Destreza (Furtividade), para se esconder de alvos marcados.</li><li>Passos Longos: Durante uma perseguição ao seu alvo marcado, terreno difícil proveniente do solo e da natureza não afeta o seu deslocamento.</li><li>Dificultar Detecção: O alvo marcado por você tem desvantagem em tentar fazer testes de Sabedoria ou Vontade para te localizar.</li></ul><p><strong>CONTRATOS CLANDESTINOS</strong></p><p>Caçadores de recompensas costumam cultivar contatos em todos os lugares, relacionando-se com os mais variados tipos de pessoas para facilitar seus negócios. Essas conexões podem incluir membros corruptos da Marinha e do Governo Mundial. Assim, mesmo que o caçador seja pirata ou criminoso, ele ainda pode negociar recompensas ''por debaixo dos panos'', desde que pague uma propina sobre seus ganhos.</p><p>Se o caçador possuir contatos na região, pode fechar acordos que garantem entre 70% e 90% do valor original da recompensa para criminosos capturados vivos.</p><p>O Narrador pode solicitar um Teste de Atributo Sabedoria para verificar se o caçador já conhece alguém com quem negociar ou se é capaz de localizar e conquistar a confiança de um novo contato confiável.</p><p><strong>RECOMPENSAS</strong></p><p>O sistema de recompensas é um instrumento do Governo Mundial para agilizar a captura de criminosos: divulga suas identidades e oferece um prêmio em dinheiro pela prisão. Isso atrai mais pessoas à caça dos procurados; muitos fazem disso profissão e tornam-se caçadores de recompensas.</p><p>Os cartazes de procurados frequentemente trazem a expressão ''Vivo ou Morto'', indicando que o direito à vida do procurado foi revogado. Da mesma forma, outros direitos deixam de se aplicar — por exemplo, não é considerado crime roubar de piratas.</p><p>Quanto mais perigoso o Governo Mundial considerar um criminoso, maior será a recompensa por sua captura. Entretanto, o valor pode ser reduzido em até 40% caso o procurado seja entregue morto, já que o Governo Mundial e a Marinha costumam preferir execuções públicas como exemplo dissuasório.</p><p><strong>Ferramentas:</strong> Ferramenta de Caçador de Recompensas: 1 mochila pequena, livros de comportamento e outros temas diversos, 3 kits de primeiros socorros, 2 cordas, 2 pares de algemas e 1 tipo de bússola à sua escolha (bússola ou log pose).</p>'
+    chat: ''
+  identifier: cacador-de-recompensas
+  type:
+    value: profissao
+    subtype: ''
+  requirements: Profissão
+  properties: []
+  activities: {}
+  advancement:
+    - _id: jwwuwr8nFOyE5qWx
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:ste
+              - skills:itm
+              - skills:inv
+              - skills:prc
+              - skills:per
+              - skills:sur
+        mode: default
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!77LdaJOdisKVpkde'
+ownership:
+  default: 0
+flags: {}

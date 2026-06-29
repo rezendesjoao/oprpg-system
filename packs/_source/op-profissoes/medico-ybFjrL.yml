@@ -1,0 +1,40 @@
+_id: ybFjrLrTfF5tNity
+name: Médico
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>O médico é o único preparado para cuidar dos ferimentos após batalhas e de doenças. Sem um bom médico a bordo, até mesmo picadas de mosquitos de uma ilha tropical podem se tornar algo fatal.</p><p><strong>TRATAR FERIMENTOS</strong></p><p>O médico é especialista em cuidar de feridas por meio de Técnicas manuais e medicamentos, recebendo assim os Dados Curativos. Esses dados são sempre o d6, e o médico possui 2 Dados Curativos por nível de personagem (por exemplo, no 10º nível, terá 20d6).</p><p>Sempre que um Dado Curativo for rolado, ele é consumido e recupera Pontos de Vida da criatura em uma quantidade igual ao resultado obtido. Todos os Dados Curativos são recuperados após um descanso longo.</p><p>Para utilizá-los, o médico deve estar a até 1,5 metro da criatura e gastar uma ação bônus, escolhendo a quantidade de dados a serem rolados.</p><p>Apesar dos cuidados aplicados, o corpo humano possui limitações: não é possível recuperar totalmente danos severos sem o devido repouso. Assim, o máximo de Pontos de Vida que uma criatura pode recuperar por meio de tratamentos médicos, entre descansos longos, é igual a 20 vezes o nível do personagem.</p><p>Os Dados Curativos podem ser usados a qualquer momento. Contudo, se forem aplicados durante um encontro de combate, o valor obtido nos dados é reduzido pela metade.</p><p>Custo: Sempre que você usar essa característica, você gasta 1d4 kit médico.</p><p><strong>ESPECIALISTA EM CURA</strong></p><p>Qualquer cura que o médico seja capaz de aplicar fora das características desta profissão é potencializada pelo seu vasto conhecimento. Assim, curas aplicadas por meio de dados não podem resultar em valores menores que a média e têm seus dados aumentados em um passo. O aumento dos passos sendo: 1d4 para 1d6; 1d6 para 1d8; 1d8 para 1d10; 1d10 para 1d12; e 1d12 para 2d8.</p><p>Curas aplicadas por meio de valores fixos aumentam em 50%. Por exemplo, uma característica que cure 50 Pontos de Vida passa a curar 75 Pontos de Vida (50 + 25).</p><p><strong>PARAMEDICINA</strong></p><p>Com seu conhecimento no tratamento de vítimas em estado crítico, você é capaz de preservar vidas em situações extremas.</p><p>Usando uma ação bônus, você pode realizar um Teste de Atributo de Sabedoria CD 18 para tratar uma criatura inconsciente com 0 Pontos de Vida ou morta há menos de 3 minutos, podendo fazer quantas tentativas quiser nesse período.</p><p>Falha: Você remove qualquer condição que não esteja sendo sustentada por meios sobrenaturais (como os efeitos de uma Akuma no Mi, por exemplo). Além disso, a criatura recebe 50 Pontos de Vida temporários, que duram até 1 hora e a protegem contra novos danos, mas não a despertam nem a trazem de volta à vida.</p><p>Sucesso: Além dos benefícios de uma falha, a criatura recupera metade de seus Pontos de Vida totais (arredondado para baixo) e volta à vida caso tenha morrido, permanecendo consciente por 1 minuto. Após esse tempo, ela volta a cair inconsciente com 0 Pontos de Vida, independentemente da quantidade de PV recuperada, e só poderá acordar após completar um descanso curto ou longo.</p><p>Essa característica só pode garantir os efeitos de sucesso uma única vez em cada criatura. Em usos posteriores, ela só pode aplicar os efeitos da falha.</p><p>Após um descanso longo, a criatura pode receber novamente os efeitos completos de um teste bem-sucedido.</p><p>Custo: Sempre que você usar essa característica, você gasta 1d4 kit de primeiros socorros.</p><p><strong>TRATAMENTOS</strong></p><p>Além de cuidar de ferimentos comuns, os médicos possuem vasto conhecimento voltado à prevenção e ao tratamento de doenças e lesões graves. A seguir estão descritos os tratamentos mais comuns, embora o Narrador possa apresentar novos tipos e métodos, conforme a necessidade da narrativa.</p><p><strong>TRATAR DOENÇAS</strong></p><p>Apenas médicos são capazes de diagnosticar e tratar doenças. Após gastar 1 minuto analisando o paciente, o médico pode ministrar medicamentos usando uma ação. A criatura medicada fica livre dos sintomas da doença e não sofre seus efeitos por 24 horas; após esse período, deve ser tratada adequadamente.</p><p>Algumas doenças possuem tratamento específico (ver Capítulo 10). Para essas, o Narrador pode solicitar um Teste de Atributo de Sabedoria CD 18:</p><ul><li>A CD é reduzida pelo valor do modificador de Constituição do paciente;</li><li>A CD aumenta em 1 para cada dia que passe sem que a doença esteja sendo tratada.</li></ul><p>Doenças não especificadas geralmente exigem 1d4 + 1 dias de tratamento e custam ฿ 30.000. Para tratá-las, o Narrador pode pedir um Teste de Atributo de Sabedoria CD 16, com os mesmos modificadores acima.</p><p><strong>INSPEÇÃO MÉDICA</strong></p><p>O médico acompanha de perto a saúde de seus aliados, garantindo que todos se mantenham em boa forma para enfrentar os perigos.</p><p>Se uma criatura passar 1 semana ao lado do médico, não possuir Níveis de Exaustão e estiver com mais da metade dos Pontos de Vida, recebe os seguintes benefícios:</p><ul><li>Vantagem em Salvaguarda contra a condição ''Envenenado'', ''Letárgico'', ''Queimadura'' e ''Sangramento'';</li><li>Vantagem em Salvaguarda contra doenças.</li></ul><p><strong>CIRURGIA</strong></p><p>Você é capaz de realizar cirurgias que restauram a saúde do paciente. Para isso, deve estar em um local apropriado, esterilizado e com todas as ferramentas necessárias à disposição.</p><p>Em casos de necessidade ou Danos Brutais (descritos no Capítulo 12), para reverter a redução nos Pontos de Vida totais e outros efeitos, o médico deve ser bem-sucedido em um Teste de Atributo de Sabedoria. O Narrador define o tipo de lesão de acordo com a gravidade do ferimento, utilizando a tabela ''Dano Brutal'', que apresenta a CD, o custo adicional e o tempo de cirurgia correspondentes.</p><p><strong>DANO BRUTAL</strong></p><table><tr><th>Gravidade</th><th>Tipo de Lesão</th><th>Tempo de Cirurgia</th><th>Custo Adicional</th><th>CD</th></tr><tr><td>Grave</td><td>Costela Quebrada</td><td>2 horas</td><td>฿ 75.000</td><td>16</td></tr><tr><td>Grave</td><td>Hemorragia Interna</td><td>3 horas</td><td>฿ 75.000</td><td>16</td></tr><tr><td>Grave</td><td>Membro Deslocado</td><td>1 hora</td><td>฿ 75.000</td><td>13</td></tr><tr><td>Crítico</td><td>Crânio Fraturado</td><td>4 horas</td><td>฿ 100.000</td><td>15</td></tr><tr><td>Crítico</td><td>Corte Profundo</td><td>2 horas</td><td>฿ 100.000</td><td>15</td></tr><tr><td>Crítico</td><td>Membro Quebrado</td><td>3 horas</td><td>฿ 100.000</td><td>16</td></tr><tr><td>Mortal</td><td>Fratura Exposta</td><td>9 horas</td><td>฿ 125.000</td><td>17</td></tr><tr><td>Mortal</td><td>Órgão Perfurado</td><td>10 horas</td><td>฿ 125.000</td><td>17</td></tr><tr><td>Mortal</td><td>Membro Decepado</td><td>12 horas</td><td>฿ 125.000</td><td>18</td></tr></table><p>No tratamento dessas feridas, quando o Narrador solicitar o Teste de Atributo de Sabedoria, podem ocorrer os seguintes modificadores:</p><ul><li>A CD é reduzida pelo valor do modificador de Constituição do paciente;</li><li>A CD aumenta em 1 para cada dia que passe sem que a doença esteja sendo tratada.</li></ul><p>Custo: Sempre que você usar esses tratamentos, você gasta 1d4 kit médico.</p><p><strong>Ferramentas:</strong> 1 mochila pequena, livros de anatomia, medicina e bioquímica, 1 kit médicos e 3 kits de primeiros socorros.</p>'
+    chat: ''
+  identifier: medico
+  type:
+    value: profissao
+    subtype: ''
+  requirements: Profissão
+  properties: []
+  activities: {}
+  advancement:
+    - _id: wFqw5eppWQ2X0EST
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:ins
+              - skills:inv
+              - skills:med
+              - skills:prc
+              - skills:slt
+              - skills:sur
+        mode: default
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!ybFjrLrTfF5tNity'
+ownership:
+  default: 0
+flags: {}

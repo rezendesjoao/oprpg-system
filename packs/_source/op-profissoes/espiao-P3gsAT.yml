@@ -1,0 +1,40 @@
+_id: P3gsATWyoySQgK9o
+name: Espião
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>Espiões são mestres de coletar informações, infiltração e manipulação silenciosa. Treinados para operar nas sombras, eles combinam disfarces complexos, códigos ocultos e engenhocas discretas para obter vantagem em qualquer situação.</p><p><strong>TÁTICAS DE ESPIONAGEM</strong></p><p>Especialistas em infiltração, manipulação e duplicidade, espiões utilizam Técnicas refinadas para adquirir informações, assumir identidades e transmitir mensagens sem serem detectados.</p><p><strong>INFILTRADOR</strong></p><p>Ao passar em um Teste de Atributo de Sabedoria CD 16, você pode criar identidades falsas para si mesmo. Criar uma identidade exige 7 dias de pesquisa e um investimento de ฿ 250.000, usados para desenvolver um histórico consistente, profissão, contatos e filiações. Não é possível criar uma identidade pertencente a alguém que realmente exista.</p><p>Você também deve obter roupas apropriadas e documentos que pareçam oficiais — como certificados, cartas de recomendação ou permissões — suficientes para convencer membros da sociedade local de que você é, por exemplo, um médico regional, um funcionário governamental ou um comerciante. Criaturas acreditarão na sua identidade até que surja motivo claro para desconfiar.</p><p>Além disso, você pode confeccionar uma máscara facial ultrafina, reproduzindo com precisão a aparência de uma pessoa que tenha observado por pelo menos 2 horas. A máscara é feita a partir de materiais comuns de maquiagem. Uma criatura desconfiada deve realizar um Teste de Atributo de Sabedoria (Percepção) CD 19 para reconhecer a máscara como falsa. Você pode jogar 1d20 na hora da confecção, se você obtiver 20 no dado, seu disfarce torna-se perfeito, impossível de ser detectado por testes de atributo. Ainda assim, ele pode ser revelado por danos diretos à máscara ou por informações externas que exponham sua farsa.</p><p>Custo: Sempre que quiser se disfarçar com essa característica, você gasta 1d4 caixa de maquiagem.</p><p><strong>LINGUAGEM DE ESPIÃO</strong></p><p>Você dominou Técnicas para ocultar mensagens dentro da fala comum, transmitindo informações secretas de forma imperceptível para quem não conhece esse dialeto secreto. As mensagens podem ser codificadas por meio de:</p><ul><li>Pausas sutis e ritmadas;</li><li>Movimentos específicos das mãos;</li><li>Microexpressões;</li><li>Ajustes intencionais no tom de voz;</li><li>Pequenos tiques voluntários.</li></ul><p>Apenas criaturas que também possuam essa característica conseguem compreender essas mensagens naturalmente. No início de cada dia, você pode instruir uma criatura aliada que não conheça essa linguagem a interpretar uma única mensagem curta, válida até o fim do dia.</p><p>Quando desejar transmitir uma mensagem secreta para alguém que não conhece a linguagem e não foi previamente instruído, você pode realizar um Teste de Atributo de Presença (Atuação) CD 14. Se for bem-sucedido, a criatura compreende a mensagem sem levantar suspeitas.</p><p><strong>DISPOSITIVO DE ESPIÃO</strong></p><p>Você possui um objeto, aparelho ou engenhoca especial — algo que você construiu, encontrou, recebeu ou roubou. Apenas espiões ou indivíduos que tenham passado meses estudando o mecanismo são capazes de operá-lo corretamente. Você, porém, domina seu funcionamento e pode ativar qualquer de suas funções como uma ação bônus.</p><p>O dispositivo sempre se disfarça como um objeto comum, como uma caneta, chapéu, sapato, óculos ou qualquer outro item cotidiano. Sua aparência é escolhida pelo jogador (com aprovação do Narrador). Ele pode conter até três das funções abaixo:</p><ul><li>Alterador de Voz: Ao acionar o dispositivo e encostá-lo na garganta, você é capaz de imitar a voz de qualquer criatura cuja fala tenha escutado nas últimas 24 horas.</li><li>Aparelho de Comunicação: Ao acionar o dispositivo, você pode se comunicar com qualquer Den-Den Mushi que esteja a até 5 km de distância.</li><li>Asa-Delta Oculta: Ao ativar o dispositivo, uma estrutura rígida se desdobra, permitindo que você planar e execute quedas controladas, reduzindo drasticamente a chance de sofrer dano por queda.</li><li>Chave Mestra: Ao acionar o dispositivo enquanto ele estiver em contato com uma fechadura, você consegue abri-la após 1 minuto.</li><li>Escuta Direcional: O dispositivo se transforma em um sensor sonoro extremamente sensível, capaz de captar conversas e ruídos a até 30 metros, mesmo através de paredes.</li><li>Gancho Portátil: Quando ativado, o dispositivo dispara um gancho em linha reta, com alcance de até 15 metros, que se prende a qualquer superfície disponível. Ao acionar novamente, o mecanismo recolhe o cabo, puxando você em direção ao ponto de ancoragem.</li><li>Microcâmera: Quando ativado, grava vídeo e áudio por até 1 hora ou registra até 20 fotos de alta precisão.</li><li>Mini Radar: Ao acionar o dispositivo, um pequeno display se projeta, revelando a localização de qualquer coisa em movimento em um raio de até 6 metros.</li></ul><p><strong>Ferramentas:</strong> 1 mochila pequena, 1 óculos com lente ampliadora, 1 aparelho de escuta, 1 caderno criptografado, 1 kit de disfarce, 1 kit para abrir cadeados, 1 kit de falsificação e 1 mini câmera.</p>'
+    chat: ''
+  identifier: espiao
+  type:
+    value: profissao
+    subtype: ''
+  requirements: Profissão
+  properties: []
+  activities: {}
+  advancement:
+    - _id: G4WTOsni1FjUvNqV
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:dec
+              - skills:ste
+              - skills:ins
+              - skills:inv
+              - skills:prc
+              - skills:slt
+        mode: default
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!P3gsATWyoySQgK9o'
+ownership:
+  default: 0
+flags: {}

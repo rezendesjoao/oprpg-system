@@ -1,0 +1,40 @@
+_id: fVmqHfss3QpbkS4B
+name: Inventor
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>O inventor possui a capacidade de desenvolver os mais diversos dispositivos, mecanismos e engenhocas, concebidos para superar praticamente qualquer desafio. Suas criações podem ser utilizadas tanto em combate quanto em situações de exploração, oferecendo soluções engenhosas para problemas que variam do simples ao extraordinário.</p><p><strong>CRIAR ENGENHOCA</strong></p><p>É possível desenvolver equipamentos com propriedades peculiares e altamente funcionais. Cada engenhoca usa e combina diferentes dials em sua estrutura, mesclados com engenharia avançada para produzir efeitos variados.</p><p>Para criar esses equipamentos, o inventor deve realizar um Teste de Atributo de Sabedoria. Em caso de falha, ele precisa adquirir materiais adicionais equivalentes a 10% do custo total do projeto antes de tentar novamente. Os dials necessários, o custo de produção, o tempo de trabalho e a Classe de Dificuldade estão listados na tabela 'Criar Equipamento Engenhado'.</p><p><strong>ENGENHOCAS COM DIAL</strong></p><table><tr><th>Equipamento</th><th>Dials</th><th>Custo</th><th>Tempo</th><th>CD</th></tr><tr><td>Cool Shooter</td><td>Water Dial, Cool Dial, Frozen Dial (2x)</td><td>฿ 450.000</td><td>2 dias</td><td>18</td></tr><tr><td>Clima-Tact</td><td>Heat Dial, Breath Dial, Spark Dial, Cool Dial</td><td>฿ 90.000</td><td>5 dias</td><td>14</td></tr><tr><td>Perfect Clima-Tact</td><td>Heat Dial, Breath Dial, Spark Dial, Cool Dial</td><td>฿ 180.000</td><td>10 dias</td><td>15</td></tr><tr><td>Sorcery Clima-Tact</td><td>Flame Dial, Jet Dial, Thunder Dial, Frozen Dial</td><td>฿ 300.000</td><td>15 dias</td><td>18</td></tr><tr><td>Burn Bazooka</td><td>Breath Dial (2x), Flame Dial</td><td>฿ 500.000</td><td>2 dias</td><td>17</td></tr><tr><td>Eisen Whip</td><td>Eisen Dial</td><td>฿ 180.000</td><td>2 dias</td><td>16</td></tr><tr><td>Burn Blade</td><td>Flame Dial</td><td>฿ 150.000</td><td>8 horas</td><td>17</td></tr><tr><td>Flash Gun</td><td>Flash Dial</td><td>฿ 150.000</td><td>8 horas</td><td>17</td></tr><tr><td>Jet Board/Jet Gauntlet</td><td>Jet Dial</td><td>฿ 80.000</td><td>8 horas</td><td>17</td></tr><tr><td>Heat Javelin</td><td>Heat Dial</td><td>฿ 120.000</td><td>2 dias</td><td>17</td></tr><tr><td>Kabuto</td><td>Breath Dial</td><td>฿ 70.000</td><td>3 dias</td><td>15</td></tr><tr><td>Jet Ski</td><td>Jet Dial (2x)</td><td>฿ 47.000</td><td>8 horas</td><td>16</td></tr><tr><td>Cutter Shell</td><td>Axe Dial (2x)</td><td>฿ 250.000</td><td>1 dia</td><td>17</td></tr><tr><td>Milky Arrow</td><td>Milk Dial</td><td>฿ 3.000</td><td>30 minutos</td><td>15</td></tr></table><p>Alternativamente, o inventor pode projetar novas tecnologias que reproduzam exatamente os mesmos efeitos dessas armas e equipamentos — por exemplo, desenvolver um sabre de luz no lugar de uma 'Burn Blade'. Sempre que optar por criar uma tecnologia totalmente nova em vez do modelo padrão, o custo final do projeto aumenta em 100 vezes.</p><p><strong>ENGENHOCAS AVANÇADAS</strong></p><p>A partir de conhecimentos muito mais obscuros e de execução complexa, o inventor se torna capaz de transformar em realidade recursos inimagináveis.</p><p>Para criar esses equipamentos, o inventor deve realizar um Teste de Atributo de Sabedoria CD 18. Em caso de falha, ele precisa adquirir materiais adicionais equivalentes a 10% do custo total do projeto antes de tentar novamente.</p><p><strong>BUBBLE GUN (฿ 6.000.000 | 3 dias)</strong></p><p>Você cria uma arma semelhante a uma pistola que, apesar de não utilizar pólvora, consome uma munição de kairoseki (ou quantidade semelhante) a cada disparo. Seu mecanismo dissolve a munição e a converte em uma bolha translúcida que se expande em direção a uma criatura a até 3 metros, envolvendo-a.</p><p>Se o alvo for um usuário de Akuma no Mi, ele recebe a condição 'Enfraquecido', incapaz de romper a bolha, permanecendo flutuando a poucos centímetros do chão. A bolha persiste por 5 minutos antes de estourar.</p><p><strong>BUBBLE SHIELD (฿ 3.500.000 | 5 dias)</strong></p><p>Você cria uma manopla que, ao gastar sua reação, consome uma munição de kairoseki (ou quantidade semelhante) para gerar um escudo que parece uma bolha de sabão.</p><p>Esse escudo anula completamente qualquer efeito ou dano causado ao portador por ataques provenientes de poderes de Akuma no Mi, reduzindo-os a 0.</p><p><strong>GP FLOWER (฿ 250.000 | 1 dia)</strong></p><p>Uma munição especial que, ao ser disparada para o alto por qualquer arma, explode e se dispersa no ar. Durante 10 minutos, dentro de uma esfera de 50 metros de raio, qualquer arma que utilize pólvora falha ao tentar disparar, produzindo apenas flores no lugar dos projéteis.</p><p><strong>DISPARADOR DE POP GREEN (฿ 90.000 | 1 dia)</strong></p><p>Um disparador desenvolvido especificamente para lançar sementes Pop Green. Ele possui todas as propriedades de um mosquete, mas só é capaz de disparar Pop Greens e nenhum outro tipo de munição.</p><p><strong>INVENÇÃO IMPROVISADA (REGRA OPCIONAL)</strong></p><p>Como regra alternativa, que o Narrador optar usar, o inventor é capaz de criar, com os recursos imediatos à sua volta, um dispositivo improvisado para superar praticamente qualquer desafio — desde que passe em um Teste de Atributo de Sabedoria, cuja CD é determinada pelo Narrador.</p><p>Por exemplo, ele pode trançar uma corda utilizando partes da vegetação local para alcançar a entrada de uma caverna situada abaixo de um penhasco, montar um bote funcional a partir de pedaços de madeira encontrados na região ou até mesmo improvisar uma motocicleta usando sucata e força animal como propulsão.</p><p><strong>Ferramentas:</strong> 1 mochila pequena, 1 kit de chaves, 1 kit de construção, livros de engenharia criativa e 1 caixa com peças diversas.</p>
+    chat: ''
+  identifier: inventor
+  type:
+    value: profissao
+    subtype: ''
+  requirements: Profissão
+  properties: []
+  activities: {}
+  advancement:
+    - _id: 3La8VYZJmsfgm7sU
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:his
+              - skills:inv
+              - skills:ins
+              - skills:nat
+              - skills:slt
+              - skills:prc
+        mode: default
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!fVmqHfss3QpbkS4B'
+ownership:
+  default: 0
+flags: {}

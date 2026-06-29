@@ -1,0 +1,40 @@
+_id: AUaEOS44Wx2wBLt6
+name: Navegador
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>Responsáveis por conduzir o navio até o destino, independentemente dos imprevistos que possam surgir durante a viagem, os navegadores experientes conseguem prever mudanças climáticas através de sinais sutis, evitando desastres. Um bom navegador é indispensável para cruzar a Grand Line com segurança.</p><p><strong>NAVEGAÇÃO</strong></p><p>Testes de Navegação ocorrem sempre que uma embarcação realiza viagens em alto-mar. O Narrador pode solicitar que o navegador faça um Teste de Atributo de Sabedoria para determinar se ele é bem-sucedido em evitar perigos climáticos ou encontros hostis.</p><p>A dificuldade e a frequência desses testes variam conforme o tipo de mar percorrido, conforme indicado na Tabela de Mares do (Guia do Narrador).</p><p>Uma tripulação sem um membro minimamente capacitado — como um navegador ou timoneiro — deve realizar todos os Testes de Navegação utilizando o modificador de Vontade do Capitão, sempre com desvantagem, o que reduz drasticamente suas chances de sobrevivência desbravando os mares.</p><p>O navegador, além de considerar os Testes de Navegação como testes relacionados à sua profissão, recebe os seguintes benefícios nesses testes:</p><ul><li>Dos Males, o Menor: Quando não passar em Testes de Navegação, você pode jogar duas vezes o d10 ao invés de uma, escolhendo qualquer um dos resultados.</li><li>Cortina Climática: Quando você falhar em um Teste de Navegação e o resultado for ''Animal Alado'', ''Ataque Pirata'', ''Frota da Marinha'' ou ''Rei dos Mares'', você pode realizar um Teste de Atributo de Sabedoria, com a CD correspondente ao mar (Guia do Narrador) navegado, para tentar despistar a ameaça.</li><li>Preparo Infalível: Quando não passar em um Teste de Navegação você pode, uma vez por viagem, trocar uma falha por um sucesso.</li></ul><p><strong>PREVISÃO MARÍTIMA</strong></p><p>Um navegador está sempre atento às menores mudanças do ambiente — uma brisa fria, uma mudança súbita de pressão, ou o voo atípico de aves migratórias.</p><p>Antes de iniciar uma viagem, o navegador pode realizar um Teste de Atributo de Sabedoria, com a CD correspondente ao mar. Em caso de sucesso, a partida é adiada em 1d4 dias, mas todos os Testes de Navegação realizados durante a viagem recebem vantagem.</p><ul><li>Blues: CD 12.</li><li>Grand Line (Paradise): CD 16.</li><li>Grand Line (Novo Mundo): CD 18.</li><li>Outros Tipos de Mares: CD 14.</li></ul><p><strong>MENTE AFIADA</strong></p><p>Como navegador, você usa constantemente seus conhecimentos para guiar a tripulação e auxiliá-la a alcançar o destino com precisão. Você recebe as seguintes características permanentes:</p><ul><li>Você sempre sabe qual caminho é o Norte;</li><li>Você sempre sabe o número de horas restantes antes do próximo nascer ou pôr do sol;</li><li>Você pode se lembrar com precisão de qualquer mapa, caminho ou paisagem que tenha visto em um período de 30 dias.</li></ul><p><strong>CRIAR MAPA</strong></p><p>Durante suas viagens, você pode desenhar mapas astronômicos e marítimos que auxiliarão futuras expedições pelas mesmas rotas.</p><p>Faça um Teste de Atributo de Sabedoria, com a CD correspondente ao mar, para criar um mapa cartográfico da região. Em viagens onde você possua um mapa válido da área, a duração da viagem é reduzida pela metade e todos os Testes de Navegação são automaticamente bem-sucedidos.</p><ul><li>Blues: CD 10.</li><li>Grand Line (Paradise): CD 14.</li><li>Grand Line (Novo Mundo): CD 16.</li><li>Outros Tipos de Mares: CD 12.</li></ul><p><strong>Ferramentas:</strong> 1 mochila pequena, livros de astronomia, geografia e navegação, 1 tipo de bússola à sua escolha (bússola, log pose, log pose de 3 agulhas), 1 compasso, 1 balestilha e 1 astrolábio.</p>'
+    chat: ''
+  identifier: navegador
+  type:
+    value: profissao
+    subtype: ''
+  requirements: Profissão
+  properties: []
+  activities: {}
+  advancement:
+    - _id: 7iY72imHF86PqSnB
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:dec
+              - skills:ins
+              - skills:inv
+              - skills:prc
+              - skills:per
+              - skills:sur
+        mode: default
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!AUaEOS44Wx2wBLt6'
+ownership:
+  default: 0
+flags: {}

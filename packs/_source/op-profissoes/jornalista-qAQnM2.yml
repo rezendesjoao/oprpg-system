@@ -1,0 +1,40 @@
+_id: qAQnM2SvIM3GO1wx
+name: Jornalista
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Jornalistas são especialistas em registrar, investigar e transmitir informações, transformando tudo em reportagens, fotos, dossiês e publicações que podem influenciar nações inteiras.</p><p><strong>PESQUISA JORNALÍSTICA</strong></p><p>Seus conhecimentos permitem que você domine Técnicas de investigação e coleta de informações, concedendo-lhe as seguintes características:</p><p><strong>INTERPRETAR FATOS</strong></p><p>Desde que o jornalista tenha acesso a informações, fotos ou gravações de um acontecimento, ele pode usar seus conhecimentos para preencher lacunas e interpretar a situação como se estivesse presenciando o evento em tempo real.</p><p>O Narrador fornece uma suposição do que pode ter acontecido, que estará mais ou menos próxima da realidade dependendo do resultado de um Teste de Atributo de Sabedoria, com CD determinada pelo Narrador (que pode optar por não revelar a dificuldade nem se o teste foi bem-sucedido). Caso novas informações surjam, o teste pode ser repetido.</p><p><strong>APURAR A VERDADE</strong></p><p>Você desenvolveu Técnicas avançadas de entrevista, análise comportamental e leitura de linguagem corporal. Sempre que interage com alguém por pelo menos 5 minutos, pode fazer um Teste de Atributo de Sabedoria (Intuição) CD 17. Em caso de sucesso, você determina se a criatura está mentindo, omitindo fatos ou emocionalmente instável.</p><p>Se o resultado for um 20 natural, você também identifica a emoção predominante da criatura e uma possível motivação imediata.</p><p><strong>REGISTRO IMPECÁVEL</strong></p><p>Você possui facilidade em registrar informações de forma organizada, útil e precisa. Sempre que fizer anotações, fotos, vídeos ou gravações com qualquer dispositivo, seus Testes de Atributo de Sabedoria (Investigação) feitos posteriormente com base nesse material recebem vantagem. Além disso, você nunca esquece o que foi registrado nesses arquivos — incluindo falas detalhadas, imagens, textos, entre outros.</p><p><strong>COLETOR DE PROVAS</strong></p><p>Ao examinar um local por 10 minutos, você pode fazer um Teste de Atributo de Sabedoria (Investigação) CD 15. Com um sucesso, você encontra 1 evidência relevante (pegadas, fibras, documentos, resquícios, gravações ocultas, etc.) ou descobre que alguma evidência anterior é falsa.</p><p>Se tirar 20 natural, você descobre também uma pista oculta ou deliberadamente escondida, são exista.</p><p><strong>REDE DE INFORMAÇÕES</strong></p><p>Você mantém uma lista ampla de fontes, informantes e conhecidos em diversos setores. Uma vez por descanso longo, você pode acionar essa rede para obter uma informação específica, um boato, um documento simples ou uma dica útil.</p><p><strong>PODER DA IMPRENSA</strong></p><p>Sua influência é capaz de moldar a opinião pública, alterar narrativas e impactar diretamente decisões políticas e sociais. Podendo exercer as seguintes ações:</p><p><strong>FAKE NEWS</strong></p><p>O jornalista, por meio de seus contatos e redes de influência, é capaz de divulgar informações verdadeiras, mas também de espalhar desinformação em escala global. No dia seguinte, o mundo inteiro toma conhecimento do que foi disseminado. Alguns exemplos são:</p><ul><li>Localização falsa de pessoas ou itens;</li><li>Divulgação da falsa morte de uma personalidade;</li><li>Anúncio de promoção ou renúncia fictícia de alguém em um cargo/título importante.</li></ul><p>No caso de notícias falsas, elas podem ser desmentidas em 1d6 dias, acompanhadas de retratações públicas em diversos jornais. Mesmo informações verdadeiras podem ser negadas caso contrariem os interesses do Governo Mundial.</p><p><strong>MANIPULAR NARRATIVAS</strong></p><p>Você domina a arte de moldar discursos e persuadir multidões. Ao gastar 10 minutos conversando, discursando ou espalhando boatos, você pode realizar um Teste de Atributo de Presença (Persuasão ou Enganação) CD 15.</p><p>Se for bem-sucedido, uma pequena comunidade passa a acreditar na história, rumor ou versão divulgada. A cada dia, essa informação se espalha gradualmente até alcançar toda a ilha ou região equivalente.</p><p><strong>PRESSÃO DA IMPRENSA</strong></p><p>Você sabe exatamente como utilizar a força da opinião pública para criar pressão massiva sobre uma figura conhecida, gerando questionamentos, desconfiança e até revolta popular. Essa pessoa será obrigada a se posicionar diante da situação, tentando conter o dano.</p><p>Você só pode manter uma pauta ativa por vez, e a pressão midiática dura por 1d6 semanas. Durante esse período, você pode se beneficiar da instabilidade, da atenção gerada ou das decisões precipitadas tomadas pela autoridade alvo.</p><p><strong>Ferramentas:</strong> 1 mochila pequena, 1 caderno de anotações, 1 máquina fotográfica portátil, 1 gravador de voz, 1 livro de Técnicas de entrevista.</p>
+    chat: ''
+  identifier: jornalista
+  type:
+    value: profissao
+    subtype: ''
+  requirements: Profissão
+  properties: []
+  activities: {}
+  advancement:
+    - _id: av43X1X1wBqdM0QE
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:dec
+              - skills:his
+              - skills:inv
+              - skills:ins
+              - skills:prc
+              - skills:per
+        mode: default
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!qAQnM2SvIM3GO1wx'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,40 @@
+_id: 1WADKpDC1CKszLvp
+name: Carpinteiro
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>O carpinteiro é o responsável por manter a embarcação em perfeito estado, garantindo reparos constantes e realizando melhorias sempre que possível.</p><p><strong>TRABALHO EM MADEIRA</strong></p><p>O carpinteiro possui o conhecimento e o vigor necessários para construir embarcações de qualquer porte, seus cômodos, e outros componentes. Detalhes sobre tempo, valores, peças e propriedades das embarcações estão no Capítulo 14 deste livro.</p><ul><li>Eficiência: Você reduz em 40% todos os possíveis custos adicionais de construção e reparo de embarcações, determinados pelo Narrador e que não sejam previamente definidos por regras ou não possuam um custo determinado, evitando desperdícios de matéria-prima.</li><li>Eficácia: Embarcações construídas por você recebem +12 nós (24 km/h) de velocidade e +3 em CR.</li><li>Corpo Preparado: Enquanto estiver trabalhando na construção ou reparo de uma embarcação, seus dias ainda podem ser contabilizados normalmente para treinamentos.</li></ul><p><strong>CONSERTO EM MADEIRA</strong></p><p>Conforme o navio sofre danos, cabe ao carpinteiro realizar os reparos. Esse trabalho exige atenção e qualidade, pois é pensado para garantir a durabilidade da embarcação. Por isso, consome mais tempo e requer o uso do tipo de madeira mais adequado para longas navegações.</p><p>O tempo de conserto varia de acordo com o nível de dano da embarcação, além de envolver custos adicionais com materiais necessários para o reparo. As regras específicas estão descritas na tabela ''Navio Danificado''.</p><p><strong>NAVIO DANIFICADO</strong></p><table><tr><td>Estado</td><td>Pontos de Vida</td><td>Tempo de Reparo</td><td>Custo Adicional</td></tr><tr><td>Normal</td><td>99% ou menos</td><td>1d6 dias</td><td>฿ 15.000</td></tr><tr><td>Danificado</td><td>80% ou menos</td><td>2d6 dias</td><td>฿ 100.000</td></tr><tr><td>Muito Danificado</td><td>50% ou menos</td><td>4d6 dias</td><td>฿ 300.000</td></tr><tr><td>Irreparável</td><td>5% ou menos</td><td>-</td><td>-</td></tr></table><p>O custo para recuperar os Pontos de Vida de uma embarcação varia conforme a madeira utilizada no reparo:</p><ul><li>Cedro: ฿ 40.000 por cada PV recuperado.</li><li>Carvalho: ฿ 100.000 por cada PV recuperado.</li><li>Cerejeira: ฿ 190.000 por cada PV recuperado.</li><li>Adam: ฿ 500.000 por cada PV recuperado.</li></ul><p><strong>CONFECÇÃO RÁPIDA</strong></p><p>Desde que haja madeira disponível, um carpinteiro pode criar praticamente qualquer estrutura. Com uma ação (equivalente a 6 segundos), o carpinteiro consegue construir 1,5 m² de uma estrutura.</p><p>Cada segmento construído possui Classe de Resistência 10 e 10 Pontos de Vida para cada 1,5 m².</p><ul><li>Chão: Estrutura destinada a criar ou ampliar áreas para livre movimentação das criaturas.</li><li>Escada: Estrutura composta por degraus, permitindo o acesso a locais mais altos de forma rápida.</li><li>Parede: Estrutura erguida para proteção contra ataques e intempéries. Criaturas que utilizarem essas paredes como cobertura podem se beneficiar das regras de cobertura (ver Capítulo 12).</li><li>Ponte: Estrutura ideal para conectar áreas elevadas e separadas da maneira mais direta possível. Permite que criaturas se desloquem em segurança, tanto normalmente quanto em disparada, sem a necessidade de realizar Salvaguardas para evitar quedas.</li></ul><p>Custo: Ao usar a habilidade Confecção Rápida, você gasta ฿ 22.000 em tábuas de madeira como matéria-prima (ou uma quantidade equivalente de madeira determinada pelo Narrador, como destroços de navios ou troncos de árvores) para cada 1,5 m², além de 1d4 kits de construção.</p><p><strong>REPARO EMERGENCIAL</strong></p><p>Um carpinteiro habilidoso é capaz de realizar reparos no navio mesmo em meio a uma batalha, em alto-mar e com recursos limitados. Para isso, pode utilizar qualquer material disponível: equipamentos ao alcance, partes do próprio navio ou até destroços da embarcação inimiga.</p><p>Para executar o reparo, faça um Teste de Atributo de Sabedoria CD 15. Em caso de falha, você pode tentar novamente após 5 minutos.</p><p>O processo leva 1 minuto e recupera 30d10 + 50 Pontos de Vida do navio. Contudo, esse reparo é temporário: após 2d6 dias, todos os PV restaurados dessa forma são perdidos.</p><p>Se um novo reparo emergencial for realizado enquanto outro ainda estiver ativo, ele substitui os Pontos de Vida restaurados anteriormente, em vez de acumulá-los.</p><p>Custo: Sempre que você usar essa característica, você gasta 1d4 kit de construção.</p><p><strong>Ferramentas:</strong> Ferramenta de Carpinteiro: 1 mochila pequena, livros de marcenaria, 10 plantas de construção, 1 serrote, 1 martelo, 1 kit de construção.</p>'
+    chat: ''
+  identifier: carpinteiro
+  type:
+    value: profissao
+    subtype: ''
+  requirements: Profissão
+  properties: []
+  activities: {}
+  advancement:
+    - _id: GnExRcWh1ujJUO77
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:acr
+              - skills:ath
+              - skills:his
+              - skills:inv
+              - skills:per
+              - skills:slt
+        mode: default
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!1WADKpDC1CKszLvp'
+ownership:
+  default: 0
+flags: {}

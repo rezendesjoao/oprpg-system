@@ -1,0 +1,57 @@
+_id: SI2CHtLPQOkFSRmk
+name: Sem Profissão
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>O jogador pode escolher não exercer nenhuma profissão para dedicar-se totalmente ao seu Estilo de Combate e a ajudar seus companheiros em suas tarefas. Você se torna incapaz de aprender qualquer profissão e recebe as seguintes características:</p><p><strong>Ajudante Perfeito</strong></p><p>Quando uma criatura fizer um Teste de Atributo relacionado a qualquer profissão, você pode ajudá-la e conceder um bônus de +5 na jogada (em combate, isso requer a ação 'Ajudar'). Essa característica pode ser usada 3 vezes, e todos os usos são recuperados ao final de um descanso longo.</p><p><strong>Foco</strong></p><p>Você se torna proficiente em 2 Perícias de sua escolha, com exceção de 'Haki', 'Sobrenatural' e 'Sorte'.</p><p><strong>Parceiro de Treino</strong></p><p>Você reduz pela metade (50%, arredondado para cima) o tempo de treinamento de uma criatura, desde que o treinamento não exija um tutor. Durante esse período, você não pode utilizar dias para seus próprios treinamentos.</p><p><strong>Tempo Livre</strong></p><p>Por não dedicar tempo ao estudo de uma Profissão, você pode assumir até 5 funções do navio (ver Capítulo 13) sem ser impedido de realizar treinamentos ou de ajudar seus companheiros nos deles.</p>
+    chat: ''
+  identifier: sem-profissao
+  type:
+    value: profissao
+    subtype: ''
+  requirements: Profissão (Alternativa)
+  properties: []
+  activities: {}
+  uses:
+    max: '3'
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+        formula: ''
+  advancement:
+    - _id: xStUyOv3fCZZuC90
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:ath
+              - skills:acr
+              - skills:ste
+              - skills:slt
+              - skills:his
+              - skills:inv
+              - skills:med
+              - skills:nat
+              - skills:sur
+              - skills:ins
+              - skills:prc
+              - skills:prf
+              - skills:dec
+              - skills:itm
+              - skills:per
+              - skills:prv
+        mode: default
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!SI2CHtLPQOkFSRmk'
+ownership:
+  default: 0
+flags: {}

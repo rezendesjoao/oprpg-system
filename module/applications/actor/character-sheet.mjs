@@ -35,6 +35,7 @@ import "./jj/reducao-dano.mjs";
 import "./jj/npc-generator-dialog.mjs";
 import "./jj/heal-limit.mjs";
 import "./jj/constant-cost.mjs";
+import "./jj/profissao-graduacao.mjs";
 
 
 const TextEditor = foundry.applications.ux.TextEditor.implementation;

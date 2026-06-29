@@ -13,7 +13,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import YAML from "js-yaml";
-import { CLASSES, SPECIES, BACKGROUNDS, CAMINHOS, SINGULARIDADES, DEFEITOS, CODIGOS } from "./op-data.mjs";
+import { CLASSES, SPECIES, BACKGROUNDS, CAMINHOS, SINGULARIDADES, DEFEITOS, CODIGOS, PROFISSOES } from "./op-data.mjs";
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SRC = path.join(ROOT, "packs", "_source");
@@ -45,7 +45,8 @@ function slug(s) { return String(s).toLowerCase().normalize("NFD").replace(/[̀-
 
 const written = {
   "op-classes": 0, "op-subclasses": 0, "op-features": 0, "op-techniques": 0, "op-species": 0,
-  "op-backgrounds": 0, "op-caminhos": 0, "op-singularidades": 0, "op-defeitos": 0, "op-codigos": 0
+  "op-backgrounds": 0, "op-caminhos": 0, "op-singularidades": 0, "op-defeitos": 0, "op-codigos": 0,
+  "op-profissoes": 0
 };
 function writeDoc(pack, doc) {
   const dir = path.join(SRC, pack);
@@ -438,6 +439,7 @@ function persRequirements(typeValue, entry) {
   if ( entry.requirements ) return entry.requirements;
   if ( typeValue === "caminho" ) return "Caminho";
   if ( typeValue === "codigoHonra" ) return "Código de Honra";
+  if ( typeValue === "profissao" ) return "Profissão";
   if ( entry.tier && TIERS[entry.tier] ) {
     const [label, cost] = TIERS[entry.tier];
     if ( typeValue === "singularidade" ) return `Singularidade ${label} — ${cost} espaço${cost > 1 ? "s" : ""}`;
@@ -479,5 +481,8 @@ for ( const c of CAMINHOS )        writeDoc("op-caminhos",       personalizacaoI
 for ( const s of SINGULARIDADES )  writeDoc("op-singularidades", personalizacaoItem(s, "singularidade"));
 for ( const d of DEFEITOS )        writeDoc("op-defeitos",       personalizacaoItem(d, "defeito"));
 for ( const k of CODIGOS )         writeDoc("op-codigos",        personalizacaoItem(k, "codigoHonra"));
+
+// Capítulo 4 — Profissões
+for ( const p of PROFISSOES )      writeDoc("op-profissoes",     personalizacaoItem(p, "profissao"));
 
 console.log("Gerado:", JSON.stringify(written, null, 0));

@@ -1,0 +1,40 @@
+_id: 3AVSNidsgqAdwi9m
+name: Adestrador
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>Um especialista em lidar com os mais diversos tipos de criaturas. O adestrador possui uma forte conexão com os animais, torna-se capaz não apenas de interagir, mas também compreendê-los.</p><p><strong>VÍNCULO ANIMAL</strong></p><p>Você pode escolher um único animal para ser seu companheiro mais fiel, ele se tornará seu ''Animal Vinculado'' e estará sempre ao seu lado. Conforme você melhora como adestrador, seu companheiro animal também se torna mais habilidoso, chegando ao ponto de ser incomparável com qualquer outro animal da mesma espécie, recebendo as seguintes características:</p><ul><li>Você pode montar seu animal vinculado sem receber penalidades, contanto que ele tenha a mesma categoria de tamanho que você ou maior. Independentemente de você ter proficiência em veículos e montarias;</li><li>Salvaguardas de Destreza para manter-se montado, no seu animal, são feitos com vantagem, mesmo sem sela;</li><li>Caso o animal vinculado morra ele pode ser substituído por um novo dentro da tabela ''Animal Vinculado''. Ele também pode ser trocado, com aprovação do Narrador;</li><li>Enquanto você possuir seu animal vinculado, todos os seus gastos de alimentação e hospedagem são dobrados.</li></ul><p><strong>ESCOLHA UM ANIMAL</strong></p><p>Escolha uma criatura da tabela ''Animal Vinculado''. Caso queira outro animal, ele deve ser aprovado pelo Narrador.</p><p><strong>ANIMAL VINCULADO</strong></p><table><tr><td>Animal</td><td>For</td><td>Des</td><td>Con</td><td>Tamanho</td><td>Deslocamento</td><td>Voo</td><td>Nado</td></tr><tr><td>Águia/Falcão</td><td>16</td><td>20</td><td>10</td><td>Pequeno</td><td>6 metros</td><td>12 metros</td><td>6 metros</td></tr><tr><td>Crocodilo/Leão/Lobo/Macaco</td><td>20</td><td>14</td><td>12</td><td>Médio</td><td>9 metros</td><td>-</td><td>9 metros</td></tr><tr><td>Cachorro/Cobra/Gato/Raposa</td><td>12</td><td>20</td><td>14</td><td>Pequeno</td><td>12 metros</td><td>-</td><td>9 metros</td></tr><tr><td>Cavalo</td><td>16</td><td>10</td><td>20</td><td>Grande</td><td>12 metros</td><td>-</td><td>3 metros</td></tr><tr><td>Coruja/Pombo/Morcego</td><td>10</td><td>20</td><td>16</td><td>Miúdo</td><td>9 metros</td><td>9 metros</td><td>6 metros</td></tr><tr><td>Gorila/Panda/Touro/Urso</td><td>20</td><td>10</td><td>16</td><td>Grande</td><td>7,5 metros</td><td>-</td><td>7,5 metros</td></tr></table><p><strong>CARACTERÍSTICAS DO ANIMAL VINCULADO</strong></p><ul><li>O Animal Vinculado possui tamanho e formas de deslocamento de acordo com a tabela ''Animal Vinculado'';</li><li>Ao término de um descanso longo, o Animal Vinculado recupera todos os Pontos de Vida;</li><li>Salvaguardas e Testes de Atributo de Sabedoria, Vontade e Presença do animal são os mesmos valores do adestrador;</li><li>Salvaguardas e Testes de Atributo de Força, Destreza e Constituição do animal são de acordo com a tabela ''Animal Vinculado'' e sempre é adicionado o Bônus de Proficiência do adestrador;</li><li>O Animal Vinculado tem a mesma CR do adestrador e metade do seu PV (arredondado para baixo).</li></ul><p><strong>REGRAS DE COMBATE</strong></p><p>Ataques</p><ul><li>Jogadas de ataque usam o modificador do atributo principal (à escolha do jogador) + o Bônus de Proficiência do adestrador;</li><li>O dano base dos ataques é 1d4 + o modificador do atributo principal (à escolha do jogador) do adestrador;</li><li>O tipo de dano pode ser Perfurante, Cortante ou Contundente, dependendo da natureza do ataque.</li></ul><p>Iniciativa e Atividades Padrões</p><ul><li>O animal vinculado possui a mesma iniciativa do adestrador;</li><li>Ele pode se deslocar no turno do adestrador;</li><li>As ações disponíveis, quando comandado, são: Atacar (duas jogadas de ataque), Disparada, Esconder e Procurar.</li></ul><p><strong>TREINAMENTO ANIMAL</strong></p><p>Você é capaz de realizar treinamentos intensivos com seu Animal Vinculado, aprimorando significativamente suas habilidades. A cada 2 níveis de personagem (ou seja, a cada nível par), você pode escolher duas das opções abaixo (que podem ser escolhidas mais de uma vez) para beneficiar o animal vinculado, até o máximo de 6 vezes por animal:</p><ul><li>Poder Bruto: As jogadas de ataque do animal aumentam em um passo. O aumento dos passos sendo: 1d4 para 1d6; 1d6 para 1d8; 1d8 para 1d10; 1d10 para 1d12; e 1d12 para 2d6.</li><li>Super Nutrição: O animal aumenta uma categoria de tamanho, até o máximo Enorme.</li><li>Treino de Velocidade: O deslocamento terrestre e de nado do animal aumenta em 3 metros, até o máximo de 18 metros; ou o deslocamento de voo aumenta em 1,5 metro, até o máximo de 15 metros.</li><li>Melhorar Potencial: O animal adquire 2 Traços Comuns ou 1 Traço Específico das Zoan (ver Capítulo 6). Os traços escolhidos ignoram o requisito de forma, devem refletir as características do animal e precisam da aprovação do Narrador.</li></ul><p>Se o animal morrer ou for substituído, os treinamentos não são transferidos para o novo Animal Vinculado.</p><p><strong>ADESTRAR ANIMAIS</strong></p><p>Ao tentar adestrar um animal selvagem, o Narrador pode solicitar um Teste de Atributo de Sabedoria contra uma CD igual a 10 + o Nível de Desafio do alvo.</p><ul><li>O animal adestrado permanecerá ao seu lado por 24 horas, podendo ser montado e usando habilidades conforme ordenado;</li><li>Se receber dano, for obrigado a se ferir ou a atacar seus próprios companheiros, o animal se liberta imediatamente do controle, podendo fugir ou tornar-se hostil;</li><li>Não é possível manter mais de um animal adestrado ao mesmo tempo, isso não inclui o Animal Vinculado.</li></ul><p>Alternativamente, o mesmo teste pode ser usado para comunicação, afugentar ou acalmar o animal. Porém, um animal acalmado voltará a ser hostil caso ele, ou membros de seu grupo, sejam atacados ou ameaçados de qualquer forma.</p><p><strong>Ferramentas:</strong> Ferramentas de Adestrador: 1 mochila pequena, 30 rações para animais, livros de veterinária, nutrição animal e de treinamento animal, chicote, apito, 1 kit médico e 3 kits de primeiros socorros.</p>'
+    chat: ''
+  identifier: adestrador
+  type:
+    value: profissao
+    subtype: ''
+  requirements: Profissão
+  properties: []
+  activities: {}
+  advancement:
+    - _id: dLe8VcWm9Wilq3BW
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:acr
+              - skills:prf
+              - skills:ins
+              - skills:prc
+              - skills:per
+              - skills:sur
+        mode: default
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!3AVSNidsgqAdwi9m'
+ownership:
+  default: 0
+flags: {}

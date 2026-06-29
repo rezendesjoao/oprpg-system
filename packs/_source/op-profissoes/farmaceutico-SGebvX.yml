@@ -1,0 +1,40 @@
+_id: SGebvXN0UdtjqQfL
+name: Farmacêutico
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>Farmacêuticos são mestres na manipulação do corpo humano e das substâncias que o afetam. Utilizando de química avançada, eles criam drogas, estimulantes e antídotos capazes de levar qualquer organismo ao limite.</p><p><strong>DROGAS ESPECIAIS</strong></p><p>Você é capaz de criar substâncias especiais que levam o corpo humano ao limite e produzem reações extraordinárias. Para fabricar cada uma dessas drogas, é necessário estar em um laboratório ou ambiente adequado. O custo em materiais, o tempo de produção e a quantidade gerada estão descritos em cada item. As drogas são as seguintes:</p><p><strong>ROMPANTE LUNAR (฿ 250.000 | 7 dias | 1 pílula)</strong></p><p>Quando um Mink consome essa droga, sua transformação Sulong é forçada a se manifestar por até 1 minuto, mesmo sem a presença da lua cheia. O Mink consegue controlar a forma caso já tenha esse controle naturalmente. Após 1 minuto, ele sofre os efeitos equivalentes a 2 Níveis de Exaustão por até 2 horas. Caso consuma novamente, os efeitos aumentam em mais 2 Níveis de Exaustão.</p><p><strong>REMÉDIO MILAGROSO DA TRIBO MINK (฿ 500.000 | 12 dias | 1 dose)</strong></p><p>Ao consumir esse remédio, você recupera todos os seus Pontos de Vida e Pontos de Poder por 5 minutos. Ao final desse período, você cai inconsciente com 0 Pontos de Vida. Além disso, deve realizar uma Salvaguarda de Constituição CD 17; se falhar, seu personagem morre.</p><p><strong>RUMBLE BALL (฿ 100.000 | 5 dias | 3 pílulas)</strong></p><p>Ao consumir essa droga, caso você seja um usuário de Akuma no Mi do tipo Zoan, durante 1 minuto você recebe os benefícios do treinamento ''Controle Corporal'' e pode acessar mais 2 Points (que podem ser criados pelo jogador com aprovação do Narrador ou escolhidos entre os ''Modelos Especiais de Points'' do Capítulo 6). Ao consumir 3 Rumble Balls entre descansos longos, você força o despertar do seu fruto por 5 minutos, sofrendo as consequências descritas no Capítulo 6. Você pode controlar a forma desperta caso já possua esse controle.</p><p><strong>ENERGY STEROIDS (฿ 1.000.000 | 7 dias | 1 pílula)</strong></p><p>Ao consumir essa droga, você recupera uma quantidade de Pontos de Vida igual a 10 vezes o seu nível de personagem e uma quantidade de Pontos de Poder igual ao seu nível de personagem. Além disso, todo dano causado por você recebe 1d6 adicional, até o final de um descanso curto ou longo, sem aumento desse bônus de dano ao consumir doses extras. Sempre que consumir essa droga, role 1d8. Em um resultado 4 ou menos, você perde 1 ponto do atributo de Constituição, por 1 mês. Em um resultado 1, perde 2 pontos do atributo de Constituição permanentemente.</p><p><strong>ANTIDOTO UNIVERSAL (฿ 300.000 | 1 hora | 1 dose)</strong></p><p>Desde que possua uma amostra do sangue do envenenado ou do próprio veneno, você consegue criar um antídoto capaz de neutralizar o agente tóxico em ação no próximo descanso longo (que deve durar 36 horas) da criatura afetada.</p><p><strong>CONTROLE DE DOENÇAS</strong></p><p>Farmacêuticos também pesquisam e armazenam amostras de doenças com as quais já tiveram contato, para proteger sua tripulação e lidar melhor com novos agentes infecciosos.</p><p>Quando uma criatura sofre os efeitos de uma doença ou veneno, você pode realizar um Teste de Atributo de Sabedoria CD 16 para analisar sua composição. Em caso de sucesso, após 3d6 dias, você coleta informações e manipula o agente para os seguintes usos:</p><ul><li>Criar Cura: Com um Teste de Atributo de Sabedoria CD 15 e 2 horas de trabalho, você produz 5 doses de antídoto, cura ou vacina. Criaturas que usarem as doses removem quaisquer efeitos ou condições causadas pelo agente durante batalhas e ficam totalmente curadas em 1d4 horas (quando a doença pode ser curada);</li><li>Criar Cura em Massa: Com um Teste de Atributo de Sabedoria CD 18 e 5 horas de trabalho, você produz 1 dose especial que, ao entrar em contato com o ar, libera uma fumaça com os mesmos efeitos em uma esfera de 9 metros de raio. Todas as criaturas afetadas removem efeitos e condições durante batalhas e ficam totalmente curadas em 1d12 horas (quando a doença pode ser curada).</li></ul><p><strong>TOXICOLOGIA</strong></p><p>Desde que possua um kit de venenos, você pode criar, identificar, tratar e aplicar substâncias venenosas a partir de diversos materiais.</p><p><strong>PROFICIÊNCIA EM TESTES ESPECÍFICOS</strong></p><p>Você pode aplicar seu Bônus de Proficiência em perícias específicas relacionadas ao uso de venenos.</p><ul><li>Investigação/Percepção: Você ganha vantagem ao examinar locais, objetos ou corpos em busca de indícios de envenenamento. Seu olhar treinado detecta sutilezas que passariam despercebidas a olhos comuns.</li><li>Medicina: Seu conhecimento de venenos permite diagnosticar e tratar com mais eficácia vítimas intoxicadas, fornecendo melhores cuidados e aumentando as chances de recuperação.</li><li>Sobrevivência: Você reconhece plantas, animais e substâncias naturais que possuem propriedades venenosas, conseguindo evitá-las ou colhê-las com segurança durante expedições.</li><li>Prestidigitação: Sua proficiência permite aplicar ou manipular venenos com segurança, evitando qualquer risco de contaminação acidental.</li></ul><p><strong>Ferramentas:</strong> 1 mochila pequena, 1 kit médico, 1 kit de pesquisa, 1 kit de primeiros socorros, 1 kit de herbalismo, 1 kit de venenos, livros de farmácia e biologia química e 1 conjunto de reagentes básicos.</p>'
+    chat: ''
+  identifier: farmaceutico
+  type:
+    value: profissao
+    subtype: ''
+  requirements: Profissão
+  properties: []
+  activities: {}
+  advancement:
+    - _id: 5RoeDrLF1OmD1i0Q
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:his
+              - skills:ins
+              - skills:inv
+              - skills:med
+              - skills:nat
+              - skills:prc
+        mode: default
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!SGebvXN0UdtjqQfL'
+ownership:
+  default: 0
+flags: {}

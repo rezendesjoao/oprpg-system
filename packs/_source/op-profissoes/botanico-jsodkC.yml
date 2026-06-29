@@ -1,0 +1,40 @@
+_id: jsodkCFbNdaUofM5
+name: Botânico
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>O mundo abriga uma vasta variedade de plantas com propriedades extraordinárias. Os botânicos são especialistas em compreender, manipular e aproveitar ao máximo tudo aquilo que as plantas podem oferecer.</p><p><strong>MANIPULAÇÃO DE PLANTAS</strong></p><p>Apenas os botânicos possuem o conhecimento e a Técnica necessários para extrair todo o potencial dessas espécies e utilizá-las em prol dos seus objetivos. As manifestações mais comuns dessa manipulação incluem:</p><p><strong>CULTIVAR POP GREEN</strong></p><p>Você se torna capaz de cultivar e utilizar sementes Pop Green, seguindo as regras descritas no Guia do Narrador. Além disso, a cada 10 novas sementes que você produzir, você pode escolher qual tipo de Pop Green germinará no início do próximo dia.</p><p><strong>CRIAR VIVRE CARD</strong></p><p>Você pode identificar e coletar a semente de uma árvore especial conhecida como Vivre Tree. Essa árvore exige cuidados extremamente específicos e meticulosos, levando 1 mês para amadurecer até formar uma cavidade natural onde pode ser colocado um pedaço de unha, pele ou fio de cabelo de uma criatura. Após 1 semana de nutrição contínua, a árvore produz um fruto semelhante a uma noz e, ao abri-lo, revela-se um pequeno rolo de papel: a Vivre Card.</p><p>Uma Vivre Card parece um pedaço comum de papel, mas é completamente à prova d''água e de fogo — embora ainda possa ser rasgada. Quando dividida, cada fragmento aponta e se move em direção do dono, independentemente da distância ou localização no mundo, permitindo que se determine sempre a direção da pessoa vinculada ao cartão.</p><p>A força vital do dono é refletida diretamente no papel, assim como sua presença e intensidade espiritual. Se o dono estiver debilitado, o cartão começará a se consumir. Caso ele se recupere, o pedaço volta ao tamanho original; mas, se morrer, o papel se desintegrará por completo.</p><p><strong>REVESTIR COM RESINA</strong></p><p>O botânico possui o conhecimento e a Técnica necessários para manipular a resina expelida pelas árvores Yarukiman Mangrove, permitindo revestir pessoas, objetos ou navios com uma película resistente.</p><p>Navios revestidos podem atravessar os mares submersos, recebendo oxigênio suficiente para uma semana de viagem, além de adquirirem alta resistência à pressão das profundezas, suportando até 10.000 metros sem dificuldades. Essas embarcações podem se mover como submarinos, porém sem penalidades de velocidade por peso, sendo impulsionadas exclusivamente pelas correntes marinhas (mais detalhes no Guia do Narrador).</p><p>A bolha criada pelo revestimento possui resistência a dano Contundente e vulnerabilidade a dano Cortante e Perfurante.</p><p>Usuários de Akuma no Mi revestidos pela resina não sofrem a condição ''Enfraquecido'', mesmo quando totalmente submersos.</p><p>Caso estoure, a pressão do mar causa 20d10 de dano Contundente para cada 10 metros abaixo do nível do mar a tudo que estiver dentro da bolha.</p><p>O revestimento só permanece estável enquanto estiver a uma certa distância das raízes das Yarukiman Mangrove ou quando estiver completamente submerso.</p><p>A quantidade de Pontos de Vida da bolha depende do tamanho do alvo revestido, sendo os valores mais comuns:</p><ul><li>Criatura/Objetos Grande ou menor: 50 PV.</li><li>Navios Pequenos, Médios e Grandes: 150 PV.</li><li>Criaturas/Objetos Enormes ou maiores: 100 PV.</li><li>Navios Enormes e Colossais: 300 PV.</li></ul><p><strong>GEOMANTE</strong></p><p>Ao gastar 3 horas reunindo folhas, sementes, musgo e outros materiais naturais do ambiente, você pode realizar um Teste de Atributo de Sabedoria CD 17 para criar compostos de uso único. O tipo de composto que você é capaz de produzir depende diretamente do terreno em que você se encontra. São eles:</p><ul><li>Pasta Curativa (Florestas Verdes): Ao aplicar em ferimentos, recupera os Pontos de Vida da criatura em um valor igual a 2 vezes o Nível de Personagem do botânico.</li><li>Incenso do Predador (Cavernas): Um líquido que pode ser derramado e exala um odor perceptível apenas por animais, mantendo essas criaturas afastadas por 10 horas.</li><li>Pedra-Fumaça (Montanhas): Um pequeno composto mineral que, quando quebrado, libera uma nuvem de poeira cinzenta, criando uma cortina de fumaça de que se expande por uma esfera de 6 metros de raio.</li><li>Líquido Aromático (Pântanos): Um líquido que pode ser derramado e exala um odor perceptível apenas por animais, atraindo essas criaturas por 10 horas.</li><li>Areia Refrescante (Desertos): Um pó claro que, quando aplicado sobre a pele, anula efeitos causados por altas temperaturas por 10 horas. Cada dose pode ser aplicada em até 4 criaturas.</li><li>Essência do Calor (Tundra): Um líquido translúcido que gera calor imediato ao ser espalhado, anulando efeitos causados por baixas temperaturas por 10 horas. Cada dose pode ser aplicada em até 4 criaturas.</li><li>Resina Obsidiana (Áreas Vulcânicas): Um gel escuro que, ao ser lançado contra uma superfície, endurece instantaneamente, formando uma barreira rochosa de até 1,5 metro de altura e 3 metros de largura, que dura por 1 hora até se desfazer em poeira.</li></ul><p><strong>HERBALISMO</strong></p><p>Desde que possua um Kit de Herbalismo você consegue identificar plantas, coletar com segurança seus componentes úteis e utilizá-los na criação de remédios, poções e antídotos.</p><p><strong>PROFICIÊNCIA EM TESTES ESPECÍFICOS</strong></p><p>Você pode aplicar seu Bônus de Proficiência em perícias específicas relacionadas ao uso de plantas.</p><ul><li>Investigação: Sua experiência permite encontrar pistas em ambientes naturais, como pegadas em meio à vegetação ou alterações incomuns em plantas, que indicam envenenamento, doenças ou rastros de criaturas.</li><li>Medicina: Você sabe como usar ervas medicinais para tratar sangramento, ferimentos, doenças e envenenamentos.</li><li>Sobrevivência: Durante expedições em áreas selvagens, você consegue identificar plantas comestíveis, curativas ou perigosas, além de localizar fontes de água potável com mais facilidade.</li></ul><p><strong>Ferramentas:</strong> Ferramentas de Botânico: 1 mochila pequena, 1 lupa de análise, ferramentas de coleta de plantas, livros de botânica e ecossistemas, 5 frascos de armazenamento, 1 pequeno estilete de poda.</p>'
+    chat: ''
+  identifier: botanico
+  type:
+    value: profissao
+    subtype: ''
+  requirements: Profissão
+  properties: []
+  activities: {}
+  advancement:
+    - _id: iFqnHsUM3kcbMVqb
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:his
+              - skills:ins
+              - skills:inv
+              - skills:nat
+              - skills:prc
+              - skills:sur
+        mode: default
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!jsodkCFbNdaUofM5'
+ownership:
+  default: 0
+flags: {}

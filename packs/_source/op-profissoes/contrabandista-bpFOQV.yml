@@ -1,0 +1,40 @@
+_id: bpFOQV4Rrpo0rigf
+name: Contrabandista
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>O contrabandista é um mestre da circulação proibida — um negociador sorrateiro que vive entre favores, dívidas e rotas clandestinas. Onde a lei não chega, ele encontra oportunidade; onde a moral vacila, ele vê lucro. Seus contatos são valiosos, seus silêncios ainda mais, e seu talento para conseguir o impossível faz dele uma figura indispensável em qualquer tripulação ousada o bastante para navegar no submundo.</p><p><strong>AQUISIÇÃO SOMBRIA</strong></p><p>O contrabandista mantém conexões profundas com organizadores do mercado negro e diversas redes criminosas. Esses contatos o procuram por den-den mushi ou por meio de encontros em locais reservados, garantindo que, desde o início de sua jornada, ele tenha acesso a praticamente qualquer item que possa ser obtido (sempre a critério do Narrador), embora o preço muitas vezes seja elevado.</p><p>Alguns exemplos de itens facilmente adquiridos por meio do contrabando incluem:</p><ul><li>Qualquer Akuma no Mi disponível;</li><li>Armas Meito;</li><li>Raid Suit;</li><li>Objetos usuários de Akuma no Mi;</li><li>Medicamentos;</li><li>Maquinários complexos;</li><li>Madeira Adam;</li><li>Eternal Pose;</li><li>Equipamentos e armas de kairoseki;</li><li>Venenos e outras substâncias.</li></ul><p>O valor final é definido pelo Narrador, mas costuma apresentar um acréscimo entre 20% e 50%, cobrindo os riscos envolvidos na obtenção, transporte e entrega das mercadorias. Em alguns casos, o pagamento exigido pode ser uma missão ou outro item em troca.</p><p>O procedimento mais comum consiste em marcar um encontro em uma ilha ou localidade próxima da posição atual do grupo, onde a troca será realizada. Após o pedido ser feito, o tempo médio de espera é de cerca de 1 semana, até que o encontro seja definido.</p><p><strong>MEMBRO DO SUBMUNDO</strong></p><p>Sempre que entrar em uma nova ilha ou local, você pode fazer um Teste de Atributo de Sabedoria CD 16 para identificar atividades ilegais, rotas alternativas, contrabandistas locais, presença de autoridade disfarçada ou qualquer movimentação suspeita.</p><p>Além disso, em momentos difíceis, você pode recorrer ao submundo para obter auxílio capaz de proteger você e seu grupo. As formas mais comuns de suporte são:</p><ul><li>Abrigo: Em até 3 dias, você consegue um esconderijo seguro e impossível de rastrear, onde pode permanecer por até 1 semana. O local fornece comida e oferece o equivalente a uma acomodação de estilo de vida ''modesta'' (detalhes no Capítulo 8).</li><li>Transporte: Em até 2 dias, você ou um grupo de até 5 pessoas é transportado com segurança para uma ilha ou localidade que o Narrador determinar ser acessível.</li><li>Sequestro: Em até 5 dias, você pode solicitar que uma criatura sem grande capacidade de combate (ND 1 ou menor) seja capturada e levada até um ponto determinado por você.</li><li>Cobertura: Em até 1 hora, desde que esteja em áreas acessíveis como grandes cidades, vilas ou centros comerciais, um grupo de combatentes surge para auxiliar na sua fuga ou criar uma distração, interrompendo qualquer encontro por no mínimo 30 minutos.</li></ul><p>Quando um desses serviços for utilizado, o submundo cobra uma quantia entre ฿ 50.000.000 e ฿ 100.000.000, com prazo de pagamento de até 1 mês. Caso o pagamento não seja feito, consequências graves podem recair sobre você ou pessoas próximas, até que a dívida seja quitada. Em alguns casos, o submundo pode exigir um favor ou missão no lugar do pagamento em dinheiro.</p><p><strong>COIOTE</strong></p><p>Você está habituado a conduzir pessoas com segurança por rotas perigosas. Durante um encontro ou exploração, criaturas que não participem de combate (geralmente personagens controlados pelo Narrador) e que estejam a até 6 metros de você recebem sua proteção, tornando-se imunes a dano, desde que você não esteja com a condição ''Incapacitado''.</p><p>Além disso, sempre que uma dessas criaturas falhar em um Teste de Atributo ou Salvaguarda, você pode usar sua reação para garantir a ela um sucesso, assumindo você mesmo as consequências da falha. O Narrador define o dano ou efeitos que você sofrerá.</p><p><strong>Ferramentas:</strong> 1 mochila pequena, 1 capa ou casaco com bolsos falsos, 1 kit de falsificação, 1 registro codificado de contatos, 1 mapa de rotas clandestinas.</p>'
+    chat: ''
+  identifier: contrabandista
+  type:
+    value: profissao
+    subtype: ''
+  requirements: Profissão
+  properties: []
+  activities: {}
+  advancement:
+    - _id: y3QHtmBxTK5L0gfo
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:dec
+              - skills:ste
+              - skills:itm
+              - skills:ins
+              - skills:per
+              - skills:prv
+        mode: default
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!bpFOQV4Rrpo0rigf'
+ownership:
+  default: 0
+flags: {}
