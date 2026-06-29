@@ -19,6 +19,18 @@ const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SRC = path.join(ROOT, "packs", "_source");
 const SYSTEM = "onepiece-system";
 
+// Ícones oficiais de classe em ui/official/classes-op/ (key → nome do arquivo;
+// okama-kenpo usa "okamakenpo"). Sem entrada → ícone genérico.
+const CLASS_ICONS = {
+  atirador: "atirador", aventureiro: "aventureiro", brutamontes: "brutamontes",
+  "carateca-homem-peixe": "carateca-homem-peixe", ciborgue: "ciborgue", espadachim: "espadachim",
+  guerrilheiro: "guerrilheiro", lutador: "lutador", ninja: "ninja", "okama-kenpo": "okamakenpo",
+  rokushiki: "rokushiki", samurai: "samurai"
+};
+const classIcon = key => CLASS_ICONS[key]
+  ? `systems/${SYSTEM}/ui/official/classes-op/${CLASS_ICONS[key]}.png`
+  : "icons/skills/melee/weapons-crossed-swords-yellow.webp";
+
 /* -------------------------------------------- */
 /*  Helpers                                     */
 /* -------------------------------------------- */
@@ -292,7 +304,7 @@ function classItem(cls) {
 
   return {
     _id, name: cls.name, type: "class",
-    img: cls.img || "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+    img: cls.img || classIcon(cls.key),
     system: {
       description: { value: cls.description || `<p>${cls.name}</p>`, chat: "" },
       identifier: cls.key,

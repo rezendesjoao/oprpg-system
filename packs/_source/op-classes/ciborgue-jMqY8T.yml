@@ -1,7 +1,7 @@
 _id: jMqY8T3eIXNLHdXQ
 name: Ciborgue
 type: class
-img: icons/skills/melee/weapons-crossed-swords-yellow.webp
+img: systems/onepiece-system/ui/official/classes-op/ciborgue.png
 system:
   description:
     value: <p>O Ciborgue é qualquer criatura que tenha partes robóticas em seu corpo. Seu corpo foi modificado com dispositivos práticos que auxiliam em combate, análise e diversas tarefas. Um Ciborgue requer combustível para manter seu funcionamento, consumindo mais energia conforme usa seus Pontos de Poder.</p>

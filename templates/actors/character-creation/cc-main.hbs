@@ -29,22 +29,18 @@
 
     {{#if data.variant}}
     <header class="cc-head sub"><h3>{{localize "ONEPIECE.CharacterCreation.Pick.Variant"}}</h3></header>
-    <div class="cc-grid">
+    <div class="cc-pills">
       {{#each data.variant.pool}}
-      <button type="button" class="cc-card sm {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="variant" data-uuid="{{uuid}}">
-        <img src="{{img}}" alt=""><span>{{name}}</span>
-      </button>
+      <button type="button" class="cc-pill {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="variant" data-uuid="{{uuid}}">{{name}}</button>
       {{/each}}
     </div>
     {{/if}}
 
     {{#if data.flaw}}
     <header class="cc-head sub"><h3>{{localize "ONEPIECE.CharacterCreation.Pick.Flaw"}}</h3></header>
-    <div class="cc-grid">
+    <div class="cc-pills">
       {{#each data.flaw.pool}}
-      <button type="button" class="cc-card sm {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="flaw" data-uuid="{{uuid}}">
-        <img src="{{img}}" alt=""><span>{{name}}</span>
-      </button>
+      <button type="button" class="cc-pill {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="flaw" data-uuid="{{uuid}}">{{name}}</button>
       {{/each}}
     </div>
     {{/if}}
@@ -85,20 +81,16 @@
       <p class="hint">{{localize "ONEPIECE.CharacterCreation.Hint.Skills"}}</p></header>
 
     <header class="cc-head sub"><h3>{{localize "ONEPIECE.CharacterCreation.Pick.Background"}}</h3></header>
-    <div class="cc-grid">
+    <div class="cc-pills">
       {{#each data.backgrounds}}
-      <button type="button" class="cc-card sm {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="background" data-uuid="{{uuid}}">
-        <img src="{{img}}" alt=""><span>{{name}}</span>
-      </button>
+      <button type="button" class="cc-pill {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="background" data-uuid="{{uuid}}">{{name}}</button>
       {{/each}}
     </div>
 
     <header class="cc-head sub"><h3>{{localize "ONEPIECE.CharacterCreation.Pick.Profissao"}} <em>({{localize "ONEPIECE.CharacterCreation.Optional"}})</em></h3></header>
-    <div class="cc-grid">
+    <div class="cc-pills">
       {{#each data.profissoes}}
-      <button type="button" class="cc-card sm {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="profissao" data-uuid="{{uuid}}">
-        <img src="{{img}}" alt=""><span>{{name}}</span>
-      </button>
+      <button type="button" class="cc-pill {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="profissao" data-uuid="{{uuid}}">{{name}}</button>
       {{/each}}
     </div>
 

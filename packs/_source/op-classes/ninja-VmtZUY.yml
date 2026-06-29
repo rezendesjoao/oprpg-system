@@ -1,7 +1,7 @@
 _id: VmtZUYFjPVUPFoXV
 name: Ninja
 type: class
-img: icons/skills/melee/weapons-crossed-swords-yellow.webp
+img: systems/onepiece-system/ui/official/classes-op/ninja.png
 system:
   description:
     value: Mestres de infiltração e assassinato, os Ninjas combinam furtividade mortal com artes ocultas. Especialistas em adentrar qualquer lugar silenciosamente, usam ninjutsus místicos e tradicionais para eliminar alvos com precisão, movendo-se através das sombras como se fossem parte delas.

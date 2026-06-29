@@ -376,14 +376,21 @@ export default class OPCharacterCreation extends Application5e {
       }
       case "abilities": {
         const finals = this.#finalAbilities();
-        const rows = Object.keys(this.setup.abilities).map(key => ({
-          key, label: CONFIG.DND5E.abilities[key]?.label ?? key,
-          value: this.setup.abilities[key],
-          final: finals[key], mod: OPCharacterCreation.signed(OPCharacterCreation.mod(finals[key])),
-          options: this.constructor.STANDARD_ARRAY.map(v => ({
-            value: v, selected: Number(this.setup.abilities[key]) === v
-          }))
-        }));
+        const abilities = this.setup.abilities;
+        const rows = Object.keys(abilities).map(key => {
+          // Valores já atribuídos a OUTROS atributos somem deste dropdown.
+          const usedByOthers = new Set(
+            Object.entries(abilities).filter(([k, v]) => (k !== key) && (v != null)).map(([, v]) => Number(v))
+          );
+          return {
+            key, label: CONFIG.DND5E.abilities[key]?.label ?? key,
+            value: abilities[key],
+            final: finals[key], mod: OPCharacterCreation.signed(OPCharacterCreation.mod(finals[key])),
+            options: this.constructor.STANDARD_ARRAY
+              .filter(v => !usedByOthers.has(v))
+              .map(v => ({ value: v, selected: Number(abilities[key]) === v }))
+          };
+        });
         return {
           rows,
           arrayValid: this.#isValidArray(Object.values(this.setup.abilities)),
@@ -472,17 +479,12 @@ export default class OPCharacterCreation extends Application5e {
   static async #onChangeForm(event, form, formData) {
     const obj = foundry.utils.expandObject(formData.object);
 
-    // Atributos (selects da Distribuição Padrão), com troca para manter permutação.
+    // Atributos (selects da Distribuição Padrão). Cada valor é CONSUMIDO: o filtro de
+    // opções em #stepContext já remove os valores usados por outros atributos, então
+    // basta atribuir o que foi escolhido (sem duplicatas possíveis).
     if ( obj.abil ) {
       for ( const [key, raw] of Object.entries(obj.abil) ) {
-        const v = raw === "" || raw === null ? null : Number(raw);
-        if ( v === this.setup.abilities[key] ) continue;
-        // Se outro atributo já tem esse valor, troca (mantém permutação).
-        if ( v !== null ) {
-          const other = Object.keys(this.setup.abilities).find(k => k !== key && Number(this.setup.abilities[k]) === v);
-          if ( other ) this.setup.abilities[other] = this.setup.abilities[key];
-        }
-        this.setup.abilities[key] = v;
+        this.setup.abilities[key] = (raw === "" || raw === null) ? null : Number(raw);
       }
     }
 

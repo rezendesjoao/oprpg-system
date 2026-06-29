@@ -1,7 +1,7 @@
 _id: zdAVGRsWtNndGBMI
 name: Atirador
 type: class
-img: icons/skills/melee/weapons-crossed-swords-yellow.webp
+img: systems/onepiece-system/ui/official/classes-op/atirador.png
 system:
   description:
     value: Mestres em armas de fogo e arcos, os Atiradores combinam precisão excepcional com mobilidade tática. Especializando-se em combate à distância, eles escolhem entre o Caminho do Sniper (alcance e impacto) ou do Duelista (cadência e versatilidade). Com reflexos aguçados e conhecimento estratégico, são sempre a melhor escolha quando não se pode errar.

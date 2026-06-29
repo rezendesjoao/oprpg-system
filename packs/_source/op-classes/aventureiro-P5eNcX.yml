@@ -1,7 +1,7 @@
 _id: P5eNcX28wF15P0G7
 name: Aventureiro
 type: class
-img: icons/skills/melee/weapons-crossed-swords-yellow.webp
+img: systems/onepiece-system/ui/official/classes-op/aventureiro.png
 system:
   description:
     value: Os Aventureiros são especialistas versáteis no combate, dominando chicotes e pistolas com precisão letal. Accustomados a enfrentar todo tipo de perigo, desenvolvem uma intuição afiada que funciona como um sexto sentido, permitindo reações instantâneas às adversidades. São inovadores que transformam desafios em oportunidades para brilhar, gerenciando energia sob as condições mais extremas.
