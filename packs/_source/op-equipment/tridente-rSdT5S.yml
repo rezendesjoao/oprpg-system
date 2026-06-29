@@ -1,0 +1,59 @@
+_id: rSdT5SPC4zVQAsih
+name: Tridente
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Um bastão circular com 3 pontas em sua extremidade. Pode ser considerado arma marcial para criaturas aquáticas ou caratecas homem-peixe.</p><p><strong>✠ Expertise:</strong> A criatura atingida tem seu deslocamento reduzido pela metade, até o final do próximo turno dela.</p>
+    chat: ''
+  identifier: tridente
+  price:
+    value: 70000
+    denomination: yen
+  weight:
+    value: 3.5
+    units: kg
+  type:
+    value: martialM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 10
+      bonus: ''
+      types:
+        - piercing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - rch
+    - two
+  range:
+    value: null
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!rSdT5SPC4zVQAsih'
+ownership:
+  default: 0
+flags: {}

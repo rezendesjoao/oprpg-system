@@ -1,0 +1,24 @@
+_id: oIPAy5Ikq78WVdSH
+name: Livro de Profissão
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Obra abrangente que oferece o conhecimento necessário para aprender uma profissão.</p><p><em>Raridade: Raro.</em></p>'
+    chat: ''
+  identifier: livro-de-profissao
+  price:
+    value: 500000
+    denomination: yen
+  weight:
+    value: 3
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!oIPAy5Ikq78WVdSH'
+ownership:
+  default: 0
+flags: {}

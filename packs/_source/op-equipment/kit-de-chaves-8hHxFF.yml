@@ -1,0 +1,24 @@
+_id: 8hHxFFypyCQS4h9w
+name: Kit de Chaves
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Um conjunto variado de chaves mecânicas, utilizado para montagem e desmontagem de objetos.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: kit-de-chaves
+  price:
+    value: 10000
+    denomination: yen
+  weight:
+    value: 3
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!8hHxFFypyCQS4h9w'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,24 @@
+_id: pFya01N94BQEXXVb
+name: Tubo de Ensaio
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Tubo de vidro resistente usado para armazenar ou misturar substâncias.</p><p><em>Raridade: Incomum.</em></p>'
+    chat: ''
+  identifier: tubo-de-ensaio
+  price:
+    value: 500
+    denomination: yen
+  weight:
+    value: 0.1
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: consumable
+_key: '!items!pFya01N94BQEXXVb'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,24 @@
+_id: kMHJ6Vy3vUUap4rh
+name: Antídoto
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Frasco de vidro com substâncias capazes de neutralizar venenos comuns ou servir como base para antídotos mais complexos.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: antidoto
+  price:
+    value: 40000
+    denomination: yen
+  weight:
+    value: 0.2
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: consumable
+_key: '!items!kMHJ6Vy3vUUap4rh'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,38 @@
+_id: FDHU3qBrN8wf9TCu
+name: Dardo
+img: icons/svg/target.svg
+system:
+  description:
+    value: <p>Pequena agulha lançada por zarabatanas, leve e silenciosa.</p>
+    chat: ''
+  identifier: dardo
+  price:
+    value: 200
+    denomination: yen
+  weight:
+    value: 0.1
+    units: kg
+  type:
+    value: ammo
+    subtype: ''
+  damage:
+    base:
+      number: 1
+      denomination: null
+      bonus: '1'
+      types:
+        - piercing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+effects: []
+folder: null
+type: consumable
+_key: '!items!FDHU3qBrN8wf9TCu'
+ownership:
+  default: 0
+flags: {}

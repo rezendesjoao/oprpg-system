@@ -1,0 +1,38 @@
+_id: J9vxEekSWDsI26lN
+name: Bola de Chumbo
+img: icons/svg/target.svg
+system:
+  description:
+    value: '<p>Munição pesada usada em canhões ou bazucas, com altíssimo poder de impacto.</p><p><em>Arma de Cerco: o dano final é dobrado contra estruturas.</em></p>'
+    chat: ''
+  identifier: bola-de-chumbo
+  price:
+    value: 15000
+    denomination: yen
+  weight:
+    value: 3.5
+    units: kg
+  type:
+    value: ammo
+    subtype: ''
+  damage:
+    base:
+      number: 3
+      denomination: 10
+      bonus: ''
+      types:
+        - bludgeoning
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+effects: []
+folder: null
+type: consumable
+_key: '!items!J9vxEekSWDsI26lN'
+ownership:
+  default: 0
+flags: {}

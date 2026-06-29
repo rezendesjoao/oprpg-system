@@ -1,0 +1,24 @@
+_id: Kw4A6KvEMFP80O3Y
+name: Algemas de Kairoseki
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Algemas especiais feitas com Kairoseki, ideais para conter usuários de Akuma no Mi. Aplicam as mesmas restrições das algemas e também a condição ''Enfraquecido''.</p><p><em>Raridade: Mercado Negro.</em></p>'
+    chat: ''
+  identifier: algemas-de-kairoseki
+  price:
+    value: 2000000
+    denomination: yen
+  weight:
+    value: 3
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!Kw4A6KvEMFP80O3Y'
+ownership:
+  default: 0
+flags: {}

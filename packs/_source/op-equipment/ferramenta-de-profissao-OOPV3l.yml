@@ -1,0 +1,24 @@
+_id: OOPV3lS1VzG2n8qy
+name: Ferramenta de Profissão
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Todos os instrumentos necessários para desempenhar as funções da profissão.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: ferramenta-de-profissao
+  price:
+    value: 80000
+    denomination: yen
+  weight:
+    value: 4
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!OOPV3lS1VzG2n8qy'
+ownership:
+  default: 0
+flags: {}

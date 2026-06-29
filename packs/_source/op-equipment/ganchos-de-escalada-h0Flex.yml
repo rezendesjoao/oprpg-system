@@ -1,0 +1,24 @@
+_id: h0FlexC46DCAUgRZ
+name: Ganchos de Escalada
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Par de ganchos afiados para mãos e pés. Permitem escalar superfícies verticais sem necessidade de Teste de Atributo e sem penalidades.</p><p><em>Raridade: Raro.</em></p>'
+    chat: ''
+  identifier: ganchos-de-escalada
+  price:
+    value: 10000
+    denomination: yen
+  weight:
+    value: 1.5
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!h0FlexC46DCAUgRZ'
+ownership:
+  default: 0
+flags: {}

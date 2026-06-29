@@ -1,0 +1,57 @@
+_id: W5V0SAkiss1iumUv
+name: Sabre
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Espada curva de gume único, balanceada para cortes fluidos, com guarda robusta para defesa.</p><p><strong>✠ Expertise:</strong> Você recebe 20 Pontos de Vida temporários, que duram até o início do seu próximo turno.</p>
+    chat: ''
+  identifier: sabre
+  price:
+    value: 70000
+    denomination: yen
+  weight:
+    value: 1.1
+    units: kg
+  type:
+    value: martialM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 6
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties: []
+  range:
+    value: null
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!W5V0SAkiss1iumUv'
+ownership:
+  default: 0
+flags: {}

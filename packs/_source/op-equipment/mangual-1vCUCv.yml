@@ -1,0 +1,58 @@
+_id: 1vCUCvzttusvLqzE
+name: Mangual
+img: icons/svg/sword.svg
+system:
+  description:
+    value: '<p>Um cabo de madeira ou metal com uma bola de ferro com espinhos conectado por uma corrente.</p><p><em>Arma de Cerco: o dano final é dobrado contra estruturas.</em></p><p><strong>✠ Expertise:</strong> Ao final do cálculo de dano, adicione pontos de dano extra em valor igual à metade da CR do alvo.</p>'
+    chat: ''
+  identifier: mangual
+  price:
+    value: 30000
+    denomination: yen
+  weight:
+    value: 4.5
+    units: kg
+  type:
+    value: martialM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 10
+      bonus: ''
+      types:
+        - piercing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - hvy
+  range:
+    value: null
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!1vCUCvzttusvLqzE'
+ownership:
+  default: 0
+flags: {}

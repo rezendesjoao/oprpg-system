@@ -4305,3 +4305,1395 @@ export const PROFISSOES = [
     "desc": "<p><em>Item de referência. As Profissões representam ocupações em que o personagem se destaca. A partir do 1º nível você escolhe uma Profissão e recebe seus benefícios.</em></p><p><strong>Benefícios da Profissão</strong></p><ul><li>Pode adicionar o Bônus de Proficiência em Testes de Atributo relacionados à profissão escolhida (a critério do Narrador);</li><li>Recebe as características únicas da profissão escolhida;</li><li>Recebe proficiência nas ferramentas da profissão escolhida;</li><li>Apenas na profissão de 1º nível: escolha de 2 perícias e o conjunto de ferramentas/equipamento inicial.</li></ul><p><strong>Adquirindo Novas Profissões</strong></p><p>A cada 5 níveis de personagem (5º, 10º, 15º e 20º) você pode aprender uma nova profissão, desde que, antes de atingir esses níveis, tenha lido um Livro de Profissão (item raro) ou recebido instrução de um tutor — ao menos 2 horas por dia durante 90 dias, ou após o avanço de 2 níveis (o que ocorrer primeiro). Ao adquirir uma profissão após o 1º nível, você não recebe proficiências em perícias nem equipamento inicial; porém, pode substituir uma de suas perícias por uma das opções da nova profissão.</p><p><strong>Feitos, Reconhecimentos e Graduações</strong></p><p>O progresso de uma profissão segue: Profissional (inicial) → Especialista → Mestre → Grão-Mestre, mantendo os benefícios anteriores. As graduações podem ser conquistadas por Grandes Feitos (ações notáveis ou um Teste relacionado com CD 26+ em uma única jogada, sem vantagem/rerrolagem) ou por Avanço Planejado nos níveis 5/10/15/20 (elevar a graduação de uma profissão em vez de aprender uma nova).</p><p><em>Neste sistema, ao atingir os níveis 5/10/15/20 com uma profissão na ficha, surge um aviso para elevar a graduação de uma profissão à sua escolha (você também pode optar por aprender uma nova profissão arrastando-a para a ficha).</em></p><ul><li><strong>Especialista:</strong> você pode ter vantagem em qualquer Teste de Atributo relacionado à sua profissão — 3 vezes por descanso longo.</li><li><strong>Mestre:</strong> em Testes relacionados à sua profissão, trata qualquer resultado de 9 ou menos no d20 como 10.</li><li><strong>Grão-Mestre:</strong> ao falhar em um Teste relacionado à sua profissão, pode considerá-lo bem-sucedido — 3 vezes, recuperando 1 uso por descanso longo.</li></ul><p><strong>Aperfeiçoamento Profissional</strong> (substitui os valores anteriores conforme a graduação):</p><table><tr><td><strong>Graduação</strong></td><td><strong>Desconto em Valores</strong></td><td><strong>Redução na CD</strong></td><td><strong>Aumento de Passo</strong></td></tr><tr><td>Especialista</td><td>10%</td><td>−1</td><td>d8</td></tr><tr><td>Mestre</td><td>20%</td><td>−2</td><td>d10</td></tr><tr><td>Grão-Mestre</td><td>50%</td><td>−3</td><td>d12</td></tr></table><p>Desconto em Valores reduz custos predeterminados; Redução na CD diminui CDs predeterminadas; Aumento de Passo eleva o tipo de dado predeterminado das características da profissão.</p>"
   }
 ];
+
+/* EQUIPMENT — Capítulo 8 (Equipamentos), gerado a partir do livro */
+export const EQUIPMENT = [
+  {
+    "kind": "weapon",
+    "code": "adaga",
+    "name": "Adaga / Kunai",
+    "wtype": "martialM",
+    "props": [
+      "fin",
+      "thr"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 4,
+      "types": [
+        "slashing"
+      ]
+    },
+    "range": {
+      "value": 6,
+      "long": 15
+    },
+    "price": 20000,
+    "weight": 0.5,
+    "desc": "<p>Pequena lâmina afiada, eficaz em combate corpo a corpo ou arremessada. Versátil e fácil de ocultar.</p><p><em>Dano Cortante ou Perfurante (à escolha).</em></p><p><strong>✠ Expertise:</strong> A criatura atingida recebe a condição 'Sangramento'.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "daito-katana",
+    "name": "Daito / Katana",
+    "wtype": "martialM",
+    "props": [
+      "fin",
+      "ver"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 6,
+      "types": [
+        "slashing"
+      ]
+    },
+    "versatile": {
+      "number": 1,
+      "denomination": 8,
+      "types": [
+        "slashing"
+      ]
+    },
+    "price": 80000,
+    "weight": 1.6,
+    "desc": "<p>Versão mais longa de uma katana.</p><p><strong>✠ Expertise:</strong> A próxima jogada de ataque (comum) feita contra você, até o final do seu próximo turno, falha.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "espada-montante",
+    "name": "Espada Montante",
+    "wtype": "martialM",
+    "props": [
+      "rch",
+      "two",
+      "hvy"
+    ],
+    "damage": {
+      "number": 2,
+      "denomination": 6,
+      "types": [
+        "slashing"
+      ]
+    },
+    "price": 150000,
+    "weight": 6,
+    "desc": "<p>Espada colossal de até 3m, usada para cortar fileiras inimigas ou como ferramenta de cerco.</p><p><em>Arma de Cerco: o dano final é dobrado contra estruturas.</em></p><p><strong>✠ Expertise:</strong> Você recebe +2 na Classe de Resistência, até o início do seu próximo turno.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "katana",
+    "name": "Katana",
+    "wtype": "martialM",
+    "props": [
+      "fin"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 6,
+      "types": [
+        "slashing"
+      ]
+    },
+    "price": 70000,
+    "weight": 1.2,
+    "desc": "<p>Espada de lâmina curva e gume único, equilibrada para cortes precisos e rápidos.</p><p><strong>✠ Expertise:</strong> Os dados de dano da arma são maximizados.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "kogatana",
+    "name": "Kogatana",
+    "wtype": "martialM",
+    "props": [
+      "fin"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 4,
+      "types": [
+        "slashing"
+      ]
+    },
+    "price": 30000,
+    "weight": 0.5,
+    "desc": "<p>Pequena katana portátil, semelhante a uma adaga, ideal para golpes ágeis ou como arma reserva.</p><p><strong>✠ Expertise:</strong> A criatura atingida recebe a condição 'Sangramento'.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "machado",
+    "name": "Machado",
+    "wtype": "martialM",
+    "props": [
+      "thr"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 6,
+      "types": [
+        "slashing"
+      ]
+    },
+    "range": {
+      "value": 6,
+      "long": 15
+    },
+    "price": 55000,
+    "weight": 1.5,
+    "desc": "<p>Ferramenta de batalha com lâmina larga e afiada, capaz de ser arremessada ou usada em combate próximo.</p><p><strong>✠ Expertise:</strong> Você recebe a condição 'Empoderado', até o final do seu próximo turno.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "machado-grande",
+    "name": "Machado Grande",
+    "wtype": "martialM",
+    "props": [
+      "rch",
+      "two",
+      "hvy"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 12,
+      "types": [
+        "slashing"
+      ]
+    },
+    "price": 90000,
+    "weight": 3,
+    "desc": "<p>Machado de lâmina dupla, exigindo força para golpes devastadores que atingem amplos alcances.</p><p><strong>✠ Expertise:</strong> Você causa 1d6 de dano em todas as criaturas a até 3 metros de você.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "nodachi",
+    "name": "Nodachi",
+    "wtype": "martialM",
+    "props": [
+      "rch",
+      "two",
+      "hvy"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 8,
+      "types": [
+        "slashing"
+      ]
+    },
+    "price": 100000,
+    "weight": 2.8,
+    "desc": "<p>Katana alongada com lâmina pesada, projetada para cortes amplos e potentes, dominando o campo de batalha.</p><p><strong>✠ Expertise:</strong> Sua próxima jogada de ataque (comum), até o final do seu próximo turno, tem margem de acerto crítico 16-20.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "rapieira",
+    "name": "Rapieira",
+    "wtype": "martialM",
+    "props": [
+      "fin"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 6,
+      "types": [
+        "piercing"
+      ]
+    },
+    "price": 70000,
+    "weight": 1,
+    "desc": "<p>Espada elegante e afiada, focada em estocadas precisas, com guarda elaborada para proteção da mão.</p><p><em>Dano Cortante ou Perfurante (à escolha).</em></p><p><strong>✠ Expertise:</strong> A próxima Salvaguarda de Destreza recebe sucesso automático, até o fim do encontro de combate.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "sabre",
+    "name": "Sabre",
+    "wtype": "martialM",
+    "props": [],
+    "damage": {
+      "number": 1,
+      "denomination": 6,
+      "types": [
+        "slashing"
+      ]
+    },
+    "price": 70000,
+    "weight": 1.1,
+    "desc": "<p>Espada curva de gume único, balanceada para cortes fluidos, com guarda robusta para defesa.</p><p><strong>✠ Expertise:</strong> Você recebe 20 Pontos de Vida temporários, que duram até o início do seu próximo turno.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "shikomizue",
+    "name": "Shikomizue",
+    "wtype": "martialM",
+    "props": [
+      "fin"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 6,
+      "types": [
+        "slashing"
+      ]
+    },
+    "price": 75000,
+    "weight": 1,
+    "desc": "<p>Lâmina fina oculta dentro de uma bengala, perfeita para ataques sorrateiros ou defesa discreta.</p><p><strong>✠ Expertise:</strong> Sua próxima jogada de ataque (comum ou Técnicas), até o final do seu próximo turno, recebe +3 de acerto.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "bastao",
+    "name": "Bastão",
+    "wtype": "simpleM",
+    "props": [
+      "rch",
+      "two"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 6,
+      "types": [
+        "bludgeoning"
+      ]
+    },
+    "price": 40000,
+    "weight": 1.5,
+    "desc": "<p>Um pedaço simples de madeira ou metal, de forma cilíndrica, utilizado como arma de combate.</p><p><em>Dano de arma marcial = seu dano desarmado aumentado em 1 passo (1d6 é apenas referência).</em></p><p><strong>✠ Expertise:</strong> A criatura atingida recebe a condição 'Caído'.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "kanabo-tacape",
+    "name": "Kanabo / Tacape",
+    "wtype": "simpleM",
+    "props": [
+      "two",
+      "hvy"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 6,
+      "types": [
+        "bludgeoning"
+      ]
+    },
+    "price": 60000,
+    "weight": 4.5,
+    "desc": "<p>Um bastão robusto com a extremidade grossa, podendo conter espinhos ou saliências metálicas.</p><p><em>Dano de arma marcial = seu dano desarmado aumentado em 1 passo (1d6 é apenas referência).</em></p><p><em>Dano Contundente ou Perfurante (à escolha).</em></p><p><em>Arma de Cerco: o dano final é dobrado contra estruturas.</em></p><p><strong>✠ Expertise:</strong> Ao final do cálculo de dano, empurre a criatura por 6 metros ou adicione 1d8 de dano adicional.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "luva-de-ferro",
+    "name": "Luva de Ferro",
+    "wtype": "simpleM",
+    "props": [],
+    "damage": {
+      "number": 1,
+      "denomination": 6,
+      "types": [
+        "bludgeoning"
+      ]
+    },
+    "price": 20000,
+    "weight": 0.8,
+    "desc": "<p>Uma luva reforçada com placas metálicas sobre os dedos, podendo ter espinhos.</p><p><em>Dano de arma marcial = seu dano desarmado aumentado em 1 passo (1d6 é apenas referência).</em></p><p><em>Dano Contundente ou Perfurante (à escolha).</em></p><p><strong>✠ Expertise:</strong> Sua próxima jogada de ataque (comum ou Técnicas), até o final do seu próximo turno, recebe +3 de acerto.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "nunchaku",
+    "name": "Nunchaku",
+    "wtype": "simpleM",
+    "props": [
+      "fin"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 6,
+      "types": [
+        "bludgeoning"
+      ]
+    },
+    "price": 25000,
+    "weight": 1,
+    "desc": "<p>Dois bastões curtos, geralmente de madeira ou metal, conectados por uma corrente ou corda.</p><p><em>Dano de arma marcial = seu dano desarmado aumentado em 1 passo (1d6 é apenas referência).</em></p><p><strong>✠ Expertise:</strong> Ao final do cálculo de dano, adicione 1d12 de dano Contundente.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "par-de-tonfas",
+    "name": "Par de Tonfas",
+    "wtype": "simpleM",
+    "props": [
+      "two"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 6,
+      "types": [
+        "bludgeoning"
+      ]
+    },
+    "price": 42000,
+    "weight": 2,
+    "desc": "<p>Dois bastões alongados com empunhadura perpendicular, ideais para bloquear e contra-atacar golpes corpo a corpo.</p><p><em>Dano de arma marcial = seu dano desarmado aumentado em 1 passo (1d6 é apenas referência).</em></p><p><strong>✠ Expertise:</strong> Você recebe +2 na Classe de Resistência, até o início do seu próximo turno.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "canhao-bazuca",
+    "name": "Canhão / Bazuca",
+    "wtype": "martialR",
+    "props": [
+      "two",
+      "amm",
+      "hvy",
+      "lod",
+      "fir"
+    ],
+    "damage": {
+      "number": 3,
+      "denomination": 10,
+      "types": [
+        "bludgeoning"
+      ]
+    },
+    "range": {
+      "value": 21,
+      "long": 30
+    },
+    "price": 350000,
+    "weight": 12,
+    "desc": "<p>Uma poderosa arma que dispara bolas de chumbo ou explosivas. Eficaz contra estruturas e grupos.</p><p><em>Dano conforme a munição utilizada. Cada disparo consome 1 munição.</em></p><p><strong>✠ Expertise:</strong> Você recebe +6 metros de deslocamento, até o fim do seu próximo turno.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "escopeta",
+    "name": "Escopeta",
+    "wtype": "martialR",
+    "props": [
+      "two",
+      "amm",
+      "lod",
+      "fir"
+    ],
+    "damage": null,
+    "range": {
+      "value": 3
+    },
+    "price": 150000,
+    "weight": 3.5,
+    "desc": "<p>Arma de fogo de cano duplo que dispara múltiplos projéteis de uma vez, devastando alvos em curto alcance. Requer 10 munições esféricas por disparo.</p><p><em>Ataque em área: cone de 3 metros.</em></p><p><strong>✠ Expertise:</strong> Todos dentro da área (cone de 3 metros) devem fazer uma Salvaguarda de Destreza, sofrendo 3d8 de dano Contundente se falhar.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "mosquete",
+    "name": "Mosquete",
+    "wtype": "martialR",
+    "props": [
+      "amm",
+      "two",
+      "fir"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 8,
+      "types": [
+        "piercing"
+      ]
+    },
+    "range": {
+      "value": 18,
+      "long": 24
+    },
+    "price": 100000,
+    "weight": 4,
+    "desc": "<p>Arma de pólvora de longo alcance, com dano variável conforme a munição.</p><p><em>Dano conforme a munição utilizada. Cada disparo consome 1 munição.</em></p><p><strong>✠ Expertise:</strong> Sua próxima jogada de ataque (comum), até o final do seu próximo turno, tem margem de acerto crítico 16-20.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "metralhadora",
+    "name": "Metralhadora",
+    "wtype": "martialR",
+    "props": [
+      "two",
+      "amm",
+      "lod",
+      "fir"
+    ],
+    "damage": null,
+    "range": {
+      "value": 6
+    },
+    "price": 380000,
+    "weight": 5,
+    "desc": "<p>Arma automática com carregador de alta capacidade, capaz de liberar rajadas letais em área. Gasta 20 munições perfurantes por disparo.</p><p><em>Ataque em área: cone de 6 metros.</em></p><p><strong>✠ Expertise:</strong> Todos dentro da área (cone de 6 metros) devem fazer uma Salvaguarda de Destreza, sofrendo 3d6 de dano Perfurante se falhar, ou metade se obtiver sucesso.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "pistola",
+    "name": "Pistola",
+    "wtype": "martialR",
+    "props": [
+      "amm",
+      "fir"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 8,
+      "types": [
+        "piercing"
+      ]
+    },
+    "range": {
+      "value": 9,
+      "long": 15
+    },
+    "price": 70000,
+    "weight": 1.5,
+    "desc": "<p>Arma de fogo curta e versátil, com dano determinado pela munição.</p><p><em>Dano conforme a munição utilizada. Cada disparo consome 1 munição.</em></p><p><strong>✠ Expertise:</strong> Caso tenha errado uma ou mais jogadas de ataque (comum ou Técnicas) no turno atual, você recebe 2 jogadas de ataque (comum) adicionais que causam apenas o dano da munição.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "arco-estilingue",
+    "name": "Arco / Estilingue",
+    "wtype": "simpleR",
+    "props": [
+      "amm",
+      "two"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 6,
+      "types": [
+        "piercing"
+      ]
+    },
+    "range": {
+      "value": 18,
+      "long": 24
+    },
+    "price": 22500,
+    "weight": 0.5,
+    "desc": "<p>Arma de longo alcance feita de madeira flexível e corda resistente, capaz de lançar flechas ou projéteis com precisão.</p><p><em>Dano conforme a munição utilizada. Cada disparo consome 1 munição.</em></p><p><strong>✠ Expertise:</strong> A criatura atingida recebe a condição 'Enfurecido', até o final do próximo turno da criatura.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "dinamite",
+    "name": "Dinamite",
+    "wtype": "martialR",
+    "props": [
+      "thr"
+    ],
+    "damage": null,
+    "range": {
+      "value": 6
+    },
+    "price": 25000,
+    "weight": 0.6,
+    "desc": "<p>Uma banana de dinamite com pavio inflamável.</p><p><em>Com uma ação, acenda e arremesse: cada criatura a até 1,5 m do ponto de origem faz Salvaguarda de Destreza CD 15, sofrendo 3d6 de dano de Fogo (metade com sucesso). Bananas extras presas juntas aumentam o dano em +1d6 (até 10d6) e o raio em +1,5 m (até 6 m).</em></p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "escudo-de-ferro",
+    "name": "Escudo de Ferro",
+    "wtype": "martialM",
+    "props": [],
+    "damage": {
+      "number": 1,
+      "denomination": 4,
+      "types": [
+        "bludgeoning"
+      ]
+    },
+    "price": 50000,
+    "weight": 4,
+    "desc": "<p>Escudo redondo de metal usado para defesa e golpes.</p><p><em>Concede +1 na Classe de Resistência a você e a aliados a até 1,5 m (não acumula com outros escudos). Usar um escudo reduz em 1 a quantidade de ataques (comum) por turno (mínimo 1).</em></p><p><strong>✠ Expertise:</strong> Você recebe 20 Pontos de Vida temporários, que duram até o início do seu próximo turno.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "chicote",
+    "name": "Chicote",
+    "wtype": "martialM",
+    "props": [
+      "fin",
+      "rch"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 6,
+      "types": [
+        "slashing"
+      ]
+    },
+    "price": 7500,
+    "weight": 1.5,
+    "desc": "<p>Corda ou tira de couro com ponta afiada, ideal para ataques à distância e desarmar oponentes.</p><p><strong>✠ Expertise:</strong> A criatura atingida recebe a condição 'Incapacitado', até o final do próximo turno da criatura.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "foice",
+    "name": "Foice",
+    "wtype": "martialM",
+    "props": [
+      "rch",
+      "two"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 8,
+      "types": [
+        "slashing"
+      ]
+    },
+    "price": 50000,
+    "weight": 3,
+    "desc": "<p>Lâmina curva montada em haste longa, usada tanto para combate quanto para colheita. Pode ser usada como requisito 'Arma Cortante'.</p><p><strong>✠ Expertise:</strong> Ao final do cálculo de dano, puxe a criatura para 1,5 metro de você ou adicione 1d8 de dano adicional.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "lanca",
+    "name": "Lança",
+    "wtype": "martialM",
+    "props": [
+      "rch",
+      "two",
+      "thr"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 10,
+      "types": [
+        "piercing"
+      ]
+    },
+    "range": {
+      "value": 6,
+      "long": 12
+    },
+    "price": 70000,
+    "weight": 2.5,
+    "desc": "<p>Haste com ponta afiada, versátil para estocadas ou arremessos. Pode ser usada como requisito 'Arma Cortante'.</p><p><strong>✠ Expertise:</strong> Caso tenha errado uma ou mais jogadas de ataque (comum ou Técnicas) no turno atual, você recebe 2 jogadas de ataque (comum) adicionais que causam apenas o dano da lança.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "mangual",
+    "name": "Mangual",
+    "wtype": "martialM",
+    "props": [
+      "hvy"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 10,
+      "types": [
+        "piercing"
+      ]
+    },
+    "price": 30000,
+    "weight": 4.5,
+    "desc": "<p>Um cabo de madeira ou metal com uma bola de ferro com espinhos conectado por uma corrente.</p><p><em>Arma de Cerco: o dano final é dobrado contra estruturas.</em></p><p><strong>✠ Expertise:</strong> Ao final do cálculo de dano, adicione pontos de dano extra em valor igual à metade da CR do alvo.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "martelo-de-guerra",
+    "name": "Martelo de Guerra",
+    "wtype": "martialM",
+    "props": [
+      "two",
+      "hvy"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 12,
+      "types": [
+        "bludgeoning"
+      ]
+    },
+    "price": 80000,
+    "weight": 7,
+    "desc": "<p>Um cabo de madeira ou metal com um grande e pesado pedaço de metal em sua extremidade.</p><p><em>Arma de Cerco: o dano final é dobrado contra estruturas.</em></p><p><strong>✠ Expertise:</strong> Ao final do cálculo de dano, empurre a criatura por 6 metros ou adicione 1d8 de dano adicional.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "naginata-alabarda",
+    "name": "Naginata / Alabarda",
+    "wtype": "martialM",
+    "props": [
+      "rch",
+      "hvy",
+      "ver"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 10,
+      "types": [
+        "slashing"
+      ]
+    },
+    "versatile": {
+      "number": 1,
+      "denomination": 12,
+      "types": [
+        "slashing"
+      ]
+    },
+    "price": 100000,
+    "weight": 7.5,
+    "desc": "<p>Haste com uma grande lâmina em sua ponta. Pode ser usada como requisito 'Arma Cortante'.</p><p><strong>✠ Expertise:</strong> Você causa 1d6 de dano em todas as criaturas a até 3 metros de você.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "tridente",
+    "name": "Tridente",
+    "wtype": "martialM",
+    "props": [
+      "rch",
+      "two"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 10,
+      "types": [
+        "piercing"
+      ]
+    },
+    "price": 70000,
+    "weight": 3.5,
+    "desc": "<p>Um bastão circular com 3 pontas em sua extremidade. Pode ser considerado arma marcial para criaturas aquáticas ou caratecas homem-peixe.</p><p><strong>✠ Expertise:</strong> A criatura atingida tem seu deslocamento reduzido pela metade, até o final do próximo turno dela.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "zarabatana",
+    "name": "Zarabatana",
+    "wtype": "simpleR",
+    "props": [
+      "amm"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": null,
+      "bonus": "1",
+      "types": [
+        "piercing"
+      ]
+    },
+    "range": {
+      "value": 6,
+      "long": 9
+    },
+    "price": 8000,
+    "weight": 0.3,
+    "desc": "<p>Um pequeno cano feito com o propósito de atirar dardos silenciosamente. Cada sopro consome 1 munição.</p><p><em>Dano conforme a munição utilizada. Cada disparo consome 1 munição.</em></p><p><strong>✠ Expertise:</strong> A criatura atingida recebe a condição 'Impedido', até o final do próximo turno da criatura.</p>"
+  },
+  {
+    "kind": "weapon",
+    "code": "shuriken",
+    "name": "Shuriken",
+    "wtype": "simpleM",
+    "props": [
+      "fin",
+      "thr"
+    ],
+    "damage": {
+      "number": 1,
+      "denomination": 4,
+      "types": [
+        "piercing"
+      ]
+    },
+    "range": {
+      "value": 6,
+      "long": 12
+    },
+    "price": 500,
+    "weight": 0.1,
+    "desc": "<p>Uma pequena estrela de metal afiada.</p><p><strong>✠ Expertise:</strong> A criatura atingida recebe a condição 'Sangramento'.</p>"
+  },
+  {
+    "kind": "ammo",
+    "code": "bola-de-chumbo",
+    "name": "Bola de Chumbo",
+    "damage": {
+      "number": 3,
+      "denomination": 10,
+      "types": [
+        "bludgeoning"
+      ]
+    },
+    "price": 15000,
+    "weight": 3.5,
+    "desc": "<p>Munição pesada usada em canhões ou bazucas, com altíssimo poder de impacto.</p><p><em>Arma de Cerco: o dano final é dobrado contra estruturas.</em></p>"
+  },
+  {
+    "kind": "ammo",
+    "code": "bola-explosiva",
+    "name": "Bola Explosiva",
+    "damage": {
+      "number": 3,
+      "denomination": 10,
+      "types": [
+        "bludgeoning"
+      ]
+    },
+    "price": 32000,
+    "weight": 3.8,
+    "desc": "<p>Munição explosiva para canhões ou bazucas.</p><p>Causa 3d10 de dano Contundente e explode em área de 1,5 m de raio. Todos na área fazem Salvaguarda de Destreza, sofrendo 2d6 de dano de Fogo se falhar (metade com sucesso).</p><p><em>Arma de Cerco: o dano final é dobrado contra estruturas.</em></p>"
+  },
+  {
+    "kind": "ammo",
+    "code": "dardo",
+    "name": "Dardo",
+    "damage": {
+      "number": 1,
+      "denomination": null,
+      "bonus": "1",
+      "types": [
+        "piercing"
+      ]
+    },
+    "price": 200,
+    "weight": 0.1,
+    "desc": "<p>Pequena agulha lançada por zarabatanas, leve e silenciosa.</p>"
+  },
+  {
+    "kind": "ammo",
+    "code": "flecha",
+    "name": "Flecha",
+    "damage": {
+      "number": 1,
+      "denomination": 6,
+      "types": [
+        "piercing"
+      ]
+    },
+    "price": 500,
+    "weight": 0.2,
+    "desc": "<p>Projétil de madeira com ponta de ferro, usado com arcos.</p>"
+  },
+  {
+    "kind": "ammo",
+    "code": "municao-de-kairoseki",
+    "name": "Munição de Kairoseki",
+    "damage": {
+      "number": 1,
+      "denomination": 8,
+      "types": [
+        "piercing"
+      ]
+    },
+    "price": 1000000,
+    "weight": 0.1,
+    "desc": "<p>Munição feita de kairoseki para armas de disparo, como pistolas e mosquetes. Ao acertar um usuário de Akuma no Mi, anula imediatamente todos os seus poderes e impõe a condição 'Enfraquecido'.</p>"
+  },
+  {
+    "kind": "ammo",
+    "code": "municao-esferica",
+    "name": "Munição Esférica",
+    "damage": {
+      "number": 1,
+      "denomination": 8,
+      "types": [
+        "bludgeoning"
+      ]
+    },
+    "price": 500,
+    "weight": 0.1,
+    "desc": "<p>Munição comum usada por pistolas, mosquetes e similares.</p>"
+  },
+  {
+    "kind": "ammo",
+    "code": "municao-para-estilingue",
+    "name": "Munição para Estilingue",
+    "damage": null,
+    "price": 0,
+    "weight": 0,
+    "desc": "<p>Qualquer objeto que caiba no suporte preso ao elástico, como pedras, munições pequenas etc. Dano 1d4, 1d6 ou 1d8 (Contundente, Cortante ou Perfurante). Objetos diferentes de munições esféricas reduzem o alcance da arma pela metade.</p>"
+  },
+  {
+    "kind": "ammo",
+    "code": "municao-perfurante",
+    "name": "Munição Perfurante",
+    "damage": {
+      "number": 1,
+      "denomination": 8,
+      "types": [
+        "piercing"
+      ]
+    },
+    "price": 1000,
+    "weight": 0.1,
+    "desc": "<p>Munição comum usada por pistolas, mosquetes e similares.</p>"
+  },
+  {
+    "kind": "gear",
+    "code": "ferramenta-de-profissao",
+    "name": "Ferramenta de Profissão",
+    "price": 80000,
+    "weight": 4,
+    "desc": "<p>Todos os instrumentos necessários para desempenhar as funções da profissão.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "livro-de-profissao",
+    "name": "Livro de Profissão",
+    "price": 500000,
+    "weight": 3,
+    "desc": "<p>Obra abrangente que oferece o conhecimento necessário para aprender uma profissão.</p><p><em>Raridade: Raro.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "kit-de-chaves",
+    "name": "Kit de Chaves",
+    "price": 10000,
+    "weight": 3,
+    "desc": "<p>Um conjunto variado de chaves mecânicas, utilizado para montagem e desmontagem de objetos.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "kit-de-construcao",
+    "name": "Kit de Construção",
+    "price": 3000,
+    "weight": 2.5,
+    "desc": "<p>Contém pregos, parafusos, porcas, arruelas, lixas e outros itens básicos de construção.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "kit-de-cozinha",
+    "name": "Kit de Cozinha",
+    "price": 60000,
+    "weight": 6,
+    "desc": "<p>Inclui facas, panelas e utensílios culinários para preparo de todos os tipos de refeições.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "kit-de-disfarce",
+    "name": "Kit de Disfarce",
+    "price": 45000,
+    "weight": 3,
+    "desc": "<p>Contém roupas, sapatos, perucas e um adereço peculiar à escolha do jogador.</p><p><em>Raridade: Raro.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "kit-de-escalada",
+    "name": "Kit de Escalada",
+    "price": 30000,
+    "weight": 4.5,
+    "desc": "<p>Inclui pítons, botas com solas pontiagudas, luvas e cinto de escalada. Permite se ancorar, limitando quedas e movimento vertical em até 7,5 metros.</p><p><em>Raridade: Incomum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "kit-de-falsificacao",
+    "name": "Kit de Falsificação",
+    "price": 0,
+    "weight": 1,
+    "desc": "<p>Contém moldes, tintas, materiais diversos. Permite falsificar documentos e itens.</p><p><em>Raridade: Mercado Negro.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "kit-medico",
+    "name": "Kit Médico",
+    "price": 15000,
+    "weight": 2,
+    "desc": "<p>Contém materiais básicos para procedimentos médicos: seringas, agulhas de sutura, linhas, instrumentos cirúrgicos e medicamentos simples.</p><p><em>Raridade: Incomum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "kit-de-pesquisa",
+    "name": "Kit de Pesquisa",
+    "price": 60000,
+    "weight": 3.5,
+    "desc": "<p>Conjunto para pesquisas químicas e biológicas. Inclui tubos de ensaio, frascos, reagentes, pipetas, placas de Petri, entre outros.</p><p><em>Raridade: Raro.</em></p>"
+  },
+  {
+    "kind": "consumable",
+    "code": "kit-de-primeiros-socorros",
+    "name": "Kit de Primeiros Socorros",
+    "price": 10000,
+    "weight": 1,
+    "desc": "<p>Kit de uso único com itens básicos para estabilização: gaze, bandagens, álcool, luvas, tesoura, máscara, etc. Pode restaurar um personagem desacordado a 1 PV.</p><p><em>Raridade: Comum.</em></p>",
+    "uses": {
+      "max": 1
+    }
+  },
+  {
+    "kind": "gear",
+    "code": "kit-de-temperos",
+    "name": "Kit de Temperos",
+    "price": 15000,
+    "weight": 1.5,
+    "desc": "<p>Coleção de especiarias e condimentos diversos para culinária refinada.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "kit-para-abrir-cadeado",
+    "name": "Kit para Abrir Cadeado",
+    "price": 15000,
+    "weight": 0.5,
+    "desc": "<p>Ferramentas específicas com 10 usos para destrancar fechaduras comuns.</p><p><em>Raridade: Raro.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "kit-de-herbalismo",
+    "name": "Kit de Herbalismo",
+    "price": 50000,
+    "weight": 1.5,
+    "desc": "<p>Bolsas para armazenamento de ervas, tesouras e luvas de couro para coleta, almofariz e pilão, além de vários frascos de vidro.</p><p><em>Raridade: Raro.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "kit-de-venenos",
+    "name": "Kit de Venenos",
+    "price": 80000,
+    "weight": 1.5,
+    "desc": "<p>Frascos de vidro, almofariz, vareta de vidro, compostos químicos e outros instrumentos essenciais para a preparação de venenos.</p><p><em>Raridade: Mercado Negro.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "algemas",
+    "name": "Algemas",
+    "price": 5000,
+    "weight": 1,
+    "desc": "<p>Par de algemas que restringe a movimentação dos membros. Presas nos braços, aplicam a condição 'Incapacitado'; presas nas pernas, reduzem o deslocamento para 1,5 metro.</p><p><em>Raridade: Incomum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "algemas-de-kairoseki",
+    "name": "Algemas de Kairoseki",
+    "price": 2000000,
+    "weight": 3,
+    "desc": "<p>Algemas especiais feitas com Kairoseki, ideais para conter usuários de Akuma no Mi. Aplicam as mesmas restrições das algemas e também a condição 'Enfraquecido'.</p><p><em>Raridade: Mercado Negro.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "grilhoes-de-transporte",
+    "name": "Grilhões de Transporte",
+    "price": 15000,
+    "weight": 7,
+    "desc": "<p>Conjunto de algemas com correntes presas aos braços, cintura e pernas. Projetado para impedir fugas durante o transporte de prisioneiros. Aplicam as mesmas restrições de algemas nas mãos e pernas.</p><p><em>Raridade: Incomum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "rede-de-pesca-captura",
+    "name": "Rede de Pesca/Captura",
+    "price": 1500,
+    "weight": 2,
+    "desc": "<p>Rede trançada usada para pesca ou captura de criaturas. Arremessável a até 6 metros. Em caso de acerto, aplica a condição 'Impedido' à criatura atingida.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "rede-de-kairoseki",
+    "name": "Rede de Kairoseki",
+    "price": 3000000,
+    "weight": 6,
+    "desc": "<p>Rede especial para capturar usuários de Akuma no Mi. Pode ser lançada a até 6 metros de distância contra uma criatura Grande ou menor. Em caso de sucesso, aplica as condições 'Enfraquecido' e 'Impedido'.</p><p><em>Raridade: Mercado Negro.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "cantil",
+    "name": "Cantil",
+    "price": 2000,
+    "weight": 0.5,
+    "desc": "<p>Recipiente com tampa e corda, com capacidade para 2 litros de líquido. Ideal para viagens.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "mochila-pequena",
+    "name": "Mochila Pequena",
+    "price": 10000,
+    "weight": 1,
+    "desc": "<p>Capacidade de até 30 kg de carga.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "mochila-media",
+    "name": "Mochila Média",
+    "price": 15000,
+    "weight": 1.5,
+    "desc": "<p>Suporta até 60 kg de carga.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "mochila-grande",
+    "name": "Mochila Grande",
+    "price": 20000,
+    "weight": 2.5,
+    "desc": "<p>Capacidade de carga de até 100 kg. Ideal para transporte pesado.</p><p><em>Raridade: Incomum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "chapa-metalica-de-aco",
+    "name": "Chapa Metálica de Aço",
+    "price": 8000,
+    "weight": 12,
+    "desc": "<p>Chapa de aço padrão utilizada em construções diversas.</p><p><em>Raridade: Incomum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "corda",
+    "name": "Corda",
+    "price": 1500,
+    "weight": 3,
+    "desc": "<p>Corda resistente de 15 metros, com múltiplas aplicações náuticas ou domésticas.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "corrente-de-elos",
+    "name": "Corrente de Elos",
+    "price": 1200,
+    "weight": 2.5,
+    "desc": "<p>Corrente metálica robusta, adaptável a diversas finalidades.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "lingote-de-metal",
+    "name": "Lingote de Metal",
+    "price": 6000,
+    "weight": 1,
+    "desc": "<p>Lingote de metal variado.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "tabua-de-madeira",
+    "name": "Tábua de Madeira",
+    "price": 2200,
+    "weight": 5,
+    "desc": "<p>Tábua de madeira de tamanho padrão usada em construções.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "asa-delta",
+    "name": "Asa Delta",
+    "price": 260000,
+    "weight": 10,
+    "desc": "<p>Usada para planar captando correntes de vento. Dependendo das condições climáticas, concede 9 metros de deslocamento de voo.</p><p><em>Raridade: Raro.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "equipamento-de-mergulho",
+    "name": "Equipamento de Mergulho",
+    "price": 15000,
+    "weight": 36,
+    "desc": "<p>Traje completo para mergulho com máscara, roupa térmica e pés de pato. Permite a qualquer personagem explorar o mar aberto, desde que o tanque seja periodicamente reabastecido.</p><p><em>Raridade: Raro.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "ganchos-de-escalada",
+    "name": "Ganchos de Escalada",
+    "price": 10000,
+    "weight": 1.5,
+    "desc": "<p>Par de ganchos afiados para mãos e pés. Permitem escalar superfícies verticais sem necessidade de Teste de Atributo e sem penalidades.</p><p><em>Raridade: Raro.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "lanterna",
+    "name": "Lanterna",
+    "price": 800,
+    "weight": 0.5,
+    "desc": "<p>Aparelho cilíndrico com foco de luz. Alimentado por pilhas ou baterias, ilumina um cone de até 4,5 metros com luz plena e mais 4,5 metros com penumbra.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "oculos-de-visao-noturna",
+    "name": "Óculos de Visão Noturna",
+    "price": 85000,
+    "weight": 0.5,
+    "desc": "<p>Dispositivo usado pela Marinha para missões noturnas, subaquáticas ou subterrâneas. Permite enxergar na escuridão total como se fosse penumbra.</p><p><em>Raridade: Mercado Negro.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "bau",
+    "name": "Baú",
+    "price": 12000,
+    "weight": 15,
+    "desc": "<p>Contêiner resistente para armazenar itens de valor e dinheiro. Possui cadeado reforçado, mas pode ser arrombado por ladrões com tempo e ferramentas adequadas.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "caixa-de-maquiagem",
+    "name": "Caixa de Maquiagem",
+    "price": 5000,
+    "weight": 1,
+    "desc": "<p>Conjunto completo de maquiagens e produtos corporais. Pode ser usado para disfarces ou estética.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "cofre",
+    "name": "Cofre",
+    "price": 60000,
+    "weight": 35,
+    "desc": "<p>Semelhante ao baú, porém com sistema avançado de trancas e maior resistência. Ainda assim, pode ser arrombado por ladrões habilidosos com tempo suficiente.</p><p><em>Raridade: Incomum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "instrumento-musical",
+    "name": "Instrumento Musical",
+    "price": 10000,
+    "weight": 1,
+    "desc": "<p>Instrumento musical à escolha do jogador.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "pacote-de-isca-de-peixe",
+    "name": "Pacote de Isca de Peixe",
+    "price": 200,
+    "weight": 0.2,
+    "desc": "<p>Contém 20 iscas. Usado com vara de pescar para aumentar as chances de pesca.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "pacote-de-polvora",
+    "name": "Pacote de Pólvora",
+    "price": 20000,
+    "weight": 1,
+    "desc": "<p>Quantidade suficiente para carregar e disparar um único tiro de canhão.</p><p><em>Raridade: Incomum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "vara-de-pescar",
+    "name": "Vara de Pescar",
+    "price": 8000,
+    "weight": 1,
+    "desc": "<p>Vara simples feita de madeira, equipada com linha, boia e anzol.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "den-den-mushi-alto-falante",
+    "name": "Den-Den Mushi Alto Falante",
+    "price": 32000,
+    "weight": 5,
+    "desc": "<p>Dispositivo fixo usado em locais públicos para transmitir mensagens em voz alta a longas distâncias.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "den-den-mushi-bebe",
+    "name": "Den-Den Mushi Bebê",
+    "price": 50000,
+    "weight": 0.2,
+    "desc": "<p>Versão portátil, cabe na palma da mão. Permite comunicação dentro da mesma ilha ou área. Pode amplificar a voz do usuário para toda a região próxima.</p><p><em>Raridade: Raro.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "den-den-mushi-branco",
+    "name": "Den-Den Mushi Branco",
+    "price": 600000,
+    "weight": 0.8,
+    "desc": "<p>Possui duas funções únicas: interceptar conversas de outros den-den mushi na área (grampo) e proteger ligações ao ser conectado a outro den-den mushi, criando uma linha segura. Uso não autorizado pode resultar em prisão e confisco pelo Governo Mundial ou Marinha.</p><p><em>Raridade: Mercado Negro.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "den-den-mushi-camera",
+    "name": "Den-Den Mushi Câmera",
+    "price": 40000,
+    "weight": 2,
+    "desc": "<p>Tira fotos emitindo flashes pelos olhos e imprime a imagem logo em seguida.</p><p><em>Raridade: Incomum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "den-den-mushi-fone",
+    "name": "Den-Den Mushi Fone",
+    "price": 20000,
+    "weight": 0.3,
+    "desc": "<p>Conectado diretamente ao den-den mushi principal. Ajuda a evitar interceptações durante ligações.</p><p><em>Raridade: Raro.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "den-den-mushi-padrao",
+    "name": "Den-Den Mushi Padrão",
+    "price": 50000,
+    "weight": 0.5,
+    "desc": "<p>Dispositivo padrão de comunicação com grande alcance. Permite chamadas entre qualquer outro den-den mushi conhecido.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "den-den-mushi-preto",
+    "name": "Den-Den Mushi Preto",
+    "price": 120000,
+    "weight": 0.1,
+    "desc": "<p>Portátil e discreto, pode ser usado como relógio. Muito utilizado por agentes secretos. Tem alcance limitado à mesma ilha.</p><p><em>Raridade: Mercado Negro.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "eternal-pose",
+    "name": "Eternal Pose",
+    "price": 300000,
+    "weight": 1,
+    "desc": "<p>Similar ao Log Pose, mas aponta sempre para uma ilha específica.</p><p><em>Raridade: Raro.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "log-pose",
+    "name": "Log Pose",
+    "price": 50000,
+    "weight": 0.2,
+    "desc": "<p>Bússola especial usada na Grand Line. Memoriza o campo magnético da ilha atual (tempo de sincronização médio: 1 dia a 1 semana) e aponta para a próxima ilha da rota.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "log-pose-de-3-agulhas",
+    "name": "Log Pose de 3 Agulhas",
+    "price": 500000,
+    "weight": 0.2,
+    "desc": "<p>Versão aprimorada com 3 agulhas que apontam para diferentes ilhas. Usado no Novo Mundo, onde os campos magnéticos mudam com frequência. A agulha mais estável indica a ilha mais segura.</p><p><em>Raridade: Incomum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "vivre-card",
+    "name": "Vivre Card",
+    "price": 2000000,
+    "weight": 0,
+    "desc": "<p>Feito com material biológico de uma pessoa (como cabelo ou unha), sempre aponta em sua direção. Pode queimar caso a pessoa esteja em risco de morte.</p><p><em>Raridade: Raro.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "combustivel-de-motor",
+    "name": "Combustível de Motor",
+    "price": 90000,
+    "weight": 0,
+    "desc": "<p>Necessário para o funcionamento de motores. Cada unidade dura 10 dias.</p><p><em>Raridade: Incomum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "bateria-grande",
+    "name": "Bateria Grande",
+    "price": 500000,
+    "weight": 15,
+    "desc": "<p>Fonte de energia para máquinas de grande porte. Cada unidade dura 1 dia. Recarrega com luz solar após 1 semana.</p><p><em>Raridade: Raro.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "carvao",
+    "name": "Carvão",
+    "price": 200000,
+    "weight": 10,
+    "desc": "<p>Fonte de energia para máquinas à vapor.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "nucleo-de-energia",
+    "name": "Núcleo de Energia",
+    "price": 500000,
+    "weight": 3,
+    "desc": "<p>Fonte de energia utilizada em Raid Suits. Cada unidade restaura 100 Pontos de Tecnologia.</p><p><em>Raridade: Raro.</em></p>"
+  },
+  {
+    "kind": "gear",
+    "code": "pilha-bateria",
+    "name": "Pilha/Bateria",
+    "price": 200,
+    "weight": 0.1,
+    "desc": "<p>Conjunto de pilhas e baterias para dispositivos elétricos simples. Serve como fonte de energia portátil.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "clothing",
+    "code": "roupa-de-gala",
+    "name": "Roupa de Gala",
+    "price": 400000,
+    "weight": 1,
+    "desc": "<p>Traje elegante para eventos formais e reuniões sociais de alto nível.</p><p><em>Raridade: Incomum.</em></p>"
+  },
+  {
+    "kind": "clothing",
+    "code": "roupa-especial",
+    "name": "Roupa Especial",
+    "price": 40000,
+    "weight": 1,
+    "desc": "<p>Roupas específicas para ambientes hostis (desertos, neves intensas, mergulho profundo, etc.). Quando usadas corretamente, impedem penalidades por condições climáticas extremas.</p><p><em>Raridade: Incomum.</em></p>"
+  },
+  {
+    "kind": "consumable",
+    "code": "ampola-de-anestesia",
+    "name": "Ampola de Anestesia",
+    "price": 80000,
+    "weight": 0.1,
+    "desc": "<p>Frasco de 100 ml com tampa perfurável, contendo líquido anestésico. Deve ser usado com seringa apropriada.</p><p><em>Raridade: Incomum.</em></p>"
+  },
+  {
+    "kind": "consumable",
+    "code": "antidoto",
+    "name": "Antídoto",
+    "price": 40000,
+    "weight": 0.2,
+    "desc": "<p>Frasco de vidro com substâncias capazes de neutralizar venenos comuns ou servir como base para antídotos mais complexos.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "consumable",
+    "code": "frasco-de-acido",
+    "name": "Frasco de Ácido",
+    "price": 20000,
+    "weight": 0.3,
+    "desc": "<p>Frasco pequeno contendo ácido altamente corrosivo. Pode ser arremessado até 6 metros como ataque à distância. Ao atingir um alvo, causa 14 (3d8) de dano Ácido.</p><p><em>Raridade: Raro.</em></p>",
+    "damage": {
+      "number": 3,
+      "denomination": 8,
+      "types": [
+        "acid"
+      ]
+    }
+  },
+  {
+    "kind": "consumable",
+    "code": "tubo-de-ensaio",
+    "name": "Tubo de Ensaio",
+    "price": 500,
+    "weight": 0.1,
+    "desc": "<p>Tubo de vidro resistente usado para armazenar ou misturar substâncias.</p><p><em>Raridade: Incomum.</em></p>"
+  },
+  {
+    "kind": "consumable",
+    "code": "veneno-basico-dose",
+    "name": "Veneno Básico – Dose",
+    "price": 80000,
+    "weight": 0.1,
+    "desc": "<p>Pode ser aplicado em armas cortantes/perfurantes ou até 3 munições. Requer 1 ação. Ao atingir um alvo, este deve passar em uma Salvaguarda de Constituição CD 10, ou receberá a condição 'Envenenado'. O efeito dura até 1 minuto antes de secar.</p><p><em>Raridade: Mercado Negro.</em></p>"
+  },
+  {
+    "kind": "consumable",
+    "code": "bastao-de-fumaca",
+    "name": "Bastão de Fumaça",
+    "price": 10000,
+    "weight": 0.4,
+    "desc": "<p>Ao ser quebrado, libera uma nuvem de fumaça branca (ou colorida), com raio de 6 metros. Não tóxica.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "consumable",
+    "code": "gas-do-sono",
+    "name": "Gás do Sono",
+    "price": 80000,
+    "weight": 1.5,
+    "desc": "<p>Ao abrir a válvula, libera gás em uma esfera de 1,5 metro, expandindo 1,5 m por rodada até atingir 9 metros de raio (dura até 1 minuto). Criaturas na área devem fazer Salvaguardas de Constituição a cada turno ou ganham a condição 'Sonolento'. Em caso de falha tirando resultado 1 no d20, caem inconscientes.</p><p><em>Raridade: Mercado Negro.</em></p>"
+  },
+  {
+    "kind": "consumable",
+    "code": "gas-inflamavel",
+    "name": "Gás Inflamável",
+    "price": 150000,
+    "weight": 1.5,
+    "desc": "<p>Idêntico ao gás do sono em expansão e duração. Caso entre em contato com fogo ou faísca, criaturas na área devem fazer Salvaguarda de Destreza ou sofrer 21 (6d6) de dano de Fogo.</p><p><em>Raridade: Raro.</em></p>",
+    "damage": {
+      "number": 6,
+      "denomination": 6,
+      "types": [
+        "fire"
+      ]
+    }
+  },
+  {
+    "kind": "consumable",
+    "code": "racao-de-viagem",
+    "name": "Ração de Viagem",
+    "price": 2000,
+    "weight": 0.5,
+    "desc": "<p>Alimento conservado e nutritivo, suficiente para um dia. Pouco saboroso, mas eficaz.</p><p><em>Raridade: Comum.</em></p>"
+  },
+  {
+    "kind": "consumable",
+    "code": "racao-militar",
+    "name": "Ração Militar",
+    "price": 8000,
+    "weight": 0.7,
+    "desc": "<p>Desenvolvida pela Marinha, rica em proteínas e cafeína. Concede 20 Pontos de Vida temporários e mantém a saciedade por 1 dia.</p><p><em>Raridade: Incomum.</em></p>"
+  },
+  {
+    "kind": "consumable",
+    "code": "racao-para-animais",
+    "name": "Ração para Animais",
+    "price": 800,
+    "weight": 0.5,
+    "desc": "<p>Alimento balanceado para diversas espécies animais. Sacia por 1 dia.</p><p><em>Raridade: Comum.</em></p>"
+  }
+];

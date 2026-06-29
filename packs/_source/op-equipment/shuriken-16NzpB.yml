@@ -1,0 +1,59 @@
+_id: 16NzpB60RGIvKMrS
+name: Shuriken
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Uma pequena estrela de metal afiada.</p><p><strong>✠ Expertise:</strong> A criatura atingida recebe a condição 'Sangramento'.</p>
+    chat: ''
+  identifier: shuriken
+  price:
+    value: 500
+    denomination: yen
+  weight:
+    value: 0.1
+    units: kg
+  type:
+    value: simpleM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 4
+      bonus: ''
+      types:
+        - piercing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - fin
+    - thr
+  range:
+    value: 6
+    long: 12
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!16NzpB60RGIvKMrS'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,24 @@
+_id: BhuxdpI7jCVe4HeU
+name: Bastão de Fumaça
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Ao ser quebrado, libera uma nuvem de fumaça branca (ou colorida), com raio de 6 metros. Não tóxica.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: bastao-de-fumaca
+  price:
+    value: 10000
+    denomination: yen
+  weight:
+    value: 0.4
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: consumable
+_key: '!items!BhuxdpI7jCVe4HeU'
+ownership:
+  default: 0
+flags: {}

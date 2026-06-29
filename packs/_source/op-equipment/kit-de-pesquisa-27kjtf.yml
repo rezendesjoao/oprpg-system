@@ -1,0 +1,24 @@
+_id: 27kjtfRFbGIV8AvB
+name: Kit de Pesquisa
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Conjunto para pesquisas químicas e biológicas. Inclui tubos de ensaio, frascos, reagentes, pipetas, placas de Petri, entre outros.</p><p><em>Raridade: Raro.</em></p>'
+    chat: ''
+  identifier: kit-de-pesquisa
+  price:
+    value: 60000
+    denomination: yen
+  weight:
+    value: 3.5
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!27kjtfRFbGIV8AvB'
+ownership:
+  default: 0
+flags: {}

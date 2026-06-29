@@ -1,0 +1,60 @@
+_id: vgXPzTeOQmjsjhM9
+name: Daito / Katana
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Versão mais longa de uma katana.</p><p><strong>✠ Expertise:</strong> A próxima jogada de ataque (comum) feita contra você, até o final do seu próximo turno, falha.</p>
+    chat: ''
+  identifier: daito-katana
+  price:
+    value: 80000
+    denomination: yen
+  weight:
+    value: 1.6
+    units: kg
+  type:
+    value: martialM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 6
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: 1
+      denomination: 8
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - fin
+    - ver
+  range:
+    value: null
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!vgXPzTeOQmjsjhM9'
+ownership:
+  default: 0
+flags: {}

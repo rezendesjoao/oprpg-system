@@ -1,0 +1,24 @@
+_id: qIzHN9960zolKf5f
+name: Cofre
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Semelhante ao baú, porém com sistema avançado de trancas e maior resistência. Ainda assim, pode ser arrombado por ladrões habilidosos com tempo suficiente.</p><p><em>Raridade: Incomum.</em></p>'
+    chat: ''
+  identifier: cofre
+  price:
+    value: 60000
+    denomination: yen
+  weight:
+    value: 35
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!qIzHN9960zolKf5f'
+ownership:
+  default: 0
+flags: {}

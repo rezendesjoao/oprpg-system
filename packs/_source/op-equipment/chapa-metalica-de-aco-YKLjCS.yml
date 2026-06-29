@@ -1,0 +1,24 @@
+_id: YKLjCSL4TlQgA1XI
+name: Chapa Metálica de Aço
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Chapa de aço padrão utilizada em construções diversas.</p><p><em>Raridade: Incomum.</em></p>'
+    chat: ''
+  identifier: chapa-metalica-de-aco
+  price:
+    value: 8000
+    denomination: yen
+  weight:
+    value: 12
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!YKLjCSL4TlQgA1XI'
+ownership:
+  default: 0
+flags: {}

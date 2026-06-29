@@ -1,0 +1,38 @@
+_id: VriyAJ5jaWadK9dm
+name: Frasco de Ácido
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Frasco pequeno contendo ácido altamente corrosivo. Pode ser arremessado até 6 metros como ataque à distância. Ao atingir um alvo, causa 14 (3d8) de dano Ácido.</p><p><em>Raridade: Raro.</em></p>'
+    chat: ''
+  identifier: frasco-de-acido
+  price:
+    value: 20000
+    denomination: yen
+  weight:
+    value: 0.3
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+  damage:
+    base:
+      number: 3
+      denomination: 8
+      bonus: ''
+      types:
+        - acid
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+effects: []
+folder: null
+type: consumable
+_key: '!items!VriyAJ5jaWadK9dm'
+ownership:
+  default: 0
+flags: {}

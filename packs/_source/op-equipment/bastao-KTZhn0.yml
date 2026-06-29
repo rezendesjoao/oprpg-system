@@ -1,0 +1,59 @@
+_id: KTZhn0SvHboxfRN0
+name: Bastão
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Um pedaço simples de madeira ou metal, de forma cilíndrica, utilizado como arma de combate.</p><p><em>Dano de arma marcial = seu dano desarmado aumentado em 1 passo (1d6 é apenas referência).</em></p><p><strong>✠ Expertise:</strong> A criatura atingida recebe a condição 'Caído'.</p>
+    chat: ''
+  identifier: bastao
+  price:
+    value: 40000
+    denomination: yen
+  weight:
+    value: 1.5
+    units: kg
+  type:
+    value: simpleM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 6
+      bonus: ''
+      types:
+        - bludgeoning
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - rch
+    - two
+  range:
+    value: null
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!KTZhn0SvHboxfRN0'
+ownership:
+  default: 0
+flags: {}

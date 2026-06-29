@@ -1,0 +1,38 @@
+_id: kTwvaK888KPnq1ly
+name: Munição Esférica
+img: icons/svg/target.svg
+system:
+  description:
+    value: <p>Munição comum usada por pistolas, mosquetes e similares.</p>
+    chat: ''
+  identifier: municao-esferica
+  price:
+    value: 500
+    denomination: yen
+  weight:
+    value: 0.1
+    units: kg
+  type:
+    value: ammo
+    subtype: ''
+  damage:
+    base:
+      number: 1
+      denomination: 8
+      bonus: ''
+      types:
+        - bludgeoning
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+effects: []
+folder: null
+type: consumable
+_key: '!items!kTwvaK888KPnq1ly'
+ownership:
+  default: 0
+flags: {}

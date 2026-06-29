@@ -1,0 +1,24 @@
+_id: 108J7DJIdNIwJbQo
+name: Veneno Básico – Dose
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Pode ser aplicado em armas cortantes/perfurantes ou até 3 munições. Requer 1 ação. Ao atingir um alvo, este deve passar em uma Salvaguarda de Constituição CD 10, ou receberá a condição ''Envenenado''. O efeito dura até 1 minuto antes de secar.</p><p><em>Raridade: Mercado Negro.</em></p>'
+    chat: ''
+  identifier: veneno-basico-dose
+  price:
+    value: 80000
+    denomination: yen
+  weight:
+    value: 0.1
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: consumable
+_key: '!items!108J7DJIdNIwJbQo'
+ownership:
+  default: 0
+flags: {}

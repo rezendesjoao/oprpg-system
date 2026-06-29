@@ -1,0 +1,24 @@
+_id: uBYc6zz26ZiaU0AV
+name: Kit de Falsificação
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Contém moldes, tintas, materiais diversos. Permite falsificar documentos e itens.</p><p><em>Raridade: Mercado Negro.</em></p>'
+    chat: ''
+  identifier: kit-de-falsificacao
+  price:
+    value: 0
+    denomination: yen
+  weight:
+    value: 1
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!uBYc6zz26ZiaU0AV'
+ownership:
+  default: 0
+flags: {}

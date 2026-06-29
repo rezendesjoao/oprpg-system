@@ -1,0 +1,24 @@
+_id: Ykf5VbxKfjKFwNhT
+name: Den-Den Mushi Padrão
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Dispositivo padrão de comunicação com grande alcance. Permite chamadas entre qualquer outro den-den mushi conhecido.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: den-den-mushi-padrao
+  price:
+    value: 50000
+    denomination: yen
+  weight:
+    value: 0.5
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!Ykf5VbxKfjKFwNhT'
+ownership:
+  default: 0
+flags: {}

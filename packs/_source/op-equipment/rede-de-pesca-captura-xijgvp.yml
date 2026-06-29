@@ -1,0 +1,24 @@
+_id: xijgvplBKLQMiUc6
+name: Rede de Pesca/Captura
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Rede trançada usada para pesca ou captura de criaturas. Arremessável a até 6 metros. Em caso de acerto, aplica a condição ''Impedido'' à criatura atingida.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: rede-de-pesca-captura
+  price:
+    value: 1500
+    denomination: yen
+  weight:
+    value: 2
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!xijgvplBKLQMiUc6'
+ownership:
+  default: 0
+flags: {}

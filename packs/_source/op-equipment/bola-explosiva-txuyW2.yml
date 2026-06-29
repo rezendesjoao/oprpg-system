@@ -1,0 +1,38 @@
+_id: txuyW24HbDbiZ7PO
+name: Bola Explosiva
+img: icons/svg/target.svg
+system:
+  description:
+    value: '<p>Munição explosiva para canhões ou bazucas.</p><p>Causa 3d10 de dano Contundente e explode em área de 1,5 m de raio. Todos na área fazem Salvaguarda de Destreza, sofrendo 2d6 de dano de Fogo se falhar (metade com sucesso).</p><p><em>Arma de Cerco: o dano final é dobrado contra estruturas.</em></p>'
+    chat: ''
+  identifier: bola-explosiva
+  price:
+    value: 32000
+    denomination: yen
+  weight:
+    value: 3.8
+    units: kg
+  type:
+    value: ammo
+    subtype: ''
+  damage:
+    base:
+      number: 3
+      denomination: 10
+      bonus: ''
+      types:
+        - bludgeoning
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+effects: []
+folder: null
+type: consumable
+_key: '!items!txuyW24HbDbiZ7PO'
+ownership:
+  default: 0
+flags: {}

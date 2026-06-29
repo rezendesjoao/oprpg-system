@@ -1,0 +1,24 @@
+_id: ikRV11B3nZhbLwrT
+name: Instrumento Musical
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Instrumento musical à escolha do jogador.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: instrumento-musical
+  price:
+    value: 10000
+    denomination: yen
+  weight:
+    value: 1
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!ikRV11B3nZhbLwrT'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,38 @@
+_id: YIZn6qV2vymM9AoP
+name: Gás Inflamável
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Idêntico ao gás do sono em expansão e duração. Caso entre em contato com fogo ou faísca, criaturas na área devem fazer Salvaguarda de Destreza ou sofrer 21 (6d6) de dano de Fogo.</p><p><em>Raridade: Raro.</em></p>'
+    chat: ''
+  identifier: gas-inflamavel
+  price:
+    value: 150000
+    denomination: yen
+  weight:
+    value: 1.5
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+  damage:
+    base:
+      number: 6
+      denomination: 6
+      bonus: ''
+      types:
+        - fire
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+effects: []
+folder: null
+type: consumable
+_key: '!items!YIZn6qV2vymM9AoP'
+ownership:
+  default: 0
+flags: {}

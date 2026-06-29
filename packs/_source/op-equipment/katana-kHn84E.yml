@@ -1,0 +1,58 @@
+_id: kHn84Ee4KCdRZhoO
+name: Katana
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Espada de lâmina curva e gume único, equilibrada para cortes precisos e rápidos.</p><p><strong>✠ Expertise:</strong> Os dados de dano da arma são maximizados.</p>
+    chat: ''
+  identifier: katana
+  price:
+    value: 70000
+    denomination: yen
+  weight:
+    value: 1.2
+    units: kg
+  type:
+    value: martialM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 6
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - fin
+  range:
+    value: null
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!kHn84Ee4KCdRZhoO'
+ownership:
+  default: 0
+flags: {}

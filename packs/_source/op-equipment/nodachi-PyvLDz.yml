@@ -1,0 +1,60 @@
+_id: PyvLDzDUqL7NnmdK
+name: Nodachi
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Katana alongada com lâmina pesada, projetada para cortes amplos e potentes, dominando o campo de batalha.</p><p><strong>✠ Expertise:</strong> Sua próxima jogada de ataque (comum), até o final do seu próximo turno, tem margem de acerto crítico 16-20.</p>
+    chat: ''
+  identifier: nodachi
+  price:
+    value: 100000
+    denomination: yen
+  weight:
+    value: 2.8
+    units: kg
+  type:
+    value: martialM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 8
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - rch
+    - two
+    - hvy
+  range:
+    value: null
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!PyvLDzDUqL7NnmdK'
+ownership:
+  default: 0
+flags: {}

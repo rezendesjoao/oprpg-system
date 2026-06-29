@@ -1,0 +1,24 @@
+_id: F5GAjBqubKQGp6lJ
+name: Bateria Grande
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Fonte de energia para máquinas de grande porte. Cada unidade dura 1 dia. Recarrega com luz solar após 1 semana.</p><p><em>Raridade: Raro.</em></p>'
+    chat: ''
+  identifier: bateria-grande
+  price:
+    value: 500000
+    denomination: yen
+  weight:
+    value: 15
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!F5GAjBqubKQGp6lJ'
+ownership:
+  default: 0
+flags: {}

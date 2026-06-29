@@ -1,0 +1,24 @@
+_id: Tx6WUFZQZTWLNnYr
+name: Óculos de Visão Noturna
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Dispositivo usado pela Marinha para missões noturnas, subaquáticas ou subterrâneas. Permite enxergar na escuridão total como se fosse penumbra.</p><p><em>Raridade: Mercado Negro.</em></p>'
+    chat: ''
+  identifier: oculos-de-visao-noturna
+  price:
+    value: 85000
+    denomination: yen
+  weight:
+    value: 0.5
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!Tx6WUFZQZTWLNnYr'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,24 @@
+_id: lteV50CQ2HzJVpXw
+name: Corrente de Elos
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Corrente metálica robusta, adaptável a diversas finalidades.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: corrente-de-elos
+  price:
+    value: 1200
+    denomination: yen
+  weight:
+    value: 2.5
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!lteV50CQ2HzJVpXw'
+ownership:
+  default: 0
+flags: {}

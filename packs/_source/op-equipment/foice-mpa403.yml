@@ -1,0 +1,59 @@
+_id: mpa403hYjCK85WC2
+name: Foice
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Lâmina curva montada em haste longa, usada tanto para combate quanto para colheita. Pode ser usada como requisito 'Arma Cortante'.</p><p><strong>✠ Expertise:</strong> Ao final do cálculo de dano, puxe a criatura para 1,5 metro de você ou adicione 1d8 de dano adicional.</p>
+    chat: ''
+  identifier: foice
+  price:
+    value: 50000
+    denomination: yen
+  weight:
+    value: 3
+    units: kg
+  type:
+    value: martialM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 8
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - rch
+    - two
+  range:
+    value: null
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!mpa403hYjCK85WC2'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,60 @@
+_id: 3youSBuvbE22X6ii
+name: Zarabatana
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Um pequeno cano feito com o propósito de atirar dardos silenciosamente. Cada sopro consome 1 munição.</p><p><em>Dano conforme a munição utilizada. Cada disparo consome 1 munição.</em></p><p><strong>✠ Expertise:</strong> A criatura atingida recebe a condição 'Impedido', até o final do próximo turno da criatura.</p>
+    chat: ''
+  identifier: zarabatana
+  price:
+    value: 8000
+    denomination: yen
+  weight:
+    value: 0.3
+    units: kg
+  type:
+    value: simpleR
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: null
+      bonus: '1'
+      types:
+        - piercing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - amm
+  range:
+    value: 6
+    long: 9
+    reach: null
+    units: m
+  proficient: null
+  ammunition:
+    type: ''
+effects: []
+folder: null
+type: weapon
+_key: '!items!3youSBuvbE22X6ii'
+ownership:
+  default: 0
+flags: {}

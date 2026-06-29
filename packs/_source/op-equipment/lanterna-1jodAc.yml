@@ -1,0 +1,24 @@
+_id: 1jodAcGLxv6eJ5R8
+name: Lanterna
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Aparelho cilíndrico com foco de luz. Alimentado por pilhas ou baterias, ilumina um cone de até 4,5 metros com luz plena e mais 4,5 metros com penumbra.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: lanterna
+  price:
+    value: 800
+    denomination: yen
+  weight:
+    value: 0.5
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!1jodAcGLxv6eJ5R8'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,57 @@
+_id: Xnl47FTn6lwkGNYE
+name: Luva de Ferro
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Uma luva reforçada com placas metálicas sobre os dedos, podendo ter espinhos.</p><p><em>Dano de arma marcial = seu dano desarmado aumentado em 1 passo (1d6 é apenas referência).</em></p><p><em>Dano Contundente ou Perfurante (à escolha).</em></p><p><strong>✠ Expertise:</strong> Sua próxima jogada de ataque (comum ou Técnicas), até o final do seu próximo turno, recebe +3 de acerto.</p>
+    chat: ''
+  identifier: luva-de-ferro
+  price:
+    value: 20000
+    denomination: yen
+  weight:
+    value: 0.8
+    units: kg
+  type:
+    value: simpleM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 6
+      bonus: ''
+      types:
+        - bludgeoning
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties: []
+  range:
+    value: null
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!Xnl47FTn6lwkGNYE'
+ownership:
+  default: 0
+flags: {}

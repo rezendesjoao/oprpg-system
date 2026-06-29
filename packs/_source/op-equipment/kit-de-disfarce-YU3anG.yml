@@ -1,0 +1,24 @@
+_id: YU3anGQsiaG8kaUN
+name: Kit de Disfarce
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Contém roupas, sapatos, perucas e um adereço peculiar à escolha do jogador.</p><p><em>Raridade: Raro.</em></p>'
+    chat: ''
+  identifier: kit-de-disfarce
+  price:
+    value: 45000
+    denomination: yen
+  weight:
+    value: 3
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!YU3anGQsiaG8kaUN'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,62 @@
+_id: 3gX4B06ku4Md7rSY
+name: Metralhadora
+img: icons/svg/sword.svg
+system:
+  description:
+    value: '<p>Arma automática com carregador de alta capacidade, capaz de liberar rajadas letais em área. Gasta 20 munições perfurantes por disparo.</p><p><em>Ataque em área: cone de 6 metros.</em></p><p><strong>✠ Expertise:</strong> Todos dentro da área (cone de 6 metros) devem fazer uma Salvaguarda de Destreza, sofrendo 3d6 de dano Perfurante se falhar, ou metade se obtiver sucesso.</p>'
+    chat: ''
+  identifier: metralhadora
+  price:
+    value: 380000
+    denomination: yen
+  weight:
+    value: 5
+    units: kg
+  type:
+    value: martialR
+    baseItem: ''
+  damage:
+    base:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - two
+    - amm
+    - lod
+    - fir
+  range:
+    value: 6
+    long: null
+    reach: null
+    units: m
+  proficient: null
+  ammunition:
+    type: ''
+effects: []
+folder: null
+type: weapon
+_key: '!items!3gX4B06ku4Md7rSY'
+ownership:
+  default: 0
+flags: {}

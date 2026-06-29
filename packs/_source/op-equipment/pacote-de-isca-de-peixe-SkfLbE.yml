@@ -1,0 +1,24 @@
+_id: SkfLbEqADNOQWMZk
+name: Pacote de Isca de Peixe
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Contém 20 iscas. Usado com vara de pescar para aumentar as chances de pesca.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: pacote-de-isca-de-peixe
+  price:
+    value: 200
+    denomination: yen
+  weight:
+    value: 0.2
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!SkfLbEqADNOQWMZk'
+ownership:
+  default: 0
+flags: {}

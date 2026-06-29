@@ -1,0 +1,24 @@
+_id: RIsSrn32WOxOSvrH
+name: Asa Delta
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Usada para planar captando correntes de vento. Dependendo das condições climáticas, concede 9 metros de deslocamento de voo.</p><p><em>Raridade: Raro.</em></p>'
+    chat: ''
+  identifier: asa-delta
+  price:
+    value: 260000
+    denomination: yen
+  weight:
+    value: 10
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!RIsSrn32WOxOSvrH'
+ownership:
+  default: 0
+flags: {}

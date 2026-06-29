@@ -1,0 +1,24 @@
+_id: kO0mPuUQEbXqgGak
+name: Eternal Pose
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Similar ao Log Pose, mas aponta sempre para uma ilha específica.</p><p><em>Raridade: Raro.</em></p>'
+    chat: ''
+  identifier: eternal-pose
+  price:
+    value: 300000
+    denomination: yen
+  weight:
+    value: 1
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!kO0mPuUQEbXqgGak'
+ownership:
+  default: 0
+flags: {}

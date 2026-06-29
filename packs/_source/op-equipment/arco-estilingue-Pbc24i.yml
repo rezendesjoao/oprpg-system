@@ -1,0 +1,61 @@
+_id: Pbc24iONB4m1t03i
+name: Arco / Estilingue
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Arma de longo alcance feita de madeira flexível e corda resistente, capaz de lançar flechas ou projéteis com precisão.</p><p><em>Dano conforme a munição utilizada. Cada disparo consome 1 munição.</em></p><p><strong>✠ Expertise:</strong> A criatura atingida recebe a condição 'Enfurecido', até o final do próximo turno da criatura.</p>
+    chat: ''
+  identifier: arco-estilingue
+  price:
+    value: 22500
+    denomination: yen
+  weight:
+    value: 0.5
+    units: kg
+  type:
+    value: simpleR
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 6
+      bonus: ''
+      types:
+        - piercing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - amm
+    - two
+  range:
+    value: 18
+    long: 24
+    reach: null
+    units: m
+  proficient: null
+  ammunition:
+    type: ''
+effects: []
+folder: null
+type: weapon
+_key: '!items!Pbc24iONB4m1t03i'
+ownership:
+  default: 0
+flags: {}

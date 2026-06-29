@@ -1,0 +1,29 @@
+_id: efZGTZWwco1VXd4l
+name: Roupa de Gala
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Traje elegante para eventos formais e reuniões sociais de alto nível.</p><p><em>Raridade: Incomum.</em></p>'
+    chat: ''
+  identifier: roupa-de-gala
+  price:
+    value: 400000
+    denomination: yen
+  weight:
+    value: 1
+    units: kg
+  type:
+    value: clothing
+    baseItem: ''
+  armor:
+    value: 0
+    dex: null
+    magicalBonus: ''
+  proficient: null
+effects: []
+folder: null
+type: equipment
+_key: '!items!efZGTZWwco1VXd4l'
+ownership:
+  default: 0
+flags: {}

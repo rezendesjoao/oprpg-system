@@ -1,0 +1,59 @@
+_id: H9vB3ZryaWPIKC4e
+name: Kanabo / Tacape
+img: icons/svg/sword.svg
+system:
+  description:
+    value: '<p>Um bastão robusto com a extremidade grossa, podendo conter espinhos ou saliências metálicas.</p><p><em>Dano de arma marcial = seu dano desarmado aumentado em 1 passo (1d6 é apenas referência).</em></p><p><em>Dano Contundente ou Perfurante (à escolha).</em></p><p><em>Arma de Cerco: o dano final é dobrado contra estruturas.</em></p><p><strong>✠ Expertise:</strong> Ao final do cálculo de dano, empurre a criatura por 6 metros ou adicione 1d8 de dano adicional.</p>'
+    chat: ''
+  identifier: kanabo-tacape
+  price:
+    value: 60000
+    denomination: yen
+  weight:
+    value: 4.5
+    units: kg
+  type:
+    value: simpleM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 6
+      bonus: ''
+      types:
+        - bludgeoning
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - two
+    - hvy
+  range:
+    value: null
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!H9vB3ZryaWPIKC4e'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,38 @@
+_id: hkIlt9fg8kb0hqZn
+name: Munição Perfurante
+img: icons/svg/target.svg
+system:
+  description:
+    value: <p>Munição comum usada por pistolas, mosquetes e similares.</p>
+    chat: ''
+  identifier: municao-perfurante
+  price:
+    value: 1000
+    denomination: yen
+  weight:
+    value: 0.1
+    units: kg
+  type:
+    value: ammo
+    subtype: ''
+  damage:
+    base:
+      number: 1
+      denomination: 8
+      bonus: ''
+      types:
+        - piercing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+effects: []
+folder: null
+type: consumable
+_key: '!items!hkIlt9fg8kb0hqZn'
+ownership:
+  default: 0
+flags: {}

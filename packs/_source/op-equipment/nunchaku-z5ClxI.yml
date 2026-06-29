@@ -1,0 +1,58 @@
+_id: z5ClxIVqLMb14JPu
+name: Nunchaku
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Dois bastões curtos, geralmente de madeira ou metal, conectados por uma corrente ou corda.</p><p><em>Dano de arma marcial = seu dano desarmado aumentado em 1 passo (1d6 é apenas referência).</em></p><p><strong>✠ Expertise:</strong> Ao final do cálculo de dano, adicione 1d12 de dano Contundente.</p>
+    chat: ''
+  identifier: nunchaku
+  price:
+    value: 25000
+    denomination: yen
+  weight:
+    value: 1
+    units: kg
+  type:
+    value: simpleM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 6
+      bonus: ''
+      types:
+        - bludgeoning
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - fin
+  range:
+    value: null
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!z5ClxIVqLMb14JPu'
+ownership:
+  default: 0
+flags: {}

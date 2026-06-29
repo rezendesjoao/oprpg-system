@@ -1,0 +1,24 @@
+_id: 7PWZyXWOg5QYMdUi
+name: Gás do Sono
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Ao abrir a válvula, libera gás em uma esfera de 1,5 metro, expandindo 1,5 m por rodada até atingir 9 metros de raio (dura até 1 minuto). Criaturas na área devem fazer Salvaguardas de Constituição a cada turno ou ganham a condição ''Sonolento''. Em caso de falha tirando resultado 1 no d20, caem inconscientes.</p><p><em>Raridade: Mercado Negro.</em></p>'
+    chat: ''
+  identifier: gas-do-sono
+  price:
+    value: 80000
+    denomination: yen
+  weight:
+    value: 1.5
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: consumable
+_key: '!items!7PWZyXWOg5QYMdUi'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,24 @@
+_id: EsgKMkRvuF2NUXUL
+name: Kit de Temperos
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Coleção de especiarias e condimentos diversos para culinária refinada.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: kit-de-temperos
+  price:
+    value: 15000
+    denomination: yen
+  weight:
+    value: 1.5
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!EsgKMkRvuF2NUXUL'
+ownership:
+  default: 0
+flags: {}

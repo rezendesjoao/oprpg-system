@@ -1,0 +1,24 @@
+_id: 09Bh7ZfSGUjSnDIz
+name: Vara de Pescar
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Vara simples feita de madeira, equipada com linha, boia e anzol.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: vara-de-pescar
+  price:
+    value: 8000
+    denomination: yen
+  weight:
+    value: 1
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!09Bh7ZfSGUjSnDIz'
+ownership:
+  default: 0
+flags: {}

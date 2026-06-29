@@ -1,0 +1,24 @@
+_id: JQyGwbubCLA07EfD
+name: Corda
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Corda resistente de 15 metros, com múltiplas aplicações náuticas ou domésticas.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: corda
+  price:
+    value: 1500
+    denomination: yen
+  weight:
+    value: 3
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!JQyGwbubCLA07EfD'
+ownership:
+  default: 0
+flags: {}

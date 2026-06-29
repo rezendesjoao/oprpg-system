@@ -1,0 +1,58 @@
+_id: tMFlOYXdPTWT9xIc
+name: Shikomizue
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Lâmina fina oculta dentro de uma bengala, perfeita para ataques sorrateiros ou defesa discreta.</p><p><strong>✠ Expertise:</strong> Sua próxima jogada de ataque (comum ou Técnicas), até o final do seu próximo turno, recebe +3 de acerto.</p>
+    chat: ''
+  identifier: shikomizue
+  price:
+    value: 75000
+    denomination: yen
+  weight:
+    value: 1
+    units: kg
+  type:
+    value: martialM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 6
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - fin
+  range:
+    value: null
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!tMFlOYXdPTWT9xIc'
+ownership:
+  default: 0
+flags: {}

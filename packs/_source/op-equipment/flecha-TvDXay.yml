@@ -1,0 +1,38 @@
+_id: TvDXayEEpZk9mEQS
+name: Flecha
+img: icons/svg/target.svg
+system:
+  description:
+    value: <p>Projétil de madeira com ponta de ferro, usado com arcos.</p>
+    chat: ''
+  identifier: flecha
+  price:
+    value: 500
+    denomination: yen
+  weight:
+    value: 0.2
+    units: kg
+  type:
+    value: ammo
+    subtype: ''
+  damage:
+    base:
+      number: 1
+      denomination: 6
+      bonus: ''
+      types:
+        - piercing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+effects: []
+folder: null
+type: consumable
+_key: '!items!TvDXayEEpZk9mEQS'
+ownership:
+  default: 0
+flags: {}

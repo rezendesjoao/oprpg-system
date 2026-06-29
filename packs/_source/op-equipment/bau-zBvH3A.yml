@@ -1,0 +1,24 @@
+_id: zBvH3Aqv1u1TFI8z
+name: Baú
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Contêiner resistente para armazenar itens de valor e dinheiro. Possui cadeado reforçado, mas pode ser arrombado por ladrões com tempo e ferramentas adequadas.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: bau
+  price:
+    value: 12000
+    denomination: yen
+  weight:
+    value: 15
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!zBvH3Aqv1u1TFI8z'
+ownership:
+  default: 0
+flags: {}

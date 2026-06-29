@@ -1,0 +1,24 @@
+_id: I05RFQ22uhuoucSa
+name: Den-Den Mushi Alto Falante
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Dispositivo fixo usado em locais públicos para transmitir mensagens em voz alta a longas distâncias.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: den-den-mushi-alto-falante
+  price:
+    value: 32000
+    denomination: yen
+  weight:
+    value: 5
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!I05RFQ22uhuoucSa'
+ownership:
+  default: 0
+flags: {}

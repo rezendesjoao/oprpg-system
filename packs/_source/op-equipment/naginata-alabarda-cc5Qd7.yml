@@ -1,0 +1,61 @@
+_id: cc5Qd76tEgW5KCh7
+name: Naginata / Alabarda
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Haste com uma grande lâmina em sua ponta. Pode ser usada como requisito 'Arma Cortante'.</p><p><strong>✠ Expertise:</strong> Você causa 1d6 de dano em todas as criaturas a até 3 metros de você.</p>
+    chat: ''
+  identifier: naginata-alabarda
+  price:
+    value: 100000
+    denomination: yen
+  weight:
+    value: 7.5
+    units: kg
+  type:
+    value: martialM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 10
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: 1
+      denomination: 12
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - rch
+    - hvy
+    - ver
+  range:
+    value: null
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!cc5Qd76tEgW5KCh7'
+ownership:
+  default: 0
+flags: {}

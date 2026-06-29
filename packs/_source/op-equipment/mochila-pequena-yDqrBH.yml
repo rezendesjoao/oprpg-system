@@ -1,0 +1,24 @@
+_id: yDqrBHsgkCFL6k56
+name: Mochila Pequena
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Capacidade de até 30 kg de carga.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: mochila-pequena
+  price:
+    value: 10000
+    denomination: yen
+  weight:
+    value: 1
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!yDqrBHsgkCFL6k56'
+ownership:
+  default: 0
+flags: {}

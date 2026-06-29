@@ -1,0 +1,58 @@
+_id: UICJNcPXb0l9Qdq1
+name: Par de Tonfas
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Dois bastões alongados com empunhadura perpendicular, ideais para bloquear e contra-atacar golpes corpo a corpo.</p><p><em>Dano de arma marcial = seu dano desarmado aumentado em 1 passo (1d6 é apenas referência).</em></p><p><strong>✠ Expertise:</strong> Você recebe +2 na Classe de Resistência, até o início do seu próximo turno.</p>
+    chat: ''
+  identifier: par-de-tonfas
+  price:
+    value: 42000
+    denomination: yen
+  weight:
+    value: 2
+    units: kg
+  type:
+    value: simpleM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 6
+      bonus: ''
+      types:
+        - bludgeoning
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - two
+  range:
+    value: null
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!UICJNcPXb0l9Qdq1'
+ownership:
+  default: 0
+flags: {}

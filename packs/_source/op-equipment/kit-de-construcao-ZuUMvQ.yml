@@ -1,0 +1,24 @@
+_id: ZuUMvQtAmu1H6WA9
+name: Kit de Construção
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Contém pregos, parafusos, porcas, arruelas, lixas e outros itens básicos de construção.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: kit-de-construcao
+  price:
+    value: 3000
+    denomination: yen
+  weight:
+    value: 2.5
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!ZuUMvQtAmu1H6WA9'
+ownership:
+  default: 0
+flags: {}

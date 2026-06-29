@@ -1,0 +1,59 @@
+_id: 3Ekqk8FLHQXGBFKq
+name: Martelo de Guerra
+img: icons/svg/sword.svg
+system:
+  description:
+    value: '<p>Um cabo de madeira ou metal com um grande e pesado pedaço de metal em sua extremidade.</p><p><em>Arma de Cerco: o dano final é dobrado contra estruturas.</em></p><p><strong>✠ Expertise:</strong> Ao final do cálculo de dano, empurre a criatura por 6 metros ou adicione 1d8 de dano adicional.</p>'
+    chat: ''
+  identifier: martelo-de-guerra
+  price:
+    value: 80000
+    denomination: yen
+  weight:
+    value: 7
+    units: kg
+  type:
+    value: martialM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 12
+      bonus: ''
+      types:
+        - bludgeoning
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - two
+    - hvy
+  range:
+    value: null
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!3Ekqk8FLHQXGBFKq'
+ownership:
+  default: 0
+flags: {}

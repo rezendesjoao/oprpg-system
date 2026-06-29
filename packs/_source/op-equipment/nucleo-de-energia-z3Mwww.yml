@@ -1,0 +1,24 @@
+_id: z3MwwwiYSyu0AyNg
+name: Núcleo de Energia
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Fonte de energia utilizada em Raid Suits. Cada unidade restaura 100 Pontos de Tecnologia.</p><p><em>Raridade: Raro.</em></p>'
+    chat: ''
+  identifier: nucleo-de-energia
+  price:
+    value: 500000
+    denomination: yen
+  weight:
+    value: 3
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!z3MwwwiYSyu0AyNg'
+ownership:
+  default: 0
+flags: {}

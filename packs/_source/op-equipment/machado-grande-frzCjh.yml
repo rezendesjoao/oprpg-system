@@ -1,0 +1,60 @@
+_id: frzCjhYcKj8sM5OH
+name: Machado Grande
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Machado de lâmina dupla, exigindo força para golpes devastadores que atingem amplos alcances.</p><p><strong>✠ Expertise:</strong> Você causa 1d6 de dano em todas as criaturas a até 3 metros de você.</p>
+    chat: ''
+  identifier: machado-grande
+  price:
+    value: 90000
+    denomination: yen
+  weight:
+    value: 3
+    units: kg
+  type:
+    value: martialM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 12
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - rch
+    - two
+    - hvy
+  range:
+    value: null
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!frzCjhYcKj8sM5OH'
+ownership:
+  default: 0
+flags: {}

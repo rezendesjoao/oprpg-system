@@ -1,0 +1,24 @@
+_id: 7Eit4y3CGs0FzvxL
+name: Den-Den Mushi Branco
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Possui duas funções únicas: interceptar conversas de outros den-den mushi na área (grampo) e proteger ligações ao ser conectado a outro den-den mushi, criando uma linha segura. Uso não autorizado pode resultar em prisão e confisco pelo Governo Mundial ou Marinha.</p><p><em>Raridade: Mercado Negro.</em></p>'
+    chat: ''
+  identifier: den-den-mushi-branco
+  price:
+    value: 600000
+    denomination: yen
+  weight:
+    value: 0.8
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!7Eit4y3CGs0FzvxL'
+ownership:
+  default: 0
+flags: {}

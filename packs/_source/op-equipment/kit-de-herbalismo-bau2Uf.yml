@@ -1,0 +1,24 @@
+_id: bau2UfRK4QrBAC4j
+name: Kit de Herbalismo
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Bolsas para armazenamento de ervas, tesouras e luvas de couro para coleta, almofariz e pilão, além de vários frascos de vidro.</p><p><em>Raridade: Raro.</em></p>'
+    chat: ''
+  identifier: kit-de-herbalismo
+  price:
+    value: 50000
+    denomination: yen
+  weight:
+    value: 1.5
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!bau2UfRK4QrBAC4j'
+ownership:
+  default: 0
+flags: {}

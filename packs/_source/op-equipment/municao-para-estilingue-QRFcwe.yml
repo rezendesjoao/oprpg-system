@@ -1,0 +1,24 @@
+_id: QRFcwe3B0DHneVGs
+name: Munição para Estilingue
+img: icons/svg/target.svg
+system:
+  description:
+    value: <p>Qualquer objeto que caiba no suporte preso ao elástico, como pedras, munições pequenas etc. Dano 1d4, 1d6 ou 1d8 (Contundente, Cortante ou Perfurante). Objetos diferentes de munições esféricas reduzem o alcance da arma pela metade.</p>
+    chat: ''
+  identifier: municao-para-estilingue
+  price:
+    value: 0
+    denomination: yen
+  weight:
+    value: 0
+    units: kg
+  type:
+    value: ammo
+    subtype: ''
+effects: []
+folder: null
+type: consumable
+_key: '!items!QRFcwe3B0DHneVGs'
+ownership:
+  default: 0
+flags: {}

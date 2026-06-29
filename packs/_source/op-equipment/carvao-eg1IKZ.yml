@@ -1,0 +1,24 @@
+_id: eg1IKZDob3IoJmeB
+name: Carvão
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Fonte de energia para máquinas à vapor.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: carvao
+  price:
+    value: 200000
+    denomination: yen
+  weight:
+    value: 10
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!eg1IKZDob3IoJmeB'
+ownership:
+  default: 0
+flags: {}

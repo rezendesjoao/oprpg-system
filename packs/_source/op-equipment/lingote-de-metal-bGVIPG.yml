@@ -1,0 +1,24 @@
+_id: bGVIPGj4Wxi0bq3G
+name: Lingote de Metal
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Lingote de metal variado.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: lingote-de-metal
+  price:
+    value: 6000
+    denomination: yen
+  weight:
+    value: 1
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!bGVIPGj4Wxi0bq3G'
+ownership:
+  default: 0
+flags: {}

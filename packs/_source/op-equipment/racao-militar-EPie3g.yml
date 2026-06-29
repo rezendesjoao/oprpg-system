@@ -1,0 +1,24 @@
+_id: EPie3gYjN7yfPDso
+name: Ração Militar
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Desenvolvida pela Marinha, rica em proteínas e cafeína. Concede 20 Pontos de Vida temporários e mantém a saciedade por 1 dia.</p><p><em>Raridade: Incomum.</em></p>'
+    chat: ''
+  identifier: racao-militar
+  price:
+    value: 8000
+    denomination: yen
+  weight:
+    value: 0.7
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: consumable
+_key: '!items!EPie3gYjN7yfPDso'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,60 @@
+_id: jYHKInexpqAXZ5WB
+name: Espada Montante
+img: icons/svg/sword.svg
+system:
+  description:
+    value: '<p>Espada colossal de até 3m, usada para cortar fileiras inimigas ou como ferramenta de cerco.</p><p><em>Arma de Cerco: o dano final é dobrado contra estruturas.</em></p><p><strong>✠ Expertise:</strong> Você recebe +2 na Classe de Resistência, até o início do seu próximo turno.</p>'
+    chat: ''
+  identifier: espada-montante
+  price:
+    value: 150000
+    denomination: yen
+  weight:
+    value: 6
+    units: kg
+  type:
+    value: martialM
+    baseItem: ''
+  damage:
+    base:
+      number: 2
+      denomination: 6
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - rch
+    - two
+    - hvy
+  range:
+    value: null
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!jYHKInexpqAXZ5WB'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,58 @@
+_id: SukHNomkRWfxXErm
+name: Machado
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Ferramenta de batalha com lâmina larga e afiada, capaz de ser arremessada ou usada em combate próximo.</p><p><strong>✠ Expertise:</strong> Você recebe a condição 'Empoderado', até o final do seu próximo turno.</p>
+    chat: ''
+  identifier: machado
+  price:
+    value: 55000
+    denomination: yen
+  weight:
+    value: 1.5
+    units: kg
+  type:
+    value: martialM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 6
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - thr
+  range:
+    value: 6
+    long: 15
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!SukHNomkRWfxXErm'
+ownership:
+  default: 0
+flags: {}

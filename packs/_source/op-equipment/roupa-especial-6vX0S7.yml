@@ -1,0 +1,29 @@
+_id: 6vX0S7gDissvTous
+name: Roupa Especial
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Roupas específicas para ambientes hostis (desertos, neves intensas, mergulho profundo, etc.). Quando usadas corretamente, impedem penalidades por condições climáticas extremas.</p><p><em>Raridade: Incomum.</em></p>'
+    chat: ''
+  identifier: roupa-especial
+  price:
+    value: 40000
+    denomination: yen
+  weight:
+    value: 1
+    units: kg
+  type:
+    value: clothing
+    baseItem: ''
+  armor:
+    value: 0
+    dex: null
+    magicalBonus: ''
+  proficient: null
+effects: []
+folder: null
+type: equipment
+_key: '!items!6vX0S7gDissvTous'
+ownership:
+  default: 0
+flags: {}

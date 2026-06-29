@@ -1,0 +1,62 @@
+_id: dtxcaQduLMEukis4
+name: Escopeta
+img: icons/svg/sword.svg
+system:
+  description:
+    value: '<p>Arma de fogo de cano duplo que dispara múltiplos projéteis de uma vez, devastando alvos em curto alcance. Requer 10 munições esféricas por disparo.</p><p><em>Ataque em área: cone de 3 metros.</em></p><p><strong>✠ Expertise:</strong> Todos dentro da área (cone de 3 metros) devem fazer uma Salvaguarda de Destreza, sofrendo 3d8 de dano Contundente se falhar.</p>'
+    chat: ''
+  identifier: escopeta
+  price:
+    value: 150000
+    denomination: yen
+  weight:
+    value: 3.5
+    units: kg
+  type:
+    value: martialR
+    baseItem: ''
+  damage:
+    base:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - two
+    - amm
+    - lod
+    - fir
+  range:
+    value: 3
+    long: null
+    reach: null
+    units: m
+  proficient: null
+  ammunition:
+    type: ''
+effects: []
+folder: null
+type: weapon
+_key: '!items!dtxcaQduLMEukis4'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,24 @@
+_id: xmZNjXyDrKAJcjwT
+name: Cantil
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Recipiente com tampa e corda, com capacidade para 2 litros de líquido. Ideal para viagens.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: cantil
+  price:
+    value: 2000
+    denomination: yen
+  weight:
+    value: 0.5
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!xmZNjXyDrKAJcjwT'
+ownership:
+  default: 0
+flags: {}

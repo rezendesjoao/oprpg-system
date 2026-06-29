@@ -1,0 +1,24 @@
+_id: ZTet2w0XF4mF3Vei
+name: Kit para Abrir Cadeado
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Ferramentas específicas com 10 usos para destrancar fechaduras comuns.</p><p><em>Raridade: Raro.</em></p>'
+    chat: ''
+  identifier: kit-para-abrir-cadeado
+  price:
+    value: 15000
+    denomination: yen
+  weight:
+    value: 0.5
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!ZTet2w0XF4mF3Vei'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,24 @@
+_id: 9MW4uuGqaBcbD8Gz
+name: Tábua de Madeira
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Tábua de madeira de tamanho padrão usada em construções.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: tabua-de-madeira
+  price:
+    value: 2200
+    denomination: yen
+  weight:
+    value: 5
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!9MW4uuGqaBcbD8Gz'
+ownership:
+  default: 0
+flags: {}

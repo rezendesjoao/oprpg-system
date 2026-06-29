@@ -1,0 +1,59 @@
+_id: vEKnXaDkY24fPkfV
+name: Chicote
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Corda ou tira de couro com ponta afiada, ideal para ataques à distância e desarmar oponentes.</p><p><strong>✠ Expertise:</strong> A criatura atingida recebe a condição 'Incapacitado', até o final do próximo turno da criatura.</p>
+    chat: ''
+  identifier: chicote
+  price:
+    value: 7500
+    denomination: yen
+  weight:
+    value: 1.5
+    units: kg
+  type:
+    value: martialM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 6
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - fin
+    - rch
+  range:
+    value: null
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!vEKnXaDkY24fPkfV'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,24 @@
+_id: BiqXDXNdQAxcTnTQ
+name: Rede de Kairoseki
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Rede especial para capturar usuários de Akuma no Mi. Pode ser lançada a até 6 metros de distância contra uma criatura Grande ou menor. Em caso de sucesso, aplica as condições ''Enfraquecido'' e ''Impedido''.</p><p><em>Raridade: Mercado Negro.</em></p>'
+    chat: ''
+  identifier: rede-de-kairoseki
+  price:
+    value: 3000000
+    denomination: yen
+  weight:
+    value: 6
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!BiqXDXNdQAxcTnTQ'
+ownership:
+  default: 0
+flags: {}

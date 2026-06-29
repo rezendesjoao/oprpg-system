@@ -1,0 +1,28 @@
+_id: 6JBdQfeUYsEzWphj
+name: Kit de Primeiros Socorros
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Kit de uso único com itens básicos para estabilização: gaze, bandagens, álcool, luvas, tesoura, máscara, etc. Pode restaurar um personagem desacordado a 1 PV.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: kit-de-primeiros-socorros
+  price:
+    value: 10000
+    denomination: yen
+  weight:
+    value: 1
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+  uses:
+    max: '1'
+    spent: 0
+    recovery: []
+effects: []
+folder: null
+type: consumable
+_key: '!items!6JBdQfeUYsEzWphj'
+ownership:
+  default: 0
+flags: {}

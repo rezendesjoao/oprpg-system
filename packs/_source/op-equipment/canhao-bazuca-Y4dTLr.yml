@@ -1,0 +1,64 @@
+_id: Y4dTLrUm6cUAilC8
+name: Canhão / Bazuca
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Uma poderosa arma que dispara bolas de chumbo ou explosivas. Eficaz contra estruturas e grupos.</p><p><em>Dano conforme a munição utilizada. Cada disparo consome 1 munição.</em></p><p><strong>✠ Expertise:</strong> Você recebe +6 metros de deslocamento, até o fim do seu próximo turno.</p>
+    chat: ''
+  identifier: canhao-bazuca
+  price:
+    value: 350000
+    denomination: yen
+  weight:
+    value: 12
+    units: kg
+  type:
+    value: martialR
+    baseItem: ''
+  damage:
+    base:
+      number: 3
+      denomination: 10
+      bonus: ''
+      types:
+        - bludgeoning
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - two
+    - amm
+    - hvy
+    - lod
+    - fir
+  range:
+    value: 21
+    long: 30
+    reach: null
+    units: m
+  proficient: null
+  ammunition:
+    type: ''
+effects: []
+folder: null
+type: weapon
+_key: '!items!Y4dTLrUm6cUAilC8'
+ownership:
+  default: 0
+flags: {}

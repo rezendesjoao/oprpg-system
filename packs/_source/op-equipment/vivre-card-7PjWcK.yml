@@ -1,0 +1,24 @@
+_id: 7PjWcKXrybBAbsqy
+name: Vivre Card
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Feito com material biológico de uma pessoa (como cabelo ou unha), sempre aponta em sua direção. Pode queimar caso a pessoa esteja em risco de morte.</p><p><em>Raridade: Raro.</em></p>'
+    chat: ''
+  identifier: vivre-card
+  price:
+    value: 2000000
+    denomination: yen
+  weight:
+    value: 0
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!7PjWcKXrybBAbsqy'
+ownership:
+  default: 0
+flags: {}

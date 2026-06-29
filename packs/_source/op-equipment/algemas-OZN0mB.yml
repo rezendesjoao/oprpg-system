@@ -1,0 +1,24 @@
+_id: OZN0mBq8OvrrNlLc
+name: Algemas
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Par de algemas que restringe a movimentação dos membros. Presas nos braços, aplicam a condição ''Incapacitado''; presas nas pernas, reduzem o deslocamento para 1,5 metro.</p><p><em>Raridade: Incomum.</em></p>'
+    chat: ''
+  identifier: algemas
+  price:
+    value: 5000
+    denomination: yen
+  weight:
+    value: 1
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!OZN0mBq8OvrrNlLc'
+ownership:
+  default: 0
+flags: {}

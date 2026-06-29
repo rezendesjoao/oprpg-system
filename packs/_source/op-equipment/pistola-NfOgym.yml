@@ -1,0 +1,61 @@
+_id: NfOgymGb1JXVS7dR
+name: Pistola
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Arma de fogo curta e versátil, com dano determinado pela munição.</p><p><em>Dano conforme a munição utilizada. Cada disparo consome 1 munição.</em></p><p><strong>✠ Expertise:</strong> Caso tenha errado uma ou mais jogadas de ataque (comum ou Técnicas) no turno atual, você recebe 2 jogadas de ataque (comum) adicionais que causam apenas o dano da munição.</p>
+    chat: ''
+  identifier: pistola
+  price:
+    value: 70000
+    denomination: yen
+  weight:
+    value: 1.5
+    units: kg
+  type:
+    value: martialR
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 8
+      bonus: ''
+      types:
+        - piercing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - amm
+    - fir
+  range:
+    value: 9
+    long: 15
+    reach: null
+    units: m
+  proficient: null
+  ammunition:
+    type: ''
+effects: []
+folder: null
+type: weapon
+_key: '!items!NfOgymGb1JXVS7dR'
+ownership:
+  default: 0
+flags: {}

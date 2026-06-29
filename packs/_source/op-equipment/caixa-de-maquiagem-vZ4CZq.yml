@@ -1,0 +1,24 @@
+_id: vZ4CZqOeh3srK2e8
+name: Caixa de Maquiagem
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Conjunto completo de maquiagens e produtos corporais. Pode ser usado para disfarces ou estética.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: caixa-de-maquiagem
+  price:
+    value: 5000
+    denomination: yen
+  weight:
+    value: 1
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!vZ4CZqOeh3srK2e8'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,24 @@
+_id: NhrtkCCR01nwMtHk
+name: Log Pose
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Bússola especial usada na Grand Line. Memoriza o campo magnético da ilha atual (tempo de sincronização médio: 1 dia a 1 semana) e aponta para a próxima ilha da rota.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: log-pose
+  price:
+    value: 50000
+    denomination: yen
+  weight:
+    value: 0.2
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!NhrtkCCR01nwMtHk'
+ownership:
+  default: 0
+flags: {}

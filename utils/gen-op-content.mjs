@@ -13,7 +13,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import YAML from "js-yaml";
-import { CLASSES, SPECIES, BACKGROUNDS, CAMINHOS, SINGULARIDADES, DEFEITOS, CODIGOS, PROFISSOES } from "./op-data.mjs";
+import { CLASSES, SPECIES, BACKGROUNDS, CAMINHOS, SINGULARIDADES, DEFEITOS, CODIGOS, PROFISSOES, EQUIPMENT } from "./op-data.mjs";
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SRC = path.join(ROOT, "packs", "_source");
@@ -46,7 +46,7 @@ function slug(s) { return String(s).toLowerCase().normalize("NFD").replace(/[̀-
 const written = {
   "op-classes": 0, "op-subclasses": 0, "op-features": 0, "op-techniques": 0, "op-species": 0,
   "op-backgrounds": 0, "op-caminhos": 0, "op-singularidades": 0, "op-defeitos": 0, "op-codigos": 0,
-  "op-profissoes": 0
+  "op-profissoes": 0, "op-equipment": 0
 };
 function writeDoc(pack, doc) {
   const dir = path.join(SRC, pack);
@@ -462,6 +462,71 @@ function personalizacaoItem(entry, typeValue) {
   return item;
 }
 
+// DamageData completa a partir de {number,denomination,types}. Sem dano → campos nulos.
+function mkDmg(d) {
+  return {
+    number: d?.number ?? null,
+    denomination: d?.denomination ?? null,
+    bonus: d?.bonus ?? "",
+    types: d?.types ?? [],
+    custom: { enabled: false, formula: "" },
+    scaling: { mode: "", number: 1, formula: "" }
+  };
+}
+
+const EQUIP_ICON = {
+  weapon: "icons/svg/sword.svg",
+  ammo: "icons/svg/target.svg",
+  consumable: "icons/svg/item-bag.svg",
+  clothing: "icons/svg/item-bag.svg",
+  gear: "icons/svg/item-bag.svg"
+};
+
+// Item de Equipamento (Cap. 8). `kind`: weapon | ammo | consumable | gear | clothing.
+function equipmentItem(e) {
+  const _id = mkId(`equip:${e.kind}:${e.code}`);
+  const doc = {
+    _id, name: e.name,
+    img: e.img || EQUIP_ICON[e.kind] || "icons/svg/item-bag.svg",
+    system: {
+      description: { value: e.desc || `<p>${e.name}</p>`, chat: "" },
+      identifier: slug(e.name),
+      price: { value: e.price ?? 0, denomination: "yen" },
+      weight: { value: e.weight ?? 0, units: "kg" }
+    },
+    effects: [], folder: null
+  };
+  if ( e.rarity ) doc.system.rarity = e.rarity;
+  switch ( e.kind ) {
+    case "weapon":
+      doc.type = "weapon";
+      doc.system.type = { value: e.wtype || "simpleM", baseItem: "" };
+      doc.system.damage = { base: mkDmg(e.damage), versatile: mkDmg(e.versatile) };
+      doc.system.properties = e.props || [];
+      doc.system.range = { value: e.range?.value ?? null, long: e.range?.long ?? null, reach: e.range?.reach ?? null, units: "m" };
+      doc.system.proficient = null;
+      if ( (e.props || []).includes("amm") ) doc.system.ammunition = { type: "" };
+      break;
+    case "ammo":
+    case "consumable":
+      doc.type = "consumable";
+      doc.system.type = { value: e.ctype || (e.kind === "ammo" ? "ammo" : ""), subtype: "" };
+      if ( e.damage ) doc.system.damage = { base: mkDmg(e.damage) };
+      if ( e.uses ) doc.system.uses = { max: String(e.uses.max), spent: 0, recovery: e.uses.period ? [{ period: e.uses.period, type: "recoverAll", formula: "" }] : [] };
+      break;
+    case "clothing":
+      doc.type = "equipment";
+      doc.system.type = { value: "clothing", baseItem: "" };
+      doc.system.armor = { value: 0, dex: null, magicalBonus: "" };
+      doc.system.proficient = null;
+      break;
+    default: // gear
+      doc.type = "loot";
+      doc.system.type = { value: "", subtype: "" };
+  }
+  return doc;
+}
+
 /* -------------------------------------------- */
 /*  Run                                         */
 /* -------------------------------------------- */
@@ -484,5 +549,8 @@ for ( const k of CODIGOS )         writeDoc("op-codigos",        personalizacaoI
 
 // Capítulo 4 — Profissões
 for ( const p of PROFISSOES )      writeDoc("op-profissoes",     personalizacaoItem(p, "profissao"));
+
+// Capítulo 8 — Equipamentos
+for ( const e of EQUIPMENT )       writeDoc("op-equipment",      equipmentItem(e));
 
 console.log("Gerado:", JSON.stringify(written, null, 0));

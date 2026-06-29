@@ -1,0 +1,24 @@
+_id: oXI8MqaABDLPltnO
+name: Equipamento de Mergulho
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Traje completo para mergulho com máscara, roupa térmica e pés de pato. Permite a qualquer personagem explorar o mar aberto, desde que o tanque seja periodicamente reabastecido.</p><p><em>Raridade: Raro.</em></p>'
+    chat: ''
+  identifier: equipamento-de-mergulho
+  price:
+    value: 15000
+    denomination: yen
+  weight:
+    value: 36
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!oXI8MqaABDLPltnO'
+ownership:
+  default: 0
+flags: {}

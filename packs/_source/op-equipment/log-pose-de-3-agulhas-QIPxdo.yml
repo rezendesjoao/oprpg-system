@@ -1,0 +1,24 @@
+_id: QIPxdo55MGw4Dstm
+name: Log Pose de 3 Agulhas
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Versão aprimorada com 3 agulhas que apontam para diferentes ilhas. Usado no Novo Mundo, onde os campos magnéticos mudam com frequência. A agulha mais estável indica a ilha mais segura.</p><p><em>Raridade: Incomum.</em></p>'
+    chat: ''
+  identifier: log-pose-de-3-agulhas
+  price:
+    value: 500000
+    denomination: yen
+  weight:
+    value: 0.2
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!QIPxdo55MGw4Dstm'
+ownership:
+  default: 0
+flags: {}

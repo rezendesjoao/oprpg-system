@@ -1,0 +1,24 @@
+_id: CM0ruvhmdRPT9PyW
+name: Den-Den Mushi Fone
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Conectado diretamente ao den-den mushi principal. Ajuda a evitar interceptações durante ligações.</p><p><em>Raridade: Raro.</em></p>'
+    chat: ''
+  identifier: den-den-mushi-fone
+  price:
+    value: 20000
+    denomination: yen
+  weight:
+    value: 0.3
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!CM0ruvhmdRPT9PyW'
+ownership:
+  default: 0
+flags: {}

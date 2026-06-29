@@ -1,0 +1,24 @@
+_id: Vq9V8eqhS5GYtjr3
+name: Ração de Viagem
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Alimento conservado e nutritivo, suficiente para um dia. Pouco saboroso, mas eficaz.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: racao-de-viagem
+  price:
+    value: 2000
+    denomination: yen
+  weight:
+    value: 0.5
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: consumable
+_key: '!items!Vq9V8eqhS5GYtjr3'
+ownership:
+  default: 0
+flags: {}

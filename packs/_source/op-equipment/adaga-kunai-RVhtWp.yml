@@ -1,0 +1,59 @@
+_id: RVhtWp9uEZwYOp8X
+name: Adaga / Kunai
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Pequena lâmina afiada, eficaz em combate corpo a corpo ou arremessada. Versátil e fácil de ocultar.</p><p><em>Dano Cortante ou Perfurante (à escolha).</em></p><p><strong>✠ Expertise:</strong> A criatura atingida recebe a condição 'Sangramento'.</p>
+    chat: ''
+  identifier: adaga-kunai
+  price:
+    value: 20000
+    denomination: yen
+  weight:
+    value: 0.5
+    units: kg
+  type:
+    value: martialM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 4
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - fin
+    - thr
+  range:
+    value: 6
+    long: 15
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!RVhtWp9uEZwYOp8X'
+ownership:
+  default: 0
+flags: {}

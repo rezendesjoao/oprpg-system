@@ -1,0 +1,24 @@
+_id: o4Lyv8pPSBZyoOjg
+name: Kit de Escalada
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Inclui pítons, botas com solas pontiagudas, luvas e cinto de escalada. Permite se ancorar, limitando quedas e movimento vertical em até 7,5 metros.</p><p><em>Raridade: Incomum.</em></p>'
+    chat: ''
+  identifier: kit-de-escalada
+  price:
+    value: 30000
+    denomination: yen
+  weight:
+    value: 4.5
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!o4Lyv8pPSBZyoOjg'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,24 @@
+_id: StpfJxs7SEw8ZbS2
+name: Kit de Cozinha
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Inclui facas, panelas e utensílios culinários para preparo de todos os tipos de refeições.</p><p><em>Raridade: Comum.</em></p>'
+    chat: ''
+  identifier: kit-de-cozinha
+  price:
+    value: 60000
+    denomination: yen
+  weight:
+    value: 6
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!StpfJxs7SEw8ZbS2'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,24 @@
+_id: a4FdSLcf0A5kay2B
+name: Combustível de Motor
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Necessário para o funcionamento de motores. Cada unidade dura 10 dias.</p><p><em>Raridade: Incomum.</em></p>'
+    chat: ''
+  identifier: combustivel-de-motor
+  price:
+    value: 90000
+    denomination: yen
+  weight:
+    value: 0
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!a4FdSLcf0A5kay2B'
+ownership:
+  default: 0
+flags: {}

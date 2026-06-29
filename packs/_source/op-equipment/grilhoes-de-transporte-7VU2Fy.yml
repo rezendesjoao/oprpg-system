@@ -1,0 +1,24 @@
+_id: 7VU2Fy6YqqmFOGN8
+name: Grilhões de Transporte
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Conjunto de algemas com correntes presas aos braços, cintura e pernas. Projetado para impedir fugas durante o transporte de prisioneiros. Aplicam as mesmas restrições de algemas nas mãos e pernas.</p><p><em>Raridade: Incomum.</em></p>'
+    chat: ''
+  identifier: grilhoes-de-transporte
+  price:
+    value: 15000
+    denomination: yen
+  weight:
+    value: 7
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!7VU2Fy6YqqmFOGN8'
+ownership:
+  default: 0
+flags: {}

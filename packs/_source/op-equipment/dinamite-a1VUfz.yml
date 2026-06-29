@@ -1,0 +1,57 @@
+_id: a1VUfzpQ8ubZx3GP
+name: Dinamite
+img: icons/svg/sword.svg
+system:
+  description:
+    value: '<p>Uma banana de dinamite com pavio inflamável.</p><p><em>Com uma ação, acenda e arremesse: cada criatura a até 1,5 m do ponto de origem faz Salvaguarda de Destreza CD 15, sofrendo 3d6 de dano de Fogo (metade com sucesso). Bananas extras presas juntas aumentam o dano em +1d6 (até 10d6) e o raio em +1,5 m (até 6 m).</em></p>'
+    chat: ''
+  identifier: dinamite
+  price:
+    value: 25000
+    denomination: yen
+  weight:
+    value: 0.6
+    units: kg
+  type:
+    value: martialR
+    baseItem: ''
+  damage:
+    base:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - thr
+  range:
+    value: 6
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!a1VUfzpQ8ubZx3GP'
+ownership:
+  default: 0
+flags: {}

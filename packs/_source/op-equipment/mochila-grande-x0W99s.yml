@@ -1,0 +1,24 @@
+_id: x0W99syEHw2EjSyI
+name: Mochila Grande
+img: icons/svg/item-bag.svg
+system:
+  description:
+    value: '<p>Capacidade de carga de até 100 kg. Ideal para transporte pesado.</p><p><em>Raridade: Incomum.</em></p>'
+    chat: ''
+  identifier: mochila-grande
+  price:
+    value: 20000
+    denomination: yen
+  weight:
+    value: 2.5
+    units: kg
+  type:
+    value: ''
+    subtype: ''
+effects: []
+folder: null
+type: loot
+_key: '!items!x0W99syEHw2EjSyI'
+ownership:
+  default: 0
+flags: {}

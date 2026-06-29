@@ -1,0 +1,60 @@
+_id: dmEMKbodQbqiVp5k
+name: Lança
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Haste com ponta afiada, versátil para estocadas ou arremessos. Pode ser usada como requisito 'Arma Cortante'.</p><p><strong>✠ Expertise:</strong> Caso tenha errado uma ou mais jogadas de ataque (comum ou Técnicas) no turno atual, você recebe 2 jogadas de ataque (comum) adicionais que causam apenas o dano da lança.</p>
+    chat: ''
+  identifier: lanca
+  price:
+    value: 70000
+    denomination: yen
+  weight:
+    value: 2.5
+    units: kg
+  type:
+    value: martialM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 10
+      bonus: ''
+      types:
+        - piercing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - rch
+    - two
+    - thr
+  range:
+    value: 6
+    long: 12
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!dmEMKbodQbqiVp5k'
+ownership:
+  default: 0
+flags: {}

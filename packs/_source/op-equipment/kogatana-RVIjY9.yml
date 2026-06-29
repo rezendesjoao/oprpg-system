@@ -1,0 +1,58 @@
+_id: RVIjY9uBUUwboepA
+name: Kogatana
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Pequena katana portátil, semelhante a uma adaga, ideal para golpes ágeis ou como arma reserva.</p><p><strong>✠ Expertise:</strong> A criatura atingida recebe a condição 'Sangramento'.</p>
+    chat: ''
+  identifier: kogatana
+  price:
+    value: 30000
+    denomination: yen
+  weight:
+    value: 0.5
+    units: kg
+  type:
+    value: martialM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 4
+      bonus: ''
+      types:
+        - slashing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - fin
+  range:
+    value: null
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!RVIjY9uBUUwboepA'
+ownership:
+  default: 0
+flags: {}

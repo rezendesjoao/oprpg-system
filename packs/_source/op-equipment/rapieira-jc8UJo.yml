@@ -1,0 +1,58 @@
+_id: jc8UJoY01N4ROwza
+name: Rapieira
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Espada elegante e afiada, focada em estocadas precisas, com guarda elaborada para proteção da mão.</p><p><em>Dano Cortante ou Perfurante (à escolha).</em></p><p><strong>✠ Expertise:</strong> A próxima Salvaguarda de Destreza recebe sucesso automático, até o fim do encontro de combate.</p>
+    chat: ''
+  identifier: rapieira
+  price:
+    value: 70000
+    denomination: yen
+  weight:
+    value: 1
+    units: kg
+  type:
+    value: martialM
+    baseItem: ''
+  damage:
+    base:
+      number: 1
+      denomination: 6
+      bonus: ''
+      types:
+        - piercing
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+    versatile:
+      number: null
+      denomination: null
+      bonus: ''
+      types: []
+      custom:
+        enabled: false
+        formula: ''
+      scaling:
+        mode: ''
+        number: 1
+        formula: ''
+  properties:
+    - fin
+  range:
+    value: null
+    long: null
+    reach: null
+    units: m
+  proficient: null
+effects: []
+folder: null
+type: weapon
+_key: '!items!jc8UJoY01N4ROwza'
+ownership:
+  default: 0
+flags: {}
