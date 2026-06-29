@@ -6,27 +6,27 @@
 .jujutsu-card {
   font-family: var(--dnd5e-font-roboto, sans-serif);
   background: var(--jj-bg-main);
-  border: 1px solid #1c1c2c;
+  border: 1px solid #2a2318;
   border-radius: 8px;
   overflow: hidden;
 }
 
 /* ── TOP BAR ────────────────────────────────────────── */
 .jj-top-bar {
-  background: #13132a;
+  background: #1c1810;
   padding: 10px 14px;
   display: flex;
   align-items: center;
   gap: 10px;
-  border-bottom: 1px solid #1c1c30;
+  border-bottom: 1px solid #2a2318;
 }
 
 .jj-top-icon {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  border: 1px solid #2a2a50;
-  background: #1a1a3a;
+  border: 1px solid #473d2b;
+  background: #241f16;
   object-fit: cover;
   flex: none;
 }
@@ -34,13 +34,13 @@
 .jj-top-name {
   font-size: 14px;
   font-weight: 700;
-  color: #d0c8ff;
+  color: #e3d8c6;
   font-family: var(--dnd5e-font-roboto-slab, serif);
 }
 
 .jj-top-sub {
   font-size: 10px;
-  color: #9090b0;
+  color: #a89c89;
   margin-left: auto;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -51,9 +51,9 @@
 .jj-description {
   padding: 8px 14px;
   font-size: 11px;
-  color: #b0a8d0;
+  color: #c2b6a3;
   line-height: 1.5;
-  border-bottom: 1px solid #141420;
+  border-bottom: 1px solid #1a160f;
 }
 
 .jj-description p { margin: 0; }
@@ -62,13 +62,13 @@
 .jj-die.discarded {
   opacity: 0.3;
   text-decoration: line-through;
-  text-decoration-color: #4a4860;
+  text-decoration-color: #4a4338;
 }
 
 .jj-die.active {
-  border-color: #5040a0;
-  color: #c0a0ff;
-  background: #1a1430;
+  border-color: #3a6b85;
+  color: #d8c6aa;
+  background: #241f16;
 }
 
 /* ── BOTÕES DE ROLAR ────────────────────────────────── */
@@ -76,7 +76,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1px;
-  background: #141420;
+  background: #1a160f;
 }
 
 .jj-btn {
@@ -94,8 +94,8 @@
   transition: all 120ms ease;
 }
 
-.jj-attack-btn { background: #110d22; color: #8060d0; }
-.jj-attack-btn:hover { background: #16102e; color: #a080f0; }
+.jj-attack-btn { background: #1a1610; color: #b89a72; }
+.jj-attack-btn:hover { background: #221c12; color: #d4b88a; }
 
 .jj-damage-btn { background: #140c08; color: #c06040; }
 .jj-damage-btn:hover { background: #1c100a; color: #e07850; }
@@ -115,13 +115,13 @@
 }
 
 .jj-panel.visible { display: flex; }
-.jj-panel + .jj-panel { border-left: 1px solid #1a1a28; }
+.jj-panel + .jj-panel { border-left: 1px solid #241f16; }
 
 .jj-panel-label {
   font-size: 9px;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: #8080a8;
+  color: #9c917e;
   margin-bottom: 4px;
 }
 
@@ -131,7 +131,7 @@
   font-weight: 700;
   line-height: 1;
   font-family: var(--font-primary, serif);
-  color: #b090ff;
+  color: #cbb893;
   transition: all 200ms ease;
 }
 
@@ -139,7 +139,7 @@
 
 .jj-panel-breakdown {
   font-size: 10px;
-  color: #8080a0;
+  color: #9c917e;
   margin-top: 4px;
   display: flex;
   flex-wrap: wrap;
@@ -154,11 +154,11 @@
   width: 18px;
   height: 18px;
   border-radius: 3px;
-  border: 1px solid #2a2a40;
-  background: #141420;
+  border: 1px solid #332c20;
+  background: #1a160f;
   font-size: 10px;
   font-weight: 700;
-  color: #8080a0;
+  color: #9c917e;
 }
 
 .jj-die-pip.max { border-color: #306030; color: #50a050; background: #0a120a; }
@@ -166,7 +166,7 @@
 
 .jj-mod-pip {
   font-size: 10px;
-  color: #9090b0;
+  color: #a89c89;
   padding: 0 1px;
 }
 
@@ -190,10 +190,10 @@
 
 /* ── FUMBLE — Natural 1 ─────────────────────────────── */
 .jj-panel-val.nat1 {
-  color: #3a3850;
+  color: #3a352a;
   opacity: 0.45;
   text-decoration: line-through;
-  text-decoration-color: #4a4860;
+  text-decoration-color: #4a4338;
   animation: fumble-fade 0.4s ease-out;
 }
 
@@ -204,7 +204,7 @@
 
 /* ── FOOTER — MODIFICADORES E APLICAR ──────────────── */
 .jj-footer {
-  border-top: 1px solid #1a1a28;
+  border-top: 1px solid #241f16;
   padding: 8px 12px;
   display: none;
   align-items: center;
@@ -218,10 +218,10 @@
 
 .jj-mod-check {
   padding: 3px 7px;
-  border: 1px solid #1e1e2e;
+  border: 1px solid #2a2318;
   border-radius: 3px;
   font-size: 11px;
-  color: #40405a;
+  color: #6a6253;
   font-weight: 700;
   cursor: pointer;
   user-select: none;
@@ -232,7 +232,7 @@
 }
 
 .jj-mod-check input { display: none; }
-.jj-mod-check:hover { border-color: #3a3a5a; color: #8080a0; }
+.jj-mod-check:hover { border-color: #4a4338; color: #9c917e; }
 
 .jj-mod-check:has(input:checked) {
   border-color: #e07040;
@@ -253,7 +253,7 @@
 
 .jj-footer-total {
   font-size: 11px;
-  color: #50506a;
+  color: #6a6253;
   margin-left: 4px;
 }
 
@@ -284,10 +284,10 @@
 .jj-pa-badge {
   font-size: 9px;
   padding: 2px 5px;
-  border: 1px solid #30206a;
+  border: 1px solid #3a6b85;
   border-radius: 2px;
-  color: #7050c0;
-  background: #0e0820;
+  color: #8fcbe6;
+  background: #0d1820;
   margin-top: 4px;
   display: inline-block;
 }
@@ -298,14 +298,14 @@
   grid-template-columns: 1fr 1fr;
   gap: 1px;
   background: var(--jj-bg-main);
-  border-bottom: 1px solid #141420;
+  border-bottom: 1px solid #1a160f;
 }
 
 .jj-adv-btn {
   padding: 6px;
   border: none;
-  background: #0c0c14;
-  color: #30304a;
+  background: #14110c;
+  color: #4a4338;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -318,7 +318,7 @@
   transition: all 120ms ease;
 }
 
-.jj-adv-btn:hover { background: #111120; color: #60607a; }
+.jj-adv-btn:hover { background: #1c1810; color: #857a66; }
 
 .jj-adv-btn[data-adv="advantage"].active {
   background: #0a120a;

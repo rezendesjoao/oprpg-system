@@ -14,18 +14,18 @@
 
 .tab[data-tab="spells"] .items-section > header,
 .tab[data-tab="spells"] .items-section > .items-header {
-  background: linear-gradient(90deg, #1c1c30, #161628);
+  background: linear-gradient(90deg, #241f16, #1a160f);
   border-bottom: 1px solid var(--jj-border);
 }
 
 .tab[data-tab="spells"] .items-section > header h3,
 .tab[data-tab="spells"] .items-section > .items-header h3 {
   color: var(--jj-primary-soft);
-  text-shadow: 0 0 8px rgba(120, 80, 255, 0.3);
+  text-shadow: 0 0 8px rgba(159, 143, 128, 0.3);
 }
 
 .tab[data-tab="spells"] .items-section {
-  background: rgba(10, 10, 20, 0.6);
+  background: rgba(22, 19, 15, 0.6);
   border-color: var(--jj-border-soft);
 }
 

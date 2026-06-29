@@ -9,19 +9,19 @@
 
 .dnd5e2.sheet.actor.character .sheet-body .saves filigree-box,
 .dnd5e2.sheet.actor.character .sheet-body .saves {
-  --filigree-background-color: #0f0f1c;
-  --filigree-border-color: #302860;
-  --filigree-drop-shadow: drop-shadow(0 0 4px rgba(40, 30, 80, 0.4));
+  --filigree-background-color: #16130f;
+  --filigree-border-color: #473d2b;
+  --filigree-drop-shadow: drop-shadow(0 0 4px rgba(159, 143, 128, 0.25));
 }
 
 .dnd5e2.sheet.actor.character .sheet-body .saves .header {
   background: transparent !important;
-  border-bottom: 1px solid #1a1832;
+  border-bottom: 1px solid #1f1b15;
 }
 
 .dnd5e2.sheet.actor.character .sheet-body .saves .header h3,
 .dnd5e2.sheet.actor.character .sheet-body .saves .header h4 {
-  color: #504878 !important;
+  color: #c4b5a3 !important;
   letter-spacing: 0.16em;
 }
 
@@ -29,7 +29,7 @@
   content: "";
   flex: 1;
   height: 1px;
-  background: #1e1c38;
+  background: #241f16;
 }
 
 .dnd5e2.sheet.actor.character .sheet-body .saves > ul,
@@ -48,12 +48,12 @@
 }
 
 .dnd5e2.sheet.actor.character .sheet-body .saves ul > li:hover {
-  background: rgba(60, 35, 100, 0.10);
+  background: rgba(159, 143, 128, 0.10);
 }
 
 .dnd5e2.sheet.actor.character .sheet-body .saves {
-  --proficiency-cycle-enabled-color: #5a3a90;
-  --proficiency-cycle-disabled-color: #2e2850;
+  --proficiency-cycle-enabled-color: #6fb0d4;
+  --proficiency-cycle-disabled-color: #473d2b;
 }
 
 /* ════════════════════════════════════════
@@ -62,19 +62,19 @@
 
 .dnd5e2.sheet.actor.character .sheet-body .skills filigree-box,
 .dnd5e2.sheet.actor.character .sheet-body .skills {
-  --filigree-background-color: #0f0f1c;
-  --filigree-border-color: #302860;
-  --filigree-drop-shadow: drop-shadow(0 0 4px rgba(40, 30, 80, 0.4));
+  --filigree-background-color: #16130f;
+  --filigree-border-color: #473d2b;
+  --filigree-drop-shadow: drop-shadow(0 0 4px rgba(159, 143, 128, 0.25));
 }
 
 .dnd5e2.sheet.actor.character .sheet-body .skills .header {
   background: transparent !important;
-  border-bottom: 1px solid #1a1832;
+  border-bottom: 1px solid #1f1b15;
 }
 
 .dnd5e2.sheet.actor.character .sheet-body .skills .header h3,
 .dnd5e2.sheet.actor.character .sheet-body .skills .header h4 {
-  color: #504878 !important;
+  color: #c4b5a3 !important;
   letter-spacing: 0.16em;
 }
 
@@ -82,7 +82,7 @@
   content: "";
   flex: 1;
   height: 1px;
-  background: #1e1c38;
+  background: #241f16;
 }
 
 .dnd5e2.sheet.actor.character .sheet-body .skills ul > li {
@@ -96,12 +96,12 @@
 }
 
 .dnd5e2.sheet.actor.character .sheet-body .skills ul > li:hover {
-  background: rgba(60, 35, 100, 0.10);
+  background: rgba(159, 143, 128, 0.10);
 }
 
 .dnd5e2.sheet.actor.character .sheet-body .skills {
-  --proficiency-cycle-enabled-color: #5a3a90;
-  --proficiency-cycle-disabled-color: #2e2850;
+  --proficiency-cycle-enabled-color: #6fb0d4;
+  --proficiency-cycle-disabled-color: #473d2b;
 }
 
 /* ════════════════════════════════════════
@@ -110,19 +110,19 @@
 
 .dnd5e2.sheet.actor.character .sheet-body .tools filigree-box,
 .dnd5e2.sheet.actor.character .sheet-body .tools {
-  --filigree-background-color: #0f0f1c;
-  --filigree-border-color: #302860;
-  --filigree-drop-shadow: drop-shadow(0 0 4px rgba(40, 30, 80, 0.4));
+  --filigree-background-color: #16130f;
+  --filigree-border-color: #473d2b;
+  --filigree-drop-shadow: drop-shadow(0 0 4px rgba(159, 143, 128, 0.25));
 }
 
 .dnd5e2.sheet.actor.character .sheet-body .tools .header {
   background: transparent !important;
-  border-bottom: 1px solid #1a1832;
+  border-bottom: 1px solid #1f1b15;
 }
 
 .dnd5e2.sheet.actor.character .sheet-body .tools .header h3,
 .dnd5e2.sheet.actor.character .sheet-body .tools .header h4 {
-  color: #504878 !important;
+  color: #c4b5a3 !important;
   letter-spacing: 0.16em;
 }
 
@@ -130,7 +130,7 @@
   content: "";
   flex: 1;
   height: 1px;
-  background: #1e1c38;
+  background: #241f16;
 }
 
 .dnd5e2.sheet.actor.character .sheet-body .tools ul > li {
@@ -144,12 +144,12 @@
 }
 
 .dnd5e2.sheet.actor.character .sheet-body .tools ul > li:hover {
-  background: rgba(60, 35, 100, 0.10);
+  background: rgba(159, 143, 128, 0.10);
 }
 
 .dnd5e2.sheet.actor.character .sheet-body .tools {
-  --proficiency-cycle-enabled-color: #5a3a90;
-  --proficiency-cycle-disabled-color: #2e2850;
+  --proficiency-cycle-enabled-color: #6fb0d4;
+  --proficiency-cycle-disabled-color: #473d2b;
 }
 
 /* ════════════════════════════════════════
@@ -159,8 +159,8 @@
 .dnd5e2.sheet.actor.character .sheet-body .skills proficiency-cycle,
 .dnd5e2.sheet.actor.character .sheet-body .tools proficiency-cycle,
 .dnd5e2.sheet.actor.character .sheet-body .saves proficiency-cycle {
-  --proficiency-cycle-enabled-color: #ff1c03;
-  --proficiency-cycle-disabled-color: #3d6cc4;
+  --proficiency-cycle-enabled-color: #6fb0d4;
+  --proficiency-cycle-disabled-color: #473d2b;
 }
 
 /* ════════════════════════════════════════
@@ -168,9 +168,9 @@
    ════════════════════════════════════════ */
 
 filigree-box.jj-seis-olhos-box {
-  --filigree-background-color: #0f0f1c;
-  --filigree-border-color: #302860;
-  --filigree-drop-shadow: drop-shadow(0 0 4px rgba(40, 30, 80, 0.4));
+  --filigree-background-color: #16130f;
+  --filigree-border-color: #473d2b;
+  --filigree-drop-shadow: drop-shadow(0 0 4px rgba(159, 143, 128, 0.25));
   display: block;
   margin-top: 2px;
 }
@@ -191,7 +191,7 @@ filigree-box.jj-seis-olhos-box {
 }
 
 .jj-seis-olhos-header span {
-  color: #bbae99;
+  color: #c4b5a3;
   font-size: 9px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -214,34 +214,34 @@ filigree-box.jj-seis-olhos-box {
   align-items: center;
   gap: 2px;
   padding: 5px 4px;
-  background: #0e0e1c;
-  border: 1px solid #221a3a;
+  background: #14110c;
+  border: 1px solid #332c20;
   border-radius: 3px;
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #40385a;
+  color: #6a6253;
   transition: all 140ms;
 }
 
-.jj-seis-olhos-btn i { font-size: 12px; color: #30285a; }
+.jj-seis-olhos-btn i { font-size: 12px; color: #6a6253; }
 
 .jj-seis-olhos-option:hover .jj-seis-olhos-btn {
-  border-color: #3a2a60;
-  color: #7060a0;
+  border-color: #4a4338;
+  color: #a89c89;
 }
-.jj-seis-olhos-option:hover .jj-seis-olhos-btn i { color: #6050a0; }
+.jj-seis-olhos-option:hover .jj-seis-olhos-btn i { color: #9f8f80; }
 
 .jj-seis-olhos-option.active .jj-seis-olhos-btn,
 .jj-seis-olhos-option input:checked ~ .jj-seis-olhos-btn {
-  background: #130e28;
-  border-color: #4a2890;
-  color: #9070d0;
+  background: #1f1b15;
+  border-color: #6d5f44;
+  color: #c4b5a3;
 }
 .jj-seis-olhos-option.active .jj-seis-olhos-btn i,
 .jj-seis-olhos-option input:checked ~ .jj-seis-olhos-btn i {
-  color: #7050b0;
+  color: #9f8f80;
 }
 
 .jj-seis-olhos-warning {

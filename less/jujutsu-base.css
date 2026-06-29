@@ -9,27 +9,32 @@
    ════════════════════════════════════════ */
 :root {
   /* FUNDOS */
-  --jj-black:       #12121a;
-  --jj-deep:        #12121a;
-  --jj-bg-main:     #12121a;
-  --jj-bg-soft:     #1a1a26;
-  --jj-bg-card:     #202030;
+  --jj-black:       #16130f;
+  --jj-deep:        #16130f;
+  --jj-bg-main:     #16130f;
+  --jj-bg-soft:     #1f1b15;
+  --jj-bg-card:     #29241c;
 
   /* BORDAS */
-  --jj-border:      #2c2c44;
-  --jj-border-soft: #24243a;
+  --jj-border:      #3d3528;
+  --jj-border-soft: #332c20;
 
   /* TEXTO */
-  --jj-text-main:   #e6e6f0;
-  --jj-text-soft:   #a0a0c0;
-  --jj-text-dim:    #707090;
-  --jj-text-fade:   #707090;
+  --jj-text-main:   #ece5d8;
+  --jj-text-soft:   #b3a895;
+  --jj-text-dim:    #857a66;
+  --jj-text-fade:   #857a66;
 
-  /* ROXO (tema principal) */
-  --jj-purple:        #7a5cff;
-  --jj-primary:       #7a5cff;
-  --jj-purple-soft:   #a090ff;
-  --jj-primary-soft:  #bbae99;
+  /* TAUPE (tema principal — One Piece) */
+  --jj-purple:        #9f8f80;
+  --jj-primary:       #9f8f80;
+  --jj-purple-soft:   #c4b5a3;
+  --jj-primary-soft:  #c4b5a3;
+
+  /* AZUL-MAR (adorno One Piece) */
+  --jj-blue:        #6fb0d4;
+  --jj-blue-soft:   #8fcbe6;
+  --jj-blue-deep:   #3a6b85;
 
   /* VERMELHO */
   --jj-red:              #ff5a5a;
@@ -38,8 +43,9 @@
   --jj-accent-red-soft:  #ff8a8a;
 
   /* GLOWS */
-  --jj-glow:        0 0 12px rgba(120, 90, 255, 0.35);
-  --jj-glow-purple: 0 0 12px rgba(122, 92, 255, 0.5);
+  --jj-glow:        0 0 12px rgba(159, 143, 128, 0.35);
+  --jj-glow-purple: 0 0 12px rgba(159, 143, 128, 0.5);
+  --jj-glow-blue:   0 0 12px rgba(111, 176, 212, 0.4);
   --jj-glow-red:    0 0 12px rgba(255, 90, 90, 0.5);
 }
 
@@ -51,10 +57,10 @@
   --dnd5e-sheet-background: var(--jj-bg-main);
   --dnd5e-background-card:  var(--jj-bg-card);
   --dnd5e-border-gold:      1px solid var(--jj-border);
-  --dnd5e-card-header-1:    #1c1c30;
-  --dnd5e-card-header-2:    #161628;
+  --dnd5e-card-header-1:    #241f16;
+  --dnd5e-card-header-2:    #1a160f;
   --dnd5e-color-gold:       var(--jj-primary-soft);
-  --dnd5e-shadow-45:        rgba(60, 0, 160, 0.25);
+  --dnd5e-shadow-45:        rgba(120, 100, 70, 0.25);
   --fieldset-legend-color:  var(--jj-primary-soft);
   --color-fieldset-border:  var(--jj-border);
 
@@ -83,35 +89,35 @@
   --dnd5e-background-card:    var(--jj-bg-card);
   --dnd5e-background-alt-1:   var(--jj-bg-soft);
   --dnd5e-background-alt-2:   var(--jj-bg-card);
-  --dnd5e-background-5:       rgba(120,90,255,0.05);
-  --dnd5e-highlight-10:       rgba(120,90,255,0.05);
+  --dnd5e-background-5:       rgba(159,143,128,0.06);
+  --dnd5e-highlight-10:       rgba(159,143,128,0.06);
 }
 
 /* Sobrescrever variáveis de cor das cards */
 .dnd5e2.sheet.actor.character {
-  --dnd5e-background-card:  #0e0e1e;
-  --dnd5e-border-gold:      1px solid #2e2a50;
-  --dnd5e-card-header-1:    #1a1035;
-  --dnd5e-card-header-2:    #120d28;
+  --dnd5e-background-card:  #14110c;
+  --dnd5e-border-gold:      1px solid #473d2b;
+  --dnd5e-card-header-1:    #241f16;
+  --dnd5e-card-header-2:    #1a160f;
   --dnd5e-color-gold:       #aaa495;
-  --dnd5e-shadow-45:        rgba(141, 160, 0, 0.25);
-  --fieldset-legend-color:  #9070d0;
-  --color-fieldset-border:  #2e2a50;
+  --dnd5e-shadow-45:        rgba(120, 100, 70, 0.25);
+  --fieldset-legend-color:  #c4b5a3;
+  --color-fieldset-border:  #473d2b;
 }
 
 .dnd5e2.sheet.actor.character .window-content,
 .dnd5e2.sheet.actor.character .sheet-body {
   background:
-    radial-gradient(ellipse at 10% 0%,   rgba(120, 90, 255, 0.08), transparent 50%),
-    radial-gradient(ellipse at 90% 100%, rgba(255, 90, 90, 0.07),  transparent 50%),
-    radial-gradient(ellipse at 80% 10%,  rgba(80,  50, 180, 0.05), transparent 40%),
-    radial-gradient(ellipse at 20% 90%,  rgba(180, 50,  50, 0.04), transparent 40%),
+    radial-gradient(ellipse at 10% 0%,   rgba(159, 143, 128, 0.08), transparent 50%),
+    radial-gradient(ellipse at 90% 100%, rgba(111, 176, 212, 0.06), transparent 50%),
+    radial-gradient(ellipse at 80% 10%,  rgba(159, 143, 128, 0.05), transparent 40%),
+    radial-gradient(ellipse at 20% 90%,  rgba(159, 143, 128, 0.04), transparent 40%),
     var(--jj-bg-main) !important;
   background-attachment: local !important;
 }
 
 .dnd5e2.sheet.actor.character .sheet-sidebar {
-  background: rgba(18, 18, 28, 0.8) !important;
+  background: rgba(22, 19, 15, 0.8) !important;
 }
 
 /* ════════════════════════════════════════
@@ -124,7 +130,7 @@
   border-radius: 8px;
   box-shadow:
     0 2px 10px rgba(0,0,0,0.25),
-    0 0 0 1px rgba(120, 90, 255, 0.08);
+    0 0 0 1px rgba(159, 143, 128, 0.08);
 }
 
 .dnd5e2.sheet.actor.character .card .header {
@@ -147,7 +153,7 @@
   border-radius: 8px;
   box-shadow:
     0 2px 10px rgba(0,0,0,0.25),
-    0 0 0 1px rgba(120, 90, 255, 0.08);
+    0 0 0 1px rgba(159, 143, 128, 0.08);
 }
 
 .dnd5e2.sheet.actor.character fieldset.card legend {
@@ -162,7 +168,7 @@
 .dnd5e2.sheet.actor.character .card .skill:hover,
 .dnd5e2.sheet.actor.character .card .saving-throw:hover,
 .dnd5e2.sheet.actor.character .card li:hover {
-  background: rgba(120, 90, 255, 0.08);
+  background: rgba(159, 143, 128, 0.08);
   border-radius: 4px;
 }
 
@@ -173,7 +179,7 @@
 }
 
 .dnd5e2.sheet.actor.character .card .item:hover {
-  background: rgba(120, 90, 255, 0.08);
+  background: rgba(159, 143, 128, 0.08);
 }
 
 .dnd5e2.sheet.actor.character .items-section {
@@ -186,9 +192,9 @@
    ════════════════════════════════════════ */
 
 @keyframes jj-energy-flow {
-  0%   { box-shadow: 0 0 6px rgba(139, 106, 173, 0.5), 0 0 12px rgba(106, 60, 255, 0.3); }
-  50%  { box-shadow: 0 0 14px rgba(139, 106, 173, 0.9), 0 0 28px rgba(106, 60, 255, 0.6), 0 0 6px rgba(180, 140, 220, 0.4) inset; }
-  100% { box-shadow: 0 0 6px rgba(139, 106, 173, 0.5), 0 0 12px rgba(106, 60, 255, 0.3); }
+  0%   { box-shadow: 0 0 6px rgba(111, 176, 212, 0.5), 0 0 12px rgba(80, 150, 200, 0.3); }
+  50%  { box-shadow: 0 0 14px rgba(111, 176, 212, 0.9), 0 0 28px rgba(80, 150, 200, 0.6), 0 0 6px rgba(167, 212, 234, 0.4) inset; }
+  100% { box-shadow: 0 0 6px rgba(111, 176, 212, 0.5), 0 0 12px rgba(80, 150, 200, 0.3); }
 }
 
 .dnd5e2.sheet.actor.character .cursed-energy-bar {
@@ -215,14 +221,14 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 50% 35%, rgba(120,150,255,0.15), transparent 70%),
-    linear-gradient(145deg, #0e0e1e, #0a0a14);
+    radial-gradient(circle at 50% 35%, rgba(111,176,212,0.15), transparent 70%),
+    linear-gradient(145deg, #14110c, #100d09);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  border: 1px solid rgba(120,150,255,0.25);
-  outline: 1px solid rgba(120,150,255,0.08);
+  border: 1px solid rgba(111,176,212,0.25);
+  outline: 1px solid rgba(111,176,212,0.08);
   outline-offset: -4px;
   box-shadow:
-    inset 0 0 10px rgba(120,150,255,0.15),
+    inset 0 0 10px rgba(111,176,212,0.15),
     0 2px 8px rgba(0,0,0,0.6);
   z-index: 0;
 }
@@ -233,8 +239,8 @@
   inset: 2px;
   clip-path: inherit;
   background:
-    radial-gradient(circle, rgba(120,150,255,0.12), transparent 70%),
-    linear-gradient(90deg, transparent, rgba(120,150,255,0.4), transparent);
+    radial-gradient(circle, rgba(111,176,212,0.12), transparent 70%),
+    linear-gradient(90deg, transparent, rgba(111,176,212,0.4), transparent);
   background-size: 100% 100%, 60% 2px;
   background-repeat: no-repeat;
   background-position: center, top center;
@@ -258,13 +264,13 @@
   font-size: 17px;
   font-weight: 700;
   color: #e0e6ff;
-  text-shadow: 0 0 8px rgba(120,150,255,0.6);
+  text-shadow: 0 0 8px rgba(111,176,212,0.6);
 }
 
 .dnd5e2.sheet.actor.character .ability-scores .ability-score .label {
   font-size: 9px;
   letter-spacing: 0.12em;
-  color: #8fa4ff;
+  color: #8fcbe6;
 }
 
 .dnd5e2.sheet.actor.character .ability-scores .ability-score .score {
@@ -273,25 +279,25 @@
 }
 
 .dnd5e2.sheet.actor.character .ability-scores .ability-score:hover::after {
-  border-color: rgba(140,170,255,0.6);
+  border-color: rgba(140,200,230,0.6);
   box-shadow:
-    inset 0 0 12px rgba(120,150,255,0.25),
-    0 0 12px rgba(120,150,255,0.25);
+    inset 0 0 12px rgba(111,176,212,0.25),
+    0 0 12px rgba(111,176,212,0.25);
 }
 
 .dnd5e2.sheet.actor.character .ability-score[data-ability-mod="3"]::after,
 .dnd5e2.sheet.actor.character .ability-score[data-ability-mod="4"]::after,
 .dnd5e2.sheet.actor.character .ability-score[data-ability-mod="5"]::after {
   box-shadow:
-    inset 0 0 14px rgba(120,150,255,0.3),
-    0 0 14px rgba(120,150,255,0.4);
+    inset 0 0 14px rgba(111,176,212,0.3),
+    0 0 14px rgba(111,176,212,0.4);
 }
 
 .ability-score:hover::after {
   transform: scale(1.03);
   box-shadow:
-    inset 0 0 14px rgba(120,150,255,0.3),
-    0 0 14px rgba(120,150,255,0.4);
+    inset 0 0 14px rgba(111,176,212,0.3),
+    0 0 14px rgba(111,176,212,0.4);
 }
 
 /* ════════════════════════════════════════
@@ -301,27 +307,27 @@
 .jujutsu-card {
   font-family: var(--dnd5e-font-roboto, sans-serif);
   background: var(--jj-bg-main);
-  border: 1px solid #1c1c2c;
+  border: 1px solid #2a2318;
   border-radius: 8px;
   overflow: hidden;
 }
 
 /* ── TOP BAR ─────────────────────────── */
 .jj-top-bar {
-  background: #13132a;
+  background: #1c1810;
   padding: 10px 14px;
   display: flex;
   align-items: center;
   gap: 10px;
-  border-bottom: 1px solid #1c1c30;
+  border-bottom: 1px solid #2a2318;
 }
 
 .jj-top-icon {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  border: 1px solid #2a2a50;
-  background: #1a1a3a;
+  border: 1px solid #473d2b;
+  background: #241f16;
   object-fit: cover;
   flex: none;
 }
@@ -329,13 +335,13 @@
 .jj-top-name {
   font-size: 14px;
   font-weight: 700;
-  color: #d0c8ff;
+  color: #e3d8c6;
   font-family: var(--dnd5e-font-roboto-slab, serif);
 }
 
 .jj-top-sub {
   font-size: 10px;
-  color: #9090b0;
+  color: #a89c89;
   margin-left: auto;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -346,9 +352,9 @@
 .jj-description {
   padding: 8px 14px;
   font-size: 11px;
-  color: #b0a8d0;
+  color: #c2b6a3;
   line-height: 1.5;
-  border-bottom: 1px solid #141420;
+  border-bottom: 1px solid #1a160f;
 }
 
 .jj-description p { margin: 0; }
@@ -357,13 +363,13 @@
 .jj-die.discarded {
   opacity: 0.3;
   text-decoration: line-through;
-  text-decoration-color: #4a4860;
+  text-decoration-color: #4a4338;
 }
 
 .jj-die.active {
-  border-color: #5040a0;
-  color: #c0a0ff;
-  background: #1a1430;
+  border-color: #3a6b85;
+  color: #d8c6aa;
+  background: #241f16;
 }
 
 /* ── BOTÕES DE ROLAR ─────────────────── */
@@ -371,7 +377,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1px;
-  background: #141420;
+  background: #1a160f;
 }
 
 .jj-btn {
@@ -389,8 +395,8 @@
   transition: all 120ms ease;
 }
 
-.jj-attack-btn { background: #110d22; color: #8060d0; }
-.jj-attack-btn:hover { background: #16102e; color: #a080f0; }
+.jj-attack-btn { background: #1a1610; color: #b89a72; }
+.jj-attack-btn:hover { background: #221c12; color: #d4b88a; }
 
 .jj-damage-btn { background: #140c08; color: #c06040; }
 .jj-damage-btn:hover { background: #1c100a; color: #e07850; }
@@ -410,13 +416,13 @@
 }
 
 .jj-panel.visible { display: flex; }
-.jj-panel + .jj-panel { border-left: 1px solid #1a1a28; }
+.jj-panel + .jj-panel { border-left: 1px solid #241f16; }
 
 .jj-panel-label {
   font-size: 9px;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: #8080a8;
+  color: #9c917e;
   margin-bottom: 4px;
 }
 
@@ -425,7 +431,7 @@
   font-weight: 700;
   line-height: 1;
   font-family: var(--font-primary, serif);
-  color: #b090ff;
+  color: #cbb893;
   transition: all 200ms ease;
 }
 
@@ -433,7 +439,7 @@
 
 .jj-panel-breakdown {
   font-size: 10px;
-  color: #8080a0;
+  color: #9c917e;
   margin-top: 4px;
   display: flex;
   flex-wrap: wrap;
@@ -448,11 +454,11 @@
   width: 18px;
   height: 18px;
   border-radius: 3px;
-  border: 1px solid #2a2a40;
-  background: #141420;
+  border: 1px solid #332c20;
+  background: #1a160f;
   font-size: 10px;
   font-weight: 700;
-  color: #8080a0;
+  color: #9c917e;
 }
 
 .jj-die-pip.max { border-color: #306030; color: #50a050; background: #0a120a; }
@@ -460,13 +466,13 @@
 
 .jj-mod-pip {
   font-size: 10px;
-  color: #9090b0;
+  color: #a89c89;
   padding: 0 1px;
 }
 
 .jj-break-bracket {
   font-size: 10px;
-  color: #505070;
+  color: #6a6253;
   opacity: 0.5;
   padding: 0 1px;
 }
@@ -501,10 +507,10 @@
 
 /* ── FUMBLE — Natural 1 ──────────────── */
 .jj-panel-val.nat1 {
-  color: #3a3850;
+  color: #3a352a;
   opacity: 0.45;
   text-decoration: line-through;
-  text-decoration-color: #4a4860;
+  text-decoration-color: #4a4338;
   animation: fumble-fade 0.4s ease-out;
 }
 
@@ -515,7 +521,7 @@
 
 /* ── FOOTER ───────────────────────────── */
 .jj-footer {
-  border-top: 1px solid #1a1a28;
+  border-top: 1px solid #241f16;
   padding: 8px 12px;
   display: none;
   align-items: center;
@@ -529,10 +535,10 @@
 
 .jj-mod-check {
   padding: 3px 7px;
-  border: 1px solid #1e1e2e;
+  border: 1px solid #2a2318;
   border-radius: 3px;
   font-size: 11px;
-  color: #40405a;
+  color: #6a6253;
   font-weight: 700;
   cursor: pointer;
   user-select: none;
@@ -543,7 +549,7 @@
 }
 
 .jj-mod-check input { display: none; }
-.jj-mod-check:hover { border-color: #3a3a5a; color: #8080a0; }
+.jj-mod-check:hover { border-color: #4a4338; color: #9c917e; }
 
 .jj-mod-check:has(input:checked) {
   border-color: #e07040;
@@ -563,7 +569,7 @@
 
 .jj-footer-total {
   font-size: 11px;
-  color: #50506a;
+  color: #6a6253;
   margin-left: 4px;
 }
 
@@ -594,10 +600,10 @@
 .jj-pa-badge {
   font-size: 9px;
   padding: 2px 5px;
-  border: 1px solid #30206a;
+  border: 1px solid #3a6b85;
   border-radius: 2px;
-  color: #7050c0;
-  background: #0e0820;
+  color: #8fcbe6;
+  background: #0d1820;
   margin-top: 4px;
   display: inline-block;
 }
@@ -608,14 +614,14 @@
   grid-template-columns: 1fr 1fr;
   gap: 1px;
   background: var(--jj-bg-main);
-  border-bottom: 1px solid #141420;
+  border-bottom: 1px solid #1a160f;
 }
 
 .jj-adv-btn {
   padding: 6px;
   border: none;
-  background: #0c0c14;
-  color: #30304a;
+  background: #14110c;
+  color: #4a4338;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -628,7 +634,7 @@
   transition: all 120ms ease;
 }
 
-.jj-adv-btn:hover { background: #111120; color: #60607a; }
+.jj-adv-btn:hover { background: #1c1810; color: #857a66; }
 
 .jj-adv-btn[data-adv="advantage"].active {
   background: #0a120a;

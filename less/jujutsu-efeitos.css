@@ -16,7 +16,7 @@
 .tab[data-tab="effects"] .effects-element .items-header,
 .tab[data-tab="effects"] .items-section > header,
 .tab[data-tab="effects"] .items-section > .items-header {
-  background: linear-gradient(90deg, #1c1c30, #161628) !important;
+  background: linear-gradient(90deg, #241f16, #1a160f) !important;
   border-bottom: 1px solid var(--jj-border) !important;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .tab[data-tab="effects"] .items-section {
-  background: rgba(10, 10, 20, 0.6);
+  background: rgba(22, 19, 15, 0.6);
   border-color: var(--jj-border-soft);
 }
 
@@ -62,7 +62,7 @@
 
 /* ── Header de condições ────────────── */
 .tab[data-tab="effects"] .jj-cond-header {
-  background: linear-gradient(90deg, #1c1c30, #161628) !important;
+  background: linear-gradient(90deg, #241f16, #1a160f) !important;
   color: var(--jj-primary-soft) !important;
 }
 
@@ -117,7 +117,7 @@
   align-items: center;
   gap: 6px;
   padding: 5px 8px;
-  border: 1px solid #1e1e2e;
+  border: 1px solid #2a2318;
   border-radius: 4px;
   background: var(--jj-bg-main);
   cursor: pointer;
@@ -127,7 +127,7 @@
 
 .jj-cond-item i {
   font-size: 11px;
-  color: #404058;
+  color: #6a6253;
   flex: none;
   width: 14px;
   text-align: center;
@@ -136,7 +136,7 @@
 
 .jj-cond-item span {
   font-size: 11px;
-  color: #505068;
+  color: #857a66;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -144,12 +144,12 @@
 }
 
 .jj-cond-item:hover {
-  border-color: #3a3a5a;
-  background: #141420;
+  border-color: #4a4338;
+  background: #1a160f;
 }
 
-.jj-cond-item:hover i   { color: #8080b0; }
-.jj-cond-item:hover span { color: #9090c0; }
+.jj-cond-item:hover i   { color: #9c917e; }
+.jj-cond-item:hover span { color: #b3a895; }
 
 .jj-cond-item.active {
   border-color: #6a1a1a;

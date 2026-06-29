@@ -71,7 +71,7 @@
   }
 },
 
-"DND5E.title": "Jujutsu Legacy RPG",
+"DND5E.title": "OPRPG",
 "DND5E.AbbreviationCR": "CR",
 "DND5E.AbbreviationConc": "Conc.",
 "DND5E.AbbreviationDC": "DC",
@@ -3428,23 +3428,23 @@
 "DND5E.Shape": "Forma",
 
 "DND5E.SheetClass": {
-  "Character": "Ficha de Personagem Jujutsu Legacy",
-  "ClassSummary": "Resumo de Classe Jujutsu Legacy",
-  "Container": "Ficha de Contêiner Jujutsu Legacy",
-  "DifficultTerrain": "Ficha de Terreno Difícil Jujutsu Legacy",
-  "Encounter": "Ficha de Encontro Jujutsu Legacy",
-  "Group": "Ficha de Grupo Jujutsu Legacy",
-  "Item": "Ficha de Item Jujutsu Legacy",
-  "JournalEntry": "Ficha de Diário Jujutsu Legacy",
-  "JournalEntryLegacy": "Ficha de Diário Jujutsu Legacy (Legado)",
-  "MapLocation": "Ficha de Localização Jujutsu Legacy",
-  "NPC": "Ficha de NPC Jujutsu Legacy",
-  "RollTable": "Ficha de Tabela de Rolagem Jujutsu Legacy",
-  "RotateArea": "Ficha de Área Rotativa Jujutsu Legacy",
-  "Rule": "Ficha de Regra Jujutsu Legacy",
-  "SpellList": "Ficha de Lista de Magias Jujutsu Legacy",
-  "Token": "Ficha de Token Jujutsu Legacy",
-  "Vehicle": "Ficha de Veículo Jujutsu Legacy"
+  "Character": "Ficha de Personagem OPRPG",
+  "ClassSummary": "Resumo de Classe OPRPG",
+  "Container": "Ficha de Contêiner OPRPG",
+  "DifficultTerrain": "Ficha de Terreno Difícil OPRPG",
+  "Encounter": "Ficha de Encontro OPRPG",
+  "Group": "Ficha de Grupo OPRPG",
+  "Item": "Ficha de Item OPRPG",
+  "JournalEntry": "Ficha de Diário OPRPG",
+  "JournalEntryLegacy": "Ficha de Diário OPRPG (Legado)",
+  "MapLocation": "Ficha de Localização OPRPG",
+  "NPC": "Ficha de NPC OPRPG",
+  "RollTable": "Ficha de Tabela de Rolagem OPRPG",
+  "RotateArea": "Ficha de Área Rotativa OPRPG",
+  "Rule": "Ficha de Regra OPRPG",
+  "SpellList": "Ficha de Lista de Magias OPRPG",
+  "Token": "Ficha de Token OPRPG",
+  "Vehicle": "Ficha de Veículo OPRPG"
 },
 
 "DND5E.SheetModeEdit": "Editar",
@@ -5333,9 +5333,9 @@
 "MACRO.5eNoActorSelected": "Nenhum ator selecionado ou atribuído foi encontrado para ser alvo da macro.",
 "MACRO.5eUnownedWarn": "Você só pode criar botões de macro para Itens que possui",
 
-"MIGRATION.5eBegin": "Aplicando migração do sistema Jujutsu Legacy para a versão {version}. Por favor, aguarde e não feche o jogo nem desligue o servidor.",
-"MIGRATION.5eComplete": "Migração do sistema Jujutsu Legacy para a versão {version} concluída!",
-"MIGRATION.5eVersionTooOldWarning": "Seus dados do sistema Jujutsu Legacy são de uma versão muito antiga do Foundry e não podem ser migrados com segurança para a versão mais recente. O processo será tentado, mas erros podem ocorrer.",
+"MIGRATION.5eBegin": "Aplicando migração do sistema OPRPG para a versão {version}. Por favor, aguarde e não feche o jogo nem desligue o servidor.",
+"MIGRATION.5eComplete": "Migração do sistema OPRPG para a versão {version} concluída!",
+"MIGRATION.5eVersionTooOldWarning": "Seus dados do sistema OPRPG são de uma versão muito antiga do Foundry e não podem ser migrados com segurança para a versão mais recente. O processo será tentado, mas erros podem ocorrer.",
 
 "SETTINGS.5eAutoCollapseCardL": "Colapsar automaticamente descrições de Cartas de Item no Chat",
 "SETTINGS.5eAutoCollapseCardN": "Colapsar Cartas de Item no Chat",

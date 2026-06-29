@@ -354,7 +354,7 @@ import { resetHealLimitsByTechnique } from "./heal-limit.mjs";
         atkBreak.innerHTML += `<span class="jj-pa-badge">⚡ +${paGastos}d${paBonus} no dano</span>`;
       }
       if ( card.dataset.jjScaleBonus ) {
-        atkBreak.innerHTML += `<span class="jj-pa-badge" style="color:#c0a0ff;border-color:#6040a0;">⚡ +${card.dataset.jjScaleBonus} (escala)</span>`;
+        atkBreak.innerHTML += `<span class="jj-pa-badge" style="color:#8fcbe6;border-color:#3a6b85;">⚡ +${card.dataset.jjScaleBonus} (escala)</span>`;
       }
     }
 
