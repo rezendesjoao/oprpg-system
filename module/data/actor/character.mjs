@@ -337,6 +337,13 @@ export default class CharacterData extends CreatureTemplate {
     }
 
     AttributesFields.prepareBaseArmorClass.call(this);
+    // One Piece não usa armaduras com CA: a Classe de Resistência base é 10 + Destreza (cálculo
+    // "default"). Atores legados do JJK guardavam attributes.ac.value=0 (usavam "Pontos de Armadura"
+    // no lugar da CR), que a migração do dnd5e (#migrateACData) converte para calc "flat" → CR 0.
+    // Se não houver uma CR fixa intencional (flat 0), retorna ao cálculo padrão (10 + Destreza).
+    if ( (this.attributes.ac.calc === "flat") && !this.attributes.ac.flat ) {
+      this.attributes.ac.calc = "default";
+    }
     AttributesFields.prepareBaseEncumbrance.call(this);
     SensesField._shim(this.attributes.senses);
   }
