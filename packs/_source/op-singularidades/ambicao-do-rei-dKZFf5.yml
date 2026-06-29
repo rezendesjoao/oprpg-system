@@ -1,0 +1,21 @@
+_id: dKZFf5ke2RvYGVoH
+name: Ambição do Rei
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você tem uma ambição grandiosa e inabalável, acompanhada de uma força de vontade que transcende limites. Em situações de grande estresse, você é capaz de manifestar uma aura misteriosa</p><p>Você se torna capaz de manifestar o Haki do Rei, no estágio 'Inexperiente', respeitando todas as regras do Capítulo 7. Essa individualidade só está disponível com a aprovação do Narrador.</p>
+    chat: ''
+  identifier: ambicao-do-rei
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Forte — 4 espaços
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!dKZFf5ke2RvYGVoH'
+ownership:
+  default: 0
+flags: {}

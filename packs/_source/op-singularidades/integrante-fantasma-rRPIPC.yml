@@ -1,0 +1,21 @@
+_id: rRPIPCuRFMvlCzZ7
+name: Integrante Fantasma
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você tem uma participação sútil e calma, sempre surpreendendo os outros com a sua personalidade quase fantasmagórica, quase invisível socialmente.</p><p>Desde que você não esteja interagindo diretamente com alguma situação ou combate, você pode inserir-se em qualquer interação que, à princípio, só envolvia os outros jogadores da mesa, mesmo se o Narrador não estiver ciente.</p>
+    chat: ''
+  identifier: integrante-fantasma
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Suave — 1 espaço
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!rRPIPCuRFMvlCzZ7'
+ownership:
+  default: 0
+flags: {}

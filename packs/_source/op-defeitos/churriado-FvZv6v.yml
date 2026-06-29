@@ -1,0 +1,21 @@
+_id: FvZv6v5wQRi81TZC
+name: Churriado
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você tem muitos pontos positivos, mas a força física certamente não é uma delas, e por mais que você invista seu tempo em treinar seu corpo, o resultado vai acabar sendo só uma aparência melhor.</p><p>Você tem desvantagem em qualquer Testes de Atributo ou Salvaguarda de Força.</p>
+    chat: ''
+  identifier: churriado
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Suave
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!FvZv6v5wQRi81TZC'
+ownership:
+  default: 0
+flags: {}

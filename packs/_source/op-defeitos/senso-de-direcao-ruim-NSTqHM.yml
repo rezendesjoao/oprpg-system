@@ -1,0 +1,21 @@
+_id: NSTqHMnmHg2rkqAL
+name: Senso de Direção Ruim
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você é tão ruim com senso de direção que pode se perder em um corredor sem portas ou janelas e não importa se seus amigos estiverem de olho em você, no primeiro deslize, você pode sumir da vista deles, como mágica.</p><p>Sempre que você não estiver em um encontro e se deslocar de um lugar para o outro, andando ou correndo, você deve jogar um d6. Em um resultado 3 ou menor, você se perde e pode parar a até 500 metros de distância do ponto de partida. Caso você esteja acompanhado, você pode jogar o d6 duas vezes e escolher o resultado.</p>
+    chat: ''
+  identifier: senso-de-direcao-ruim
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Suave
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!NSTqHMnmHg2rkqAL'
+ownership:
+  default: 0
+flags: {}

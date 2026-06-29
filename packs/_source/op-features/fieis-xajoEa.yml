@@ -1,0 +1,21 @@
+_id: xajoEaSOIkicKNJd
+name: Fiéis
+type: feat
+img: icons/sundries/scrolls/scroll-bound-brown.webp
+system:
+  description:
+    value: <p>Ao adentrar em locais povoados, você pode fazer um Teste de Atributo de Vontade (Sorte), com a CD definida pelo Narrador. Sendo bem-sucedido, você pode encontrar até 3 pessoas que já foram ajudadas por você.</p><p>Eles são plebeus capazes de realizar qualquer tarefa mundana, mas que não lutarão por você, não o seguirão em áreas evidentemente perigosas e o abandonarão se forem ameaçados ou abusados com frequência.</p>
+    chat: ''
+  identifier: fieis
+  type:
+    value: background
+    subtype: ''
+  requirements: Sacerdote
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!xajoEaSOIkicKNJd'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: gsEEnzRkqhYbPozg
+name: Dívida de Jogo
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>Você deve uma quantia absurda de dinheiro a uma ou mais figuras extremamente poderosas e influentes. Trata-se de uma dívida tão elevada que talvez nunca consiga quitá-la. Além disso, qualquer tentativa de enganar ou despistar seus credores apenas aumenta a determinação deles em capturá-lo.</p><p>Uma vez por semana, em um dia predefinido pelo Narrador, um emissário aparecerá para cobrar 10d10 milhões de Bellys. Caso o pagamento não seja realizado, no início do dia seguinte você deverá fazer uma Salvaguarda de Vontade com CD igual ao seu nível + o número de semanas em atraso.</p><p>Se falhar, independentemente de onde esteja, você nunca estará verdadeiramente seguro: o personagem é considerado perdido, podendo morrer por envenenamento, sabotagem ou sequestro, a critério do Narrador.</p>'
+    chat: ''
+  identifier: divida-de-jogo
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Média
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!gsEEnzRkqhYbPozg'
+ownership:
+  default: 0
+flags: {}

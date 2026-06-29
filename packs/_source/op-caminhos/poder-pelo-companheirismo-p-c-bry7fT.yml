@@ -1,0 +1,21 @@
+_id: bry7fTxuX1Jnrz9r
+name: Poder pelo Companheirismo (P/C)
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>É o sonho de alcançar prestígio, domínio ou poder — seja governar, possuir algo, impor sua vontade ou eliminar um inimigo — contando com alianças, influência e relações sociais para isso.</p>
+    chat: ''
+  identifier: poder-pelo-companheirismo-p-c
+  type:
+    value: caminho
+    subtype: ''
+  requirements: Caminho
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!bry7fTxuX1Jnrz9r'
+ownership:
+  default: 0
+flags: {}

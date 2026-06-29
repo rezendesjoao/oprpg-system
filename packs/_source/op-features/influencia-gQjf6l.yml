@@ -1,0 +1,28 @@
+_id: gQjf6lfV40UFMTF4
+name: Influência
+type: feat
+img: icons/sundries/scrolls/scroll-bound-brown.webp
+system:
+  description:
+    value: <p>Ao interagir com outros nobres ou membros da alta sociedade, você pode usar sua influência para conseguir favores como entrada livre em áreas privadas, dinheiro emprestado, pedir que alguém ateste suas palavras ou audiências privadas com outros nobres, desde que você passe em um Teste de Atributo de Vontade (Sorte), com a CD definida pelo Narrador. Essa característica não poderá ser usada novamente até o término de um descanso longo.</p>
+    chat: ''
+  identifier: influencia
+  type:
+    value: background
+    subtype: ''
+  requirements: Nobre
+  properties: []
+  activities: {}
+  uses:
+    max: '1'
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+        formula: ''
+effects: []
+folder: null
+_key: '!items!gQjf6lfV40UFMTF4'
+ownership:
+  default: 0
+flags: {}

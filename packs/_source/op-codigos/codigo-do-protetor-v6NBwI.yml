@@ -1,0 +1,21 @@
+_id: v6NBwIGTv9wiNU8b
+name: Código do Protetor
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você não consegue atacar ou ficar quieto assistindo pessoas indefesas sendo atacadas. Como crianças, idosos, animais e pessoas incapacitadas.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>
+    chat: ''
+  identifier: codigo-do-protetor
+  type:
+    value: codigoHonra
+    subtype: ''
+  requirements: Código de Honra
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!v6NBwIGTv9wiNU8b'
+ownership:
+  default: 0
+flags: {}

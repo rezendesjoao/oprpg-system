@@ -1,0 +1,21 @@
+_id: jNA9pZ5IR8HHhcks
+name: Ganancioso
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você realmente ama dinheiro, talvez, o motivo que lhe fez partir para se aventurar nos mares. Sempre que alguém falar de formas de ganhar quantidades consideráveis de dinheiro, por um pedido, uma missão ou revelando a localização de um tesouro escondido, você não consegue resistir, caso perca a oportunidade, você é acometido por uma grande depressão.</p><p>Caso se recuse a ganhar, perca dinheiro ou chances de enriquecer, você recebe -2 em todas as suas jogadas de ataque (comum ou Técnicas), Testes de Atributo e Salvaguardas por até 1d6 dias.</p>
+    chat: ''
+  identifier: ganancioso
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Média
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!jNA9pZ5IR8HHhcks'
+ownership:
+  default: 0
+flags: {}

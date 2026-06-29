@@ -1,0 +1,21 @@
+_id: 1HJFtONP9c9szHtr
+name: Rosto Debochado
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Sua aparência inspira antipatia e transmite a impressão constante de deboche, como se você estivesse sempre zombando de todos ao seu redor. Sempre que um encontro se inicia e não houver diferença relevante para as criaturas inimigas na escolha de alvos, elas optarão por atacar você.</p><p>Seu rosto também desperta irritação na Marinha, que se recusa a conceder grandes recompensas por seus feitos. Dessa forma, a cada atualização de recompensa, o valor recebido por você aumenta em, no máximo, 1.000 Bellys.</p>
+    chat: ''
+  identifier: rosto-debochado
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Suave
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!1HJFtONP9c9szHtr'
+ownership:
+  default: 0
+flags: {}

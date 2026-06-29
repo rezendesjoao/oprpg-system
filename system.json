@@ -2,7 +2,7 @@
   "id": "onepiece-system",
   "title": "One Piece RPG",
   "description": "One Piece RPG — sistema de RPG de mesa inspirado em One Piece para o Foundry Virtual Tabletop, adaptado de D&D 5e (baseado no Livro do Jogador OP RPG 2.0). Projeto de fã, sem afiliação oficial. Construído sobre o motor do dnd5e (MIT) e do jujutsu-system.",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "compatibility": {
     "minimum": "14.360",
     "verified": "14"
@@ -60,6 +60,46 @@
       "type": "Item",
       "system": "onepiece-system",
       "flags": { "OnePiece": { "types": ["race"] } }
+    },
+    {
+      "name": "op-backgrounds",
+      "label": "Antecedentes",
+      "path": "packs/op-backgrounds",
+      "type": "Item",
+      "system": "onepiece-system",
+      "flags": { "OnePiece": { "types": ["background"] } }
+    },
+    {
+      "name": "op-caminhos",
+      "label": "Caminhos",
+      "path": "packs/op-caminhos",
+      "type": "Item",
+      "system": "onepiece-system",
+      "flags": { "OnePiece": { "types": ["feat"] } }
+    },
+    {
+      "name": "op-singularidades",
+      "label": "Singularidades",
+      "path": "packs/op-singularidades",
+      "type": "Item",
+      "system": "onepiece-system",
+      "flags": { "OnePiece": { "types": ["feat"] } }
+    },
+    {
+      "name": "op-defeitos",
+      "label": "Defeitos",
+      "path": "packs/op-defeitos",
+      "type": "Item",
+      "system": "onepiece-system",
+      "flags": { "OnePiece": { "types": ["feat"] } }
+    },
+    {
+      "name": "op-codigos",
+      "label": "Códigos de Honra",
+      "path": "packs/op-codigos",
+      "type": "Item",
+      "system": "onepiece-system",
+      "flags": { "OnePiece": { "types": ["feat"] } }
     },
     {
       "name": "tecnicas-manipulacao",

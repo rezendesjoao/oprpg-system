@@ -1,0 +1,28 @@
+_id: yLxZKquxeSicgQv1
+name: Álter Ego Heroico
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você possui uma identidade secreta, à sua escolha, que pode ser invocada sempre que estiver em perigo, desde que tenha seus trajes de herói em mãos. Enquanto estiver vestido como herói, deve proteger sua verdadeira identidade de todos.</p><p>Durante até 5 minutos, enquanto estiver vestido de herói, você recebe vantagem em jogadas para determinar sua iniciativa. Caso seja o último na ordem de iniciativa, passa automaticamente a ser o primeiro. Além disso, ignora quaisquer efeitos negativos dos seus defeitos.</p><p>Essa característica não poderá ser usada novamente até o término de um descanso longo.</p>
+    chat: ''
+  identifier: alter-ego-heroico
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Média — 3 espaços
+  properties: []
+  activities: {}
+  uses:
+    max: '1'
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+        formula: ''
+effects: []
+folder: null
+_key: '!items!yLxZKquxeSicgQv1'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: a6nRynqbt4lZGnOh
+name: Consumidor Compulsivo
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você é impulsivo quando se trata de compras e gasta dinheiro de maneira descontrolada em itens que, muitas vezes, são inúteis ou prejudiciais.</p><p>Sempre que entrar em uma loja ou mercado, você deve fazer uma Salvaguarda de Vontade CD 18 para evitar gastar 50% do dinheiro total que você possuir.</p>
+    chat: ''
+  identifier: consumidor-compulsivo
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Forte
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!a6nRynqbt4lZGnOh'
+ownership:
+  default: 0
+flags: {}

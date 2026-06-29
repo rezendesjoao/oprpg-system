@@ -1,0 +1,21 @@
+_id: PFuEvSfHOstZ0kGC
+name: Pau-para-Toda-Obra
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>Ao longo da sua vida, você se dedicou a aprender mais, transitando por diferentes áreas de conhecimento e desenvolvendo habilidades variadas.</p><p>Essa característica permite que você crie seu personagem com duas profissões, em vez de apenas uma. Você recebe todos os benefícios iniciais de ambas, exceto as proficiências em perícias e ferramentas: só recebendo esses benefícios de apenas uma das profissões iniciais.</p>'
+    chat: ''
+  identifier: pau-para-toda-obra
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Forte — 4 espaços
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!PFuEvSfHOstZ0kGC'
+ownership:
+  default: 0
+flags: {}

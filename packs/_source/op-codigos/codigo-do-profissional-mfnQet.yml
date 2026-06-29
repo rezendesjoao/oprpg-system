@@ -1,0 +1,21 @@
+_id: mfnQetzzEylJlRyg
+name: Código do Profissional
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Caso receba um pedido relacionado à sua profissão, você se sente obrigado a ajudar. Mesmo que a pessoa não possa pagar, você aceita qualquer forma de recompensa ou dá alguma desculpa para poder efetuar o serviço.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>
+    chat: ''
+  identifier: codigo-do-profissional
+  type:
+    value: codigoHonra
+    subtype: ''
+  requirements: Código de Honra
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!mfnQetzzEylJlRyg'
+ownership:
+  default: 0
+flags: {}

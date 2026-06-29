@@ -1,0 +1,54 @@
+_id: Xg2VbJoWZDp6neZN
+name: Nobre
+type: background
+img: icons/sundries/books/book-embossed-jewel-gold.webp
+system:
+  description:
+    value: '<p>Sua família foi ou ainda é regente de uma das tantas ilhas espalhadas pelo mundo, isso não necessariamente lhe garantiu uma vida luxuosa, já que existem reinos pobres e ricos. Mas certamente uma educação de primeira e alguma influência dentro dos círculos mais altos da sociedade.</p><p><em>Aumento no Valor de Atributo recomendado: Sabedoria.</em></p>'
+    chat: ''
+  identifier: nobre
+  advancement:
+    - _id: iSLBpF4ITLtPafzW
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: 6TQkIqIsm56LYnGd
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:his
+              - skills:ins
+              - skills:inv
+              - skills:nat
+              - skills:luc
+        mode: default
+      value: {}
+      flags: {}
+    - _id: B2zbKCcqS9AYGIiC
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.gQjf6lfV40UFMTF4
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!Xg2VbJoWZDp6neZN'
+ownership:
+  default: 0
+flags: {}

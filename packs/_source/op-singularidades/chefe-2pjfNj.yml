@@ -1,0 +1,21 @@
+_id: 2pjfNj5k4cCspXv2
+name: Chefe
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você impõe respeito naturalmente — seja por já ter feito parte de uma organização criminosa respeitada, como a máfia, por aparentar grande força ou simplesmente por manter uma postura firme e inabalável.</p><p>Desde que esteja fora de um encontro de combate, o primeiro dano causado por você contra uma criatura não desencadeia retaliação hostil (desde que não seja por meio de uma Técnica), caso passe em um Teste de Atributo de Presença (Intimidação) CD 16.</p><p>Em caso de sucesso, além de não iniciar um combate, você recebe vantagem em Testes de Atributo de Presença contra essa criatura até o final do dia.</p>
+    chat: ''
+  identifier: chefe
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Suave — 1 espaço
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!2pjfNj5k4cCspXv2'
+ownership:
+  default: 0
+flags: {}

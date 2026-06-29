@@ -1,0 +1,21 @@
+_id: XpOYvl8ADdAduYk2
+name: Pacifista
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você adota uma postura pacifista em sua abordagem à vida, buscando solucionar conflitos por meio do diálogo e da compreensão. Evita o uso da violência sempre que possível, priorizando a paz e a harmonia em suas interações.</p><p>Você só consegue executar ações que possam causar dano quando um aliado estiver com menos de 50% de Pontos de Vida ou alguma criatura não combatente estiver com risco de vida. Quando sozinho, você sempre se rende ou busca o caminho da não violência.</p>
+    chat: ''
+  identifier: pacifista
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Forte
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!XpOYvl8ADdAduYk2'
+ownership:
+  default: 0
+flags: {}

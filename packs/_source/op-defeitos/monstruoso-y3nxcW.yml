@@ -1,0 +1,21 @@
+_id: y3nxcWuwguR3NghN
+name: Monstruoso
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Sua aparência é repulsiva, assustadora ou profundamente desconfortável para padrões sociais comuns. Circular livremente entre pessoas é sempre um risco.</p><p>Você recebe 1 nível de Preconceito (ou aumenta em 1 nível, caso já possua). Essa monstruosidade pode ser parcialmente ocultada com roupas adequadas, capas ou máscaras, a critério do Narrador.</p>
+    chat: ''
+  identifier: monstruoso
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Suave
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!y3nxcWuwguR3NghN'
+ownership:
+  default: 0
+flags: {}

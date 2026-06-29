@@ -1,0 +1,21 @@
+_id: 6EpQ9Nz9le4n83BY
+name: Conhecimento pelo Companheirismo (C/C)
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>É o sonho de ver, aprender ou compreender algo por meio da interação social. O personagem depende de aliados para alcançar seus objetivos, podendo liderar ou ser subordinado, desde que conte com outras pessoas em sua jornada.</p>
+    chat: ''
+  identifier: conhecimento-pelo-companheirismo-c-c
+  type:
+    value: caminho
+    subtype: ''
+  requirements: Caminho
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!6EpQ9Nz9le4n83BY'
+ownership:
+  default: 0
+flags: {}

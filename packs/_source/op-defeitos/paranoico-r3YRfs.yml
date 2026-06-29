@@ -1,0 +1,21 @@
+_id: r3YRfsx4rsVLWQEE
+name: Paranoico
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>Você não confia em ninguém, nem em seus amigos. Nunca pede e nem aceita nenhuma ajuda, nem mesmo o tratamento de seus ferimentos. Não consegue descansar ou dormir direito: mesmo que esteja em uma estalagem ou outro lugar que parece ser totalmente seguro.</p><p>Você precisa de, no mínimo, 2 horas para se acalmar e achar que está tudo certo, para começar um descanso curto ou longo.</p>'
+    chat: ''
+  identifier: paranoico
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Média
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!r3YRfsx4rsVLWQEE'
+ownership:
+  default: 0
+flags: {}

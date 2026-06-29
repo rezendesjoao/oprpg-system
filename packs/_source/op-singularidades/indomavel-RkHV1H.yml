@@ -1,0 +1,21 @@
+_id: RkHV1HwVMgDxATUQ
+name: Indomável
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>O personagem possui uma reação quase bestial sempre que alguém tenta subjugá-lo, seja por meio de correntes, agarrões, algemas ou habilidades especiais.</p><p>Sempre que estiver restrito de qualquer forma, você dobra o seu modificador de Força nas jogadas realizadas para se libertar. Além disso, enquanto estiver agarrado, você causa 1 dado de dano adicional na criatura que o está restringindo.</p>
+    chat: ''
+  identifier: indomavel
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Suave — 1 espaço
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!RkHV1HwVMgDxATUQ'
+ownership:
+  default: 0
+flags: {}

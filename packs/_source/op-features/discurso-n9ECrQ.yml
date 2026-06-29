@@ -1,0 +1,28 @@
+_id: n9ECrQH3NrgxjJeX
+name: Discurso
+type: feat
+img: icons/sundries/scrolls/scroll-bound-brown.webp
+system:
+  description:
+    value: <p>Ao confrontar uma pessoa hostil fora de combate, desde que você seja bem-sucedido em um Teste de Atributo de Vontade (Sorte), com a CD definida pelo Narrador, você pode convence-la a te ajudar.</p><p>A pessoa se aliará a você por até 24 horas, enquanto os objetivos dela não forem totalmente contrários aos seus. Essa característica não poderá ser usada novamente até o término de um descanso longo.</p>
+    chat: ''
+  identifier: discurso
+  type:
+    value: background
+    subtype: ''
+  requirements: Político
+  properties: []
+  activities: {}
+  uses:
+    max: '1'
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+        formula: ''
+effects: []
+folder: null
+_key: '!items!n9ECrQH3NrgxjJeX'
+ownership:
+  default: 0
+flags: {}

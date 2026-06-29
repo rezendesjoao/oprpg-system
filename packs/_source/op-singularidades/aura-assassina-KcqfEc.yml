@@ -1,0 +1,21 @@
+_id: KcqfEcbKt8CXWLFe
+name: Aura Assassina
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você emana uma presença intimidadora, que não tem relação com sua aparência física, seja por ter encarado inúmeras situações mortais ou por guardar uma intensa fúria dentro de si.</p><p>Enquanto estiver com todos os seus Pontos de Vida, qualquer criatura que realizar a primeira jogada de ataque (comum) contra você terá desvantagem.</p>
+    chat: ''
+  identifier: aura-assassina
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Média — 3 espaços
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!KcqfEcbKt8CXWLFe'
+ownership:
+  default: 0
+flags: {}

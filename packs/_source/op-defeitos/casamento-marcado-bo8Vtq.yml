@@ -1,0 +1,21 @@
+_id: bo8Vtq8i3NitDAC8
+name: Casamento Marcado
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>Você fez parte de uma família ou organização poderosa que sempre o tratou como alguém descartável. Como resultado, foi prometido como agrado, moeda de troca ou até mesmo oferecido como escravo, cônjuge político para unir famílias do submundo, fortalecer alianças ou ampliar o poder dessa organização.</p><p>Para garantir que o acordo seja cumprido, seus antigos aliados usam seus contatos para intensificar a perseguição à sua tripulação: a Marinha aumenta a vigilância, grandes piratas são incentivados por recompensas.</p><p>Enquanto você não se apresentar voluntariamente a essa organização, sempre que passar um dia viajando de navio ou ao adentrar uma nova ilha ou localidade, deve realizar um Teste de Atributo de Vontade (Sorte) CD 18. Em caso de falha, você encontra emissários hostis preparados para capturá-lo ou forçá-lo a cumprir o acordo.</p>'
+    chat: ''
+  identifier: casamento-marcado
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Suave
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!bo8Vtq8i3NitDAC8'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: u7pc87G2aPHmb35g
+name: Preguiçoso
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>No início de cada dia, role 1d4. O resultado indica a quantidade máxima de tarefas que você consegue realizar sem sofrer penalidades. Após exceder esse limite, seus Pontos de Poder atuais são reduzidos à metade (arredondando para baixo). Esses são alguns exemplos de tarefas, mas o Narrador pode estipular outras:</p><p>Desempenhar sua profissão durante o dia;</p><p>Participar de um encontro de combate;</p><p>Executar pedidos, ordens ou favores que não tenham partido de você.</p><p>Essa penalidade só pode ocorrer uma vez por dia e é redefinida ao final de um descanso longo.</p>
+    chat: ''
+  identifier: preguicoso
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Média
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!u7pc87G2aPHmb35g'
+ownership:
+  default: 0
+flags: {}

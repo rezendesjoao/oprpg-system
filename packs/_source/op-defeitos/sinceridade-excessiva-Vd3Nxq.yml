@@ -1,0 +1,21 @@
+_id: Vd3NxqaILFc9EnmJ
+name: Sinceridade Excessiva
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você é incapaz de mentir, seja por valores morais ou simplesmente dificuldade em ocultar a verdade. E por mais que você se esforce para contar uma mentira, sempre será óbvio que não se trata da verdade.</p><p>Você falha automaticamente em Testes de Atributo de Presença (Enganação), ignorando sucessos automáticos.</p>
+    chat: ''
+  identifier: sinceridade-excessiva
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Suave
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!Vd3NxqaILFc9EnmJ'
+ownership:
+  default: 0
+flags: {}

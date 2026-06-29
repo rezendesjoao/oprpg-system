@@ -1,0 +1,21 @@
+_id: HO8UXS1PwSRUbT44
+name: Código do Burocrata
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>Como uma regra alternativa, que o Narrador pode usar na aventura, os personagens podem impor a si mesmos limites próprios, que têm origem por um trauma ou ser uma promessa, mas o importante é que essa é uma linha que define seu caráter, caso a ultrapasse, viver será como estar morto. Não é obrigatório a escolha de um código e só deve ser escolhido 1 por personagem. A tabela ''Seguindo seu Código'' define quantos Pontos de Treinamento são adquiridos ao manter o código: Prejudicando a Si Mesmo = 1 PT; Confrontando um Aliado = 1 PT; Prejudicando o Grupo = 2 PT; Própria Vida em Risco = 2 PT; Vida do Grupo em Risco = 3 PT.</p><p>Sempre que uma situação deva ser resolvida, você estabelece um contrato social entre ambas as partes (seja verbal ou escrito), deixando claro as obrigações e necessidades de todos. Você se torna inteiramente fiel ao que foi acordado, seguindo estritamente todos os seus aspectos. Só podendo fazer algo diferente caso a outra parte quebre o contrato ou caso ele seja cumprido.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>'
+    chat: ''
+  identifier: codigo-do-burocrata
+  type:
+    value: codigoHonra
+    subtype: ''
+  requirements: Código de Honra
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!HO8UXS1PwSRUbT44'
+ownership:
+  default: 0
+flags: {}

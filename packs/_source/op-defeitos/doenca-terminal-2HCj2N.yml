@@ -1,0 +1,21 @@
+_id: 2HCj2NO07cXVyc0a
+name: Doença Terminal
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você sofre de uma doença terrível e incurável, que consome lentamente sua vitalidade. No passado, você já foi muito mais forte do que é hoje, mas seu corpo está em constante declínio.</p><p>Sempre que você cair a 0 Pontos de Vida, perde permanentemente 1 ponto do atributo Constituição. Caso esse atributo chegue a 0, o personagem morre.</p>
+    chat: ''
+  identifier: doenca-terminal
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Forte
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!2HCj2NO07cXVyc0a'
+ownership:
+  default: 0
+flags: {}

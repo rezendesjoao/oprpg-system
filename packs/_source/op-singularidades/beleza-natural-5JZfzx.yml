@@ -1,0 +1,21 @@
+_id: 5JZfzxWmv7YHvwyQ
+name: Beleza Natural
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>O personagem nasceu com uma beleza exuberante. Mesmo sem qualquer preparo, ele já é bonito o suficiente para chamar atenção e conquistar admiradores. O preconceito severo é reduzido para medíocre e o medíocre para débil. Não é possível reduzir o preconceito débil com essa individualidade.</p>
+    chat: ''
+  identifier: beleza-natural
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Suave — 1 espaço
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!5JZfzxWmv7YHvwyQ'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: pCIpyjQaOGjmZyLs
+name: Medroso
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>O medo é seu companheiro constante, qualquer coisa possivelmente assustadora o impressiona e faz com que esbugalhe os olhos e grite, mesmo que você seja capaz de fazer o mesmo ou até superar ou que a criatura seja mais fraca que você.</p><p>Você é sempre o último nas ordens de iniciativa. Caso alguma outra criatura tenha esta individualidade, o Narrador decide quem irá primeiro.</p>
+    chat: ''
+  identifier: medroso
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Suave
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!pCIpyjQaOGjmZyLs'
+ownership:
+  default: 0
+flags: {}

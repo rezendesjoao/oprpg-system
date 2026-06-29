@@ -1,0 +1,21 @@
+_id: 2RPpjgB4WEZtfbO8
+name: Liberdade pela Força (L/F)
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>É o sonho de viver livremente ou realizar algo que traga felicidade pessoal por meio da própria força. O personagem trilha seu caminho de forma independente, mesmo que possua companheiros.</p>
+    chat: ''
+  identifier: liberdade-pela-forca-l-f
+  type:
+    value: caminho
+    subtype: ''
+  requirements: Caminho
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!2RPpjgB4WEZtfbO8'
+ownership:
+  default: 0
+flags: {}

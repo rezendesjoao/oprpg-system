@@ -1,0 +1,21 @@
+_id: iDyqoAvMjxGIEF81
+name: Ferida Fantasma
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você possui uma cicatriz, visível ou não, resultante de um acontecimento terrível no qual foi derrotado, perdeu pessoas queridas ou teve sua determinação quebrada (a ser definido em acordo com o Narrador).</p><p>As dores desse grande ferimento retornam sempre que você enfrenta momentos decisivos. Nessas situações, o Narrador pode exigir uma Salvaguarda de Vontade CD 16 até 3 vezes entre descansos longos.</p><p>Caso falhe, você não pode realizar ações nem ações poderosas até o início do seu próximo turno e sofre 10 pontos de dano Psíquico.</p><p>Se estiver diante de quem lhe causou esse trauma ou de acontecimentos relacionados ao ocorrido, a Salvaguarda é realizada com desvantagem. Nessas circunstâncias, o Narrador pode dobrar a quantidade de Salvaguardas entre descansos longos.</p>
+    chat: ''
+  identifier: ferida-fantasma
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Média
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!iDyqoAvMjxGIEF81'
+ownership:
+  default: 0
+flags: {}

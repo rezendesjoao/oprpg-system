@@ -1,0 +1,21 @@
+_id: umYonpjOOLAIPaRf
+name: Coração Mole
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você não aguenta ver os outros sofrerem e evita qualquer situação que implique em causar dor física ou emocional em alguém que não mereça ou não possa se defender.</p><p>Suas jogadas de ataque (comum ou Técnicas) ou qualquer jogada com a intenção de prejudicar a criaturas que possa te causar empatia recebem desvantagem.</p>
+    chat: ''
+  identifier: coracao-mole
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Média
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!umYonpjOOLAIPaRf'
+ownership:
+  default: 0
+flags: {}

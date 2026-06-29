@@ -1,0 +1,53 @@
+_id: LMruyaKNJydDgZm1
+name: Derrotado
+type: background
+img: icons/sundries/books/book-embossed-jewel-gold.webp
+system:
+  description:
+    value: '<p>Em algum momento do passado, você esteve no auge. Foi temido, respeitado ou admirado — talvez como um grande guerreiro, capitão, líder político ou figura lendária. Porém, uma derrota esmagadora mudou tudo.</p><p>Você perdeu um confronto decisivo, foi traído, humilhado publicamente ou teve seus sonhos destruídos diante do mundo. Desde então, vive com o peso desse fracasso, buscando se reerguer, provar seu valor novamente ou apenas entender onde errou.</p><p>Essa queda o enfraqueceu consideravelmente, e sua recuperação tem sido lenta e dolorosa. No entanto, também moldou quem você é agora, tornando-o mais cauteloso, resiliente ou consumido por um desejo obsessivo de redenção.</p><p><em>Aumento no Valor de Atributo recomendado: Vontade.</em></p>'
+    chat: ''
+  identifier: derrotado
+  advancement:
+    - _id: 9pcO2bLAkNBVSVo8
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: m7UyrUJHT30VslEE
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:ins
+              - skills:inv
+              - skills:his
+              - skills:sur
+        mode: default
+      value: {}
+      flags: {}
+    - _id: 6ocGikEhJPeYcUbl
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.IltvDpLkCcQqCV6a
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!LMruyaKNJydDgZm1'
+ownership:
+  default: 0
+flags: {}

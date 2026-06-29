@@ -1,0 +1,54 @@
+_id: s72mIGV66joQz66B
+name: Negativo
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você é naturalmente negativo, sempre pessimista e esperando o pior. Quando algo dá errado, você simplesmente aceita a situação. Por definição, nada que alguém faça ou diga, nem mesmo habilidades de Akuma no Mi, pode deixá-lo mais deprimido ou desmotivado, pois não há como ficar pior do que você já é.</p><p>Você é imune às condições 'Empoderado', 'Enfeitiçado', 'Enfurecido', 'Letárgico' e 'Sonolento'.</p>
+    chat: ''
+  identifier: negativo
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Média — 3 espaços
+  properties: []
+  activities: {}
+effects:
+  - _id: vg2e34JbBJNgGSzA
+    _key: '!items.effects!s72mIGV66joQz66B.vg2e34JbBJNgGSzA'
+    name: Negativo
+    img: icons/svg/upgrade.svg
+    changes:
+      - key: system.traits.ci.value
+        mode: 2
+        value: jj-empoderado
+        priority: 20
+      - key: system.traits.ci.value
+        mode: 2
+        value: jj-enfeiticado
+        priority: 20
+      - key: system.traits.ci.value
+        mode: 2
+        value: jj-enfurecido
+        priority: 20
+      - key: system.traits.ci.value
+        mode: 2
+        value: jj-letargico
+        priority: 20
+      - key: system.traits.ci.value
+        mode: 2
+        value: jj-sonolento
+        priority: 20
+    transfer: true
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      rounds: null
+      turns: null
+    flags: {}
+folder: null
+_key: '!items!s72mIGV66joQz66B'
+ownership:
+  default: 0
+flags: {}

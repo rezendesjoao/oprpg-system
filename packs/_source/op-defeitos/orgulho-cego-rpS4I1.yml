@@ -1,0 +1,21 @@
+_id: rpS4I1Pn5Ik0y2xe
+name: Orgulho Cego
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você é incapaz de ignorar provocações e insultos de qualquer tipo direcionados a você, seus companheiros ou entes queridos, independentemente do quão a situação seja inapropriada para isso.</p><p>Você falha automaticamente em testes contra Provocação e não pode ser acalmado (ignorando sucessos automáticos).</p>
+    chat: ''
+  identifier: orgulho-cego
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Suave
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!rpS4I1Pn5Ik0y2xe'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: XcVUIpS92Kv1vwKr
+name: Bom Negócio
+type: feat
+img: icons/sundries/scrolls/scroll-bound-brown.webp
+system:
+  description:
+    value: <p>Ao negociar compra, venda ou troca de bens e serviços, você pode fazer um Teste de Atributo de Vontade (Sorte), com CD definida pelo Narrador. Em caso de sucesso, você obtém uma vantagem comercial significativa, como desconto, bônus na troca, prioridade de entrega ou informação adicional relevante sobre o item ou mercado.</p>
+    chat: ''
+  identifier: bom-negocio
+  type:
+    value: background
+    subtype: ''
+  requirements: Mercador
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!XcVUIpS92Kv1vwKr'
+ownership:
+  default: 0
+flags: {}

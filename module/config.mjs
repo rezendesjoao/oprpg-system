@@ -1814,6 +1814,18 @@ DND5E.featureTypes = {
   background: {
     label: "DND5E.Feature.Background"
   },
+  caminho: {
+    label: "DND5E.Feature.OP.Caminho"
+  },
+  singularidade: {
+    label: "DND5E.Feature.OP.Singularidade"
+  },
+  defeito: {
+    label: "DND5E.Feature.OP.Defeito"
+  },
+  codigoHonra: {
+    label: "DND5E.Feature.OP.CodigoHonra"
+  },
   class: {
     label: "DND5E.Feature.Class.Label",
     subtypes: {

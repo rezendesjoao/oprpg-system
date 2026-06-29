@@ -1,0 +1,55 @@
+_id: 9fqmT7O0zbbUdtJw
+name: Político
+type: background
+img: icons/sundries/books/book-embossed-jewel-gold.webp
+system:
+  description:
+    value: '<p>De alguma forma, a política fez parte da sua vida, você pode ter sido o prefeito de uma vila, participado das disputas entre dois regentes, ter sido o conselheiro de um rei ou ativista em nome de uma causa a favor do seu povo. Com isso, se fez necessário muitos estudos políticos e entendimento dos apelos populares.</p><p>Ao sair dessa vida, você manteve todo o conhecimento de como funciona os bastidores dos governos, suas decisões difíceis e as cordas que controlam a população.</p><p><em>Aumento no Valor de Atributo recomendado: Presença.</em></p>'
+    chat: ''
+  identifier: politico
+  advancement:
+    - _id: DDXhNbtWqGaW2tbI
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: 5FmRlMdSun5eaaNc
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:prf
+              - skills:dec
+              - skills:his
+              - skills:ins
+              - skills:per
+              - skills:prv
+        mode: default
+      value: {}
+      flags: {}
+    - _id: KTalQ1MOtyTyIKeK
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.n9ECrQH3NrgxjJeX
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!9fqmT7O0zbbUdtJw'
+ownership:
+  default: 0
+flags: {}

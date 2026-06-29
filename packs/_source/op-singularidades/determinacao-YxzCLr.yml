@@ -1,0 +1,28 @@
+_id: YxzCLripQmd3TTJr
+name: Determinação
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você é movido por uma vontade inabalável de alcançar seus sonhos. Seus objetivos podem mudar ao longo da história, mas nada é capaz de quebrar sua fé ou desanimá-lo de seguir em frente.</p><p>Esta característica concede 10 Pontos de Determinação, que podem ser gastos para aumentar o valor final de Testes de Atributo ou Salvaguardas diretamente relacionados às suas ambições (acordados previamente com o Narrador). Cada ponto gasto adiciona +1 ao resultado do teste. Os pontos gastos são perdidos e recuperados apenas ao término de um descanso longo.</p>
+    chat: ''
+  identifier: determinacao
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Suave — 1 espaço
+  properties: []
+  activities: {}
+  uses:
+    max: '10'
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+        formula: ''
+effects: []
+folder: null
+_key: '!items!YxzCLripQmd3TTJr'
+ownership:
+  default: 0
+flags: {}

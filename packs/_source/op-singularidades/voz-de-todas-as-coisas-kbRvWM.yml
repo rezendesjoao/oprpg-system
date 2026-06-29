@@ -1,0 +1,21 @@
+_id: kbRvWMAxuBp1R86d
+name: Voz de Todas as Coisas
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você nasceu com um poder de características únicas e muito misterioso. Em algumas situações, você é capaz de ouvir a 'voz' de qualquer ser vivo e até objetos inanimados. Esse poder não necessariamente permite que você consiga se comunicar com outros seres vivos.</p><p>Ao ver um objeto misterioso, textos indecifráveis ou animais raros, o Narrador pode pedir para você pode fazer Teste de Atributo de Vontade (Sobrenatural), com CD determinada por ele. Ao ser bem-sucedido, você ainda não será capaz de ler ou entender, mas você consegue receber os sentimentos que queriam ser passados.</p>
+    chat: ''
+  identifier: voz-de-todas-as-coisas
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Forte — 4 espaços
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!kbRvWMAxuBp1R86d'
+ownership:
+  default: 0
+flags: {}

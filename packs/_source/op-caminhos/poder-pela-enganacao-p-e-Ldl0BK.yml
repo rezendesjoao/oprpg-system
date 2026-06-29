@@ -1,0 +1,21 @@
+_id: Ldl0BKJ09rmsClxt
+name: Poder pela Enganação (P/E)
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>É o sonho de alcançar poder, prestígio ou domínio por meio da manipulação, enganação, encenação ou controle de pessoas e informações.</p>
+    chat: ''
+  identifier: poder-pela-enganacao-p-e
+  type:
+    value: caminho
+    subtype: ''
+  requirements: Caminho
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!Ldl0BKJ09rmsClxt'
+ownership:
+  default: 0
+flags: {}

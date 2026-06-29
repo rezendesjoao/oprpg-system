@@ -1,0 +1,21 @@
+_id: TBLvCzFw0dh2qMGW
+name: Herói do Povo
+type: feat
+img: icons/sundries/scrolls/scroll-bound-brown.webp
+system:
+  description:
+    value: <p>Devido seu passado turbulento, sua identidade pode ser facilmente percebida, desta forma, desde que você seja bem-sucedido em um Teste de Atributo de Vontade (Sorte), com a CD definida pelo Narrador, você é capaz de encontrar um lugar para se esconder, descansar ou se recuperar em meio às pessoas que simpatizam com a causa revolucionária, a não ser que tenha se mostrado uma ameaça para eles. Eles o protegerão da lei ou de qualquer outra pessoa que o procure, embora não estejam dispostos a arriscar suas vidas por você.</p>
+    chat: ''
+  identifier: heroi-do-povo
+  type:
+    value: background
+    subtype: ''
+  requirements: Revolucionário
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!TBLvCzFw0dh2qMGW'
+ownership:
+  default: 0
+flags: {}

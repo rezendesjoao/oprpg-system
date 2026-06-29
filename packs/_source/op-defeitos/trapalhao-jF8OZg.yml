@@ -1,0 +1,21 @@
+_id: jF8OZgyyQidP4yQ2
+name: Trapalhão
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Sempre que você se move, sai esbarrando em tudo pela sua frente ou tropeça no nada, não consegue carregar qualquer coisa sem que tudo acabe no chão.</p><p>Ao realizar uma falha crítica em uma jogada de ataque (comum), você não só erra o golpe como também desencadeia um dos seguintes efeitos, de acordo com o Narrador:</p><p>Acerta a si mesmo ou um aliado próximo, causando até 5 pontos de dano na criatura;</p><p>Deixa a arma cair no chão;</p><p>Tropeça e recebe a condição 'Caído'.</p>
+    chat: ''
+  identifier: trapalhao
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Suave
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!jF8OZgyyQidP4yQ2'
+ownership:
+  default: 0
+flags: {}

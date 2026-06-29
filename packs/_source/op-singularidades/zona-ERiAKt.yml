@@ -1,0 +1,28 @@
+_id: ERiAKt64LL7dd9CZ
+name: Zona
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Ao obter um 20 natural em uma rolagem do d20, durante 1 minuto, você entra em um estado intenso de foco e empolgação que toma conta do seu ser, trazendo uma sensação de euforia absoluta.</p><p>Enquanto estiver nesse estado, você ignora completamente os efeitos de Níveis de Exaustão e pode manter simultaneamente mais de uma característica que exija concentração, sem a necessidade de testes para mantê-las.</p><p>Essa característica não poderá ser usada novamente até o término de um descanso longo.</p>
+    chat: ''
+  identifier: zona
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Forte — 4 espaços
+  properties: []
+  activities: {}
+  uses:
+    max: '1'
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+        formula: ''
+effects: []
+folder: null
+_key: '!items!ERiAKt64LL7dd9CZ'
+ownership:
+  default: 0
+flags: {}

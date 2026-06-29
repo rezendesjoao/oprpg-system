@@ -1,0 +1,21 @@
+_id: waUDR4M5Cpd41RbG
+name: Chantagem
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Alguém de grande influência tem um segredo seu, um objeto importante ou mantém como refém uma pessoa muito preciosa para você (deve ser previamente combinado com o Narrador).</p><p>De tempos em tempos, emissários dessa pessoa surgem para instruí-lo a cumprir demandas, as quais podem acarretar sérios perigos ou entrar em conflito com seus princípios.</p>
+    chat: ''
+  identifier: chantagem
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Suave
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!waUDR4M5Cpd41RbG'
+ownership:
+  default: 0
+flags: {}

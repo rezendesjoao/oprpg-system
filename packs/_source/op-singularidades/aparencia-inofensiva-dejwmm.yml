@@ -1,0 +1,38 @@
+_id: dejwmmvHF4QuSrDn
+name: Aparência Inofensiva
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Por algum motivo você não parece perigoso, talvez seja muito pequeno, pareça fraco ou velho (você escolhe o motivo). Fazendo com que seja mais fácil pegar oponentes desprevenidos. O truque não funciona com ninguém que já tenha visto você lutar, e também não engana duas vezes a mesma pessoa.</p><p>Você recebe +5 para acertar alguém que não desconfie de você, usando esta individualidade. Consegue diminuir o preconceito em 1 nível. Porém, você recebe -5 em Testes de Atributo de Presença (Intimidação).</p>
+    chat: ''
+  identifier: aparencia-inofensiva
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Média — 3 espaços
+  properties: []
+  activities: {}
+effects:
+  - _id: M3LAqV3S4ND8xd98
+    _key: '!items.effects!dejwmmvHF4QuSrDn.M3LAqV3S4ND8xd98'
+    name: Aparência Inofensiva
+    img: icons/svg/upgrade.svg
+    changes:
+      - key: system.skills.itm.bonuses.check
+        mode: 2
+        value: '-5'
+        priority: 20
+    transfer: true
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      rounds: null
+      turns: null
+    flags: {}
+folder: null
+_key: '!items!dejwmmvHF4QuSrDn'
+ownership:
+  default: 0
+flags: {}

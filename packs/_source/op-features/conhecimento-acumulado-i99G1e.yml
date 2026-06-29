@@ -1,0 +1,21 @@
+_id: i99G1ew4DbFjIFfA
+name: Conhecimento Acumulado
+type: feat
+img: icons/sundries/scrolls/scroll-bound-brown.webp
+system:
+  description:
+    value: <p>Quando se deparar com ruínas, textos antigos, símbolos, fenômenos incomuns ou eventos históricos, você pode fazer um Teste de Atributo de Vontade (Sorte), com CD definida pelo Narrador. Em caso de sucesso, o Narrador fornece uma informação útil, curiosidade relevante ou relembra um contexto esquecido sobre o assunto.</p>
+    chat: ''
+  identifier: conhecimento-acumulado
+  type:
+    value: background
+    subtype: ''
+  requirements: Erudito
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!i99G1ew4DbFjIFfA'
+ownership:
+  default: 0
+flags: {}

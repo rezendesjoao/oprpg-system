@@ -1,0 +1,21 @@
+_id: eZWSXgV6ra9a0NoO
+name: Metabolismo Anormal
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você possui um estômago monstruoso, que parece não ter fundo, a ponto de sua barriga poder chegar a até duas vezes o tamanho normal. Além disso, ao consumir grandes quantidades de comida, você pode optar por passar 1 minuto sob a condição 'Paralisado' para digerir completamente os alimentos.</p><p>Ao final desse processo, seu corpo retorna ao estado normal e você recupera 1 PV para cada refeição ingerida. Recomenda-se que cada refeição possua propriedades equivalentes a uma refeição aristocrática, conforme descrito no Capítulo 8, considerando peso e valor.</p>
+    chat: ''
+  identifier: metabolismo-anormal
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Suave — 1 espaço
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!eZWSXgV6ra9a0NoO'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: h7aZRzDTfyXLl2CE
+name: Dependente
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você se sente totalmente inseguro quando não tem seus companheiros para te ajudar ou proteger, pode ser por medo, insegurança ou por sempre querer se mostrar.</p><p>Enquanto não estiver com nenhum companheiro ou criatura que esteja cooperando contigo, dentro do seu raio de visão, você recebe -2 em todas as suas jogadas com o d20.</p>
+    chat: ''
+  identifier: dependente
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Média
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!h7aZRzDTfyXLl2CE'
+ownership:
+  default: 0
+flags: {}

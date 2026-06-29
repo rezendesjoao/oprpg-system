@@ -1,0 +1,21 @@
+_id: 6JmVWgaw7PCVo2oa
+name: Bom Senso
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Pessoas podem ter atitudes estúpidas, mas você não é uma delas. Todas as vezes que o personagem for fazer alguma coisa obviamente idiota, o Narrador pode dizer que ele pretende fazer uma burrice, evitando um desfecho desagradável.</p>
+    chat: ''
+  identifier: bom-senso
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Suave — 1 espaço
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!6JmVWgaw7PCVo2oa'
+ownership:
+  default: 0
+flags: {}

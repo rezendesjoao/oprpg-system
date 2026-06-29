@@ -1,0 +1,53 @@
+_id: DvOxQK9Y6jM68ufP
+name: Predestinado
+type: background
+img: icons/sundries/books/book-embossed-jewel-gold.webp
+system:
+  description:
+    value: '<p>Desde que você se entende por gente, tudo conspira a seu favor. Encontros improváveis, sobrevivência milagrosa, oportunidades únicas — como se o próprio mundo estivesse preparando seu caminho.</p><p>Alguns chamam isso de sorte. Outros, de profecia. Há quem diga que seu nome já foi escrito no futuro. Resta saber se você será digno desse destino… ou se ele cobrará um preço alto demais.</p><p><em>Aumento no Valor de Atributo recomendado: Vontade.</em></p>'
+    chat: ''
+  identifier: predestinado
+  advancement:
+    - _id: oG1wZpVzUPyIkVUl
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: 9bND0Uv5JbpUDGtC
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:ins
+              - skills:prc
+              - skills:per
+              - skills:luc
+        mode: default
+      value: {}
+      flags: {}
+    - _id: kSRCqOoRq0cytyAD
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.ruK3IamQwtlxfDN0
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!DvOxQK9Y6jM68ufP'
+ownership:
+  default: 0
+flags: {}

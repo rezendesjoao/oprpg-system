@@ -1,0 +1,28 @@
+_id: dDSMEPn3qsJEfJKT
+name: Esperança
+type: feat
+img: icons/sundries/scrolls/scroll-bound-brown.webp
+system:
+  description:
+    value: <p>Devido ao seu passado difícil, quando deparado com qualquer situação desesperadora, você consegue se manter firme para buscar alguma solução. Você pode pedir ao Narrador uma pista ou ajuda na resolução de qualquer dificuldade, desde que passe em um Teste de Atributo de Vontade (Sorte), com a CD definida pelo Narrador. Essa característica não poderá ser usada novamente até o término de um descanso longo.</p>
+    chat: ''
+  identifier: esperanca
+  type:
+    value: background
+    subtype: ''
+  requirements: Escravo
+  properties: []
+  activities: {}
+  uses:
+    max: '1'
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+        formula: ''
+effects: []
+folder: null
+_key: '!items!dDSMEPn3qsJEfJKT'
+ownership:
+  default: 0
+flags: {}

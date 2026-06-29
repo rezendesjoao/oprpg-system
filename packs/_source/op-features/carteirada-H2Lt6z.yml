@@ -1,0 +1,28 @@
+_id: H2Lt6z69egqLnEge
+name: Carteirada
+type: feat
+img: icons/sundries/scrolls/scroll-bound-brown.webp
+system:
+  description:
+    value: <p>Ao interagir com marinheiros, mesmo sendo uma interação turbulenta, como estar sendo detido, mantido prisioneiro, interrogado ou avistado em alto mar. Você pode fazer um Teste de Atributo de Vontade (Sorte), com a CD definida pelo Narrador, para ver se consegue usar sua antiga influência ou encontrar um antigo conhecido para fazer vista grossa sobre seus crimes ou captura. Essa característica não poderá ser usada novamente até o término de um descanso longo.</p>
+    chat: ''
+  identifier: carteirada
+  type:
+    value: background
+    subtype: ''
+  requirements: Marinheiro
+  properties: []
+  activities: {}
+  uses:
+    max: '1'
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+        formula: ''
+effects: []
+folder: null
+_key: '!items!H2Lt6z69egqLnEge'
+ownership:
+  default: 0
+flags: {}

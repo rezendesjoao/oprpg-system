@@ -1,0 +1,21 @@
+_id: SW7JKkE104xkwFKz
+name: Grande Planejador
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você possui grande habilidade para arquitetar planos complexos e alcançar seus objetivos sem precisar se envolver diretamente. Sempre que tiver um objetivo claro e específico para provocar um evento — como a explosão de uma bomba em determinada ilha, um apagão elétrico em uma cidade, forçar o encontro de dois piratas inimigos poderosos, roubar a chuva de um país, entre outros — você pode apresentar o plano ao Narrador.</p><p>O Narrador determinará a quantidade de semanas necessárias para que o plano seja executado. A cada semana, você deve dedicar 1 dia inteiro exclusivamente à coordenação do plano e gastar 1d10 × ฿ 200.000, representando custos com subornos, contratações, logística, informações e articulações nos bastidores.</p><p>Caso o plano envolva um evento contínuo que precise ser mantido por várias semanas, esses custos e a dedicação semanal permanecem até que o evento seja encerrado ou interrompido.</p><p>Mesmo sem se envolver diretamente, em planos particularmente complexos, o Narrador pode determinar que suas ações foram rastreadas ou que seus planos foram frustrados por fatores externos, como a intervenção de terceiros, mudanças climáticas, agentes políticos, traições internas ou até mesmo a própria má sorte.</p>
+    chat: ''
+  identifier: grande-planejador
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Forte — 4 espaços
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!SW7JKkE104xkwFKz'
+ownership:
+  default: 0
+flags: {}

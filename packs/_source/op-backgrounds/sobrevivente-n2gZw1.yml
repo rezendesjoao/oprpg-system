@@ -1,0 +1,53 @@
+_id: n2gZw1PG9Qj3tOBt
+name: Sobrevivente
+type: background
+img: icons/sundries/books/book-embossed-jewel-gold.webp
+system:
+  description:
+    value: '<p>Durante o seu passado, um grande evento histórico ocorreu, pode ter sido a destruição da sua ilha natal pelas mãos do Governo Mundial, uma doença ultra rara que assolou seu reino ou uma grande guerra que resultou em desastre natural.</p><p>Apesar de não ser certeza de todos saberem a história, você foi o único sobrevivente conhecido do desastre, e uma mítica se criou à sua volta, para o bem ou para mal.</p><p><em>Aumento no Valor de Atributo recomendado: Vontade.</em></p>'
+    chat: ''
+  identifier: sobrevivente
+  advancement:
+    - _id: UDfvTeUXMUcp8r7K
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: 4jr7EcYrmpPdgo6c
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:his
+              - skills:ins
+              - skills:prc
+              - skills:sur
+        mode: default
+      value: {}
+      flags: {}
+    - _id: 0dILtfr8WnBbic8U
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.mEVODgBk3k1W28gp
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!n2gZw1PG9Qj3tOBt'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,39 @@
+_id: ozCZ9lXkhnDTaL8P
+name: Estudioso
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Desde a infância, você nutriu uma profunda admiração pelo caminho acadêmico, dedicando considerável parte do seu tempo aos estudos formais.</p><p>Você recebe o dobro do seu Bônus de Proficiência em uma perícia que você já seja proficiente. Escolha entre 'História', 'Investigação', 'Medicina', 'Natureza' ou 'Sobrevivência'.</p>
+    chat: ''
+  identifier: estudioso
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Média — 3 espaços
+  properties: []
+  activities: {}
+  advancement:
+    - _id: OAkti7BwsePfJAzx
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:his
+              - skills:inv
+              - skills:med
+              - skills:nat
+              - skills:sur
+        mode: expertise
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!ozCZ9lXkhnDTaL8P'
+ownership:
+  default: 0
+flags: {}

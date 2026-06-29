@@ -1,0 +1,21 @@
+_id: x041PN1tP2ToTmcX
+name: Sonolência
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Por algum motivo, você está sempre com sono, não importa se dormiu normalmente no dia anterior ou se acabou de acordar.</p><p>No início de um encontro de combate, você deve rolar 1d6, e em um resultado 3 ou menor, você passa a primeira rodada do combate com a condição 'Inconsciente'. Esse teste pode ser solicitado pelo Narrador em qualquer outro momento também.</p>
+    chat: ''
+  identifier: sonolencia
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Forte
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!x041PN1tP2ToTmcX'
+ownership:
+  default: 0
+flags: {}

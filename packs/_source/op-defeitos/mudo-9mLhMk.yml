@@ -1,0 +1,21 @@
+_id: 9mLhMkFhlR0STyfQ
+name: Mudo
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você é incapaz de produzir fala. Para se comunicar, precisa recorrer a gestos, escrita, linguagem de sinais ou outros meios alternativos.</p><p>Você falha automaticamente em Testes de Atributo que dependam diretamente da fala (ignorando sucessos automáticos).</p>
+    chat: ''
+  identifier: mudo
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Suave
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!9mLhMkFhlR0STyfQ'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: FYQFUSsx0FxiX1Mc
+name: Código da Família (Sangue ou Consideração)
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Nunca desonrar as regras da sua família. Nunca ferir sua família, a não ser que um membro tenha traído o código familiar. Buscar vingança implacável contra quem ferir, matar ou trair a sua família.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>
+    chat: ''
+  identifier: codigo-da-familia-sangue-ou-consideracao
+  type:
+    value: codigoHonra
+    subtype: ''
+  requirements: Código de Honra
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!FYQFUSsx0FxiX1Mc'
+ownership:
+  default: 0
+flags: {}

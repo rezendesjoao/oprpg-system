@@ -1,0 +1,21 @@
+_id: PmDemMLWx2v6eeKY
+name: Amante
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você mantém um relacionamento amoroso com uma figura importante da sociedade. Por meio dessa relação, você pode recorrer a essa pessoa para obter informações ou pequenos favores, sempre com a aprovação do Narrador. Esses auxílios não são imediatos e podem levar 3d6 dias para chegar.</p>
+    chat: ''
+  identifier: amante
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Suave — 1 espaço
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!PmDemMLWx2v6eeKY'
+ownership:
+  default: 0
+flags: {}

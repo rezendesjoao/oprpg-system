@@ -1,0 +1,53 @@
+_id: OFs89XDam3P7HOfR
+name: Mercenário
+type: background
+img: icons/sundries/books/book-embossed-jewel-gold.webp
+system:
+  description:
+    value: '<p>Você lutou por dinheiro, contratos ou favores. Pouco importava a bandeira, desde que o pagamento fosse justo — ou ao menos suficiente. Pode ter servido exércitos, nobres, criminosos ou até revolucionários, aprendendo a sobreviver em meio a conflitos e alianças instáveis.</p><p><em>Aumento no Valor de Atributo recomendado: Força.</em></p>'
+    chat: ''
+  identifier: mercenario
+  advancement:
+    - _id: t53ILyaRQldOByGG
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: www7NaoqI4Kdlafn
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:ath
+              - skills:itm
+              - skills:inv
+              - skills:sur
+        mode: default
+      value: {}
+      flags: {}
+    - _id: TCCgP1EUAFskKE3B
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.PJqvgaPq4DWpqSNS
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!OFs89XDam3P7HOfR'
+ownership:
+  default: 0
+flags: {}

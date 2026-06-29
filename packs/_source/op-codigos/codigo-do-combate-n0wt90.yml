@@ -1,0 +1,21 @@
+_id: n0wt90ErlcgZoVPn
+name: Código do Combate
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Nunca atacar um oponente indefeso. Nunca participar de um encontro estando do lado de maior número (quando os números importarem) e que a desvantagem numérica crie uma diferença clara de força entre os lados.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>
+    chat: ''
+  identifier: codigo-do-combate
+  type:
+    value: codigoHonra
+    subtype: ''
+  requirements: Código de Honra
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!n0wt90ErlcgZoVPn'
+ownership:
+  default: 0
+flags: {}

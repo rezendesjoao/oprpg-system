@@ -1,0 +1,21 @@
+_id: qnzjRqXjBXq2taud
+name: Código da Gratidão
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Quando alguém salva sua vida, ou de um ente querido seu, você deve oferecer seus serviços para realizar um desejo qualquer dessa pessoa, desde que não firam a sua moral e ética.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>
+    chat: ''
+  identifier: codigo-da-gratidao
+  type:
+    value: codigoHonra
+    subtype: ''
+  requirements: Código de Honra
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!qnzjRqXjBXq2taud'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: DaaYz5wU0BOizlkf
+name: Má Fama
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você possui uma infâmia notória. Seja por falhas em missões cruciais, derrotas públicas, ou por ser um ex-criminoso em processo de reabilitação. Sua reputação é marcada por uma falta de confiança generalizada, com suspeitas consideráveis sobre suas ações, quer sejam merecidas ou não.</p><p>Você pode definir uma alcunha inicial para o seu personagem (com aprovação do Narrador) e, mesmo quando derrotado, seus inimigos evitam tirar sua vida, seja por conta de estarem procurando por você no submundo ou para reivindicar alguma recompensa.</p>
+    chat: ''
+  identifier: ma-fama
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Suave — 1 espaço
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!DaaYz5wU0BOizlkf'
+ownership:
+  default: 0
+flags: {}

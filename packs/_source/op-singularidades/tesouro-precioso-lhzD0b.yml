@@ -1,0 +1,21 @@
+_id: lhzD0btzbu7kVWPK
+name: Tesouro Precioso
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você possui um objeto, à sua escolha, que precisa proteger a qualquer custo. Para você, ele representa algo tão valioso quanto a própria vida. Pode ser um chapéu confiado por seu salvador, a espada de uma amiga falecida ou um mapa de um tesouro submerso. O objeto não pode ter grande valor monetário e deve ser aprovado pelo Narrador.</p><p>Enquanto estiver carregando seu tesouro, ao falhar em uma Salvaguarda, você pode optar por receber ou aumentar 1 Nível de Exaustão e transformar a falha em um sucesso. Essa capacidade é recuperada ao término de um descanso longo.</p><p>Caso veja seu tesouro sendo danificado, você deve realizar uma Salvaguarda de Vontade CD 18. Em caso de falha, você recebe a condição 'Atordoado' até o final do seu próximo turno.</p><p>Se o seu tesouro for destruído ou desaparecer, você recebe a condição 'Letárgico' por 2d6 meses. Essa penalidade é considerada um Defeito Leve.</p>
+    chat: ''
+  identifier: tesouro-precioso
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Suave — 1 espaço
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!lhzD0btzbu7kVWPK'
+ownership:
+  default: 0
+flags: {}

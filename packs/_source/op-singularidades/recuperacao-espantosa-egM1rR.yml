@@ -1,0 +1,21 @@
+_id: egM1rRLxC5S7YOLK
+name: Recuperação Espantosa
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>O personagem possui uma recuperação fora do normal, seja para dores ou para fadiga. Enquanto uma pessoa comum estaria de cama por dias, recuperando-se de uma batalha, você já está ativo e pronto para a próxima.</p><p>O descanso longo, para você, tem uma duração mínima de 4 horas ou você pode optar por descansar 8 horas e recuperar 1 Nível de Exaustão adicional. Essa característica não acumula com outras que façam você recuperar Níveis de Exaustão, recuperando, no máximo, 1 Nível de Exaustão extra por descanso longo.</p>
+    chat: ''
+  identifier: recuperacao-espantosa
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Forte — 4 espaços
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!egM1rRLxC5S7YOLK'
+ownership:
+  default: 0
+flags: {}

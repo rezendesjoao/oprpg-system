@@ -1,0 +1,28 @@
+_id: WM4r1vQZ1brWAkPc
+name: Rotina Tranquila
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você se sente mais confortável quando segue hábitos simples e previsíveis, como acordar cedo, organizar seus pertences ou realizar pequenas tarefas diárias sempre da mesma forma. Essa constância te acalma e ajuda a manter o foco.</p><p>Sempre que iniciar um dia após um descanso longo completo, você pode escolher uma única jogada de d20 feita fora de combate para rolar duas vezes e escolher o melhor resultado.</p><p>Essa jogada deve representar uma ação rotineira ou cotidiana (como construir algo, navegar, negociar compras, investigar locais e etc.).</p><p>Essa característica não pode ser usada em situações de urgência, perseguições, combates ou eventos claramente caóticos, a critério do Narrador.</p>
+    chat: ''
+  identifier: rotina-tranquila
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Suave — 1 espaço
+  properties: []
+  activities: {}
+  uses:
+    max: '1'
+    spent: 0
+    recovery:
+      - period: day
+        type: recoverAll
+        formula: ''
+effects: []
+folder: null
+_key: '!items!WM4r1vQZ1brWAkPc'
+ownership:
+  default: 0
+flags: {}

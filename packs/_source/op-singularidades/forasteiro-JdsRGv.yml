@@ -1,0 +1,21 @@
+_id: JdsRGv5fhr12hJfW
+name: Forasteiro
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você veio de um local conhecido por poucos, mesmo se fosse das ilhas do céu, seria de um local oculto para seus habitantes, com suas próprias culturas e heranças. Dessa forma, você traz consigo itens misteriosos.</p><p>Escolha entre uma 'Planta Mãe', um conjunto de dials aleatórios (3 dials cotidianos, 2 dials bélicos e 1 dial restrito), ou um 'Clima-Tact'. Todos os itens presentes no Capítulo 2 do Guia do Narrador.</p>
+    chat: ''
+  identifier: forasteiro
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Suave — 1 espaço
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!JdsRGv5fhr12hJfW'
+ownership:
+  default: 0
+flags: {}

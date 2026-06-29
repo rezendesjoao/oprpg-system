@@ -1,0 +1,21 @@
+_id: vasRYMDAt5oqvRqK
+name: Sono Seguro
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você é capaz de descansar sem jamais baixar completamente a guarda. Mesmo nos estados mais profundos de sono, seus sentidos permanecem parcialmente atentos, permitindo perceber conversas, aproximações suspeitas ou ataques iminentes — e reagir a tempo.</p><p>Para todos os efeitos de regras, enquanto estiver dormindo, você é considerado consciente. Você pode escolher acordar a qualquer momento e pode realizar Testes de Atributo e Salvaguardas normalmente.</p>
+    chat: ''
+  identifier: sono-seguro
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Suave — 1 espaço
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!vasRYMDAt5oqvRqK'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: clEBsQGdYsq3W8s8
+name: Linhagem Demoníaca
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você é filho ou descendente de qualquer grau de uma figura, conhecida em todo o mundo, considerada execrável por uma grande parte da sociedade e, talvez, até maioria. Quando àqueles que odeiam essa pessoa descobrem sua relação com ela, eles transmitem todo esse ódio para você.</p><p>Você recebe preconceito severo de qualquer pessoa que odeie o seu antepassado.</p>
+    chat: ''
+  identifier: linhagem-demoniaca
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Média
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!clEBsQGdYsq3W8s8'
+ownership:
+  default: 0
+flags: {}

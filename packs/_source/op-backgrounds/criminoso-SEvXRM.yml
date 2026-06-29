@@ -1,0 +1,53 @@
+_id: SEvXRMe5CkmMuguW
+name: Criminoso
+type: background
+img: icons/sundries/books/book-embossed-jewel-gold.webp
+system:
+  description:
+    value: '<p>Você foi um fora da lei solitário ou associado a uma organização criminosa, sejam crimes hediondos ou brandos, você os fazia para sobreviver. Podem ter sido ações que dependiam de intimidação e violência ou enganações e esquemas falsos que levavam o dinheiro das vítimas. Por algum motivo, você abandonou essa vida e resolveu se lançar nos mares, pode ter sido por ter mexido com as pessoas erradas ou para se redimir do passado.</p><p><em>Aumento no Valor de Atributo recomendado: Destreza.</em></p>'
+    chat: ''
+  identifier: criminoso
+  advancement:
+    - _id: bZkFG5q1vpdkb6gO
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: iZKTzcncfpscko01
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:dec
+              - skills:ste
+              - skills:itm
+              - skills:slt
+        mode: default
+      value: {}
+      flags: {}
+    - _id: Krte95NqW2M2s5OC
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.wJGbOKc1TOKd492u
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!SEvXRMe5CkmMuguW'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,53 @@
+_id: oGRQVFqIlMEV9VBq
+name: Amnésia
+type: background
+img: icons/sundries/books/book-embossed-jewel-gold.webp
+system:
+  description:
+    value: '<p>Seu passado é um vazio. Você não se lembra de quem era, de onde veio ou do que fez. Pode ter acordado em uma ilha desconhecida, sido resgatado à deriva ou simplesmente percebido que suas memórias haviam desaparecido.</p><p>Embora sua mente esteja em branco, seu corpo e seus instintos ainda carregam ecos do que você foi — habilidades, reflexos e conhecimentos que surgem sem explicação. Sua jornada é tanto uma aventura pelos mares quanto uma busca por respostas sobre sua própria identidade.</p><p><em>Aumento no Valor de Atributo recomendado: Sabedoria.</em></p>'
+    chat: ''
+  identifier: amnesia
+  advancement:
+    - _id: KoZ02ey5LNCbJgj6
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: q47QEYX4dlAHPE9y
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:inv
+              - skills:ins
+              - skills:prc
+              - skills:his
+        mode: default
+      value: {}
+      flags: {}
+    - _id: 1WLM05jULyo8LGuc
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.PYWDhCmA5TbQmJ2c
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!oGRQVFqIlMEV9VBq'
+ownership:
+  default: 0
+flags: {}

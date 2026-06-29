@@ -1,0 +1,21 @@
+_id: EIqMb4V8NQY67BPG
+name: Narcisista
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você ama a si mesmo e dedica grande atenção à própria aparência. Sua autoconfiança depende diretamente de se sentir belo, limpo e admirável.</p><p>Sempre que estiver sujo, desalinhado ou com a aparência comprometida, todos os seus Testes de Atributo sofrem -3 de penalidade.</p>
+    chat: ''
+  identifier: narcisista
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Suave
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!EIqMb4V8NQY67BPG'
+ownership:
+  default: 0
+flags: {}

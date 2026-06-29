@@ -1,0 +1,55 @@
+_id: 2TXGsb99hXG4XRMe
+name: Artista
+type: background
+img: icons/sundries/books/book-embossed-jewel-gold.webp
+system:
+  description:
+    value: '<p>Antes de se aventurar pelos perigos do mundo, você se aventurava em seus prazeres. Desempenhava o papel de entreter as pessoas, seja com sua música em apresentações escandalosas ou com seu corpo em demonstrações de força, levantando grande animais em circos. O fato é que você dominava e amava uma forma de arte e se sustentava com isso.</p><p><em>Aumento no Valor de Atributo recomendado: Presença.</em></p>'
+    chat: ''
+  identifier: artista
+  advancement:
+    - _id: mBCv0ObSYFCikcGG
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: 32nOfqTI41za0oTI
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:acr
+              - skills:prf
+              - skills:his
+              - skills:per
+              - skills:slt
+              - skills:prv
+        mode: default
+      value: {}
+      flags: {}
+    - _id: 6IuvMOODh0BgnbZq
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.UThTRXNR0dbLFwlp
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!2TXGsb99hXG4XRMe'
+ownership:
+  default: 0
+flags: {}

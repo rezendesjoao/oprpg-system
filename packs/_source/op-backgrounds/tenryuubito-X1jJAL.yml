@@ -1,0 +1,53 @@
+_id: X1jJALjNB8waQjpz
+name: Tenryuubito
+type: background
+img: icons/sundries/books/book-embossed-jewel-gold.webp
+system:
+  description:
+    value: '<p>Sua linhagem sanguínea vem dos Nobres Mundiais, você pode ser um descendente direto ou ter apenas um de seus pais como Tenryuubito. Durante sua convivência com eles, você pode ou não ter compartilhado de seus costumes e pensamentos, mas por algum motivo você quis se aventurar de forma livre no mundo inferior, mesmo sabendo que as consequências disso sejam o rompimento entre vocês.</p><p><em>Aumento no Valor de Atributo recomendado: Constituição.</em></p>'
+    chat: ''
+  identifier: tenryuubito
+  advancement:
+    - _id: RZpubT7u6qMdf2ys
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: AHstjVCtjWMwEdft
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:his
+              - skills:itm
+              - skills:inv
+              - skills:nat
+        mode: default
+      value: {}
+      flags: {}
+    - _id: G46zl7dJ85GQoSWI
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.83eSEBlCgpTBFytH
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!X1jJALjNB8waQjpz'
+ownership:
+  default: 0
+flags: {}

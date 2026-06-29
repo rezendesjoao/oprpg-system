@@ -1,0 +1,21 @@
+_id: eDp9uuVsNSWowFMU
+name: Hipocondríaco
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Ao ouvir alguém mencionar uma doença desconhecida — mesmo que ela não exista — você entra em estado de alerta extremo.</p><p>Caso falhe em uma Salvaguarda de Constituição CD 16, após o próximo descanso longo você passa a sentir sintomas psicossomáticos dessa doença por 1d4 dias.</p>
+    chat: ''
+  identifier: hipocondriaco
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Suave
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!eDp9uuVsNSWowFMU'
+ownership:
+  default: 0
+flags: {}

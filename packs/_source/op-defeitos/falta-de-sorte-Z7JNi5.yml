@@ -1,0 +1,21 @@
+_id: Z7JNi5JMpEtZnS2Y
+name: Falta de Sorte
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>A vida parece sempre rir da sua cara, não importa o quanto você tente e se prepare, alguma coisa dará errado.</p><p>Uma vez por dia, o Narrador pode transformar uma rolagem bem-sucedida em uma falha, essa rolagem pode ser sua ou de qualquer outro, desde que seja para atrapalhar sua vida.</p>
+    chat: ''
+  identifier: falta-de-sorte
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Suave
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!Z7JNi5JMpEtZnS2Y'
+ownership:
+  default: 0
+flags: {}

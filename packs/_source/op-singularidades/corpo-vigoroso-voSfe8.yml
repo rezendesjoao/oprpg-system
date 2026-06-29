@@ -1,0 +1,21 @@
+_id: voSfe8VKTEZNwOpE
+name: Corpo Vigoroso
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você nasceu com um corpo muito saudável, suas feridas se curam mais rápido e aguenta uma quantidade incrível de esforço. Sempre que você passar de nível, role novamente o dado de vida para aumentar o valor máximo de Pontos de Vida e escolha o maior. Ao terminar um descanso curto, você sempre pode usar 1 dado de vida adicional.</p>
+    chat: ''
+  identifier: corpo-vigoroso
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Suave — 1 espaço
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!voSfe8VKTEZNwOpE'
+ownership:
+  default: 0
+flags: {}

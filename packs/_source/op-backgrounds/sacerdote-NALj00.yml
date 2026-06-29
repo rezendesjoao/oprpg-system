@@ -1,0 +1,53 @@
+_id: NALj00xJneSsQQdw
+name: Sacerdote
+type: background
+img: icons/sundries/books/book-embossed-jewel-gold.webp
+system:
+  description:
+    value: '<p>Você trabalhou em uma igreja, pode ter sido suas, dos seus pais ou de alguém que você conhece. Durante o seu tempo lá, você ajudou na educação, tratamento médico, alimentação e outros direitos básicos negados aos menos favorecidos.</p><p>Isso lhe garantiu uma visão muito mais humanista do mundo, o que pode ter sido o gatilho para você se lançar nos mares, em busca de ajudar mais pessoas ou a revolta de acabar com os que causam esse sofrimento.</p><p><em>Aumento no Valor de Atributo recomendado: Sabedoria.</em></p>'
+    chat: ''
+  identifier: sacerdote
+  advancement:
+    - _id: 8xsnN6H5Oa9XEMWL
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: eSR8UdqE1gHiX22g
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:his
+              - skills:med
+              - skills:per
+              - skills:arc
+        mode: default
+      value: {}
+      flags: {}
+    - _id: Sn73pdRGV2Wgib7C
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.xajoEaSOIkicKNJd
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!NALj00xJneSsQQdw'
+ownership:
+  default: 0
+flags: {}

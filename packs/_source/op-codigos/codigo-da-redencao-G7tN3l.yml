@@ -1,0 +1,21 @@
+_id: G7tN3ly8GHh5RJrk
+name: Código da Redenção
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Jamais atacar sem necessidade nem tirar vidas, sempre aceitar um pedido de rendição e sempre poupar seus oponentes depois de derrotados ou inconscientes.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>
+    chat: ''
+  identifier: codigo-da-redencao
+  type:
+    value: codigoHonra
+    subtype: ''
+  requirements: Código de Honra
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!G7tN3ly8GHh5RJrk'
+ownership:
+  default: 0
+flags: {}

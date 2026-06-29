@@ -1,0 +1,21 @@
+_id: RAMLahwHrVKxG0lk
+name: Conhecimento pela Força (C/F)
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>É o sonho de ver, aprender ou compreender algo por meio da própria força. O personagem pode até ter aliados, superiores ou subordinados, mas não depende deles para alcançar seus objetivos.</p>
+    chat: ''
+  identifier: conhecimento-pela-forca-c-f
+  type:
+    value: caminho
+    subtype: ''
+  requirements: Caminho
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!RAMLahwHrVKxG0lk'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: wbQE8GfaCl2vONQD
+name: Código do Líder
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você sempre deve proteger seus subordinados ou criaturas que estejam em seus cuidados. Quando existirem códigos disciplinadores, para punir insubordinação ou atitudes reprováveis, você deve aplicá-los.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>
+    chat: ''
+  identifier: codigo-do-lider
+  type:
+    value: codigoHonra
+    subtype: ''
+  requirements: Código de Honra
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!wbQE8GfaCl2vONQD'
+ownership:
+  default: 0
+flags: {}

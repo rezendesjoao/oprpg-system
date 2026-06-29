@@ -1,0 +1,28 @@
+_id: QxpscugRDVghKHFB
+name: Corpo Fechado
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Sua pele parece de aço e, por mais que esteja ferido, raramente você demonstra sinais de lesões e cortes, sendo difícil até mesmo sangrar quando cortado.</p><p>Quando fizer Salvaguardas contra as condições 'Sangramento' e 'Queimadura', você pode tornar uma falha em um sucesso. Essa característica pode ser usada uma quantidade de vezes igual ao seu Bônus de Proficiência e você recupera todos os seus usos ao término de um descanso longo.</p>
+    chat: ''
+  identifier: corpo-fechado
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Suave — 1 espaço
+  properties: []
+  activities: {}
+  uses:
+    max: '@prof'
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+        formula: ''
+effects: []
+folder: null
+_key: '!items!QxpscugRDVghKHFB'
+ownership:
+  default: 0
+flags: {}

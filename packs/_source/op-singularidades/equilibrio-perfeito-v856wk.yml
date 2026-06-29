@@ -1,0 +1,21 @@
+_id: v856wkAy4s3OtmQt
+name: Equilíbrio Perfeito
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>O personagem é capaz de se manter em pé mesmo sob tremores intensos ou em superfícies extremamente estreitas, como cordas esticadas, saliências, mastros, galhos de árvores ou estruturas instáveis semelhantes.</p><p>Além disso, sempre que realizar uma Salvaguarda para evitar ser derrubado ou perder o equilíbrio, você faz o teste com vantagem.</p>
+    chat: ''
+  identifier: equilibrio-perfeito
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Suave — 1 espaço
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!v856wkAy4s3OtmQt'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,53 @@
+_id: fmsLXErEFBRnJYe5
+name: Pescador
+type: background
+img: icons/sundries/books/book-embossed-jewel-gold.webp
+system:
+  description:
+    value: '<p>Durante anos de vida no mar, você aprendeu muito mais do que apenas lançar redes. Mesmo que tenha passado pouco tempo como pescador profissional, sua vivência foi intensa: conheceu portos, tripulações e histórias de toda parte. Você navegou por inúmeras rotas, ouviu relatos de viajantes e mercadores e, se não esteve pessoalmente em todas as ilhas, ao menos conhece suas lendas, perigos e peculiaridades.</p><p><em>Aumento no Valor de Atributo recomendado: Presença.</em></p>'
+    chat: ''
+  identifier: pescador
+  advancement:
+    - _id: cLGbmczYLjyD0oOV
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: KOWq4vTU8ZyP4qg1
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:dec
+              - skills:ins
+              - skills:per
+              - skills:sur
+        mode: default
+      value: {}
+      flags: {}
+    - _id: a6IHqd2XnRxITO0j
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.AotW4JCVuuAcPlKx
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!fmsLXErEFBRnJYe5'
+ownership:
+  default: 0
+flags: {}

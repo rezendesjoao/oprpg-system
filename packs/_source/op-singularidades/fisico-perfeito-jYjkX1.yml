@@ -1,0 +1,21 @@
+_id: jYjkX1zxvm6M4BzG
+name: Físico Perfeito
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Seu corpo está sempre bem cuidado e tem a capacidade assustadora de se recuperar de ferimentos e esforços mais leves em poucos minutos. O descanso curto, para você, tem uma duração mínima de 15 minutos.</p>
+    chat: ''
+  identifier: fisico-perfeito
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Média — 3 espaços
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!jYjkX1zxvm6M4BzG'
+ownership:
+  default: 0
+flags: {}

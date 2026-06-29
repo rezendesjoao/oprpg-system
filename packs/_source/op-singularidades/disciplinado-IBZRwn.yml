@@ -1,0 +1,21 @@
+_id: IBZRwnFQcOWhXYua
+name: Disciplinado
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Dia após dia, você se dedica incansavelmente aos seus treinamentos, buscando aperfeiçoamento físico e mental. Seu comprometimento é evidenciado pela rotina rigorosa, destacando-se pela determinação em alcançar a excelência. O treino transcende a prática, tornando-se uma paixão e estilo de vida.</p><p>A cada nível par de personagem, você recebe 1 Ponto de Treinamento.</p>
+    chat: ''
+  identifier: disciplinado
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Suave — 1 espaço
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!IBZRwnFQcOWhXYua'
+ownership:
+  default: 0
+flags: {}

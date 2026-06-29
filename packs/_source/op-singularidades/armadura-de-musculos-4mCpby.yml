@@ -1,0 +1,21 @@
+_id: 4mCpbyzgLuuJbxdz
+name: Armadura de Músculos
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você treina seu corpo diariamente e está mais do que preparado para suportar golpes intensos. Podendo substituir o modificador de Destreza adicionado à sua CR pelo modificador de Força.</p><p>Característica que permitam utilizar outro modificador para a CR, como 'Defesa Aprimorada', caso nenhum deles seja o modificador de Força, você pode optar por substituí-lo pelo modificador de Força.</p>
+    chat: ''
+  identifier: armadura-de-musculos
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Suave — 1 espaço
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!4mCpbyzgLuuJbxdz'
+ownership:
+  default: 0
+flags: {}

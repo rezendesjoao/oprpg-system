@@ -1,0 +1,21 @@
+_id: 5Bj9dPvYzqXAd2AL
+name: Teimoso
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Depois de tomar uma decisão ou concordar com um plano, você se apega a ele de forma absoluta. Mudar de ideia é visto como fraqueza.</p><p>Sempre que você recuar ou alterar uma decisão previamente tomada, perde 1 ponto de atributo de Vontade. Cada ponto perdido é recuperado após 1d4 semanas.</p>
+    chat: ''
+  identifier: teimoso
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Suave
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!5Bj9dPvYzqXAd2AL'
+ownership:
+  default: 0
+flags: {}

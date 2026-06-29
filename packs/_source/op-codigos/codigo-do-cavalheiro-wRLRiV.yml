@@ -1,0 +1,21 @@
+_id: wRLRiVCG9Z32xdyl
+name: Código do Cavalheiro
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Nunca atacar uma mulher (ou fêmea de qualquer espécie humanoide), nem mesmo quando atacado, e nem permitir que seus companheiros o façam. Sempre atender um pedido de ajuda de uma mulher.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>
+    chat: ''
+  identifier: codigo-do-cavalheiro
+  type:
+    value: codigoHonra
+    subtype: ''
+  requirements: Código de Honra
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!wRLRiVCG9Z32xdyl'
+ownership:
+  default: 0
+flags: {}

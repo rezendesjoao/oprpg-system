@@ -1,0 +1,21 @@
+_id: jDrN8N7bqHyd5G9n
+name: Ignorante
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você acredita que já detém praticamente todo o conhecimento necessário para alcançar seus objetivos, encarando novos aprendizados como perda de tempo.</p><p>Devido a essa mentalidade inflexível, você não pode aprender nenhuma profissão além de uma única escolhida na criação do personagem, sob nenhuma circunstância, nem aumentar a graduação dessa profissão.</p>
+    chat: ''
+  identifier: ignorante
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Forte
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!jDrN8N7bqHyd5G9n'
+ownership:
+  default: 0
+flags: {}

@@ -13,7 +13,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import YAML from "js-yaml";
-import { CLASSES, SPECIES } from "./op-data.mjs";
+import { CLASSES, SPECIES, BACKGROUNDS, CAMINHOS, SINGULARIDADES, DEFEITOS, CODIGOS } from "./op-data.mjs";
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SRC = path.join(ROOT, "packs", "_source");
@@ -43,7 +43,10 @@ function ensureDir(p) { fs.mkdirSync(p, { recursive: true }); }
 function slug(s) { return String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
   .replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, ""); }
 
-const written = { "op-classes": 0, "op-subclasses": 0, "op-features": 0, "op-techniques": 0, "op-species": 0 };
+const written = {
+  "op-classes": 0, "op-subclasses": 0, "op-features": 0, "op-techniques": 0, "op-species": 0,
+  "op-backgrounds": 0, "op-caminhos": 0, "op-singularidades": 0, "op-defeitos": 0, "op-codigos": 0
+};
 function writeDoc(pack, doc) {
   const dir = path.join(SRC, pack);
   ensureDir(dir);
@@ -132,16 +135,18 @@ function advTraitSkill(seed, { count = 1, pool = null, exclude = [], mode = "def
 
 // ActiveEffect (transfer:true) anexado a um feat de traço/variante; 1 `change` por spec.
 // Modos: perícia/salvaguarda = ADD (FormulaField soma com +/- → empilha, não substitui);
-// movimento = UPGRADE (prevalece o maior); tamanho = OVERRIDE; resistência = ADD em Set.
+// movimento = UPGRADE (prevalece o maior); tamanho = OVERRIDE; resistência/imunidade-a-condição = ADD em Set.
+// `ci` (condition immunity) aceita 1 chave ou array de chaves → 1 change por condição.
 function raceEffect(itemId, seed, name, specs) {
-  const changes = specs.map(s => {
-    if ( "skill"  in s ) return { key: `system.skills.${s.skill}.bonuses.check`, mode: 2, value: String(s.bonus), priority: 20 };
-    if ( "save"   in s ) return { key: `system.abilities.${s.save}.bonuses.save`, mode: 2, value: String(s.bonus), priority: 20 };
-    if ( "move"   in s ) return { key: `system.attributes.movement.${s.move}`, mode: 4, value: String(s.value), priority: 20 };
-    if ( "size"   in s ) return { key: "system.traits.size", mode: 5, value: s.size, priority: 20 };
-    if ( "resist" in s ) return { key: "system.traits.dr.value", mode: 2, value: s.resist, priority: 20 };
-    return null;
-  }).filter(Boolean);
+  const changes = specs.flatMap(s => {
+    if ( "skill"  in s ) return [{ key: `system.skills.${s.skill}.bonuses.check`, mode: 2, value: String(s.bonus), priority: 20 }];
+    if ( "save"   in s ) return [{ key: `system.abilities.${s.save}.bonuses.save`, mode: 2, value: String(s.bonus), priority: 20 }];
+    if ( "move"   in s ) return [{ key: `system.attributes.movement.${s.move}`, mode: 4, value: String(s.value), priority: 20 }];
+    if ( "size"   in s ) return [{ key: "system.traits.size", mode: 5, value: s.size, priority: 20 }];
+    if ( "resist" in s ) return [{ key: "system.traits.dr.value", mode: 2, value: s.resist, priority: 20 }];
+    if ( "ci"     in s ) return (Array.isArray(s.ci) ? s.ci : [s.ci]).map(c => ({ key: "system.traits.ci.value", mode: 2, value: c, priority: 20 }));
+    return [];
+  });
   const _id = mkId(seed + ":fx");
   return {
     _id,
@@ -389,6 +394,72 @@ function raceItem(sp) {
   };
 }
 
+// Expande `uses` compacto ({max, period?}) para o formato de UsesField (recovery recoverAll).
+function mkUses(u) {
+  if ( !u ) return null;
+  return { max: u.max, recovery: u.period ? [{ period: u.period, type: "recoverAll", formula: "" }] : [] };
+}
+
+// Antecedente = item `background`: AVA (ASI livre) + escolha de 1 perícia + concede a Característica
+// Especial (feat em op-features, tipo de feature "background" → seção "Características de Antecedente").
+function backgroundItem(bg) {
+  const seed = `bg:${bg.key}`;
+  const _id = mkId(seed);
+  const f = bg.feature;
+  const featDoc = featItem({ code: "BG-" + bg.code, name: f.name, desc: f.desc, level: 0, requirements: bg.name, uses: mkUses(f.uses) });
+  featDoc.system.type = { value: "background", subtype: "" }; // Característica Especial de Antecedente
+  featDoc.img = "icons/sundries/scrolls/scroll-bound-brown.webp";
+  writeDoc("op-features", featDoc);
+  const featureUuid = uuid("op-features", featDoc._id);
+
+  const advancement = [
+    advASI(seed, 0),                                       // AVA: +2 em um ou +1/+1 (escolha do jogador)
+    advTraitSkill(seed, { count: 1, pool: bg.skills }),    // 1 perícia do pool restrito
+    advItemGrant(seed, 0, [featureUuid])                   // concede a Característica Especial
+  ];
+  return {
+    _id, name: bg.name, type: "background",
+    img: bg.img || "icons/sundries/books/book-embossed-jewel-gold.webp",
+    system: {
+      description: { value: bg.description || `<p>${bg.name}</p>`, chat: "" },
+      identifier: bg.key,
+      advancement
+    },
+    effects: [], folder: null
+  };
+}
+
+// Item de personalização (Caminho / Singularidade / Defeito / Código de Honra) = feat descritivo,
+// com automação opcional: `uses` (contador), `effects` (bônus/imunidade passivos) e `skillChoice`
+// (ex.: Estudioso = perícia dobrada; prompta ao soltar o item na ficha).
+const TIERS = { suave: ["Suave", 1], media: ["Média", 3], forte: ["Forte", 4] };
+// Rótulo do campo "Pré-requisitos" do item (mostra a categoria e, p/ Individualidades, o custo em espaços).
+function persRequirements(typeValue, entry) {
+  if ( entry.requirements ) return entry.requirements;
+  if ( typeValue === "caminho" ) return "Caminho";
+  if ( typeValue === "codigoHonra" ) return "Código de Honra";
+  if ( entry.tier && TIERS[entry.tier] ) {
+    const [label, cost] = TIERS[entry.tier];
+    if ( typeValue === "singularidade" ) return `Singularidade ${label} — ${cost} espaço${cost > 1 ? "s" : ""}`;
+    if ( typeValue === "defeito" ) return `Defeito ${label}`;
+  }
+  return "";
+}
+
+function personalizacaoItem(entry, typeValue) {
+  const seed = `pers:${typeValue}:${entry.code}`;
+  const item = featItem({
+    code: `${typeValue.toUpperCase()}-${entry.code}`,
+    name: entry.name, desc: entry.desc, level: 0,
+    requirements: persRequirements(typeValue, entry), uses: mkUses(entry.uses)
+  });
+  item.system.type = { value: typeValue, subtype: "" };
+  item.img = "icons/sundries/scrolls/scroll-writing-tan.webp";
+  if ( entry.effects?.length ) item.effects = [ raceEffect(item._id, seed, entry.name, entry.effects) ];
+  if ( entry.skillChoice ) item.system.advancement = [ advTraitSkill(seed, entry.skillChoice) ];
+  return item;
+}
+
 /* -------------------------------------------- */
 /*  Run                                         */
 /* -------------------------------------------- */
@@ -401,5 +472,12 @@ for ( const pack of Object.keys(written) ) {
 
 for ( const cls of CLASSES ) writeDoc("op-classes", classItem(cls));
 for ( const sp of SPECIES ) writeDoc("op-species", raceItem(sp));
+
+// Capítulo 5 — Personalização
+for ( const bg of BACKGROUNDS )    writeDoc("op-backgrounds",    backgroundItem(bg));
+for ( const c of CAMINHOS )        writeDoc("op-caminhos",       personalizacaoItem(c, "caminho"));
+for ( const s of SINGULARIDADES )  writeDoc("op-singularidades", personalizacaoItem(s, "singularidade"));
+for ( const d of DEFEITOS )        writeDoc("op-defeitos",       personalizacaoItem(d, "defeito"));
+for ( const k of CODIGOS )         writeDoc("op-codigos",        personalizacaoItem(k, "codigoHonra"));
 
 console.log("Gerado:", JSON.stringify(written, null, 0));

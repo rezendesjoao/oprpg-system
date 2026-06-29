@@ -1,0 +1,21 @@
+_id: LEaCA1n3EFojeHo0
+name: Haki da Observação Inato
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você nasceu com grande talento para o Haki da Observação. Fora de batalha, você pode usar a característica 'Perceber Emoções', 'Perceber Presença' e 'Perceber Desafio' do Haki da Observação.</p><p>Ao escolher esta individualidade, o Haki da Observação será automaticamente seu Haki principal e ao adquirir controle sobre o Haki da Observação ele recebe 5 Pontos de Ambição.</p>
+    chat: ''
+  identifier: haki-da-observacao-inato
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Forte — 4 espaços
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!LEaCA1n3EFojeHo0'
+ownership:
+  default: 0
+flags: {}

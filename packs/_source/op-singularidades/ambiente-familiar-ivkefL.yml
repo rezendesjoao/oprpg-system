@@ -1,0 +1,28 @@
+_id: ivkefLqBeMMuVEiB
+name: Ambiente Familiar
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Criado em um ambiente específico, você encontra conforto e liberdade nas lembranças desse lugar. Sempre que estiver imerso nesse tipo de cenário, suas habilidades tendem a se sobressair.</p><p>Escolha um ambiente que mais ressoe com seu passado — como dunas, montanhas, neve, selva, campo ou mar.</p><p>Quando estiver nesse ambiente, você pode refazer qualquer rolagem do d20, escolhendo qual dos resultados utilizar. Essa característica pode ser usada até 3 vezes, e todos os usos são recuperados ao final de um descanso longo.</p>
+    chat: ''
+  identifier: ambiente-familiar
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Suave — 1 espaço
+  properties: []
+  activities: {}
+  uses:
+    max: '3'
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+        formula: ''
+effects: []
+folder: null
+_key: '!items!ivkefLqBeMMuVEiB'
+ownership:
+  default: 0
+flags: {}

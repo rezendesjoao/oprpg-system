@@ -1,0 +1,21 @@
+_id: Gm6AZ5kbeoZCJ1mV
+name: Vocação
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você sente que nasceu para realizar algo específico na vida. Isso pode estar diretamente ligado à sua profissão — como exercer a medicina ou a carpintaria — ou a uma atividade artística, intelectual ou pessoal, como pintar um quadro, compor uma música ou concluir uma grande obra (sempre com aprovação do Narrador).</p><p>Ao concluir uma dessas tarefas significativas, você se sente plenamente realizado e pode escolher um dos benefícios abaixo:</p><p>Recuperar 1 Nível de Exaustão;</p><p>Recuperar Pontos de Vida em um valor igual a 3 vezes o seu nível de personagem;</p><p>Recuperar Pontos de Poder em um valor igual ao seu nível de personagem.</p><p>Os benefícios dessa característica só podem ser obtidos novamente após 7 dias.</p>
+    chat: ''
+  identifier: vocacao
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Média — 3 espaços
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!Gm6AZ5kbeoZCJ1mV'
+ownership:
+  default: 0
+flags: {}

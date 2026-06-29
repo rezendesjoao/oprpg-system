@@ -2977,3 +2977,982 @@ export const SPECIES = [
     ]
   }
 ];
+
+
+/* BACKGROUNDS — Capítulo 5 (Personalização), gerado a partir do livro */
+export const BACKGROUNDS = [
+  {
+    "code": "amnesia",
+    "key": "amnesia",
+    "name": "Amnésia",
+    "skills": [
+      "inv",
+      "ins",
+      "prc",
+      "his"
+    ],
+    "description": "<p>Seu passado é um vazio. Você não se lembra de quem era, de onde veio ou do que fez. Pode ter acordado em uma ilha desconhecida, sido resgatado à deriva ou simplesmente percebido que suas memórias haviam desaparecido.</p><p>Embora sua mente esteja em branco, seu corpo e seus instintos ainda carregam ecos do que você foi — habilidades, reflexos e conhecimentos que surgem sem explicação. Sua jornada é tanto uma aventura pelos mares quanto uma busca por respostas sobre sua própria identidade.</p><p><em>Aumento no Valor de Atributo recomendado: Sabedoria.</em></p>",
+    "feature": {
+      "name": "Ecos do Passado",
+      "desc": "<p>Em momentos cruciais, fragmentos da sua antiga vida podem emergir. Uma vez por descanso longo, você pode pedir ao Narrador uma lembrança vaga, sensação instintiva ou conhecimento inesperado relacionado a uma situação atual. Para isso, faça um Teste de Atributo de Vontade (Sorte), com CD definida pelo Narrador.</p><p>Em caso de sucesso, você recebe uma informação útil, ainda que incompleta ou simbólica, sobre o que fazer ou evitar. Em uma falha, a lembrança é confusa ou enganosa.</p>",
+      "uses": {
+        "max": 1,
+        "period": "lr"
+      }
+    }
+  },
+  {
+    "code": "artista",
+    "key": "artista",
+    "name": "Artista",
+    "skills": [
+      "acr",
+      "prf",
+      "his",
+      "per",
+      "slt",
+      "prv"
+    ],
+    "description": "<p>Antes de se aventurar pelos perigos do mundo, você se aventurava em seus prazeres. Desempenhava o papel de entreter as pessoas, seja com sua música em apresentações escandalosas ou com seu corpo em demonstrações de força, levantando grande animais em circos. O fato é que você dominava e amava uma forma de arte e se sustentava com isso.</p><p><em>Aumento no Valor de Atributo recomendado: Presença.</em></p>",
+    "feature": {
+      "name": "Rock Star",
+      "desc": "<p>Dentro de centros urbanos, é possível se conectar com grupos de artistas, para realizar apresentações (oficiais ou clandestinas). No início de cada dia, desde que use 2 horas do seu tempo com esse objetivo, você pode rolar um Teste de Atributo de Vontade (Sorte), com a CD definida pelo Narrador, para marcar um encontro noturno e se apresentar.</p><p>Você deve ser bem-sucedido em um Teste de Atributo de Presença (Atuação) CD 15 para receber como cachê 3d10 x 100.000 bellys ou 3d10 x 20.000 bellys, em uma falha. Além disso, adiciona 50.000 bellys para cada nível de personagem que você tiver.</p><p>O show só acaba no amanhecer do dia seguinte e você sofre os efeitos de um dia sem realizar um descanso longo. Essa característica não poderá ser usada novamente até o término de um descanso longo.</p>",
+      "uses": {
+        "max": 1,
+        "period": "lr"
+      }
+    }
+  },
+  {
+    "code": "criminoso",
+    "key": "criminoso",
+    "name": "Criminoso",
+    "skills": [
+      "dec",
+      "ste",
+      "itm",
+      "slt"
+    ],
+    "description": "<p>Você foi um fora da lei solitário ou associado a uma organização criminosa, sejam crimes hediondos ou brandos, você os fazia para sobreviver. Podem ter sido ações que dependiam de intimidação e violência ou enganações e esquemas falsos que levavam o dinheiro das vítimas. Por algum motivo, você abandonou essa vida e resolveu se lançar nos mares, pode ter sido por ter mexido com as pessoas erradas ou para se redimir do passado.</p><p><em>Aumento no Valor de Atributo recomendado: Destreza.</em></p>",
+    "feature": {
+      "name": "Contatos",
+      "desc": "<p>Dentro de qualquer local frequentada por criminosos, como áreas mais pobres de cidades, prisões, mercados negros e etc. Pelo preço certo, você consegue arrumar contatos para as mais variadas necessidades.</p><p>Por exemplo, obter informações de difícil acesso, contratar pessoas com habilidades únicas, conseguir documentos falsos, sequestros, assassinatos e muitos outros serviços, desde que você seja bem-sucedido em um Teste de Atributo de Vontade (Sorte), com a CD definida pelo Narrador. Essa característica não poderá ser usada novamente até o término de um descanso longo.</p>",
+      "uses": {
+        "max": 1,
+        "period": "lr"
+      }
+    }
+  },
+  {
+    "code": "derrotado",
+    "key": "derrotado",
+    "name": "Derrotado",
+    "skills": [
+      "ins",
+      "inv",
+      "his",
+      "sur"
+    ],
+    "description": "<p>Em algum momento do passado, você esteve no auge. Foi temido, respeitado ou admirado — talvez como um grande guerreiro, capitão, líder político ou figura lendária. Porém, uma derrota esmagadora mudou tudo.</p><p>Você perdeu um confronto decisivo, foi traído, humilhado publicamente ou teve seus sonhos destruídos diante do mundo. Desde então, vive com o peso desse fracasso, buscando se reerguer, provar seu valor novamente ou apenas entender onde errou.</p><p>Essa queda o enfraqueceu consideravelmente, e sua recuperação tem sido lenta e dolorosa. No entanto, também moldou quem você é agora, tornando-o mais cauteloso, resiliente ou consumido por um desejo obsessivo de redenção.</p><p><em>Aumento no Valor de Atributo recomendado: Vontade.</em></p>",
+    "feature": {
+      "name": "Marcas da Derrota",
+      "desc": "<p>Sua experiência com o fracasso lhe deu uma visão única sobre erros e consequências. Ao falhar em um Teste de Atributo, você pode fazer um Teste de Atributo de Vontade (Sorte), com CD definida pelo Narrador.</p><p>Em caso de sucesso, você aprende algo com a falha: recebe uma pista, uma informação parcial ou reduz as consequências narrativas negativas daquele erro. Essa característica não pode ser usada novamente até o término de um descanso longo.</p>",
+      "uses": {
+        "max": 1,
+        "period": "lr"
+      }
+    }
+  },
+  {
+    "code": "erudito",
+    "key": "erudito",
+    "name": "Erudito",
+    "skills": [
+      "his",
+      "inv",
+      "nat",
+      "arc"
+    ],
+    "description": "<p>Você dedicou grande parte da sua vida ao estudo formal. Seja em bibliotecas, academias, mosteiros ou sob a tutela de um mestre, seu conhecimento vem de livros, debates e pesquisa constante. Mesmo longe de centros acadêmicos, sua mente continua afiada.</p><p><em>Aumento no Valor de Atributo recomendado: Sabedoria.</em></p>",
+    "feature": {
+      "name": "Conhecimento Acumulado",
+      "desc": "<p>Quando se deparar com ruínas, textos antigos, símbolos, fenômenos incomuns ou eventos históricos, você pode fazer um Teste de Atributo de Vontade (Sorte), com CD definida pelo Narrador. Em caso de sucesso, o Narrador fornece uma informação útil, curiosidade relevante ou relembra um contexto esquecido sobre o assunto.</p>"
+    }
+  },
+  {
+    "code": "escravo",
+    "key": "escravo",
+    "name": "Escravo",
+    "skills": [
+      "ath",
+      "ins",
+      "prc",
+      "sur"
+    ],
+    "description": "<p>Seu passado traz lembranças dolorosas, que mostram os lados mais cruéis da humanidade. Pode ter sido na mão dos Nobres Mundiais ou sendo arrastado para isso por conta de guerras e tráficos ilegais. Você foi destituído dos direitos mais básico de qualquer pessoa e forçado à servidão por um período de tempo, seja ele longo ou curto, e isso com certeza marcou cicatrizes em você, físicas e psicológicas.</p><p>Após emancipado, você pôde tomar o caminho desejado, seja dedicar sua nova vida de liberdade com os mesmos valores do seu libertador ou se prender ao passado em uma caçada de vingança.</p><p><em>Aumento no Valor de Atributo recomendado: Constituição.</em></p>",
+    "feature": {
+      "name": "Esperança",
+      "desc": "<p>Devido ao seu passado difícil, quando deparado com qualquer situação desesperadora, você consegue se manter firme para buscar alguma solução. Você pode pedir ao Narrador uma pista ou ajuda na resolução de qualquer dificuldade, desde que passe em um Teste de Atributo de Vontade (Sorte), com a CD definida pelo Narrador. Essa característica não poderá ser usada novamente até o término de um descanso longo.</p>",
+      "uses": {
+        "max": 1,
+        "period": "lr"
+      }
+    }
+  },
+  {
+    "code": "exilado",
+    "key": "exilado",
+    "name": "Exilado",
+    "skills": [
+      "his",
+      "ins",
+      "per",
+      "inv"
+    ],
+    "description": "<p>Você já ocupou uma posição de grande influência — político, nobre, conselheiro ou outra figura central dentro de uma nação. Contudo, ao apoiar o lado derrotado de um conflito, ser vítima de uma conspiração ou ser falsamente acusado de crimes graves, sua queda foi inevitável.</p><p>Perseguido ou declarado inimigo do Estado, você foi forçado a abandonar sua terra natal. Em segredo, outra nação estendeu a mão, oferecendo abrigo e proteção longe dos holofotes. Durante o período de exílio, você aprendeu a sobreviver na sombra da política internacional, compreendendo alianças ocultas, jogos diplomáticos e o peso das decisões feitas longe do público.</p><p><em>Aumento no Valor de Atributo recomendado: Presença ou Sabedoria.</em></p>",
+    "feature": {
+      "name": "Apoio no Exílio",
+      "desc": "<p>Você conta com o respaldo discreto de um reino que, embora não possa se expor publicamente, ainda o considera um aliado valioso.</p><p>Sempre que lidar com assuntos diplomáticos, negociações políticas ou contato com figuras de poder, você pode realizar um Teste de Atributo de Vontade (Sorte), com CD definida pelo Narrador. Em caso de sucesso, esse reino pode: Facilitar audiências secretas com nobres, líderes ou autoridades; Intermediar acordos políticos ou cessar conflitos menores; Fornecer informações estratégicas ou apoio indireto por meio de aliados.</p>"
+    }
+  },
+  {
+    "code": "familia-d",
+    "key": "familia-d",
+    "name": "Família D.",
+    "skills": [
+      "Cont",
+      "itm",
+      "ins",
+      "prc"
+    ],
+    "description": "<p>Sua família possui um sobrenome secreto, do qual ninguém sabe a origem ou o significado, ele só é passado de geração em geração. Das poucas coisas que você sabe sobre esse sobrenome, algumas delas são que ele deve ser mantido em segredo, eventos tristes cercam a vida dessas pessoas e um deles trará uma grande tempestade ao mundo.</p><p><em>Aumento no Valor de Atributo recomendado: Vontade.</em></p>",
+    "feature": {
+      "name": "Vontade dos D.",
+      "desc": "<p>O Governo Mundial teme suas ações, por conta disso, seus atos notórios sempre receberam mais atenção que o comum, fazendo com que sua recompensa aumente muito mais que o normal.</p><p>Além disso, a sua forte determinação cria um laço especial com as pessoas, mesmo sem querer. Ao zarpar de uma ilha, que esteja em gratidão com você, você pode fazer um Teste de Atributo de Vontade (Sorte), com a CD definida pelo Narrador, ao ser bem-sucedido, até 3 habitantes podem querer fazer parte da sua tripulação.</p><p>Caso o seu personagem morra, o novo personagem criado poderá herdar sua vontade, mantendo características do antigo personagem à sua escolha, como: Pontos de Vida relacionado ao Estilo de Combate (caso escolha um com mesmo tipo de dado de vida), Akuma no Mi, treinamentos, equipamentos, dinheiro e nível. Sendo obrigatório escolher esse antecedente novamente.</p>"
+    }
+  },
+  {
+    "code": "marinheiro",
+    "key": "marinheiro",
+    "name": "Marinheiro",
+    "skills": [
+      "ath",
+      "inv",
+      "med",
+      "sur"
+    ],
+    "description": "<p>Durante o seu passado, teve um momento em que você achou estar seguido o caminho da justiça. Nesse período, você era um membro ativo da Marinha, os motivos da sua saída podem ser inúmeros, desde ver nos atos da corporação hipocrisias e corrupção até uma saída por não querer mais estar subordinado às ordens dos outros. A única coisa que não muda é que o seu tempo estará sempre marcado em suas memórias.</p><p><em>Aumento no Valor de Atributo recomendado: Força.</em></p>",
+    "feature": {
+      "name": "Carteirada",
+      "desc": "<p>Ao interagir com marinheiros, mesmo sendo uma interação turbulenta, como estar sendo detido, mantido prisioneiro, interrogado ou avistado em alto mar. Você pode fazer um Teste de Atributo de Vontade (Sorte), com a CD definida pelo Narrador, para ver se consegue usar sua antiga influência ou encontrar um antigo conhecido para fazer vista grossa sobre seus crimes ou captura. Essa característica não poderá ser usada novamente até o término de um descanso longo.</p>",
+      "uses": {
+        "max": 1,
+        "period": "lr"
+      }
+    }
+  },
+  {
+    "code": "mercador",
+    "key": "mercador",
+    "name": "Mercador",
+    "skills": [
+      "dec",
+      "ins",
+      "inv",
+      "per"
+    ],
+    "description": "<p>Você cresceu negociando, comprando e vendendo. Pode ter sido dono de uma pequena loja, comerciante ambulante, representante de uma grande guilda mercantil ou até um atravessador em rotas perigosas. Aprendeu cedo que informação vale tanto quanto dinheiro e que bons acordos abrem portas tão bem quanto força.</p><p><em>Aumento no Valor de Atributo recomendado: Presença.</em></p>",
+    "feature": {
+      "name": "Bom Negócio",
+      "desc": "<p>Ao negociar compra, venda ou troca de bens e serviços, você pode fazer um Teste de Atributo de Vontade (Sorte), com CD definida pelo Narrador. Em caso de sucesso, você obtém uma vantagem comercial significativa, como desconto, bônus na troca, prioridade de entrega ou informação adicional relevante sobre o item ou mercado.</p>"
+    }
+  },
+  {
+    "code": "mercenario",
+    "key": "mercenario",
+    "name": "Mercenário",
+    "skills": [
+      "ath",
+      "itm",
+      "inv",
+      "sur"
+    ],
+    "description": "<p>Você lutou por dinheiro, contratos ou favores. Pouco importava a bandeira, desde que o pagamento fosse justo — ou ao menos suficiente. Pode ter servido exércitos, nobres, criminosos ou até revolucionários, aprendendo a sobreviver em meio a conflitos e alianças instáveis.</p><p><em>Aumento no Valor de Atributo recomendado: Força.</em></p>",
+    "feature": {
+      "name": "Contrato Temporário",
+      "desc": "<p>Ao chegar a uma região, você pode fazer um Teste de Atributo de Vontade (Sorte), com CD definida pelo Narrador, para encontrar alguém disposto a contratar você ou seu grupo para um serviço pontual.</p><p>O contrato pode envolver escolta, intimidação, proteção ou coleta de informações e o pagamento é negociado na hora (que pode ser em dinheiro, favores, artefatos e etc.).</p>"
+    }
+  },
+  {
+    "code": "nobre",
+    "key": "nobre",
+    "name": "Nobre",
+    "skills": [
+      "his",
+      "ins",
+      "inv",
+      "nat",
+      "luc"
+    ],
+    "description": "<p>Sua família foi ou ainda é regente de uma das tantas ilhas espalhadas pelo mundo, isso não necessariamente lhe garantiu uma vida luxuosa, já que existem reinos pobres e ricos. Mas certamente uma educação de primeira e alguma influência dentro dos círculos mais altos da sociedade.</p><p><em>Aumento no Valor de Atributo recomendado: Sabedoria.</em></p>",
+    "feature": {
+      "name": "Influência",
+      "desc": "<p>Ao interagir com outros nobres ou membros da alta sociedade, você pode usar sua influência para conseguir favores como entrada livre em áreas privadas, dinheiro emprestado, pedir que alguém ateste suas palavras ou audiências privadas com outros nobres, desde que você passe em um Teste de Atributo de Vontade (Sorte), com a CD definida pelo Narrador. Essa característica não poderá ser usada novamente até o término de um descanso longo.</p>",
+      "uses": {
+        "max": 1,
+        "period": "lr"
+      }
+    }
+  },
+  {
+    "code": "orfao",
+    "key": "orfao",
+    "name": "Órfão",
+    "skills": [
+      "ath",
+      "ste",
+      "ins",
+      "sur"
+    ],
+    "description": "<p>Suas origens são desconhecidas, você pode até saber seu sobrenome, mas ele não te dá nenhuma pista ou qualquer informação sobre a sua família. Além de não conhecer seus pais, desde que você se lembre, nunca houve nenhuma figura que cuidou de você, sempre tendo que se virar sozinha para conseguir se alimentar e sobreviver. Isso pode ter te tornado uma pessoa amarga ou ter alimentado uma empolgação para construir do zero seus próprios sonhos.</p><p><em>Aumento no Valor de Atributo recomendado: Força.</em></p>",
+    "feature": {
+      "name": "Malandragem",
+      "desc": "<p>Dentro de centros urbanos, desde que você seja bem-sucedido em um Teste de Atributo de Vontade (Sorte), com a CD definida pelo Narrador, você pode reconhecer os padrões e caminhos secretos típicos, conseguindo encontrar passagens em meio ao tecido urbano que os outros jamais notariam, podendo viajar entre quaisquer dois pontos da cidade, duas vezes mais rápido do que o seu deslocamento permite e de forma segura.</p><p>Além disso, o mesmo teste pode ser usado para encontrar comida e água para si mesmo e para até cinco outras pessoas uma vez por dia, desde que seja possível.</p>"
+    }
+  },
+  {
+    "code": "pescador",
+    "key": "pescador",
+    "name": "Pescador",
+    "skills": [
+      "dec",
+      "ins",
+      "per",
+      "sur"
+    ],
+    "description": "<p>Durante anos de vida no mar, você aprendeu muito mais do que apenas lançar redes. Mesmo que tenha passado pouco tempo como pescador profissional, sua vivência foi intensa: conheceu portos, tripulações e histórias de toda parte. Você navegou por inúmeras rotas, ouviu relatos de viajantes e mercadores e, se não esteve pessoalmente em todas as ilhas, ao menos conhece suas lendas, perigos e peculiaridades.</p><p><em>Aumento no Valor de Atributo recomendado: Presença.</em></p>",
+    "feature": {
+      "name": "Histórias do Mar",
+      "desc": "<p>Sua reputação e lábia lhe rendem hospitalidade quase automática. Sempre que estiver em um porto ou em contato com marinheiros e civis ligados ao mar, você pode realizar um Teste de Atributo de Vontade (Sorte), com CD definida pelo Narrador. Em caso de sucesso, você consegue viagem gratuita em qualquer navio.</p><p>Além disso, ao compartilhar suas histórias e causos marítimos, você pode tentar interromper ou distrair uma criatura que consiga ouvi-lo. A criatura deve realizar uma Salvaguarda de Sabedoria CD 17. Em caso de falha, ela fica distraída por até 30 minutos, mesmo durante encontros de combate e não estando sob risco.</p><p>Criaturas não podem ser afetadas por essa característica novamente dentro de um intervalo de 24 horas.</p>"
+    }
+  },
+  {
+    "code": "politico",
+    "key": "politico",
+    "name": "Político",
+    "skills": [
+      "prf",
+      "dec",
+      "his",
+      "ins",
+      "per",
+      "prv"
+    ],
+    "description": "<p>De alguma forma, a política fez parte da sua vida, você pode ter sido o prefeito de uma vila, participado das disputas entre dois regentes, ter sido o conselheiro de um rei ou ativista em nome de uma causa a favor do seu povo. Com isso, se fez necessário muitos estudos políticos e entendimento dos apelos populares.</p><p>Ao sair dessa vida, você manteve todo o conhecimento de como funciona os bastidores dos governos, suas decisões difíceis e as cordas que controlam a população.</p><p><em>Aumento no Valor de Atributo recomendado: Presença.</em></p>",
+    "feature": {
+      "name": "Discurso",
+      "desc": "<p>Ao confrontar uma pessoa hostil fora de combate, desde que você seja bem-sucedido em um Teste de Atributo de Vontade (Sorte), com a CD definida pelo Narrador, você pode convence-la a te ajudar.</p><p>A pessoa se aliará a você por até 24 horas, enquanto os objetivos dela não forem totalmente contrários aos seus. Essa característica não poderá ser usada novamente até o término de um descanso longo.</p>",
+      "uses": {
+        "max": 1,
+        "period": "lr"
+      }
+    }
+  },
+  {
+    "code": "predestinado",
+    "key": "predestinado",
+    "name": "Predestinado",
+    "skills": [
+      "ins",
+      "prc",
+      "per",
+      "luc"
+    ],
+    "description": "<p>Desde que você se entende por gente, tudo conspira a seu favor. Encontros improváveis, sobrevivência milagrosa, oportunidades únicas — como se o próprio mundo estivesse preparando seu caminho.</p><p>Alguns chamam isso de sorte. Outros, de profecia. Há quem diga que seu nome já foi escrito no futuro. Resta saber se você será digno desse destino… ou se ele cobrará um preço alto demais.</p><p><em>Aumento no Valor de Atributo recomendado: Vontade.</em></p>",
+    "feature": {
+      "name": "Mão do Destino",
+      "desc": "<p>Uma vez por descanso longo, antes de tomar uma decisão importante, você pode pedir ao Narrador que revele a consequência futura mais provável da sua ação.</p><p>Além disso, em momentos de extrema necessidade, uma reviravolta significativa pode ocorrer, alterando drasticamente o curso dos acontecimentos. Muitos chamariam isso de um 'roteiro conveniente', mas mudanças inimagináveis surgem justamente nos instantes mais desesperadores: um Fruto aparentemente ordinário pode revelar-se um poderoso Fruto Mítico; um corpo comum pode ser, na verdade, resultado de uma experiência científica oculta; ou o personagem pode descobrir ser portador de um Haki do Rei excepcional, entre outras possibilidades.</p><p>Essas reviravoltas representam a intervenção do destino e só podem ocorrer uma única vez durante toda a aventura.</p><p>Exemplos de gatilhos para a revelação: A morte definitiva do personagem (que indique a perda da ficha); Uma situação que desfechou em uma derrota que encerrará a aventura; Uma situação crítica sem qualquer possibilidade plausível de superação.</p><p>Exemplos de efeitos imediatos da reviravolta: Recuperar completamente os Pontos de Vida e Pontos de Poder; Criar uma oportunidade clara de fuga de uma situação desesperadora; Resolver um obstáculo aparentemente implacável, (como finalmente causar danos a um oponente intangível).</p><p>Exemplos de resultados permanentes da reviravolta: A mudança definitiva da Akuma no Mi que o personagem já tinha; A mudança permanente da espécie do personagem; Acesso a novas características.</p><p>Os gatilhos, efeitos e resultados ficam sempre a critério do Narrador, de acordo com a situação e a narrativa da campanha. Uma vez ativada, a Mão do Destino não pode ser revertida, alterada ou reutilizada até o fim da aventura.</p>",
+      "uses": {
+        "max": 1,
+        "period": "lr"
+      }
+    }
+  },
+  {
+    "code": "revolucionario",
+    "key": "revolucionario",
+    "name": "Revolucionário",
+    "skills": [
+      "acr",
+      "ath",
+      "his",
+      "med",
+      "per"
+    ],
+    "description": "<p>Em um determinado ponto da sua história, você foi um membro ativo do Exército Revolucionário. Participou de guerras, golpes e revoluções, seja de forma estratégica ou no combate em si. Durante esse tempo, você conquistou a reputação de um libertador, entretanto, por qualquer motivo que seja, você decidiu abandonar essa missão e agora vaga nos mares com novos objetivos.</p><p><em>Aumento no Valor de Atributo recomendado: Destreza.</em></p>",
+    "feature": {
+      "name": "Herói do Povo",
+      "desc": "<p>Devido seu passado turbulento, sua identidade pode ser facilmente percebida, desta forma, desde que você seja bem-sucedido em um Teste de Atributo de Vontade (Sorte), com a CD definida pelo Narrador, você é capaz de encontrar um lugar para se esconder, descansar ou se recuperar em meio às pessoas que simpatizam com a causa revolucionária, a não ser que tenha se mostrado uma ameaça para eles. Eles o protegerão da lei ou de qualquer outra pessoa que o procure, embora não estejam dispostos a arriscar suas vidas por você.</p>"
+    }
+  },
+  {
+    "code": "sacerdote",
+    "key": "sacerdote",
+    "name": "Sacerdote",
+    "skills": [
+      "his",
+      "med",
+      "per",
+      "arc"
+    ],
+    "description": "<p>Você trabalhou em uma igreja, pode ter sido suas, dos seus pais ou de alguém que você conhece. Durante o seu tempo lá, você ajudou na educação, tratamento médico, alimentação e outros direitos básicos negados aos menos favorecidos.</p><p>Isso lhe garantiu uma visão muito mais humanista do mundo, o que pode ter sido o gatilho para você se lançar nos mares, em busca de ajudar mais pessoas ou a revolta de acabar com os que causam esse sofrimento.</p><p><em>Aumento no Valor de Atributo recomendado: Sabedoria.</em></p>",
+    "feature": {
+      "name": "Fiéis",
+      "desc": "<p>Ao adentrar em locais povoados, você pode fazer um Teste de Atributo de Vontade (Sorte), com a CD definida pelo Narrador. Sendo bem-sucedido, você pode encontrar até 3 pessoas que já foram ajudadas por você.</p><p>Eles são plebeus capazes de realizar qualquer tarefa mundana, mas que não lutarão por você, não o seguirão em áreas evidentemente perigosas e o abandonarão se forem ameaçados ou abusados com frequência.</p>"
+    }
+  },
+  {
+    "code": "sobrevivente",
+    "key": "sobrevivente",
+    "name": "Sobrevivente",
+    "skills": [
+      "his",
+      "ins",
+      "prc",
+      "sur"
+    ],
+    "description": "<p>Durante o seu passado, um grande evento histórico ocorreu, pode ter sido a destruição da sua ilha natal pelas mãos do Governo Mundial, uma doença ultra rara que assolou seu reino ou uma grande guerra que resultou em desastre natural.</p><p>Apesar de não ser certeza de todos saberem a história, você foi o único sobrevivente conhecido do desastre, e uma mítica se criou à sua volta, para o bem ou para mal.</p><p><em>Aumento no Valor de Atributo recomendado: Vontade.</em></p>",
+    "feature": {
+      "name": "Reputação",
+      "desc": "<p>Quando estiver em qualquer povoado civilizado, você pode fazer um Teste de Atributo de Vontade (Sorte), com a CD definida pelo Narrador, e saber se os locais conhecem o seu passado. Ao ser bem-sucedido no teste, você consegue sair impune a crimes menores, como se recusar a pagar por comida em uma taverna ou arrombar portas de uma loja local, pois a maioria das pessoas terá medo ou pena de relatar a sua atividade às autoridades.</p>"
+    }
+  },
+  {
+    "code": "tenryuubito",
+    "key": "tenryuubito",
+    "name": "Tenryuubito",
+    "skills": [
+      "his",
+      "itm",
+      "inv",
+      "nat"
+    ],
+    "description": "<p>Sua linhagem sanguínea vem dos Nobres Mundiais, você pode ser um descendente direto ou ter apenas um de seus pais como Tenryuubito. Durante sua convivência com eles, você pode ou não ter compartilhado de seus costumes e pensamentos, mas por algum motivo você quis se aventurar de forma livre no mundo inferior, mesmo sabendo que as consequências disso sejam o rompimento entre vocês.</p><p><em>Aumento no Valor de Atributo recomendado: Constituição.</em></p>",
+    "feature": {
+      "name": "Costas Quentes",
+      "desc": "<p>Ao interagir com membros do Governo Mundial ou do alto escalão da Marinha, você pode tentar usar suas conexões com os Nobres Mundiais para publicar ou alterar notícias dos jornais, solicitar ataques contra tripulações inimigas (fornecendo as informações necessárias), criar distrações e etc.</p><p>Desde que seja bem-sucedido em um Teste de Atributo de Vontade (Sorte), com a CD definida pelo Narrador. Essa característica não poderá ser usada novamente até o término de um descanso longo.</p>",
+      "uses": {
+        "max": 1,
+        "period": "lr"
+      }
+    }
+  }
+];
+
+/* CAMINHOS — Capítulo 5 (Personalização), gerado a partir do livro */
+export const CAMINHOS = [
+  {
+    "code": "conhecimento-pelo-companheirismo-c-c",
+    "name": "Conhecimento pelo Companheirismo (C/C)",
+    "desc": "<p>É o sonho de ver, aprender ou compreender algo por meio da interação social. O personagem depende de aliados para alcançar seus objetivos, podendo liderar ou ser subordinado, desde que conte com outras pessoas em sua jornada.</p>"
+  },
+  {
+    "code": "liberdade-pelo-companheirismo-l-c",
+    "name": "Liberdade pelo Companheirismo (L/C)",
+    "desc": "<p>É o sonho de viver livremente ou fazer algo que traga felicidade pessoal por meio da interação social. O personagem depende de aliados para seguir seu caminho, seja liderando ou sendo liderado.</p>"
+  },
+  {
+    "code": "poder-pelo-companheirismo-p-c",
+    "name": "Poder pelo Companheirismo (P/C)",
+    "desc": "<p>É o sonho de alcançar prestígio, domínio ou poder — seja governar, possuir algo, impor sua vontade ou eliminar um inimigo — contando com alianças, influência e relações sociais para isso.</p>"
+  },
+  {
+    "code": "conhecimento-pela-forca-c-f",
+    "name": "Conhecimento pela Força (C/F)",
+    "desc": "<p>É o sonho de ver, aprender ou compreender algo por meio da própria força. O personagem pode até ter aliados, superiores ou subordinados, mas não depende deles para alcançar seus objetivos.</p>"
+  },
+  {
+    "code": "liberdade-pela-forca-l-f",
+    "name": "Liberdade pela Força (L/F)",
+    "desc": "<p>É o sonho de viver livremente ou realizar algo que traga felicidade pessoal por meio da própria força. O personagem trilha seu caminho de forma independente, mesmo que possua companheiros.</p>"
+  },
+  {
+    "code": "poder-pela-forca-p-f",
+    "name": "Poder pela Força (P/F)",
+    "desc": "<p>É o sonho de alcançar poder, prestígio ou domínio por meio da própria força. O personagem confia em sua capacidade individual para governar, impor sua vontade ou conquistar aquilo que deseja.</p>"
+  },
+  {
+    "code": "conhecimento-pela-enganacao-c-e",
+    "name": "Conhecimento pela Enganação (C/E)",
+    "desc": "<p>É o sonho de ver, aprender ou compreender algo por meio de mentiras, encenações, manipulação ou controle de outras pessoas.</p>"
+  },
+  {
+    "code": "liberdade-pela-enganacao-l-e",
+    "name": "Liberdade pela Enganação (L/E)",
+    "desc": "<p>É o sonho de viver livremente ou fazer o que desejar por meio de mentiras, disfarces, intrigas ou controle indireto das ações alheias.</p>"
+  },
+  {
+    "code": "poder-pela-enganacao-p-e",
+    "name": "Poder pela Enganação (P/E)",
+    "desc": "<p>É o sonho de alcançar poder, prestígio ou domínio por meio da manipulação, enganação, encenação ou controle de pessoas e informações.</p>"
+  }
+];
+
+/* SINGULARIDADES — Capítulo 5 (Personalização), gerado a partir do livro */
+export const SINGULARIDADES = [
+  {
+    "code": "amante",
+    "name": "Amante",
+    "tier": "suave",
+    "desc": "<p>Você mantém um relacionamento amoroso com uma figura importante da sociedade. Por meio dessa relação, você pode recorrer a essa pessoa para obter informações ou pequenos favores, sempre com a aprovação do Narrador. Esses auxílios não são imediatos e podem levar 3d6 dias para chegar.</p>"
+  },
+  {
+    "code": "ambiente-familiar",
+    "name": "Ambiente Familiar",
+    "tier": "suave",
+    "desc": "<p>Criado em um ambiente específico, você encontra conforto e liberdade nas lembranças desse lugar. Sempre que estiver imerso nesse tipo de cenário, suas habilidades tendem a se sobressair.</p><p>Escolha um ambiente que mais ressoe com seu passado — como dunas, montanhas, neve, selva, campo ou mar.</p><p>Quando estiver nesse ambiente, você pode refazer qualquer rolagem do d20, escolhendo qual dos resultados utilizar. Essa característica pode ser usada até 3 vezes, e todos os usos são recuperados ao final de um descanso longo.</p>",
+    "uses": {
+      "max": 3,
+      "period": "lr"
+    }
+  },
+  {
+    "code": "armadura-de-musculos",
+    "name": "Armadura de Músculos",
+    "tier": "suave",
+    "desc": "<p>Você treina seu corpo diariamente e está mais do que preparado para suportar golpes intensos. Podendo substituir o modificador de Destreza adicionado à sua CR pelo modificador de Força.</p><p>Característica que permitam utilizar outro modificador para a CR, como 'Defesa Aprimorada', caso nenhum deles seja o modificador de Força, você pode optar por substituí-lo pelo modificador de Força.</p>"
+  },
+  {
+    "code": "beleza-natural",
+    "name": "Beleza Natural",
+    "tier": "suave",
+    "desc": "<p>O personagem nasceu com uma beleza exuberante. Mesmo sem qualquer preparo, ele já é bonito o suficiente para chamar atenção e conquistar admiradores. O preconceito severo é reduzido para medíocre e o medíocre para débil. Não é possível reduzir o preconceito débil com essa individualidade.</p>"
+  },
+  {
+    "code": "bom-senso",
+    "name": "Bom Senso",
+    "tier": "suave",
+    "desc": "<p>Pessoas podem ter atitudes estúpidas, mas você não é uma delas. Todas as vezes que o personagem for fazer alguma coisa obviamente idiota, o Narrador pode dizer que ele pretende fazer uma burrice, evitando um desfecho desagradável.</p>"
+  },
+  {
+    "code": "chefe",
+    "name": "Chefe",
+    "tier": "suave",
+    "desc": "<p>Você impõe respeito naturalmente — seja por já ter feito parte de uma organização criminosa respeitada, como a máfia, por aparentar grande força ou simplesmente por manter uma postura firme e inabalável.</p><p>Desde que esteja fora de um encontro de combate, o primeiro dano causado por você contra uma criatura não desencadeia retaliação hostil (desde que não seja por meio de uma Técnica), caso passe em um Teste de Atributo de Presença (Intimidação) CD 16.</p><p>Em caso de sucesso, além de não iniciar um combate, você recebe vantagem em Testes de Atributo de Presença contra essa criatura até o final do dia.</p>"
+  },
+  {
+    "code": "corpo-fechado",
+    "name": "Corpo Fechado",
+    "tier": "suave",
+    "desc": "<p>Sua pele parece de aço e, por mais que esteja ferido, raramente você demonstra sinais de lesões e cortes, sendo difícil até mesmo sangrar quando cortado.</p><p>Quando fizer Salvaguardas contra as condições 'Sangramento' e 'Queimadura', você pode tornar uma falha em um sucesso. Essa característica pode ser usada uma quantidade de vezes igual ao seu Bônus de Proficiência e você recupera todos os seus usos ao término de um descanso longo.</p>",
+    "uses": {
+      "max": "@prof",
+      "period": "lr"
+    }
+  },
+  {
+    "code": "corpo-vigoroso",
+    "name": "Corpo Vigoroso",
+    "tier": "suave",
+    "desc": "<p>Você nasceu com um corpo muito saudável, suas feridas se curam mais rápido e aguenta uma quantidade incrível de esforço. Sempre que você passar de nível, role novamente o dado de vida para aumentar o valor máximo de Pontos de Vida e escolha o maior. Ao terminar um descanso curto, você sempre pode usar 1 dado de vida adicional.</p>"
+  },
+  {
+    "code": "determinacao",
+    "name": "Determinação",
+    "tier": "suave",
+    "desc": "<p>Você é movido por uma vontade inabalável de alcançar seus sonhos. Seus objetivos podem mudar ao longo da história, mas nada é capaz de quebrar sua fé ou desanimá-lo de seguir em frente.</p><p>Esta característica concede 10 Pontos de Determinação, que podem ser gastos para aumentar o valor final de Testes de Atributo ou Salvaguardas diretamente relacionados às suas ambições (acordados previamente com o Narrador). Cada ponto gasto adiciona +1 ao resultado do teste. Os pontos gastos são perdidos e recuperados apenas ao término de um descanso longo.</p>",
+    "uses": {
+      "max": 10,
+      "period": "lr"
+    }
+  },
+  {
+    "code": "disciplinado",
+    "name": "Disciplinado",
+    "tier": "suave",
+    "desc": "<p>Dia após dia, você se dedica incansavelmente aos seus treinamentos, buscando aperfeiçoamento físico e mental. Seu comprometimento é evidenciado pela rotina rigorosa, destacando-se pela determinação em alcançar a excelência. O treino transcende a prática, tornando-se uma paixão e estilo de vida.</p><p>A cada nível par de personagem, você recebe 1 Ponto de Treinamento.</p>"
+  },
+  {
+    "code": "equilibrio-perfeito",
+    "name": "Equilíbrio Perfeito",
+    "tier": "suave",
+    "desc": "<p>O personagem é capaz de se manter em pé mesmo sob tremores intensos ou em superfícies extremamente estreitas, como cordas esticadas, saliências, mastros, galhos de árvores ou estruturas instáveis semelhantes.</p><p>Além disso, sempre que realizar uma Salvaguarda para evitar ser derrubado ou perder o equilíbrio, você faz o teste com vantagem.</p>"
+  },
+  {
+    "code": "forasteiro",
+    "name": "Forasteiro",
+    "tier": "suave",
+    "desc": "<p>Você veio de um local conhecido por poucos, mesmo se fosse das ilhas do céu, seria de um local oculto para seus habitantes, com suas próprias culturas e heranças. Dessa forma, você traz consigo itens misteriosos.</p><p>Escolha entre uma 'Planta Mãe', um conjunto de dials aleatórios (3 dials cotidianos, 2 dials bélicos e 1 dial restrito), ou um 'Clima-Tact'. Todos os itens presentes no Capítulo 2 do Guia do Narrador.</p>"
+  },
+  {
+    "code": "indomavel",
+    "name": "Indomável",
+    "tier": "suave",
+    "desc": "<p>O personagem possui uma reação quase bestial sempre que alguém tenta subjugá-lo, seja por meio de correntes, agarrões, algemas ou habilidades especiais.</p><p>Sempre que estiver restrito de qualquer forma, você dobra o seu modificador de Força nas jogadas realizadas para se libertar. Além disso, enquanto estiver agarrado, você causa 1 dado de dano adicional na criatura que o está restringindo.</p>"
+  },
+  {
+    "code": "instintos-animais",
+    "name": "Instintos Animais",
+    "tier": "suave",
+    "desc": "<p>Talvez você tenha crescido em uma cultura tribal, vivido entre animais, enfrentado inúmeras feras ao longo da vida ou simplesmente nascido assim. O fato é que seus instintos de sobrevivência são extremamente aguçados, fazendo com que você se comporte, em muitos aspectos, como um animal atento ao ambiente.</p><p>Sempre que uma criatura considerada inimiga estiver dentro do seu campo de visão, você pode realizar um Teste de Atributo de Vontade (Intuição) CD 15 para avaliar se ela representa uma ameaça significativa.</p><p>Além disso, sempre que uma criatura tiver a intenção de atacá-lo e estiver a até 18 metros de distância, você percebe essa hostilidade instintivamente e consegue identificar a localização da criatura.</p>"
+  },
+  {
+    "code": "integrante-fantasma",
+    "name": "Integrante Fantasma",
+    "tier": "suave",
+    "desc": "<p>Você tem uma participação sútil e calma, sempre surpreendendo os outros com a sua personalidade quase fantasmagórica, quase invisível socialmente.</p><p>Desde que você não esteja interagindo diretamente com alguma situação ou combate, você pode inserir-se em qualquer interação que, à princípio, só envolvia os outros jogadores da mesa, mesmo se o Narrador não estiver ciente.</p>"
+  },
+  {
+    "code": "ma-fama",
+    "name": "Má Fama",
+    "tier": "suave",
+    "desc": "<p>Você possui uma infâmia notória. Seja por falhas em missões cruciais, derrotas públicas, ou por ser um ex-criminoso em processo de reabilitação. Sua reputação é marcada por uma falta de confiança generalizada, com suspeitas consideráveis sobre suas ações, quer sejam merecidas ou não.</p><p>Você pode definir uma alcunha inicial para o seu personagem (com aprovação do Narrador) e, mesmo quando derrotado, seus inimigos evitam tirar sua vida, seja por conta de estarem procurando por você no submundo ou para reivindicar alguma recompensa.</p>"
+  },
+  {
+    "code": "metabolismo-anormal",
+    "name": "Metabolismo Anormal",
+    "tier": "suave",
+    "desc": "<p>Você possui um estômago monstruoso, que parece não ter fundo, a ponto de sua barriga poder chegar a até duas vezes o tamanho normal. Além disso, ao consumir grandes quantidades de comida, você pode optar por passar 1 minuto sob a condição 'Paralisado' para digerir completamente os alimentos.</p><p>Ao final desse processo, seu corpo retorna ao estado normal e você recupera 1 PV para cada refeição ingerida. Recomenda-se que cada refeição possua propriedades equivalentes a uma refeição aristocrática, conforme descrito no Capítulo 8, considerando peso e valor.</p>"
+  },
+  {
+    "code": "rotina-tranquila",
+    "name": "Rotina Tranquila",
+    "tier": "suave",
+    "desc": "<p>Você se sente mais confortável quando segue hábitos simples e previsíveis, como acordar cedo, organizar seus pertences ou realizar pequenas tarefas diárias sempre da mesma forma. Essa constância te acalma e ajuda a manter o foco.</p><p>Sempre que iniciar um dia após um descanso longo completo, você pode escolher uma única jogada de d20 feita fora de combate para rolar duas vezes e escolher o melhor resultado.</p><p>Essa jogada deve representar uma ação rotineira ou cotidiana (como construir algo, navegar, negociar compras, investigar locais e etc.).</p><p>Essa característica não pode ser usada em situações de urgência, perseguições, combates ou eventos claramente caóticos, a critério do Narrador.</p>",
+    "uses": {
+      "max": 1,
+      "period": "day"
+    }
+  },
+  {
+    "code": "sono-seguro",
+    "name": "Sono Seguro",
+    "tier": "suave",
+    "desc": "<p>Você é capaz de descansar sem jamais baixar completamente a guarda. Mesmo nos estados mais profundos de sono, seus sentidos permanecem parcialmente atentos, permitindo perceber conversas, aproximações suspeitas ou ataques iminentes — e reagir a tempo.</p><p>Para todos os efeitos de regras, enquanto estiver dormindo, você é considerado consciente. Você pode escolher acordar a qualquer momento e pode realizar Testes de Atributo e Salvaguardas normalmente.</p>"
+  },
+  {
+    "code": "tesouro-precioso",
+    "name": "Tesouro Precioso",
+    "tier": "suave",
+    "desc": "<p>Você possui um objeto, à sua escolha, que precisa proteger a qualquer custo. Para você, ele representa algo tão valioso quanto a própria vida. Pode ser um chapéu confiado por seu salvador, a espada de uma amiga falecida ou um mapa de um tesouro submerso. O objeto não pode ter grande valor monetário e deve ser aprovado pelo Narrador.</p><p>Enquanto estiver carregando seu tesouro, ao falhar em uma Salvaguarda, você pode optar por receber ou aumentar 1 Nível de Exaustão e transformar a falha em um sucesso. Essa capacidade é recuperada ao término de um descanso longo.</p><p>Caso veja seu tesouro sendo danificado, você deve realizar uma Salvaguarda de Vontade CD 18. Em caso de falha, você recebe a condição 'Atordoado' até o final do seu próximo turno.</p><p>Se o seu tesouro for destruído ou desaparecer, você recebe a condição 'Letárgico' por 2d6 meses. Essa penalidade é considerada um Defeito Leve.</p>"
+  },
+  {
+    "code": "alter-ego-heroico",
+    "name": "Álter Ego Heroico",
+    "tier": "media",
+    "desc": "<p>Você possui uma identidade secreta, à sua escolha, que pode ser invocada sempre que estiver em perigo, desde que tenha seus trajes de herói em mãos. Enquanto estiver vestido como herói, deve proteger sua verdadeira identidade de todos.</p><p>Durante até 5 minutos, enquanto estiver vestido de herói, você recebe vantagem em jogadas para determinar sua iniciativa. Caso seja o último na ordem de iniciativa, passa automaticamente a ser o primeiro. Além disso, ignora quaisquer efeitos negativos dos seus defeitos.</p><p>Essa característica não poderá ser usada novamente até o término de um descanso longo.</p>",
+    "uses": {
+      "max": 1,
+      "period": "lr"
+    }
+  },
+  {
+    "code": "aparencia-inofensiva",
+    "name": "Aparência Inofensiva",
+    "tier": "media",
+    "desc": "<p>Por algum motivo você não parece perigoso, talvez seja muito pequeno, pareça fraco ou velho (você escolhe o motivo). Fazendo com que seja mais fácil pegar oponentes desprevenidos. O truque não funciona com ninguém que já tenha visto você lutar, e também não engana duas vezes a mesma pessoa.</p><p>Você recebe +5 para acertar alguém que não desconfie de você, usando esta individualidade. Consegue diminuir o preconceito em 1 nível. Porém, você recebe -5 em Testes de Atributo de Presença (Intimidação).</p>",
+    "effects": [
+      {
+        "skill": "itm",
+        "bonus": -5
+      }
+    ]
+  },
+  {
+    "code": "ator",
+    "name": "Ator",
+    "tier": "media",
+    "desc": "<p>Você é a personificação de qualquer papel que decidir assumir, demonstrando extrema confiança e domínio em sua interpretação.</p><p>Ao realizar um Teste de Atributo de Presença (Atuação), você obtém sucesso automático no primeiro teste. No segundo teste, você realiza a rolagem com vantagem e, no terceiro teste, recebe um bônus adicional de +2.</p><p>Essa característica se aplica individualmente a cada criatura. Após utilizar os três benefícios contra uma mesma pessoa, a característica só poderá ser utilizada novamente contra ela após um intervalo de 24 horas.</p>"
+  },
+  {
+    "code": "aura-assassina",
+    "name": "Aura Assassina",
+    "tier": "media",
+    "desc": "<p>Você emana uma presença intimidadora, que não tem relação com sua aparência física, seja por ter encarado inúmeras situações mortais ou por guardar uma intensa fúria dentro de si.</p><p>Enquanto estiver com todos os seus Pontos de Vida, qualquer criatura que realizar a primeira jogada de ataque (comum) contra você terá desvantagem.</p>"
+  },
+  {
+    "code": "estudioso",
+    "name": "Estudioso",
+    "tier": "media",
+    "desc": "<p>Desde a infância, você nutriu uma profunda admiração pelo caminho acadêmico, dedicando considerável parte do seu tempo aos estudos formais.</p><p>Você recebe o dobro do seu Bônus de Proficiência em uma perícia que você já seja proficiente. Escolha entre 'História', 'Investigação', 'Medicina', 'Natureza' ou 'Sobrevivência'.</p>",
+    "skillChoice": {
+      "count": 1,
+      "pool": [
+        "his",
+        "inv",
+        "med",
+        "nat",
+        "sur"
+      ],
+      "mode": "expertise"
+    }
+  },
+  {
+    "code": "fisico-perfeito",
+    "name": "Físico Perfeito",
+    "tier": "media",
+    "desc": "<p>Seu corpo está sempre bem cuidado e tem a capacidade assustadora de se recuperar de ferimentos e esforços mais leves em poucos minutos. O descanso curto, para você, tem uma duração mínima de 15 minutos.</p>"
+  },
+  {
+    "code": "negativo",
+    "name": "Negativo",
+    "tier": "media",
+    "desc": "<p>Você é naturalmente negativo, sempre pessimista e esperando o pior. Quando algo dá errado, você simplesmente aceita a situação. Por definição, nada que alguém faça ou diga, nem mesmo habilidades de Akuma no Mi, pode deixá-lo mais deprimido ou desmotivado, pois não há como ficar pior do que você já é.</p><p>Você é imune às condições 'Empoderado', 'Enfeitiçado', 'Enfurecido', 'Letárgico' e 'Sonolento'.</p>",
+    "effects": [
+      {
+        "ci": [
+          "jj-empoderado",
+          "jj-enfeiticado",
+          "jj-enfurecido",
+          "jj-letargico",
+          "jj-sonolento"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "vocacao",
+    "name": "Vocação",
+    "tier": "media",
+    "desc": "<p>Você sente que nasceu para realizar algo específico na vida. Isso pode estar diretamente ligado à sua profissão — como exercer a medicina ou a carpintaria — ou a uma atividade artística, intelectual ou pessoal, como pintar um quadro, compor uma música ou concluir uma grande obra (sempre com aprovação do Narrador).</p><p>Ao concluir uma dessas tarefas significativas, você se sente plenamente realizado e pode escolher um dos benefícios abaixo:</p><p>Recuperar 1 Nível de Exaustão;</p><p>Recuperar Pontos de Vida em um valor igual a 3 vezes o seu nível de personagem;</p><p>Recuperar Pontos de Poder em um valor igual ao seu nível de personagem.</p><p>Os benefícios dessa característica só podem ser obtidos novamente após 7 dias.</p>"
+  },
+  {
+    "code": "ambicao-do-rei",
+    "name": "Ambição do Rei",
+    "tier": "forte",
+    "desc": "<p>Você tem uma ambição grandiosa e inabalável, acompanhada de uma força de vontade que transcende limites. Em situações de grande estresse, você é capaz de manifestar uma aura misteriosa</p><p>Você se torna capaz de manifestar o Haki do Rei, no estágio 'Inexperiente', respeitando todas as regras do Capítulo 7. Essa individualidade só está disponível com a aprovação do Narrador.</p>"
+  },
+  {
+    "code": "grande-planejador",
+    "name": "Grande Planejador",
+    "tier": "forte",
+    "desc": "<p>Você possui grande habilidade para arquitetar planos complexos e alcançar seus objetivos sem precisar se envolver diretamente. Sempre que tiver um objetivo claro e específico para provocar um evento — como a explosão de uma bomba em determinada ilha, um apagão elétrico em uma cidade, forçar o encontro de dois piratas inimigos poderosos, roubar a chuva de um país, entre outros — você pode apresentar o plano ao Narrador.</p><p>O Narrador determinará a quantidade de semanas necessárias para que o plano seja executado. A cada semana, você deve dedicar 1 dia inteiro exclusivamente à coordenação do plano e gastar 1d10 × ฿ 200.000, representando custos com subornos, contratações, logística, informações e articulações nos bastidores.</p><p>Caso o plano envolva um evento contínuo que precise ser mantido por várias semanas, esses custos e a dedicação semanal permanecem até que o evento seja encerrado ou interrompido.</p><p>Mesmo sem se envolver diretamente, em planos particularmente complexos, o Narrador pode determinar que suas ações foram rastreadas ou que seus planos foram frustrados por fatores externos, como a intervenção de terceiros, mudanças climáticas, agentes políticos, traições internas ou até mesmo a própria má sorte.</p>"
+  },
+  {
+    "code": "haki-da-observacao-inato",
+    "name": "Haki da Observação Inato",
+    "tier": "forte",
+    "desc": "<p>Você nasceu com grande talento para o Haki da Observação. Fora de batalha, você pode usar a característica 'Perceber Emoções', 'Perceber Presença' e 'Perceber Desafio' do Haki da Observação.</p><p>Ao escolher esta individualidade, o Haki da Observação será automaticamente seu Haki principal e ao adquirir controle sobre o Haki da Observação ele recebe 5 Pontos de Ambição.</p>"
+  },
+  {
+    "code": "pau-para-toda-obra",
+    "name": "Pau-para-Toda-Obra",
+    "tier": "forte",
+    "desc": "<p>Ao longo da sua vida, você se dedicou a aprender mais, transitando por diferentes áreas de conhecimento e desenvolvendo habilidades variadas.</p><p>Essa característica permite que você crie seu personagem com duas profissões, em vez de apenas uma. Você recebe todos os benefícios iniciais de ambas, exceto as proficiências em perícias e ferramentas: só recebendo esses benefícios de apenas uma das profissões iniciais.</p>"
+  },
+  {
+    "code": "recuperacao-espantosa",
+    "name": "Recuperação Espantosa",
+    "tier": "forte",
+    "desc": "<p>O personagem possui uma recuperação fora do normal, seja para dores ou para fadiga. Enquanto uma pessoa comum estaria de cama por dias, recuperando-se de uma batalha, você já está ativo e pronto para a próxima.</p><p>O descanso longo, para você, tem uma duração mínima de 4 horas ou você pode optar por descansar 8 horas e recuperar 1 Nível de Exaustão adicional. Essa característica não acumula com outras que façam você recuperar Níveis de Exaustão, recuperando, no máximo, 1 Nível de Exaustão extra por descanso longo.</p>"
+  },
+  {
+    "code": "voz-de-todas-as-coisas",
+    "name": "Voz de Todas as Coisas",
+    "tier": "forte",
+    "desc": "<p>Você nasceu com um poder de características únicas e muito misterioso. Em algumas situações, você é capaz de ouvir a 'voz' de qualquer ser vivo e até objetos inanimados. Esse poder não necessariamente permite que você consiga se comunicar com outros seres vivos.</p><p>Ao ver um objeto misterioso, textos indecifráveis ou animais raros, o Narrador pode pedir para você pode fazer Teste de Atributo de Vontade (Sobrenatural), com CD determinada por ele. Ao ser bem-sucedido, você ainda não será capaz de ler ou entender, mas você consegue receber os sentimentos que queriam ser passados.</p>"
+  },
+  {
+    "code": "zona",
+    "name": "Zona",
+    "tier": "forte",
+    "desc": "<p>Ao obter um 20 natural em uma rolagem do d20, durante 1 minuto, você entra em um estado intenso de foco e empolgação que toma conta do seu ser, trazendo uma sensação de euforia absoluta.</p><p>Enquanto estiver nesse estado, você ignora completamente os efeitos de Níveis de Exaustão e pode manter simultaneamente mais de uma característica que exija concentração, sem a necessidade de testes para mantê-las.</p><p>Essa característica não poderá ser usada novamente até o término de um descanso longo.</p>",
+    "uses": {
+      "max": 1,
+      "period": "lr"
+    }
+  }
+];
+
+/* DEFEITOS — Capítulo 5 (Personalização), gerado a partir do livro */
+export const DEFEITOS = [
+  {
+    "code": "casamento-marcado",
+    "name": "Casamento Marcado",
+    "tier": "suave",
+    "desc": "<p>Você fez parte de uma família ou organização poderosa que sempre o tratou como alguém descartável. Como resultado, foi prometido como agrado, moeda de troca ou até mesmo oferecido como escravo, cônjuge político para unir famílias do submundo, fortalecer alianças ou ampliar o poder dessa organização.</p><p>Para garantir que o acordo seja cumprido, seus antigos aliados usam seus contatos para intensificar a perseguição à sua tripulação: a Marinha aumenta a vigilância, grandes piratas são incentivados por recompensas.</p><p>Enquanto você não se apresentar voluntariamente a essa organização, sempre que passar um dia viajando de navio ou ao adentrar uma nova ilha ou localidade, deve realizar um Teste de Atributo de Vontade (Sorte) CD 18. Em caso de falha, você encontra emissários hostis preparados para capturá-lo ou forçá-lo a cumprir o acordo.</p>"
+  },
+  {
+    "code": "chantagem",
+    "name": "Chantagem",
+    "tier": "suave",
+    "desc": "<p>Alguém de grande influência tem um segredo seu, um objeto importante ou mantém como refém uma pessoa muito preciosa para você (deve ser previamente combinado com o Narrador).</p><p>De tempos em tempos, emissários dessa pessoa surgem para instruí-lo a cumprir demandas, as quais podem acarretar sérios perigos ou entrar em conflito com seus princípios.</p>"
+  },
+  {
+    "code": "churriado",
+    "name": "Churriado",
+    "tier": "suave",
+    "desc": "<p>Você tem muitos pontos positivos, mas a força física certamente não é uma delas, e por mais que você invista seu tempo em treinar seu corpo, o resultado vai acabar sendo só uma aparência melhor.</p><p>Você tem desvantagem em qualquer Testes de Atributo ou Salvaguarda de Força.</p>"
+  },
+  {
+    "code": "dupla-personalidade",
+    "name": "Dupla Personalidade",
+    "tier": "suave",
+    "desc": "<p>Sua mente abriga duas personalidades distintas, com valores, comportamentos ou objetivos conflitantes. A troca entre elas pode ser sutil ou abrupta, mas nunca passa despercebida para quem convive com você por tempo suficiente.</p><p>No início de cada dia, ou sempre que você falhar em uma Salvaguarda de Vontade CD 15 em uma situação de estresse intenso (humilhação, medo extremo, dor emocional, perigo iminente), o Narrador pode determinar qual personalidade assume o controle. Enquanto a personalidade secundária estiver ativa:</p><p>O Narrador pode impor decisões, falas ou atitudes coerentes com essa personalidade;</p><p>Você sofre desvantagem em Todas Perícias que for proficiente;</p><p>Você falha automaticamente em Salvaguardas de Sabedoria e Vontade (ignorando sucessos automáticos).</p><p>A personalidade original retorna automaticamente após um descanso longo ou quando um evento marcante ocorre (definido pelo Narrador).</p>"
+  },
+  {
+    "code": "falta-de-higiene",
+    "name": "Falta de Higiene",
+    "tier": "suave",
+    "desc": "<p>Você foge da água como se ela fosse um veneno. Sua aversão a banhos frequentes e à limpeza em geral afeta negativamente a forma como as pessoas o veem e interagem com você.</p><p>Você falha automaticamente em Testes de Atributo de Presença (Persuasão), ignorando sucessos automáticos.</p>"
+  },
+  {
+    "code": "falta-de-sorte",
+    "name": "Falta de Sorte",
+    "tier": "suave",
+    "desc": "<p>A vida parece sempre rir da sua cara, não importa o quanto você tente e se prepare, alguma coisa dará errado.</p><p>Uma vez por dia, o Narrador pode transformar uma rolagem bem-sucedida em uma falha, essa rolagem pode ser sua ou de qualquer outro, desde que seja para atrapalhar sua vida.</p>"
+  },
+  {
+    "code": "hipocondriaco",
+    "name": "Hipocondríaco",
+    "tier": "suave",
+    "desc": "<p>Ao ouvir alguém mencionar uma doença desconhecida — mesmo que ela não exista — você entra em estado de alerta extremo.</p><p>Caso falhe em uma Salvaguarda de Constituição CD 16, após o próximo descanso longo você passa a sentir sintomas psicossomáticos dessa doença por 1d4 dias.</p>"
+  },
+  {
+    "code": "medroso",
+    "name": "Medroso",
+    "tier": "suave",
+    "desc": "<p>O medo é seu companheiro constante, qualquer coisa possivelmente assustadora o impressiona e faz com que esbugalhe os olhos e grite, mesmo que você seja capaz de fazer o mesmo ou até superar ou que a criatura seja mais fraca que você.</p><p>Você é sempre o último nas ordens de iniciativa. Caso alguma outra criatura tenha esta individualidade, o Narrador decide quem irá primeiro.</p>"
+  },
+  {
+    "code": "monstruoso",
+    "name": "Monstruoso",
+    "tier": "suave",
+    "desc": "<p>Sua aparência é repulsiva, assustadora ou profundamente desconfortável para padrões sociais comuns. Circular livremente entre pessoas é sempre um risco.</p><p>Você recebe 1 nível de Preconceito (ou aumenta em 1 nível, caso já possua). Essa monstruosidade pode ser parcialmente ocultada com roupas adequadas, capas ou máscaras, a critério do Narrador.</p>"
+  },
+  {
+    "code": "mudo",
+    "name": "Mudo",
+    "tier": "suave",
+    "desc": "<p>Você é incapaz de produzir fala. Para se comunicar, precisa recorrer a gestos, escrita, linguagem de sinais ou outros meios alternativos.</p><p>Você falha automaticamente em Testes de Atributo que dependam diretamente da fala (ignorando sucessos automáticos).</p>"
+  },
+  {
+    "code": "narcisista",
+    "name": "Narcisista",
+    "tier": "suave",
+    "desc": "<p>Você ama a si mesmo e dedica grande atenção à própria aparência. Sua autoconfiança depende diretamente de se sentir belo, limpo e admirável.</p><p>Sempre que estiver sujo, desalinhado ou com a aparência comprometida, todos os seus Testes de Atributo sofrem -3 de penalidade.</p>"
+  },
+  {
+    "code": "orgulho-cego",
+    "name": "Orgulho Cego",
+    "tier": "suave",
+    "desc": "<p>Você é incapaz de ignorar provocações e insultos de qualquer tipo direcionados a você, seus companheiros ou entes queridos, independentemente do quão a situação seja inapropriada para isso.</p><p>Você falha automaticamente em testes contra Provocação e não pode ser acalmado (ignorando sucessos automáticos).</p>"
+  },
+  {
+    "code": "rosto-debochado",
+    "name": "Rosto Debochado",
+    "tier": "suave",
+    "desc": "<p>Sua aparência inspira antipatia e transmite a impressão constante de deboche, como se você estivesse sempre zombando de todos ao seu redor. Sempre que um encontro se inicia e não houver diferença relevante para as criaturas inimigas na escolha de alvos, elas optarão por atacar você.</p><p>Seu rosto também desperta irritação na Marinha, que se recusa a conceder grandes recompensas por seus feitos. Dessa forma, a cada atualização de recompensa, o valor recebido por você aumenta em, no máximo, 1.000 Bellys.</p>"
+  },
+  {
+    "code": "sedutor-incorrigivel",
+    "name": "Sedutor Incorrigível",
+    "tier": "suave",
+    "desc": "<p>Você sente um impulso constante de tentar seduzir qualquer pessoa que se encaixe em seus critérios de interesse, mesmo em situações inadequadas.</p><p>Enquanto estiver na presença direta de alguém por quem sente atração, você não pode manter concentração para sustentar Técnicas ou características.</p>"
+  },
+  {
+    "code": "senso-de-direcao-ruim",
+    "name": "Senso de Direção Ruim",
+    "tier": "suave",
+    "desc": "<p>Você é tão ruim com senso de direção que pode se perder em um corredor sem portas ou janelas e não importa se seus amigos estiverem de olho em você, no primeiro deslize, você pode sumir da vista deles, como mágica.</p><p>Sempre que você não estiver em um encontro e se deslocar de um lugar para o outro, andando ou correndo, você deve jogar um d6. Em um resultado 3 ou menor, você se perde e pode parar a até 500 metros de distância do ponto de partida. Caso você esteja acompanhado, você pode jogar o d6 duas vezes e escolher o resultado.</p>"
+  },
+  {
+    "code": "sinceridade-excessiva",
+    "name": "Sinceridade Excessiva",
+    "tier": "suave",
+    "desc": "<p>Você é incapaz de mentir, seja por valores morais ou simplesmente dificuldade em ocultar a verdade. E por mais que você se esforce para contar uma mentira, sempre será óbvio que não se trata da verdade.</p><p>Você falha automaticamente em Testes de Atributo de Presença (Enganação), ignorando sucessos automáticos.</p>"
+  },
+  {
+    "code": "vicio",
+    "name": "Vício",
+    "tier": "suave",
+    "desc": "<p>Você é dependente de uma substância específica, como álcool, nicotina, açúcar, drogas, determinados alimentos ou compostos similares. Sempre que deixa de consumir essa substância, os efeitos da abstinência passam a se acumular da seguinte forma:</p><p>1 Dia Sem Consumo: você recebe desvantagem nas jogadas para determinar a iniciativa.</p><p>2 Dias Sem Consumo: você não recebe nenhum benefício ao finalizar descansos curtos.</p><p>A Partir do 3º Dia: para cada dia adicional sem consumir a substância, você perde 1 Ponto de Poder do seu valor máximo.</p><p>Os Pontos de Poder perdidos dessa forma só são recuperados após o término de um descanso longo, desde que o vício tenha sido satisfeito antes desse descanso.</p>"
+  },
+  {
+    "code": "voz-fina",
+    "name": "Voz Fina",
+    "tier": "suave",
+    "desc": "<p>Você possui uma voz tão fina que chega a ser engraçada, e não importa o quanto tente engrossar ou disfarçar. Também não importa o seu tamanho ou aparência; nada impede que quem ouça sua voz a ache engraçada.</p><p>Você falha automaticamente em Testes de Atributo de Presença (Intimidação), ignorando sucessos automáticos.</p>"
+  },
+  {
+    "code": "teimoso",
+    "name": "Teimoso",
+    "tier": "suave",
+    "desc": "<p>Depois de tomar uma decisão ou concordar com um plano, você se apega a ele de forma absoluta. Mudar de ideia é visto como fraqueza.</p><p>Sempre que você recuar ou alterar uma decisão previamente tomada, perde 1 ponto de atributo de Vontade. Cada ponto perdido é recuperado após 1d4 semanas.</p>"
+  },
+  {
+    "code": "trapalhao",
+    "name": "Trapalhão",
+    "tier": "suave",
+    "desc": "<p>Sempre que você se move, sai esbarrando em tudo pela sua frente ou tropeça no nada, não consegue carregar qualquer coisa sem que tudo acabe no chão.</p><p>Ao realizar uma falha crítica em uma jogada de ataque (comum), você não só erra o golpe como também desencadeia um dos seguintes efeitos, de acordo com o Narrador:</p><p>Acerta a si mesmo ou um aliado próximo, causando até 5 pontos de dano na criatura;</p><p>Deixa a arma cair no chão;</p><p>Tropeça e recebe a condição 'Caído'.</p>"
+  },
+  {
+    "code": "coracao-mole",
+    "name": "Coração Mole",
+    "tier": "media",
+    "desc": "<p>Você não aguenta ver os outros sofrerem e evita qualquer situação que implique em causar dor física ou emocional em alguém que não mereça ou não possa se defender.</p><p>Suas jogadas de ataque (comum ou Técnicas) ou qualquer jogada com a intenção de prejudicar a criaturas que possa te causar empatia recebem desvantagem.</p>"
+  },
+  {
+    "code": "dependente",
+    "name": "Dependente",
+    "tier": "media",
+    "desc": "<p>Você se sente totalmente inseguro quando não tem seus companheiros para te ajudar ou proteger, pode ser por medo, insegurança ou por sempre querer se mostrar.</p><p>Enquanto não estiver com nenhum companheiro ou criatura que esteja cooperando contigo, dentro do seu raio de visão, você recebe -2 em todas as suas jogadas com o d20.</p>"
+  },
+  {
+    "code": "divida-de-jogo",
+    "name": "Dívida de Jogo",
+    "tier": "media",
+    "desc": "<p>Você deve uma quantia absurda de dinheiro a uma ou mais figuras extremamente poderosas e influentes. Trata-se de uma dívida tão elevada que talvez nunca consiga quitá-la. Além disso, qualquer tentativa de enganar ou despistar seus credores apenas aumenta a determinação deles em capturá-lo.</p><p>Uma vez por semana, em um dia predefinido pelo Narrador, um emissário aparecerá para cobrar 10d10 milhões de Bellys. Caso o pagamento não seja realizado, no início do dia seguinte você deverá fazer uma Salvaguarda de Vontade com CD igual ao seu nível + o número de semanas em atraso.</p><p>Se falhar, independentemente de onde esteja, você nunca estará verdadeiramente seguro: o personagem é considerado perdido, podendo morrer por envenenamento, sabotagem ou sequestro, a critério do Narrador.</p>"
+  },
+  {
+    "code": "ferida-fantasma",
+    "name": "Ferida Fantasma",
+    "tier": "media",
+    "desc": "<p>Você possui uma cicatriz, visível ou não, resultante de um acontecimento terrível no qual foi derrotado, perdeu pessoas queridas ou teve sua determinação quebrada (a ser definido em acordo com o Narrador).</p><p>As dores desse grande ferimento retornam sempre que você enfrenta momentos decisivos. Nessas situações, o Narrador pode exigir uma Salvaguarda de Vontade CD 16 até 3 vezes entre descansos longos.</p><p>Caso falhe, você não pode realizar ações nem ações poderosas até o início do seu próximo turno e sofre 10 pontos de dano Psíquico.</p><p>Se estiver diante de quem lhe causou esse trauma ou de acontecimentos relacionados ao ocorrido, a Salvaguarda é realizada com desvantagem. Nessas circunstâncias, o Narrador pode dobrar a quantidade de Salvaguardas entre descansos longos.</p>"
+  },
+  {
+    "code": "ganancioso",
+    "name": "Ganancioso",
+    "tier": "media",
+    "desc": "<p>Você realmente ama dinheiro, talvez, o motivo que lhe fez partir para se aventurar nos mares. Sempre que alguém falar de formas de ganhar quantidades consideráveis de dinheiro, por um pedido, uma missão ou revelando a localização de um tesouro escondido, você não consegue resistir, caso perca a oportunidade, você é acometido por uma grande depressão.</p><p>Caso se recuse a ganhar, perca dinheiro ou chances de enriquecer, você recebe -2 em todas as suas jogadas de ataque (comum ou Técnicas), Testes de Atributo e Salvaguardas por até 1d6 dias.</p>"
+  },
+  {
+    "code": "linhagem-demoniaca",
+    "name": "Linhagem Demoníaca",
+    "tier": "media",
+    "desc": "<p>Você é filho ou descendente de qualquer grau de uma figura, conhecida em todo o mundo, considerada execrável por uma grande parte da sociedade e, talvez, até maioria. Quando àqueles que odeiam essa pessoa descobrem sua relação com ela, eles transmitem todo esse ódio para você.</p><p>Você recebe preconceito severo de qualquer pessoa que odeie o seu antepassado.</p>"
+  },
+  {
+    "code": "paranoico",
+    "name": "Paranoico",
+    "tier": "media",
+    "desc": "<p>Você não confia em ninguém, nem em seus amigos. Nunca pede e nem aceita nenhuma ajuda, nem mesmo o tratamento de seus ferimentos. Não consegue descansar ou dormir direito: mesmo que esteja em uma estalagem ou outro lugar que parece ser totalmente seguro.</p><p>Você precisa de, no mínimo, 2 horas para se acalmar e achar que está tudo certo, para começar um descanso curto ou longo.</p>"
+  },
+  {
+    "code": "preguicoso",
+    "name": "Preguiçoso",
+    "tier": "media",
+    "desc": "<p>No início de cada dia, role 1d4. O resultado indica a quantidade máxima de tarefas que você consegue realizar sem sofrer penalidades. Após exceder esse limite, seus Pontos de Poder atuais são reduzidos à metade (arredondando para baixo). Esses são alguns exemplos de tarefas, mas o Narrador pode estipular outras:</p><p>Desempenhar sua profissão durante o dia;</p><p>Participar de um encontro de combate;</p><p>Executar pedidos, ordens ou favores que não tenham partido de você.</p><p>Essa penalidade só pode ocorrer uma vez por dia e é redefinida ao final de um descanso longo.</p>"
+  },
+  {
+    "code": "consumidor-compulsivo",
+    "name": "Consumidor Compulsivo",
+    "tier": "forte",
+    "desc": "<p>Você é impulsivo quando se trata de compras e gasta dinheiro de maneira descontrolada em itens que, muitas vezes, são inúteis ou prejudiciais.</p><p>Sempre que entrar em uma loja ou mercado, você deve fazer uma Salvaguarda de Vontade CD 18 para evitar gastar 50% do dinheiro total que você possuir.</p>"
+  },
+  {
+    "code": "doenca-terminal",
+    "name": "Doença Terminal",
+    "tier": "forte",
+    "desc": "<p>Você sofre de uma doença terrível e incurável, que consome lentamente sua vitalidade. No passado, você já foi muito mais forte do que é hoje, mas seu corpo está em constante declínio.</p><p>Sempre que você cair a 0 Pontos de Vida, perde permanentemente 1 ponto do atributo Constituição. Caso esse atributo chegue a 0, o personagem morre.</p>"
+  },
+  {
+    "code": "ignorante",
+    "name": "Ignorante",
+    "tier": "forte",
+    "desc": "<p>Você acredita que já detém praticamente todo o conhecimento necessário para alcançar seus objetivos, encarando novos aprendizados como perda de tempo.</p><p>Devido a essa mentalidade inflexível, você não pode aprender nenhuma profissão além de uma única escolhida na criação do personagem, sob nenhuma circunstância, nem aumentar a graduação dessa profissão.</p>"
+  },
+  {
+    "code": "mediocre",
+    "name": "Medíocre",
+    "tier": "forte",
+    "desc": "<p>Seu personagem não se destaca em nada do que faz, vivendo constantemente à sombra da mediocridade e sendo incapaz de brilhar nos momentos mais decisivos. Você nunca recebe os efeitos de acertos críticos em jogadas com o d20.</p>"
+  },
+  {
+    "code": "pacifista",
+    "name": "Pacifista",
+    "tier": "forte",
+    "desc": "<p>Você adota uma postura pacifista em sua abordagem à vida, buscando solucionar conflitos por meio do diálogo e da compreensão. Evita o uso da violência sempre que possível, priorizando a paz e a harmonia em suas interações.</p><p>Você só consegue executar ações que possam causar dano quando um aliado estiver com menos de 50% de Pontos de Vida ou alguma criatura não combatente estiver com risco de vida. Quando sozinho, você sempre se rende ou busca o caminho da não violência.</p>"
+  },
+  {
+    "code": "sonolencia",
+    "name": "Sonolência",
+    "tier": "forte",
+    "desc": "<p>Por algum motivo, você está sempre com sono, não importa se dormiu normalmente no dia anterior ou se acabou de acordar.</p><p>No início de um encontro de combate, você deve rolar 1d6, e em um resultado 3 ou menor, você passa a primeira rodada do combate com a condição 'Inconsciente'. Esse teste pode ser solicitado pelo Narrador em qualquer outro momento também.</p>"
+  },
+  {
+    "code": "trauma-profundo-fobia",
+    "name": "Trauma Profundo/Fobia",
+    "tier": "forte",
+    "desc": "<p>Em seu passado você passou por uma situação traumática irrecuperável, desde uma perda terrível, ter sofrido agressões ou qualquer evento negativamente marcante.</p><p>Toda vez que você se depara com uma situação semelhante ou possui um gatilho que traga suas memórias à tona, você é tomado por perturbações nítidas que pode te impedir de realizar ações ou comprometer sua concentração, devendo fazer uma Salvaguarda de Vontade CD 17, se passar no teste, você supera momentaneamente o trauma, se falhar, todos as suas jogadas com d20 sofrem -5 de penalidade. Após esse 1 minuto, você pode repetir o teste.</p>"
+  }
+];
+
+/* CODIGOS — Capítulo 5 (Personalização), gerado a partir do livro */
+export const CODIGOS = [
+  {
+    "code": "codigo-do-burocrata",
+    "name": "Código do Burocrata",
+    "desc": "<p>Como uma regra alternativa, que o Narrador pode usar na aventura, os personagens podem impor a si mesmos limites próprios, que têm origem por um trauma ou ser uma promessa, mas o importante é que essa é uma linha que define seu caráter, caso a ultrapasse, viver será como estar morto. Não é obrigatório a escolha de um código e só deve ser escolhido 1 por personagem. A tabela 'Seguindo seu Código' define quantos Pontos de Treinamento são adquiridos ao manter o código: Prejudicando a Si Mesmo = 1 PT; Confrontando um Aliado = 1 PT; Prejudicando o Grupo = 2 PT; Própria Vida em Risco = 2 PT; Vida do Grupo em Risco = 3 PT.</p><p>Sempre que uma situação deva ser resolvida, você estabelece um contrato social entre ambas as partes (seja verbal ou escrito), deixando claro as obrigações e necessidades de todos. Você se torna inteiramente fiel ao que foi acordado, seguindo estritamente todos os seus aspectos. Só podendo fazer algo diferente caso a outra parte quebre o contrato ou caso ele seja cumprido.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>"
+  },
+  {
+    "code": "codigo-da-gratidao",
+    "name": "Código da Gratidão",
+    "desc": "<p>Quando alguém salva sua vida, ou de um ente querido seu, você deve oferecer seus serviços para realizar um desejo qualquer dessa pessoa, desde que não firam a sua moral e ética.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>"
+  },
+  {
+    "code": "codigo-da-familia-sangue-ou-consideracao",
+    "name": "Código da Família (Sangue ou Consideração)",
+    "desc": "<p>Nunca desonrar as regras da sua família. Nunca ferir sua família, a não ser que um membro tenha traído o código familiar. Buscar vingança implacável contra quem ferir, matar ou trair a sua família.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>"
+  },
+  {
+    "code": "codigo-da-honestidade",
+    "name": "Código da Honestidade",
+    "desc": "<p>Nunca roubar, trapacear, mentir ou desobedecer às leis locais, nem permitir que seus companheiros o façam, sem uma justificativa muito plausível.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>"
+  },
+  {
+    "code": "codigo-da-redencao",
+    "name": "Código da Redenção",
+    "desc": "<p>Jamais atacar sem necessidade nem tirar vidas, sempre aceitar um pedido de rendição e sempre poupar seus oponentes depois de derrotados ou inconscientes.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>"
+  },
+  {
+    "code": "codigo-de-conduta",
+    "name": "Código de Conduta",
+    "desc": "<p>Nunca desobedecer a seus superiores, seja o Capitão da sua tripulação ou algum contratante de seus serviços. Sempre que seu superior lhe vetar ou mandar você parar, você obedece.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>"
+  },
+  {
+    "code": "codigo-do-cacador",
+    "name": "Código do Caçador",
+    "desc": "<p>Nunca matar filhotes ou fêmeas grávidas de qualquer espécie (combater ou capturar, quando necessário, mas nunca matar). Nunca abandonar uma caça abatida. Sempre escolher como oponente a pessoa ou criatura de aparência mais perigosa que esteja à vista.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>"
+  },
+  {
+    "code": "codigo-do-cavalheiro",
+    "name": "Código do Cavalheiro",
+    "desc": "<p>Nunca atacar uma mulher (ou fêmea de qualquer espécie humanoide), nem mesmo quando atacado, e nem permitir que seus companheiros o façam. Sempre atender um pedido de ajuda de uma mulher.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>"
+  },
+  {
+    "code": "codigo-do-combate",
+    "name": "Código do Combate",
+    "desc": "<p>Nunca atacar um oponente indefeso. Nunca participar de um encontro estando do lado de maior número (quando os números importarem) e que a desvantagem numérica crie uma diferença clara de força entre os lados.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>"
+  },
+  {
+    "code": "codigo-dos-herois",
+    "name": "Código dos Heróis",
+    "desc": "<p>Sempre cumprir sua palavra, sempre proteger qualquer pessoa ou criatura, que não seja maligna e mais fraca que você, jamais recusar um pedido de ajuda.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>"
+  },
+  {
+    "code": "codigo-do-lider",
+    "name": "Código do Líder",
+    "desc": "<p>Você sempre deve proteger seus subordinados ou criaturas que estejam em seus cuidados. Quando existirem códigos disciplinadores, para punir insubordinação ou atitudes reprováveis, você deve aplicá-los.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>"
+  },
+  {
+    "code": "codigo-do-lutador",
+    "name": "Código do Lutador",
+    "desc": "<p>Nunca recusar desafio ou pedido de duelo. Quando perder uma disputa, deve buscar lutar novamente e vencer quem o derrotou, com grande determinação.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>"
+  },
+  {
+    "code": "codigo-do-orgulho",
+    "name": "Código do Orgulho",
+    "desc": "<p>Você nunca foge de uma luta e não suporta ser considerado um covarde. Mesmo se o inimigo se mostrar superior, você não demonstra medo e o enfrenta com todas as suas forças.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>"
+  },
+  {
+    "code": "codigo-do-profissional",
+    "name": "Código do Profissional",
+    "desc": "<p>Caso receba um pedido relacionado à sua profissão, você se sente obrigado a ajudar. Mesmo que a pessoa não possa pagar, você aceita qualquer forma de recompensa ou dá alguma desculpa para poder efetuar o serviço.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>"
+  },
+  {
+    "code": "codigo-do-protetor",
+    "name": "Código do Protetor",
+    "desc": "<p>Você não consegue atacar ou ficar quieto assistindo pessoas indefesas sendo atacadas. Como crianças, idosos, animais e pessoas incapacitadas.</p><p><em>Manter o código sob pressão concede Pontos de Treinamento (ver tabela ‘Seguindo seu Código’).</em></p>"
+  }
+];

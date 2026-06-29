@@ -1,0 +1,28 @@
+_id: UThTRXNR0dbLFwlp
+name: Rock Star
+type: feat
+img: icons/sundries/scrolls/scroll-bound-brown.webp
+system:
+  description:
+    value: <p>Dentro de centros urbanos, é possível se conectar com grupos de artistas, para realizar apresentações (oficiais ou clandestinas). No início de cada dia, desde que use 2 horas do seu tempo com esse objetivo, você pode rolar um Teste de Atributo de Vontade (Sorte), com a CD definida pelo Narrador, para marcar um encontro noturno e se apresentar.</p><p>Você deve ser bem-sucedido em um Teste de Atributo de Presença (Atuação) CD 15 para receber como cachê 3d10 x 100.000 bellys ou 3d10 x 20.000 bellys, em uma falha. Além disso, adiciona 50.000 bellys para cada nível de personagem que você tiver.</p><p>O show só acaba no amanhecer do dia seguinte e você sofre os efeitos de um dia sem realizar um descanso longo. Essa característica não poderá ser usada novamente até o término de um descanso longo.</p>
+    chat: ''
+  identifier: rock-star
+  type:
+    value: background
+    subtype: ''
+  requirements: Artista
+  properties: []
+  activities: {}
+  uses:
+    max: '1'
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+        formula: ''
+effects: []
+folder: null
+_key: '!items!UThTRXNR0dbLFwlp'
+ownership:
+  default: 0
+flags: {}

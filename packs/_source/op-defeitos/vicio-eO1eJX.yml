@@ -1,0 +1,21 @@
+_id: eO1eJXJUBh6Xpzem
+name: Vício
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: '<p>Você é dependente de uma substância específica, como álcool, nicotina, açúcar, drogas, determinados alimentos ou compostos similares. Sempre que deixa de consumir essa substância, os efeitos da abstinência passam a se acumular da seguinte forma:</p><p>1 Dia Sem Consumo: você recebe desvantagem nas jogadas para determinar a iniciativa.</p><p>2 Dias Sem Consumo: você não recebe nenhum benefício ao finalizar descansos curtos.</p><p>A Partir do 3º Dia: para cada dia adicional sem consumir a substância, você perde 1 Ponto de Poder do seu valor máximo.</p><p>Os Pontos de Poder perdidos dessa forma só são recuperados após o término de um descanso longo, desde que o vício tenha sido satisfeito antes desse descanso.</p>'
+    chat: ''
+  identifier: vicio
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Suave
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!eO1eJXJUBh6Xpzem'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: lLRfIaXXG2NLBY6L
+name: Trauma Profundo/Fobia
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Em seu passado você passou por uma situação traumática irrecuperável, desde uma perda terrível, ter sofrido agressões ou qualquer evento negativamente marcante.</p><p>Toda vez que você se depara com uma situação semelhante ou possui um gatilho que traga suas memórias à tona, você é tomado por perturbações nítidas que pode te impedir de realizar ações ou comprometer sua concentração, devendo fazer uma Salvaguarda de Vontade CD 17, se passar no teste, você supera momentaneamente o trauma, se falhar, todos as suas jogadas com d20 sofrem -5 de penalidade. Após esse 1 minuto, você pode repetir o teste.</p>
+    chat: ''
+  identifier: trauma-profundo-fobia
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Forte
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!lLRfIaXXG2NLBY6L'
+ownership:
+  default: 0
+flags: {}

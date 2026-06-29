@@ -1,0 +1,53 @@
+_id: 1P46VmODXKVtuigj
+name: Erudito
+type: background
+img: icons/sundries/books/book-embossed-jewel-gold.webp
+system:
+  description:
+    value: '<p>Você dedicou grande parte da sua vida ao estudo formal. Seja em bibliotecas, academias, mosteiros ou sob a tutela de um mestre, seu conhecimento vem de livros, debates e pesquisa constante. Mesmo longe de centros acadêmicos, sua mente continua afiada.</p><p><em>Aumento no Valor de Atributo recomendado: Sabedoria.</em></p>'
+    chat: ''
+  identifier: erudito
+  advancement:
+    - _id: JQcQUDIn4sX9a0Vs
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: JE4uz0tgaftTJNEW
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:his
+              - skills:inv
+              - skills:nat
+              - skills:arc
+        mode: default
+      value: {}
+      flags: {}
+    - _id: WKEIppEr9iwtKyVu
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.i99G1ew4DbFjIFfA
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!1P46VmODXKVtuigj'
+ownership:
+  default: 0
+flags: {}

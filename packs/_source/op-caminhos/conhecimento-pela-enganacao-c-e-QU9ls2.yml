@@ -1,0 +1,21 @@
+_id: QU9ls2GI08Ofalj8
+name: Conhecimento pela Enganação (C/E)
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>É o sonho de ver, aprender ou compreender algo por meio de mentiras, encenações, manipulação ou controle de outras pessoas.</p>
+    chat: ''
+  identifier: conhecimento-pela-enganacao-c-e
+  type:
+    value: caminho
+    subtype: ''
+  requirements: Caminho
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!QU9ls2GI08Ofalj8'
+ownership:
+  default: 0
+flags: {}

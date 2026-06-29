@@ -1,0 +1,21 @@
+_id: PJqvgaPq4DWpqSNS
+name: Contrato Temporário
+type: feat
+img: icons/sundries/scrolls/scroll-bound-brown.webp
+system:
+  description:
+    value: <p>Ao chegar a uma região, você pode fazer um Teste de Atributo de Vontade (Sorte), com CD definida pelo Narrador, para encontrar alguém disposto a contratar você ou seu grupo para um serviço pontual.</p><p>O contrato pode envolver escolta, intimidação, proteção ou coleta de informações e o pagamento é negociado na hora (que pode ser em dinheiro, favores, artefatos e etc.).</p>
+    chat: ''
+  identifier: contrato-temporario
+  type:
+    value: background
+    subtype: ''
+  requirements: Mercenário
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!PJqvgaPq4DWpqSNS'
+ownership:
+  default: 0
+flags: {}

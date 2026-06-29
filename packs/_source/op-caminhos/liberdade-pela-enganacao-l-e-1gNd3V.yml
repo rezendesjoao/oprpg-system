@@ -1,0 +1,21 @@
+_id: 1gNd3V05Ga2mjZXm
+name: Liberdade pela Enganação (L/E)
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>É o sonho de viver livremente ou fazer o que desejar por meio de mentiras, disfarces, intrigas ou controle indireto das ações alheias.</p>
+    chat: ''
+  identifier: liberdade-pela-enganacao-l-e
+  type:
+    value: caminho
+    subtype: ''
+  requirements: Caminho
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!1gNd3V05Ga2mjZXm'
+ownership:
+  default: 0
+flags: {}

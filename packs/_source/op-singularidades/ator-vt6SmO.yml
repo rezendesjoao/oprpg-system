@@ -1,0 +1,21 @@
+_id: vt6SmOXt6gn867my
+name: Ator
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você é a personificação de qualquer papel que decidir assumir, demonstrando extrema confiança e domínio em sua interpretação.</p><p>Ao realizar um Teste de Atributo de Presença (Atuação), você obtém sucesso automático no primeiro teste. No segundo teste, você realiza a rolagem com vantagem e, no terceiro teste, recebe um bônus adicional de +2.</p><p>Essa característica se aplica individualmente a cada criatura. Após utilizar os três benefícios contra uma mesma pessoa, a característica só poderá ser utilizada novamente contra ela após um intervalo de 24 horas.</p>
+    chat: ''
+  identifier: ator
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Média — 3 espaços
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!vt6SmOXt6gn867my'
+ownership:
+  default: 0
+flags: {}

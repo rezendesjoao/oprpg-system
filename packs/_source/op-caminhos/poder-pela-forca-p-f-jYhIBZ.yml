@@ -1,0 +1,21 @@
+_id: jYhIBZSjBBDwmssk
+name: Poder pela Força (P/F)
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>É o sonho de alcançar poder, prestígio ou domínio por meio da própria força. O personagem confia em sua capacidade individual para governar, impor sua vontade ou conquistar aquilo que deseja.</p>
+    chat: ''
+  identifier: poder-pela-forca-p-f
+  type:
+    value: caminho
+    subtype: ''
+  requirements: Caminho
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!jYhIBZSjBBDwmssk'
+ownership:
+  default: 0
+flags: {}

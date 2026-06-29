@@ -1,0 +1,53 @@
+_id: F5h7C6OaLJVpZHm1
+name: Mercador
+type: background
+img: icons/sundries/books/book-embossed-jewel-gold.webp
+system:
+  description:
+    value: '<p>Você cresceu negociando, comprando e vendendo. Pode ter sido dono de uma pequena loja, comerciante ambulante, representante de uma grande guilda mercantil ou até um atravessador em rotas perigosas. Aprendeu cedo que informação vale tanto quanto dinheiro e que bons acordos abrem portas tão bem quanto força.</p><p><em>Aumento no Valor de Atributo recomendado: Presença.</em></p>'
+    chat: ''
+  identifier: mercador
+  advancement:
+    - _id: 3KRhkNtRVac6DeCH
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: LCuzm4MRBqGYKdvb
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:dec
+              - skills:ins
+              - skills:inv
+              - skills:per
+        mode: default
+      value: {}
+      flags: {}
+    - _id: DreIKK6FwEwvH9HF
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.XcVUIpS92Kv1vwKr
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!F5h7C6OaLJVpZHm1'
+ownership:
+  default: 0
+flags: {}

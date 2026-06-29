@@ -1,0 +1,21 @@
+_id: AotW4JCVuuAcPlKx
+name: Histórias do Mar
+type: feat
+img: icons/sundries/scrolls/scroll-bound-brown.webp
+system:
+  description:
+    value: <p>Sua reputação e lábia lhe rendem hospitalidade quase automática. Sempre que estiver em um porto ou em contato com marinheiros e civis ligados ao mar, você pode realizar um Teste de Atributo de Vontade (Sorte), com CD definida pelo Narrador. Em caso de sucesso, você consegue viagem gratuita em qualquer navio.</p><p>Além disso, ao compartilhar suas histórias e causos marítimos, você pode tentar interromper ou distrair uma criatura que consiga ouvi-lo. A criatura deve realizar uma Salvaguarda de Sabedoria CD 17. Em caso de falha, ela fica distraída por até 30 minutos, mesmo durante encontros de combate e não estando sob risco.</p><p>Criaturas não podem ser afetadas por essa característica novamente dentro de um intervalo de 24 horas.</p>
+    chat: ''
+  identifier: historias-do-mar
+  type:
+    value: background
+    subtype: ''
+  requirements: Pescador
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!AotW4JCVuuAcPlKx'
+ownership:
+  default: 0
+flags: {}

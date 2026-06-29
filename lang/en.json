@@ -29,8 +29,8 @@
 
 "TYPES.Item.akumaNoMi": "Akuma no Mi",
 "TYPES.Item.akumaNoMiPl": "Akuma no Mi",
-"TYPES.Item.background": "Profissão",
-"TYPES.Item.backgroundPl": "Profissões",
+"TYPES.Item.background": "Antecedente",
+"TYPES.Item.backgroundPl": "Antecedentes",
 "TYPES.Item.container": "Contêiner",
 "TYPES.Item.containerPl": "Contêineres",
 "TYPES.Item.class": "Estilo de Combate",
@@ -358,9 +358,9 @@
   },
   "Config": { "AnyLevel": "Qualquer", "Details": "Detalhes da Progressão" },
   "Defaults": {
-    "BackgroundFeat": "Talento de Origem",
-    "BackgroundFeature": "Habilidade de Origem",
-    "BackgroundProficiencies": "Proficiências de Origem",
+    "BackgroundFeat": "Talento de Antecedente",
+    "BackgroundFeature": "Característica de Antecedente",
+    "BackgroundProficiencies": "Proficiências de Antecedente",
     "ChooseLanguages": "Escolher Idiomas"
   },
   "Deletion": {
@@ -752,8 +752,8 @@
   "UnrecognizedWarning": "Não foi possível interpretar {commands}. O comando /award deve ser usado com valores de XP e moedas como '/award 10gp 50xp'."
 },
 "DND5E.Background": "—",
-"DND5E.BackgroundAdd": "Adicionar Origem",
-"DND5E.BackgroundName": "Nome da Origem",
+"DND5E.BackgroundAdd": "Adicionar Antecedente",
+"DND5E.BackgroundName": "Nome do Antecedente",
 
 "DND5E.Bastion": {
   "Action": {
@@ -2230,7 +2230,13 @@
 },
 
 "DND5E.Feature": {
-  "Background": "Habilidade de Background",
+  "Background": "Característica de Antecedente",
+  "OP": {
+    "Caminho": "Caminho",
+    "Singularidade": "Singularidade",
+    "Defeito": "Defeito",
+    "CodigoHonra": "Código de Honra"
+  },
   "Class": {
     "Label": "Habilidade de Classe",
     "ArcaneShot": "Disparo Arcano",
@@ -2339,7 +2345,7 @@
 "DND5E.FeatureUsage": "Uso da Habilidade",
 
 "DND5E.Features": "Características",
-"DND5E.FeaturesBackground": "Habilidades de Background",
+"DND5E.FeaturesBackground": "Características de Antecedente",
 "DND5E.FeaturesClass": "Habilidades de {class}",
 "DND5E.FeaturesOther": "Outras Habilidades",
 
@@ -2656,7 +2662,7 @@
 "DND5E.ItemAttackBonus": "Bônus de Ataque",
 "DND5E.ItemAttackFlat": "Bônus Fixo",
 "DND5E.ItemAttackFlatHint": "Se marcado, não adiciona proficiência, modificador de atributo ou outros bônus à rolagem de ataque, exceto o que estiver incluído aqui.",
-"DND5E.ItemBackgroundDetails": "Detalhes de Background",
+"DND5E.ItemBackgroundDetails": "Detalhes do Antecedente",
 "DND5E.ItemClassDetails": "Detalhes de Classe",
 "DND5E.ItemConsumableActivation": "Ativação de Consumível",
 "DND5E.ItemConsumableUsage": "Uso de Consumível",
@@ -4428,7 +4434,7 @@
       "Label": "Todos os Efeitos"
     },
     "Background": {
-      "Label": "Efeitos de Background"
+      "Label": "Efeitos de Antecedente"
     },
     "Class": {
       "Label": "Efeitos de Classe"
@@ -5236,7 +5242,7 @@
       }
     },
     "EquipmentHeader": "Equipamento",
-    "EquipmentDescription": "Você começa com o seguinte equipamento, além do concedido pelo seu background:",
+    "EquipmentDescription": "Você começa com o seguinte equipamento, além do concedido pelo seu antecedente:",
     "Features": {
       "DescriptionLegacy": "Como {lowercaseName}, você ganha as seguintes habilidades de classe, resumidas na tabela {name}.",
       "DescriptionModern": "Como {name}, você ganha as seguintes habilidades de classe ao atingir os níveis especificados de {name}. Essas habilidades estão listadas na tabela de Habilidades de {name}.",

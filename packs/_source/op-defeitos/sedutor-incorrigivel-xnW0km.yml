@@ -1,0 +1,21 @@
+_id: xnW0kmF2Hxqjc4KV
+name: Sedutor Incorrigível
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você sente um impulso constante de tentar seduzir qualquer pessoa que se encaixe em seus critérios de interesse, mesmo em situações inadequadas.</p><p>Enquanto estiver na presença direta de alguém por quem sente atração, você não pode manter concentração para sustentar Técnicas ou características.</p>
+    chat: ''
+  identifier: sedutor-incorrigivel
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Suave
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!xnW0kmF2Hxqjc4KV'
+ownership:
+  default: 0
+flags: {}

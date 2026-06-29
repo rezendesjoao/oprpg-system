@@ -1,0 +1,53 @@
+_id: I1j2fdpFYGwZp0Oz
+name: Marinheiro
+type: background
+img: icons/sundries/books/book-embossed-jewel-gold.webp
+system:
+  description:
+    value: '<p>Durante o seu passado, teve um momento em que você achou estar seguido o caminho da justiça. Nesse período, você era um membro ativo da Marinha, os motivos da sua saída podem ser inúmeros, desde ver nos atos da corporação hipocrisias e corrupção até uma saída por não querer mais estar subordinado às ordens dos outros. A única coisa que não muda é que o seu tempo estará sempre marcado em suas memórias.</p><p><em>Aumento no Valor de Atributo recomendado: Força.</em></p>'
+    chat: ''
+  identifier: marinheiro
+  advancement:
+    - _id: RR93moa7zctKVKnu
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: wYRX2ZRfuhmbLXoJ
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:ath
+              - skills:inv
+              - skills:med
+              - skills:sur
+        mode: default
+      value: {}
+      flags: {}
+    - _id: IXqz7bXDKlazYlWh
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.H2Lt6z69egqLnEge
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!I1j2fdpFYGwZp0Oz'
+ownership:
+  default: 0
+flags: {}

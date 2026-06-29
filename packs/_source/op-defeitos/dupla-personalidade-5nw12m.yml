@@ -1,0 +1,21 @@
+_id: 5nw12mNYb1wdpGM6
+name: Dupla Personalidade
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Sua mente abriga duas personalidades distintas, com valores, comportamentos ou objetivos conflitantes. A troca entre elas pode ser sutil ou abrupta, mas nunca passa despercebida para quem convive com você por tempo suficiente.</p><p>No início de cada dia, ou sempre que você falhar em uma Salvaguarda de Vontade CD 15 em uma situação de estresse intenso (humilhação, medo extremo, dor emocional, perigo iminente), o Narrador pode determinar qual personalidade assume o controle. Enquanto a personalidade secundária estiver ativa:</p><p>O Narrador pode impor decisões, falas ou atitudes coerentes com essa personalidade;</p><p>Você sofre desvantagem em Todas Perícias que for proficiente;</p><p>Você falha automaticamente em Salvaguardas de Sabedoria e Vontade (ignorando sucessos automáticos).</p><p>A personalidade original retorna automaticamente após um descanso longo ou quando um evento marcante ocorre (definido pelo Narrador).</p>
+    chat: ''
+  identifier: dupla-personalidade
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Suave
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!5nw12mNYb1wdpGM6'
+ownership:
+  default: 0
+flags: {}

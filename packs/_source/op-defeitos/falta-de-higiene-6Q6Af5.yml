@@ -1,0 +1,21 @@
+_id: 6Q6Af5VkwMgBBHW9
+name: Falta de Higiene
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você foge da água como se ela fosse um veneno. Sua aversão a banhos frequentes e à limpeza em geral afeta negativamente a forma como as pessoas o veem e interagem com você.</p><p>Você falha automaticamente em Testes de Atributo de Presença (Persuasão), ignorando sucessos automáticos.</p>
+    chat: ''
+  identifier: falta-de-higiene
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Suave
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!6Q6Af5VkwMgBBHW9'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: 9IHbs0gz8uBRywIq
+name: Medíocre
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Seu personagem não se destaca em nada do que faz, vivendo constantemente à sombra da mediocridade e sendo incapaz de brilhar nos momentos mais decisivos. Você nunca recebe os efeitos de acertos críticos em jogadas com o d20.</p>
+    chat: ''
+  identifier: mediocre
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Forte
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!9IHbs0gz8uBRywIq'
+ownership:
+  default: 0
+flags: {}

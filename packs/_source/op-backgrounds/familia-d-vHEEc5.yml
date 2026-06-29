@@ -1,0 +1,53 @@
+_id: vHEEc5CcV7i9TpPz
+name: Família D.
+type: background
+img: icons/sundries/books/book-embossed-jewel-gold.webp
+system:
+  description:
+    value: '<p>Sua família possui um sobrenome secreto, do qual ninguém sabe a origem ou o significado, ele só é passado de geração em geração. Das poucas coisas que você sabe sobre esse sobrenome, algumas delas são que ele deve ser mantido em segredo, eventos tristes cercam a vida dessas pessoas e um deles trará uma grande tempestade ao mundo.</p><p><em>Aumento no Valor de Atributo recomendado: Vontade.</em></p>'
+    chat: ''
+  identifier: familia-d
+  advancement:
+    - _id: FXLxWYYNNDLZ8XO1
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: FYSivs11UeG4vCbs
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:Cont
+              - skills:itm
+              - skills:ins
+              - skills:prc
+        mode: default
+      value: {}
+      flags: {}
+    - _id: jMV7Uts2Pey2VPxu
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.EeEwLYv52gZzO9Wx
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!vHEEc5CcV7i9TpPz'
+ownership:
+  default: 0
+flags: {}

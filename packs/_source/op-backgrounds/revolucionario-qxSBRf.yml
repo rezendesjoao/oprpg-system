@@ -1,0 +1,54 @@
+_id: qxSBRfMqKtaBEPsX
+name: Revolucionário
+type: background
+img: icons/sundries/books/book-embossed-jewel-gold.webp
+system:
+  description:
+    value: '<p>Em um determinado ponto da sua história, você foi um membro ativo do Exército Revolucionário. Participou de guerras, golpes e revoluções, seja de forma estratégica ou no combate em si. Durante esse tempo, você conquistou a reputação de um libertador, entretanto, por qualquer motivo que seja, você decidiu abandonar essa missão e agora vaga nos mares com novos objetivos.</p><p><em>Aumento no Valor de Atributo recomendado: Destreza.</em></p>'
+    chat: ''
+  identifier: revolucionario
+  advancement:
+    - _id: Xna1k9mGZR9c9rey
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: 0buRm5cBAVJrpo1E
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:acr
+              - skills:ath
+              - skills:his
+              - skills:med
+              - skills:per
+        mode: default
+      value: {}
+      flags: {}
+    - _id: 1UJVLb08jiyvHnK3
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.TBLvCzFw0dh2qMGW
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!qxSBRfMqKtaBEPsX'
+ownership:
+  default: 0
+flags: {}

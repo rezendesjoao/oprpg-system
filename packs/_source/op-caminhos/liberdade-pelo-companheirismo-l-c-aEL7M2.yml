@@ -1,0 +1,21 @@
+_id: aEL7M2OZhjCSDfOv
+name: Liberdade pelo Companheirismo (L/C)
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>É o sonho de viver livremente ou fazer algo que traga felicidade pessoal por meio da interação social. O personagem depende de aliados para seguir seu caminho, seja liderando ou sendo liderado.</p>
+    chat: ''
+  identifier: liberdade-pelo-companheirismo-l-c
+  type:
+    value: caminho
+    subtype: ''
+  requirements: Caminho
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!aEL7M2OZhjCSDfOv'
+ownership:
+  default: 0
+flags: {}

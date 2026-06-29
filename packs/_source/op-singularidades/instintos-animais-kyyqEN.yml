@@ -1,0 +1,21 @@
+_id: kyyqENDvNWhpZWpK
+name: Instintos Animais
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Talvez você tenha crescido em uma cultura tribal, vivido entre animais, enfrentado inúmeras feras ao longo da vida ou simplesmente nascido assim. O fato é que seus instintos de sobrevivência são extremamente aguçados, fazendo com que você se comporte, em muitos aspectos, como um animal atento ao ambiente.</p><p>Sempre que uma criatura considerada inimiga estiver dentro do seu campo de visão, você pode realizar um Teste de Atributo de Vontade (Intuição) CD 15 para avaliar se ela representa uma ameaça significativa.</p><p>Além disso, sempre que uma criatura tiver a intenção de atacá-lo e estiver a até 18 metros de distância, você percebe essa hostilidade instintivamente e consegue identificar a localização da criatura.</p>
+    chat: ''
+  identifier: instintos-animais
+  type:
+    value: singularidade
+    subtype: ''
+  requirements: Singularidade Suave — 1 espaço
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!kyyqENDvNWhpZWpK'
+ownership:
+  default: 0
+flags: {}

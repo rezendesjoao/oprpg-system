@@ -1,0 +1,53 @@
+_id: 90nOdbS2hcltTOVJ
+name: Exilado
+type: background
+img: icons/sundries/books/book-embossed-jewel-gold.webp
+system:
+  description:
+    value: '<p>Você já ocupou uma posição de grande influência — político, nobre, conselheiro ou outra figura central dentro de uma nação. Contudo, ao apoiar o lado derrotado de um conflito, ser vítima de uma conspiração ou ser falsamente acusado de crimes graves, sua queda foi inevitável.</p><p>Perseguido ou declarado inimigo do Estado, você foi forçado a abandonar sua terra natal. Em segredo, outra nação estendeu a mão, oferecendo abrigo e proteção longe dos holofotes. Durante o período de exílio, você aprendeu a sobreviver na sombra da política internacional, compreendendo alianças ocultas, jogos diplomáticos e o peso das decisões feitas longe do público.</p><p><em>Aumento no Valor de Atributo recomendado: Presença ou Sabedoria.</em></p>'
+    chat: ''
+  identifier: exilado
+  advancement:
+    - _id: fNmd22do9HSp2UKu
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: 10ZCFhKI6xW6Xidn
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:his
+              - skills:ins
+              - skills:per
+              - skills:inv
+        mode: default
+      value: {}
+      flags: {}
+    - _id: 9KdAwLt4yIzKGPEP
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.AMlDOvEvK1Tya5Np
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!90nOdbS2hcltTOVJ'
+ownership:
+  default: 0
+flags: {}

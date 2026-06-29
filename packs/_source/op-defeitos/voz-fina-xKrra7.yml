@@ -1,0 +1,21 @@
+_id: xKrra7JuizjWGUu4
+name: Voz Fina
+type: feat
+img: icons/sundries/scrolls/scroll-writing-tan.webp
+system:
+  description:
+    value: <p>Você possui uma voz tão fina que chega a ser engraçada, e não importa o quanto tente engrossar ou disfarçar. Também não importa o seu tamanho ou aparência; nada impede que quem ouça sua voz a ache engraçada.</p><p>Você falha automaticamente em Testes de Atributo de Presença (Intimidação), ignorando sucessos automáticos.</p>
+    chat: ''
+  identifier: voz-fina
+  type:
+    value: defeito
+    subtype: ''
+  requirements: Defeito Suave
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!xKrra7JuizjWGUu4'
+ownership:
+  default: 0
+flags: {}
