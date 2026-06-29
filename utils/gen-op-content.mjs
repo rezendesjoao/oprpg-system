@@ -432,7 +432,7 @@ function backgroundItem(bg) {
   ];
   return {
     _id, name: bg.name, type: "background",
-    img: bg.img || "icons/sundries/books/book-embossed-jewel-gold.webp",
+    img: bg.img || "icons/sundries/books/book-backed-wood-tan.webp",
     system: {
       description: { value: bg.description || `<p>${bg.name}</p>`, chat: "" },
       identifier: bg.key,
