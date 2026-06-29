@@ -12,12 +12,8 @@
   "download": "https://github.com/rezendesjoao/oprpg-system/releases/latest/download/system.zip",
   "authors": [
     {
-      "name": "OP RPG (adaptação)",
-      "flags": {}
-    },
-    {
-      "name": "Noroi (jujutsu-system, motor base)",
-      "url": "https://discord.gg/hld20",
+      "name": "Joao Rezende",
+      "url": "https://github.com/rezendesjoao/oprpg-system",
       "flags": {}
     }
   ],
@@ -384,8 +380,8 @@
     },
     {
       "type": "setup",
-      "url": "systems/onepiece-system/ui/official/jjk-repo.jpg",
-      "thumbnail": "systems/onepiece-system/ui/official/jjk-thumbnail.jpg",
+      "url": "systems/onepiece-system/ui/official/oprpg-wallpaper.webp",
+      "thumbnail": "systems/onepiece-system/ui/official/oprpg-wallpaper.webp",
       "loop": false,
       "flags": {}
     }
