@@ -15,9 +15,10 @@
 
         {{!-- Character Creation Wizard (level 0 / no class) --}}
         {{#if showCharacterCreation}}
-        <button type="button" class="cc-start-button gold-button" data-action="startCharacterCreation"
+        <button type="button" class="cc-start-button" data-action="startCharacterCreation"
                 data-tooltip="ONEPIECE.CharacterCreation.ButtonHint" aria-label="{{ localize 'ONEPIECE.CharacterCreation.Button' }}">
-            <i class="fa-solid fa-hat-cowboy" inert></i> {{ localize "ONEPIECE.CharacterCreation.Button" }}
+            <i class="fa-solid fa-hat-cowboy" inert></i>
+            <span>{{ localize "ONEPIECE.CharacterCreation.Button" }}</span>
         </button>
         {{/if}}
     </div>
