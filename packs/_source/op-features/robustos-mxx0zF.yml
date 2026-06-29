@@ -13,7 +13,24 @@ system:
   requirements: Minks (Variante)
   properties: []
   activities: {}
-effects: []
+effects:
+  - _id: hWvBeABnMF4bQOVA
+    _key: '!items.effects!mxx0zFLVPJ2nlu64.hWvBeABnMF4bQOVA'
+    name: Robustos
+    img: icons/svg/upgrade.svg
+    changes:
+      - key: system.attributes.movement.walk
+        mode: 4
+        value: '12'
+        priority: 20
+    transfer: true
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      rounds: null
+      turns: null
+    flags: {}
 folder: null
 _key: '!items!mxx0zFLVPJ2nlu64'
 ownership:

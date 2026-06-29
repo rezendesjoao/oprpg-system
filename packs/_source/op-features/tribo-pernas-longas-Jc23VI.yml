@@ -13,7 +13,24 @@ system:
   requirements: Humanos (Variante)
   properties: []
   activities: {}
-effects: []
+effects:
+  - _id: GyXRoU8o8upf9zNY
+    _key: '!items.effects!Jc23VIYE9ZH7EXKB.GyXRoU8o8upf9zNY'
+    name: Tribo Pernas Longas
+    img: icons/svg/upgrade.svg
+    changes:
+      - key: system.attributes.movement.walk
+        mode: 4
+        value: '12'
+        priority: 20
+    transfer: true
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      rounds: null
+      turns: null
+    flags: {}
 folder: null
 _key: '!items!Jc23VIYE9ZH7EXKB'
 ownership:

@@ -13,7 +13,24 @@ system:
   requirements: Anões
   properties: []
   activities: {}
-effects: []
+effects:
+  - _id: UNqIz6AP23WxzF5k
+    _key: '!items.effects!0Az6q1QpH56XWdqf.UNqIz6AP23WxzF5k'
+    name: Ingenuidade Anormal
+    img: icons/svg/upgrade.svg
+    changes:
+      - key: system.skills.ins.bonuses.check
+        mode: 2
+        value: '-10'
+        priority: 20
+    transfer: true
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      rounds: null
+      turns: null
+    flags: {}
 folder: null
 _key: '!items!0Az6q1QpH56XWdqf'
 ownership:

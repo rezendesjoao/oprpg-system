@@ -130,6 +130,43 @@ function advTraitSkill(seed, { count = 1, pool = null, exclude = [], mode = "def
   };
 }
 
+// ActiveEffect (transfer:true) anexado a um feat de traço/variante; 1 `change` por spec.
+// Modos: perícia/salvaguarda = ADD (FormulaField soma com +/- → empilha, não substitui);
+// movimento = UPGRADE (prevalece o maior); tamanho = OVERRIDE; resistência = ADD em Set.
+function raceEffect(itemId, seed, name, specs) {
+  const changes = specs.map(s => {
+    if ( "skill"  in s ) return { key: `system.skills.${s.skill}.bonuses.check`, mode: 2, value: String(s.bonus), priority: 20 };
+    if ( "save"   in s ) return { key: `system.abilities.${s.save}.bonuses.save`, mode: 2, value: String(s.bonus), priority: 20 };
+    if ( "move"   in s ) return { key: `system.attributes.movement.${s.move}`, mode: 4, value: String(s.value), priority: 20 };
+    if ( "size"   in s ) return { key: "system.traits.size", mode: 5, value: s.size, priority: 20 };
+    if ( "resist" in s ) return { key: "system.traits.dr.value", mode: 2, value: s.resist, priority: 20 };
+    return null;
+  }).filter(Boolean);
+  const _id = mkId(seed + ":fx");
+  return {
+    _id,
+    // _key exigido pelo foundryvtt-cli p/ documentos embutidos: !items.effects!<itemId>.<effectId>
+    _key: `!items.effects!${itemId}.${_id}`,
+    name,
+    img: "icons/svg/upgrade.svg",
+    changes,
+    transfer: true,
+    disabled: false,
+    duration: { startTime: null, seconds: null, rounds: null, turns: null },
+    flags: {}
+  };
+}
+
+// Size advancement (nível 0) p/ o tamanho-base da espécie (1 tamanho = aplica automático).
+function advSize(seed, code) {
+  return {
+    _id: mkId(seed + ":size"),
+    type: "Size", level: 0,
+    configuration: { sizes: [code] },
+    value: {}, flags: {}
+  };
+}
+
 /* -------------------------------------------- */
 /*  Item builders                               */
 /* -------------------------------------------- */
@@ -294,12 +331,18 @@ function raceItem(sp) {
   for ( const t of (sp.traits || []) ) {
     const item = featItem({ code: "SP-" + sp.code, name: t.name, desc: t.desc, level: 0, requirements: sp.name });
     item.system.type = { value: "race", subtype: "" }; // traço de espécie
-    if ( t.skillChoice ) item.system.advancement = [ advTraitSkill(`race:${sp.key}:${slug(t.name)}`, t.skillChoice) ];
+    const tSeed = `race:${sp.key}:${slug(t.name)}`;
+    const adv = [];
+    if ( t.skillChoice ) adv.push(advTraitSkill(tSeed, t.skillChoice));      // escolha de perícia
+    if ( t.grants?.length ) adv.push(advTrait(tSeed, 0, t.grants, []));      // proficiência fixa (ex.: saves:str)
+    if ( adv.length ) item.system.advancement = adv;
+    if ( t.effects?.length ) item.effects = [ raceEffect(item._id, tSeed, t.name, t.effects) ]; // bônus fixos (somam)
     writeDoc("op-features", item);
     (grantsByLevel[0] ??= []).push(uuid("op-features", item._id));
   }
   const advancement = [];
   if ( sp.asi ) advancement.push(advASI(seed, 0)); // +1/+1 ou +2 à escolha
+  if ( sp.size ) advancement.push(advSize(seed, sp.size)); // tamanho-base da espécie
   for ( const [lvl, uuids] of Object.entries(grantsByLevel) ) advancement.push(advItemGrant(seed, Number(lvl), uuids));
 
   // Variantes: o jogador escolhe 1 traço de variante na criação (nível 0).
@@ -307,7 +350,12 @@ function raceItem(sp) {
     const variantUuids = sp.variants.map(v => {
       const item = featItem({ code: "SP-" + sp.code + "-VAR", name: v.name, desc: v.html ?? v.desc, level: 0, requirements: `${sp.name} (Variante)` });
       item.system.type = { value: "race", subtype: "variant" }; // traço de variante de espécie
-      if ( v.skillChoice ) item.system.advancement = [ advTraitSkill(`race:${sp.key}:var:${v.key}`, v.skillChoice) ];
+      const vSeed = `race:${sp.key}:var:${v.key}`;
+      const adv = [];
+      if ( v.skillChoice ) adv.push(advTraitSkill(vSeed, v.skillChoice));
+      if ( v.grants?.length ) adv.push(advTrait(vSeed, 0, v.grants, []));
+      if ( adv.length ) item.system.advancement = adv;
+      if ( v.effects?.length ) item.effects = [ raceEffect(item._id, vSeed, v.name, v.effects) ]; // bônus fixos da variante (somam)
       writeDoc("op-features", item);
       return uuid("op-features", item._id);
     });

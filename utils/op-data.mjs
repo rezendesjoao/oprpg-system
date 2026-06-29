@@ -2745,6 +2745,7 @@ export const SPECIES = [
     "fly": 0,
     "darkvision": 0,
     "asi": true,
+    "size": "tiny",
     "description": "<p>Pequenas criaturas semelhantes aos humanos, com tamanho entre 10-15 centímetros. Possuem caudas peludas, cabeças grandes proporcionalmente e narizes pontudos. Naturalmente fortes apesar do tamanho diminuto, originários da Tribo Tontatta de Green Bit.</p>",
     "traits": [
       {
@@ -2753,7 +2754,8 @@ export const SPECIES = [
       },
       {
         "name": "Ingenuidade Anormal",
-        "desc": "<p>Recebem -10 em Testes de Atributo de Vontade (Intuição). Muito crédulos e acreditam facilmente em qualquer pessoa suspeita.</p>"
+        "desc": "<p>Recebem -10 em Testes de Atributo de Vontade (Intuição). Muito crédulos e acreditam facilmente em qualquer pessoa suspeita.</p>",
+        "effects": [{ "skill": "ins", "bonus": -10 }]
       },
       {
         "name": "Manufatura Reduzida",
@@ -2780,13 +2782,14 @@ export const SPECIES = [
       },
       {
         "name": "Anjos Caídos",
-        "desc": "<p>Recebem -2 em Testes de Destreza (Acrobacia) em altitudes inferiores a 5.000 metros do nível do mar, afetados pela distorção de equilíbrio em atmosferas mais densas.</p>"
+        "desc": "<p>Recebem -2 em Testes de Destreza (Acrobacia) em altitudes inferiores a 5.000 metros do nível do mar, afetados pela distorção de equilíbrio em atmosferas mais densas.</p>",
+        "effects": [{ "skill": "acr", "bonus": -2 }]
       }
     ],
     "variants": [
-      { "key": "birkans", "name": "Birkans", "desc": "<p><strong>Sacerdote Celestial:</strong> O celestial recebe +5 em Testes de Atributo de Presença (Atuação).</p>" },
-      { "key": "shandians", "name": "Shandians", "desc": "<p><strong>Guerreiro Celestial:</strong> O celestial recebe +5 em Testes de Atributo de Força (Atletismo).</p>" },
-      { "key": "skypeans", "name": "Skypeans", "desc": "<p><strong>Diplomata Celestial:</strong> O celestial recebe +5 em Testes de Atributo de Presença (Persuasão).</p>" }
+      { "key": "birkans", "name": "Birkans", "desc": "<p><strong>Sacerdote Celestial:</strong> O celestial recebe +5 em Testes de Atributo de Presença (Atuação).</p>", "effects": [{ "skill": "prf", "bonus": 5 }] },
+      { "key": "shandians", "name": "Shandians", "desc": "<p><strong>Guerreiro Celestial:</strong> O celestial recebe +5 em Testes de Atributo de Força (Atletismo).</p>", "effects": [{ "skill": "ath", "bonus": 5 }] },
+      { "key": "skypeans", "name": "Skypeans", "desc": "<p><strong>Diplomata Celestial:</strong> O celestial recebe +5 em Testes de Atributo de Presença (Persuasão).</p>", "effects": [{ "skill": "per", "bonus": 5 }] }
     ]
   },
   {
@@ -2799,15 +2802,18 @@ export const SPECIES = [
     "fly": 0,
     "darkvision": 0,
     "asi": true,
+    "size": "huge",
     "description": "<p>Humanoides colossos com 13-20 metros de altura, pesando 15-45 toneladas. Possuem proporções exageradas e traços faciais mais acentuados. Originários principalmente da ilha Elbaf, conhecidos por sua honra, orgulho guerreiro e código de combate nobre.</p>",
     "traits": [
       {
         "name": "Força Colossal",
-        "desc": "<p>Proficiente em Salvaguardas e Testes de Força, dobrando o Bônus de Proficiência. Características e Técnicas limitadas a criatures Grandes ou menores também afetam alvos Enormes.</p>"
+        "desc": "<p>Proficiente em Salvaguardas e Testes de Força, dobrando o Bônus de Proficiência. Características e Técnicas limitadas a criatures Grandes ou menores também afetam alvos Enormes.</p>",
+        "grants": ["saves:str"]
       },
       {
         "name": "Corpo Assustador",
-        "desc": "<p>Recebem +2 em Testes de Presença (Intimidação) devido à presença naturalmente impositiva.</p>"
+        "desc": "<p>Recebem +2 em Testes de Presença (Intimidação) devido à presença naturalmente impositiva.</p>",
+        "effects": [{ "skill": "itm", "bonus": 2 }]
       },
       {
         "name": "Necessidades Gigantescas",
@@ -2839,11 +2845,11 @@ export const SPECIES = [
     ],
     "variants": [
       { "key": "humanos-comuns", "name": "Humanos Comuns", "desc": "<p><strong>Aptidão Natural:</strong> Você escolhe uma perícia na qual possa usar o seu Bônus de Proficiência e dobra o seu Bônus de Proficiência.</p>", "skillChoice": { "count": 1, "mode": "expertise" } },
-      { "key": "humanozarroes", "name": "Humanozarrões", "desc": "<p><strong>Colosso:</strong> Seu tamanho aumenta para Grande e você recebe +2 em Salvaguardas de Força.</p>" },
-      { "key": "bracos-longos", "name": "Tribo Braços Longos", "desc": "<p><strong>Braços Especiais:</strong> Recebe alcance de 3 metros em jogadas de ataque (comum) corpo a corpo, quando utilizando os braços, e recebe +2 em Testes de Atributo de Destreza (Prestidigitação).</p>" },
+      { "key": "humanozarroes", "name": "Humanozarrões", "desc": "<p><strong>Colosso:</strong> Seu tamanho aumenta para Grande e você recebe +2 em Salvaguardas de Força.</p>", "effects": [{ "size": "lg" }, { "save": "str", "bonus": 2 }] },
+      { "key": "bracos-longos", "name": "Tribo Braços Longos", "desc": "<p><strong>Braços Especiais:</strong> Recebe alcance de 3 metros em jogadas de ataque (comum) corpo a corpo, quando utilizando os braços, e recebe +2 em Testes de Atributo de Destreza (Prestidigitação).</p>", "effects": [{ "skill": "slt", "bonus": 2 }] },
       { "key": "kujas", "name": "Tribo Kujas", "desc": "<p><strong>Cobra Companheira:</strong> Toda kuja recebe em seu nascimento uma cobra para acompanhá-la por toda a sua vida. Você escolhe o nome da cobra e ela entende tudo o que você falar, podendo realizar pequenas tarefas. Ela não recebe dano de nenhuma jogada de ataque (comum ou Técnicas) ou Salvaguarda que não a tenha explicitamente como alvo do atacante. Ela é totalmente obediente a você e, em combate, age no mesmo turno que você (usa a ficha \"Cobra Bélica\").</p><p>Uma vez durante o seu turno e sem gastar ações, você pode dar ordens à sua cobra:</p><ul><li><strong>Arco de Cobra:</strong> a cobra assume o formato de um arco e você pode usar flechas para fazer uma jogada de ataque (comum ou Técnicas) à distância com arma, podendo adicionar o Bônus de Proficiência na jogada de ataque (comum), alterar o modificador da jogada de ataque (comum ou Técnicas) e de dano para o seu atributo primário, e recebendo +2 nas jogadas de ataque (comum) e de dano.</li><li><strong>Restringir:</strong> a cobra se prende nos membros de uma criatura Grande ou menor, tornando-se algemas duras como aço; a criatura fica com a condição \"Incapacitado\" ou \"Agarrado\" e pode tentar encerrá-la com uma Salvaguarda de Força CD 16 no início de cada turno. Para isso, a cobra deve acertar uma jogada de ataque (comum) corpo a corpo, substituindo o dano por essa característica, e fica com a condição \"Impedido\" até encerrar o agarramento.</li></ul>" },
-      { "key": "pernas-longas", "name": "Tribo Pernas Longas", "desc": "<p><strong>Pernas Especiais:</strong> Alcance de 3 metros em jogadas de ataque (comum) corpo a corpo, quando utilizando as pernas, e seu deslocamento normal se torna 12 metros.</p>" },
-      { "key": "pescoco-de-cobra", "name": "Tribo Pescoço de Cobra", "desc": "<p><strong>Pescoço Esticado:</strong> Alcance de 3 metros em jogadas de ataque (comum) corpo a corpo, quando utilizando a cabeça, e +2 em Testes de Atributo de Vontade (Percepção) que dependam da visão.</p>" },
+      { "key": "pernas-longas", "name": "Tribo Pernas Longas", "desc": "<p><strong>Pernas Especiais:</strong> Alcance de 3 metros em jogadas de ataque (comum) corpo a corpo, quando utilizando as pernas, e seu deslocamento normal se torna 12 metros.</p>", "effects": [{ "move": "walk", "value": 12 }] },
+      { "key": "pescoco-de-cobra", "name": "Tribo Pescoço de Cobra", "desc": "<p><strong>Pescoço Esticado:</strong> Alcance de 3 metros em jogadas de ataque (comum) corpo a corpo, quando utilizando a cabeça, e +2 em Testes de Atributo de Vontade (Percepção) que dependam da visão.</p>", "effects": [{ "skill": "prc", "bonus": 2 }] },
       { "key": "tres-olhos", "name": "Tribo dos 3 Olhos (Três Olhos)", "desc": "<p><strong>Abrir os Olhos:</strong> O uso do terceiro olho possui uma conexão mística com o destino. Como resultado, você recebe proficiência em Testes de Atributo de Vontade — escolha entre Haki, Sobrenatural ou Sorte.</p>", "skillChoice": { "count": 1, "pool": ["Cont", "arc", "luc"] } }
     ],
     "flaws": [
@@ -2874,7 +2880,8 @@ export const SPECIES = [
       },
       {
         "name": "Manipulação do Fogo",
-        "desc": "<p>Enquanto o fogo nas costas se mantém: resistência a dano de fogo, iluminam até 6 metros com luz plena, podem manipular uma esfera de fogo a até 6 metros causando 1d4 de dano de fogo ao contato com criaturas ou combustão em objetos.</p>"
+        "desc": "<p>Enquanto o fogo nas costas se mantém: resistência a dano de fogo, iluminam até 6 metros com luz plena, podem manipular uma esfera de fogo a até 6 metros causando 1d4 de dano de fogo ao contato com criaturas ou combustão em objetos.</p>",
+        "effects": [{ "resist": "fire" }]
       },
       {
         "name": "Cabeça à Prêmio",
@@ -2908,9 +2915,9 @@ export const SPECIES = [
       }
     ],
     "variants": [
-      { "key": "ageis", "name": "Ágeis", "desc": "<p><strong>Corpo Leve:</strong> Seu deslocamento normal se torna 12 metros e seu deslocamento de escalada se torna 9 metros (caso receba outro deslocamento, prevalece o maior).</p>" },
-      { "key": "meaos", "name": "Meãos", "desc": "<p><strong>Estamina Animal:</strong> Seu deslocamento normal se torna 18 metros (caso receba outro deslocamento, prevalece o maior).</p>" },
-      { "key": "robustos", "name": "Robustos", "desc": "<p><strong>Pisada Firme:</strong> Seu deslocamento normal se torna 12 metros e não pode ser reduzido por terreno difícil (caso receba outro deslocamento, prevalece o maior).</p>" }
+      { "key": "ageis", "name": "Ágeis", "desc": "<p><strong>Corpo Leve:</strong> Seu deslocamento normal se torna 12 metros e seu deslocamento de escalada se torna 9 metros (caso receba outro deslocamento, prevalece o maior).</p>", "effects": [{ "move": "walk", "value": 12 }, { "move": "climb", "value": 9 }] },
+      { "key": "meaos", "name": "Meãos", "desc": "<p><strong>Estamina Animal:</strong> Seu deslocamento normal se torna 18 metros (caso receba outro deslocamento, prevalece o maior).</p>", "effects": [{ "move": "walk", "value": 18 }] },
+      { "key": "robustos", "name": "Robustos", "desc": "<p><strong>Pisada Firme:</strong> Seu deslocamento normal se torna 12 metros e não pode ser reduzido por terreno difícil (caso receba outro deslocamento, prevalece o maior).</p>", "effects": [{ "move": "walk", "value": 12 }] }
     ]
   },
   {
@@ -2940,7 +2947,7 @@ export const SPECIES = [
     ],
     "variants": [
       { "key": "homem-peixe", "name": "Homem-Peixe", "desc": "<p><strong>Corpo Marinho:</strong> De acordo com a criatura do mar que o personagem tenha como ancestral, o homem-peixe pode escolher 1 Traço Comum das Akuma no Mi Zoan (ignorando o requisito de forma original, híbrida ou animal), presentes no Capítulo 6, ou criadas pelo jogador, mas que devem ser aprovadas pelo Narrador.</p>" },
-      { "key": "sireno", "name": "Sireno", "desc": "<p><strong>Natação Superior:</strong> Os sirenos recebem 18 metros de nado e podem usar a ação \"Disparada\" como ação bônus enquanto estiverem nadando.</p>" }
+      { "key": "sireno", "name": "Sireno", "desc": "<p><strong>Natação Superior:</strong> Os sirenos recebem 18 metros de nado e podem usar a ação \"Disparada\" como ação bônus enquanto estiverem nadando.</p>", "effects": [{ "move": "swim", "value": 18 }] }
     ]
   },
   {

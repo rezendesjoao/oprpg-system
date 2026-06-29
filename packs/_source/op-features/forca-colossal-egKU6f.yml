@@ -13,6 +13,18 @@ system:
   requirements: Gigantes
   properties: []
   activities: {}
+  advancement:
+    - _id: 4yhbpdydDgZ0qMqU
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants:
+          - saves:str
+        choices: []
+        mode: default
+      value: {}
+      flags: {}
 effects: []
 folder: null
 _key: '!items!egKU6f2vwajglNne'

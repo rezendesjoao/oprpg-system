@@ -33,6 +33,14 @@ system:
         points: 2
       value: {}
       flags: {}
+    - _id: yzvuzZt165JoBdzC
+      type: Size
+      level: 0
+      configuration:
+        sizes:
+          - huge
+      value: {}
+      flags: {}
     - _id: kzk7iggkqlxh8dCK
       type: ItemGrant
       level: 0

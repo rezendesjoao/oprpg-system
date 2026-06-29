@@ -13,7 +13,24 @@ system:
   requirements: Gigantes
   properties: []
   activities: {}
-effects: []
+effects:
+  - _id: 3pHPNkRfqkNCz5nB
+    _key: '!items.effects!YpO2X8sxSKsKZGEc.3pHPNkRfqkNCz5nB'
+    name: Corpo Assustador
+    img: icons/svg/upgrade.svg
+    changes:
+      - key: system.skills.itm.bonuses.check
+        mode: 2
+        value: '2'
+        priority: 20
+    transfer: true
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      rounds: null
+      turns: null
+    flags: {}
 folder: null
 _key: '!items!YpO2X8sxSKsKZGEc'
 ownership:

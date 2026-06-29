@@ -13,7 +13,24 @@ system:
   requirements: Humanos (Variante)
   properties: []
   activities: {}
-effects: []
+effects:
+  - _id: CQPFtCUjj7OTv90b
+    _key: '!items.effects!ZXjhDGI45mK9i3Sz.CQPFtCUjj7OTv90b'
+    name: Tribo Pescoço de Cobra
+    img: icons/svg/upgrade.svg
+    changes:
+      - key: system.skills.prc.bonuses.check
+        mode: 2
+        value: '2'
+        priority: 20
+    transfer: true
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      rounds: null
+      turns: null
+    flags: {}
 folder: null
 _key: '!items!ZXjhDGI45mK9i3Sz'
 ownership:

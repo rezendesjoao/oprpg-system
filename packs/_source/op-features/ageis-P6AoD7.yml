@@ -13,7 +13,28 @@ system:
   requirements: Minks (Variante)
   properties: []
   activities: {}
-effects: []
+effects:
+  - _id: FkvB6HrI6KV5FVqU
+    _key: '!items.effects!P6AoD7oMcsYdTwkD.FkvB6HrI6KV5FVqU'
+    name: Ágeis
+    img: icons/svg/upgrade.svg
+    changes:
+      - key: system.attributes.movement.walk
+        mode: 4
+        value: '12'
+        priority: 20
+      - key: system.attributes.movement.climb
+        mode: 4
+        value: '9'
+        priority: 20
+    transfer: true
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      rounds: null
+      turns: null
+    flags: {}
 folder: null
 _key: '!items!P6AoD7oMcsYdTwkD'
 ownership:

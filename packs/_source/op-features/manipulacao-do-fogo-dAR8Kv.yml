@@ -13,7 +13,24 @@ system:
   requirements: Lunarianos
   properties: []
   activities: {}
-effects: []
+effects:
+  - _id: oTo70Zuz4q4le7pX
+    _key: '!items.effects!dAR8KvOmpFF9FwmR.oTo70Zuz4q4le7pX'
+    name: Manipulação do Fogo
+    img: icons/svg/upgrade.svg
+    changes:
+      - key: system.traits.dr.value
+        mode: 2
+        value: fire
+        priority: 20
+    transfer: true
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      rounds: null
+      turns: null
+    flags: {}
 folder: null
 _key: '!items!dAR8KvOmpFF9FwmR'
 ownership:

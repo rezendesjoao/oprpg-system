@@ -13,7 +13,24 @@ system:
   requirements: Celestiais
   properties: []
   activities: {}
-effects: []
+effects:
+  - _id: wFac4OBBQp7s2MVC
+    _key: '!items.effects!w5opiPQAIQzAJdDA.wFac4OBBQp7s2MVC'
+    name: Anjos Caídos
+    img: icons/svg/upgrade.svg
+    changes:
+      - key: system.skills.acr.bonuses.check
+        mode: 2
+        value: '-2'
+        priority: 20
+    transfer: true
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      rounds: null
+      turns: null
+    flags: {}
 folder: null
 _key: '!items!w5opiPQAIQzAJdDA'
 ownership:

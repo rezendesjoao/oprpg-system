@@ -13,7 +13,24 @@ system:
   requirements: Humanos (Variante)
   properties: []
   activities: {}
-effects: []
+effects:
+  - _id: oSUdUZkJc9fHtoRB
+    _key: '!items.effects!I9xJfR8G2atQ15S5.oSUdUZkJc9fHtoRB'
+    name: Tribo Braços Longos
+    img: icons/svg/upgrade.svg
+    changes:
+      - key: system.skills.slt.bonuses.check
+        mode: 2
+        value: '2'
+        priority: 20
+    transfer: true
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      rounds: null
+      turns: null
+    flags: {}
 folder: null
 _key: '!items!I9xJfR8G2atQ15S5'
 ownership:

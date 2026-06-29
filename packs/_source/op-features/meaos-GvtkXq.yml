@@ -13,7 +13,24 @@ system:
   requirements: Minks (Variante)
   properties: []
   activities: {}
-effects: []
+effects:
+  - _id: sAkj6dq8pcQyFNG7
+    _key: '!items.effects!GvtkXqyEZdp3gLYP.sAkj6dq8pcQyFNG7'
+    name: Meãos
+    img: icons/svg/upgrade.svg
+    changes:
+      - key: system.attributes.movement.walk
+        mode: 4
+        value: '18'
+        priority: 20
+    transfer: true
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      rounds: null
+      turns: null
+    flags: {}
 folder: null
 _key: '!items!GvtkXqyEZdp3gLYP'
 ownership:
