@@ -40,8 +40,8 @@ system:
     supply: 0
   properties: []
   activities:
-    opact0000000001:
-      _id: opact0000000001
+    Mi7MwwZixjmfQu7Z:
+      _id: Mi7MwwZixjmfQu7Z
       type: attack
       activation:
         type: action

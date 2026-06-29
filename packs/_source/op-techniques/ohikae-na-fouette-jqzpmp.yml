@@ -40,8 +40,8 @@ system:
     supply: 0
   properties: []
   activities:
-    opact0000000001:
-      _id: opact0000000001
+    wMP3SQExY2BAMdH7:
+      _id: wMP3SQExY2BAMdH7
       type: attack
       activation:
         type: action

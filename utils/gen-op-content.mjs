@@ -198,7 +198,7 @@ function featItem({ code, name, desc, level, requirements = "", uses = null }) {
 function techItem({ code, name, desc, grau, cost, ability = "str", kind = "attack", attackType = "melee",
                     damage = null, save = null, activation = "action", rangeUnits = "touch" }) {
   const _id = mkId(`tech:${code}:${slug(name)}:${grau}`);
-  const actId = "opact0000000001";
+  const actId = mkId(`tech:${code}:${slug(name)}:${grau}:act`); // 16 chars válidos (era "opact0000000001", 15 → inválido)
   const dmgParts = damage ? [{
     custom: { enabled: false, formula: "" },
     number: damage.number, denomination: damage.die, bonus: "",

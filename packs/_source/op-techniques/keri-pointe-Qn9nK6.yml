@@ -40,8 +40,8 @@ system:
     supply: 0
   properties: []
   activities:
-    opact0000000001:
-      _id: opact0000000001
+    cSRBpuC7BdPTe31l:
+      _id: cSRBpuC7BdPTe31l
       type: attack
       activation:
         type: action

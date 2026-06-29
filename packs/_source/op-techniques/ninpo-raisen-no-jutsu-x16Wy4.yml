@@ -40,8 +40,8 @@ system:
     supply: 0
   properties: []
   activities:
-    opact0000000001:
-      _id: opact0000000001
+    fu0NP5AMvg7lmlLg:
+      _id: fu0NP5AMvg7lmlLg
       type: save
       activation:
         type: action
