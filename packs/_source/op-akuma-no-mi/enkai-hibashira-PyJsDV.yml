@@ -1,0 +1,122 @@
+_id: PyJsDV9C6LQlBCD5
+name: 'Enkai: Hibashira'
+type: spell
+img: icons/magic/fire/flame-burning-campfire-orange.webp
+system:
+  description:
+    value: <p>Você cria um manto de chamas e libera um pilar de fogo contra seus inimigos, em qualquer direção. Toda criatura na área deve fazer uma Salvaguarda de Destreza, sofrendo todo o dano se falhar ou metade se obtiver sucesso.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Até 27 m de comprimento por 3 m de largura, Linha</p><p><strong>Requisito:</strong> Mera-Mera no Mi, Ação Poderosa</p><p><strong>Dano:</strong> 9d6 de dano de Fogo</p><p><strong>Custo:</strong> 9 PP</p>
+    chat: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: m
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    units: m
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 4
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties: []
+  activities:
+    K83ZjQMr8Cu81OCG:
+      _id: K83ZjQMr8Cu81OCG
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: attribute
+            target: energy.total
+            value: '9'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: m
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: m
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      sort: 0
+      name: ''
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: int
+          formula: ''
+      damage:
+        onSave: half
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 9
+            denomination: 6
+            bonus: ''
+            types:
+              - fire
+            scaling:
+              mode: ''
+              number: 1
+  identifier: enkai-hibashira
+  method: spell
+  prepared: 2
+effects: []
+folder: null
+_key: '!items!PyJsDV9C6LQlBCD5'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,107 @@
+_id: xY55QoLR1LdloEu4
+name: Shambles
+type: spell
+img: icons/magic/movement/chevrons-swirl-blue.webp
+system:
+  description:
+    value: '<p>Você troca de lugar qualquer criatura voluntária ou objeto dentro da "ROOM". Com criaturas/objetos Médios (ou menores), realiza um número de trocas igual ao seu modificador de Vontade (mínimo 1), simultaneamente. Uma criatura trocada não provoca reações de nenhum tipo.</p><p>Criaturas não voluntárias só podem ser movidas se surpresas ou sob "Despedaçado", falhando numa Salvaguarda de Vontade. Tamanhos maiores aumentam o custo: Grande +2 PP; Enorme +6 PP.</p><p><em>Alternativamente (Reação):</em> quando você ou uma criatura voluntária visível for alvo de uma jogada de ataque ou Salvaguarda, troque-a de lugar com outra criatura/objeto na "ROOM".</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Área dentro da "ROOM"</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Ação Bônus ou Reação</p><p><strong>Dano:</strong> Nenhum</p><p><strong>Custo:</strong> 2 PP</p>'
+    chat: ''
+  activation:
+    type: bonus
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: m
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    units: m
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 1
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties: []
+  activities:
+    zCfniLCCvZ5Xpxri:
+      _id: zCfniLCCvZ5Xpxri
+      type: utility
+      activation:
+        type: bonus
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: attribute
+            target: energy.total
+            value: '2'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: m
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: m
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      sort: 0
+      name: ''
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+  identifier: shambles
+  method: spell
+  prepared: 2
+effects: []
+folder: null
+_key: '!items!xY55QoLR1LdloEu4'
+ownership:
+  default: 0
+flags: {}

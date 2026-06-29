@@ -1,0 +1,126 @@
+_id: VICyBkVYD4aGDIGi
+name: Injection Shot
+type: spell
+img: icons/skills/melee/strike-dagger-arcane-blue.webp
+system:
+  description:
+    value: <p>Você cria uma mira mental e apunhala uma única criatura com velocidade tão alta que se assemelha ao impacto de uma munição de pistola. Esta técnica <strong>não tem chance de errar</strong>.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Arma Cortante, Ação Poderosa</p><p><strong>Dano:</strong> 7d10 de dano Verdadeiro</p><p><strong>Custo:</strong> 9 PP</p>
+    chat: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: m
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    units: touch
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 3
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties: []
+  activities:
+    jx2jlAagU1KTUSM7:
+      _id: jx2jlAagU1KTUSM7
+      type: attack
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: attribute
+            target: energy.total
+            value: '9'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: touch
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: m
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      sort: 0
+      name: ''
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      attack:
+        ability: int
+        bonus: ''
+        critical:
+          threshold: 20
+        flat: false
+        type:
+          value: melee
+          classification: spell
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 7
+            denomination: 10
+            bonus: ''
+            types: []
+            scaling:
+              mode: ''
+              number: 1
+  identifier: injection-shot
+  method: spell
+  prepared: 2
+effects: []
+folder: null
+_key: '!items!VICyBkVYD4aGDIGi'
+ownership:
+  default: 0
+flags: {}

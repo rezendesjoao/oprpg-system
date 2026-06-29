@@ -1,0 +1,107 @@
+_id: xHWs1MStKevzOyHZ
+name: K-ROOM
+type: spell
+img: icons/magic/control/energy-stream-link-blue.webp
+system:
+  description:
+    value: '<p>Técnica Auxiliar. Ao usar a Manifestação "ROOM", você pode usar esta técnica no lugar. A "K-ROOM" concentra a "ROOM" em uma arma cortante à sua escolha, que pode ser estendida por até 60 metros em linha. Qualquer técnica da Ope-Ope no Mi é ativada na arma, com o alcance da arma e afetando apenas um alvo, recebendo: o dado de dano vira d12; o resultado é sempre o máximo; o dano da técnica aumenta em 5 dados. Enquanto ativa, você não pode usar a "ROOM".</p><hr><p><strong>Duração:</strong> Até 1 minuto</p><p><strong>Alcance:</strong> Toque (arma até 60 m em linha)</p><p><strong>Requisito:</strong> Ope-Ope no Mi, Ação Bônus</p><p><strong>Custo:</strong> 15 PP</p>'
+    chat: ''
+  activation:
+    type: bonus
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: m
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    units: touch
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 7
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties: []
+  activities:
+    xnIZDeLi8v4MZqgP:
+      _id: xnIZDeLi8v4MZqgP
+      type: utility
+      activation:
+        type: bonus
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: attribute
+            target: energy.total
+            value: '15'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: touch
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: m
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      sort: 0
+      name: ''
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+  identifier: k-room
+  method: spell
+  prepared: 2
+effects: []
+folder: null
+_key: '!items!xHWs1MStKevzOyHZ'
+ownership:
+  default: 0
+flags: {}

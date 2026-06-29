@@ -1,0 +1,107 @@
+_id: 9JZLGc9TkZTHwUNJ
+name: Hikyaku
+type: spell
+img: icons/magic/movement/trail-streak-impact-orange.webp
+system:
+  description:
+    value: <p>Técnica Auxiliar. Você impulsiona os próprios pés com fogo, garantindo 15 metros de deslocamento de voo enquanto a técnica durar.</p><hr><p><strong>Duração:</strong> Até o início do seu próximo turno</p><p><strong>Alcance:</strong> Pessoal</p><p><strong>Requisito:</strong> Mera-Mera no Mi, Ação Bônus</p><p><strong>Custo:</strong> 2 PP</p>
+    chat: ''
+  activation:
+    type: bonus
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: m
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 1
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties: []
+  activities:
+    Q3jVCyNRFejDIVkG:
+      _id: Q3jVCyNRFejDIVkG
+      type: utility
+      activation:
+        type: bonus
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: attribute
+            target: energy.total
+            value: '2'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: m
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      sort: 0
+      name: ''
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+  identifier: hikyaku
+  method: spell
+  prepared: 2
+effects: []
+folder: null
+_key: '!items!9JZLGc9TkZTHwUNJ'
+ownership:
+  default: 0
+flags: {}

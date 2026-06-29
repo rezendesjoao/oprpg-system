@@ -1,0 +1,107 @@
+_id: MwaU31JLmKwGJ4eb
+name: Radio Knife
+type: spell
+img: icons/magic/lightning/bolt-blue.webp
+system:
+  description:
+    value: <p>Técnica Auxiliar. Ao usar "Amputate", você imbui na lâmina uma grande carga elétrica que dificulta colar os pedaços separados. Uma criatura afetada só volta ao normal se passar em uma Salvaguarda de Vontade, em conjunto com a tentativa de remontagem.</p><hr><p><strong>Duração:</strong> Até 1 minuto</p><p><strong>Alcance:</strong> Área dentro da "ROOM"</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", usar a técnica "Amputate"</p><p><strong>Custo:</strong> 2 PP</p>
+    chat: ''
+  activation:
+    type: special
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: m
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    units: m
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 2
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties: []
+  activities:
+    fK3RCvBP6e6FNA9o:
+      _id: fK3RCvBP6e6FNA9o
+      type: utility
+      activation:
+        type: special
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: attribute
+            target: energy.total
+            value: '2'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: m
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: m
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      sort: 0
+      name: ''
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+  identifier: radio-knife
+  method: spell
+  prepared: 2
+effects: []
+folder: null
+_key: '!items!MwaU31JLmKwGJ4eb'
+ownership:
+  default: 0
+flags: {}

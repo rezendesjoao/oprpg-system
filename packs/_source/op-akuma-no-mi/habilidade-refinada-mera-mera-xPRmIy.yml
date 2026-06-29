@@ -1,0 +1,21 @@
+_id: xPRmIydqid4bKgHT
+name: Habilidade Refinada (Mera-Mera)
+type: feat
+img: icons/magic/fire/flame-burning-hand-orange.webp
+system:
+  description:
+    value: <p><strong>Manifestação de Poder.</strong> Ao executar uma técnica que possua a Akuma no Mi como requisito, você escolhe uma das seguintes características:</p><ul><li>Receber vantagem na jogada de ataque executada diretamente pela técnica;</li><li>Impor desvantagem em uma Salvaguarda qualquer;</li><li>Escolher quais criaturas são afetadas dentro da área da técnica.</li></ul>
+    chat: ''
+  identifier: habilidade-refinada-mera-mera
+  type:
+    value: feat
+    subtype: ''
+  requirements: Mera-Mera no Mi (Fruto das Chamas)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!xPRmIydqid4bKgHT'
+ownership:
+  default: 0
+flags: {}

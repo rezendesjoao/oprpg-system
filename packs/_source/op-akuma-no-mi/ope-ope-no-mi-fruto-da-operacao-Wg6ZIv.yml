@@ -1,0 +1,24 @@
+_id: Wg6ZIvzsGePxyX2F
+name: Ope-Ope no Mi (Fruto da Operação)
+type: akumaNoMi
+img: icons/magic/light/explosion-star-glow-blue.webp
+system:
+  description:
+    value: '<p><strong>Akuma no Mi — Paramecia (Operação).</strong> Conhecida como a "Akuma no Mi Suprema". Dentro de uma "ROOM", o usuário manipula tudo livremente: troca, corta, opera e transforma. Usuário Paramecia Avançado.</p><p><strong>Aspecto Inato — Uso Alternativo:</strong> uma vez por descanso longo, use uma Técnica de qualquer grau ou Auxiliar sem gastar PP, desde que a duração seja "Instantânea".</p><hr><p><em>Fraqueza:</em> Água do mar e Kairoseki causam <strong>Enfraquecido</strong>. Despertar disponível a partir do 16º nível.</p>'
+    chat: ''
+  category: paramecia
+  archetype: advanced
+  aspectoInato: Uso Alternativo — uma vez por descanso longo, você pode usar uma Técnica de qualquer grau ou uma Técnica Auxiliar sem gastar nenhum Ponto de Poder, desde que o requisito de duração seja "Instantânea".
+  property: Espaço-Temporal
+  mpSlots: 12
+  awakening:
+    unlocked: true
+  weaknesses:
+    seawater: true
+    naturalEnemy: ''
+effects: []
+folder: null
+_key: '!items!Wg6ZIvzsGePxyX2F'
+ownership:
+  default: 0
+flags: {}

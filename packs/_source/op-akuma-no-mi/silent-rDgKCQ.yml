@@ -1,0 +1,107 @@
+_id: rDgKCQx7e3gMUNoY
+name: Silent
+type: spell
+img: icons/magic/control/no-speak-mute-gag-blue.webp
+system:
+  description:
+    value: <p>Você escolhe uma criatura afetada pela "R-ROOM", fazendo com que ela não possa usar nenhuma técnica ou característica que consuma Pontos de Poder ou tenha limitação de usos por dia — mesmo as que anulam poderes de Akuma no Mi.</p><hr><p><strong>Duração:</strong> Até 1 minuto</p><p><strong>Alcance:</strong> Especial</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "R-ROOM", Ação Poderosa</p><p><strong>Dano:</strong> Nenhum</p><p><strong>Custo:</strong> 12 PP</p>
+    chat: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: m
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    units: special
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 6
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties: []
+  activities:
+    EMOV5bnj2W2VRSGw:
+      _id: EMOV5bnj2W2VRSGw
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: attribute
+            target: energy.total
+            value: '12'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: special
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: m
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      sort: 0
+      name: ''
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+  identifier: silent
+  method: spell
+  prepared: 2
+effects: []
+folder: null
+_key: '!items!rDgKCQx7e3gMUNoY'
+ownership:
+  default: 0
+flags: {}

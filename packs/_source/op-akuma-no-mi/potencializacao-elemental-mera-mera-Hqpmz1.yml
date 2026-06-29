@@ -1,0 +1,21 @@
+_id: Hqpmz1YFVizGfxrv
+name: Potencialização Elemental (Mera-Mera)
+type: feat
+img: icons/magic/fire/flame-burning-creature-orange.webp
+system:
+  description:
+    value: '<p><strong>Manifestação de Poder.</strong> Sempre que usar uma técnica da Akuma no Mi, você pode usar sua ação bônus e escolher um dos seguintes efeitos:</p><ul><li>Se a técnica causar dano, impor uma condição (condizente com o elemento e que custe até 2 PP) em até 3 criaturas que falhem em uma Salvaguarda de Constituição, desde que já tenham falhado em uma primeira Salvaguarda ou sido atingidas pela jogada de ataque da técnica;</li><li>Alcance "Cone": aumenta a área em 6 metros;</li><li>Alcance "Esfera" ou "Cilindro": aumenta a área em 3 metros;</li><li>Alcance "Linha": aumenta a distância em 9 metros;</li><li>Tipo de dano diferente de "Contundente": aumenta em um dado o dano da técnica.</li></ul>'
+    chat: ''
+  identifier: potencializacao-elemental-mera-mera
+  type:
+    value: feat
+    subtype: ''
+  requirements: Mera-Mera no Mi (Fruto das Chamas)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!Hqpmz1YFVizGfxrv'
+ownership:
+  default: 0
+flags: {}

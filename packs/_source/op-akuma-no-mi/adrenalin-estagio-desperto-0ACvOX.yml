@@ -1,0 +1,21 @@
+_id: 0ACvOX7gdPUlPF6l
+name: Adrenalin (Estágio Desperto)
+type: feat
+img: icons/magic/life/heart-cross-blue.webp
+system:
+  description:
+    value: <p><strong>Manifestação de Poder — apenas no Estágio Desperto.</strong> Você usa a "ROOM" de forma modificada e instantânea dentro do próprio corpo, recuperando 1 Ponto de Poder para cada 6 Pontos de Vida sacrificados. Você pode recuperar até 10 PP por turno com esta característica.</p>
+    chat: ''
+  identifier: adrenalin-estagio-desperto
+  type:
+    value: feat
+    subtype: ''
+  requirements: Ope-Ope no Mi (Fruto da Operação)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!0ACvOX7gdPUlPF6l'
+ownership:
+  default: 0
+flags: {}

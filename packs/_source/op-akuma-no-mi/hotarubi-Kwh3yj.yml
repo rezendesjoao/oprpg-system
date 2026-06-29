@@ -1,0 +1,107 @@
+_id: Kwh3yj71w41zm9Eg
+name: Hotarubi
+type: spell
+img: icons/magic/light/orbs-firefly-glow-green.webp
+system:
+  description:
+    value: <p>Técnica Auxiliar. Você cria pequenas chamas esverdeadas, parecidas com vaga-lumes, que flutuam ao seu redor e se movem com você. Toda a área é iluminada com luz plena, mais 6 metros de raio de penumbra. Habilita a técnica "Hidaruma".</p><hr><p><strong>Duração:</strong> Até 1 minuto</p><p><strong>Alcance:</strong> Até 6 metros de raio, Esfera</p><p><strong>Requisito:</strong> Mera-Mera no Mi, Ação Bônus</p><p><strong>Custo:</strong> 4 PP</p>
+    chat: ''
+  activation:
+    type: bonus
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: m
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    units: m
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 3
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties: []
+  activities:
+    fRdWxJPzMsImYGHG:
+      _id: fRdWxJPzMsImYGHG
+      type: utility
+      activation:
+        type: bonus
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: attribute
+            target: energy.total
+            value: '4'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: m
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: m
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      sort: 0
+      name: ''
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+  identifier: hotarubi
+  method: spell
+  prepared: 2
+effects: []
+folder: null
+_key: '!items!Kwh3yj71w41zm9Eg'
+ownership:
+  default: 0
+flags: {}

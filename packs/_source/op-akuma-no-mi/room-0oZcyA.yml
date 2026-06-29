@@ -1,0 +1,21 @@
+_id: 0oZcyACEnpf7Ycyf
+name: ROOM
+type: feat
+img: icons/magic/light/explosion-star-glow-blue-purple.webp
+system:
+  description:
+    value: <p><strong>Manifestação de Poder.</strong> Com uma ação bônus, você cria uma redoma transparente e intangível que possibilita executar todas as técnicas da Ope-Ope no Mi e determina o alcance máximo de algumas delas.</p><p>A "ROOM" dura até que você a desfaça (sem ação). O raio é de <strong>3 metros × o nível do personagem</strong>, com ponto de origem no espaço onde você estava ao criá-la.</p><p>Alternativamente, você pode usar esta manifestação até 3 vezes por dia (apenas uma vez por turno), em conjunto com uma técnica, sem ação bônus. Recupera todos os usos ao término de um descanso longo.</p>
+    chat: ''
+  identifier: room
+  type:
+    value: feat
+    subtype: ''
+  requirements: Ope-Ope no Mi (Fruto da Operação)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!0oZcyACEnpf7Ycyf'
+ownership:
+  default: 0
+flags: {}

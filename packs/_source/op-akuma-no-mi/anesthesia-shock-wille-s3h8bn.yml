@@ -1,0 +1,126 @@
+_id: s3h8bnai0CWiC3Hk
+name: 'Anesthesia: Shock Wille'
+type: spell
+img: icons/magic/lightning/bolt-strike-sword-blue.webp
+system:
+  description:
+    value: <p>Você atravessa um inimigo com uma lâmina, em uma jogada de ataque corpo-a-corpo, o que não o fere — mas permite causar uma descarga elétrica diretamente no corpo da criatura, sem nenhuma defesa. Qualquer redução de dano de Haki do Armamento ou Pontos de Vida temporários é ignorada.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "K-ROOM", Arma Cortante, Ação Poderosa</p><p><strong>Dano:</strong> 21d10 de dano Verdadeiro</p><p><strong>Custo:</strong> 21 PP</p>
+    chat: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: m
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    units: touch
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 7
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties: []
+  activities:
+    lQik4PKgutDQxaAt:
+      _id: lQik4PKgutDQxaAt
+      type: attack
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: attribute
+            target: energy.total
+            value: '21'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: touch
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: m
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      sort: 0
+      name: ''
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      attack:
+        ability: int
+        bonus: ''
+        critical:
+          threshold: 20
+        flat: false
+        type:
+          value: melee
+          classification: spell
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 21
+            denomination: 10
+            bonus: ''
+            types: []
+            scaling:
+              mode: ''
+              number: 1
+  identifier: anesthesia-shock-wille
+  method: spell
+  prepared: 2
+effects: []
+folder: null
+_key: '!items!s3h8bnai0CWiC3Hk'
+ownership:
+  default: 0
+flags: {}

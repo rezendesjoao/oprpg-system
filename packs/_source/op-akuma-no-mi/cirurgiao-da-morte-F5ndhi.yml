@@ -1,0 +1,21 @@
+_id: F5ndhia4zKolIIjk
+name: Cirurgião da Morte
+type: feat
+img: icons/tools/cooking/knife-cleaver-steel-grey.webp
+system:
+  description:
+    value: '<p><strong>Manifestação de Poder.</strong> Com a profissão "Médico" (principal ou auxiliar, graduação Especialista ou maior), você cura qualquer doença, "Ferimento Persistente" (Cap. 12) e realiza cirurgias dentro da sua "ROOM" (o Narrador decide a duração).</p><p>Você também pode realizar o maior poder da fruta: garantir a juventude eterna a outra pessoa por meio de uma cirurgia — ao final dela, a vida do usuário é consumida.</p>'
+    chat: ''
+  identifier: cirurgiao-da-morte
+  type:
+    value: feat
+    subtype: ''
+  requirements: Ope-Ope no Mi (Fruto da Operação)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!F5ndhia4zKolIIjk'
+ownership:
+  default: 0
+flags: {}

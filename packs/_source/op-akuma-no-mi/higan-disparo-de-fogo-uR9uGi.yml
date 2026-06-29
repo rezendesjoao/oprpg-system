@@ -1,0 +1,122 @@
+_id: uR9uGizbc1G4fmMT
+name: Higan (Disparo de Fogo)
+type: spell
+img: icons/magic/fire/projectile-bolt-orange.webp
+system:
+  description:
+    value: <p>Apontando seus dedos, você dispara balas de fogo contra seus inimigos. Toda criatura na área deve fazer uma Salvaguarda de Destreza, sofrendo todo o dano se falhar ou metade se obtiver sucesso.</p><p><em>Alternativamente:</em> você pode focar em uma única criatura, fazendo uma jogada de ataque à distância (9 metros, em linha) que causa 2d10 de dano de Fogo.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Até 12 metros, Cone</p><p><strong>Requisito:</strong> Mera-Mera no Mi, Ação Poderosa</p><p><strong>Dano:</strong> 2d6 de dano de Fogo</p><p><strong>Custo:</strong> 2 PP</p>
+    chat: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: m
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    units: m
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 1
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties: []
+  activities:
+    QE51uYzZhKk2tS8O:
+      _id: QE51uYzZhKk2tS8O
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: attribute
+            target: energy.total
+            value: '2'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: m
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: m
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      sort: 0
+      name: ''
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: int
+          formula: ''
+      damage:
+        onSave: half
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 2
+            denomination: 6
+            bonus: ''
+            types:
+              - fire
+            scaling:
+              mode: ''
+              number: 1
+  identifier: higan-disparo-de-fogo
+  method: spell
+  prepared: 2
+effects: []
+folder: null
+_key: '!items!uR9uGizbc1G4fmMT'
+ownership:
+  default: 0
+flags: {}

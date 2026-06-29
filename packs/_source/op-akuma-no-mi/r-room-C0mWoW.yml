@@ -1,0 +1,107 @@
+_id: C0mWoWh9I21DWQ4v
+name: R-ROOM
+type: spell
+img: icons/magic/control/energy-stream-link-large-blue.webp
+system:
+  description:
+    value: <p>Técnica Auxiliar. Ao usar a Manifestação "ROOM", você pode usar esta técnica no lugar. A "R-ROOM" concentra a "ROOM" em uma única criatura visível dentro do alcance, movendo-se junto com ela. Qualquer técnica da Ope-Ope no Mi é ativada remotamente dentro da "R-ROOM", fazendo a criatura falhar em qualquer Salvaguarda contra seus efeitos. Enquanto a "R-ROOM" estiver ativa, você não pode usar a "ROOM".</p><hr><p><strong>Duração:</strong> Até 1 minuto, Concentração</p><p><strong>Alcance:</strong> Até 39 metros, Linha</p><p><strong>Requisito:</strong> Ope-Ope no Mi, Ação Bônus</p><p><strong>Custo:</strong> 10 PP</p>
+    chat: ''
+  activation:
+    type: bonus
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: m
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    units: m
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 6
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties: []
+  activities:
+    MrsPGbeS5GkkRSos:
+      _id: MrsPGbeS5GkkRSos
+      type: utility
+      activation:
+        type: bonus
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: attribute
+            target: energy.total
+            value: '10'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: m
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: m
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      sort: 0
+      name: ''
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+  identifier: r-room
+  method: spell
+  prepared: 2
+effects: []
+folder: null
+_key: '!items!C0mWoWh9I21DWQ4v'
+ownership:
+  default: 0
+flags: {}

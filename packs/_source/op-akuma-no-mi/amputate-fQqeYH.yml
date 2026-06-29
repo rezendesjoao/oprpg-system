@@ -1,0 +1,116 @@
+_id: fQqeYHgpmfuH7ezx
+name: Amputate
+type: spell
+img: icons/skills/melee/strike-blade-knife-white-red.webp
+system:
+  description:
+    value: <p>Você realiza vários cortes que separam seu alvo sem causar dano. Faça uma jogada de ataque à distância contra uma criatura na "ROOM". Se acertar, a criatura deve ser bem-sucedida em uma Salvaguarda de Destreza ou sofre a condição "Despedaçado", até que ela ou uma criatura próxima use uma ação para montá-la novamente.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Área dentro da "ROOM"</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Arma Cortante, Ação Poderosa</p><p><strong>Dano:</strong> Nenhum (impõe "Despedaçado")</p><p><strong>Custo:</strong> 4 PP</p>
+    chat: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: m
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    units: m
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 2
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties: []
+  activities:
+    2Vj2gWzbg8B4bqSG:
+      _id: 2Vj2gWzbg8B4bqSG
+      type: attack
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: attribute
+            target: energy.total
+            value: '4'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: m
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: m
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      sort: 0
+      name: ''
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      attack:
+        ability: int
+        bonus: ''
+        critical:
+          threshold: 20
+        flat: false
+        type:
+          value: ranged
+          classification: spell
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts: []
+  identifier: amputate
+  method: spell
+  prepared: 2
+effects: []
+folder: null
+_key: '!items!fQqeYHgpmfuH7ezx'
+ownership:
+  default: 0
+flags: {}

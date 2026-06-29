@@ -13,7 +13,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import YAML from "js-yaml";
-import { CLASSES, SPECIES, BACKGROUNDS, CAMINHOS, SINGULARIDADES, DEFEITOS, CODIGOS, PROFISSOES, EQUIPMENT } from "./op-data.mjs";
+import { CLASSES, SPECIES, BACKGROUNDS, CAMINHOS, SINGULARIDADES, DEFEITOS, CODIGOS, PROFISSOES, EQUIPMENT, AKUMAS } from "./op-data.mjs";
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SRC = path.join(ROOT, "packs", "_source");
@@ -58,7 +58,7 @@ function slug(s) { return String(s).toLowerCase().normalize("NFD").replace(/[̀-
 const written = {
   "op-classes": 0, "op-subclasses": 0, "op-features": 0, "op-techniques": 0, "op-species": 0,
   "op-backgrounds": 0, "op-caminhos": 0, "op-singularidades": 0, "op-defeitos": 0, "op-codigos": 0,
-  "op-profissoes": 0, "op-equipment": 0
+  "op-profissoes": 0, "op-equipment": 0, "op-akuma-no-mi": 0
 };
 function writeDoc(pack, doc) {
   const dir = path.join(SRC, pack);
@@ -211,10 +211,12 @@ function techItem({ code, name, desc, grau, cost, ability = "str", kind = "attac
                     damage = null, save = null, activation = "action", rangeUnits = "touch" }) {
   const _id = mkId(`tech:${code}:${slug(name)}:${grau}`);
   const actId = mkId(`tech:${code}:${slug(name)}:${grau}:act`); // 16 chars válidos (era "opact0000000001", 15 → inválido)
+  // "true" (dano Verdadeiro) e "" viram dano sem tipo (não reduzido por resistência).
+  const dmgTypes = !damage ? [] : (damage.type === "true" || damage.type === "") ? [] : [damage.type || "bludgeoning"];
   const dmgParts = damage ? [{
     custom: { enabled: false, formula: "" },
     number: damage.number, denomination: damage.die, bonus: "",
-    types: [damage.type || "bludgeoning"],
+    types: dmgTypes,
     scaling: { mode: "", number: 1 }
   }] : [];
 
@@ -239,10 +241,12 @@ function techItem({ code, name, desc, grau, cost, ability = "str", kind = "attac
     activity.attack = { ability, bonus: "", critical: { threshold: 20 }, flat: false,
       type: { value: attackType, classification: "spell" } };
     activity.damage = { critical: { bonus: "" }, includeBase: true, parts: dmgParts };
-  } else { // save: schema de dano diferente (onSave + parts, sem includeBase/critical)
+  } else if ( kind === "save" ) { // save: schema de dano diferente (onSave + parts, sem includeBase/critical)
     activity.save = { ability: save?.targetAbility ? [save.targetAbility] : ["con"],
       dc: { calculation: ability, formula: "" } };
     activity.damage = { onSave: "half", parts: dmgParts };
+  } else { // utility — sem ataque/salvaguarda/dano; só consome PP e posta a descrição
+    activity.roll = { formula: "", name: "", prompt: false, visible: false };
   }
 
   return {
@@ -540,6 +544,50 @@ function equipmentItem(e) {
 }
 
 /* -------------------------------------------- */
+/*  Akuma no Mi (Frutas do Diabo)               */
+/* -------------------------------------------- */
+
+// Item de fruta (type "akumaNoMi"). A ficha deriva system.devilFruit dele.
+function akumaItem(fruit) {
+  const _id = mkId(`akuma:${fruit.code}`);
+  return {
+    _id, name: fruit.name, type: "akumaNoMi",
+    img: fruit.img || "icons/svg/item-bag.svg",
+    system: {
+      description: { value: fruit.description || `<p>${fruit.name}</p>`, chat: "" },
+      category: fruit.category || "paramecia",
+      archetype: fruit.archetype || "advanced",
+      aspectoInato: fruit.aspectoInato || "",
+      property: fruit.property || "",
+      mpSlots: fruit.mpSlots ?? 0,
+      awakening: { unlocked: fruit.awakening === true },
+      weaknesses: { seawater: fruit.weaknesses?.seawater ?? true, naturalEnemy: fruit.weaknesses?.naturalEnemy ?? "" }
+    },
+    effects: [], folder: null
+  };
+}
+
+// Gera a fruta + suas Técnicas (spell, automatizadas) + Manifestações (feat), todas no pack op-akuma-no-mi.
+function writeAkuma(fruit) {
+  writeDoc("op-akuma-no-mi", akumaItem(fruit));
+  for ( const t of (fruit.tecnicas || []) ) {
+    const item = techItem({
+      code: "AK-" + fruit.code, name: t.name, desc: t.desc, grau: t.grau, cost: t.cost,
+      ability: t.ability || "int", kind: t.kind || "utility", attackType: t.attackType || "melee",
+      damage: t.damage, save: t.save, activation: t.activation || "action", rangeUnits: t.rangeUnits || "touch"
+    });
+    if ( t.img ) item.img = t.img;
+    writeDoc("op-akuma-no-mi", item);
+  }
+  for ( const m of (fruit.manifestacoes || []) ) {
+    const item = featItem({ code: "AK-" + fruit.code, name: m.name, desc: m.desc, level: 0, requirements: fruit.name, uses: m.uses ? mkUses(m.uses) : null });
+    item.system.type = { value: "feat", subtype: "" };
+    if ( m.img ) item.img = m.img;
+    writeDoc("op-akuma-no-mi", item);
+  }
+}
+
+/* -------------------------------------------- */
 /*  Run                                         */
 /* -------------------------------------------- */
 
@@ -564,5 +612,8 @@ for ( const p of PROFISSOES )      writeDoc("op-profissoes",     personalizacaoI
 
 // Capítulo 8 — Equipamentos
 for ( const e of EQUIPMENT )       writeDoc("op-equipment",      equipmentItem(e));
+
+// Akuma no Mi — frutas + técnicas automatizadas + manifestações
+for ( const fruit of AKUMAS )      writeAkuma(fruit);
 
 console.log("Gerado:", JSON.stringify(written, null, 0));

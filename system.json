@@ -118,6 +118,14 @@
       "flags": { "OnePiece": { "types": ["weapon", "consumable", "loot", "equipment"] } }
     },
     {
+      "name": "op-akuma-no-mi",
+      "label": "Akuma no Mi (Frutas do Diabo)",
+      "path": "packs/op-akuma-no-mi",
+      "type": "Item",
+      "system": "onepiece-system",
+      "flags": { "OnePiece": { "types": ["akumaNoMi", "spell", "feat"] } }
+    },
+    {
       "name": "tecnicas-manipulacao",
       "label": "Técnicas (Exemplos)",
       "path": "packs/tecnicas-manipulacao",

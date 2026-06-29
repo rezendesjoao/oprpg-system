@@ -5697,3 +5697,184 @@ export const EQUIPMENT = [
     "desc": "<p>Alimento balanceado para diversas espécies animais. Sacia por 1 dia.</p><p><em>Raridade: Comum.</em></p>"
   }
 ];
+
+/* ============================================================
+   AKUMA NO MI (Frutas do Diabo) — compêndio op-akuma-no-mi
+   Cada fruta gera: o item akumaNoMi + Técnicas (spell, automatizadas
+   com consumo de PP) + Manifestações de Poder (feat).
+   Atributo de conjuração das técnicas: Vontade (int).
+   ============================================================ */
+export const AKUMAS = [
+  /* ---------------- MERA-MERA NO MI (Logia / Fogo) ---------------- */
+  {
+    code: "MERA",
+    name: "Mera-Mera no Mi (Fruto das Chamas)",
+    img: "icons/magic/fire/flame-burning-fist-orange.webp",
+    category: "logia",
+    archetype: "advanced",
+    aspectoInato: "Intangibilidade — o corpo do usuário se transforma em fogo; não pode ser tocado por ataques comuns, exceto os fortalecidos com Haki do Armamento, com Kairoseki, ou desferidos pelo inimigo natural (Água / Magma).",
+    property: "Transformação",
+    mpSlots: 12,
+    awakening: true,
+    weaknesses: { seawater: true, naturalEnemy: "Água / Magma" },
+    description: `<p><strong>Akuma no Mi — Logia (Fogo).</strong> O usuário se torna, cria e controla fogo à vontade. Usuário Logia Avançado.</p><p><strong>Aspecto Inato — Intangibilidade:</strong> o corpo do usuário se transforma no elemento do fruto sempre que quiser; não pode ser tocado por ataques comuns (mesmo os que ignoram Resistência e Invulnerabilidade), exceto aqueles fortalecidos com Haki do Armamento, com Kairoseki, ou desferidos pelo inimigo natural.</p><hr><p><em>Fraqueza:</em> Água do mar e Kairoseki causam <strong>Enfraquecido</strong>. Inimigo natural: Água / Magma. Despertar disponível a partir do 16º nível.</p>`,
+    manifestacoes: [
+      {
+        name: "Habilidade Refinada (Mera-Mera)",
+        img: "icons/magic/fire/flame-burning-hand-orange.webp",
+        desc: `<p><strong>Manifestação de Poder.</strong> Ao executar uma técnica que possua a Akuma no Mi como requisito, você escolhe uma das seguintes características:</p><ul><li>Receber vantagem na jogada de ataque executada diretamente pela técnica;</li><li>Impor desvantagem em uma Salvaguarda qualquer;</li><li>Escolher quais criaturas são afetadas dentro da área da técnica.</li></ul>`
+      },
+      {
+        name: "Potencialização Elemental (Mera-Mera)",
+        img: "icons/magic/fire/flame-burning-creature-orange.webp",
+        desc: `<p><strong>Manifestação de Poder.</strong> Sempre que usar uma técnica da Akuma no Mi, você pode usar sua ação bônus e escolher um dos seguintes efeitos:</p><ul><li>Se a técnica causar dano, impor uma condição (condizente com o elemento e que custe até 2 PP) em até 3 criaturas que falhem em uma Salvaguarda de Constituição, desde que já tenham falhado em uma primeira Salvaguarda ou sido atingidas pela jogada de ataque da técnica;</li><li>Alcance "Cone": aumenta a área em 6 metros;</li><li>Alcance "Esfera" ou "Cilindro": aumenta a área em 3 metros;</li><li>Alcance "Linha": aumenta a distância em 9 metros;</li><li>Tipo de dano diferente de "Contundente": aumenta em um dado o dano da técnica.</li></ul>`
+      }
+    ],
+    tecnicas: [
+      {
+        name: "Higan (Disparo de Fogo)", grau: 1, cost: 2, kind: "save", save: { targetAbility: "dex" },
+        damage: { number: 2, die: 6, type: "fire" }, rangeUnits: "m", activation: "action",
+        img: "icons/magic/fire/projectile-bolt-orange.webp",
+        desc: `<p>Apontando seus dedos, você dispara balas de fogo contra seus inimigos. Toda criatura na área deve fazer uma Salvaguarda de Destreza, sofrendo todo o dano se falhar ou metade se obtiver sucesso.</p><p><em>Alternativamente:</em> você pode focar em uma única criatura, fazendo uma jogada de ataque à distância (9 metros, em linha) que causa 2d10 de dano de Fogo.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Até 12 metros, Cone</p><p><strong>Requisito:</strong> Mera-Mera no Mi, Ação Poderosa</p><p><strong>Dano:</strong> 2d6 de dano de Fogo</p><p><strong>Custo:</strong> 2 PP</p>`
+      },
+      {
+        name: "Hiken (Punho de Fogo)", grau: 2, cost: 4, kind: "save", save: { targetAbility: "dex" },
+        damage: { number: 4, die: 6, type: "fire" }, rangeUnits: "m", activation: "action",
+        img: "icons/magic/fire/projectile-fireball-orange.webp",
+        desc: `<p>O usuário dispara um soco de fogo gigante. Toda criatura na área deve fazer uma Salvaguarda de Destreza, sofrendo todo o dano se falhar ou metade se obtiver sucesso.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Até 15 metros, Cone</p><p><strong>Requisito:</strong> Mera-Mera no Mi, Ação Poderosa</p><p><strong>Dano:</strong> 4d6 de dano de Fogo</p><p><strong>Custo:</strong> 4 PP</p>`
+      },
+      {
+        name: "Hidaruma", grau: 3, cost: 6, kind: "attack", attackType: "ranged",
+        damage: { number: 5, die: 10, type: "fire" }, rangeUnits: "m", activation: "action",
+        img: "icons/magic/fire/flame-burning-eye.webp",
+        desc: `<p>Enquanto a técnica "Hotarubi" estiver ativa, você escolhe uma criatura que possa ver e que esteja dentro do alcance para acertá-la <strong>automaticamente</strong> com as chamas flutuantes.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Até 21 metros, Linha</p><p><strong>Requisito:</strong> Mera-Mera no Mi, "Hotarubi", Ação Poderosa</p><p><strong>Dano:</strong> 5d10 de dano de Fogo</p><p><strong>Custo:</strong> 6 PP</p>`
+      },
+      {
+        name: "Enkai: Hibashira", grau: 4, cost: 9, kind: "save", save: { targetAbility: "dex" },
+        damage: { number: 9, die: 6, type: "fire" }, rangeUnits: "m", activation: "action",
+        img: "icons/magic/fire/flame-burning-campfire-orange.webp",
+        desc: `<p>Você cria um manto de chamas e libera um pilar de fogo contra seus inimigos, em qualquer direção. Toda criatura na área deve fazer uma Salvaguarda de Destreza, sofrendo todo o dano se falhar ou metade se obtiver sucesso.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Até 27 m de comprimento por 3 m de largura, Linha</p><p><strong>Requisito:</strong> Mera-Mera no Mi, Ação Poderosa</p><p><strong>Dano:</strong> 9d6 de dano de Fogo</p><p><strong>Custo:</strong> 9 PP</p>`
+      },
+      {
+        name: "Dai Enkai: Entei", grau: 5, cost: 12, kind: "save", save: { targetAbility: "dex" },
+        damage: { number: 12, die: 6, type: "fire" }, rangeUnits: "m", activation: "action",
+        img: "icons/magic/fire/explosion-fireball-large-orange.webp",
+        desc: `<p>Usando uma grande quantidade de chamas, você cria uma bola de fogo gigante e a lança contra seus inimigos. Ela explode em um ponto de origem escolhido dentro do alcance, liberando uma explosão de 9 metros de raio. Toda criatura na área deve fazer uma Salvaguarda de Destreza, sofrendo todo o dano se falhar ou metade se obtiver sucesso.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Até 33 metros (explosão de 9 m de raio)</p><p><strong>Requisito:</strong> Mera-Mera no Mi, Ação Poderosa</p><p><strong>Dano:</strong> 12d6 de dano de Fogo</p><p><strong>Custo:</strong> 12 PP</p>`
+      },
+      {
+        name: "Hikyaku", grau: 1, cost: 2, kind: "utility", activation: "bonus", rangeUnits: "self",
+        img: "icons/magic/movement/trail-streak-impact-orange.webp",
+        desc: `<p>Técnica Auxiliar. Você impulsiona os próprios pés com fogo, garantindo 15 metros de deslocamento de voo enquanto a técnica durar.</p><hr><p><strong>Duração:</strong> Até o início do seu próximo turno</p><p><strong>Alcance:</strong> Pessoal</p><p><strong>Requisito:</strong> Mera-Mera no Mi, Ação Bônus</p><p><strong>Custo:</strong> 2 PP</p>`
+      },
+      {
+        name: "Hotarubi", grau: 3, cost: 4, kind: "utility", activation: "bonus", rangeUnits: "m",
+        img: "icons/magic/light/orbs-firefly-glow-green.webp",
+        desc: `<p>Técnica Auxiliar. Você cria pequenas chamas esverdeadas, parecidas com vaga-lumes, que flutuam ao seu redor e se movem com você. Toda a área é iluminada com luz plena, mais 6 metros de raio de penumbra. Habilita a técnica "Hidaruma".</p><hr><p><strong>Duração:</strong> Até 1 minuto</p><p><strong>Alcance:</strong> Até 6 metros de raio, Esfera</p><p><strong>Requisito:</strong> Mera-Mera no Mi, Ação Bônus</p><p><strong>Custo:</strong> 4 PP</p>`
+      },
+      {
+        name: "Onibi", grau: 5, cost: 7, kind: "utility", activation: "bonus", rangeUnits: "self",
+        img: "icons/magic/fire/dragon-breath-fire-orange.webp",
+        desc: `<p>Técnica Auxiliar. Você cria dragões de fogo que circulam os céus e intensificam suas chamas. Adiciona às suas Técnicas de Combate com duração "Instantâneo" 3 dados de dano extra, limitado pelo valor do grau da técnica (uma técnica de 1º Grau só recebe 1 dado extra, por exemplo). Os dados não utilizados reduzem o custo desta técnica em -1 PP cada.</p><hr><p><strong>Duração:</strong> Até 1 minuto</p><p><strong>Alcance:</strong> Pessoal</p><p><strong>Requisito:</strong> Mera-Mera no Mi, Ação Bônus</p><p><strong>Custo:</strong> 7 PP</p>`
+      }
+    ]
+  },
+
+  /* ---------------- OPE-OPE NO MI (Paramecia / Operação) ---------------- */
+  {
+    code: "OPE",
+    name: "Ope-Ope no Mi (Fruto da Operação)",
+    img: "icons/magic/light/explosion-star-glow-blue.webp",
+    category: "paramecia",
+    archetype: "advanced",
+    aspectoInato: "Uso Alternativo — uma vez por descanso longo, você pode usar uma Técnica de qualquer grau ou uma Técnica Auxiliar sem gastar nenhum Ponto de Poder, desde que o requisito de duração seja \"Instantânea\".",
+    property: "Espaço-Temporal",
+    mpSlots: 12,
+    awakening: true,
+    weaknesses: { seawater: true, naturalEnemy: "" },
+    description: `<p><strong>Akuma no Mi — Paramecia (Operação).</strong> Conhecida como a "Akuma no Mi Suprema". Dentro de uma "ROOM", o usuário manipula tudo livremente: troca, corta, opera e transforma. Usuário Paramecia Avançado.</p><p><strong>Aspecto Inato — Uso Alternativo:</strong> uma vez por descanso longo, use uma Técnica de qualquer grau ou Auxiliar sem gastar PP, desde que a duração seja "Instantânea".</p><hr><p><em>Fraqueza:</em> Água do mar e Kairoseki causam <strong>Enfraquecido</strong>. Despertar disponível a partir do 16º nível.</p>`,
+    manifestacoes: [
+      {
+        name: "ROOM",
+        img: "icons/magic/light/explosion-star-glow-blue-purple.webp",
+        desc: `<p><strong>Manifestação de Poder.</strong> Com uma ação bônus, você cria uma redoma transparente e intangível que possibilita executar todas as técnicas da Ope-Ope no Mi e determina o alcance máximo de algumas delas.</p><p>A "ROOM" dura até que você a desfaça (sem ação). O raio é de <strong>3 metros × o nível do personagem</strong>, com ponto de origem no espaço onde você estava ao criá-la.</p><p>Alternativamente, você pode usar esta manifestação até 3 vezes por dia (apenas uma vez por turno), em conjunto com uma técnica, sem ação bônus. Recupera todos os usos ao término de um descanso longo.</p>`
+      },
+      {
+        name: "Cirurgião da Morte",
+        img: "icons/tools/cooking/knife-cleaver-steel-grey.webp",
+        desc: `<p><strong>Manifestação de Poder.</strong> Com a profissão "Médico" (principal ou auxiliar, graduação Especialista ou maior), você cura qualquer doença, "Ferimento Persistente" (Cap. 12) e realiza cirurgias dentro da sua "ROOM" (o Narrador decide a duração).</p><p>Você também pode realizar o maior poder da fruta: garantir a juventude eterna a outra pessoa por meio de uma cirurgia — ao final dela, a vida do usuário é consumida.</p>`
+      },
+      {
+        name: "Adrenalin (Estágio Desperto)",
+        img: "icons/magic/life/heart-cross-blue.webp",
+        desc: `<p><strong>Manifestação de Poder — apenas no Estágio Desperto.</strong> Você usa a "ROOM" de forma modificada e instantânea dentro do próprio corpo, recuperando 1 Ponto de Poder para cada 6 Pontos de Vida sacrificados. Você pode recuperar até 10 PP por turno com esta característica.</p>`
+      }
+    ],
+    tecnicas: [
+      {
+        name: "Shambles", grau: 1, cost: 2, kind: "utility", activation: "bonus", rangeUnits: "m",
+        img: "icons/magic/movement/chevrons-swirl-blue.webp",
+        desc: `<p>Você troca de lugar qualquer criatura voluntária ou objeto dentro da "ROOM". Com criaturas/objetos Médios (ou menores), realiza um número de trocas igual ao seu modificador de Vontade (mínimo 1), simultaneamente. Uma criatura trocada não provoca reações de nenhum tipo.</p><p>Criaturas não voluntárias só podem ser movidas se surpresas ou sob "Despedaçado", falhando numa Salvaguarda de Vontade. Tamanhos maiores aumentam o custo: Grande +2 PP; Enorme +6 PP.</p><p><em>Alternativamente (Reação):</em> quando você ou uma criatura voluntária visível for alvo de uma jogada de ataque ou Salvaguarda, troque-a de lugar com outra criatura/objeto na "ROOM".</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Área dentro da "ROOM"</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Ação Bônus ou Reação</p><p><strong>Dano:</strong> Nenhum</p><p><strong>Custo:</strong> 2 PP</p>`
+      },
+      {
+        name: "Amputate", grau: 2, cost: 4, kind: "attack", attackType: "ranged", damage: null,
+        rangeUnits: "m", activation: "action",
+        img: "icons/skills/melee/strike-blade-knife-white-red.webp",
+        desc: `<p>Você realiza vários cortes que separam seu alvo sem causar dano. Faça uma jogada de ataque à distância contra uma criatura na "ROOM". Se acertar, a criatura deve ser bem-sucedida em uma Salvaguarda de Destreza ou sofre a condição "Despedaçado", até que ela ou uma criatura próxima use uma ação para montá-la novamente.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Área dentro da "ROOM"</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Arma Cortante, Ação Poderosa</p><p><strong>Dano:</strong> Nenhum (impõe "Despedaçado")</p><p><strong>Custo:</strong> 4 PP</p>`
+      },
+      {
+        name: "Injection Shot", grau: 3, cost: 9, kind: "attack", attackType: "melee",
+        damage: { number: 7, die: 10, type: "true" }, rangeUnits: "touch", activation: "action",
+        img: "icons/skills/melee/strike-dagger-arcane-blue.webp",
+        desc: `<p>Você cria uma mira mental e apunhala uma única criatura com velocidade tão alta que se assemelha ao impacto de uma munição de pistola. Esta técnica <strong>não tem chance de errar</strong>.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Arma Cortante, Ação Poderosa</p><p><strong>Dano:</strong> 7d10 de dano Verdadeiro</p><p><strong>Custo:</strong> 9 PP</p>`
+      },
+      {
+        name: "Counter Shock", grau: 4, cost: 12, kind: "save", save: { targetAbility: "con" },
+        damage: { number: 10, die: 10, type: "lightning" }, rangeUnits: "touch", activation: "action",
+        img: "icons/magic/lightning/bolt-strike-blue.webp",
+        desc: `<p>Você coloca as mãos próximas a um alvo e libera uma descarga elétrica poderosa. O alvo faz uma Salvaguarda de Constituição, sofrendo todo o dano se falhar ou metade se obtiver sucesso. Se falhar no primeiro teste, deve passar em uma nova Salvaguarda de Constituição ou recebe "Atordoado" até o fim do seu próximo turno.</p><p><em>Alternativamente:</em> você pode optar por não causar a condição e aumentar o dano em mais 2d10.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Ação Poderosa</p><p><strong>Dano:</strong> 10d10 de dano Elétrico</p><p><strong>Custo:</strong> 12 PP</p>`
+      },
+      {
+        name: "Gamma Knife", grau: 5, cost: 15, kind: "attack", attackType: "melee",
+        damage: { number: 15, die: 10, type: "true" }, rangeUnits: "touch", activation: "action",
+        img: "icons/magic/light/beam-rays-blue-large.webp",
+        desc: `<p>Você cria uma faca de pura radiação em uma das mãos e realiza uma jogada de ataque corpo-a-corpo contra uma criatura. Ao tocar o alvo, a faca explode internamente, causando grande dano.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Ação Poderosa</p><p><strong>Dano:</strong> 15d10 de dano Verdadeiro</p><p><strong>Custo:</strong> 15 PP</p>`
+      },
+      {
+        name: "Silent", grau: 6, cost: 12, kind: "utility", activation: "action", rangeUnits: "special",
+        img: "icons/magic/control/no-speak-mute-gag-blue.webp",
+        desc: `<p>Você escolhe uma criatura afetada pela "R-ROOM", fazendo com que ela não possa usar nenhuma técnica ou característica que consuma Pontos de Poder ou tenha limitação de usos por dia — mesmo as que anulam poderes de Akuma no Mi.</p><hr><p><strong>Duração:</strong> Até 1 minuto</p><p><strong>Alcance:</strong> Especial</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "R-ROOM", Ação Poderosa</p><p><strong>Dano:</strong> Nenhum</p><p><strong>Custo:</strong> 12 PP</p>`
+      },
+      {
+        name: "Anesthesia: Shock Wille", grau: 7, cost: 21, kind: "attack", attackType: "melee",
+        damage: { number: 21, die: 10, type: "true" }, rangeUnits: "touch", activation: "action",
+        img: "icons/magic/lightning/bolt-strike-sword-blue.webp",
+        desc: `<p>Você atravessa um inimigo com uma lâmina, em uma jogada de ataque corpo-a-corpo, o que não o fere — mas permite causar uma descarga elétrica diretamente no corpo da criatura, sem nenhuma defesa. Qualquer redução de dano de Haki do Armamento ou Pontos de Vida temporários é ignorada.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "K-ROOM", Arma Cortante, Ação Poderosa</p><p><strong>Dano:</strong> 21d10 de dano Verdadeiro</p><p><strong>Custo:</strong> 21 PP</p>`
+      },
+      {
+        name: "Prazision", grau: 1, cost: 1, kind: "utility", activation: "special", rangeUnits: "m",
+        img: "icons/magic/perception/eye-ringed-glow-angry-small-blue.webp",
+        desc: `<p>Técnica Auxiliar. Usando um olhar afiado e precisão cirúrgica, você usa "Shambles" em momentos perfeitos, adicionando: vantagem na próxima jogada de ataque de uma criatura voluntária trocada; vantagem na próxima jogada de ataque contra uma criatura não voluntária trocada; ataques/técnicas contra a criatura trocada não podem ser impedidos. Você também pode usar "Shambles" como reação sem a "ROOM" ativa (ambas na mesma reação; a "ROOM" se desfaz ao final).</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Área dentro da "ROOM"</p><p><strong>Requisito:</strong> Ope-Ope no Mi, usar a técnica "Shambles"</p><p><strong>Custo:</strong> 1 PP</p>`
+      },
+      {
+        name: "Radio Knife", grau: 2, cost: 2, kind: "utility", activation: "special", rangeUnits: "m",
+        img: "icons/magic/lightning/bolt-blue.webp",
+        desc: `<p>Técnica Auxiliar. Ao usar "Amputate", você imbui na lâmina uma grande carga elétrica que dificulta colar os pedaços separados. Uma criatura afetada só volta ao normal se passar em uma Salvaguarda de Vontade, em conjunto com a tentativa de remontagem.</p><hr><p><strong>Duração:</strong> Até 1 minuto</p><p><strong>Alcance:</strong> Área dentro da "ROOM"</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", usar a técnica "Amputate"</p><p><strong>Custo:</strong> 2 PP</p>`
+      },
+      {
+        name: "Curtain", grau: 3, cost: 2, kind: "utility", activation: "reaction", rangeUnits: "self",
+        img: "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+        desc: `<p>Técnica Auxiliar. Ao ser alvo de uma jogada de ataque (comum ou de técnica), você agarra e puxa o ar dentro da "ROOM", que assume a forma de uma cortina transparente e reduz <strong>4d8</strong> do dano recebido. Você pode gastar 1 PP para adicionar 2d8 de redução, até uma redução máxima total de 30d8.</p><hr><p><strong>Duração:</strong> Até o início do seu próximo turno</p><p><strong>Alcance:</strong> Pessoal</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Reação</p><p><strong>Custo:</strong> 2 PP (+1 PP por 2d8 extra)</p>`
+      },
+      {
+        name: "R-ROOM", grau: 6, cost: 10, kind: "utility", activation: "bonus", rangeUnits: "m",
+        img: "icons/magic/control/energy-stream-link-large-blue.webp",
+        desc: `<p>Técnica Auxiliar. Ao usar a Manifestação "ROOM", você pode usar esta técnica no lugar. A "R-ROOM" concentra a "ROOM" em uma única criatura visível dentro do alcance, movendo-se junto com ela. Qualquer técnica da Ope-Ope no Mi é ativada remotamente dentro da "R-ROOM", fazendo a criatura falhar em qualquer Salvaguarda contra seus efeitos. Enquanto a "R-ROOM" estiver ativa, você não pode usar a "ROOM".</p><hr><p><strong>Duração:</strong> Até 1 minuto, Concentração</p><p><strong>Alcance:</strong> Até 39 metros, Linha</p><p><strong>Requisito:</strong> Ope-Ope no Mi, Ação Bônus</p><p><strong>Custo:</strong> 10 PP</p>`
+      },
+      {
+        name: "K-ROOM", grau: 7, cost: 15, kind: "utility", activation: "bonus", rangeUnits: "touch",
+        img: "icons/magic/control/energy-stream-link-blue.webp",
+        desc: `<p>Técnica Auxiliar. Ao usar a Manifestação "ROOM", você pode usar esta técnica no lugar. A "K-ROOM" concentra a "ROOM" em uma arma cortante à sua escolha, que pode ser estendida por até 60 metros em linha. Qualquer técnica da Ope-Ope no Mi é ativada na arma, com o alcance da arma e afetando apenas um alvo, recebendo: o dado de dano vira d12; o resultado é sempre o máximo; o dano da técnica aumenta em 5 dados. Enquanto ativa, você não pode usar a "ROOM".</p><hr><p><strong>Duração:</strong> Até 1 minuto</p><p><strong>Alcance:</strong> Toque (arma até 60 m em linha)</p><p><strong>Requisito:</strong> Ope-Ope no Mi, Ação Bônus</p><p><strong>Custo:</strong> 15 PP</p>`
+      }
+    ]
+  }
+];

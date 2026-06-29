@@ -176,8 +176,8 @@ export default class CharacterActorSheet extends BaseActorSheet {
     {
   tab: "manipulation",
   label: "JUJUTSU.Manipulation.Tab",
-  icon: "fas fa-apple-whole",
-  condition: actor => actor.system.devilFruit?.hasFruit === true
+  icon: "fas fa-apple-whole"
+  // Aba Akuma no Mi sempre visível (mostra estado "sem fruta" quando o personagem não tem uma).
 },
     { tab: "biography", label: "DND5E.Biography", icon: "fas fa-feather" }
   ];
