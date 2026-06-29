@@ -19,7 +19,7 @@ export default class CursedEnergyConfig extends BaseConfigSheet {
 
   /** @override */
   get title() {
-    return "Cursed Energy";
+    return game.i18n.localize("JUJUTSU.Energy.Label");
   }
 
   /** @inheritDoc */

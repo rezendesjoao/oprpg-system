@@ -1,0 +1,21 @@
+_id: I9xJfR8G2atQ15S5
+name: Tribo Braços Longos
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p><strong>Braços Especiais:</strong> Recebe alcance de 3 metros em jogadas de ataque (comum) corpo a corpo, quando utilizando os braços, e recebe +2 em Testes de Atributo de Destreza (Prestidigitação).</p>
+    chat: ''
+  identifier: tribo-bracos-longos
+  type:
+    value: race
+    subtype: variant
+  requirements: Humanos (Variante)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!I9xJfR8G2atQ15S5'
+ownership:
+  default: 0
+flags: {}

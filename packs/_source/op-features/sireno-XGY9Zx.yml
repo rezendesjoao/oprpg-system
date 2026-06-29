@@ -1,0 +1,21 @@
+_id: XGY9ZxYtvfSyp2CG
+name: Sireno
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p><strong>Natação Superior:</strong> Os sirenos recebem 18 metros de nado e podem usar a ação "Disparada" como ação bônus enquanto estiverem nadando.</p>
+    chat: ''
+  identifier: sireno
+  type:
+    value: race
+    subtype: variant
+  requirements: Povo do Mar (Variante)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!XGY9ZxYtvfSyp2CG'
+ownership:
+  default: 0
+flags: {}

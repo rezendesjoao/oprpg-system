@@ -1,0 +1,21 @@
+_id: PZhPJxQcAQCRLrQV
+name: Forma Sulong
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: '<p>Ao ver a lua cheia, os minks se transformam: dobram o deslocamento (metade dele podendo ser usado como voo), usam Electro sem limitação, mas ganham 1 Nível de Exaustão por minuto (ao atingir o 6º nível, ficam inconscientes).</p>'
+    chat: ''
+  identifier: forma-sulong
+  type:
+    value: race
+    subtype: ''
+  requirements: Minks
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!PZhPJxQcAQCRLrQV'
+ownership:
+  default: 0
+flags: {}

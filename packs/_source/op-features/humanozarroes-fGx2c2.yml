@@ -1,0 +1,21 @@
+_id: fGx2c22vlUPvufnL
+name: Humanozarrões
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p><strong>Colosso:</strong> Seu tamanho aumenta para Grande e você recebe +2 em Salvaguardas de Força.</p>
+    chat: ''
+  identifier: humanozarroes
+  type:
+    value: race
+    subtype: variant
+  requirements: Humanos (Variante)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!fGx2c22vlUPvufnL'
+ownership:
+  default: 0
+flags: {}

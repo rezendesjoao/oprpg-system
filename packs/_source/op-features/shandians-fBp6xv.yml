@@ -1,0 +1,21 @@
+_id: fBp6xvYbyf8U6mvR
+name: Shandians
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p><strong>Guerreiro Celestial:</strong> O celestial recebe +5 em Testes de Atributo de Força (Atletismo).</p>
+    chat: ''
+  identifier: shandians
+  type:
+    value: race
+    subtype: variant
+  requirements: Celestiais (Variante)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!fBp6xvYbyf8U6mvR'
+ownership:
+  default: 0
+flags: {}

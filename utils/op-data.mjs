@@ -2780,11 +2780,12 @@ export const SPECIES = [
       {
         "name": "Anjos Caídos",
         "desc": "<p>Recebem -2 em Testes de Destreza (Acrobacia) em altitudes inferiores a 5.000 metros do nível do mar, afetados pela distorção de equilíbrio em atmosferas mais densas.</p>"
-      },
-      {
-        "name": "Variantes: Birkans, Shandians, Skypeans",
-        "desc": "<p><strong>Birkans (Sacerdote Celestial):</strong> +5 em Testes de Presença (Atuação). <strong>Shandians (Guerreiro Celestial):</strong> +5 em Testes de Força (Atletismo). <strong>Skypeans (Diplomata Celestial):</strong> +5 em Testes de Presença (Persuasão).</p>"
       }
+    ],
+    "variants": [
+      { "key": "birkans", "name": "Birkans", "desc": "<p><strong>Sacerdote Celestial:</strong> O celestial recebe +5 em Testes de Atributo de Presença (Atuação).</p>" },
+      { "key": "shandians", "name": "Shandians", "desc": "<p><strong>Guerreiro Celestial:</strong> O celestial recebe +5 em Testes de Atributo de Força (Atletismo).</p>" },
+      { "key": "skypeans", "name": "Skypeans", "desc": "<p><strong>Diplomata Celestial:</strong> O celestial recebe +5 em Testes de Atributo de Presença (Persuasão).</p>" }
     ]
   },
   {
@@ -2832,11 +2833,16 @@ export const SPECIES = [
       {
         "name": "Aspectos Humanos",
         "desc": "<p>Devem escolher uma das seguintes falhas de caráter: Ganância (-2 em testes com tesouro), Gula (dobro de consumo), Inveja (-2 após falhas alheias), Ira (falha automática em Provocação), Luxúria (+2 contra atração), Preguiça (dobro de tempo de descanso), Orgulho (-1 em Presença).</p>"
-      },
-      {
-        "name": "Variantes: Humanozarrões, Braços Longos, Kujas, Pernas Longas, Pescoço de Cobra, Três Olhos",
-        "desc": "<p><strong>Humanozarrões:</strong> Tamanho Grande, +2 em Salvaguardas de Força. <strong>Braços Longos:</strong> Alcance de 3m com braços, +2 em Prestidigitação. <strong>Kujas:</strong> Cobra companheira (dano de veneno, pode ser arco ou algemas). <strong>Pernas Longas:</strong> Alcance de 3m com pernas, deslocamento de 12m. <strong>Pescoço Cobra:</strong> Alcance de 3m com cabeça, +2 em Percepção visual. <strong>Três Olhos:</strong> Proficiência em Testes de Vontade (Haki, Sobrenatural ou Sorte).</p>"
       }
+    ],
+    "variants": [
+      { "key": "humanos-comuns", "name": "Humanos Comuns", "desc": "<p><strong>Aptidão Natural:</strong> Você escolhe uma perícia na qual possa usar o seu Bônus de Proficiência e dobra o seu Bônus de Proficiência.</p>" },
+      { "key": "humanozarroes", "name": "Humanozarrões", "desc": "<p><strong>Colosso:</strong> Seu tamanho aumenta para Grande e você recebe +2 em Salvaguardas de Força.</p>" },
+      { "key": "bracos-longos", "name": "Tribo Braços Longos", "desc": "<p><strong>Braços Especiais:</strong> Recebe alcance de 3 metros em jogadas de ataque (comum) corpo a corpo, quando utilizando os braços, e recebe +2 em Testes de Atributo de Destreza (Prestidigitação).</p>" },
+      { "key": "kujas", "name": "Tribo Kujas", "desc": "<p><strong>Cobra Companheira:</strong> Toda kuja recebe em seu nascimento uma cobra para acompanhá-la por toda a sua vida. Você escolhe o nome da cobra e ela entende tudo o que você falar, podendo realizar pequenas tarefas. Ela não recebe dano de nenhuma jogada de ataque (comum ou Técnicas) ou Salvaguarda que não a tenha explicitamente como alvo do atacante. Ela é totalmente obediente a você e, em combate, age no mesmo turno que você (usa a ficha \"Cobra Bélica\").</p><p>Uma vez durante o seu turno e sem gastar ações, você pode dar ordens à sua cobra:</p><ul><li><strong>Arco de Cobra:</strong> a cobra assume o formato de um arco e você pode usar flechas para fazer uma jogada de ataque (comum ou Técnicas) à distância com arma, podendo adicionar o Bônus de Proficiência na jogada de ataque (comum), alterar o modificador da jogada de ataque (comum ou Técnicas) e de dano para o seu atributo primário, e recebendo +2 nas jogadas de ataque (comum) e de dano.</li><li><strong>Restringir:</strong> a cobra se prende nos membros de uma criatura Grande ou menor, tornando-se algemas duras como aço; a criatura fica com a condição \"Incapacitado\" ou \"Agarrado\" e pode tentar encerrá-la com uma Salvaguarda de Força CD 16 no início de cada turno. Para isso, a cobra deve acertar uma jogada de ataque (comum) corpo a corpo, substituindo o dano por essa característica, e fica com a condição \"Impedido\" até encerrar o agarramento.</li></ul>" },
+      { "key": "pernas-longas", "name": "Tribo Pernas Longas", "desc": "<p><strong>Pernas Especiais:</strong> Alcance de 3 metros em jogadas de ataque (comum) corpo a corpo, quando utilizando as pernas, e seu deslocamento normal se torna 12 metros.</p>" },
+      { "key": "pescoco-de-cobra", "name": "Tribo Pescoço de Cobra", "desc": "<p><strong>Pescoço Esticado:</strong> Alcance de 3 metros em jogadas de ataque (comum) corpo a corpo, quando utilizando a cabeça, e +2 em Testes de Atributo de Vontade (Percepção) que dependam da visão.</p>" },
+      { "key": "tres-olhos", "name": "Tribo dos 3 Olhos (Três Olhos)", "desc": "<p><strong>Abrir os Olhos:</strong> O uso do terceiro olho possui uma conexão mística com o destino. Como resultado, você recebe proficiência em Testes de Atributo de Vontade — escolha entre Haki, Sobrenatural ou Sorte.</p>" }
     ]
   },
   {
@@ -2886,9 +2892,14 @@ export const SPECIES = [
         "desc": "<p>Cada mink possui um objeto que causa perda de controle (ex: coelhos com cenoura). Devem fazer Salvaguarda de Vontade CD 15 ou ficam distraídos (Atordoado) por 1d4 turnos.</p>"
       },
       {
-        "name": "Variantes: Ágeis, Meãos, Robustos + Forma Sulong",
-        "desc": "<p><strong>Ágeis:</strong> Deslocamento 12m, escalada 9m. <strong>Meãos:</strong> Deslocamento 18m. <strong>Robustos:</strong> Deslocamento 12m, terreno difícil não reduz movimento. <strong>Sulong:</strong> Ao ver lua cheia, transformam com dobro de deslocamento (metade voo), usam Electro sem limitação, ganham 1 Nível de Exaustão/min (máx 6º = inconsciente).</p>"
+        "name": "Forma Sulong",
+        "desc": "<p>Ao ver a lua cheia, os minks se transformam: dobram o deslocamento (metade dele podendo ser usado como voo), usam Electro sem limitação, mas ganham 1 Nível de Exaustão por minuto (ao atingir o 6º nível, ficam inconscientes).</p>"
       }
+    ],
+    "variants": [
+      { "key": "ageis", "name": "Ágeis", "desc": "<p><strong>Corpo Leve:</strong> Seu deslocamento normal se torna 12 metros e seu deslocamento de escalada se torna 9 metros (caso receba outro deslocamento, prevalece o maior).</p>" },
+      { "key": "meaos", "name": "Meãos", "desc": "<p><strong>Estamina Animal:</strong> Seu deslocamento normal se torna 18 metros (caso receba outro deslocamento, prevalece o maior).</p>" },
+      { "key": "robustos", "name": "Robustos", "desc": "<p><strong>Pisada Firme:</strong> Seu deslocamento normal se torna 12 metros e não pode ser reduzido por terreno difícil (caso receba outro deslocamento, prevalece o maior).</p>" }
     ]
   },
   {
@@ -2912,9 +2923,13 @@ export const SPECIES = [
         "desc": "<p>Respiram água e ar (brânquias se fecham no ar). Precisam de 2x mais água diária que humanos (4x em dias quentes) ou recebem Níveis de Exaustão.</p>"
       },
       {
-        "name": "Variantes: Homem-Peixe e Sireno",
-        "desc": "<p><strong>Homem-Peixe (Corpo Marinho):</strong> Escolhem 1 Traço Comum das Zoan (baseado em ancestral marinho). <strong>Sireno (Natação Superior):</strong> Nado de 18m, podem usar ação Disparada como bônus enquanto nadam. Ambos possuem Ancestralidade com até 2 Traços Comuns e 1 Traço Específico das Zoan.</p>"
+        "name": "Ancestralidade",
+        "desc": "<p>O Povo do Mar possui ancestralidade de criaturas marinhas, com até 2 Traços Comuns e 1 Traço Específico das Akuma no Mi Zoan.</p>"
       }
+    ],
+    "variants": [
+      { "key": "homem-peixe", "name": "Homem-Peixe", "desc": "<p><strong>Corpo Marinho:</strong> De acordo com a criatura do mar que o personagem tenha como ancestral, o homem-peixe pode escolher 1 Traço Comum das Akuma no Mi Zoan (ignorando o requisito de forma original, híbrida ou animal), presentes no Capítulo 6, ou criadas pelo jogador, mas que devem ser aprovadas pelo Narrador.</p>" },
+      { "key": "sireno", "name": "Sireno", "desc": "<p><strong>Natação Superior:</strong> Os sirenos recebem 18 metros de nado e podem usar a ação \"Disparada\" como ação bônus enquanto estiverem nadando.</p>" }
     ]
   },
   {

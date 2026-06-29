@@ -1,15 +1,15 @@
 <div class="cursed-energy-config dnd5e2">
     <fieldset>
-        <legend class="roboto-condensed-upper">PA Maxima</legend>
+        <legend class="roboto-condensed-upper">PP Máximo</legend>
         <div class="form-group">
-            <label>Bonus Total</label>
+            <label>Bônus Total</label>
             <div class="form-fields">
                 <input type="text" name="system.energy.bonuses.overall"
                        value="{{ source.bonuses.overall }}" placeholder="0">
             </div>
         </div>
         <div class="form-group">
-            <label>Bonus por Nivel</label>
+            <label>Bônus por Nível</label>
             <div class="form-fields">
                 <span>+</span>
                 <input type="text" name="system.energy.bonuses.level"
@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="form-group">
-            <label>Bonus Temporario</label>
+            <label>Bônus Temporário</label>
             <div class="form-fields">
                 <input type="number" name="system.energy.bonuses.temp"
                        value="{{ source.bonuses.temp }}" placeholder="0">
@@ -26,19 +26,12 @@
         </div>
     </fieldset>
     <fieldset style="margin-top: 12px;">
-        <legend class="roboto-condensed-upper">PA Atual</legend>
+        <legend class="roboto-condensed-upper">PP Atual</legend>
         <div class="form-group">
-            <label>PA Total</label>
+            <label>PP Total</label>
             <div class="form-fields">
                 <input type="number" name="system.energy.total"
                        value="{{ source.total }}" min="0">
-            </div>
-        </div>
-        <div class="form-group">
-            <label>PA Gerada</label>
-            <div class="form-fields">
-                <input type="number" name="system.energy.generated"
-                       value="{{ source.generated }}" min="0">
             </div>
         </div>
     </fieldset>

@@ -332,7 +332,7 @@ export default class Advancement extends PseudoDocumentMixin(BaseAdvancementData
       _id: id ?? foundry.utils.randomID(),
       "flags.OnePiece.sourceId": uuid,
       "flags.OnePiece.advancementOrigin": advancementOrigin,
-      "flags.OnePiece.advancementRoot": this.item.getFlag("onepiece-system", "advancementRoot") ?? advancementOrigin
+      "flags.OnePiece.advancementRoot": this.item.getFlag("OnePiece", "advancementRoot") ?? advancementOrigin
     }, { keepId: true }).toObject();
   }
 

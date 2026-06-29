@@ -1,0 +1,21 @@
+_id: Jc23VIYE9ZH7EXKB
+name: Tribo Pernas Longas
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p><strong>Pernas Especiais:</strong> Alcance de 3 metros em jogadas de ataque (comum) corpo a corpo, quando utilizando as pernas, e seu deslocamento normal se torna 12 metros.</p>
+    chat: ''
+  identifier: tribo-pernas-longas
+  type:
+    value: race
+    subtype: variant
+  requirements: Humanos (Variante)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!Jc23VIYE9ZH7EXKB'
+ownership:
+  default: 0
+flags: {}

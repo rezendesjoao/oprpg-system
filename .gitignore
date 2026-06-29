@@ -12,6 +12,10 @@ dnd5e.lock
 # Locks de runtime dos compêndios (LevelDB)
 packs/*/LOCK
 
+# Logs de depuração do LevelDB (o Foundry não precisa deles p/ carregar os packs)
+packs/*/LOG
+packs/*/LOG.old
+
 # Distribuição
 dist/
 system.zip

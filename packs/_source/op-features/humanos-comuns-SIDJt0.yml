@@ -1,0 +1,21 @@
+_id: SIDJt0HbODM6i5T7
+name: Humanos Comuns
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p><strong>Aptidão Natural:</strong> Você escolhe uma perícia na qual possa usar o seu Bônus de Proficiência e dobra o seu Bônus de Proficiência.</p>
+    chat: ''
+  identifier: humanos-comuns
+  type:
+    value: race
+    subtype: variant
+  requirements: Humanos (Variante)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!SIDJt0HbODM6i5T7'
+ownership:
+  default: 0
+flags: {}

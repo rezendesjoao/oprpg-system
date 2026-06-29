@@ -1,0 +1,21 @@
+_id: GvtkXqyEZdp3gLYP
+name: Meãos
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p><strong>Estamina Animal:</strong> Seu deslocamento normal se torna 18 metros (caso receba outro deslocamento, prevalece o maior).</p>
+    chat: ''
+  identifier: meaos
+  type:
+    value: race
+    subtype: variant
+  requirements: Minks (Variante)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!GvtkXqyEZdp3gLYP'
+ownership:
+  default: 0
+flags: {}

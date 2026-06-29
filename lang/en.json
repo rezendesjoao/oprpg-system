@@ -3572,12 +3572,12 @@
 "DND5E.SpecialHint": "Valores especiais separados por ponto e vírgula.",
 "DND5E.SpecialTraits": "Traços Especiais",
 "DND5E.Species": {
-  "Label": "Origem de Poder",
-  "Add": "Adicionar Origem",
+  "Label": "Espécie",
+  "Add": "Adicionar Espécie",
   "AddLegacy": "Adicionar Raça",
-  "Features": "Características da Origem",
+  "Features": "Características de Espécie",
   "FeaturesLegacy": "Características de Raça",
-  "Name": "Nome da Origem"
+  "Name": "Nome da Espécie"
 },
 "DND5E.Speed": "Velocidade",
 "DND5E.SpeedSpecial": "Movimento Especial",
@@ -3613,19 +3613,19 @@
 "DND5E.SPELLCASTING": {
   "METHODS": {
     "AtWill": {
-      "label": "Feitiço Básico"
+      "label": "Técnica Básica"
     },
     "Innate": {
-      "label": "Feitiço Estendido"
+      "label": "Técnica Inata"
     },
     "Ritual": {
-      "label": "Feitiço Máximo"
+      "label": "Técnica Ritual"
     },
     "Reversal": {
-      "label": "Reversão de Feitiço"
+      "label": "Reversão de Técnica"
     },
     "Inherent": {
-      "label": "Feitiço Inerente"
+      "label": "Técnica Inerente"
     },
     "Spell": {
       "label": "Uso de Técnicas",
@@ -3688,7 +3688,7 @@
 },
 "DND5E.SpellLevel": "Grau",
 "DND5E.SpellLevels": "Graus",
-"DND5E.SpellLevel0": "Feitiço Básico",
+"DND5E.SpellLevel0": "Grau 0",
 "DND5E.SpellLevel1": "Grau 1",
 "DND5E.SpellLevel2": "Grau 2",
 "DND5E.SpellLevel3": "Grau 3",
@@ -3707,15 +3707,15 @@
 "DND5E.SpellMaterialsSupply": "Suprimento de Material",
 "DND5E.SpellName": "Nome da Técnica",
 "DND5E.SpellNone": "Nenhum",
-"DND5E.SpellPrepAtWill": "Feitiço",
-"DND5E.SpellPrepInnate": "Feitiço",
+"DND5E.SpellPrepAtWill": "Técnica",
+"DND5E.SpellPrepInnate": "Técnica",
 "DND5E.SpellPrepRitual": "Apenas Ritual",
 "DND5E.SpellPrepPrepared": "Preparada",
 "DND5E.SpellPrepAlways": "Sempre Preparada",
 "DND5E.SpellPreparation": {
   "Label": "Preparação de Técnica",
   "Formula": "Fórmula de Preparação",
-  "Method": "Tipo de Feitiço"
+  "Method": "Tipo de Técnica"
 },
 "DND5E.SpellPrepared": "Preparada",
 "DND5E.SpellProgArt": "Artífice",
@@ -5545,6 +5545,7 @@
 "SIDEBAR.SortModePriority": "Ordenar por prioridade",
 
 "JUJUTSU.Energy.Label": "Pontos de Poder",
+"JUJUTSU.Energy.Config": "Configurar Pontos de Poder",
 "JUJUTSU.Energy.Max": "PP Máximo",
 "JUJUTSU.Energy.Total": "PP Total",
 "JUJUTSU.Energy.Generated": "PP Gerado",
@@ -5575,6 +5576,7 @@
 "JUJUTSU.EnergyDice.Bonus": "Bônus de Dados de Poder",
 "JUJUTSU.EnergyDice.Denomination": "Tipo de Dado de Poder",
 "JUJUTSU.EnergyDice.Label": "Dados de Poder",
+"JUJUTSU.EnergyDice.Config": "Configurar Dados de Poder",
 "JUJUTSU.ArmorPoints.Current": "Pontos de Armadura (Atual)",
 "JUJUTSU.ArmorPoints.Label": "Pontos de Armadura",
 "JUJUTSU.Manipulation.Label": "Manipulação",

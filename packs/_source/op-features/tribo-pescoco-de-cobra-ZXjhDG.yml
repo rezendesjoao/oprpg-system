@@ -1,0 +1,21 @@
+_id: ZXjhDGI45mK9i3Sz
+name: Tribo Pescoço de Cobra
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p><strong>Pescoço Esticado:</strong> Alcance de 3 metros em jogadas de ataque (comum) corpo a corpo, quando utilizando a cabeça, e +2 em Testes de Atributo de Vontade (Percepção) que dependam da visão.</p>
+    chat: ''
+  identifier: tribo-pescoco-de-cobra
+  type:
+    value: race
+    subtype: variant
+  requirements: Humanos (Variante)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!ZXjhDGI45mK9i3Sz'
+ownership:
+  default: 0
+flags: {}

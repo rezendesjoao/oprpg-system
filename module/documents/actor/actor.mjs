@@ -1,5 +1,4 @@
 import BaseRestDialog from "../../applications/actor/rest/base-rest-dialog.mjs";
-import { EnergySystem } from "../../systems/energy.mjs";
 import CreateDocumentDialog from "../../applications/create-document-dialog.mjs";
 import SkillToolRollConfigurationDialog from "../../applications/dice/skill-tool-configuration-dialog.mjs";
 import PropertyAttribution from "../../applications/property-attribution.mjs";
@@ -2655,7 +2654,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
 
     await ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ actor: this }),
-      content: `${this.name} recuperou ${recovered} Cursed Energy Dice no Descanso Longo.`
+      content: `${this.name} recuperou ${recovered} Dados de Poder no Descanso Longo.`
     });
   }
 
@@ -3420,21 +3419,7 @@ async _preUpdate(changed, options, user) {
       foundry.utils.setProperty(options, "dnd5e.originalExhaustion", this.system.attributes.exhaustion);
     }
 
-    // Avisar no chat quando PA Gerada for alterada manualmente
-    const novaGerada = foundry.utils.getProperty(changed, "system.energy.generated");
-    if ( Number.isFinite(novaGerada) && !options.isEnergySystem && this.type === "character" ) {
-      const antiga = this.system.energy.generated;
-      if ( novaGerada !== antiga ) {
-        const delta = novaGerada - antiga;
-        const sinal = delta > 0 ? `+${delta}` : `${delta}`;
-        ChatMessage.create({
-          speaker: ChatMessage.getSpeaker({ actor: this }),
-          content: `⚡ <b>${this.name}</b> alterou a PA Gerada manualmente: ${antiga} → ${novaGerada} (${sinal})`
-        });
-      }
-    }
-
-    // Avisar no chat quando a Aura Total (reserva) for alterada manualmente
+    // Avisar no chat quando os Pontos de Poder forem alterados manualmente
     const novaTotal = foundry.utils.getProperty(changed, "system.energy.total");
     if ( Number.isFinite(novaTotal) && !options.isEnergySystem && this.type === "character" ) {
       const antigaTotal = this.system.energy.total;
@@ -3443,7 +3428,7 @@ async _preUpdate(changed, options, user) {
         const sinal = delta > 0 ? `+${delta}` : `${delta}`;
         ChatMessage.create({
           speaker: ChatMessage.getSpeaker({ actor: this }),
-          content: `🌀 <b>${this.name}</b> alterou a Aura Total manualmente: ${antigaTotal} → ${novaTotal} (${sinal})`
+          content: `🌀 <b>${this.name}</b> alterou os Pontos de Poder manualmente: ${antigaTotal} → ${novaTotal} (${sinal})`
         });
       }
     }

@@ -534,7 +534,7 @@ export default class SpellData extends ItemDataModel.mixin(ActivitiesTemplate, I
         // Fallback to detecting from flags.
         if ( !grantingItem ) {
           // Check for advancement-granted spells.
-          const advancementOrigin = this.parent.getFlag("onepiece-system", "advancementOrigin");
+          const advancementOrigin = this.parent.getFlag("OnePiece", "advancementOrigin");
           if ( advancementOrigin ) {
             const [itemId] = advancementOrigin.split(".");
             grantingItem = this.parent.actor.items.get(itemId);

@@ -1,0 +1,21 @@
+_id: HsJlR1S9f4HnGErJ
+name: Skypeans
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p><strong>Diplomata Celestial:</strong> O celestial recebe +5 em Testes de Atributo de Presença (Persuasão).</p>
+    chat: ''
+  identifier: skypeans
+  type:
+    value: race
+    subtype: variant
+  requirements: Celestiais (Variante)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!HsJlR1S9f4HnGErJ'
+ownership:
+  default: 0
+flags: {}

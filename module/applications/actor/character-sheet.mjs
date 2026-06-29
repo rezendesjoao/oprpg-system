@@ -1,7 +1,5 @@
 import { formatNumber } from "../../utils.mjs";
 import AdvancementManager from "../advancement/advancement-manager.mjs";
-import EnergyGenerationDialog from "./energy-generation-dialog.mjs";
-import { EnergySystem } from "../../systems/energy.mjs";
 import CompendiumBrowser from "../compendium-browser.mjs";
 import ContextMenu5e from "../context-menu.mjs";
 import BaseActorSheet from "./api/base-actor-sheet.mjs";
@@ -11,7 +9,7 @@ import * as Trait from "../../documents/actor/trait.mjs";
 // ── Módulos JJ ──────────────────────────────────────────────────────────────
 import { injectSkillRefs, injectTrainingRefs, injectAbilityRefs, injectAbilityKanjis, applyJJTextTooltips } from "./jj/tooltips.mjs";
 import { JJ_CONDITIONS, injectJJConditions } from "./jj/conditions.mjs";
-import { setupFeatureSectionCollapse, unhideFeatureSections, setupFeatureSectionDrops, JJ_FEATURE_SECTIONS } from "./jj/features.mjs";
+import { setupFeatureSectionCollapse } from "./jj/features.mjs";
 import { onExplosaoDefensiva, onEnergiaReversa, onFocoDefensivo } from "./jj/explosao-defensiva.mjs";
 import { canShowExpansaoDominio, onExpansaoDominio, configureExpansaoDominio } from "./jj/expansao-dominio.mjs";
 import { checkFulgorNegro, applyFulgorZonaEffect, setupFulgorNegro, getFulgorSecundaria } from "./jj/fulgor-negro.mjs";
@@ -35,7 +33,6 @@ import "./jj/socket.mjs";
 import "./jj/mastery-milestones.mjs";
 import "./jj/reducao-dano.mjs";
 import "./jj/npc-generator-dialog.mjs";
-import "./jj/combat-sacrifice-hud.mjs";
 import "./jj/heal-limit.mjs";
 import "./jj/constant-cost.mjs";
 
@@ -416,10 +413,9 @@ export default class CharacterActorSheet extends BaseActorSheet {
 
     // Ordenar skills por atributo e adicionar separadores
 const abilityOrder = ["str", "dex", "con", "int", "wis", "cha"];
-const abilityLabels = {
-  str: "Força", dex: "Agilidade", con: "Constituição",
-  int: "Intelecto", wis: "Sabedoria", cha: "Presença"
-};
+const abilityLabels = Object.fromEntries(
+  abilityOrder.map(ab => [ab, game.i18n.localize(`DND5E.Ability${ab.capitalize()}`)])
+);
 const skillsSorted = [];
 for ( const ab of abilityOrder ) {
   const group = context.skills.filter(s => (s.baseAbility ?? s.ability) === ab);
@@ -496,12 +492,6 @@ context.skills = skillsSorted;
         columns, id: "background", label: "DND5E.FeaturesBackground", order: 2000, groups: { origin: "background" }
       } : null,
       { columns, id: "other", label: "DND5E.FeaturesOther",      order: 3000, groups: { origin: "other" } },
-      { columns, id: "jj-origin",  label: "Origem de Poder",     order: 4000, groups: { origin: "jj-origin"  }, items: [] },
-      { columns, id: "jj-combat",  label: "Estilo de Combate",   order: 5000, groups: { origin: "jj-combat"  }, items: [] },
-      { columns, id: "jj-path",    label: "Caminho",             order: 6000, groups: { origin: "jj-path"    }, items: [] },
-      { columns, id: "jj-basic",   label: "Habilidades Básicas", order: 7000, groups: { origin: "jj-basic"   }, items: [] },
-      { columns, id: "jj-talents", label: "Talentos",            order: 8000, groups: { origin: "jj-talents" }, items: [] },
-      { columns, id: "jj-flaws",   label: "Defeitos",            order: 9000, groups: { origin: "jj-flaws"   }, items: [] },
     ].filter(_ => _);
     sections[0].items = [...(context.itemCategories.features ?? []), ...context.subclasses];
     context.sections = Inventory.prepareSections(sections);
@@ -954,21 +944,15 @@ context.dominioExpandido = this.actor.getFlag("onepiece-system", "dominioExpandi
 
     await super._prepareItemFeature(item, ctx);
 
-    const [originId] = (item.getFlag("onepiece-system", "advancementRoot") ?? item.getFlag("onepiece-system", "advancementOrigin"))
+    const [originId] = (item.getFlag("OnePiece", "advancementRoot") ?? item.getFlag("OnePiece", "advancementOrigin"))
       ?.split(".") ?? [];
     const group = item.parent.items.get(originId);
-    // Verificar se o item tem seção customizada Jujutsu
-    const jjSection = item.getFlag("onepiece-system", "featureSection");
-    if ( jjSection && ["jj-origin", "jj-combat", "jj-path", "jj-basic", "jj-talents", "jj-flaws"].includes(jjSection) ) {
-      ctx.groups.origin = jjSection;
-    } else {
-      ctx.groups.origin = "other";
-      switch ( group?.type ) {
-        case "race": ctx.groups.origin = "species"; break;
-        case "background": ctx.groups.origin = "background"; break;
-        case "class": ctx.groups.origin = group.identifier; break;
-        case "subclass": ctx.groups.origin = group.class?.identifier ?? "other"; break;
-      }
+    ctx.groups.origin = "other";
+    switch ( group?.type ) {
+      case "race": ctx.groups.origin = "species"; break;
+      case "background": ctx.groups.origin = "background"; break;
+      case "class": ctx.groups.origin = group.identifier; break;
+      case "subclass": ctx.groups.origin = group.class?.identifier ?? "other"; break;
     }
 
     ctx.groups.activation = item.system.properties?.has("trait") || !item.system.activities?.size
@@ -1063,9 +1047,7 @@ async _onRender(context, options) {
     injectAbilityRefs(this.element);
     applyJJTextTooltips(this.element);
 
-    // Seções customizadas de Features (JJ)
-    setupFeatureSectionDrops(this.element, this.actor);
-    unhideFeatureSections(this.element);
+    // Cabeçalhos de seção colapsáveis (Features/Inventory/Spells)
     setupFeatureSectionCollapse(this.element);
 
     // Botão de Explosão Defensiva — listener no botão do HBS
@@ -1090,13 +1072,6 @@ async _onRender(context, options) {
       });
     }
 
-    // Botão Gerar Aura — inserir fora do .ability-scores (que tem pointer-events:none)
-    // Botão Gerar Aura
-    this.element.querySelector("[data-action='jj-gerar-aura']")
-      ?.addEventListener("click", async () => {
-        const choices = await EnergyGenerationDialog.configure(this.actor);
-        if ( choices ) await EnergySystem.processTurnStartWithChoices(this.actor, choices);
-      });
     // Seis Olhos — listener nos radio buttons
     this.element.querySelectorAll("input[name='flags.onepiece-system.seisOlhosMode']")
       .forEach(radio => radio.addEventListener("change", async (event) => {

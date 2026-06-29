@@ -1,0 +1,21 @@
+_id: saZrBByO29TbU1W5
+name: Tribo dos 3 Olhos (Três Olhos)
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p><strong>Abrir os Olhos:</strong> O uso do terceiro olho possui uma conexão mística com o destino. Como resultado, você recebe proficiência em Testes de Atributo de Vontade — escolha entre Haki, Sobrenatural ou Sorte.</p>
+    chat: ''
+  identifier: tribo-dos-3-olhos-tres-olhos
+  type:
+    value: race
+    subtype: variant
+  requirements: Humanos (Variante)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!saZrBByO29TbU1W5'
+ownership:
+  default: 0
+flags: {}

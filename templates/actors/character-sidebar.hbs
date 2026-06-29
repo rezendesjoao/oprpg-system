@@ -167,44 +167,32 @@
   </div>
 </div>
             
-{{!-- Cursed Energy --}}
+{{!-- Pontos de Poder --}}
 <div class="meter-group">
   <div class="label roboto-condensed-upper" style="display: flex; justify-content: space-between;">
     <span>Pontos de Poder</span>
     {{#if editable}}
     <button type="button" class="config-button unbutton" data-action="showConfiguration"
             data-config="cursedEnergy" data-tooltip="JUJUTSU.Energy.Config"
-            aria-label="Cursed Energy Config">
+            aria-label="Configurar Pontos de Poder">
       <i class="fas fa-cog" inert></i>
     </button>
     {{/if}}
-    <span>PP Gerado</span>
   </div>
-  <div style="display: flex; gap: 4px;">
-    {{#with system.energy}}
-    <div class="meter sectioned hit-points cursed-energy-bar" style="flex: 2;">
-      <div class="progress hit-points" role="meter" aria-valuemin="0" aria-valuenow="{{ total }}"
-           aria-valuemax="{{ max }}" style="--bar-percentage: {{ @root.energyPct }}%">
-        <div class="label">
-          <span class="value">{{ total }}</span>
-          <span class="separator">&sol;</span>
-          <span class="max">{{ max }}</span>
-        </div>
-        <input type="text" name="system.energy.total" data-dtype="Number"
-               placeholder="0" value="{{ total }}" hidden>
+  {{#with system.energy}}
+  <div class="meter sectioned hit-points cursed-energy-bar">
+    <div class="progress hit-points" role="meter" aria-valuemin="0" aria-valuenow="{{ total }}"
+         aria-valuemax="{{ max }}" style="--bar-percentage: {{ @root.energyPct }}%">
+      <div class="label">
+        <span class="value">{{ total }}</span>
+        <span class="separator">&sol;</span>
+        <span class="max">{{ max }}</span>
       </div>
+      <input type="text" name="system.energy.total" data-dtype="Number"
+             placeholder="0" value="{{ total }}" hidden>
     </div>
-    <div class="meter sectioned hit-points" style="flex: 1; --dnd5e-color-hp-1: #2a6aaa; --dnd5e-color-hp-2: #4a90d9; --dnd5e-color-hp-3: #3a80c9;">
-      <div class="progress hit-points" role="meter" style="--bar-percentage: 100%">
-        <div class="label">
-          <input type="text" name="system.energy.generated" data-dtype="Number"
-                 placeholder="0" value="{{ generated }}"
-                 style="background:transparent; border:none; color:inherit; text-align:center; width:100%;">
-        </div>
-      </div>
-    </div>
-    {{/with}}
   </div>
+  {{/with}}
 </div>
 
             {{!-- Dice Row --}}
@@ -325,13 +313,6 @@
               <i class="fas fa-bookmark" inert></i>
               <span class="roboto-upper">{{ localize "DND5E.Favorites" }}</span>
           </h3>
-          <div class="jj-gerar-aura-box">
-            <button type="button" class="jj-gerar-aura-pill"
-                    data-action="jj-gerar-aura"
-                    data-tooltip="Gerar Pontos de Poder">
-              <i class="fas fa-bolt" inert></i>
-            </button>
-          </div>
         </div>
         <ul class="unlist">
             {{#each favorites}}

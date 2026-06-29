@@ -90,6 +90,25 @@ function advItemGrant(seed, level, uuids) {
   };
 }
 
+// Escolha de 1 item de um pool (ex.: variante de espécie no nível 0).
+function advItemChoice(seed, level, uuids, opts = {}) {
+  const count = opts.count ?? 1;
+  const choiceLevel = opts.choiceLevel ?? level;
+  return {
+    _id: mkId(seed + ":choice:" + level + ":" + uuids.join(",")),
+    type: "ItemChoice", level,
+    configuration: {
+      allowDrops: opts.allowDrops ?? false,
+      choices: { [String(choiceLevel)]: { count, replacement: opts.replacement ?? false } },
+      pool: uuids.map(u => ({ uuid: u })),
+      restriction: { level: "", list: [], subtype: "", type: opts.type ?? "feat" },
+      spell: null,
+      type: opts.type ?? "feat"
+    },
+    value: {}, flags: {}
+  };
+}
+
 /* -------------------------------------------- */
 /*  Item builders                               */
 /* -------------------------------------------- */
@@ -260,6 +279,17 @@ function raceItem(sp) {
   const advancement = [];
   if ( sp.asi ) advancement.push(advASI(seed, 0)); // +1/+1 ou +2 à escolha
   for ( const [lvl, uuids] of Object.entries(grantsByLevel) ) advancement.push(advItemGrant(seed, Number(lvl), uuids));
+
+  // Variantes: o jogador escolhe 1 traço de variante na criação (nível 0).
+  if ( sp.variants?.length ) {
+    const variantUuids = sp.variants.map(v => {
+      const item = featItem({ code: "SP-" + sp.code + "-VAR", name: v.name, desc: v.html ?? v.desc, level: 0, requirements: `${sp.name} (Variante)` });
+      item.system.type = { value: "race", subtype: "variant" }; // traço de variante de espécie
+      writeDoc("op-features", item);
+      return uuid("op-features", item._id);
+    });
+    advancement.push(advItemChoice(seed, 0, variantUuids, { count: 1, type: "feat" }));
+  }
 
   const movement = { walk: sp.walk ?? 9, swim: sp.swim ?? 0, fly: sp.fly ?? 0, climb: sp.climb ?? 0, units: "m", hover: false };
   return {

@@ -1,6 +1,6 @@
 /**
  * jj/features.mjs
- * Seções customizadas da aba de Características (Features, Inventory, Spells).
+ * Cabeçalhos de seção colapsáveis nas abas de Características, Inventário e Técnicas.
  */
 
 export function setupFeatureSectionCollapse(element) {
@@ -33,62 +33,4 @@ export function setupFeatureSectionCollapse(element) {
   });
 }
 
-export function unhideFeatureSections(element) {
-  const featuresTab = element.querySelector('[data-tab="features"]');
-  if ( !featuresTab ) return;
-  ["jj-origin", "jj-combat", "jj-path", "jj-basic", "jj-talents", "jj-flaws", "jj-benefits", "jj-curses"].forEach(id => {
-    const section = featuresTab.querySelector(`[data-group-origin="${id}"]`);
-    if ( section ) section.removeAttribute("hidden");
-  });
-}
-
-export const JJ_FEATURE_SECTIONS = new Set(["jj-origin", "jj-combat", "jj-path", "jj-basic", "jj-talents", "jj-flaws", "jj-benefits", "jj-curses"]);
-
-export function setupFeatureSectionDrops(element, actor) {
-  const featuresTab = element.querySelector('[data-tab="features"]');
-  if ( !featuresTab ) return;
-
-  JJ_FEATURE_SECTIONS.forEach(sectionId => {
-    const section = featuresTab.querySelector(`[data-group-origin="${sectionId}"]`);
-    if ( !section ) return;
-
-    section.addEventListener("dragover", e => {
-      e.preventDefault();
-      section.classList.add("jj-drag-over");
-    });
-
-    section.addEventListener("dragleave", () => {
-      section.classList.remove("jj-drag-over");
-    });
-
-    section.addEventListener("drop", async e => {
-      section.classList.remove("jj-drag-over");
-      let dragData;
-      try { dragData = JSON.parse(e.dataTransfer.getData("text/plain")); }
-      catch(err) { return; }
-      if ( dragData?.type !== "Item" ) return;
-      const item = dragData.uuid ? await fromUuid(dragData.uuid) : actor.items.get(dragData.id);
-      if ( !item || item.parent !== actor || item.type !== "feat" ) return;
-      // Pequeno delay para o nativo processar primeiro
-      setTimeout(async () => {
-        await item.setFlag("onepiece-system", "featureSection", sectionId);
-      }, 50);
-    });
-  });
-
-  // Seções nativas — limpar flag quando item volta
-  const nativeSections = featuresTab.querySelectorAll("[data-group-origin]:not([data-group-origin^='jj-'])");
-  nativeSections.forEach(section => {
-    section.addEventListener("drop", async e => {
-      let dragData;
-      try { dragData = JSON.parse(e.dataTransfer.getData("text/plain")); }
-      catch(err) { return; }
-      if ( dragData?.type !== "Item" ) return;
-      const item = dragData.uuid ? await fromUuid(dragData.uuid) : actor.items.get(dragData.id);
-      if ( !item || item.parent !== actor ) return;
-      const hasFlag = item.getFlag("onepiece-system", "featureSection");
-      if ( hasFlag ) await item.unsetFlag("onepiece-system", "featureSection");
-    });
-  });
-}
 

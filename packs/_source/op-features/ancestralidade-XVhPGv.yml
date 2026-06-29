@@ -1,0 +1,21 @@
+_id: XVhPGvgbTMrxG87x
+name: Ancestralidade
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>O Povo do Mar possui ancestralidade de criaturas marinhas, com até 2 Traços Comuns e 1 Traço Específico das Akuma no Mi Zoan.</p>
+    chat: ''
+  identifier: ancestralidade
+  type:
+    value: race
+    subtype: ''
+  requirements: Povo do Mar
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!XVhPGvgbTMrxG87x'
+ownership:
+  default: 0
+flags: {}

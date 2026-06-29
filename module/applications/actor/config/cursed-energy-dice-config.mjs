@@ -23,7 +23,7 @@ static DEFAULT_OPTIONS = {
 
   /** @override */
   get title() {
-    return "Cursed Energy Dice";
+    return game.i18n.localize("JUJUTSU.EnergyDice.Label");
   }
 
   /** @inheritDoc */
@@ -47,7 +47,7 @@ static DEFAULT_OPTIONS = {
 
     // Verificar se tem dados disponíveis
     if (energyDice.value <= 0) {
-      ui.notifications.warn(`${actor.name} não tem Cursed Energy Dice disponíveis!`);
+      ui.notifications.warn(`${actor.name} não tem Dados de Poder disponíveis!`);
       return;
     }
 
@@ -68,7 +68,7 @@ static DEFAULT_OPTIONS = {
 
     roll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor }),
-      flavor: `Cursed Energy Dice (${denomination} + mod. CON) — Recuperou ${recovered} PA`
+      flavor: `Dados de Poder (${denomination} + mod. CON) — Recuperou ${recovered} PP`
     });
     this.render();
   }

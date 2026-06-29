@@ -1,0 +1,21 @@
+_id: mxx0zFLVPJ2nlu64
+name: Robustos
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p><strong>Pisada Firme:</strong> Seu deslocamento normal se torna 12 metros e não pode ser reduzido por terreno difícil (caso receba outro deslocamento, prevalece o maior).</p>
+    chat: ''
+  identifier: robustos
+  type:
+    value: race
+    subtype: variant
+  requirements: Minks (Variante)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!mxx0zFLVPJ2nlu64'
+ownership:
+  default: 0
+flags: {}

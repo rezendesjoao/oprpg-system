@@ -42,10 +42,34 @@ system:
             optional: false
           - uuid: Compendium.onepiece-system.op-features.Item.2XNuCPHYRwRecKHc
             optional: false
-          - uuid: Compendium.onepiece-system.op-features.Item.YMNJM8cPxqEWC1Qu
-            optional: false
         optional: false
         spell: null
+      value: {}
+      flags: {}
+    - _id: VGLrT782zlKF98PO
+      type: ItemChoice
+      level: 0
+      configuration:
+        allowDrops: false
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.onepiece-system.op-features.Item.SIDJt0HbODM6i5T7
+          - uuid: Compendium.onepiece-system.op-features.Item.fGx2c22vlUPvufnL
+          - uuid: Compendium.onepiece-system.op-features.Item.I9xJfR8G2atQ15S5
+          - uuid: Compendium.onepiece-system.op-features.Item.aHIp65gUStoZ8ixt
+          - uuid: Compendium.onepiece-system.op-features.Item.Jc23VIYE9ZH7EXKB
+          - uuid: Compendium.onepiece-system.op-features.Item.ZXjhDGI45mK9i3Sz
+          - uuid: Compendium.onepiece-system.op-features.Item.saZrBByO29TbU1W5
+        restriction:
+          level: ''
+          list: []
+          subtype: ''
+          type: feat
+        spell: null
+        type: feat
       value: {}
       flags: {}
 effects: []

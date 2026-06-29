@@ -1,0 +1,21 @@
+_id: jjLh1VRZXQuSqF7B
+name: Birkans
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p><strong>Sacerdote Celestial:</strong> O celestial recebe +5 em Testes de Atributo de Presença (Atuação).</p>
+    chat: ''
+  identifier: birkans
+  type:
+    value: race
+    subtype: variant
+  requirements: Celestiais (Variante)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!jjLh1VRZXQuSqF7B'
+ownership:
+  default: 0
+flags: {}

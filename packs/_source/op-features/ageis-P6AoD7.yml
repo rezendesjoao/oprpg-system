@@ -1,0 +1,21 @@
+_id: P6AoD7oMcsYdTwkD
+name: Ágeis
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p><strong>Corpo Leve:</strong> Seu deslocamento normal se torna 12 metros e seu deslocamento de escalada se torna 9 metros (caso receba outro deslocamento, prevalece o maior).</p>
+    chat: ''
+  identifier: ageis
+  type:
+    value: race
+    subtype: variant
+  requirements: Minks (Variante)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!P6AoD7oMcsYdTwkD'
+ownership:
+  default: 0
+flags: {}
