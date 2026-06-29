@@ -337,6 +337,12 @@ export default class CharacterData extends CreatureTemplate {
     }
 
     AttributesFields.prepareBaseArmorClass.call(this);
+    // One Piece: atores legados do JJK guardavam attributes.ac.value=0 (usavam "Pontos de Armadura"),
+    // que a migração do dnd5e converte para calc "flat" → CR fixa 0. Sem uma CR fixa intencional,
+    // volta ao cálculo padrão (10 + Destreza). Não afeta cálculos customizados (ex.: "Corpo de Lutador").
+    if ( (this.attributes.ac.calc === "flat") && !this.attributes.ac.flat ) {
+      this.attributes.ac.calc = "default";
+    }
     AttributesFields.prepareBaseEncumbrance.call(this);
     SensesField._shim(this.attributes.senses);
   }
@@ -370,25 +376,6 @@ export default class CharacterData extends CreatureTemplate {
     this.prepareSkills({ rollData, originalSkills });
     this.prepareTools({ rollData });
     AttributesFields.prepareArmorClass.call(this, rollData);
-    // One Piece não usa o sistema de armadura do dnd5e: a Classe de Resistência (CR) é sempre
-    // 10 + Destreza (+ escudo/bônus/cobertura). Garantimos isso aqui para evitar que a CR caia em
-    // "Fixo 0" por dados/cálculo legados (o JJK usava "Pontos de Armadura" e guardava ac.value=0,
-    // que o dnd5e converte para calc "flat"). Preserva uma CR fixa intencional (flat > 0) e uma
-    // armadura de verdade, caso um dia exista.
-    {
-      const ac = this.attributes.ac;
-      const intentionalFlat = (ac.calc === "flat") && (Number(ac.flat) > 0);
-      if ( !ac.equippedArmor && !intentionalFlat ) {
-        const dexMod = this.abilities?.dex?.mod ?? 0;
-        ac.calc = "default";
-        ac.armor = 10;
-        ac.dex = dexMod;
-        ac.base = 10 + dexMod;
-        ac.label = null;
-        ac.value = Math.max(Number(ac.min) || 0,
-          ac.base + (Number(ac.shield) || 0) + (Number(ac.bonus) || 0) + (Number(ac.cover) || 0));
-      }
-    }
     AttributesFields.prepareConcentration.call(this, rollData);
     AttributesFields.prepareEncumbrance.call(this, rollData);
     AttributesFields.prepareInitiative.call(this, rollData);

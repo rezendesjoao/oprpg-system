@@ -71,13 +71,9 @@ Hooks.once("init", function() {
   // Record Configuration Values
   CONFIG.DND5E = DND5E;
 
-  // ── Jujutsu Legacy: remover cálculos de CR não utilizados ─────────────────
-  for ( const key of ["natural", "default", "mage", "draconic", "unarmoredMonk", "unarmoredBarb", "unarmoredBard"] ) {
-    delete CONFIG.DND5E.armorClasses[key];
-  }
-
-  // ── Jujutsu Legacy: remover cálculos de CR não utilizados
-  for ( const key of ["natural", "default", "mage", "draconic", "unarmoredMonk", "unarmoredBarb", "unarmoredBard"] ) {
+  // ── One Piece: remover apenas os cálculos de CR específicos de D&D não usados.
+  // MANTÉM "default" (10 + Destreza = a Classe de Resistência base de One Piece) e "natural" (usado p/ NPCs).
+  for ( const key of ["mage", "draconic", "unarmoredMonk", "unarmoredBarb", "unarmoredBard"] ) {
     delete CONFIG.DND5E.armorClasses[key];
   }
 
