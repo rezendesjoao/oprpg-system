@@ -171,53 +171,37 @@
   </section>
   {{/if}}
 
-  {{!-- V — Descrição --}}
+  {{!-- V — Descrição (só escolhas narrativas, em pílulas selecionáveis) --}}
   {{#if stepFlags.isDescription}}
   <section class="cc-section">
     <header class="cc-head"><h2>{{localize "ONEPIECE.CharacterCreation.Step.Description"}}</h2>
       <p class="hint">{{localize "ONEPIECE.CharacterCreation.Hint.Description"}}</p></header>
 
-    <div class="cc-fields">
-      <label class="cc-field"><span>{{localize "Name"}}</span><input type="text" name="text.name" value="{{data.text.name}}"></label>
-      <label class="cc-field"><span>{{localize "DND5E.Gender"}}</span><input type="text" name="text.gender" value="{{data.text.gender}}"></label>
-      <label class="cc-field"><span>{{localize "ONEPIECE.CharacterCreation.Dream"}}</span><input type="text" name="text.dream" value="{{data.text.dream}}"></label>
-      <label class="cc-field wide"><span>{{localize "DND5E.Appearance"}}</span><input type="text" name="text.appearance" value="{{data.text.appearance}}"></label>
-      <label class="cc-field wide"><span>{{localize "DND5E.Biography"}}</span><textarea name="text.bio" rows="3">{{data.text.bio}}</textarea></label>
-    </div>
-
     <header class="cc-head sub"><h3>{{localize "ONEPIECE.CharacterCreation.Caminho"}} <em>({{localize "ONEPIECE.CharacterCreation.Optional"}})</em></h3></header>
-    <div class="cc-grid">
+    <div class="cc-pills">
       {{#each data.caminhos}}
-      <button type="button" class="cc-card sm {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="caminho" data-uuid="{{uuid}}">
-        <img src="{{img}}" alt=""><span>{{name}}</span>
-      </button>
+      <button type="button" class="cc-pill {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="caminho" data-uuid="{{uuid}}">{{name}}</button>
       {{/each}}
     </div>
 
     <header class="cc-head sub"><h3>{{localize "ONEPIECE.CharacterCreation.Codigo"}} <em>({{localize "ONEPIECE.CharacterCreation.Optional"}})</em></h3></header>
-    <div class="cc-grid">
+    <div class="cc-pills">
       {{#each data.codigos}}
-      <button type="button" class="cc-card sm {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="codigo" data-uuid="{{uuid}}">
-        <img src="{{img}}" alt=""><span>{{name}}</span>
-      </button>
+      <button type="button" class="cc-pill {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="codigo" data-uuid="{{uuid}}">{{name}}</button>
       {{/each}}
     </div>
 
     <header class="cc-head sub"><h3>{{localize "ONEPIECE.CharacterCreation.Singularidades"}} <em>({{localize "ONEPIECE.CharacterCreation.Optional"}})</em></h3></header>
-    <div class="cc-grid">
+    <div class="cc-pills">
       {{#each data.singularidades}}
-      <button type="button" class="cc-card sm {{#if selected}}selected{{/if}}" data-action="toggleMulti" data-group="singularidades" data-uuid="{{uuid}}">
-        <img src="{{img}}" alt=""><span>{{name}}</span>
-      </button>
+      <button type="button" class="cc-pill {{#if selected}}selected{{/if}}" data-action="toggleMulti" data-group="singularidades" data-uuid="{{uuid}}">{{name}}</button>
       {{/each}}
     </div>
 
     <header class="cc-head sub"><h3>{{localize "ONEPIECE.CharacterCreation.Defeitos"}} <em>({{localize "ONEPIECE.CharacterCreation.Optional"}})</em></h3></header>
-    <div class="cc-grid">
+    <div class="cc-pills">
       {{#each data.defeitos}}
-      <button type="button" class="cc-card sm {{#if selected}}selected{{/if}}" data-action="toggleMulti" data-group="defeitos" data-uuid="{{uuid}}">
-        <img src="{{img}}" alt=""><span>{{name}}</span>
-      </button>
+      <button type="button" class="cc-pill {{#if selected}}selected{{/if}}" data-action="toggleMulti" data-group="defeitos" data-uuid="{{uuid}}">{{name}}</button>
       {{/each}}
     </div>
   </section>

@@ -322,13 +322,13 @@
   color: var(--cc-gold-bright);
   font-variant-numeric: tabular-nums;
 }
-.character-creation .cc-pills { display: flex; flex-wrap: wrap; gap: 7px; }
+.character-creation .cc-pills { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 2px; }
 .character-creation .cc-pills .cc-pill {
   appearance: none;
   -webkit-appearance: none;
   height: auto !important;
   min-height: 0 !important;
-  line-height: 1;
+  line-height: 1.15;
   margin: 0;
   padding: 6px 13px;
   border-radius: 999px;
@@ -337,6 +337,7 @@
   color: var(--cc-ink);
   cursor: pointer;
   font-size: var(--font-size-12, 12px);
+  text-transform: none;
   box-shadow: none;
   transition: all 120ms ease;
 }

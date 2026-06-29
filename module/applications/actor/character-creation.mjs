@@ -91,8 +91,7 @@ export default class OPCharacterCreation extends Application5e {
     multi: { singularidades: [], defeitos: [] },
     abilities: { str: null, dex: null, con: null, int: null, wis: null, cha: null },
     skillPicks: {},   // advId -> ["skills:key", ...]
-    asiPicks: {},     // advId -> { ability: delta }
-    text: { name: "", gender: "", appearance: "", dream: "", bio: "" }
+    asiPicks: {}      // advId -> { ability: delta }
   };
 
   /** Itens de equipamento escolhidos. @type {Array<{uuid,name,img,weight,qty}>} */
@@ -276,9 +275,8 @@ export default class OPCharacterCreation extends Application5e {
       .every(a => OPCharacterCreation.asiSum(this.setup.asiPicks[a.advId]) === a.points);
     const abilitiesOk = arrayOk && asiOk;
 
-    const descOk = (this.setup.text.name ?? "").trim().length > 0;
-
-    return [speciesOk, classOk, skillsOk, abilitiesOk, descOk, true];
+    // Descrição = só escolhas narrativas opcionais → sempre completa (jogador detalha depois).
+    return [speciesOk, classOk, skillsOk, abilitiesOk, true, true];
   }
 
   /** Os valores atribuídos formam exatamente a Distribuição Padrão? */
@@ -397,11 +395,8 @@ export default class OPCharacterCreation extends Application5e {
       }
       case "description": {
         return {
-          text: this.setup.text,
           caminhos: mark(await this.#index("caminhos"), sel("caminho")),
-          caminhoChosen: c.caminho ? this.#cardInfo(c.caminho) : null,
           codigos: mark(await this.#index("codigos"), sel("codigo")),
-          codigoChosen: c.codigo ? this.#cardInfo(c.codigo) : null,
           singularidades: (await this.#index("singularidades")).map(x => ({
             ...x, selected: this.setup.multi.singularidades.some(s => s.uuid === x.uuid)
           })),
@@ -491,11 +486,6 @@ export default class OPCharacterCreation extends Application5e {
       }
     }
 
-    // Campos de texto.
-    if ( obj.text ) for ( const k of Object.keys(this.setup.text) ) {
-      if ( k in obj.text ) this.setup.text[k] = obj.text[k];
-    }
-
     this.render();
   }
 
@@ -518,9 +508,19 @@ export default class OPCharacterCreation extends Application5e {
 
   /* -------------------------------------------- */
 
-  /** Seleciona um card de origem (single-select). */
+  /** Seleciona um card de origem (single-select); clicar o já selecionado desmarca. */
   static async #onSelectCard(event, target) {
     const { slot, uuid } = target.dataset;
+
+    // Toggle off: clicar a opção já selecionada limpa o slot.
+    if ( this.setup.cards[slot]?.uuid === uuid ) {
+      this.setup.cards[slot] = null;
+      if ( slot === "species" ) { this.setup.cards.variant = null; this.setup.cards.flaw = null; }
+      if ( slot === "class" ) this.setup.cards.subclass = null;
+      await this.#refreshChoices();
+      return this.render();
+    }
+
     const doc = await fromUuid(uuid);
     if ( !doc ) return;
     this.setup.cards[slot] = doc;
@@ -696,15 +696,10 @@ export default class OPCharacterCreation extends Application5e {
     try {
       const c = this.setup.cards;
 
-      // 1) Atributos BASE (os Avanços ASI somam delta sobre isto).
+      // 1) Atributos BASE (os Avanços ASI somam delta sobre isto). Nome/biografia o
+      //    jogador preenche depois na ficha — o assistente não mexe nesses campos.
       const abilUpdate = {};
       for ( const [key, v] of Object.entries(this.setup.abilities) ) abilUpdate[`system.abilities.${key}.value`] = Number(v) || 10;
-      // Texto / biografia.
-      abilUpdate["name"] = (this.setup.text.name || this.actor.name).trim();
-      abilUpdate["system.details.gender"] = this.setup.text.gender ?? "";
-      abilUpdate["system.details.appearance"] = this.setup.text.appearance ?? "";
-      abilUpdate["system.details.ideal"] = this.setup.text.dream ?? "";
-      abilUpdate["system.details.biography.value"] = this.setup.text.bio ?? "";
       await this.actor.update(abilUpdate);
 
       // 2) Espécie (+variante/+defeito/ASI/perícias de traço).
