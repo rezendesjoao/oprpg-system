@@ -944,7 +944,7 @@ context.dominioExpandido = this.actor.getFlag("onepiece-system", "dominioExpandi
 
     await super._prepareItemFeature(item, ctx);
 
-    const [originId] = (item.getFlag("OnePiece", "advancementRoot") ?? item.getFlag("OnePiece", "advancementOrigin"))
+    const [originId] = (item.flags?.OnePiece?.advancementRoot ?? item.flags?.OnePiece?.advancementOrigin)
       ?.split(".") ?? [];
     const group = item.parent.items.get(originId);
     ctx.groups.origin = "other";

@@ -966,7 +966,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
       sourceLabel = grantingItem?.name;
     } else {
       // Check spells added from advancements
-      const advancementOrigin = item.getFlag("OnePiece", "advancementOrigin");
+      const advancementOrigin = item.flags?.OnePiece?.advancementOrigin;
       if ( advancementOrigin ) {
         const [itemId] = advancementOrigin.split(".");
         const grantingItem = item.parent.items.get(itemId);

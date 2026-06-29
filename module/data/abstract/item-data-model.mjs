@@ -59,7 +59,7 @@ export default class ItemDataModel extends SystemDataModel {
    * @type {Item5e|void}
    */
   get advancementRootItem() {
-    return this.parent?.actor?.items.get(this.parent.getFlag("OnePiece", "advancementRoot")?.split(".")?.[0]);
+    return this.parent?.actor?.items.get(this.parent?.flags?.OnePiece?.advancementRoot?.split(".")?.[0]);
   }
 
   /* -------------------------------------------- */

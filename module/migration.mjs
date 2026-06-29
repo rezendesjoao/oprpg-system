@@ -616,7 +616,7 @@ export function migrateItemData(item, itemData, migrationData, flags={}) {
   if ( (itemData.type === "spell") && !itemData.system?.sourceItem && flags.actorData?.items ) {
     // Try to identify the granting item from advancement or cast-activity flags.
     let grantingItemData;
-    const advancementOrigin = item.getFlag("OnePiece", "advancementOrigin");
+    const advancementOrigin = item.flags?.OnePiece?.advancementOrigin;
     if ( advancementOrigin ) {
       const [itemId] = advancementOrigin.split(".");
       grantingItemData = flags.actorData.items.find(i => i._id === itemId);
