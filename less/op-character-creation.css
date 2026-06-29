@@ -300,6 +300,97 @@
 }
 
 /* ---------------------------------------------------------------------------
+   Espécies — "selos" com monograma (sem ícone, criativo)
+   --------------------------------------------------------------------------- */
+.character-creation .cc-species-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+  gap: 12px;
+}
+.character-creation .cc-species-grid .cc-species-tile {
+  appearance: none;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0;
+  position: relative;
+  font: inherit;
+  text-shadow: none;
+
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+  padding: 16px 8px 14px;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.045), rgba(0, 0, 0, 0.08));
+  border: 1px solid var(--cc-line-soft);
+  border-radius: 14px;
+  cursor: pointer;
+  color: var(--cc-ink);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition: transform 130ms ease, border-color 130ms ease, background 130ms ease, box-shadow 130ms ease;
+}
+.character-creation .cc-species-grid .cc-species-tile:hover {
+  transform: translateY(-3px);
+  border-color: var(--cc-line);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+}
+.character-creation .cc-species-grid .cc-species-tile.selected {
+  border-color: var(--cc-gold-bright);
+  background: linear-gradient(160deg, rgba(224, 182, 89, 0.22), rgba(224, 182, 89, 0.07));
+  box-shadow: 0 0 0 1px var(--cc-gold) inset, 0 0 16px rgba(224, 182, 89, 0.4);
+}
+.character-creation .cc-species-grid .cc-species-tile.selected::after {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Pro", "Font Awesome 6 Free", "FontAwesome";
+  font-weight: 900;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 18px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--cc-gold-bright);
+  color: #1b1726;
+  font-size: 9px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+.character-creation .cc-monogram {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-family: var(--dnd5e-font-modesto, var(--font-primary, serif));
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--cc-gold-bright);
+  background: radial-gradient(circle at 50% 32%, #2c2640, #161220);
+  border: 2px solid var(--cc-gold);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 0 12px rgba(224, 182, 89, 0.14);
+}
+.character-creation .cc-species-grid .cc-species-tile:hover .cc-monogram {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 0 14px rgba(224, 182, 89, 0.22), 0 0 10px rgba(224, 182, 89, 0.25);
+}
+.character-creation .cc-species-grid .cc-species-tile.selected .cc-monogram {
+  background: radial-gradient(circle at 50% 32%, var(--cc-gold-bright), var(--cc-gold-deep));
+  border-color: var(--cc-gold-bright);
+  color: #1b1726;
+}
+.character-creation .cc-species-name {
+  font-family: var(--dnd5e-font-modesto, var(--font-primary, serif));
+  font-size: var(--font-size-14, 14px);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+  line-height: 1.1;
+}
+
+/* ---------------------------------------------------------------------------
    Perícias (pills)
    --------------------------------------------------------------------------- */
 .character-creation .cc-skill-group {

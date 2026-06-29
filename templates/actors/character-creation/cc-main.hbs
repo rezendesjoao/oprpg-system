@@ -19,10 +19,11 @@
   <section class="cc-section">
     <header class="cc-head"><h2>{{localize "ONEPIECE.CharacterCreation.Step.Species"}}</h2>
       <p class="hint">{{localize "ONEPIECE.CharacterCreation.Hint.Species"}}</p></header>
-    <div class="cc-grid">
+    <div class="cc-species-grid">
       {{#each data.species}}
-      <button type="button" class="cc-card {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="species" data-uuid="{{uuid}}">
-        <img src="{{img}}" alt=""><span>{{name}}</span>
+      <button type="button" class="cc-species-tile {{#if selected}}selected{{/if}}" data-action="selectCard" data-slot="species" data-uuid="{{uuid}}">
+        <span class="cc-monogram">{{initial}}</span>
+        <span class="cc-species-name">{{name}}</span>
       </button>
       {{/each}}
     </div>

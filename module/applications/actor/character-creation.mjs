@@ -82,6 +82,9 @@ export default class OPCharacterCreation extends Application5e {
   /** Índice do passo atual. @type {number} */
   #stepIndex = 0;
 
+  /** Maior índice de passo já visitado (para marcar "concluído" só o que foi visto). @type {number} */
+  #maxReached = 0;
+
   /** Seleções em memória (nada grava até concluir). */
   setup = {
     cards: {
@@ -303,6 +306,7 @@ export default class OPCharacterCreation extends Application5e {
     const context = await super._prepareContext(options);
     await this.#refreshChoices();
 
+    this.#maxReached = Math.max(this.#maxReached, this.#stepIndex);
     const comp = this.#completion();
     const unlocked = this.#unlocked();
     const stepId = this.stepId;
@@ -311,7 +315,8 @@ export default class OPCharacterCreation extends Application5e {
       id, index: i, num: i + 1,
       label: game.i18n.localize(`ONEPIECE.CharacterCreation.Step.${id[0].toUpperCase()}${id.slice(1)}`),
       active: id === stepId,
-      done: comp[i],
+      // "Concluído" = completo, já visitado e não é o passo atual.
+      done: comp[i] && (i <= this.#maxReached) && (i !== this.#stepIndex),
       disabled: i > unlocked
     }));
 
@@ -342,7 +347,7 @@ export default class OPCharacterCreation extends Application5e {
       case "species": {
         const list = await this.#index("species");
         return {
-          species: mark(list, sel("species")),
+          species: mark(list, sel("species")).map(s => ({ ...s, initial: (s.name?.[0] ?? "?").toUpperCase() })),
           chosen: c.species ? this.#cardInfo(c.species) : null,
           variant: this._d.variant ? { ...this._d.variant, pool: mark(this._d.variant.pool, sel("variant")) } : null,
           flaw: this._d.flaw ? { ...this._d.flaw, pool: mark(this._d.flaw.pool, sel("flaw")) } : null
