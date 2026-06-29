@@ -1,0 +1,21 @@
+_id: ZdgHMYoP7nOeeyXK
+name: Pontos de Rokushiki
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Toda Técnica de Rokushiki usada gera 1 Ponto de Rokushiki. Pode manter até metade do seu nível (arredondado para baixo). Use para ataques adicionais, dobrar deslocamento ou recuperar 30 PV.
+    chat: ''
+  identifier: pontos-de-rokushiki
+  type:
+    value: class
+    subtype: ''
+  requirements: Rokushiki
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!ZdgHMYoP7nOeeyXK'
+ownership:
+  default: 0
+flags: {}

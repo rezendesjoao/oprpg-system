@@ -1,0 +1,21 @@
+_id: xayLzewDqsX8LWvY
+name: Benção do Mar
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: No seu turno submerso, faça uma ação adicional ou ação poderosa adicional (Técnicas de até 3º grau ou menor). Uma vez por descanso curto ou longo.
+    chat: ''
+  identifier: bencao-do-mar
+  type:
+    value: class
+    subtype: ''
+  requirements: Caminho do Filho do Mar
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!xayLzewDqsX8LWvY'
+ownership:
+  default: 0
+flags: {}

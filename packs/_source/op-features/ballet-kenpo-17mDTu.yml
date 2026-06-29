@@ -1,0 +1,21 @@
+_id: 17mDTughpVBxIKfV
+name: Ballet Kenpo
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Ataques contra você têm desvantagem. Enquanto não receber dano, você e criaturas amigáveis a 9m ganham bônus em Salvaguardas igual a seu modificador de Presença.
+    chat: ''
+  identifier: ballet-kenpo
+  type:
+    value: class
+    subtype: ''
+  requirements: Okama Kenpo
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!17mDTughpVBxIKfV'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: bJHgJgUdYsFllCg4
+name: Overclock
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Sobrecarrega o sistema por até 5 minutos: deslocamento 15m e +1d6 dano Elétrico. Criaturas atingidas têm desvantagem contra alvos que não sejam você.'
+    chat: ''
+  identifier: overclock
+  type:
+    value: class
+    subtype: ''
+  requirements: Ciborgue
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!bJHgJgUdYsFllCg4'
+ownership:
+  default: 0
+flags: {}

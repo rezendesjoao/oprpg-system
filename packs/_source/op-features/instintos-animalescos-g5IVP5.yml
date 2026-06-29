@@ -1,0 +1,21 @@
+_id: g5IVP5zthLEOzTHf
+name: Instintos Animalescos
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: '<p>Cada mink possui um objeto que causa perda de controle (ex: coelhos com cenoura). Devem fazer Salvaguarda de Vontade CD 15 ou ficam distraídos (Atordoado) por 1d4 turnos.</p>'
+    chat: ''
+  identifier: instintos-animalescos
+  type:
+    value: race
+    subtype: ''
+  requirements: Minks
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!g5IVP5zthLEOzTHf'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: jmitrwinRF0giw9O
+name: Ataque Extra
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Pode atacar duas vezes, em vez de uma, ao usar a ação Atacar durante o turno.
+    chat: ''
+  identifier: ataque-extra
+  type:
+    value: class
+    subtype: ''
+  requirements: Guerrilheiro
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!jmitrwinRF0giw9O'
+ownership:
+  default: 0
+flags: {}

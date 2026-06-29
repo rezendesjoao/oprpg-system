@@ -1,0 +1,42 @@
+_id: tMFr1oRIp0LVODMu
+name: Corpo de Guerreiro
+type: subclass
+img: icons/skills/melee/weapons-crossed-swords-purple.webp
+system:
+  description:
+    value: Especialização que enfatiza a resistência e recuperação sobre-humana do Lutador. Um guerreiro que confia em sua constituição corpórea para suportar qualquer batalha, tornando-se um muro vivo de músculo e determinação.
+    chat: ''
+  identifier: corpo_guerreiro
+  classIdentifier: lutador
+  spellcasting:
+    progression: none
+    ability: ''
+  advancement:
+    - _id: tSnSyaQ8yP2CINcB
+      type: ItemGrant
+      level: 1
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.itep06cNlfPVqCBw
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: ufcKCzyY7LqollQK
+      type: ItemGrant
+      level: 5
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.shTZurGPrn4co6vC
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!tMFr1oRIp0LVODMu'
+ownership:
+  default: 0
+flags: {}

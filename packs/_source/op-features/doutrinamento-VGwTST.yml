@@ -1,0 +1,21 @@
+_id: VGwTST4HheAZ8xcm
+name: Doutrinamento
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Ataque de Oportunidade Estratégico, Camuflagem com Destreza/Sabedoria (vantagem), Aprendizado Impetuoso (Treinamento Geral grátis), Sentido de Perigo (vantagem em Salvaguardas de Destreza).
+    chat: ''
+  identifier: doutrinamento
+  type:
+    value: class
+    subtype: ''
+  requirements: Guerrilheiro
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!VGwTST4HheAZ8xcm'
+ownership:
+  default: 0
+flags: {}

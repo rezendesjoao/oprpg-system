@@ -1,0 +1,21 @@
+_id: omv7Qje3PZFYpyoI
+name: Yami no Kijin
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Você se torna um com as sombras em locais sem luz plena. Recebe <strong>Arauto das Sombras</strong> (reduz dano em 10, exceto verdadeiro, +1d6 dano psíquico nos ataques), <strong>Ocultação das Sombras</strong> (invisibilidade após 1 rodada sem ser visto), e <strong>Translocação das Sombras</strong> (teleporte até 21m uma vez por rodada sem ser visto).
+    chat: ''
+  identifier: yami-no-kijin
+  type:
+    value: class
+    subtype: ''
+  requirements: Ninja
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!omv7Qje3PZFYpyoI'
+ownership:
+  default: 0
+flags: {}

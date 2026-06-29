@@ -1,0 +1,136 @@
+/* ============================================================================
+ * One Piece — Aba Akuma no Mi
+ * ========================================================================== */
+
+.tab[data-tab="manipulation"].akuma-tab {
+  background: transparent;
+  gap: 10px;
+  padding: 4px 2px;
+}
+
+.akuma-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 200px;
+  color: #8a8a9a;
+  text-align: center;
+  padding: 24px;
+}
+.akuma-empty i { font-size: 42px; color: #b23a48; opacity: 0.5; }
+
+/* ── Cabeçalho da fruta ── */
+.akuma-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background: linear-gradient(135deg, rgba(178,58,72,0.16), rgba(20,16,30,0.6));
+  border: 1px solid rgba(178,58,72,0.45);
+  border-radius: 10px;
+}
+.akuma-fruit-img {
+  width: 56px; height: 56px;
+  border-radius: 8px;
+  border: 2px solid rgba(178,58,72,0.6);
+  object-fit: cover;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+.akuma-fruit-info { display: flex; flex-direction: column; gap: 6px; }
+.akuma-fruit-name { margin: 0; font-size: 18px; font-weight: 700; color: #f3e7c9; }
+.akuma-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+.akuma-badge {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  padding: 2px 8px; border-radius: 10px;
+  background: #2a2438; color: #cdbff0; border: 1px solid rgba(255,255,255,0.12);
+}
+.akuma-badge.akuma-cat-logia        { background: #1f3a4d; color: #7fd3ff; }
+.akuma-badge.akuma-cat-paramecia    { background: #3a1f44; color: #e29bff; }
+.akuma-badge.akuma-cat-zoan         { background: #284028; color: #9be29b; }
+.akuma-badge.akuma-cat-zoanMythical { background: #4d3a1f; color: #ffd27f; }
+.akuma-badge.akuma-awk { background: #5a1414; color: #ff9b9b; }
+
+/* ── Configuração ── */
+.akuma-config {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 12px;
+  padding: 10px 12px;
+  background: rgba(14,14,28,0.5);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+}
+.akuma-field { display: flex; flex-direction: column; gap: 3px; }
+.akuma-field.akuma-field-wide { grid-column: 1 / -1; }
+.akuma-field label { font-size: 11px; text-transform: uppercase; color: #9a90b0; font-weight: 600; }
+.akuma-field select, .akuma-field input {
+  background: #0e0e1c; color: #e8e2f5;
+  border: 1px solid rgba(255,255,255,0.15); border-radius: 5px;
+  padding: 4px 6px; font-size: 13px;
+}
+.akuma-aspecto { padding: 6px 12px; color: #cdbff0; font-size: 13px; }
+
+/* ── Linhas (MP, Despertar) ── */
+.akuma-row {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 10px; padding: 10px 12px;
+  background: rgba(14,14,28,0.5);
+  border: 1px solid rgba(255,255,255,0.08); border-radius: 8px;
+}
+.akuma-row-label { font-weight: 700; color: #f3e7c9; display: flex; align-items: center; gap: 8px; }
+.akuma-row-label i { color: #b23a48; }
+
+.akuma-mp-counter { display: flex; align-items: center; gap: 8px; }
+.akuma-mp-val { font-size: 16px; font-weight: 700; color: #e8e2f5; min-width: 54px; text-align: center; }
+.akuma-mp-avail { font-size: 12px; color: #8a8a9a; }
+.akuma-step {
+  width: 26px; height: 26px; border-radius: 6px;
+  background: #2a2438; color: #cdbff0; border: 1px solid rgba(255,255,255,0.15);
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+}
+.akuma-step:hover { background: #3a3450; }
+
+/* ── Despertar ── */
+.akuma-awakening { flex-direction: column; align-items: stretch; }
+.akuma-awakening-body { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 6px; }
+.akuma-awk-toggle { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #cdbff0; }
+.akuma-desperto-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 16px; border-radius: 8px;
+  background: linear-gradient(135deg, #b23a48, #7a1f2a); color: #fff;
+  border: 1px solid rgba(255,180,120,0.5); font-weight: 700; cursor: pointer;
+  box-shadow: 0 0 12px rgba(178,58,72,0.3);
+}
+.akuma-desperto-btn:hover { filter: brightness(1.15); }
+.akuma-desperto-btn.active { background: linear-gradient(135deg, #ff7b00, #b23a48); animation: akuma-pulse 1.6s ease-in-out infinite; }
+.akuma-stage-on { color: #ffb347; font-weight: 700; font-size: 13px; }
+.akuma-awk-locked { color: #8a8a9a; font-size: 12px; font-style: italic; }
+@keyframes akuma-pulse { 0%,100% { box-shadow: 0 0 10px rgba(255,123,0,0.4); } 50% { box-shadow: 0 0 22px rgba(255,123,0,0.8); } }
+
+/* ── Fraqueza ── */
+.akuma-weakness {
+  padding: 6px 12px; font-size: 12px; color: #7fd3ff;
+  background: rgba(31,58,77,0.4); border: 1px solid rgba(127,211,255,0.3);
+  border-radius: 8px; display: flex; align-items: center; gap: 8px;
+}
+
+/* ── Técnicas ── */
+.akuma-tecnicas h3 {
+  margin: 4px 0 6px; font-size: 14px; color: #f3e7c9;
+  display: flex; align-items: center; gap: 8px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px;
+}
+.akuma-tecnicas h3 i { color: #ffd27f; }
+.akuma-tecnica-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.akuma-tecnica {
+  display: flex; align-items: center; gap: 8px;
+  padding: 5px 8px; border-radius: 6px; cursor: pointer;
+  background: rgba(14,14,28,0.5); border: 1px solid rgba(255,255,255,0.07);
+}
+.akuma-tecnica:hover { background: rgba(42,36,56,0.7); }
+.akuma-tecnica img { width: 26px; height: 26px; border-radius: 5px; border: none; flex: 0 0 auto; }
+.akuma-tecnica-name { flex: 1; color: #e8e2f5; font-size: 13px; }
+.akuma-tecnica-grau { font-size: 11px; font-weight: 700; color: #ffd27f; background: rgba(255,210,127,0.12); padding: 1px 8px; border-radius: 8px; }
+.akuma-tecnica-empty { color: #8a8a9a; font-size: 12px; font-style: italic; padding: 4px 0; }

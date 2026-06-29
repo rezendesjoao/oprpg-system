@@ -1,0 +1,21 @@
+_id: BXfpbfGxRds1wi8o
+name: Bom de Briga
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Ganhe: <strong>Mãos Letais</strong> (ataques desarmados recebem benefícios de arma marcial); <strong>Truque Sujo</strong> (1 no d20 = acerto crítico); <strong>Mão de Marreta</strong> (dano dobrado em estruturas); <strong>Power Grip</strong> (vantagem contra agarrados); <strong>Tiro de Meta</strong> (crítico 17-20 vs Caído). Por Proficiência × repouso: ignore crítico, ignore resistência ou rerrole falha de ataque corpo a corpo'
+    chat: ''
+  identifier: bom-de-briga
+  type:
+    value: class
+    subtype: ''
+  requirements: Lutador
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!BXfpbfGxRds1wi8o'
+ownership:
+  default: 0
+flags: {}

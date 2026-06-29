@@ -1,0 +1,12 @@
+{
+  "name": "Higan (Disparo de Fogo)",
+  "type": "spell",
+  "img": "icons/magic/fire/projectile-bolt-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Técnica de Combate — Grau 1.</strong> Dispara balas de fogo. Custo: 2 PP. Dano: 2d10 (alvo único) ou 2d6 (área). Alcance: linha/9 m.</p>"
+    },
+    "level": 1,
+    "school": "evo"
+  }
+}

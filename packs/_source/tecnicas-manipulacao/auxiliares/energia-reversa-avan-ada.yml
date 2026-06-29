@@ -1,0 +1,321 @@
+name: Energia Reversa Avançada
+type: spell
+img: icons/magic/unholy/hand-marked-pink.webp
+effects: []
+folder: G0GtIv3F4CIvLDzu
+flags:
+  betterRolls5e:
+    quickDesc:
+      value: true
+      altValue: true
+    quickProperties:
+      value: true
+      altValue: true
+    quickVersatile:
+      value: false
+      altValue: false
+    quickOther:
+      value: true
+      altValue: true
+      context: ''
+    quickFlavor:
+      value: true
+      altValue: true
+    quickAttack:
+      value: true
+      altValue: true
+    quickSave:
+      value: true
+      altValue: true
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+  core:
+    sheetClass: dnd5e.Tidy5eItemSheet
+  scene-packer:
+    hash: 448286841f05eba17375161b6ebdc7ce0a0d9217
+    sourceId: Item.a5Nniw5x88xGjjl7
+  custom-character-sheet-sections:
+    sectionName: ''
+  rsr5e:
+    quickDamage:
+      context: []
+      value:
+        '0': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+    quickFlavor:
+      value: true
+    quickFooter:
+      value: true
+    quickAttack:
+      value: true
+    quickSave:
+      value: true
+  midi-qol:
+    fumbleThreshold: null
+    effectActivation: false
+  midiProperties:
+    nodam: false
+    fulldam: false
+    halfdam: false
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    rollOther: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+system:
+  description:
+    value: "<p>Ao ativar essa habilidade, você pode utilizar o poder da energia reversa para se regenerar dos piores tipo de feridas. Você pode escolher uma das seguintes opções:</p><p><strong>Instantâneo (8 PA):</strong> Você recupera uma parte superficial ou pequena do corpo, como olho;</p><p><strong>1 rodada (25 PA):</strong> Você recupera totalmente um membro perdido ou parte dele;</p><p><strong>3 rodadas (50 PA):</strong> Você mantém sua vida e começa a se regenerar de uma ferida letal, como perder um órgão ou ter ele terrivelmente danificado.</p><p class=\"MsoNormal\">\_</p><p>O custo dessa técnica é retirado primeiro da sua Energia Amaldiçoada Gerada e depois dos seus Pontos de Energia Amaldiçoada total.</p><hr><p class=\"MsoNormal\"><strong>&lt;Alternativamente&gt;</strong> Você pode utilizar uma ação de poder e 8 PA da sua Energia Gerada para curar 6d10 Pontos de Vida. Essa cura compartilha o limite do \"Regeneração Constante\" assim como seu efeito de resetar o limite com Fulgor Negro.</p><p>Você pode gastar 2 PA para adicionar 1d10 de cura até um máximo de 15d10.</p><hr><p><strong>Duração:</strong>\_Instantâneo</p><p><strong>Alcance:</strong> Pessoal</p><p><strong>Requisito:</strong> Ação de Poder</p><p><strong>Custo:</strong> Especial</p>"
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2014'
+  activation:
+    type: powerAction
+    condition: ''
+    value: 1
+  duration:
+    value: '5'
+    units: spec
+    special: ''
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ft
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 0
+  school: abj
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties: []
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: material
+            value: '2'
+            target: ''
+            scaling: {}
+          - type: attribute
+            target: energy.generated
+            value: '8'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      name: ''
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+    sOlSVMdI9MwyOI3u:
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: material
+            value: '2'
+            target: ''
+            scaling: {}
+          - type: attribute
+            target: energy.generated
+            value: '25'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 100000
+      name: ''
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      _id: sOlSVMdI9MwyOI3u
+    78xMg3CfPMtc04JB:
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: material
+            value: '2'
+            target: ''
+            scaling: {}
+          - type: attribute
+            target: energy.generated
+            value: '50'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 200000
+      name: ''
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      _id: 78xMg3CfPMtc04JB
+  identifier: in-ocultacao-completa
+  method: pact
+  prepared: 0
+_stats:
+  coreVersion: '14.360'
+  systemId: jujutsu-system
+  systemVersion: 1.0.2
+  createdTime: 1777130936552
+  modifiedTime: 1777132601156
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+  duplicateSource: null
+ownership:
+  default: 0
+_id: qoHNsoyELrJ4leot
+sort: 300000
+_key: '!items!qoHNsoyELrJ4leot'

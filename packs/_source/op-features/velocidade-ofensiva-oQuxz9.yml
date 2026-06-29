@@ -1,0 +1,21 @@
+_id: oQuxz9fdUUaYnVQl
+name: Velocidade Ofensiva
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Realiza dois ataques ao usar Atacar. Pode gastar ação bônus para ataque adicional após cada ataque comum.
+    chat: ''
+  identifier: velocidade-ofensiva
+  type:
+    value: class
+    subtype: ''
+  requirements: Ninja
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!oQuxz9fdUUaYnVQl'
+ownership:
+  default: 0
+flags: {}

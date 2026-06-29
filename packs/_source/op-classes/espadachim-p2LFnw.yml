@@ -1,0 +1,261 @@
+_id: p2LFnwBHG4XMhAXj
+name: Espadachim
+type: class
+img: icons/skills/melee/weapons-crossed-swords-yellow.webp
+system:
+  description:
+    value: Guerreiros que dominam a arte da espada. Alguns manuseiam as lâminas com leveza e precisão, enquanto outros aplicam grande força e ferocidade. O espadachim confia apenas na espada para proteger a própria vida e na sua contínua evolução através do treinamento incessante.
+    chat: ''
+  identifier: espadachim
+  levels: 1
+  hd:
+    denomination: d10
+    spent: 0
+  primaryAbility:
+    value:
+      - str
+      - dex
+    all: false
+  spellcasting:
+    progression: none
+    ability: str
+  advancement:
+    - _id: uASwKhqojjc7yv7X
+      type: HitPoints
+      configuration: {}
+      value: {}
+      flags: {}
+    - _id: kxUYq8W7ZO4Cc3Yj
+      type: Trait
+      level: 1
+      configuration:
+        allowReplacements: false
+        grants:
+          - saves:dex
+          - saves:int
+        choices: []
+        mode: default
+      value: {}
+      flags: {}
+    - _id: QOF1dnmVHkjtCzlt
+      type: Trait
+      level: 1
+      configuration:
+        allowReplacements: false
+        grants:
+          - weapon:sim
+          - weapon:mar
+        choices: []
+        mode: default
+      value: {}
+      flags: {}
+    - _id: KzRcBNXfMYdl7jD7
+      type: Trait
+      level: 1
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:ath
+              - skills:itm
+              - skills:ins
+              - skills:prc
+        mode: default
+      value: {}
+      flags: {}
+    - _id: 0YcRDMoVoOVk0Tpm
+      type: AbilityScoreImprovement
+      level: 4
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: aOsZu1M2vZo9XQnX
+      type: AbilityScoreImprovement
+      level: 8
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: STjwNPqHhZQSEUAt
+      type: AbilityScoreImprovement
+      level: 12
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: jtta2Ms5thJZd8Fi
+      type: AbilityScoreImprovement
+      level: 16
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: fnX9DCHH8Ug1xQx1
+      type: AbilityScoreImprovement
+      level: 19
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: 5Bcv6sbQcq7p7JJL
+      type: ItemGrant
+      level: 1
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.aq5afEgeA1yWhM4x
+            optional: false
+          - uuid: Compendium.onepiece-system.op-techniques.Item.3D0jnIZYyGbIyq7x
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: TTMZ9rHILlmXf8PX
+      type: ItemGrant
+      level: 2
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.mugy3F0FG2FLhFiw
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: fy4PZEokIwkG8PRD
+      type: ItemGrant
+      level: 3
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.dIpSGqZpTmVxHxFm
+            optional: false
+          - uuid: Compendium.onepiece-system.op-techniques.Item.WvSik4Ix358wdOko
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: 0I750G0XWzQunjvl
+      type: ItemGrant
+      level: 5
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.W3zUEsRK7UPYiSvx
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: qfGnrJilv8GeAPCD
+      type: ItemGrant
+      level: 6
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.DJ7fVcUP2pBSQd52
+            optional: false
+          - uuid: Compendium.onepiece-system.op-techniques.Item.Bn9Iy1kPr9TcfaJF
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: ZQqCgCEZZ1TcYxse
+      type: ItemGrant
+      level: 7
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.8jt8FtDsYXffa9AR
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: FttouU9eIho0ORsQ
+      type: ItemGrant
+      level: 9
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-techniques.Item.cLeRAWifEKJZq0Ip
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: NnSNHjqKcQHWfON5
+      type: ItemGrant
+      level: 10
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.WkU7r2vPEboAL16h
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: Ys730smINoRuUqHz
+      type: ItemGrant
+      level: 12
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-techniques.Item.ij42ugp0TudqbLMd
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: yjJxggG2oXNiksjf
+      type: ItemGrant
+      level: 15
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.zOVbL78o07szL3PB
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: sgKTz9jUT7cQoE74
+      type: ItemGrant
+      level: 16
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-techniques.Item.S9PN8yVikos8gOxJ
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: 0SN6514gnVrgssFs
+      type: ItemGrant
+      level: 20
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-techniques.Item.UajjYng9ORyf5P2M
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!p2LFnwBHG4XMhAXj'
+ownership:
+  default: 0
+flags: {}

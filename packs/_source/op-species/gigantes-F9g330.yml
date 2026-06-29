@@ -1,0 +1,56 @@
+_id: F9g3308kcS6iS1me
+name: Gigantes
+type: race
+img: icons/environment/people/group.webp
+system:
+  description:
+    value: <p>Humanoides colossos com 13-20 metros de altura, pesando 15-45 toneladas. Possuem proporções exageradas e traços faciais mais acentuados. Originários principalmente da ilha Elbaf, conhecidos por sua honra, orgulho guerreiro e código de combate nobre.</p>
+    chat: ''
+  identifier: giant
+  movement:
+    walk: 9
+    swim: 3
+    fly: 0
+    climb: 0
+    units: m
+    hover: false
+  senses:
+    darkvision: 0
+    units: m
+  type:
+    value: humanoid
+    subtype: ''
+    swarm: ''
+    custom: ''
+  advancement:
+    - _id: lYqSlTPgtDdnScqJ
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: kzk7iggkqlxh8dCK
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.egKU6f2vwajglNne
+            optional: false
+          - uuid: Compendium.onepiece-system.op-features.Item.YpO2X8sxSKsKZGEc
+            optional: false
+          - uuid: Compendium.onepiece-system.op-features.Item.t1Rj8djbMHb36n3Z
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!F9g3308kcS6iS1me'
+ownership:
+  default: 0
+flags: {}

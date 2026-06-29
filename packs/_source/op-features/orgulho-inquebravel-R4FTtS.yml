@@ -1,0 +1,21 @@
+_id: R4FTtSqtmuiK4QsU
+name: Orgulho Inquebrável
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Imune a doenças, venenos, exaustão nível 5 ou menor, Ferimentos Graves e Feridas Brutais. Mantém honra inabalável contra o desconforto.
+    chat: ''
+  identifier: orgulho-inquebravel
+  type:
+    value: class
+    subtype: ''
+  requirements: Samurai
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!R4FTtSqtmuiK4QsU'
+ownership:
+  default: 0
+flags: {}

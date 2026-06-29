@@ -1,0 +1,21 @@
+_id: MEMv5EvMxA3ubkVT
+name: Domínio Progressivo
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Ao escolher esse caminho, sua proficiência com as 6 Habilidades fundamentais aumenta. No nível 1º aprenda Soru e Shigan, no 3º Tekkai e Rankyaku, no 6º Kamie e Geppo, desbloqueando versões aperfeiçoadas.
+    chat: ''
+  identifier: dominio-progressivo
+  type:
+    value: class
+    subtype: ''
+  requirements: Caminho das Seis Habilidades
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!MEMv5EvMxA3ubkVT'
+ownership:
+  default: 0
+flags: {}

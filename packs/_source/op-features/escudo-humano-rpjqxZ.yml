@@ -1,0 +1,21 @@
+_id: rpjqxZ1Pmlg2cNbQ
+name: Escudo Humano
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Quando usar Protegendo um Amigo, pode gastar 1 Ponto de Poder adicional para aumentar a redução de dano em 1d12 e obter vantagem na jogada de ataque de retaliação.
+    chat: ''
+  identifier: escudo-humano
+  type:
+    value: class
+    subtype: ''
+  requirements: Caminho do Protetor
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!rpjqxZ1Pmlg2cNbQ'
+ownership:
+  default: 0
+flags: {}

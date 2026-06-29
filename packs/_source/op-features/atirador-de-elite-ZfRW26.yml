@@ -1,0 +1,21 @@
+_id: ZfRW26zOTh0SHQro
+name: Atirador de Elite
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Disparos impossíveis: dobra alcance de Técnicas, ignora cobertura, dobra Bônus de Proficiência em ataques à distância. Pode sofrer -5 na jogada para +10 no dano.'
+    chat: ''
+  identifier: atirador-de-elite
+  type:
+    value: class
+    subtype: ''
+  requirements: Atirador
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!ZfRW26zOTh0SHQro'
+ownership:
+  default: 0
+flags: {}

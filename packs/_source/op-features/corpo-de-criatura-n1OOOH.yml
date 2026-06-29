@@ -1,0 +1,21 @@
+_id: n1OOOHsskvY8AuNn
+name: Corpo de Criatura
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Seu corpo se torna resistente como um monstro, aumentando permanentemente seus PV máximos em 60. Ao sofrer dano, pode usar sua reação para reduzir a 0. Usável até 3 vezes por descanso curto ou longo.
+    chat: ''
+  identifier: corpo-de-criatura
+  type:
+    value: class
+    subtype: ''
+  requirements: Brutamontes
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!n1OOOHsskvY8AuNn'
+ownership:
+  default: 0
+flags: {}

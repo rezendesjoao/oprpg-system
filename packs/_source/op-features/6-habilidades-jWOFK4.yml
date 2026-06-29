@@ -1,0 +1,21 @@
+_id: jWOFK4qwmiB1gSTF
+name: 6 Habilidades
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Você é iniciado em um treinamento árduo que lhe dá controle emocional e fortalece seu corpo. Pode refazer uma Salvaguarda falha até 3 vezes por descanso longo. Aprende Soru e Shigan no 1º nível, Tekkai e Rankyaku no 3º, Kamie e Geppo no 6º.
+    chat: ''
+  identifier: 6-habilidades
+  type:
+    value: class
+    subtype: ''
+  requirements: Rokushiki
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!jWOFK4qwmiB1gSTF'
+ownership:
+  default: 0
+flags: {}

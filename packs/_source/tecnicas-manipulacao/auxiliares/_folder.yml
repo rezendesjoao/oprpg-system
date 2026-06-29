@@ -1,0 +1,19 @@
+type: Item
+folder: null
+name: Auxiliares
+color: null
+sorting: m
+_id: G0GtIv3F4CIvLDzu
+description: ''
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '14.360'
+  systemId: jujutsu-system
+  systemVersion: 1.0.2
+  createdTime: 1777130873041
+  modifiedTime: 1777130917232
+  lastModifiedBy: dnd5ebuilder0000
+  duplicateSource: null
+  exportSource: null
+_key: '!folders!G0GtIv3F4CIvLDzu'

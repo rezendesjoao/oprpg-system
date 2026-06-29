@@ -1,0 +1,21 @@
+_id: nhi0tCnW5Ae3u6tJ
+name: Ataque Extra
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Pode atacar duas vezes, em vez de uma, ao usar a ação Atacar durante seu turno.
+    chat: ''
+  identifier: ataque-extra
+  type:
+    value: class
+    subtype: ''
+  requirements: Samurai
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!nhi0tCnW5Ae3u6tJ'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: gwKcs6r2OcIJMDGo
+name: Friends for Life
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Quando aliado recebe dano ou usa Protegendo um Amigo, recebe Pontos de Okama. Pode gastar 1 por rodada para aumentar ataque em +10, CR em +3, Salvaguarda em +5, Teste de Atributo em +10, ou dano em +15. Máx 10 Pontos por encontro.
+    chat: ''
+  identifier: friends-for-life
+  type:
+    value: class
+    subtype: ''
+  requirements: Okama Kenpo
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!gwKcs6r2OcIJMDGo'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: 812v2MRWpFnS72xs
+name: Adaptação
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: '<p>Escolhem 3 perícias para adicionar proficiência (exceto Haki, Sobrenatural e Sorte). Alternativa: receber 1 perícia extra com o benefício ''Aptidão Natural'' (dobram o Bônus de Proficiência em uma perícia).</p>'
+    chat: ''
+  identifier: adaptacao
+  type:
+    value: race
+    subtype: ''
+  requirements: Humanos
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!812v2MRWpFnS72xs'
+ownership:
+  default: 0
+flags: {}

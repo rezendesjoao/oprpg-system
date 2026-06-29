@@ -1,0 +1,21 @@
+_id: rCKwhHQcAMPCUQuL
+name: Miscigenação
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Escolhem 1 'Benefício da Espécie' de cada uma das 2 espécies parentais (benefícios de Variantes contam como escolha). Escolhem 1 'Dificuldade da Espécie' entre as duas.</p>
+    chat: ''
+  identifier: miscigenacao
+  type:
+    value: race
+    subtype: ''
+  requirements: Mestiços
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!rCKwhHQcAMPCUQuL'
+ownership:
+  default: 0
+flags: {}

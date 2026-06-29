@@ -1,0 +1,21 @@
+_id: Qu8fTGPxggg47PBQ
+name: Companheiro Inseparável
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Reação Agressiva causa 3d6 fixo. Mobilidade com chicote dobra escalada. Wha-Pah (3 efeitos: desarmar, restringir, imprevisibilidade) por 2 PP.'
+    chat: ''
+  identifier: companheiro-inseparavel
+  type:
+    value: class
+    subtype: ''
+  requirements: Aventureiro
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!Qu8fTGPxggg47PBQ'
+ownership:
+  default: 0
+flags: {}

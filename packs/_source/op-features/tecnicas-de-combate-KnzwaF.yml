@@ -1,0 +1,21 @@
+_id: KnzwaFmD093BW8tx
+name: Técnicas de Combate
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Aprende uma Técnica de Combate e uma Técnica Auxiliar. Aprende novas Técnicas no 3º, 6º, 9º, 12º, 16º e 20º nível.
+    chat: ''
+  identifier: tecnicas-de-combate
+  type:
+    value: class
+    subtype: ''
+  requirements: Aventureiro
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!KnzwaFmD093BW8tx'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,42 @@
+_id: EmzkUbUDfGjjp6sZ
+name: Caminho do Vassalo
+type: subclass
+img: icons/skills/melee/weapons-crossed-swords-purple.webp
+system:
+  description:
+    value: O caminho daquele que possui algo ou alguém importante para proteger. Um samurai vassalo é devotado absoluto, oferecendo sua espada e vida por seu mestre, buscando honra através da lealdade eterna e da proteção incansável de seus aliados.
+    chat: ''
+  identifier: samurai_vassalo
+  classIdentifier: samurai
+  spellcasting:
+    progression: none
+    ability: ''
+  advancement:
+    - _id: 3si6QvbhK5yLryCG
+      type: ItemGrant
+      level: 3
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.tlWI0TYYpvTQW7NS
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: ssVuis4GwrOBYHf2
+      type: ItemGrant
+      level: 5
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.H06SC0svl8lUqS84
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!EmzkUbUDfGjjp6sZ'
+ownership:
+  default: 0
+flags: {}

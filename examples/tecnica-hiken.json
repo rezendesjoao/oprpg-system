@@ -1,0 +1,12 @@
+{
+  "name": "Hiken (Punho de Fogo)",
+  "type": "spell",
+  "img": "icons/magic/fire/projectile-fireball-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Técnica de Combate — Grau 2.</strong> Um soco que dispara uma enorme coluna de fogo. Custo: 4 PP. Dano: 4d6 de fogo em área. Alcance: cone/15 m.</p>"
+    },
+    "level": 2,
+    "school": "evo"
+  }
+}

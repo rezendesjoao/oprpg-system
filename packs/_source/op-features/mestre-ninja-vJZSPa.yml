@@ -1,0 +1,21 @@
+_id: vJZSPaTSkM3PSo6m
+name: Mestre Ninja
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Distribui 6 pontos livremente entre atributos (máx 24). Pode elevar dois atributos até 30.
+    chat: ''
+  identifier: mestre-ninja
+  type:
+    value: class
+    subtype: ''
+  requirements: Ninja
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!vJZSPaTSkM3PSo6m'
+ownership:
+  default: 0
+flags: {}

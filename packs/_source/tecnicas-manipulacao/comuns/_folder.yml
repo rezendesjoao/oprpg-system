@@ -1,0 +1,19 @@
+type: Item
+folder: null
+name: Comuns
+color: null
+sorting: m
+_id: TPXARZCNzOqFka6J
+description: ''
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '14.360'
+  systemId: jujutsu-system
+  systemVersion: 1.0.2
+  createdTime: 1777130870115
+  modifiedTime: 1777130911151
+  lastModifiedBy: dnd5ebuilder0000
+  duplicateSource: null
+  exportSource: null
+_key: '!folders!TPXARZCNzOqFka6J'

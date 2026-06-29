@@ -1,0 +1,21 @@
+_id: lNc7Hm90c4Eu0bK6
+name: Seiken
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Use força transmitida através do vapor d''água em uma jogada de ataque (comum) corpo a corpo desarmado em um cone de até 6 metros, uma vez por turno. Proficiência de usos igual ao Bônus de Proficiência por descanso longo. Dano: 1d6 + mod. Força (Contundente), ignora Invulnerabilidades ou Resistências. Aumenta em: 3º nível = 2d6; 6º = 6d6; 9º = 9d6. Alternativamente, direcionar a um único alvo a até 6 metros com dado d10, não consome usos, apenas uma vez por descanso longo.'
+    chat: ''
+  identifier: seiken
+  type:
+    value: class
+    subtype: ''
+  requirements: Carateca Homem-Peixe
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!lNc7Hm90c4Eu0bK6'
+ownership:
+  default: 0
+flags: {}

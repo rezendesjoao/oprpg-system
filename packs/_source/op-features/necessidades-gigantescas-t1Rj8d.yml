@@ -1,0 +1,21 @@
+_id: t1Rj8djbMHb36n3Z
+name: Necessidades Gigantescas
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Requerem 5 vezes mais alimento e líquido que humanos e ocupam espaço de 20 tripulantes em navio. Devem usar armas gigantescas (10x o custo normal).</p>
+    chat: ''
+  identifier: necessidades-gigantescas
+  type:
+    value: race
+    subtype: ''
+  requirements: Gigantes
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!t1Rj8djbMHb36n3Z'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: 7Z7NuCwGyIv2urlc
+name: Ambiguidade
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Okama Dash: deslocamento de 12m (15m no 10º). Resistência Okama: recupera 1d6 PV (1d12 no 10º) quando sofre dano contundente. Brutalidade Graciosa: pode usar Presença em vez de Força em ataques corpo a corpo.'
+    chat: ''
+  identifier: ambiguidade
+  type:
+    value: class
+    subtype: ''
+  requirements: Okama Kenpo
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!7Z7NuCwGyIv2urlc'
+ownership:
+  default: 0
+flags: {}

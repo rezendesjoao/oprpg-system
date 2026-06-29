@@ -1,0 +1,21 @@
+_id: 4cU2ZwQGYchpxn16
+name: Golpe Inevitável
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Ao errar uma jogada de ataque (comum ou Técnicas), causa dano igual ao modificador de Sabedoria (desde que o dado não seja 1).
+    chat: ''
+  identifier: golpe-inevitavel
+  type:
+    value: class
+    subtype: ''
+  requirements: Mestre Espadachim
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!4cU2ZwQGYchpxn16'
+ownership:
+  default: 0
+flags: {}

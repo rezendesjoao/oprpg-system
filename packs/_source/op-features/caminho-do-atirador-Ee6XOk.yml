@@ -1,0 +1,21 @@
+_id: Ee6XOkDnPhnoCMqp
+name: Caminho do Atirador
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Escolha o Caminho do Sniper (alcance e precisão com mosquetes) ou do Duelista (mobilidade e cadência com pistolas).
+    chat: ''
+  identifier: caminho-do-atirador
+  type:
+    value: class
+    subtype: ''
+  requirements: Atirador
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!Ee6XOkDnPhnoCMqp'
+ownership:
+  default: 0
+flags: {}

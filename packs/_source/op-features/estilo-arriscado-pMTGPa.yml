@@ -1,0 +1,21 @@
+_id: pMTGPal9cT74D4TI
+name: Estilo Arriscado
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Margem crítica aumenta com sucessos (até 15-20). Tiro Sem Paciência usa ação poderosa. Domador da Coragem reduz ataques inimigos. Errar criticamente causa 2d12 em si mesmo.
+    chat: ''
+  identifier: estilo-arriscado
+  type:
+    value: class
+    subtype: ''
+  requirements: Aventureiro
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!pMTGPal9cT74D4TI'
+ownership:
+  default: 0
+flags: {}

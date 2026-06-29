@@ -1,0 +1,21 @@
+_id: HqG5tVGfuIGYGa0g
+name: Posições de Luta
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Assuma uma posição no início do turno: <strong>Castigo de Ferro</strong> (reação para atacar quando aliado sofre ataque; dano contundente 5+nível interrompe) | <strong>Descuidado</strong> (vantagem em ataque corpo a corpo, mas sofre vantagem) | <strong>Imparável</strong> (imune a redução movimento e Amedrontado/Atordoado/Letárgico/Sonolento) | <strong>Foco de Batalha</strong> (recupera 4 PP no próximo turno se sofrer 10+ dano) | <strong>Fanático</strong> (aplica Combatente Selvagem sem ação bônus) | <strong>Músculo de Aço</strong> (resistência a contundente/cortante/perfurante). Nível 6: 2 posições. Nível 10: 3 posições'
+    chat: ''
+  identifier: posicoes-de-luta
+  type:
+    value: class
+    subtype: ''
+  requirements: Lutador
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!HqG5tVGfuIGYGa0g'
+ownership:
+  default: 0
+flags: {}

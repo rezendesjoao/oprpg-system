@@ -1,0 +1,21 @@
+_id: tlWI0TYYpvTQW7NS
+name: Promessa Nobre
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Suas jogadas de ataque comum com armas de samurai recebem +2 para acertar.
+    chat: ''
+  identifier: promessa-nobre
+  type:
+    value: class
+    subtype: ''
+  requirements: Caminho do Vassalo
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!tlWI0TYYpvTQW7NS'
+ownership:
+  default: 0
+flags: {}

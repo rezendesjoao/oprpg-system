@@ -1,0 +1,21 @@
+_id: pSJvapQEmGfdq9fV
+name: Mira Robótica
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Ao errar uma jogada de ataque (comum), causa dano igual ao modificador de Sabedoria. Em Técnicas, causa até 20 danos (metade em AoE). Jogadas de ataque podem usar modificador de Sabedoria.
+    chat: ''
+  identifier: mira-robotica
+  type:
+    value: class
+    subtype: ''
+  requirements: Ciborgue
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!pSJvapQEmGfdq9fV'
+ownership:
+  default: 0
+flags: {}

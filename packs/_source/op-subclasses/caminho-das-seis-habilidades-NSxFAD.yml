@@ -1,0 +1,42 @@
+_id: NSxFADYUUZlhR8uQ
+name: Caminho das Seis Habilidades
+type: subclass
+img: icons/skills/melee/weapons-crossed-swords-purple.webp
+system:
+  description:
+    value: 'Especialize-se no domínio completo das seis técnicas fundamentais do Rokushiki: Soru (velocidade explosiva), Shigan (ataque perfurante), Tekkai (endurecimento corporal), Rankyaku (cortes de ar), Kamie (esquiva ágil) e Geppo (deslocamento aéreo). No 6º nível, Habilidades Dominadas permite usar essas técnicas sem gastar PP sob certas condições.'
+    chat: ''
+  identifier: seis-habilidades
+  classIdentifier: rokushiki
+  spellcasting:
+    progression: none
+    ability: ''
+  advancement:
+    - _id: 1OsCtjYvdAawwKUm
+      type: ItemGrant
+      level: 1
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.MEMv5EvMxA3ubkVT
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: SBnvIRbW6fMAHWuS
+      type: ItemGrant
+      level: 6
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.RLTkNwbCmhJDb83Z
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!NSxFADYUUZlhR8uQ'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: 6bSGD4lqZk1Dhl1l
+name: Manufatura Reduzida
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Capazes de produzir armas em tamanho reduzido com custo de 1/5 do normal. Armas de fogo ou à distância têm dano reduzido pela metade.</p>
+    chat: ''
+  identifier: manufatura-reduzida
+  type:
+    value: race
+    subtype: ''
+  requirements: Anões
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!6bSGD4lqZk1Dhl1l'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: RLTkNwbCmhJDb83Z
+name: Habilidades Dominadas
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Enquanto tiver mais da metade dos PV, PP e nenhum Nível de Exaustão, pode usar as 6 Habilidades sem gastar Pontos de Poder. Antes do nível 10, essas Técnicas não podem ter dados de dano aumentados.
+    chat: ''
+  identifier: habilidades-dominadas
+  type:
+    value: class
+    subtype: ''
+  requirements: Caminho das Seis Habilidades
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!RLTkNwbCmhJDb83Z'
+ownership:
+  default: 0
+flags: {}

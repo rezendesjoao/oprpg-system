@@ -1,0 +1,56 @@
+_id: s364EegZ28MrHWml
+name: Anões
+type: race
+img: icons/environment/people/group.webp
+system:
+  description:
+    value: <p>Pequenas criaturas semelhantes aos humanos, com tamanho entre 10-15 centímetros. Possuem caudas peludas, cabeças grandes proporcionalmente e narizes pontudos. Naturalmente fortes apesar do tamanho diminuto, originários da Tribo Tontatta de Green Bit.</p>
+    chat: ''
+  identifier: dwarf
+  movement:
+    walk: 9
+    swim: 4.5
+    fly: 0
+    climb: 0
+    units: m
+    hover: false
+  senses:
+    darkvision: 0
+    units: m
+  type:
+    value: humanoid
+    subtype: ''
+    swarm: ''
+    custom: ''
+  advancement:
+    - _id: PFxyGoq97W1cS3Zm
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: OyeFvygsJRhUdrxt
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.yzJKeIYqQbAEJeMT
+            optional: false
+          - uuid: Compendium.onepiece-system.op-features.Item.0Az6q1QpH56XWdqf
+            optional: false
+          - uuid: Compendium.onepiece-system.op-features.Item.6bSGD4lqZk1Dhl1l
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!s364EegZ28MrHWml'
+ownership:
+  default: 0
+flags: {}

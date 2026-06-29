@@ -1,0 +1,17 @@
+{
+  "name": "Mera Mera no Mi",
+  "type": "akumaNoMi",
+  "img": "icons/magic/fire/flame-burning-fist-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Akuma no Mi — Logia (Fogo).</strong> O usuário se torna, cria e controla fogo. Aspecto Inato: <em>Corpo Elemental</em> (Intangibilidade enquanto fogo). Despertar disponível a partir do 16º nível.</p><p><em>Fraqueza:</em> Água do mar e Kairoseki causam <strong>Enfraquecido</strong>; inimigo natural: água/magma.</p>"
+    },
+    "category": "logia",
+    "archetype": "advanced",
+    "aspectoInato": "Corpo Elemental — Intangibilidade (fogo)",
+    "property": "Transformação",
+    "mpSlots": 12,
+    "awakening": { "unlocked": true },
+    "weaknesses": { "seawater": true, "naturalEnemy": "Água / Magma" }
+  }
+}

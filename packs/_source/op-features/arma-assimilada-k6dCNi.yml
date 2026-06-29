@@ -1,0 +1,21 @@
+_id: k6dCNiqziwunnZU9
+name: Arma Assimilada
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Replica uma arma em seu corpo com dano 2d6 + 1d6 (Elétrico/Energia/Fogo/Frio/Trovejante). Recebe bônus na jogada de ataque, ignorando resistências (exceto Haki do Armamento).
+    chat: ''
+  identifier: arma-assimilada
+  type:
+    value: class
+    subtype: ''
+  requirements: Ciborgue
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!k6dCNiqziwunnZU9'
+ownership:
+  default: 0
+flags: {}

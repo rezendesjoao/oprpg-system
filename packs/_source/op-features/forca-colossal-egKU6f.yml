@@ -1,0 +1,21 @@
+_id: egKU6f2vwajglNne
+name: Força Colossal
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Proficiente em Salvaguardas e Testes de Força, dobrando o Bônus de Proficiência. Características e Técnicas limitadas a criatures Grandes ou menores também afetam alvos Enormes.</p>
+    chat: ''
+  identifier: forca-colossal
+  type:
+    value: race
+    subtype: ''
+  requirements: Gigantes
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!egKU6f2vwajglNne'
+ownership:
+  default: 0
+flags: {}

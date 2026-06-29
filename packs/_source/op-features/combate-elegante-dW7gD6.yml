@@ -1,0 +1,21 @@
+_id: dW7gD63CBU4Z67bc
+name: Combate Elegante
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Demonstra maestria em batalha: Guarda Orgulhosa (recupera 2d8 PV ao sofrer dano de Técnica ou crítico), Ignorar a Dor (ignora dano crítico 3x por encontro), Combate Honroso (bônus para ataques normais e CR).'
+    chat: ''
+  identifier: combate-elegante
+  type:
+    value: class
+    subtype: ''
+  requirements: Samurai
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!dW7gD63CBU4Z67bc'
+ownership:
+  default: 0
+flags: {}

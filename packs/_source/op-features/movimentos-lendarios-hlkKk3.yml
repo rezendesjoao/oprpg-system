@@ -1,0 +1,21 @@
+_id: hlkKk3J6jBfMePFr
+name: Movimentos Lendários
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: '<strong>Pulo Heroico</strong>: Pule para qualquer espaço desocupado que veja (qualquer distância, sem dano de queda). <strong>One-Punch</strong>: Atingir criatura ND 10 ou menor reduz PV a 0. <strong>Devastação</strong>: Com mais de metade PV, seus golpes corpo a corpo destroem estruturas (muros, montanhas, embarcações não feitas de kairoseki), abrindo buracos'
+    chat: ''
+  identifier: movimentos-lendarios
+  type:
+    value: class
+    subtype: ''
+  requirements: Lutador
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!hlkKk3J6jBfMePFr'
+ownership:
+  default: 0
+flags: {}

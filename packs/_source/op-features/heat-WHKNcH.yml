@@ -1,0 +1,21 @@
+_id: WHKNcHHGSupdJYRf
+name: Heat
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Uma vez por rodada, adicionar 1d10 de dano de Fogo em jogada de ataque (1x nível do personagem por descanso). Alternativamente, usar sem ação bônus 5 vezes (limitado por nível). Máximo 1 uso por rodada.</p>
+    chat: ''
+  identifier: heat
+  type:
+    value: race
+    subtype: ''
+  requirements: Lunarianos
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!WHKNcHHGSupdJYRf'
+ownership:
+  default: 0
+flags: {}

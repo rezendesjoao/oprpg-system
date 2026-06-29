@@ -1,0 +1,21 @@
+_id: tDNyJuzDUJMCieJW
+name: Escudo Marítimo
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Quando totalmente submerso em água, receba resistência a dano Contundente, Cortante e Perfurante. Sem desvantagens por não ser criatura aquática.
+    chat: ''
+  identifier: escudo-maritimo
+  type:
+    value: class
+    subtype: ''
+  requirements: Caminho do Filho do Mar
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!tDNyJuzDUJMCieJW'
+ownership:
+  default: 0
+flags: {}

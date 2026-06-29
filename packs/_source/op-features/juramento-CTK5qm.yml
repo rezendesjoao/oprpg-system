@@ -1,0 +1,21 @@
+_id: CTK5qm4P58yMLwmf
+name: Juramento
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Faz um voto sagrado escolhendo entre Juramento da Proteção (Medicina Holística), Juramento de Vingança (Ódio Motivacional) ou Juramento do Dever (Ataque Determinado). Não pode ser alterado após escolha.
+    chat: ''
+  identifier: juramento
+  type:
+    value: class
+    subtype: ''
+  requirements: Samurai
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!CTK5qm4P58yMLwmf'
+ownership:
+  default: 0
+flags: {}

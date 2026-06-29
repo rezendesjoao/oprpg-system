@@ -1,0 +1,21 @@
+_id: yzJKeIYqQbAEJeMT
+name: Corpo Pequeno
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p><strong>Estômago Pequeno:</strong> Itens consumíveis para criaturas Médias funcionam em metade da quantidade. <strong>Piscar:</strong> Desaparecer e reaparecer a até 9 metros de distância (3x por descanso longo). <strong>Andar das Fadas:</strong> Vantagem em Testes de Destreza (Furtividade) fora de combate; podem se esconder a plena vista em combate com ação bônus. <strong>Hóspede Feérico:</strong> Ocupar o mesmo espaço de criaturas maiores, imune a ataques direcionados mas sofrem metade do dano da criatura hospedeira.</p>
+    chat: ''
+  identifier: corpo-pequeno
+  type:
+    value: race
+    subtype: ''
+  requirements: Anões
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!yzJKeIYqQbAEJeMT'
+ownership:
+  default: 0
+flags: {}

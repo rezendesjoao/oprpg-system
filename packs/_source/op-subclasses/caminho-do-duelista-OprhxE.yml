@@ -1,0 +1,33 @@
+_id: OprhxEOXR9RKEimC
+name: Caminho do Duelista
+type: subclass
+img: icons/skills/melee/weapons-crossed-swords-purple.webp
+system:
+  description:
+    value: Mestre em duas pistolas simultâneas, focando em mobilidade e cadência. Combate a curta e média distância com reflexos aguçados.
+    chat: ''
+  identifier: duelista
+  classIdentifier: atirador
+  spellcasting:
+    progression: none
+    ability: ''
+  advancement:
+    - _id: 0np8xb2MP1XPZdKI
+      type: ItemGrant
+      level: 1
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.g2xsg9kNFmVyeD4r
+            optional: false
+          - uuid: Compendium.onepiece-system.op-features.Item.2f0JRk3vCQMuOXmP
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!OprhxEOXR9RKEimC'
+ownership:
+  default: 0
+flags: {}

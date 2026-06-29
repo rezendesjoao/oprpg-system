@@ -1,0 +1,21 @@
+_id: WkU7r2vPEboAL16h
+name: Roubar Técnicas
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Ao ver uma Técnica de Combate inimiga (CD 15 + grau), faça Teste de Vontade (Percepção) para aprendê-la. Técnicas roubadas causam 1d dado extra e custam 1 PP menos. Seu PP máximo aumenta em 2 por Técnica.
+    chat: ''
+  identifier: roubar-tecnicas
+  type:
+    value: class
+    subtype: ''
+  requirements: Espadachim
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!WkU7r2vPEboAL16h'
+ownership:
+  default: 0
+flags: {}

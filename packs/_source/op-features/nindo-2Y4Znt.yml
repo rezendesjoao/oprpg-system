@@ -1,0 +1,21 @@
+_id: 2Y4ZntHV7YUrGrfC
+name: Nindo
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Escolhe um caminho filosófico marcial: <strong>Assassino</strong> (armadilhas mortais, dano mortal automático), <strong>Desastre da Natureza</strong> (dano elemental em cone), ou <strong>Honrado</strong> (defesa adicional contra danos).'
+    chat: ''
+  identifier: nindo
+  type:
+    value: class
+    subtype: ''
+  requirements: Ninja
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!2Y4ZntHV7YUrGrfC'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: cl1FFKq4ztTwTNnW
+name: Caminho da Aventura
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Dados de Aventura (d8) iguais à metade do nível. Aumenta movimento, CA, cura, e dano. Recupera 1 dado ao falhar em teste inimigo. Muda para d12 no 10º nível.
+    chat: ''
+  identifier: caminho-da-aventura
+  type:
+    value: class
+    subtype: ''
+  requirements: Aventureiro
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!cl1FFKq4ztTwTNnW'
+ownership:
+  default: 0
+flags: {}

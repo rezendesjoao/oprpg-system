@@ -1,0 +1,21 @@
+_id: sotcJXb3w7P8KhYj
+name: Bushido
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Escolhe um Caminho de Bushido: Vassalo (bônus +2 em ataques comuns), Ronin (oportunista em reações) ou Shogun (força admirável). Pode ser refeita a cada nível.'
+    chat: ''
+  identifier: bushido
+  type:
+    value: class
+    subtype: ''
+  requirements: Samurai
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!sotcJXb3w7P8KhYj'
+ownership:
+  default: 0
+flags: {}

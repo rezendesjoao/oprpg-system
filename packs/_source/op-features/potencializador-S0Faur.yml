@@ -1,0 +1,21 @@
+_id: S0FaurKRu0lEr40X
+name: Potencializador
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Margem de acerto crítico 19-20 (18-20 no 12º nível). Em crítico: ganha Ponto de Ordem e impõe efeito (dano extra 1d8, vantagem contra, ou desvantagem ao alvo).'
+    chat: ''
+  identifier: potencializador
+  type:
+    value: class
+    subtype: ''
+  requirements: Guerrilheiro
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!S0FaurKRu0lEr40X'
+ownership:
+  default: 0
+flags: {}

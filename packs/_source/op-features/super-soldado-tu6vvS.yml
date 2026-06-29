@@ -1,0 +1,21 @@
+_id: tu6vvSVjlEYy8P64
+name: Super Soldado
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Entra em transe de batalha (5 minutos): imune a Exaustão, deslocamento 18m, recupera 12d10 PV e 4d6 PP por turno, +5 em Testes e Salvaguardas, CR 30. Uso: 1x por descanso curto/longo.'
+    chat: ''
+  identifier: super-soldado
+  type:
+    value: class
+    subtype: ''
+  requirements: Guerrilheiro
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!tu6vvSVjlEYy8P64'
+ownership:
+  default: 0
+flags: {}

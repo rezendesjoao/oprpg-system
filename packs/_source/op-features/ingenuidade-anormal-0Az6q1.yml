@@ -1,0 +1,21 @@
+_id: 0Az6q1QpH56XWdqf
+name: Ingenuidade Anormal
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Recebem -10 em Testes de Atributo de Vontade (Intuição). Muito crédulos e acreditam facilmente em qualquer pessoa suspeita.</p>
+    chat: ''
+  identifier: ingenuidade-anormal
+  type:
+    value: race
+    subtype: ''
+  requirements: Anões
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!0Az6q1QpH56XWdqf'
+ownership:
+  default: 0
+flags: {}

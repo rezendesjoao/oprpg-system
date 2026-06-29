@@ -1,0 +1,21 @@
+_id: H06SC0svl8lUqS84
+name: Devoção Cumprida
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Ao errar uma jogada de ataque (comum ou Técnicas), você pode escolher ter sucesso no lugar. Usável 1x até descanso curto ou longo.
+    chat: ''
+  identifier: devocao-cumprida
+  type:
+    value: class
+    subtype: ''
+  requirements: Caminho do Vassalo
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!H06SC0svl8lUqS84'
+ownership:
+  default: 0
+flags: {}

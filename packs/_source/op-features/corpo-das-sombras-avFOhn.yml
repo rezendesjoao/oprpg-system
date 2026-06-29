@@ -1,0 +1,21 @@
+_id: avFOhnjwivNiAwmq
+name: Corpo das Sombras
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Com metade dos PV e sem exaustão, ataques à distância falham automaticamente. Pode apanhar projéteis e relançá-los como dano de Assassinar.
+    chat: ''
+  identifier: corpo-das-sombras
+  type:
+    value: class
+    subtype: ''
+  requirements: Ninja
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!avFOhnjwivNiAwmq'
+ownership:
+  default: 0
+flags: {}

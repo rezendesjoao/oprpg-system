@@ -1,0 +1,21 @@
+_id: RVsD8zESQriZfuSQ
+name: Whip and Gun
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Domínio do chicote (dado 1d10, crítico frenético com pistola adicional, ignora resistência a cortante) e pistola (tiro oportunista com 3x dados, ignora cobertura).
+    chat: ''
+  identifier: whip-and-gun
+  type:
+    value: class
+    subtype: ''
+  requirements: Aventureiro
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!RVsD8zESQriZfuSQ'
+ownership:
+  default: 0
+flags: {}

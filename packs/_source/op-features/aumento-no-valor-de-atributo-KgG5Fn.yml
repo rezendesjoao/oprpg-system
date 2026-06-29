@@ -1,0 +1,21 @@
+_id: KgG5FnDb11Y6rxqO
+name: Aumento no Valor de Atributo
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Aumentar um atributo em +2 ou dois atributos em +1. Repete-se no 8º, 12º, 16º e 20º nível. No 12º nível pode atingir até 22, no 16º até 24.
+    chat: ''
+  identifier: aumento-no-valor-de-atributo
+  type:
+    value: class
+    subtype: ''
+  requirements: Ciborgue
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!KgG5FnDb11Y6rxqO'
+ownership:
+  default: 0
+flags: {}

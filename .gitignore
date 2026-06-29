@@ -1,0 +1,31 @@
+# Dependências
+node_modules/
+
+# Bundle compilado NÃO usado (o sistema carrega dnd5e.mjs direto como ESM)
+dnd5e-compiled.mjs
+dnd5e-compiled.mjs.map
+dnd5e.lock
+
+# Source maps
+*.map
+
+# Locks de runtime dos compêndios (LevelDB)
+packs/*/LOCK
+
+# Distribuição
+dist/
+system.zip
+
+# IDE / OS
+.idea/
+.vscode/
+.vs/
+.nova/
+*.code-workspace
+*.iml
+*.swp
+.DS_Store
+Thumbs.db
+
+# NOTA: dnd5e.css e packs/ (LevelDB compilado) SÃO versionados de propósito,
+# para que o repositório seja autossuficiente (instala e roda sem build).

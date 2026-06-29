@@ -1,0 +1,21 @@
+_id: LWUd3iTxR2NPpgbI
+name: Alcance Expandido
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Técnicas com alcance Linha, Cone, Esfera ou Cilindro que exijam arma cortante recebem +6m.
+    chat: ''
+  identifier: alcance-expandido
+  type:
+    value: class
+    subtype: ''
+  requirements: Lâmina Forte
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!LWUd3iTxR2NPpgbI'
+ownership:
+  default: 0
+flags: {}

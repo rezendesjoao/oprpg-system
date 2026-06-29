@@ -1,0 +1,21 @@
+_id: ktVgXCDUiMO6SXIs
+name: Okama Way
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Gambaray: cura aliado em 3d12 PV ou remove Exaustão (1x por aliado). Poder da Amizade: recebe 10 PV temporários por aliado amigável (máx 60). Super Protetor: ataques contra aliados a 6m têm desvantagem. Amor Insistente: ação bônus para ataque corpo a corpo extra.'
+    chat: ''
+  identifier: okama-way
+  type:
+    value: class
+    subtype: ''
+  requirements: Okama Kenpo
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!ktVgXCDUiMO6SXIs'
+ownership:
+  default: 0
+flags: {}

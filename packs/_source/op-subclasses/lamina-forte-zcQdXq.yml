@@ -1,0 +1,33 @@
+_id: zcQdXqWsba6OvSSm
+name: Lâmina Forte
+type: subclass
+img: icons/skills/melee/weapons-crossed-swords-purple.webp
+system:
+  description:
+    value: Especialização em armas cortantes sem Acuidade. Aumenta alcance das Técnicas em 6m, adiciona dano cortante extra, e permite ataque adicional após acerto crítico.
+    chat: ''
+  identifier: lâmina_forte
+  classIdentifier: espadachim
+  spellcasting:
+    progression: none
+    ability: ''
+  advancement:
+    - _id: shCuaGhB5RxS9mhf
+      type: ItemGrant
+      level: 3
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.LWUd3iTxR2NPpgbI
+            optional: false
+          - uuid: Compendium.onepiece-system.op-features.Item.91UqDUq9xLwd3Mso
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!zcQdXqWsba6OvSSm'
+ownership:
+  default: 0
+flags: {}

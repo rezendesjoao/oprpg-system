@@ -1,0 +1,122 @@
+_id: RKT6vz1iHEgRn4RZ
+name: 'Rokushiki Ogi – Sai Dai Rin: Rokuogan'
+type: spell
+img: icons/magic/light/projectile-bolts-salvo-yellow.webp
+system:
+  description:
+    value: Aprimoramento final da Técnica suprema. Libera onda de choque poderosa contra inimigos em cone de 30m. Salvaguarda de Destreza para dano total ou metade. Dobro de dano em estruturas.
+    chat: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: m
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    units: m
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 7
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties: []
+  activities:
+    opact0000000001:
+      _id: opact0000000001
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: attribute
+            target: energy.total
+            value: '13'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: m
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: m
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      sort: 0
+      name: ''
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      save:
+        ability:
+          - dex
+        dc:
+          calculation: str
+          formula: ''
+      damage:
+        onSave: half
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 14
+            denomination: 6
+            bonus: ''
+            types:
+              - force
+            scaling:
+              mode: ''
+              number: 1
+  identifier: rokushiki-ogi-sai-dai-rin-rokuogan
+  method: spell
+  prepared: 2
+effects: []
+folder: null
+_key: '!items!RKT6vz1iHEgRn4RZ'
+ownership:
+  default: 0
+flags: {}

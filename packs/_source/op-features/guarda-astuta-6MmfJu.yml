@@ -1,0 +1,21 @@
+_id: 6MmfJuoRLyfzoN6W
+name: Guarda Astuta
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Rompante Defensivo reduz dano à metade no primeiro ataque recebido por rodada. Nos níveis subsequentes, ganha Queda Suave, Sentido de Perigo, Esquiva Fugaz e Elusivo.
+    chat: ''
+  identifier: guarda-astuta
+  type:
+    value: class
+    subtype: ''
+  requirements: Atirador
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!6MmfJuoRLyfzoN6W'
+ownership:
+  default: 0
+flags: {}

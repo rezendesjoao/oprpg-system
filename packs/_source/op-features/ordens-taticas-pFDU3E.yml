@@ -1,0 +1,21 @@
+_id: pFDU3EeQ8qDLBeIP
+name: Ordens Táticas
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Substitui Ação Poderosa para ordenar um aliado. Se bem-sucedido, ganha Ponto de Ordem (+1 ataque, dano e +1 dado de dano em Técnicas). Máximo de Pontos = Bônus de Proficiência.
+    chat: ''
+  identifier: ordens-taticas
+  type:
+    value: class
+    subtype: ''
+  requirements: Guerrilheiro
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!pFDU3EeQ8qDLBeIP'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: MS2VZoaLUlAOeN06
+name: Criatura do Mar
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Respiram água e ar (brânquias se fecham no ar). Precisam de 2x mais água diária que humanos (4x em dias quentes) ou recebem Níveis de Exaustão.</p>
+    chat: ''
+  identifier: criatura-do-mar
+  type:
+    value: race
+    subtype: ''
+  requirements: Povo do Mar
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!MS2VZoaLUlAOeN06'
+ownership:
+  default: 0
+flags: {}

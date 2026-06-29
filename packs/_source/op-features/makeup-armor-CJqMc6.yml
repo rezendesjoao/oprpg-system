@@ -1,0 +1,21 @@
+_id: CJqMc6t5sW8oJt3m
+name: Makeup Armor
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Maquiagem absorve até 80 pontos de dano antes de quebrar (refaz em 1 hora). Concede imunidade a Atordoado e Envenenado, resistência a dano contundente/perfurante/cortante. Se molhada, se desfaz.
+    chat: ''
+  identifier: makeup-armor
+  type:
+    value: class
+    subtype: ''
+  requirements: Okama Kenpo
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!CJqMc6t5sW8oJt3m'
+ownership:
+  default: 0
+flags: {}

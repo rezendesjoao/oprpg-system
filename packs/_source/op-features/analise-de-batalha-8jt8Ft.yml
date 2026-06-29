@@ -1,0 +1,21 @@
+_id: 8jt8FtDsYXffa9AR
+name: Análise de Batalha
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Ao acertar ataque corpo a corpo com arma cortante, você pode aplicar o aumento dos dados de dano como se fosse acerto crítico. Use 3 vezes por descanso longo.
+    chat: ''
+  identifier: analise-de-batalha
+  type:
+    value: class
+    subtype: ''
+  requirements: Espadachim
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!8jt8FtDsYXffa9AR'
+ownership:
+  default: 0
+flags: {}

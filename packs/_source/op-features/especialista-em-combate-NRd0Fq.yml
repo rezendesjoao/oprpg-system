@@ -1,0 +1,21 @@
+_id: NRd0Fqd745eKTmLN
+name: Especialista em Combate
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Escolhe dois Efeitos Especiais para modificar Técnicas (Cirúrgica, Extravagante, Escondida, Insistente, Otimizada, Veloz). Adquire mais dois no 6º e 9º nível. Pode combinar dois efeitos (3 usos por descanso curto/longo).
+    chat: ''
+  identifier: especialista-em-combate
+  type:
+    value: class
+    subtype: ''
+  requirements: Guerrilheiro
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!NRd0Fqd745eKTmLN'
+ownership:
+  default: 0
+flags: {}

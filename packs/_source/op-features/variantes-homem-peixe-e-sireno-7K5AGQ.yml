@@ -1,0 +1,21 @@
+_id: 7K5AGQ9jBsjpd6Ij
+name: 'Variantes: Homem-Peixe e Sireno'
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p><strong>Homem-Peixe (Corpo Marinho):</strong> Escolhem 1 Traço Comum das Zoan (baseado em ancestral marinho). <strong>Sireno (Natação Superior):</strong> Nado de 18m, podem usar ação Disparada como bônus enquanto nadam. Ambos possuem Ancestralidade com até 2 Traços Comuns e 1 Traço Específico das Zoan.</p>
+    chat: ''
+  identifier: variantes-homem-peixe-e-sireno
+  type:
+    value: race
+    subtype: ''
+  requirements: Povo do Mar
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!7K5AGQ9jBsjpd6Ij'
+ownership:
+  default: 0
+flags: {}

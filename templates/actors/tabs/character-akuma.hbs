@@ -1,0 +1,121 @@
+<section class="tab akuma-tab flexcol {{ tab.cssClass }}" data-tab="{{ tab.id }}" data-group="{{ tab.group }}">
+
+  {{#unless akuma.hasFruit}}
+  {{!-- Sem fruta --}}
+  <div class="akuma-empty">
+    <i class="fas fa-apple-whole"></i>
+    <p>{{ localize "ONEPIECE.DevilFruit.NoFruit" }}</p>
+  </div>
+  {{else}}
+
+  {{!-- Cabeçalho da fruta --}}
+  <div class="akuma-header">
+    <img class="akuma-fruit-img" src="{{ akuma.fruitImg }}" alt="{{ akuma.fruitName }}"
+         data-action="akuma-open-fruit" data-tooltip="Abrir ficha da fruta">
+    <div class="akuma-fruit-info">
+      <h2 class="akuma-fruit-name">{{ akuma.fruitName }}</h2>
+      <div class="akuma-badges">
+        <span class="akuma-badge akuma-cat-{{ akuma.category }}">{{ lookup akuma.categories akuma.category }}</span>
+        <span class="akuma-badge akuma-arch">{{ lookup akuma.archetypes akuma.archetype }}</span>
+        {{#if akuma.awakened}}<span class="akuma-badge akuma-awk">Despertar</span>{{/if}}
+      </div>
+    </div>
+  </div>
+
+  {{#if editable}}
+  {{!-- Configuração da fruta --}}
+  <div class="akuma-config">
+    <div class="akuma-field">
+      <label>{{ localize "ONEPIECE.DevilFruit.Category" }}</label>
+      <select data-akuma-edit="system.category">
+        {{#each akuma.categories as |label key|}}
+        <option value="{{ key }}" {{#if (eq key ../akuma.category)}}selected{{/if}}>{{ label }}</option>
+        {{/each}}
+      </select>
+    </div>
+    <div class="akuma-field">
+      <label>{{ localize "ONEPIECE.DevilFruit.Archetype" }}</label>
+      <select data-akuma-edit="system.archetype">
+        {{#each akuma.archetypes as |label key|}}
+        <option value="{{ key }}" {{#if (eq key ../akuma.archetype)}}selected{{/if}}>{{ label }}</option>
+        {{/each}}
+      </select>
+    </div>
+    <div class="akuma-field">
+      <label>{{ localize "ONEPIECE.DevilFruit.Property" }}</label>
+      <input type="text" data-akuma-edit="system.property" value="{{ akuma.property }}"
+             placeholder="Corporal, Transformação…">
+    </div>
+    <div class="akuma-field akuma-field-wide">
+      <label>{{ localize "ONEPIECE.DevilFruit.AspectoInato" }}</label>
+      <input type="text" data-akuma-edit="system.aspectoInato" value="{{ akuma.aspectoInato }}"
+             placeholder="Ex.: Intangibilidade (Logia)…">
+    </div>
+  </div>
+  {{else}}
+  {{#if akuma.aspectoInato}}
+  <div class="akuma-aspecto"><strong>{{ localize "ONEPIECE.DevilFruit.AspectoInato" }}:</strong> {{ akuma.aspectoInato }}</div>
+  {{/if}}
+  {{/if}}
+
+  {{!-- Manifestações de Poder (MP) --}}
+  <div class="akuma-row akuma-mp-row">
+    <div class="akuma-row-label">
+      <i class="fas fa-star"></i> {{ localize "ONEPIECE.DevilFruit.MP" }}
+    </div>
+    <div class="akuma-mp-counter">
+      {{#if editable}}<button type="button" class="akuma-step" data-action="akuma-mp-dec"><i class="fas fa-minus"></i></button>{{/if}}
+      <span class="akuma-mp-val">{{ akuma.mp.spent }} / {{ akuma.mp.max }}</span>
+      {{#if editable}}<button type="button" class="akuma-step" data-action="akuma-mp-inc"><i class="fas fa-plus"></i></button>{{/if}}
+      <span class="akuma-mp-avail">({{ akuma.mp.available }} livres)</span>
+    </div>
+  </div>
+
+  {{!-- Despertar / Estágio Desperto --}}
+  <div class="akuma-row akuma-awakening">
+    <div class="akuma-row-label"><i class="fas fa-fire"></i> {{ localize "ONEPIECE.DevilFruit.Awakening" }}</div>
+    <div class="akuma-awakening-body">
+      {{#if editable}}
+      <label class="akuma-awk-toggle">
+        <input type="checkbox" data-akuma-edit="system.awakening.unlocked" {{ checked akuma.awakeningUnlocked }}>
+        {{ localize "ONEPIECE.DevilFruit.AwakeningUnlocked" }}
+      </label>
+      {{/if}}
+      {{#if akuma.awakened}}
+        <button type="button" class="akuma-desperto-btn {{#if akuma.awakeningStage}}active{{/if}}"
+                data-action="akuma-toggle-desperto">
+          <i class="fas fa-fire"></i>
+          <span>{{#if akuma.awakeningStage}}{{ localize "ONEPIECE.DevilFruit.ExitStage" }}{{else}}{{ localize "ONEPIECE.DevilFruit.EnterStage" }}{{/if}}</span>
+        </button>
+        {{#if akuma.awakeningStage}}<div class="akuma-stage-on">{{ localize "ONEPIECE.DevilFruit.StageActive" }}</div>{{/if}}
+      {{else}}
+        <div class="akuma-awk-locked">{{ localize "ONEPIECE.DevilFruit.AwakeningLocked" }}</div>
+      {{/if}}
+    </div>
+  </div>
+
+  {{!-- Fraqueza --}}
+  {{#if akuma.seawater}}
+  <div class="akuma-weakness"><i class="fas fa-water"></i> {{ localize "ONEPIECE.DevilFruit.Seawater" }}</div>
+  {{/if}}
+
+  {{!-- Técnicas da fruta --}}
+  <div class="akuma-tecnicas">
+    <h3><i class="fas fa-bolt"></i> {{ localize "ONEPIECE.DevilFruit.Techniques" }}</h3>
+    {{#if akuma.tecnicas.length}}
+    <ul class="akuma-tecnica-list">
+      {{#each akuma.tecnicas}}
+      <li class="akuma-tecnica" data-action="akuma-open-tecnica" data-item-id="{{ this.id }}">
+        <img src="{{ this.img }}" alt="{{ this.name }}">
+        <span class="akuma-tecnica-name">{{ this.name }}</span>
+        <span class="akuma-tecnica-grau">{{ localize "ONEPIECE.DevilFruit.Grau" }} {{ this.grau }}</span>
+      </li>
+      {{/each}}
+    </ul>
+    {{else}}
+    <p class="akuma-tecnica-empty">Nenhuma Técnica. Arraste itens de Técnica (Grau) para a ficha.</p>
+    {{/if}}
+  </div>
+
+  {{/unless}}
+</section>

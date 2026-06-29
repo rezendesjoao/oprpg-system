@@ -1,0 +1,21 @@
+_id: zHp9BtN0z8ReUfxB
+name: Herança Cultural
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Proficiente em todos os tipos de dials. Recebem 3 dials cotidianos e 1 dial bélico. Escolhem 2 perícias para proficiência (exceto Sobrenatural e Sorte) ou podem receber a Singularidade 'Haki da Observação Inato' com 15 Pontos de Ambição.</p>
+    chat: ''
+  identifier: heranca-cultural
+  type:
+    value: race
+    subtype: ''
+  requirements: Celestiais
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!zHp9BtN0z8ReUfxB'
+ownership:
+  default: 0
+flags: {}

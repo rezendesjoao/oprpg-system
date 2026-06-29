@@ -1,0 +1,21 @@
+_id: PA71LNIgNKYfa4tm
+name: Mizugokoro
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Submerso, sua manipulação de água ultrapassa limites imagináveis. Ultramarine: Técnicas sem alcance Toque ganham +2 dados de dano. Escudo Atmosférico: gaste 2 Pontos de Poder e use reação para parar todos os projéteis a até 15 metros até início do próximo turno. No 14º nível, gaste 2 PC para usar esta característica por 1 minuto em terra.'
+    chat: ''
+  identifier: mizugokoro
+  type:
+    value: class
+    subtype: ''
+  requirements: Carateca Homem-Peixe
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!PA71LNIgNKYfa4tm'
+ownership:
+  default: 0
+flags: {}

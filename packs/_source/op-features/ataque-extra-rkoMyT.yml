@@ -1,0 +1,21 @@
+_id: rkoMyTGaQQA8vRkW
+name: Ataque Extra
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Realiza dois ataques em vez de um ao usar a ação Atacar.
+    chat: ''
+  identifier: ataque-extra
+  type:
+    value: class
+    subtype: ''
+  requirements: Atirador
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!rkoMyTGaQQA8vRkW'
+ownership:
+  default: 0
+flags: {}

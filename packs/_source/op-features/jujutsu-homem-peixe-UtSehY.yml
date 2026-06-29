@@ -1,0 +1,21 @@
+_id: UtSehYPyPBwj1X3z
+name: Jujutsu Homem-Peixe
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Aperfeiçoa movimentos como agarrões e arremessos. Hikishio Ipponzeoi: ação bônus, Salvaguarda de Força ou fica Caído + 1d10 dano Contundente + mod. Força. Uzushio Ipponzeoi: ação bônus, Salvaguarda de Força ou empurrado até 3 metros + 1d6 dano Contundente + mod. Força. Nageru Ipponzeoi: ação bônus, lança criatura voluntária até 12 metros. Hinowara Ipponzeoi: ação bônus, impõe Agarrado em vez de dano, criatura recebe 1d6 dano Contundente por 1,5 metro movido.'
+    chat: ''
+  identifier: jujutsu-homem-peixe
+  type:
+    value: class
+    subtype: ''
+  requirements: Carateca Homem-Peixe
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!UtSehYPyPBwj1X3z'
+ownership:
+  default: 0
+flags: {}

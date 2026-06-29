@@ -1,0 +1,220 @@
+name: Foco Destruidor
+type: spell
+img: icons/magic/light/explosion-star-glow-orange.webp
+effects: []
+folder: TPXARZCNzOqFka6J
+flags:
+  betterRolls5e:
+    quickDesc:
+      value: true
+      altValue: true
+    quickProperties:
+      value: true
+      altValue: true
+    quickVersatile:
+      value: false
+      altValue: false
+    quickOther:
+      value: true
+      altValue: true
+      context: ''
+    quickFlavor:
+      value: true
+      altValue: true
+    quickAttack:
+      value: true
+      altValue: true
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+  core:
+    sheetClass: dnd5e.Tidy5eItemSheet
+  scene-packer:
+    hash: a485afd4df15a83a5b041bad31028884e0d319be
+    sourceId: Item.8YN5luJIQjw8uGSa
+  custom-character-sheet-sections:
+    sectionName: ''
+  rsr5e:
+    quickDamage:
+      context:
+        '0': Contundente, Cortante ou Perfurante
+        '1': Colisão
+      value:
+        '0': true
+        '1': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+    quickFooter:
+      value: true
+    quickAttack:
+      value: true
+    quickSave:
+      value: true
+  midi-qol:
+    fumbleThreshold: null
+    effectActivation: false
+  midiProperties:
+    nodam: false
+    fulldam: false
+    halfdam: false
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    rollOther: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  tidy5e-sheet:
+    section: ''
+    actionSection: ''
+system:
+  description:
+    value: "<p>Ao concentrar grande parte da sua aura em um único membro ou arma, você desfere um golpe contra a criatura, liberando toda aura acumulada e empurrando o alvo por 6 metros caso ela falhe em uma Salvaguarda de [[/save str dc=@attributes.spell.dc]].</p><p>\_\_\_\_\_\_\_\_\_\_\_ Se, durante o empurrão, a criatura atingir um objeto ou estrutura de 1,5 metros de raio ou maior, ela recebe [[/damage 4d8 bludgeoning]] de dano Contundente extra.</p><hr><p><strong>Duração:</strong>\_Instantâneo</p><p><strong>Alcance:</strong>\_Especial</p><p><strong>Requisito:</strong> Ação de Poder</p><p><strong>Dano:</strong> 8d10 de dano Contundente, Cortante ou Perfurante</p><p><strong>Custo:</strong> 8 PA</p>"
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2014'
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ft
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    units: touch
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 4
+  school: abj
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties: []
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: attack
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: material
+            value: '8'
+            target: ''
+            scaling:
+              mode: ''
+          - type: attribute
+            target: energy.generated
+            value: '8'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      attack:
+        ability: ''
+        bonus: ''
+        critical:
+          threshold: 20
+        flat: false
+        type:
+          value: melee
+          classification: spell
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 8
+            denomination: 10
+            bonus: ''
+            types:
+              - bludgeoning
+              - slashing
+              - piercing
+            scaling:
+              mode: ''
+              number: 1
+      sort: 0
+      name: ''
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+  identifier: gyo--golpe-devastador
+  method: spell
+  prepared: 2
+_stats:
+  coreVersion: '14.360'
+  systemId: jujutsu-system
+  systemVersion: 1.0.2
+  createdTime: 1777130907632
+  modifiedTime: 1777132668423
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+  duplicateSource: null
+ownership:
+  default: 0
+_id: MEgz8fsxVpzooTju
+sort: 187500
+_key: '!items!MEgz8fsxVpzooTju'

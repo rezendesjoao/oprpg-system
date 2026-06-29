@@ -1,0 +1,42 @@
+_id: yTeB70sqrDHiGRay
+name: Corpo de Guerreiro
+type: subclass
+img: icons/skills/melee/weapons-crossed-swords-purple.webp
+system:
+  description:
+    value: Uma das Habilidades Básicas Inatas do Brutamontes, focando em transformar seu corpo em uma arma devastadora de violência pura. Escolhida no 1º nível como alternativa a Superioridade Absoluta.
+    chat: ''
+  identifier: corpo-de-guerreiro
+  classIdentifier: brutamontes
+  spellcasting:
+    progression: none
+    ability: ''
+  advancement:
+    - _id: JHJRcdhl0QAKC1EU
+      type: ItemGrant
+      level: 1
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.RqakIPHGu6prOgnJ
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: CXuHdwawh7lwDrrp
+      type: ItemGrant
+      level: 5
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.XSDIvChbsBrzS7ii
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!yTeB70sqrDHiGRay'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: cNTKUH3nzWeJt2j3
+name: Explorador Destemido
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Interrupção Relâmpago (6 Dados) anula Técnica inimiga. Domínio Fatal causa dano máximo em Técnicas com chicote/pistola. Arsenal causa 4d8 com chicote + ataque adicional com pistola.
+    chat: ''
+  identifier: explorador-destemido
+  type:
+    value: class
+    subtype: ''
+  requirements: Aventureiro
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!cNTKUH3nzWeJt2j3'
+ownership:
+  default: 0
+flags: {}

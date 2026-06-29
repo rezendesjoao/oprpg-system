@@ -1,0 +1,21 @@
+_id: gJkLRDwBrajfFHLs
+name: Cabeça à Prêmio
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Governo Mundial busca capturar ou exterminar qualquer lunariano. Se mostrar aparência em público, há chance de aparecer um grupo do Governo/Marinha para captura no dia seguinte.</p>
+    chat: ''
+  identifier: cabeca-a-premio
+  type:
+    value: race
+    subtype: ''
+  requirements: Lunarianos
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!gJkLRDwBrajfFHLs'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: shTZurGPrn4co6vC
+name: Recuperação Implacável
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Ao completar um descanso curto, recupere PV adicionais iguais a 2 × seu nível (além dos normais). Ao completar um descanso longo, recupere à máxima saúde automaticamente se ainda estiver vivo
+    chat: ''
+  identifier: recuperacao-implacavel
+  type:
+    value: class
+    subtype: ''
+  requirements: Corpo de Guerreiro
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!shTZurGPrn4co6vC'
+ownership:
+  default: 0
+flags: {}

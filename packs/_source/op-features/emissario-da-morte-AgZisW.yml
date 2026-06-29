@@ -1,0 +1,21 @@
+_id: AgZisWa4DgjsUNYO
+name: Emissário da Morte
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Alvos de surpresa têm PV reduzidos a metade antes do dano. Dano mínimo contra criaturas com menos de 50% PV = seu nível.
+    chat: ''
+  identifier: emissario-da-morte
+  type:
+    value: class
+    subtype: ''
+  requirements: Atirador
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!AgZisWa4DgjsUNYO'
+ownership:
+  default: 0
+flags: {}

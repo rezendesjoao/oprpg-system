@@ -1,0 +1,122 @@
+_id: eup0ueqLantIR474
+name: Kosanze Ragnaraku
+type: spell
+img: icons/magic/light/projectile-bolts-salvo-yellow.webp
+system:
+  description:
+    value: 'Pula contra criatura e desce golpe brutalmente. A criatura deve passar em Salvaguarda de Força ou fica Caída. Alternativamente, pode mirar no chão desencadeando onda de choque em cone de 15 metros: 4d6 de dano Trovejante (Salvaguarda de Destreza, metade em sucesso) e condição Caída.'
+    chat: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: m
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    units: touch
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 2
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties: []
+  activities:
+    opact0000000001:
+      _id: opact0000000001
+      type: save
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: attribute
+            target: energy.total
+            value: '4'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: touch
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: m
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      sort: 0
+      name: ''
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      save:
+        ability:
+          - str
+        dc:
+          calculation: str
+          formula: ''
+      damage:
+        onSave: half
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 4
+            denomination: 10
+            bonus: ''
+            types:
+              - bludgeoning
+            scaling:
+              mode: ''
+              number: 1
+  identifier: kosanze-ragnaraku
+  method: spell
+  prepared: 2
+effects: []
+folder: null
+_key: '!items!eup0ueqLantIR474'
+ownership:
+  default: 0
+flags: {}

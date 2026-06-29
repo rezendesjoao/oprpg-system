@@ -1,0 +1,21 @@
+_id: uji1gdVR4b1qHvKK
+name: Reparos de Emergência
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Ação bônus para recuperar 5d10 + nível de PV e encerrar efeitos negativos. Usa-se até 3 vezes, recuperando em descanso curto ou longo.
+    chat: ''
+  identifier: reparos-de-emergencia
+  type:
+    value: class
+    subtype: ''
+  requirements: Ciborgue
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!uji1gdVR4b1qHvKK'
+ownership:
+  default: 0
+flags: {}

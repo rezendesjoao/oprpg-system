@@ -1,0 +1,21 @@
+_id: hAAlWBR2goPQ5EMb
+name: Táticas
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Aprenda Aprendizado Rápido (2 perícias por dia com Bônus de Proficiência), Ataques Incapacitantes (cegar, surdecer ou emudecedor alvo), Caminho das Sombras (escalada, natação, sem penalidade de terreno difícil).
+    chat: ''
+  identifier: taticas
+  type:
+    value: class
+    subtype: ''
+  requirements: Rokushiki
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!hAAlWBR2goPQ5EMb'
+ownership:
+  default: 0
+flags: {}

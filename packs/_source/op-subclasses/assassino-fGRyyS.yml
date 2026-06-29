@@ -1,0 +1,33 @@
+_id: fGRyySQY2fo5aUJ4
+name: Assassino
+type: subclass
+img: icons/skills/melee/weapons-crossed-swords-purple.webp
+system:
+  description:
+    value: Caminho focado em eliminar alvos com precisão letal. Especialista em armadilhas mortais e ataques que culminam em morte instantânea. Enquanto no Estado Sombrio, recebe +3 nas jogadas de ataque e +5 em dano.
+    chat: ''
+  identifier: assassino
+  classIdentifier: ninja
+  spellcasting:
+    progression: none
+    ability: ''
+  advancement:
+    - _id: LJIBZ0Ms10zntFtp
+      type: ItemGrant
+      level: 5
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.Ribdeoca3Ui44x5a
+            optional: false
+          - uuid: Compendium.onepiece-system.op-features.Item.DzwMsqrnqLLVT4bv
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!fGRyySQY2fo5aUJ4'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: hHCNlzWQK9D4tcJ7
+name: Umidaiko
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Seus golpes são imbuídos com água do mar ou atmosférica, criando ondas de choque. Ataques desarmados ignoram Resistência/Invulnerabilidade, não podem ser reduzidos, anulam Intangibilidade de Akuma no Mi, imunes a danos em resposta (exceto ataques contra você). Ao acertar ataque desarmado, criaturas a até 1,5 metro também sofrem ataque, recebem apenas dano base sem modificadores.
+    chat: ''
+  identifier: umidaiko
+  type:
+    value: class
+    subtype: ''
+  requirements: Carateca Homem-Peixe
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!hHCNlzWQK9D4tcJ7'
+ownership:
+  default: 0
+flags: {}

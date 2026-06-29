@@ -1,0 +1,21 @@
+_id: aq5afEgeA1yWhM4x
+name: Postura de Espadachim
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Escolha uma de 7 posturas ao empunhar o número exato de armas cortantes. Cada postura concede um Traço Inato único. Você pode escolher uma nova postura no 3º, 6º e 9º nível.
+    chat: ''
+  identifier: postura-de-espadachim
+  type:
+    value: class
+    subtype: ''
+  requirements: Espadachim
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!aq5afEgeA1yWhM4x'
+ownership:
+  default: 0
+flags: {}

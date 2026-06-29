@@ -1,0 +1,21 @@
+_id: EnViDUOcUmJs8rAO
+name: Equipamento Ninja
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Veste especial que aumenta dados de dano para d10, margem crítica 19-20, escalada sem custo, permanência em superfícies verticais, saltos aumentados e reroll de ataques errados.
+    chat: ''
+  identifier: equipamento-ninja
+  type:
+    value: class
+    subtype: ''
+  requirements: Ninja
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!EnViDUOcUmJs8rAO'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,33 @@
+_id: WkE63TW6pJc07Owb
+name: Estilo Arriscado
+type: subclass
+img: icons/skills/melee/weapons-crossed-swords-purple.webp
+system:
+  description:
+    value: A especialização que refina o combate através da tomada de riscos constantes. Após dedicar tempo ao chicote, o Aventureiro se acostuma a assumir riscos cada vez maiores, fazendo com que combates perigosos se tornem entediantes. Suas habilidades se refinam enquanto depende menos da sorte.
+    chat: ''
+  identifier: estilo_arriscado
+  classIdentifier: aventureiro
+  spellcasting:
+    progression: none
+    ability: ''
+  advancement:
+    - _id: ZPl25GLMNFgQVjhj
+      type: ItemGrant
+      level: 3
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.SpiRozpOwMpUPKgu
+            optional: false
+          - uuid: Compendium.onepiece-system.op-features.Item.2fJ6sbqvaXm5GPzO
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!WkE63TW6pJc07Owb'
+ownership:
+  default: 0
+flags: {}

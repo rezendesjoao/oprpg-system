@@ -1,0 +1,196 @@
+name: Detecção de Energia
+type: spell
+img: icons/magic/perception/silhouette-stealth-shadow.webp
+effects: []
+folder: G0GtIv3F4CIvLDzu
+flags:
+  betterRolls5e:
+    quickDesc:
+      value: true
+      altValue: true
+    quickProperties:
+      value: true
+      altValue: true
+    quickVersatile:
+      value: false
+      altValue: false
+    quickOther:
+      value: true
+      altValue: true
+      context: ''
+    quickFlavor:
+      value: true
+      altValue: true
+    quickAttack:
+      value: true
+      altValue: true
+    quickSave:
+      value: true
+      altValue: true
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+  core:
+    sheetClass: dnd5e.Tidy5eItemSheet
+  scene-packer:
+    hash: f525bb520a96ff60d265c0121b9ffb6e4c22b77c
+    sourceId: Item.a5Nniw5x88xGjjl7
+  custom-character-sheet-sections:
+    sectionName: ''
+  rsr5e:
+    quickDamage:
+      context: []
+      value:
+        '0': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+    quickFlavor:
+      value: true
+    quickFooter:
+      value: true
+    quickAttack:
+      value: true
+    quickSave:
+      value: true
+  midi-qol:
+    fumbleThreshold: null
+    effectActivation: false
+  midiProperties:
+    nodam: false
+    fulldam: false
+    halfdam: false
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    rollOther: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+system:
+  description:
+    value: "<p>Ao ativar essa técnica, você expande sua deteção de maldição para uma área igual a 5 vezes seu alcance padrão, mas você ainda precisa rolar Testes de Atributo para perceber algo que está se escondendo.</p><hr><p><strong>Duração:</strong>\_Até o início do seu próximo turno.</p><p><strong>Alcance:</strong> Pessoal</p><p><strong>Requisito:</strong> Especial</p><p><strong>Custo:</strong> 2 PA</p>"
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2014'
+  activation:
+    type: special
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: round
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ft
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 0
+  school: abj
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties: []
+  activities:
+    dnd5eactivity000:
+      _id: dnd5eactivity000
+      type: utility
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: attribute
+            target: energy.generated
+            value: '2'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      roll:
+        formula: ''
+        name: ''
+        prompt: false
+        visible: false
+      sort: 0
+      name: ''
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+  identifier: gyo--sentidos-aprimorados
+  method: pact
+  prepared: 0
+_stats:
+  coreVersion: '14.361'
+  systemId: jujutsu-system
+  systemVersion: 1.0.5
+  createdTime: 1777130924829
+  modifiedTime: 1780592816768
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+  duplicateSource: null
+ownership:
+  default: 0
+_id: PcJHkYnXbAIGRllF
+sort: 187500
+_key: '!items!PcJHkYnXbAIGRllF'

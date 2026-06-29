@@ -1,0 +1,21 @@
+_id: OAXGDpgAgAG4TKXE
+name: Acerto Destruidor
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Gasta 1 PP para adicionar 1d8 de dano extra ao ataque (até 5d8 total). O golpe pode causar condições de Golpes Sensíveis se o alvo falhar em Salvaguarda de Constituição.
+    chat: ''
+  identifier: acerto-destruidor
+  type:
+    value: class
+    subtype: ''
+  requirements: Okama Kenpo
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!OAXGDpgAgAG4TKXE'
+ownership:
+  default: 0
+flags: {}

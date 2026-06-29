@@ -1,0 +1,21 @@
+_id: 2fJ6sbqvaXm5GPzO
+name: Tiro Sem Paciência
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Ação poderosa dispara pistola com +1d dados para cada rodada no encontro (máximo 2x nível, até 30 dados).
+    chat: ''
+  identifier: tiro-sem-paciencia
+  type:
+    value: class
+    subtype: ''
+  requirements: Estilo Arriscado
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!2fJ6sbqvaXm5GPzO'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,56 @@
+_id: oX84cNDxUiqvyFYU
+name: Lunarianos
+type: race
+img: icons/environment/people/group.webp
+system:
+  description:
+    value: <p>Espécie exótica com pele morena, cabelos brancos e asas negras (semelhante aos Birkans). Entre 1,8-5 metros de altura. Possuem uma esfera de fogo constantemente queimando atrás das costas e nuca. Originários do 'Reino dos Deuses' na Red Line, quase extintos pelo Governo Mundial.</p>
+    chat: ''
+  identifier: lunarian
+  movement:
+    walk: 9
+    swim: 3
+    fly: 0
+    climb: 0
+    units: m
+    hover: false
+  senses:
+    darkvision: 0
+    units: m
+  type:
+    value: humanoid
+    subtype: ''
+    swarm: ''
+    custom: ''
+  advancement:
+    - _id: hS6QUHmHtBj9qsxY
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: aIiFottj96bZYYaM
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.WHKNcHHGSupdJYRf
+            optional: false
+          - uuid: Compendium.onepiece-system.op-features.Item.dAR8KvOmpFF9FwmR
+            optional: false
+          - uuid: Compendium.onepiece-system.op-features.Item.gJkLRDwBrajfFHLs
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!oX84cNDxUiqvyFYU'
+ownership:
+  default: 0
+flags: {}

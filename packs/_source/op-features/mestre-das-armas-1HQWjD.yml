@@ -1,0 +1,21 @@
+_id: 1HQWjD6eORecCZvw
+name: Mestre das Armas
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Com ação bônus, guarda duas armas e saca outras duas. Recebe uma Aptidão Bélica com duas características para armas específicas. Escolhe mais três Aptidões Bélicas no 5º e 11º níveis.
+    chat: ''
+  identifier: mestre-das-armas
+  type:
+    value: class
+    subtype: ''
+  requirements: Guerrilheiro
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!1HQWjD6eORecCZvw'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: lwl6GbvZo5402V3P
+name: Olhos de Águia
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Visão perfeita e precisão inigualável permitem atingir alvos em distâncias consideráveis com confiabilidade.
+    chat: ''
+  identifier: olhos-de-aguia
+  type:
+    value: class
+    subtype: ''
+  requirements: Atirador
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!lwl6GbvZo5402V3P'
+ownership:
+  default: 0
+flags: {}

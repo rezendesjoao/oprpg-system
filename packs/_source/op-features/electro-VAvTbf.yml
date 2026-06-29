@@ -1,0 +1,21 @@
+_id: VAvTbfcYeDD2MEOT
+name: Electro
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Uma vez por rodada, adicionar 1d10 de dano Elétrico em jogada de ataque (1x nível por descanso). Alternativamente, usar sem ação bônus 5 vezes (limitado por nível). Máximo 1 uso por rodada.</p>
+    chat: ''
+  identifier: electro
+  type:
+    value: race
+    subtype: ''
+  requirements: Minks
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!VAvTbfcYeDD2MEOT'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: DXS3dgWWOiOBMBkm
+name: Ninjutsu
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Recebe Pontos de Ninjutsu (PN) iguais ao seu nível, recuperando ao descansar. Escolhe entre <strong>Ninjutsu Místico</strong> (Futon, Katon, Raiton) ou <strong>Ninjutsu Tradicional</strong> (escapismo, fuga, furtividade, movimentação). No 8º nível, recebe o outro conjunto ou +10 PN.
+    chat: ''
+  identifier: ninjutsu
+  type:
+    value: class
+    subtype: ''
+  requirements: Ninja
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!DXS3dgWWOiOBMBkm'
+ownership:
+  default: 0
+flags: {}

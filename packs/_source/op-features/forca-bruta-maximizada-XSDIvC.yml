@@ -1,0 +1,21 @@
+_id: XSDIvChbsBrzS7ii
+name: Força Bruta Maximizada
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Seus ataques com arma favorita ganham +1 de dado de dano e ao acertar um ataque crítico, pode imediatamente fazer uma jogada de ataque corpo a corpo bônus contra a mesma criatura.
+    chat: ''
+  identifier: forca-bruta-maximizada
+  type:
+    value: class
+    subtype: ''
+  requirements: Corpo de Guerreiro
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!XSDIvChbsBrzS7ii'
+ownership:
+  default: 0
+flags: {}

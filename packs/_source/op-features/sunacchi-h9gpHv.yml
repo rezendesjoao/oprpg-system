@@ -1,0 +1,21 @@
+_id: h9gpHvP9oZonyFgs
+name: Sunacchi
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Ao chegar a 0 PV, joga 3d6 + modificador de Vontade para agir mais turnos antes de cair inconsciente. Sob efeitos de Concentração Total e Fúria Indomável, com +2 ataques extras e dano dobrado.
+    chat: ''
+  identifier: sunacchi
+  type:
+    value: class
+    subtype: ''
+  requirements: Samurai
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!h9gpHvP9oZonyFgs'
+ownership:
+  default: 0
+flags: {}

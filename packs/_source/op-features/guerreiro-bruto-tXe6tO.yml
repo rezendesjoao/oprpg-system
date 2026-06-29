@@ -1,0 +1,21 @@
+_id: tXe6tOr4I9STMD1C
+name: Guerreiro Bruto
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Seus golpes incorporam força excessiva. Pode executar Ataque de Oportunidade brutal com reação contra criaturas que se movem para fora de seu alcance corpo a corpo, empurrando-as até 9 metros (Salvaguarda de Força). Em acertos críticos, todas as criaturas que vêem o ataque recebem desvantagem contra você até seu próximo turno. Seu dano base sobe para 2d6. Pode girar a arma causando 3d8 de dano Contundente em cone de 3 metros (Salvaguarda de Destreza).
+    chat: ''
+  identifier: guerreiro-bruto
+  type:
+    value: class
+    subtype: ''
+  requirements: Brutamontes
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!tXe6tOr4I9STMD1C'
+ownership:
+  default: 0
+flags: {}

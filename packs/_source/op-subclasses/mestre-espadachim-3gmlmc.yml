@@ -1,0 +1,33 @@
+_id: 3gmlmcmUIuypIaEP
+name: Mestre Espadachim
+type: subclass
+img: icons/skills/melee/weapons-crossed-swords-purple.webp
+system:
+  description:
+    value: Especialização em armas de lâmina única (daito katana, katana, rapieira, sabre). Aprende técnicas de precisão e contraataque elegante.
+    chat: ''
+  identifier: mestre_espadachim
+  classIdentifier: guerrilheiro
+  spellcasting:
+    progression: none
+    ability: ''
+  advancement:
+    - _id: Ph1NuNEdzf8HdrhX
+      type: ItemGrant
+      level: 1
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.d4KqjCWDPh4Tf3we
+            optional: false
+          - uuid: Compendium.onepiece-system.op-features.Item.4cU2ZwQGYchpxn16
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!3gmlmcmUIuypIaEP'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: w72TgPO0ilK9zQZG
+name: Visão do Caçador
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Empunhando mosquete: Perito em Técnicas. Visão até 5km (10km em alturas), proficiência dobrada em Percepção visual.'
+    chat: ''
+  identifier: visao-do-cacador
+  type:
+    value: class
+    subtype: ''
+  requirements: Caminho do Sniper
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!w72TgPO0ilK9zQZG'
+ownership:
+  default: 0
+flags: {}

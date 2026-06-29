@@ -1,0 +1,56 @@
+_id: bNZt3YsdComWtPWw
+name: Povo do Mar
+type: race
+img: icons/environment/people/group.webp
+system:
+  description:
+    value: '<p>Espécie aquática com dois subtipos: Homens-Peixe (humanoides com características marinhas) e Sirenos (aparência humana na parte superior, cauda de peixe abaixo). Entre 1,9-6 metros de altura. Originários da Ilha dos Homens-Peixe, 10.000 metros abaixo da superfície.</p>'
+    chat: ''
+  identifier: sea_folk
+  movement:
+    walk: 9
+    swim: 15
+    fly: 0
+    climb: 0
+    units: m
+    hover: false
+  senses:
+    darkvision: 0
+    units: m
+  type:
+    value: humanoid
+    subtype: ''
+    swarm: ''
+    custom: ''
+  advancement:
+    - _id: Z7ZXkpgmSnL5vjBk
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: UsShwBiGKJhRzv6s
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.BI15vmVlsS6Jsvk1
+            optional: false
+          - uuid: Compendium.onepiece-system.op-features.Item.MS2VZoaLUlAOeN06
+            optional: false
+          - uuid: Compendium.onepiece-system.op-features.Item.7K5AGQ9jBsjpd6Ij
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!bNZt3YsdComWtPWw'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: 47ub5y0LzZlx83yy
+name: Sniper de Elite (3º nível)
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Alvo na Mira: ação bônus dobra alcance sem desvantagem. Posicionamento Perfeito: +9m escalada com testes automáticos.'
+    chat: ''
+  identifier: sniper-de-elite-3-nivel
+  type:
+    value: class
+    subtype: ''
+  requirements: Caminho do Sniper
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!47ub5y0LzZlx83yy'
+ownership:
+  default: 0
+flags: {}

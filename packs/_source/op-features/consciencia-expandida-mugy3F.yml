@@ -1,0 +1,21 @@
+_id: mugy3F0FG2FLhFiw
+name: Consciência Expandida
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Seu dano contra objetos/estruturas dobra para cedro ou madeira menos resistente. Progride para ferro e carvalho (4º), aço e cerejeira (6º), e aço temperado/madeira Adam (8º). No 13º nível, pode cortar construções à distância.
+    chat: ''
+  identifier: consciencia-expandida
+  type:
+    value: class
+    subtype: ''
+  requirements: Espadachim
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!mugy3F0FG2FLhFiw'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,42 @@
+_id: 3xPxClMDfR0iwC9g
+name: Giga-Arm (Guerreiro da Ciência)
+type: subclass
+img: icons/skills/melee/weapons-crossed-swords-purple.webp
+system:
+  description:
+    value: Transformação de um braço em maquinário robusto com mecanismos complexos. Oferece defesa (Giga-Defense com absorção de dano), captura (Giga-Grabber com dano contínuo), força extrema (Giga-Strong com 1d12 de dano), arremesso (Giga-Throw) e ataque duplo no 7º nível (Giga-Battle).
+    chat: ''
+  identifier: giga-arm
+  classIdentifier: ciborgue
+  spellcasting:
+    progression: none
+    ability: ''
+  advancement:
+    - _id: nQYs9Yhbp9bTt1TC
+      type: ItemGrant
+      level: 3
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.KDdtwHwTlW7ITW2t
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: jGkdDcg6m0Gsewu8
+      type: ItemGrant
+      level: 7
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.XoClxutaJbRKphc0
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!3xPxClMDfR0iwC9g'
+ownership:
+  default: 0
+flags: {}

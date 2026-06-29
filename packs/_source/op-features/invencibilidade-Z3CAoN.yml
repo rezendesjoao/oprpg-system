@@ -1,0 +1,21 @@
+_id: Z3CAoNnVYsV2hlw7
+name: Invencibilidade
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Você se torna uma lenda viva. Ataques comuns causam 4d8 de dano, recebe ataque adicional em Ataque Extra, tem resistência a todos os danos (incluindo Verdadeiro), é imune a condições (exceto Enfraquecido) e dano de queda. Em acertos críticos, rola 1d12; se conseguir 12, reduz PV do alvo a 0.
+    chat: ''
+  identifier: invencibilidade
+  type:
+    value: class
+    subtype: ''
+  requirements: Brutamontes
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!Z3CAoNnVYsV2hlw7'
+ownership:
+  default: 0
+flags: {}

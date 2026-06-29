@@ -1,0 +1,21 @@
+_id: O3DhwVnnVP6ubtLm
+name: Samehada Shotei
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Ao ser alvo de uma jogada de ataque (comum) corpo a corpo que falhou, use reação para redirecionar para a mesma criatura ou outra a até 1,5 metro. Bônus +3 na jogada de ataque, criatura atingida terá desvantagem na próxima jogada de ataque. Alternativamente, usar mesmo em ataque bem-sucedido (se não foi afetada antes neste encontro) ou gastar 3 Pontos de Poder.
+    chat: ''
+  identifier: samehada-shotei
+  type:
+    value: class
+    subtype: ''
+  requirements: Carateca Homem-Peixe
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!O3DhwVnnVP6ubtLm'
+ownership:
+  default: 0
+flags: {}

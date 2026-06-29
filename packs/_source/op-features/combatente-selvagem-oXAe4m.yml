@@ -1,0 +1,21 @@
+_id: oXAe4mw3gUXLnSV1
+name: Combatente Selvagem
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Use uma ação bônus ao atacar desarmado corpo a corpo para aplicar movimentos especiais: <strong>Voadora</strong> (1d6 dano extra se mover 3m+ em linha reta; ou empurrar até 6m) | <strong>Golpe Baixo</strong> (1d6 dano + reduz deslocamento 3m, ou causa Caído) | <strong>Subjugador</strong> (aplica Agarrado em vez de dano)'
+    chat: ''
+  identifier: combatente-selvagem
+  type:
+    value: class
+    subtype: ''
+  requirements: Lutador
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!oXAe4mw3gUXLnSV1'
+ownership:
+  default: 0
+flags: {}

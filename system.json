@@ -1,0 +1,428 @@
+{
+  "id": "onepiece-system",
+  "title": "One Piece RPG",
+  "description": "One Piece RPG — sistema de RPG de mesa inspirado em One Piece para o Foundry Virtual Tabletop, adaptado de D&D 5e (baseado no Livro do Jogador OP RPG 2.0). Projeto de fã, sem afiliação oficial. Construído sobre o motor do dnd5e (MIT) e do jujutsu-system.",
+  "version": "1.1.0",
+  "compatibility": {
+    "minimum": "14.360",
+    "verified": "14"
+  },
+  "url": "https://github.com/rezendesjoao/oprpg-system",
+  "manifest": "https://github.com/rezendesjoao/oprpg-system/releases/latest/download/system.json",
+  "download": "https://github.com/rezendesjoao/oprpg-system/releases/latest/download/system.zip",
+  "authors": [
+    {
+      "name": "OP RPG (adaptação)",
+      "flags": {}
+    },
+    {
+      "name": "Noroi (jujutsu-system, motor base)",
+      "url": "https://discord.gg/hld20",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "dnd5e.mjs"
+  ],
+  "packs": [
+    {
+      "name": "op-classes",
+      "label": "Estilos de Combate",
+      "path": "packs/op-classes",
+      "type": "Item",
+      "system": "onepiece-system",
+      "flags": { "OnePiece": { "types": ["class"] } }
+    },
+    {
+      "name": "op-subclasses",
+      "label": "Caminhos (Subclasses)",
+      "path": "packs/op-subclasses",
+      "type": "Item",
+      "system": "onepiece-system",
+      "flags": { "OnePiece": { "types": ["subclass"] } }
+    },
+    {
+      "name": "op-features",
+      "label": "Características de Estilo",
+      "path": "packs/op-features",
+      "type": "Item",
+      "system": "onepiece-system",
+      "flags": { "OnePiece": { "types": ["feat"] } }
+    },
+    {
+      "name": "op-techniques",
+      "label": "Técnicas",
+      "path": "packs/op-techniques",
+      "type": "Item",
+      "system": "onepiece-system",
+      "flags": { "OnePiece": { "types": ["spell"] } }
+    },
+    {
+      "name": "op-species",
+      "label": "Espécies",
+      "path": "packs/op-species",
+      "type": "Item",
+      "system": "onepiece-system",
+      "flags": { "OnePiece": { "types": ["race"] } }
+    },
+    {
+      "name": "tecnicas-manipulacao",
+      "label": "Técnicas (Exemplos)",
+      "path": "packs/tecnicas-manipulacao",
+      "type": "Item",
+      "system": "onepiece-system",
+      "flags": {
+        "OnePiece": {
+          "types": ["spell"]
+        }
+      }
+    },
+   {
+    "name": "conteudo",
+    "label": "Informações",
+    "path": "packs/info",
+    "type": "JournalEntry",
+    "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+    },
+    "system": "onepiece-system"
+}
+  ],
+  "styles": [
+    {
+      "src": "dnd5e.css"
+    },
+    {
+      "src": "less/jujutsu-base.css"
+    },
+     {
+      "src": "less/jujutsu-biografia.css"
+    },
+     {
+      "src": "less/jujutsu-caracteristicas.css"
+    },
+     {
+      "src": "less/jujutsu-detalhes.css"
+    },
+     {
+      "src": "less/jujutsu-efeitos.css"
+    },
+     {
+      "src": "less/jujutsu-index.css"
+    },
+     {
+      "src": "less/jujutsu-inventario.css"
+    },
+     {
+      "src": "less/jujutsu-manipulacao.css"
+    },
+     {
+      "src": "less/jujutsu-fulgor.css"
+    },
+     {
+      "src": "less/jujutsu-tecnicas.css"
+    },
+     {
+      "src": "less/jujutsu-treinamentos.css"
+    },
+    {
+      "src": "less/jujutsu-chat-card.css"
+    },
+    {
+      "src": "less/op-akuma.css"
+    }
+  ],
+  "documentTypes": {
+    "ActiveEffect": {
+      "enchantment": {}
+    },
+    "Actor": {
+      "character": {
+        "htmlFields": [
+          "details.biography.value",
+          "details.biography.public",
+          "bastion.description"
+        ]
+      },
+      "encounter": {
+        "htmlFields": [
+          "description.full",
+          "description.summary"
+        ]
+      },
+      "group": {
+        "htmlFields": [
+          "description.full",
+          "description.summary"
+        ]
+      },
+      "npc": {
+        "htmlFields": [
+          "details.biography.value",
+          "details.biography.public"
+        ]
+      },
+      "vehicle": {
+        "htmlFields": [
+          "details.biography.value",
+          "details.biography.public"
+        ]
+      }
+    },
+    "ChatMessage": {
+      "bastionAttack": {},
+      "bastionTurn": {},
+      "request": {},
+      "rest": {},
+      "turn": {},
+      "usage": {}
+    },
+    "Item": {
+      "akumaNoMi": {
+        "htmlFields": [
+          "description.value",
+          "description.chat"
+        ]
+      },
+      "weapon": {
+        "filePathFields": {
+          "activities.*.img": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
+      },
+      "equipment": {
+        "filePathFields": {
+          "activities.*.img": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
+      },
+      "consumable": {
+        "filePathFields": {
+          "activities.*.img": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
+      },
+      "tool": {
+        "filePathFields": {
+          "activities.*.img": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
+      },
+      "loot": {
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
+      },
+      "race": {
+        "filePathFields": {
+          "advancement.*.icon": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "advancement.*.hint",
+          "description.value",
+          "description.chat"
+        ]
+      },
+      "background": {
+        "filePathFields": {
+          "advancement.*.icon": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "advancement.*.hint",
+          "description.value",
+          "description.chat"
+        ]
+      },
+      "class": {
+        "filePathFields": {
+          "advancement.*.icon": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "advancement.*.hint",
+          "description.value",
+          "description.chat"
+        ]
+      },
+      "subclass": {
+        "filePathFields": {
+          "advancement.*.icon": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "advancement.*.hint",
+          "description.value",
+          "description.chat"
+        ]
+      },
+      "spell": {
+        "filePathFields": {
+          "activities.*.img": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "description.value",
+          "description.chat"
+        ]
+      },
+      "feat": {
+        "filePathFields": {
+          "activities.*.img": [
+            "IMAGE"
+          ],
+          "advancement.*.icon": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "advancement.*.hint",
+          "description.value",
+          "description.chat"
+        ]
+      },
+      "container": {
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
+      },
+      "backpack": {
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
+      },
+      "facility": {
+        "filePathFields": {
+          "activities.*.img": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "description.value",
+          "description.chat"
+        ]
+      }
+    },
+    "JournalEntryPage": {
+      "class": {
+        "htmlFields": [
+          "details.value",
+          "details.additionalHitPoints",
+          "description.additionalTraits",
+          "description.additionalEquipment",
+          "description.subclass"
+        ]
+      },
+      "map": {},
+      "rule": {
+        "htmlFields": [
+          "tooltip"
+        ]
+      },
+      "spells": {},
+      "subclass": {
+        "htmlFields": [
+          "details.value"
+        ]
+      }
+    },
+    "RegionBehavior": {
+      "dnd5e.difficultTerrain": {},
+      "dnd5e.rotateArea": {}
+    }
+  },
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "media": [
+    {
+      "type": "cover",
+      "loop": false,
+      "flags": {}
+    },
+    {
+      "type": "setup",
+      "url": "systems/onepiece-system/ui/official/jjk-repo.jpg",
+      "thumbnail": "systems/onepiece-system/ui/official/jjk-thumbnail.jpg",
+      "loop": false,
+      "flags": {}
+    }
+  ],
+  "socket": true,
+  "grid": {
+    "distance": 1.5,
+    "units": "m"
+  },
+  "primaryTokenAttribute": "attributes.hp",
+  "background": "systems/onepiece-system/ui/official/jjk-background.webp",
+  "flags": {
+    "compendiumArtMappings": {
+      "onepiece-system": {
+        "mapping": "systems/onepiece-system/json/fa-token-mapping.json",
+        "credit": "<em>Token artwork by <a href=\"https://www.forgotten-adventures.net/\" target=\"_blank\" rel=\"noopener\">Forgotten Adventures</a>.</em>"
+      }
+    },
+    "onepiece-system": {
+      "sourceBooks": {
+        "SRD 5.1": "SOURCE.BOOK.SRD51",
+        "SRD 5.2": "SOURCE.BOOK.SRD52"
+      }
+    },
+    "needsMigrationVersion": "5.3.0",
+    "compatibleMigrationVersion": "0.8",
+    "hotReload": {
+      "extensions": [
+        "css",
+        "hbs",
+        "json"
+      ],
+      "paths": [
+        "dnd5e.css",
+        "templates",
+        "lang"
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Lutador",
+  "type": "class",
+  "img": "icons/skills/melee/unarmed-punch-fist-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Estilo de Combate — Lutador.</strong> Mestre do combate corpo a corpo, usa o próprio corpo como arma. Dado de Vida d10; Atributo Primário Força. Recebe Técnicas (Grau) conforme sobe de nível. Pontos de Poder = 4 × nível.</p><p><em>Para um Lutador completo, adicione no editor de Avanços (Advancement) as proficiências de Salvaguarda (Força, Constituição), perícias e os ItemGrants das Técnicas por nível (1/3/6/9/12/16/20).</em></p>"
+    },
+    "identifier": "lutador",
+    "levels": 1,
+    "hd": { "denomination": "d10", "spent": 0 },
+    "primaryAbility": { "value": ["str"], "all": false },
+    "spellcasting": { "progression": "none", "ability": "" },
+    "advancement": [
+      {
+        "_id": "lutHitPoints0001",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {},
+        "title": "",
+        "icon": "",
+        "classRestriction": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+_id: g2xsg9kNFmVyeD4r
+name: Gun-Fu
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Empunhando arma favorita: Defesa Aprimorada (reduza dano recebido).'
+    chat: ''
+  identifier: gun-fu
+  type:
+    value: class
+    subtype: ''
+  requirements: Caminho do Duelista
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!g2xsg9kNFmVyeD4r'
+ownership:
+  default: 0
+flags: {}

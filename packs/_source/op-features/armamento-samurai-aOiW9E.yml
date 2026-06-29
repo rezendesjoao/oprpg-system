@@ -1,0 +1,21 @@
+_id: aOiW9EhaaWEeAbKQ
+name: Armamento Samurai
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Proficiência em armas especiais (Arco, Daito Katana, Foice, Kanabo, Katana, Lança, Nodachi, Pistola, Shikomizue). Margem de crítico 19-20, +1d6 dano extra uma vez por turno. Escolhe um Ryu (estilo de dano) que modifica o dano adicional.
+    chat: ''
+  identifier: armamento-samurai
+  type:
+    value: class
+    subtype: ''
+  requirements: Samurai
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!aOiW9EhaaWEeAbKQ'
+ownership:
+  default: 0
+flags: {}

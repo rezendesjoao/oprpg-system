@@ -1,0 +1,21 @@
+_id: ltrmghjHL6QBpH4C
+name: Fúria Indomável
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Durante Concentração Total: resistência contra qualquer dano (exceto Verdadeiro), 80 PV temporários e movimento não pode ser reduzido.'
+    chat: ''
+  identifier: furia-indomavel
+  type:
+    value: class
+    subtype: ''
+  requirements: Samurai
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!ltrmghjHL6QBpH4C'
+ownership:
+  default: 0
+flags: {}

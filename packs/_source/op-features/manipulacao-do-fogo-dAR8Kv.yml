@@ -1,0 +1,21 @@
+_id: dAR8KvOmpFF9FwmR
+name: Manipulação do Fogo
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: '<p>Enquanto o fogo nas costas se mantém: resistência a dano de fogo, iluminam até 6 metros com luz plena, podem manipular uma esfera de fogo a até 6 metros causando 1d4 de dano de fogo ao contato com criaturas ou combustão em objetos.</p>'
+    chat: ''
+  identifier: manipulacao-do-fogo
+  type:
+    value: race
+    subtype: ''
+  requirements: Lunarianos
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!dAR8KvOmpFF9FwmR'
+ownership:
+  default: 0
+flags: {}

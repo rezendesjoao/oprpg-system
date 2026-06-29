@@ -1,0 +1,127 @@
+_id: GDjOdpwczVVcEJXT
+name: Shugan
+type: spell
+img: icons/magic/light/projectile-bolts-salvo-yellow.webp
+system:
+  description:
+    value: Forma ofensiva definitiva do Shigan com a mão inteira. Ao final de cada turno do alvo, deve passar em Constituição ou receber 2d8 de dano Verdadeiro, ou usar ação para cobrir o ferimento. Dura 1 minuto ou até tratamento.
+    chat: ''
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: m
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    units: touch
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 6
+  school: evo
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties: []
+  activities:
+    opact0000000001:
+      _id: opact0000000001
+      type: attack
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        targets:
+          - type: attribute
+            target: energy.total
+            value: '12'
+            scaling:
+              mode: ''
+              formula: ''
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: touch
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: m
+          stationary: false
+        affects:
+          choice: false
+        override: false
+      uses:
+        spent: 0
+        max: ''
+        recovery: []
+      sort: 0
+      name: ''
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      attack:
+        ability: str
+        bonus: ''
+        critical:
+          threshold: 20
+        flat: false
+        type:
+          value: melee
+          classification: spell
+      damage:
+        critical:
+          bonus: ''
+        includeBase: true
+        parts:
+          - custom:
+              enabled: false
+              formula: ''
+            number: 4
+            denomination: 10
+            bonus: ''
+            types:
+              - piercing
+            scaling:
+              mode: ''
+              number: 1
+  identifier: shugan
+  method: spell
+  prepared: 2
+effects: []
+folder: null
+_key: '!items!GDjOdpwczVVcEJXT'
+ownership:
+  default: 0
+flags: {}

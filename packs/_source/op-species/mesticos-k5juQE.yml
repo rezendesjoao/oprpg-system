@@ -1,0 +1,56 @@
+_id: k5juQEpOekwMDTJr
+name: Mestiços
+type: race
+img: icons/environment/people/group.webp
+system:
+  description:
+    value: <p>Descendentes de duas espécies diferentes, combinando características genéticas únicas. Tamanho e características físicas variam conforme as espécies parentais. Limitados em alguns aspectos por não serem inteiramente de uma espécie, mas ganham versatilidade extraordinária.</p>
+    chat: ''
+  identifier: half_breed
+  movement:
+    walk: 9
+    swim: 4.5
+    fly: 0
+    climb: 0
+    units: m
+    hover: false
+  senses:
+    darkvision: 0
+    units: m
+  type:
+    value: humanoid
+    subtype: ''
+    swarm: ''
+    custom: ''
+  advancement:
+    - _id: JTWcpyhUwpblNGfP
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: 4JgzECcHV19TmobC
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.tQbW4YZLvkEu5U9p
+            optional: false
+          - uuid: Compendium.onepiece-system.op-features.Item.rCKwhHQcAMPCUQuL
+            optional: false
+          - uuid: Compendium.onepiece-system.op-features.Item.2yCkhoZq8yTZ7ORK
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!k5juQEpOekwMDTJr'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: SBHy97jUhdaCOOZq
+name: Técnicas de Combate
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: No 1º nível aprende uma Técnica de Combate e uma Técnica Auxiliar. Aprende novamente no 3º, 6º, 9º, 12º, 16º e 20º nível. CD = 8 + Bônus de Proficiência + modificador de Sabedoria.
+    chat: ''
+  identifier: tecnicas-de-combate
+  type:
+    value: class
+    subtype: ''
+  requirements: Ciborgue
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!SBHy97jUhdaCOOZq'
+ownership:
+  default: 0
+flags: {}

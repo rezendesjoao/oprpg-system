@@ -1,0 +1,684 @@
+name: Investida Focada
+type: spell
+img: icons/skills/movement/feet-winged-boots-glowing-yellow.webp
+effects:
+  - name: Investida Focada (2 PA)
+    img: icons/skills/movement/feet-winged-boots-glowing-yellow.webp
+    origin: Item.W7eSVOmbdSPfT86I
+    transfer: false
+    _id: Xc8w7eVyAsrgIrsu
+    type: base
+    system:
+      changes:
+        - key: system.attributes.movement.walk
+          value: '+6'
+          priority: 20
+          type: add
+          phase: initial
+    disabled: true
+    duration:
+      value: 1
+      units: rounds
+      expiry: turnStart
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.360'
+      systemId: jujutsu-system
+      systemVersion: 1.0.2
+      createdTime: 1777130920910
+      modifiedTime: 1777130920910
+      lastModifiedBy: dnd5ebuilder0000
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!n0nctH9rBuU1Jbe5.Xc8w7eVyAsrgIrsu'
+  - name: Investida Focada (3 PA)
+    img: icons/skills/movement/feet-winged-boots-glowing-yellow.webp
+    origin: Item.W7eSVOmbdSPfT86I
+    transfer: false
+    _id: wOHTiDYGikDJPwBd
+    type: base
+    system:
+      changes:
+        - key: system.attributes.movement.walk
+          value: '+9'
+          priority: 20
+          type: add
+          phase: initial
+    disabled: true
+    duration:
+      value: 1
+      units: rounds
+      expiry: turnStart
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.360'
+      systemId: jujutsu-system
+      systemVersion: 1.0.2
+      createdTime: 1777130920910
+      modifiedTime: 1777130920910
+      lastModifiedBy: dnd5ebuilder0000
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!n0nctH9rBuU1Jbe5.wOHTiDYGikDJPwBd'
+  - name: Investida Focada (1 PA)
+    img: icons/skills/movement/feet-winged-boots-glowing-yellow.webp
+    origin: Item.W7eSVOmbdSPfT86I
+    transfer: false
+    type: base
+    system:
+      changes:
+        - key: system.attributes.movement.walk
+          value: '+3'
+          priority: 20
+          type: add
+          phase: initial
+    disabled: true
+    duration:
+      value: 1
+      units: rounds
+      expiry: turnStart
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.360'
+      systemId: jujutsu-system
+      systemVersion: 1.0.2
+      createdTime: 1777130920910
+      modifiedTime: 1777130920910
+      lastModifiedBy: dnd5ebuilder0000
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: tb1grByZjni9UOWw
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!n0nctH9rBuU1Jbe5.tb1grByZjni9UOWw'
+  - name: Investida Focada (4 PA)
+    img: icons/skills/movement/feet-winged-boots-glowing-yellow.webp
+    origin: Item.W7eSVOmbdSPfT86I
+    transfer: false
+    type: base
+    system:
+      changes:
+        - key: system.attributes.movement.walk
+          value: '+12'
+          priority: 20
+          type: add
+          phase: initial
+    disabled: true
+    duration:
+      value: 1
+      units: rounds
+      expiry: turnStart
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.360'
+      systemId: jujutsu-system
+      systemVersion: 1.0.2
+      createdTime: 1777130920910
+      modifiedTime: 1777130920910
+      lastModifiedBy: dnd5ebuilder0000
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 3SpXMCEsZRkzsAUN
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!n0nctH9rBuU1Jbe5.3SpXMCEsZRkzsAUN'
+  - name: Investida Focada (5 PA)
+    img: icons/skills/movement/feet-winged-boots-glowing-yellow.webp
+    origin: Item.W7eSVOmbdSPfT86I
+    transfer: false
+    type: base
+    system:
+      changes:
+        - key: system.attributes.movement.walk
+          value: '+15'
+          priority: 20
+          type: add
+          phase: initial
+    disabled: true
+    duration:
+      value: 1
+      units: rounds
+      expiry: turnStart
+      expired: false
+    description: ''
+    tint: '#ffffff'
+    statuses: []
+    sort: 0
+    flags:
+      dae:
+        enableCondition: ''
+        disableCondition: ''
+        stackable: multi
+        showIcon: false
+        durationExpression: ''
+        specialDuration: []
+      dnd5e:
+        riders:
+          statuses: []
+      core:
+        overlay: false
+    _stats:
+      coreVersion: '14.360'
+      systemId: jujutsu-system
+      systemVersion: 1.0.2
+      createdTime: 1777130920910
+      modifiedTime: 1777130920910
+      lastModifiedBy: dnd5ebuilder0000
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: sIgzgYFRwEcnnFsL
+    start: null
+    showIcon: 1
+    folder: null
+    _key: '!items.effects!n0nctH9rBuU1Jbe5.sIgzgYFRwEcnnFsL'
+folder: G0GtIv3F4CIvLDzu
+flags:
+  betterRolls5e:
+    quickDesc:
+      value: true
+      altValue: true
+    quickProperties:
+      value: true
+      altValue: true
+    quickVersatile:
+      value: false
+      altValue: false
+    quickOther:
+      value: true
+      altValue: true
+      context: ''
+    quickFlavor:
+      value: true
+      altValue: true
+    quickAttack:
+      value: true
+      altValue: true
+    quickSave:
+      value: true
+      altValue: true
+    quickDamage:
+      context:
+        '0': ''
+      value:
+        '0': true
+      altValue:
+        '0': true
+  core:
+    sheetClass: dnd5e.Tidy5eItemSheet
+  scene-packer:
+    hash: 686fe56c7456b35a46c0128720d9fd6cd5ef5bf2
+    sourceId: Item.a5Nniw5x88xGjjl7
+  custom-character-sheet-sections:
+    sectionName: ''
+  rsr5e:
+    quickDamage:
+      context: []
+      value:
+        '0': true
+    quickOther:
+      context: ''
+    quickDesc:
+      value: true
+    quickFlavor:
+      value: true
+    quickFooter:
+      value: true
+    quickAttack:
+      value: true
+    quickSave:
+      value: true
+  midi-qol:
+    fumbleThreshold: null
+    effectActivation: false
+  midiProperties:
+    nodam: false
+    fulldam: false
+    halfdam: false
+    autoFailFriendly: false
+    autoSaveFriendly: false
+    rollOther: false
+    critOther: false
+    offHandWeapon: false
+    magicdam: false
+    magiceffect: false
+    concentration: false
+    toggleEffect: false
+    ignoreTotalCover: false
+  dnd5e:
+    riders:
+      activity: []
+      effect: []
+system:
+  description:
+    value: "<p>Ao acumular aura em suas pernas, você pode aumentar sua velocidade a fim de se mover mais rápido pelo campo de batalha, recebendo 3 metros de deslocamento para cada 1 Ponto de Aura gasto, até um máximo de 15 metros, mas esse deslocamento não dobra em caso de disparada. Você não consome nenhuma ação para ativar esse efeito.</p><hr><p><strong>Duração:</strong>\_Até o fim do turno atual</p><p><strong>Alcance:</strong> Pessoal</p><p><strong>Requisito:</strong> Gyo, Especial</p><p><strong>Custo:</strong> 1 PA</p>"
+    chat: ''
+  source:
+    custom: ''
+    revision: 1
+    rules: '2014'
+  activation:
+    type: special
+    condition: ''
+    value: 1
+  duration:
+    value: '1'
+    units: round
+  target:
+    affects:
+      choice: false
+      count: ''
+      type: ''
+    template:
+      units: ft
+      contiguous: false
+      type: ''
+      stationary: false
+  range:
+    units: self
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  ability: ''
+  level: 0
+  school: abj
+  materials:
+    value: ''
+    consumed: false
+    cost: 0
+    supply: 0
+  properties: []
+  activities:
+    9OVvAIFquXSiawP5:
+      type: utility
+      _id: 9OVvAIFquXSiawP5
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: material
+            value: '1'
+            scaling: {}
+          - type: attribute
+            target: energy.generated
+            value: '1'
+            scaling:
+              mode: ''
+              formula: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        template:
+          contiguous: false
+          units: m
+          stationary: false
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        name: ''
+        formula: ''
+      name: 3 metros
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+    f4zMK9Bte7XkX9YI:
+      type: utility
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: material
+            value: '2'
+            target: ''
+            scaling: {}
+          - type: attribute
+            target: energy.generated
+            value: '2'
+            scaling:
+              mode: ''
+              formula: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        template:
+          contiguous: false
+          units: m
+          stationary: false
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      name: 6 metros
+      _id: f4zMK9Bte7XkX9YI
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+    7i5rY8fNJHikxzKJ:
+      type: utility
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: material
+            value: '3'
+            target: ''
+            scaling: {}
+          - type: attribute
+            target: energy.generated
+            value: '3'
+            scaling:
+              mode: ''
+              formula: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        template:
+          contiguous: false
+          units: m
+          stationary: false
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      name: 9 metros
+      _id: 7i5rY8fNJHikxzKJ
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+    YWbIEZToYFVKN7bi:
+      type: utility
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: material
+            value: '4'
+            target: ''
+            scaling: {}
+          - type: attribute
+            target: energy.generated
+            value: '4'
+            scaling:
+              mode: ''
+              formula: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        template:
+          contiguous: false
+          units: m
+          stationary: false
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      name: 12 metros
+      _id: YWbIEZToYFVKN7bi
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+    93qkPZgtF8iWLUbF:
+      type: utility
+      sort: 0
+      activation:
+        type: action
+        value: null
+        override: false
+      consumption:
+        scaling:
+          allowed: false
+        spellSlot: true
+        targets:
+          - type: material
+            value: '5'
+            target: ''
+            scaling: {}
+          - type: attribute
+            target: energy.generated
+            value: '5'
+            scaling:
+              mode: ''
+              formula: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+      target:
+        template:
+          contiguous: false
+          units: m
+          stationary: false
+        affects:
+          choice: false
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: false
+        formula: ''
+        name: ''
+      name: 15 metros
+      _id: 93qkPZgtF8iWLUbF
+      img: null
+      flags: {}
+      visibility:
+        level: {}
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+  identifier: gyo--sentidos-aprimorados
+  method: pact
+  prepared: 0
+_stats:
+  coreVersion: '14.360'
+  systemId: jujutsu-system
+  systemVersion: 1.0.2
+  createdTime: 1777130920910
+  modifiedTime: 1777132580828
+  lastModifiedBy: dnd5ebuilder0000
+  exportSource: null
+  duplicateSource: null
+ownership:
+  default: 0
+_id: n0nctH9rBuU1Jbe5
+sort: 150000
+_key: '!items!n0nctH9rBuU1Jbe5'

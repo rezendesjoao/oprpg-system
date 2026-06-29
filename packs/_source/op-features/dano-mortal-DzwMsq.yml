@@ -1,0 +1,21 @@
+_id: DzwMsqrnqLLVT4bv
+name: Dano Mortal
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Ao usar Assassinar, se PV restantes forem iguais ou menores que quantidade de dados, criatura tem PV reduzido a 0 automaticamente.
+    chat: ''
+  identifier: dano-mortal
+  type:
+    value: class
+    subtype: ''
+  requirements: Assassino
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!DzwMsqrnqLLVT4bv'
+ownership:
+  default: 0
+flags: {}

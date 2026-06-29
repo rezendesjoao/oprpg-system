@@ -1,0 +1,21 @@
+_id: aONaf8z6JYeIsg6x
+name: Concentração Total
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Induz estado de foco absoluto por 1 minuto onde rolagens 9 ou menor (ataques, testes, salvaguardas) são consideradas 10. Usável 1x e recupera ao descanso longo (3x no 12º nível).
+    chat: ''
+  identifier: concentracao-total
+  type:
+    value: class
+    subtype: ''
+  requirements: Samurai
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!aONaf8z6JYeIsg6x'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: 5A0S2yJ7LW91CdV2
+name: Músculos e Cérebro
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Jogadas de ataque comum podem usar modificador de Sabedoria. Cria ligação entre Sabedoria-Força ou Sabedoria-Destreza: usa o maior valor entre eles em Testes de Atributo e Salvaguardas.'
+    chat: ''
+  identifier: musculos-e-cerebro
+  type:
+    value: class
+    subtype: ''
+  requirements: Guerrilheiro
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!5A0S2yJ7LW91CdV2'
+ownership:
+  default: 0
+flags: {}

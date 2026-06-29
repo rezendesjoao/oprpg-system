@@ -1,0 +1,21 @@
+_id: zOVbL78o07szL3PB
+name: Apogeu
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Técnicas de 1º grau custam 0 PP; de 2º-5º grau custam metade do PP. Técnicas com alcance diferente de toque têm alcance dobrado ou reduzido para 3m.
+    chat: ''
+  identifier: apogeu
+  type:
+    value: class
+    subtype: ''
+  requirements: Espadachim
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!zOVbL78o07szL3PB'
+ownership:
+  default: 0
+flags: {}

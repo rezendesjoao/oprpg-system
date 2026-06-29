@@ -1,0 +1,21 @@
+_id: L96eQ6bXj50uCqtm
+name: Mestre Carateca
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Distribua livremente 6 pontos entre seus atributos (máximo 24 em cada). Escolha dois atributos para aplicar pontos até máximo de 30.
+    chat: ''
+  identifier: mestre-carateca
+  type:
+    value: class
+    subtype: ''
+  requirements: Carateca Homem-Peixe
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!L96eQ6bXj50uCqtm'
+ownership:
+  default: 0
+flags: {}

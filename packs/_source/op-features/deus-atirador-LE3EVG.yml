@@ -1,0 +1,21 @@
+_id: LE3EVG7YbaK7dYcx
+name: Deus Atirador
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 2 ataques extras adicionais em Ataque Extra. Reduz criaturas ND6 a 0 PV (ND9 em críticos). Sem errar se acima de 50% PV.
+    chat: ''
+  identifier: deus-atirador
+  type:
+    value: class
+    subtype: ''
+  requirements: Atirador
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!LE3EVG7YbaK7dYcx'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,26 @@
+{
+  "name": "Espadachim",
+  "type": "class",
+  "img": "icons/skills/melee/sword-katana-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Estilo de Combate — Espadachim.</strong> Mestre da lâmina, do estilo de uma a três espadas (Santoryu). Dado de Vida d10; Atributo Primário Destreza (ou Força). Recebe Técnicas (Grau) ao subir de nível. Pontos de Poder = 4 × nível.</p><p><em>Adicione no editor de Avanços as proficiências de Salvaguarda, perícias e os ItemGrants das Técnicas por nível.</em></p>"
+    },
+    "identifier": "espadachim",
+    "levels": 1,
+    "hd": { "denomination": "d10", "spent": 0 },
+    "primaryAbility": { "value": ["dex"], "all": false },
+    "spellcasting": { "progression": "none", "ability": "" },
+    "advancement": [
+      {
+        "_id": "espHitPoints0001",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {},
+        "title": "",
+        "icon": "",
+        "classRestriction": ""
+      }
+    ]
+  }
+}

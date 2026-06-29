@@ -1,0 +1,21 @@
+_id: Za5UdypiPEI7zjJk
+name: Demônio Incarnado
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Suas jogadas de ataque com sua arma favorita causam +1 de dano extra para cada criatura hostil reduzida a 0 PV que você tenha ferido durante o encontro (máximo igual à metade do seu nível, mínimo de +1). Alternativamente, com uma criatura hostil solitária, gaste 2 PP para obter até metade do bônus máximo de dano.
+    chat: ''
+  identifier: demonio-incarnado
+  type:
+    value: class
+    subtype: ''
+  requirements: Brutamontes
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!Za5UdypiPEI7zjJk'
+ownership:
+  default: 0
+flags: {}

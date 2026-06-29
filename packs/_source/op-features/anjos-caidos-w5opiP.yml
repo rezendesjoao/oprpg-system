@@ -1,0 +1,21 @@
+_id: w5opiPQAIQzAJdDA
+name: Anjos Caídos
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Recebem -2 em Testes de Destreza (Acrobacia) em altitudes inferiores a 5.000 metros do nível do mar, afetados pela distorção de equilíbrio em atmosferas mais densas.</p>
+    chat: ''
+  identifier: anjos-caidos
+  type:
+    value: race
+    subtype: ''
+  requirements: Celestiais
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!w5opiPQAIQzAJdDA'
+ownership:
+  default: 0
+flags: {}

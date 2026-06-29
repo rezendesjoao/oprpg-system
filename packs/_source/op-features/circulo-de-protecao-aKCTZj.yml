@@ -1,0 +1,21 @@
+_id: aKCTZjWDvHq7SLMY
+name: Círculo de Proteção
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Pode proteger múltiplos aliados simultaneamente dentro de 6 metros, distribuindo a redução de dano entre eles. Todos os aliados ganham +2 na Classe de Resistência enquanto estiverem nessa aura.
+    chat: ''
+  identifier: circulo-de-protecao
+  type:
+    value: class
+    subtype: ''
+  requirements: Caminho do Protetor
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!aKCTZjWDvHq7SLMY'
+ownership:
+  default: 0
+flags: {}

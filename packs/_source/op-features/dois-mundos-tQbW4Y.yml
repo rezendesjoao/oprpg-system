@@ -1,0 +1,21 @@
+_id: tQbW4YZLvkEu5U9p
+name: Dois Mundos
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Escolhem 1 característica 'Ancestralidade' ou 'Traço Cultural' de uma das espécies parentais (se ambas tiverem a mesma, mantêm aquela).</p>
+    chat: ''
+  identifier: dois-mundos
+  type:
+    value: race
+    subtype: ''
+  requirements: Mestiços
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!tQbW4YZLvkEu5U9p'
+ownership:
+  default: 0
+flags: {}

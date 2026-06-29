@@ -1,0 +1,21 @@
+_id: kLIkJujEx54fehvf
+name: Caminhos da Besta
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Desperta instinto selvagem. Besta Imparável: dobra deslocamento e recebe 30 PV temporários (ou refaz Salvaguarda falhada), usável igual ao seu Bônus de Proficiência. Rugido Furioso: reduz dano Contundente, Cortante ou Perfurante em 5 pontos contra você e aliados até 9 metros por 1 minuto (3 usos). Aspecto Bestial: dano excedente ao reduzir criatura a 0 PV vira dano Psíquico contra hostis até 6 metros que falhem em Salvaguarda de Vontade.'
+    chat: ''
+  identifier: caminhos-da-besta
+  type:
+    value: class
+    subtype: ''
+  requirements: Brutamontes
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!kLIkJujEx54fehvf'
+ownership:
+  default: 0
+flags: {}

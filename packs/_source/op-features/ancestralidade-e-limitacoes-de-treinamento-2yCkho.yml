@@ -1,0 +1,21 @@
+_id: 2yCkhoZq8yTZ7ORK
+name: Ancestralidade e Limitações de Treinamento
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Mestiços com ancestrais animais (Mink/Homem-Peixe) escolhem até 2 Traços Comuns e 1 Traço Específico das Zoan, ou 'Predador' para carnívoros caçadores. Mestiços de espécies com listas de Treinamento diferentes aprendem apenas 1 treinamento de cada lista.</p>
+    chat: ''
+  identifier: ancestralidade-e-limitacoes-de-treinamento
+  type:
+    value: race
+    subtype: ''
+  requirements: Mestiços
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!2yCkhoZq8yTZ7ORK'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: WhBiLbHCBMkv6cvN
+name: Assassinar
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Uma vez por rodada, adiciona 3d4 de dano extra contra uma criatura atingida com vantagem (ou sem vantagem se outro inimigo estiver a 1,5m). O dano extra aumenta conforme o nível (5º nível = 5d4, por exemplo).
+    chat: ''
+  identifier: assassinar
+  type:
+    value: class
+    subtype: ''
+  requirements: Ninja
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!WhBiLbHCBMkv6cvN'
+ownership:
+  default: 0
+flags: {}

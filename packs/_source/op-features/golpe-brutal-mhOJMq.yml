@@ -1,0 +1,21 @@
+_id: mhOJMqOHjn5l5Vhd
+name: Golpe Brutal
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Ao acertar crítico (comum ou Técnica) corpo a corpo, adicione dano extra igual ao seu nível. Role 1d8 para aplicar efeito: 1-3 Impactante (sal. Con ou sem reação/ação bônus até fim próximo turno); 4-5 Cegante (sal. Con ou desvantagem em ataques); 6-7 Desorientador (sal. Con ou sem ações); 8 Atordoante (sal. Con ou Atordoado). Ganhe Dados Brutais (quantidade = metade nível +mod For). Use até 3 por turno para aumentar ataque, dano ou curar PV'
+    chat: ''
+  identifier: golpe-brutal
+  type:
+    value: class
+    subtype: ''
+  requirements: Lutador
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!mhOJMqOHjn5l5Vhd'
+ownership:
+  default: 0
+flags: {}

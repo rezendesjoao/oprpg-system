@@ -1,0 +1,42 @@
+_id: qoc4GhfpPgf7ZS3z
+name: Caminho do Protetor
+type: subclass
+img: icons/skills/melee/weapons-crossed-swords-purple.webp
+system:
+  description:
+    value: Okamas que se dedicam a proteger seus aliados e laços de amizade acima de tudo, utilizando sua graciosidade e força para interromper ataques contra seus companheiros.
+    chat: ''
+  identifier: protector-okama
+  classIdentifier: okama-kenpo
+  spellcasting:
+    progression: none
+    ability: ''
+  advancement:
+    - _id: JI6Rg0tCbyeHb60m
+      type: ItemGrant
+      level: 3
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.rpjqxZ1Pmlg2cNbQ
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: oIdu3Y23lE4EU4AW
+      type: ItemGrant
+      level: 6
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.aKCTZjWDvHq7SLMY
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!qoc4GhfpPgf7ZS3z'
+ownership:
+  default: 0
+flags: {}

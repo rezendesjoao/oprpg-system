@@ -1,0 +1,21 @@
+_id: 2Jy1nU3IibmIbsjn
+name: 8 Trigramas
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Com uma ação bônus, transita entre 8 modos de combate aleatórios (1d8) durante 1 minuto. Cada modo concede um bônus diferente (Sedutor, Chorão, Depressivo, Brigão, Sanguinário, Risonho, Ladrão, Lúcido). Usável um número de vezes igual ao seu Bônus de Proficiência por descanso curto ou longo.
+    chat: ''
+  identifier: 8-trigramas
+  type:
+    value: class
+    subtype: ''
+  requirements: Brutamontes
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!2Jy1nU3IibmIbsjn'
+ownership:
+  default: 0
+flags: {}

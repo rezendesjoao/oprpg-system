@@ -1,0 +1,21 @@
+_id: Ribdeoca3Ui44x5a
+name: Armadilha Mortal
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Gasta 4 PN para capturar criatura que não o vê. Alvo fica Paralisado por até 1 minuto ou até sofrer dano. Criatura com menos de 50 PV ou ND inferior ao seu é eliminada automaticamente ao estar a 1,5m.
+    chat: ''
+  identifier: armadilha-mortal
+  type:
+    value: class
+    subtype: ''
+  requirements: Assassino
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!Ribdeoca3Ui44x5a'
+ownership:
+  default: 0
+flags: {}

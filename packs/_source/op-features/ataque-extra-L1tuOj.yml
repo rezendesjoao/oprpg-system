@@ -1,0 +1,21 @@
+_id: L1tuOjRNVlix7rbv
+name: Ataque Extra
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: A partir do 7º nível (na modificação Giga-Battle ou Protocolo Tático), pode atacar duas vezes durante a ação Atacar.
+    chat: ''
+  identifier: ataque-extra
+  type:
+    value: class
+    subtype: ''
+  requirements: Ciborgue
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!L1tuOjRNVlix7rbv'
+ownership:
+  default: 0
+flags: {}

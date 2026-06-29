@@ -1,0 +1,21 @@
+_id: itep06cNlfPVqCBw
+name: Resistência Corporal Aprimorada
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Você ganha resistência a dano Contundente, Cortante e Perfurante permanente desde o início. No 5º nível, essa resistência reduz qualquer dano desses tipos em 5 pontos adicionais
+    chat: ''
+  identifier: resistencia-corporal-aprimorada
+  type:
+    value: class
+    subtype: ''
+  requirements: Corpo de Guerreiro
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!itep06cNlfPVqCBw'
+ownership:
+  default: 0
+flags: {}

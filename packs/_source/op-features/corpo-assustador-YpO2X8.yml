@@ -1,0 +1,21 @@
+_id: YpO2X8sxSKsKZGEc
+name: Corpo Assustador
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Recebem +2 em Testes de Presença (Intimidação) devido à presença naturalmente impositiva.</p>
+    chat: ''
+  identifier: corpo-assustador
+  type:
+    value: race
+    subtype: ''
+  requirements: Gigantes
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!YpO2X8sxSKsKZGEc'
+ownership:
+  default: 0
+flags: {}

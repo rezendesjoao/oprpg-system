@@ -1,0 +1,21 @@
+_id: HUFQin9eO37MkUpI
+name: Protocolo de Combate Avançado
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'No início de cada combate escolhe dois entre: Protocolo Ofensivo (+3 acerto, +5 dano), Defensivo (reduz dano em nível), Tático (segunda ação bônus) ou Eficiência (50% de chance de não consumir PP).'
+    chat: ''
+  identifier: protocolo-de-combate-avancado
+  type:
+    value: class
+    subtype: ''
+  requirements: Ciborgue
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!HUFQin9eO37MkUpI'
+ownership:
+  default: 0
+flags: {}

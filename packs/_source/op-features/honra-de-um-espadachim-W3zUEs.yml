@@ -1,0 +1,21 @@
+_id: W3zUEsRK7UPYiSvx
+name: Honra de um Espadachim
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Uma vez por rodada, reduz o primeiro dano sofrido em 10. Ataques de oportunidade recebem 2d6 de dano psíquico extra. Pode escolher sofrer dano de ataque que falhou para ganhar 3 PP por 10 danos.
+    chat: ''
+  identifier: honra-de-um-espadachim
+  type:
+    value: class
+    subtype: ''
+  requirements: Espadachim
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!W3zUEsRK7UPYiSvx'
+ownership:
+  default: 0
+flags: {}

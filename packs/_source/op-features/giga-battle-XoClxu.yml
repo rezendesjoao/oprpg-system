@@ -1,0 +1,21 @@
+_id: XoClxutaJbRKphc0
+name: Giga-Battle
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Pode atacar duas vezes durante a ação Atacar no seu turno.
+    chat: ''
+  identifier: giga-battle
+  type:
+    value: class
+    subtype: ''
+  requirements: Giga-Arm (Guerreiro da Ciência)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!XoClxutaJbRKphc0'
+ownership:
+  default: 0
+flags: {}

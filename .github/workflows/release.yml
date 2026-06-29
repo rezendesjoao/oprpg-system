@@ -1,0 +1,47 @@
+name: Release
+
+# Dispara ao enviar uma tag de versão, ex.: v1.1.0
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependências (também compila CSS e packs via postinstall)
+        run: npm install
+
+      - name: Garantir build de CSS e compêndios
+        run: npm run build:css && npm run build:db
+
+      - name: Definir versão e download a partir da tag
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          node -e "const fs=require('fs');const s=JSON.parse(fs.readFileSync('system.json','utf8'));s.version='${VERSION}';s.download='https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/system.zip';fs.writeFileSync('system.json',JSON.stringify(s,null,2));"
+
+      - name: Empacotar o sistema (system.zip)
+        run: |
+          zip -r system.zip . \
+            -x 'node_modules/*' '.git/*' '.github/*' 'packs/_source/*' 'utils/*' 'test/*' 'examples/*' '*.map'
+
+      - name: Criar Release com system.json + system.zip
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${GITHUB_REF_NAME}" \
+            system.zip system.json \
+            --title "${GITHUB_REF_NAME}" \
+            --notes "One Piece RPG ${GITHUB_REF_NAME}. Instale/atualize pelo manifesto: https://github.com/${{ github.repository }}/releases/latest/download/system.json"

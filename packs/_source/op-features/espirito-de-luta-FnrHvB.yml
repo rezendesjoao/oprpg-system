@@ -1,0 +1,21 @@
+_id: FnrHvB4lsxQUQK3n
+name: Espírito de Luta
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: '<strong>Vitalidade Inesgotável</strong>: Com menos de 50 PV, teste Con CD 16 para recuperar até 100 PV (CD +1 a cada repetição). <strong>Energia Inesgotável</strong>: Com menos de 10 PP, teste Con CD 12 para recuperar até 20 PP (3 usos/descanso longo). <strong>Vontade Inesgotável</strong>: Ao chegar a 0 PV sem morrer, recupere metade dos PV (1 uso/descanso curto ou longo)'
+    chat: ''
+  identifier: espirito-de-luta
+  type:
+    value: class
+    subtype: ''
+  requirements: Lutador
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!FnrHvB4lsxQUQK3n'
+ownership:
+  default: 0
+flags: {}

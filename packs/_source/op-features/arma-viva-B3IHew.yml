@@ -1,0 +1,21 @@
+_id: B3IHewG5fSl4ngoK
+name: Arma Viva
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Escolha 2 de 5 características: Técnica Assassina, Execução Impecável, Fôlego Treinado, Ataque de Oportunidade Traiçoeiro, Reação Defensiva. Aprenda Habilidades Dominadas no 6º nível (usar 6 Habilidades sem gastar PP).'
+    chat: ''
+  identifier: arma-viva
+  type:
+    value: class
+    subtype: ''
+  requirements: Rokushiki
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!B3IHewG5fSl4ngoK'
+ownership:
+  default: 0
+flags: {}

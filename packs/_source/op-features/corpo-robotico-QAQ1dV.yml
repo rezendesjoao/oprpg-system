@@ -1,0 +1,21 @@
+_id: QAQ1dVGSoD3e1xSG
+name: Corpo Robótico
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Seu corpo foi modificado com dispositivos práticos. Você pode escolher 2 Modificações até o 5º nível (Auto Destruição, Pele de Aço, Strong Hammer, Baú Secreto, Farol Especial, Dureza Reforçada, Hélice, Holograma, Mãos Auxiliares, Melhoria Animal, Membros Remotos, Mente Artificial, Morte Forjada, Parte Localizadora, Pernas Adaptáveis ou Visão Adaptável).
+    chat: ''
+  identifier: corpo-robotico
+  type:
+    value: class
+    subtype: ''
+  requirements: Ciborgue
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!QAQ1dVGSoD3e1xSG'
+ownership:
+  default: 0
+flags: {}

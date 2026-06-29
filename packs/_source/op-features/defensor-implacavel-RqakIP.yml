@@ -1,0 +1,21 @@
+_id: RqakIPHGu6prOgnJ
+name: Defensor Implacável
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Seu corpo se torna durável contra ataques diretos. Recebe +2 de CA e pode usar sua reação para reduzir dano de ataques corpo a corpo em 1d8 quando vê o ataque vindo.
+    chat: ''
+  identifier: defensor-implacavel
+  type:
+    value: class
+    subtype: ''
+  requirements: Corpo de Guerreiro
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!RqakIPHGu6prOgnJ'
+ownership:
+  default: 0
+flags: {}

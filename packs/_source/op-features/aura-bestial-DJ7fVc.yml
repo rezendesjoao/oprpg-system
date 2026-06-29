@@ -1,0 +1,21 @@
+_id: DJ7fVcUP2pBSQd52
+name: Aura Bestial
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Escolha uma aura de 13 opções (Caranguejo, Cavalo, Corvo, Dragão, etc.). Aura Corvo concede Ataque Extra. Ganhe novas opções nos níveis 8º, 10º, 12º e 14º.
+    chat: ''
+  identifier: aura-bestial
+  type:
+    value: class
+    subtype: ''
+  requirements: Espadachim
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!DJ7fVcUP2pBSQd52'
+ownership:
+  default: 0
+flags: {}

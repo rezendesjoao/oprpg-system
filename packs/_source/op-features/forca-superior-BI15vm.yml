@@ -1,0 +1,21 @@
+_id: BI15vmVlsS6Jsvk1
+name: Força Superior
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Proficientes em Salvaguardas e Testes de Força, adicionando metade do Bônus de Proficiência (arredondado para baixo) a estes testes.</p>
+    chat: ''
+  identifier: forca-superior
+  type:
+    value: race
+    subtype: ''
+  requirements: Povo do Mar
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!BI15vmVlsS6Jsvk1'
+ownership:
+  default: 0
+flags: {}

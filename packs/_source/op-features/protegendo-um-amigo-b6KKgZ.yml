@@ -1,0 +1,21 @@
+_id: b6KKgZW6UV7VdUf9
+name: Protegendo um Amigo
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Ao ver um aliado a até 6 metros sendo alvo de ataque, pode usar reação para receber o ataque em seu lugar, reduzindo dano em 1d12 + nível (aumenta para 2d12 no 10º e 3d12 no 15º). Se reduzir dano completamente, pode contraatacar. Recebe 2 PP (4 se reduzir totalmente).
+    chat: ''
+  identifier: protegendo-um-amigo
+  type:
+    value: class
+    subtype: ''
+  requirements: Okama Kenpo
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!b6KKgZW6UV7VdUf9'
+ownership:
+  default: 0
+flags: {}

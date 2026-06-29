@@ -1,0 +1,275 @@
+_id: bGxL8CZDJm60B9ay
+name: Okama Kenpo
+type: class
+img: icons/skills/melee/weapons-crossed-swords-yellow.webp
+system:
+  description:
+    value: Okama Kenpo é um estilo de luta gracioso que mistura os movimentos, elasticidade, leveza e disciplina do balé com a força destrutiva, velocidade e golpes do caratê. Guerreiros rápidos e resistentes que conseguem proteger seus amigos e aguentar golpes por eles, sempre em movimento com passos suaves e imprevisíveis.
+    chat: ''
+  identifier: okama-kenpo
+  levels: 1
+  hd:
+    denomination: d10
+    spent: 0
+  primaryAbility:
+    value:
+      - str
+      - cha
+    all: false
+  spellcasting:
+    progression: none
+    ability: str
+  advancement:
+    - _id: DEwHlb5PtrajGryw
+      type: HitPoints
+      configuration: {}
+      value: {}
+      flags: {}
+    - _id: wLo9GnH00djv63Aa
+      type: Trait
+      level: 1
+      configuration:
+        allowReplacements: false
+        grants:
+          - saves:dex
+          - saves:cha
+        choices: []
+        mode: default
+      value: {}
+      flags: {}
+    - _id: 2B88RUqfIF9suksP
+      type: Trait
+      level: 1
+      configuration:
+        allowReplacements: false
+        grants:
+          - weapon:sim
+          - weapon:mar
+        choices: []
+        mode: default
+      value: {}
+      flags: {}
+    - _id: 1Lgl0y2kFkyIrvNc
+      type: Trait
+      level: 1
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 3
+            pool:
+              - skills:acr
+              - skills:ath
+              - skills:prf
+              - skills:dec
+              - skills:itm
+              - skills:ins
+              - skills:prv
+        mode: default
+      value: {}
+      flags: {}
+    - _id: i6Gll1su7AQN81oR
+      type: AbilityScoreImprovement
+      level: 4
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: 8Gvsf6YUvBLuf5pV
+      type: AbilityScoreImprovement
+      level: 8
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: tRrG0YIsLWRnBkVz
+      type: AbilityScoreImprovement
+      level: 12
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: cDWzzzNg4RnTJcpe
+      type: AbilityScoreImprovement
+      level: 16
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: bH7UmMLHTQBAKbM4
+      type: AbilityScoreImprovement
+      level: 19
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: 8v5MzYkSPp6cB8di
+      type: ItemGrant
+      level: 1
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.3k4JC0i1IcVmNZXw
+            optional: false
+          - uuid: Compendium.onepiece-system.op-features.Item.b6KKgZW6UV7VdUf9
+            optional: false
+          - uuid: Compendium.onepiece-system.op-techniques.Item.xmhL3iWhtcqh8Ap2
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: DE1UyANKDVhDkG0l
+      type: ItemGrant
+      level: 2
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.7Z7NuCwGyIv2urlc
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: zhyGXNQ1wLDzn3xi
+      type: ItemGrant
+      level: 3
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.ktVgXCDUiMO6SXIs
+            optional: false
+          - uuid: Compendium.onepiece-system.op-techniques.Item.82UfvM7khyw6QINX
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: rxDS2me0easa5HN1
+      type: ItemGrant
+      level: 6
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-techniques.Item.vwVK401zfCCVrKE8
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: v5q5pgtw3OxgHvuZ
+      type: ItemGrant
+      level: 7
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.VYnXcVNcxIZsKclT
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: ZIzcOdtjW0T7j3UI
+      type: ItemGrant
+      level: 9
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-techniques.Item.Qn9nK6RufcSF2EM5
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: 2gaHXBjAqpImVgYk
+      type: ItemGrant
+      level: 10
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.OAXGDpgAgAG4TKXE
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: 9u1nyjdF5G7iWVpV
+      type: ItemGrant
+      level: 12
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-techniques.Item.NW9hFcuLvsp0VN0o
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: 8gmjTQahF9BiRSFS
+      type: ItemGrant
+      level: 14
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.17mDTughpVBxIKfV
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: uk9Y2hkihsY1WMe6
+      type: ItemGrant
+      level: 15
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.CJqMc6t5sW8oJt3m
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: S1lMvjDcLGMv4E04
+      type: ItemGrant
+      level: 16
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-techniques.Item.jqzpmpemcY7lnHNB
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: c2WwHQpi99LaSTpH
+      type: ItemGrant
+      level: 19
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.gwKcs6r2OcIJMDGo
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+    - _id: A9yRCDvernQl9U5g
+      type: ItemGrant
+      level: 20
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-techniques.Item.lWK4sXBCt9wHzicq
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!bGxL8CZDJm60B9ay'
+ownership:
+  default: 0
+flags: {}

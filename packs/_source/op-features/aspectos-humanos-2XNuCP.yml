@@ -1,0 +1,21 @@
+_id: 2XNuCPHYRwRecKHc
+name: Aspectos Humanos
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: '<p>Devem escolher uma das seguintes falhas de caráter: Ganância (-2 em testes com tesouro), Gula (dobro de consumo), Inveja (-2 após falhas alheias), Ira (falha automática em Provocação), Luxúria (+2 contra atração), Preguiça (dobro de tempo de descanso), Orgulho (-1 em Presença).</p>'
+    chat: ''
+  identifier: aspectos-humanos
+  type:
+    value: race
+    subtype: ''
+  requirements: Humanos
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!2XNuCPHYRwRecKHc'
+ownership:
+  default: 0
+flags: {}

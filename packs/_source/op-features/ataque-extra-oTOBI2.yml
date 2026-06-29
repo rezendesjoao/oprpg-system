@@ -1,0 +1,21 @@
+_id: oTOBI29a9aFOp6QR
+name: Ataque Extra
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Pode atacar duas vezes em vez de uma ao usar ação Atacar.
+    chat: ''
+  identifier: ataque-extra
+  type:
+    value: class
+    subtype: ''
+  requirements: Aventureiro
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!oTOBI29a9aFOp6QR'
+ownership:
+  default: 0
+flags: {}

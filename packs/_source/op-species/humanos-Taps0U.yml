@@ -1,0 +1,56 @@
+_id: Taps0UjEZN9vLaYZ
+name: Humanos
+type: race
+img: icons/environment/people/group.webp
+system:
+  description:
+    value: <p>A espécie mais comum e diversificada, com altura entre 1,5-4 metros. Extraordinariamente adaptáveis e resilientes, espalhados por todo o mundo sob o domínio do Governo Mundial. Representam a maior pluralidade de culturas, aparências e filosofias.</p>
+    chat: ''
+  identifier: human
+  movement:
+    walk: 9
+    swim: 4.5
+    fly: 0
+    climb: 0
+    units: m
+    hover: false
+  senses:
+    darkvision: 0
+    units: m
+  type:
+    value: humanoid
+    subtype: ''
+    swarm: ''
+    custom: ''
+  advancement:
+    - _id: 9uzDD6MdJGxKyJjU
+      type: AbilityScoreImprovement
+      level: 0
+      configuration:
+        cap: 2
+        fixed: {}
+        locked: []
+        points: 2
+      value: {}
+      flags: {}
+    - _id: yVS5J0bip00pHQUj
+      type: ItemGrant
+      level: 0
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.812v2MRWpFnS72xs
+            optional: false
+          - uuid: Compendium.onepiece-system.op-features.Item.2XNuCPHYRwRecKHc
+            optional: false
+          - uuid: Compendium.onepiece-system.op-features.Item.YMNJM8cPxqEWC1Qu
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!Taps0UjEZN9vLaYZ'
+ownership:
+  default: 0
+flags: {}

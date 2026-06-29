@@ -1,0 +1,21 @@
+_id: TKHs4DTkYLOcIlIE
+name: Domador
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Se errar Técnica, pode não gastar PP. Técnicas instantâneas causam metade do dano como psíquico se inimigo falhar em Salvaguarda de Sabedoria.
+    chat: ''
+  identifier: domador
+  type:
+    value: class
+    subtype: ''
+  requirements: Aventureiro
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!TKHs4DTkYLOcIlIE'
+ownership:
+  default: 0
+flags: {}

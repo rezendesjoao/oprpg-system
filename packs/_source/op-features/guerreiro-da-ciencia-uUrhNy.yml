@@ -1,0 +1,21 @@
+_id: uUrhNypTYZcHvUoA
+name: Guerreiro da Ciência
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Escolha uma tecnologia avançada: <strong>Giga-Arm</strong> (defesa e combate aprimorado), <strong>Mega-Head</strong> (processamento, hacking e análise) ou <strong>Proto-Body</strong> (robô independente de tamanho Pequeno).'
+    chat: ''
+  identifier: guerreiro-da-ciencia
+  type:
+    value: class
+    subtype: ''
+  requirements: Ciborgue
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!uUrhNypTYZcHvUoA'
+ownership:
+  default: 0
+flags: {}

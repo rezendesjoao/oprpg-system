@@ -1,0 +1,21 @@
+_id: NUfNmuwR23RpLwkk
+name: Ataque Atordoante
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Interfira no fluxo de água do corpo do oponente. Em acerto crítico ou gastando 4 Pontos de Poder em ataque desarmado, a criatura faz Salvaguarda de Constituição ou fica Atordoada até final do próximo turno. No 14º nível, se obtiver sucesso na Salvaguarda, fica Estremecida até final do próximo turno.
+    chat: ''
+  identifier: ataque-atordoante
+  type:
+    value: class
+    subtype: ''
+  requirements: Carateca Homem-Peixe
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!NUfNmuwR23RpLwkk'
+ownership:
+  default: 0
+flags: {}

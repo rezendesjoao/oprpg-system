@@ -1,0 +1,21 @@
+_id: ZbsuTNOre0CMIdP9
+name: Filho do Mar
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Submerso em água: Resistência a dano Contundente, Cortante e Perfurante. Sem desvantagens como não-aquático. Deslocamento natação 15m, não reduzível, não provoca reações. Respire até 10 minutos. Benção do Mar: ação adicional/ação poderosa adicional (Técnicas até 3º grau) uma vez por descanso curto/longo. No 6º nível, gaste 2 PC para usar traços desta característica por 1 minuto em terra.'
+    chat: ''
+  identifier: filho-do-mar
+  type:
+    value: class
+    subtype: ''
+  requirements: Carateca Homem-Peixe
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!ZbsuTNOre0CMIdP9'
+ownership:
+  default: 0
+flags: {}

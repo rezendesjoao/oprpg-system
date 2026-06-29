@@ -1,0 +1,21 @@
+_id: izHjjrwiJCAZJn1P
+name: Rokushiki Aperfeiçoado
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Escolha 3 Técnicas fundamentais para se especializar entre versões aperfeiçoadas de Soru, Shigan, Tekkai, Rankyaku, Kamie e Geppo, desbloqueando efeitos potenciados.
+    chat: ''
+  identifier: rokushiki-aperfeicoado
+  type:
+    value: class
+    subtype: ''
+  requirements: Rokushiki
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!izHjjrwiJCAZJn1P'
+ownership:
+  default: 0
+flags: {}

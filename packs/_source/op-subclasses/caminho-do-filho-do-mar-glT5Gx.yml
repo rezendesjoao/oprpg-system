@@ -1,0 +1,33 @@
+_id: glT5GxTpvn0fOvJi
+name: Caminho do Filho do Mar
+type: subclass
+img: icons/skills/melee/weapons-crossed-swords-purple.webp
+system:
+  description:
+    value: Especialização para caratecas que se aperfeiçoam em combates submersos, aprendendo a usar o máximo potencial da arte marcial. Recebem resistência a danos físicos, manipulação de ondas, aumento de deslocamento aquático, imunidade a reações, capacidade de respirar e ação adicional em água.
+    chat: ''
+  identifier: filho-do-mar
+  classIdentifier: carateca-homem-peixe
+  spellcasting:
+    progression: none
+    ability: ''
+  advancement:
+    - _id: NSEtZCMMX4WZRAGT
+      type: ItemGrant
+      level: 6
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.tDNyJuzDUJMCieJW
+            optional: false
+          - uuid: Compendium.onepiece-system.op-features.Item.xayLzewDqsX8LWvY
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!glT5GxTpvn0fOvJi'
+ownership:
+  default: 0
+flags: {}

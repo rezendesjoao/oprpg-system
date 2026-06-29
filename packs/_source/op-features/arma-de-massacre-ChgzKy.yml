@@ -1,0 +1,21 @@
+_id: ChgzKyTLA4wBjvri
+name: Arma de Massacre
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Alcance o pico do domínio: Vigor Inesgotável (Técnicas não consomem PP), Mestre das Técnicas (2 ações poderosas por turno), Movimentos Sônicos (ação/reação bônus adicional uma vez por rodada).'
+    chat: ''
+  identifier: arma-de-massacre
+  type:
+    value: class
+    subtype: ''
+  requirements: Rokushiki
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!ChgzKyTLA4wBjvri'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: 2f0JRk3vCQMuOXmP
+name: Duelista de Elite (3º nível)
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Rápido no Gatilho: ação bônus para ataque comum à distância extra. Tiro de Oportunidade: reação contra movimento próximo.'
+    chat: ''
+  identifier: duelista-de-elite-3-nivel
+  type:
+    value: class
+    subtype: ''
+  requirements: Caminho do Duelista
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!2f0JRk3vCQMuOXmP'
+ownership:
+  default: 0
+flags: {}

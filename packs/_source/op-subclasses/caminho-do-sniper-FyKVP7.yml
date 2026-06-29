@@ -1,0 +1,33 @@
+_id: FyKVP74LJfBPzyWo
+name: Caminho do Sniper
+type: subclass
+img: icons/skills/melee/weapons-crossed-swords-purple.webp
+system:
+  description:
+    value: Especialista em mosquetes de longa distância, priorizando precisão extrema e alcance letal. Observador excepcional.
+    chat: ''
+  identifier: sniper
+  classIdentifier: atirador
+  spellcasting:
+    progression: none
+    ability: ''
+  advancement:
+    - _id: 9fRCzcuAkh8vlb1a
+      type: ItemGrant
+      level: 1
+      configuration:
+        items:
+          - uuid: Compendium.onepiece-system.op-features.Item.w72TgPO0ilK9zQZG
+            optional: false
+          - uuid: Compendium.onepiece-system.op-features.Item.47ub5y0LzZlx83yy
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      flags: {}
+effects: []
+folder: null
+_key: '!items!FyKVP74LJfBPzyWo'
+ownership:
+  default: 0
+flags: {}

@@ -1,0 +1,21 @@
+_id: 0i1rqfm4FLk8nltl
+name: Contagem de Balas
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: '10 disparos de precisão máxima por dia: acertos automáticos que dobram dados de dano, 1 por rodada.'
+    chat: ''
+  identifier: contagem-de-balas
+  type:
+    value: class
+    subtype: ''
+  requirements: Atirador
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!0i1rqfm4FLk8nltl'
+ownership:
+  default: 0
+flags: {}

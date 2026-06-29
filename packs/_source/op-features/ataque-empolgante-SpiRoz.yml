@@ -1,0 +1,21 @@
+_id: SpiRozpOwMpUPKgu
+name: Ataque Empolgante
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Margem crítica com chicote aumenta em 1 a cada crítico natural, até máximo 15-20.
+    chat: ''
+  identifier: ataque-empolgante
+  type:
+    value: class
+    subtype: ''
+  requirements: Estilo Arriscado
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!SpiRozpOwMpUPKgu'
+ownership:
+  default: 0
+flags: {}

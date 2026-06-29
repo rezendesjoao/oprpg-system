@@ -1,0 +1,21 @@
+_id: gBEEt2uBjf5ao3CE
+name: Manipulação da Água
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: 'Acumule Pontos de Carateca (PC) ao executar movimentos do Jujutsu. Mantenha até 5 + nível de Carateca PC (desaparecem ao final do encontro). Inicie cada encontro com 6 PC. Gastos: +1d10 dano em movimentos para cada PC; +1d6 dano e 3m no empurrão para cada PC; +1,5m deslocamento no Hinowara; desvantagem em Salvaguardas; 3 PC para impor falha; 2 PC para parar projéteis; vantagem em Salvaguarda ou Teste de Força.'
+    chat: ''
+  identifier: manipulacao-da-agua
+  type:
+    value: class
+    subtype: ''
+  requirements: Carateca Homem-Peixe
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!gBEEt2uBjf5ao3CE'
+ownership:
+  default: 0
+flags: {}

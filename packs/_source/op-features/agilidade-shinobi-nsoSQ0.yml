@@ -1,0 +1,21 @@
+_id: nsoSQ04zeKtur1br
+name: Agilidade Shinobi
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: Na iniciativa de combate, pode ser o primeiro e realizar dois turnos seguidos. Se surpreendido, joga iniciativa com vantagem.
+    chat: ''
+  identifier: agilidade-shinobi
+  type:
+    value: class
+    subtype: ''
+  requirements: Ninja
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!nsoSQ04zeKtur1br'
+ownership:
+  default: 0
+flags: {}

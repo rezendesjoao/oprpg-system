@@ -1,0 +1,17 @@
+# Normaliza texto, mas protege binários (LevelDB dos compêndios, fontes, imagens)
+* text=auto eol=lf
+
+*.ldb binary
+*.log binary
+packs/**/MANIFEST-* binary
+packs/**/CURRENT binary
+*.webp binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.pdf binary
