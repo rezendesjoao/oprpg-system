@@ -1,0 +1,21 @@
+_id: SCtNpkkbsB9Erxtg
+name: 'Aspecto: Preguiça'
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Requer o dobro de tempo para se beneficiar de um descanso.</p>
+    chat: ''
+  identifier: aspecto-preguica
+  type:
+    value: race
+    subtype: flaw
+  requirements: Humanos (Aspecto)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!SCtNpkkbsB9Erxtg'
+ownership:
+  default: 0
+flags: {}

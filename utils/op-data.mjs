@@ -2775,7 +2775,8 @@ export const SPECIES = [
     "traits": [
       {
         "name": "Herança Cultural",
-        "desc": "<p>Proficiente em todos os tipos de dials. Recebem 3 dials cotidianos e 1 dial bélico. Escolhem 2 perícias para proficiência (exceto Sobrenatural e Sorte) ou podem receber a Singularidade 'Haki da Observação Inato' com 15 Pontos de Ambição.</p>"
+        "desc": "<p>Proficiente em todos os tipos de dials. Recebem 3 dials cotidianos e 1 dial bélico. Escolhem 2 perícias para proficiência (exceto Sobrenatural e Sorte) ou podem receber a Singularidade 'Haki da Observação Inato' com 15 Pontos de Ambição.</p>",
+        "skillChoice": { "count": 2, "exclude": ["arc", "luc"] }
       },
       {
         "name": "Anjos Caídos",
@@ -2828,7 +2829,8 @@ export const SPECIES = [
     "traits": [
       {
         "name": "Adaptação",
-        "desc": "<p>Escolhem 3 perícias para adicionar proficiência (exceto Haki, Sobrenatural e Sorte). Alternativa: receber 1 perícia extra com o benefício 'Aptidão Natural' (dobram o Bônus de Proficiência em uma perícia).</p>"
+        "desc": "<p>Escolhem 3 perícias para adicionar proficiência (exceto Haki, Sobrenatural e Sorte). Alternativa: receber 1 perícia extra com o benefício 'Aptidão Natural' (dobram o Bônus de Proficiência em uma perícia).</p>",
+        "skillChoice": { "count": 3, "exclude": ["Cont", "arc", "luc"] }
       },
       {
         "name": "Aspectos Humanos",
@@ -2836,13 +2838,22 @@ export const SPECIES = [
       }
     ],
     "variants": [
-      { "key": "humanos-comuns", "name": "Humanos Comuns", "desc": "<p><strong>Aptidão Natural:</strong> Você escolhe uma perícia na qual possa usar o seu Bônus de Proficiência e dobra o seu Bônus de Proficiência.</p>" },
+      { "key": "humanos-comuns", "name": "Humanos Comuns", "desc": "<p><strong>Aptidão Natural:</strong> Você escolhe uma perícia na qual possa usar o seu Bônus de Proficiência e dobra o seu Bônus de Proficiência.</p>", "skillChoice": { "count": 1, "mode": "expertise" } },
       { "key": "humanozarroes", "name": "Humanozarrões", "desc": "<p><strong>Colosso:</strong> Seu tamanho aumenta para Grande e você recebe +2 em Salvaguardas de Força.</p>" },
       { "key": "bracos-longos", "name": "Tribo Braços Longos", "desc": "<p><strong>Braços Especiais:</strong> Recebe alcance de 3 metros em jogadas de ataque (comum) corpo a corpo, quando utilizando os braços, e recebe +2 em Testes de Atributo de Destreza (Prestidigitação).</p>" },
       { "key": "kujas", "name": "Tribo Kujas", "desc": "<p><strong>Cobra Companheira:</strong> Toda kuja recebe em seu nascimento uma cobra para acompanhá-la por toda a sua vida. Você escolhe o nome da cobra e ela entende tudo o que você falar, podendo realizar pequenas tarefas. Ela não recebe dano de nenhuma jogada de ataque (comum ou Técnicas) ou Salvaguarda que não a tenha explicitamente como alvo do atacante. Ela é totalmente obediente a você e, em combate, age no mesmo turno que você (usa a ficha \"Cobra Bélica\").</p><p>Uma vez durante o seu turno e sem gastar ações, você pode dar ordens à sua cobra:</p><ul><li><strong>Arco de Cobra:</strong> a cobra assume o formato de um arco e você pode usar flechas para fazer uma jogada de ataque (comum ou Técnicas) à distância com arma, podendo adicionar o Bônus de Proficiência na jogada de ataque (comum), alterar o modificador da jogada de ataque (comum ou Técnicas) e de dano para o seu atributo primário, e recebendo +2 nas jogadas de ataque (comum) e de dano.</li><li><strong>Restringir:</strong> a cobra se prende nos membros de uma criatura Grande ou menor, tornando-se algemas duras como aço; a criatura fica com a condição \"Incapacitado\" ou \"Agarrado\" e pode tentar encerrá-la com uma Salvaguarda de Força CD 16 no início de cada turno. Para isso, a cobra deve acertar uma jogada de ataque (comum) corpo a corpo, substituindo o dano por essa característica, e fica com a condição \"Impedido\" até encerrar o agarramento.</li></ul>" },
       { "key": "pernas-longas", "name": "Tribo Pernas Longas", "desc": "<p><strong>Pernas Especiais:</strong> Alcance de 3 metros em jogadas de ataque (comum) corpo a corpo, quando utilizando as pernas, e seu deslocamento normal se torna 12 metros.</p>" },
       { "key": "pescoco-de-cobra", "name": "Tribo Pescoço de Cobra", "desc": "<p><strong>Pescoço Esticado:</strong> Alcance de 3 metros em jogadas de ataque (comum) corpo a corpo, quando utilizando a cabeça, e +2 em Testes de Atributo de Vontade (Percepção) que dependam da visão.</p>" },
-      { "key": "tres-olhos", "name": "Tribo dos 3 Olhos (Três Olhos)", "desc": "<p><strong>Abrir os Olhos:</strong> O uso do terceiro olho possui uma conexão mística com o destino. Como resultado, você recebe proficiência em Testes de Atributo de Vontade — escolha entre Haki, Sobrenatural ou Sorte.</p>" }
+      { "key": "tres-olhos", "name": "Tribo dos 3 Olhos (Três Olhos)", "desc": "<p><strong>Abrir os Olhos:</strong> O uso do terceiro olho possui uma conexão mística com o destino. Como resultado, você recebe proficiência em Testes de Atributo de Vontade — escolha entre Haki, Sobrenatural ou Sorte.</p>", "skillChoice": { "count": 1, "pool": ["Cont", "arc", "luc"] } }
+    ],
+    "flaws": [
+      { "name": "Aspecto: Ganância", "desc": "<p>Recebe -2 em Testes de Atributo que envolvam tesouros, riquezas ou negociações por dinheiro.</p>" },
+      { "name": "Aspecto: Gula", "desc": "<p>Consome o dobro de comida e bebida em relação a um humano comum.</p>" },
+      { "name": "Aspecto: Inveja", "desc": "<p>Recebe -2 em Testes de Atributo na sequência de um sucesso ou falha notável de um aliado.</p>" },
+      { "name": "Aspecto: Ira", "desc": "<p>Falha automaticamente ao tentar resistir a Testes de Provocação feitos contra você.</p>" },
+      { "name": "Aspecto: Luxúria", "desc": "<p>Criaturas recebem +2 em tentativas de seduzir ou atrair você.</p>" },
+      { "name": "Aspecto: Preguiça", "desc": "<p>Requer o dobro de tempo para se beneficiar de um descanso.</p>" },
+      { "name": "Aspecto: Orgulho", "desc": "<p>Recebe -1 em Testes de Atributo de Presença.</p>" }
     ]
   },
   {

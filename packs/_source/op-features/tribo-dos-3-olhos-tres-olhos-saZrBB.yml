@@ -13,6 +13,22 @@ system:
   requirements: Humanos (Variante)
   properties: []
   activities: {}
+  advancement:
+    - _id: VKmT6MIJo6Z7JyTF
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:Cont
+              - skills:arc
+              - skills:luc
+        mode: default
+      value: {}
+      flags: {}
 effects: []
 folder: null
 _key: '!items!saZrBByO29TbU1W5'

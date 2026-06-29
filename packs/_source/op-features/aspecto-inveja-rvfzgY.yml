@@ -1,0 +1,21 @@
+_id: rvfzgYN6zxUjZciz
+name: 'Aspecto: Inveja'
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Recebe -2 em Testes de Atributo na sequência de um sucesso ou falha notável de um aliado.</p>
+    chat: ''
+  identifier: aspecto-inveja
+  type:
+    value: race
+    subtype: flaw
+  requirements: Humanos (Aspecto)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!rvfzgYN6zxUjZciz'
+ownership:
+  default: 0
+flags: {}

@@ -13,6 +13,36 @@ system:
   requirements: Celestiais
   properties: []
   activities: {}
+  advancement:
+    - _id: bVFzF27ogAHWHIv1
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 2
+            pool:
+              - skills:ath
+              - skills:acr
+              - skills:ste
+              - skills:slt
+              - skills:his
+              - skills:inv
+              - skills:med
+              - skills:nat
+              - skills:sur
+              - skills:Cont
+              - skills:ins
+              - skills:prc
+              - skills:prf
+              - skills:dec
+              - skills:itm
+              - skills:per
+              - skills:prv
+        mode: default
+      value: {}
+      flags: {}
 effects: []
 folder: null
 _key: '!items!zHp9BtN0z8ReUfxB'

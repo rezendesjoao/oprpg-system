@@ -1,0 +1,21 @@
+_id: 76UJxARiVmbG5t8e
+name: 'Aspecto: Ira'
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Falha automaticamente ao tentar resistir a Testes de Provocação feitos contra você.</p>
+    chat: ''
+  identifier: aspecto-ira
+  type:
+    value: race
+    subtype: flaw
+  requirements: Humanos (Aspecto)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!76UJxARiVmbG5t8e'
+ownership:
+  default: 0
+flags: {}

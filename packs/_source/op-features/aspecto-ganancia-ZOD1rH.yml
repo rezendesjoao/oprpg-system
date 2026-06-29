@@ -1,0 +1,21 @@
+_id: ZOD1rH3mR9z1M4RR
+name: 'Aspecto: Ganância'
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Recebe -2 em Testes de Atributo que envolvam tesouros, riquezas ou negociações por dinheiro.</p>
+    chat: ''
+  identifier: aspecto-ganancia
+  type:
+    value: race
+    subtype: flaw
+  requirements: Humanos (Aspecto)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!ZOD1rH3mR9z1M4RR'
+ownership:
+  default: 0
+flags: {}

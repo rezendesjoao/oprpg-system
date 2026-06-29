@@ -1,0 +1,21 @@
+_id: JI4vbQNZsBRnvNp0
+name: 'Aspecto: Luxúria'
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Criaturas recebem +2 em tentativas de seduzir ou atrair você.</p>
+    chat: ''
+  identifier: aspecto-luxuria
+  type:
+    value: race
+    subtype: flaw
+  requirements: Humanos (Aspecto)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!JI4vbQNZsBRnvNp0'
+ownership:
+  default: 0
+flags: {}

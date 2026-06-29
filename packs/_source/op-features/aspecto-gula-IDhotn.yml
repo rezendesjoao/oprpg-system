@@ -1,0 +1,21 @@
+_id: IDhotnRs9eSgczFO
+name: 'Aspecto: Gula'
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Consome o dobro de comida e bebida em relação a um humano comum.</p>
+    chat: ''
+  identifier: aspecto-gula
+  type:
+    value: race
+    subtype: flaw
+  requirements: Humanos (Aspecto)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!IDhotnRs9eSgczFO'
+ownership:
+  default: 0
+flags: {}

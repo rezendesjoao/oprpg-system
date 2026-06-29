@@ -13,6 +13,38 @@ system:
   requirements: Humanos (Variante)
   properties: []
   activities: {}
+  advancement:
+    - _id: j5REXhX7bXjsNTYA
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 1
+            pool:
+              - skills:ath
+              - skills:acr
+              - skills:ste
+              - skills:slt
+              - skills:his
+              - skills:inv
+              - skills:med
+              - skills:nat
+              - skills:sur
+              - skills:Cont
+              - skills:ins
+              - skills:prc
+              - skills:arc
+              - skills:luc
+              - skills:prf
+              - skills:dec
+              - skills:itm
+              - skills:per
+              - skills:prv
+        mode: expertise
+      value: {}
+      flags: {}
 effects: []
 folder: null
 _key: '!items!SIDJt0HbODM6i5T7'

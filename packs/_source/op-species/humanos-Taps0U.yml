@@ -72,6 +72,32 @@ system:
         type: feat
       value: {}
       flags: {}
+    - _id: Kkt4AB2wLSALdvuG
+      type: ItemChoice
+      level: 0
+      configuration:
+        allowDrops: false
+        choices:
+          '0':
+            count: 1
+            replacement: false
+        pool:
+          - uuid: Compendium.onepiece-system.op-features.Item.ZOD1rH3mR9z1M4RR
+          - uuid: Compendium.onepiece-system.op-features.Item.IDhotnRs9eSgczFO
+          - uuid: Compendium.onepiece-system.op-features.Item.rvfzgYN6zxUjZciz
+          - uuid: Compendium.onepiece-system.op-features.Item.76UJxARiVmbG5t8e
+          - uuid: Compendium.onepiece-system.op-features.Item.JI4vbQNZsBRnvNp0
+          - uuid: Compendium.onepiece-system.op-features.Item.SCtNpkkbsB9Erxtg
+          - uuid: Compendium.onepiece-system.op-features.Item.YUxr8uuIknFx4kZv
+        restriction:
+          level: ''
+          list: []
+          subtype: ''
+          type: feat
+        spell: null
+        type: feat
+      value: {}
+      flags: {}
 effects: []
 folder: null
 _key: '!items!Taps0UjEZN9vLaYZ'

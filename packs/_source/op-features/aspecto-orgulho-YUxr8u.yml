@@ -1,0 +1,21 @@
+_id: YUxr8uuIknFx4kZv
+name: 'Aspecto: Orgulho'
+type: feat
+img: icons/sundries/scrolls/scroll-bound-red.webp
+system:
+  description:
+    value: <p>Recebe -1 em Testes de Atributo de Presença.</p>
+    chat: ''
+  identifier: aspecto-orgulho
+  type:
+    value: race
+    subtype: flaw
+  requirements: Humanos (Aspecto)
+  properties: []
+  activities: {}
+effects: []
+folder: null
+_key: '!items!YUxr8uuIknFx4kZv'
+ownership:
+  default: 0
+flags: {}

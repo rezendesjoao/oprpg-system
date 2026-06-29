@@ -13,6 +13,35 @@ system:
   requirements: Humanos
   properties: []
   activities: {}
+  advancement:
+    - _id: ZABonZbgWH6Mw0Fj
+      type: Trait
+      level: 0
+      configuration:
+        allowReplacements: false
+        grants: []
+        choices:
+          - count: 3
+            pool:
+              - skills:ath
+              - skills:acr
+              - skills:ste
+              - skills:slt
+              - skills:his
+              - skills:inv
+              - skills:med
+              - skills:nat
+              - skills:sur
+              - skills:ins
+              - skills:prc
+              - skills:prf
+              - skills:dec
+              - skills:itm
+              - skills:per
+              - skills:prv
+        mode: default
+      value: {}
+      flags: {}
 effects: []
 folder: null
 _key: '!items!812v2MRWpFnS72xs'

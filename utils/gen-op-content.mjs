@@ -109,6 +109,27 @@ function advItemChoice(seed, level, uuids, opts = {}) {
   };
 }
 
+// As 19 perícias OP (chaves de DND5E.skills em config.mjs).
+const OP_SKILL_KEYS = ["ath","acr","ste","slt","his","inv","med","nat","sur","Cont","ins","prc","arc","luc","prf","dec","itm","per","prv"];
+
+// Trait advancement (nível 0) de ESCOLHA de perícia, anexado ao item de traço/variante (feat).
+// O AdvancementManager processa ao conceder o feat via ItemGrant/ItemChoice (#synthesizeSteps).
+// mode: "default" (proficiência) | "expertise" (dobra o Bônus de Proficiência).
+function advTraitSkill(seed, { count = 1, pool = null, exclude = [], mode = "default" } = {}) {
+  const keys = pool ?? OP_SKILL_KEYS.filter(k => !exclude.includes(k));
+  return {
+    _id: mkId(seed + ":skill:" + count + ":" + mode),
+    type: "Trait", level: 0,
+    configuration: {
+      allowReplacements: false,
+      grants: [],
+      choices: [{ count, pool: keys.map(k => "skills:" + k) }],
+      mode
+    },
+    value: {}, flags: {}
+  };
+}
+
 /* -------------------------------------------- */
 /*  Item builders                               */
 /* -------------------------------------------- */
@@ -273,6 +294,7 @@ function raceItem(sp) {
   for ( const t of (sp.traits || []) ) {
     const item = featItem({ code: "SP-" + sp.code, name: t.name, desc: t.desc, level: 0, requirements: sp.name });
     item.system.type = { value: "race", subtype: "" }; // traço de espécie
+    if ( t.skillChoice ) item.system.advancement = [ advTraitSkill(`race:${sp.key}:${slug(t.name)}`, t.skillChoice) ];
     writeDoc("op-features", item);
     (grantsByLevel[0] ??= []).push(uuid("op-features", item._id));
   }
@@ -285,10 +307,22 @@ function raceItem(sp) {
     const variantUuids = sp.variants.map(v => {
       const item = featItem({ code: "SP-" + sp.code + "-VAR", name: v.name, desc: v.html ?? v.desc, level: 0, requirements: `${sp.name} (Variante)` });
       item.system.type = { value: "race", subtype: "variant" }; // traço de variante de espécie
+      if ( v.skillChoice ) item.system.advancement = [ advTraitSkill(`race:${sp.key}:var:${v.key}`, v.skillChoice) ];
       writeDoc("op-features", item);
       return uuid("op-features", item._id);
     });
     advancement.push(advItemChoice(seed, 0, variantUuids, { count: 1, type: "feat" }));
+  }
+
+  // Aspectos de caráter: o jogador escolhe 1 defeito na criação (nível 0).
+  if ( sp.flaws?.length ) {
+    const flawUuids = sp.flaws.map(f => {
+      const item = featItem({ code: "SP-" + sp.code + "-FLAW", name: f.name, desc: f.desc, level: 0, requirements: `${sp.name} (Aspecto)` });
+      item.system.type = { value: "race", subtype: "flaw" }; // defeito de caráter
+      writeDoc("op-features", item);
+      return uuid("op-features", item._id);
+    });
+    advancement.push(advItemChoice(`${seed}:flaw`, 0, flawUuids, { count: 1, type: "feat" }));
   }
 
   const movement = { walk: sp.walk ?? 9, swim: sp.swim ?? 0, fly: sp.fly ?? 0, climb: sp.climb ?? 0, units: "m", hover: false };
