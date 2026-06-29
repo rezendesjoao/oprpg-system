@@ -4,7 +4,7 @@ type: spell
 img: icons/skills/melee/strike-dagger-arcane-blue.webp
 system:
   description:
-    value: <p>Você cria uma mira mental e apunhala uma única criatura com velocidade tão alta que se assemelha ao impacto de uma munição de pistola. Esta técnica <strong>não tem chance de errar</strong>.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Arma Cortante, Ação Poderosa</p><p><strong>Dano:</strong> 7d10 de dano Verdadeiro</p><p><strong>Custo:</strong> 9 PP</p>
+    value: <p>Você cria uma mira mental e apunhala uma única criatura com velocidade tão alta que se assemelha ao impacto de uma munição de pistola. Esta técnica <strong>não tem chance de errar</strong>.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Arma Cortante, Ação Poderosa</p><p><strong>Dano:</strong> 6d10 de dano Verdadeiro</p><p><strong>Custo:</strong> 6 PP</p>
     chat: ''
   activation:
     type: action
@@ -51,7 +51,7 @@ system:
         targets:
           - type: attribute
             target: energy.total
-            value: '9'
+            value: '6'
             scaling:
               mode: ''
               formula: ''
@@ -108,7 +108,7 @@ system:
           - custom:
               enabled: false
               formula: ''
-            number: 7
+            number: 6
             denomination: 10
             bonus: ''
             types: []

@@ -4,15 +4,15 @@ type: akumaNoMi
 img: icons/magic/fire/flame-burning-fist-orange.webp
 system:
   description:
-    value: '<p><strong>Akuma no Mi — Logia (Fogo).</strong> O usuário se torna, cria e controla fogo à vontade. Usuário Logia Avançado.</p><p><strong>Aspecto Inato — Intangibilidade:</strong> o corpo do usuário se transforma no elemento do fruto sempre que quiser; não pode ser tocado por ataques comuns (mesmo os que ignoram Resistência e Invulnerabilidade), exceto aqueles fortalecidos com Haki do Armamento, com Kairoseki, ou desferidos pelo inimigo natural.</p><hr><p><em>Fraqueza:</em> Água do mar e Kairoseki causam <strong>Enfraquecido</strong>. Inimigo natural: Água / Magma. Despertar disponível a partir do 16º nível.</p>'
+    value: '<p><strong>Akuma no Mi — Logia (Fogo).</strong> O usuário se torna, cria e controla fogo à vontade. Usuário Logia Avançado.</p><p><strong>Aspecto Inato — Intangibilidade:</strong> o corpo do usuário se transforma no elemento do fruto sempre que quiser; não pode ser tocado por ataques comuns (mesmo os que ignoram Resistência e Invulnerabilidade), exceto aqueles fortalecidos com Haki do Armamento, com Kairoseki, ou desferidos pelo inimigo natural.</p><hr><p><em>Fraqueza:</em> Água do mar e Kairoseki causam <strong>Enfraquecido</strong>. Inimigo natural: Água / Magma. (Usuário Logia Avançado — sem Estágio Desperto.)</p>'
     chat: ''
   category: logia
   archetype: advanced
-  aspectoInato: Intangibilidade — o corpo do usuário se transforma em fogo; não pode ser tocado por ataques comuns, exceto os fortalecidos com Haki do Armamento, com Kairoseki, ou desferidos pelo inimigo natural (Água / Magma).
-  property: Transformação
+  aspectoInato: Corpo Elemental (Intangibilidade) — o corpo do usuário se transforma em fogo; não pode ser tocado por ataques comuns, exceto os fortalecidos com Haki do Armamento, com Kairoseki, ou desferidos pelo inimigo natural (Água / Magma).
+  property: Corporal, Criação, Manipulação
   mpSlots: 12
   awakening:
-    unlocked: true
+    unlocked: false
   weaknesses:
     seawater: true
     naturalEnemy: Água / Magma

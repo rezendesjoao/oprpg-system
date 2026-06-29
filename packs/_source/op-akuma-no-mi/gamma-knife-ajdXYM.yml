@@ -4,7 +4,7 @@ type: spell
 img: icons/magic/light/beam-rays-blue-large.webp
 system:
   description:
-    value: <p>Você cria uma faca de pura radiação em uma das mãos e realiza uma jogada de ataque corpo-a-corpo contra uma criatura. Ao tocar o alvo, a faca explode internamente, causando grande dano.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Ação Poderosa</p><p><strong>Dano:</strong> 15d10 de dano Verdadeiro</p><p><strong>Custo:</strong> 15 PP</p>
+    value: <p>Você cria uma faca de pura radiação em uma das mãos e realiza uma jogada de ataque corpo-a-corpo contra uma criatura. Ao tocar o alvo, a faca explode internamente, causando grande dano.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Ação Poderosa</p><p><strong>Dano:</strong> 10d10 de dano Verdadeiro</p><p><strong>Custo:</strong> 10 PP</p>
     chat: ''
   activation:
     type: action
@@ -51,7 +51,7 @@ system:
         targets:
           - type: attribute
             target: energy.total
-            value: '15'
+            value: '10'
             scaling:
               mode: ''
               formula: ''
@@ -108,7 +108,7 @@ system:
           - custom:
               enabled: false
               formula: ''
-            number: 15
+            number: 10
             denomination: 10
             bonus: ''
             types: []

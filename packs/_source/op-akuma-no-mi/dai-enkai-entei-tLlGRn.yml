@@ -4,7 +4,7 @@ type: spell
 img: icons/magic/fire/explosion-fireball-large-orange.webp
 system:
   description:
-    value: <p>Usando uma grande quantidade de chamas, você cria uma bola de fogo gigante e a lança contra seus inimigos. Ela explode em um ponto de origem escolhido dentro do alcance, liberando uma explosão de 9 metros de raio. Toda criatura na área deve fazer uma Salvaguarda de Destreza, sofrendo todo o dano se falhar ou metade se obtiver sucesso.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Até 33 metros (explosão de 9 m de raio)</p><p><strong>Requisito:</strong> Mera-Mera no Mi, Ação Poderosa</p><p><strong>Dano:</strong> 12d6 de dano de Fogo</p><p><strong>Custo:</strong> 12 PP</p>
+    value: <p>Usando uma grande quantidade de chamas, você cria uma bola de fogo gigante e a lança contra seus inimigos. Ela explode em um ponto de origem escolhido dentro do alcance, liberando uma explosão de 9 metros de raio. Toda criatura na área deve fazer uma Salvaguarda de Destreza, sofrendo todo o dano se falhar ou metade se obtiver sucesso.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Até 33 metros (explosão de 9 m de raio)</p><p><strong>Requisito:</strong> Mera-Mera no Mi, Ação Poderosa</p><p><strong>Dano:</strong> 10d6 de dano de Fogo</p><p><strong>Custo:</strong> 10 PP</p>
     chat: ''
   activation:
     type: action
@@ -51,7 +51,7 @@ system:
         targets:
           - type: attribute
             target: energy.total
-            value: '12'
+            value: '10'
             scaling:
               mode: ''
               formula: ''
@@ -103,7 +103,7 @@ system:
           - custom:
               enabled: false
               formula: ''
-            number: 12
+            number: 10
             denomination: 6
             bonus: ''
             types:

@@ -4,7 +4,7 @@ type: spell
 img: icons/magic/lightning/bolt-strike-blue.webp
 system:
   description:
-    value: <p>Você coloca as mãos próximas a um alvo e libera uma descarga elétrica poderosa. O alvo faz uma Salvaguarda de Constituição, sofrendo todo o dano se falhar ou metade se obtiver sucesso. Se falhar no primeiro teste, deve passar em uma nova Salvaguarda de Constituição ou recebe "Atordoado" até o fim do seu próximo turno.</p><p><em>Alternativamente:</em> você pode optar por não causar a condição e aumentar o dano em mais 2d10.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Ação Poderosa</p><p><strong>Dano:</strong> 10d10 de dano Elétrico</p><p><strong>Custo:</strong> 12 PP</p>
+    value: <p>Você coloca as mãos próximas a um alvo e libera uma descarga elétrica poderosa. O alvo faz uma Salvaguarda de Constituição, sofrendo todo o dano se falhar ou metade se obtiver sucesso. Se falhar no primeiro teste, deve passar em uma nova Salvaguarda de Constituição ou recebe "Atordoado" até o fim do seu próximo turno.</p><p><em>Alternativamente:</em> você pode optar por não impor a condição "Atordoado".</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Ação Poderosa</p><p><strong>Dano:</strong> 8d8 de dano Elétrico</p><p><strong>Custo:</strong> 8 PP</p>
     chat: ''
   activation:
     type: action
@@ -51,7 +51,7 @@ system:
         targets:
           - type: attribute
             target: energy.total
-            value: '12'
+            value: '8'
             scaling:
               mode: ''
               formula: ''
@@ -103,8 +103,8 @@ system:
           - custom:
               enabled: false
               formula: ''
-            number: 10
-            denomination: 10
+            number: 8
+            denomination: 8
             bonus: ''
             types:
               - lightning

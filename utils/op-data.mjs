@@ -5712,12 +5712,12 @@ export const AKUMAS = [
     img: "icons/magic/fire/flame-burning-fist-orange.webp",
     category: "logia",
     archetype: "advanced",
-    aspectoInato: "Intangibilidade — o corpo do usuário se transforma em fogo; não pode ser tocado por ataques comuns, exceto os fortalecidos com Haki do Armamento, com Kairoseki, ou desferidos pelo inimigo natural (Água / Magma).",
-    property: "Transformação",
+    aspectoInato: "Corpo Elemental (Intangibilidade) — o corpo do usuário se transforma em fogo; não pode ser tocado por ataques comuns, exceto os fortalecidos com Haki do Armamento, com Kairoseki, ou desferidos pelo inimigo natural (Água / Magma).",
+    property: "Corporal, Criação, Manipulação",
     mpSlots: 12,
-    awakening: true,
+    awakening: false,
     weaknesses: { seawater: true, naturalEnemy: "Água / Magma" },
-    description: `<p><strong>Akuma no Mi — Logia (Fogo).</strong> O usuário se torna, cria e controla fogo à vontade. Usuário Logia Avançado.</p><p><strong>Aspecto Inato — Intangibilidade:</strong> o corpo do usuário se transforma no elemento do fruto sempre que quiser; não pode ser tocado por ataques comuns (mesmo os que ignoram Resistência e Invulnerabilidade), exceto aqueles fortalecidos com Haki do Armamento, com Kairoseki, ou desferidos pelo inimigo natural.</p><hr><p><em>Fraqueza:</em> Água do mar e Kairoseki causam <strong>Enfraquecido</strong>. Inimigo natural: Água / Magma. Despertar disponível a partir do 16º nível.</p>`,
+    description: `<p><strong>Akuma no Mi — Logia (Fogo).</strong> O usuário se torna, cria e controla fogo à vontade. Usuário Logia Avançado.</p><p><strong>Aspecto Inato — Intangibilidade:</strong> o corpo do usuário se transforma no elemento do fruto sempre que quiser; não pode ser tocado por ataques comuns (mesmo os que ignoram Resistência e Invulnerabilidade), exceto aqueles fortalecidos com Haki do Armamento, com Kairoseki, ou desferidos pelo inimigo natural.</p><hr><p><em>Fraqueza:</em> Água do mar e Kairoseki causam <strong>Enfraquecido</strong>. Inimigo natural: Água / Magma. (Usuário Logia Avançado — sem Estágio Desperto.)</p>`,
     manifestacoes: [
       {
         name: "Habilidade Refinada (Mera-Mera)",
@@ -5750,16 +5750,16 @@ export const AKUMAS = [
         desc: `<p>Enquanto a técnica "Hotarubi" estiver ativa, você escolhe uma criatura que possa ver e que esteja dentro do alcance para acertá-la <strong>automaticamente</strong> com as chamas flutuantes.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Até 21 metros, Linha</p><p><strong>Requisito:</strong> Mera-Mera no Mi, "Hotarubi", Ação Poderosa</p><p><strong>Dano:</strong> 5d10 de dano de Fogo</p><p><strong>Custo:</strong> 6 PP</p>`
       },
       {
-        name: "Enkai: Hibashira", grau: 4, cost: 9, kind: "save", save: { targetAbility: "dex" },
-        damage: { number: 9, die: 6, type: "fire" }, rangeUnits: "m", activation: "action",
+        name: "Enkai: Hibashira", grau: 4, cost: 8, kind: "save", save: { targetAbility: "dex" },
+        damage: { number: 8, die: 6, type: "fire" }, rangeUnits: "m", activation: "action",
         img: "icons/magic/fire/flame-burning-campfire-orange.webp",
-        desc: `<p>Você cria um manto de chamas e libera um pilar de fogo contra seus inimigos, em qualquer direção. Toda criatura na área deve fazer uma Salvaguarda de Destreza, sofrendo todo o dano se falhar ou metade se obtiver sucesso.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Até 27 m de comprimento por 3 m de largura, Linha</p><p><strong>Requisito:</strong> Mera-Mera no Mi, Ação Poderosa</p><p><strong>Dano:</strong> 9d6 de dano de Fogo</p><p><strong>Custo:</strong> 9 PP</p>`
+        desc: `<p>Você cria um manto de chamas e libera um pilar de fogo contra seus inimigos, em qualquer direção. Toda criatura na área deve fazer uma Salvaguarda de Destreza, sofrendo todo o dano se falhar ou metade se obtiver sucesso.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Até 27 m de comprimento por 3 m de largura, Linha</p><p><strong>Requisito:</strong> Mera-Mera no Mi, Ação Poderosa</p><p><strong>Dano:</strong> 8d6 de dano de Fogo</p><p><strong>Custo:</strong> 8 PP</p>`
       },
       {
-        name: "Dai Enkai: Entei", grau: 5, cost: 12, kind: "save", save: { targetAbility: "dex" },
-        damage: { number: 12, die: 6, type: "fire" }, rangeUnits: "m", activation: "action",
+        name: "Dai Enkai: Entei", grau: 5, cost: 10, kind: "save", save: { targetAbility: "dex" },
+        damage: { number: 10, die: 6, type: "fire" }, rangeUnits: "m", activation: "action",
         img: "icons/magic/fire/explosion-fireball-large-orange.webp",
-        desc: `<p>Usando uma grande quantidade de chamas, você cria uma bola de fogo gigante e a lança contra seus inimigos. Ela explode em um ponto de origem escolhido dentro do alcance, liberando uma explosão de 9 metros de raio. Toda criatura na área deve fazer uma Salvaguarda de Destreza, sofrendo todo o dano se falhar ou metade se obtiver sucesso.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Até 33 metros (explosão de 9 m de raio)</p><p><strong>Requisito:</strong> Mera-Mera no Mi, Ação Poderosa</p><p><strong>Dano:</strong> 12d6 de dano de Fogo</p><p><strong>Custo:</strong> 12 PP</p>`
+        desc: `<p>Usando uma grande quantidade de chamas, você cria uma bola de fogo gigante e a lança contra seus inimigos. Ela explode em um ponto de origem escolhido dentro do alcance, liberando uma explosão de 9 metros de raio. Toda criatura na área deve fazer uma Salvaguarda de Destreza, sofrendo todo o dano se falhar ou metade se obtiver sucesso.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Até 33 metros (explosão de 9 m de raio)</p><p><strong>Requisito:</strong> Mera-Mera no Mi, Ação Poderosa</p><p><strong>Dano:</strong> 10d6 de dano de Fogo</p><p><strong>Custo:</strong> 10 PP</p>`
       },
       {
         name: "Hikyaku", grau: 1, cost: 2, kind: "utility", activation: "bonus", rangeUnits: "self",
@@ -5787,8 +5787,8 @@ export const AKUMAS = [
     category: "paramecia",
     archetype: "advanced",
     aspectoInato: "Uso Alternativo — uma vez por descanso longo, você pode usar uma Técnica de qualquer grau ou uma Técnica Auxiliar sem gastar nenhum Ponto de Poder, desde que o requisito de duração seja \"Instantânea\".",
-    property: "Espaço-Temporal",
-    mpSlots: 12,
+    property: "Criação, Espaço-Temporal, Extracorporal, Transformação",
+    mpSlots: 18,
     awakening: true,
     weaknesses: { seawater: true, naturalEnemy: "" },
     description: `<p><strong>Akuma no Mi — Paramecia (Operação).</strong> Conhecida como a "Akuma no Mi Suprema". Dentro de uma "ROOM", o usuário manipula tudo livremente: troca, corta, opera e transforma. Usuário Paramecia Avançado.</p><p><strong>Aspecto Inato — Uso Alternativo:</strong> uma vez por descanso longo, use uma Técnica de qualquer grau ou Auxiliar sem gastar PP, desde que a duração seja "Instantânea".</p><hr><p><em>Fraqueza:</em> Água do mar e Kairoseki causam <strong>Enfraquecido</strong>. Despertar disponível a partir do 16º nível.</p>`,
@@ -5822,22 +5822,22 @@ export const AKUMAS = [
         desc: `<p>Você realiza vários cortes que separam seu alvo sem causar dano. Faça uma jogada de ataque à distância contra uma criatura na "ROOM". Se acertar, a criatura deve ser bem-sucedida em uma Salvaguarda de Destreza ou sofre a condição "Despedaçado", até que ela ou uma criatura próxima use uma ação para montá-la novamente.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Área dentro da "ROOM"</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Arma Cortante, Ação Poderosa</p><p><strong>Dano:</strong> Nenhum (impõe "Despedaçado")</p><p><strong>Custo:</strong> 4 PP</p>`
       },
       {
-        name: "Injection Shot", grau: 3, cost: 9, kind: "attack", attackType: "melee",
-        damage: { number: 7, die: 10, type: "true" }, rangeUnits: "touch", activation: "action",
+        name: "Injection Shot", grau: 3, cost: 6, kind: "attack", attackType: "melee",
+        damage: { number: 6, die: 10, type: "true" }, rangeUnits: "touch", activation: "action",
         img: "icons/skills/melee/strike-dagger-arcane-blue.webp",
-        desc: `<p>Você cria uma mira mental e apunhala uma única criatura com velocidade tão alta que se assemelha ao impacto de uma munição de pistola. Esta técnica <strong>não tem chance de errar</strong>.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Arma Cortante, Ação Poderosa</p><p><strong>Dano:</strong> 7d10 de dano Verdadeiro</p><p><strong>Custo:</strong> 9 PP</p>`
+        desc: `<p>Você cria uma mira mental e apunhala uma única criatura com velocidade tão alta que se assemelha ao impacto de uma munição de pistola. Esta técnica <strong>não tem chance de errar</strong>.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Arma Cortante, Ação Poderosa</p><p><strong>Dano:</strong> 6d10 de dano Verdadeiro</p><p><strong>Custo:</strong> 6 PP</p>`
       },
       {
-        name: "Counter Shock", grau: 4, cost: 12, kind: "save", save: { targetAbility: "con" },
-        damage: { number: 10, die: 10, type: "lightning" }, rangeUnits: "touch", activation: "action",
+        name: "Counter Shock", grau: 4, cost: 8, kind: "save", save: { targetAbility: "con" },
+        damage: { number: 8, die: 8, type: "lightning" }, rangeUnits: "touch", activation: "action",
         img: "icons/magic/lightning/bolt-strike-blue.webp",
-        desc: `<p>Você coloca as mãos próximas a um alvo e libera uma descarga elétrica poderosa. O alvo faz uma Salvaguarda de Constituição, sofrendo todo o dano se falhar ou metade se obtiver sucesso. Se falhar no primeiro teste, deve passar em uma nova Salvaguarda de Constituição ou recebe "Atordoado" até o fim do seu próximo turno.</p><p><em>Alternativamente:</em> você pode optar por não causar a condição e aumentar o dano em mais 2d10.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Ação Poderosa</p><p><strong>Dano:</strong> 10d10 de dano Elétrico</p><p><strong>Custo:</strong> 12 PP</p>`
+        desc: `<p>Você coloca as mãos próximas a um alvo e libera uma descarga elétrica poderosa. O alvo faz uma Salvaguarda de Constituição, sofrendo todo o dano se falhar ou metade se obtiver sucesso. Se falhar no primeiro teste, deve passar em uma nova Salvaguarda de Constituição ou recebe "Atordoado" até o fim do seu próximo turno.</p><p><em>Alternativamente:</em> você pode optar por não impor a condição "Atordoado".</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Ação Poderosa</p><p><strong>Dano:</strong> 8d8 de dano Elétrico</p><p><strong>Custo:</strong> 8 PP</p>`
       },
       {
-        name: "Gamma Knife", grau: 5, cost: 15, kind: "attack", attackType: "melee",
-        damage: { number: 15, die: 10, type: "true" }, rangeUnits: "touch", activation: "action",
+        name: "Gamma Knife", grau: 5, cost: 10, kind: "attack", attackType: "melee",
+        damage: { number: 10, die: 10, type: "true" }, rangeUnits: "touch", activation: "action",
         img: "icons/magic/light/beam-rays-blue-large.webp",
-        desc: `<p>Você cria uma faca de pura radiação em uma das mãos e realiza uma jogada de ataque corpo-a-corpo contra uma criatura. Ao tocar o alvo, a faca explode internamente, causando grande dano.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Ação Poderosa</p><p><strong>Dano:</strong> 15d10 de dano Verdadeiro</p><p><strong>Custo:</strong> 15 PP</p>`
+        desc: `<p>Você cria uma faca de pura radiação em uma das mãos e realiza uma jogada de ataque corpo-a-corpo contra uma criatura. Ao tocar o alvo, a faca explode internamente, causando grande dano.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "ROOM", Ação Poderosa</p><p><strong>Dano:</strong> 10d10 de dano Verdadeiro</p><p><strong>Custo:</strong> 10 PP</p>`
       },
       {
         name: "Silent", grau: 6, cost: 12, kind: "utility", activation: "action", rangeUnits: "special",
@@ -5845,10 +5845,10 @@ export const AKUMAS = [
         desc: `<p>Você escolhe uma criatura afetada pela "R-ROOM", fazendo com que ela não possa usar nenhuma técnica ou característica que consuma Pontos de Poder ou tenha limitação de usos por dia — mesmo as que anulam poderes de Akuma no Mi.</p><hr><p><strong>Duração:</strong> Até 1 minuto</p><p><strong>Alcance:</strong> Especial</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "R-ROOM", Ação Poderosa</p><p><strong>Dano:</strong> Nenhum</p><p><strong>Custo:</strong> 12 PP</p>`
       },
       {
-        name: "Anesthesia: Shock Wille", grau: 7, cost: 21, kind: "attack", attackType: "melee",
-        damage: { number: 21, die: 10, type: "true" }, rangeUnits: "touch", activation: "action",
+        name: "Anesthesia: Shock Wille", grau: 7, cost: 14, kind: "attack", attackType: "melee",
+        damage: { number: 14, die: 10, type: "true" }, rangeUnits: "touch", activation: "action",
         img: "icons/magic/lightning/bolt-strike-sword-blue.webp",
-        desc: `<p>Você atravessa um inimigo com uma lâmina, em uma jogada de ataque corpo-a-corpo, o que não o fere — mas permite causar uma descarga elétrica diretamente no corpo da criatura, sem nenhuma defesa. Qualquer redução de dano de Haki do Armamento ou Pontos de Vida temporários é ignorada.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "K-ROOM", Arma Cortante, Ação Poderosa</p><p><strong>Dano:</strong> 21d10 de dano Verdadeiro</p><p><strong>Custo:</strong> 21 PP</p>`
+        desc: `<p>Você atravessa um inimigo com uma lâmina, em uma jogada de ataque corpo-a-corpo, o que não o fere — mas permite causar uma descarga elétrica diretamente no corpo da criatura, sem nenhuma defesa. Qualquer redução de dano de Haki do Armamento ou Pontos de Vida temporários é ignorada.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "K-ROOM", Arma Cortante, Ação Poderosa</p><p><strong>Dano:</strong> 14d10 de dano Verdadeiro</p><p><strong>Custo:</strong> 14 PP</p>`
       },
       {
         name: "Prazision", grau: 1, cost: 1, kind: "utility", activation: "special", rangeUnits: "m",

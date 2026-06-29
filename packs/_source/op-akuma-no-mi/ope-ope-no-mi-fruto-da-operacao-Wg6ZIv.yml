@@ -9,8 +9,8 @@ system:
   category: paramecia
   archetype: advanced
   aspectoInato: Uso Alternativo — uma vez por descanso longo, você pode usar uma Técnica de qualquer grau ou uma Técnica Auxiliar sem gastar nenhum Ponto de Poder, desde que o requisito de duração seja "Instantânea".
-  property: Espaço-Temporal
-  mpSlots: 12
+  property: Criação, Espaço-Temporal, Extracorporal, Transformação
+  mpSlots: 18
   awakening:
     unlocked: true
   weaknesses:

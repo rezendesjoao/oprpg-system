@@ -4,7 +4,7 @@ type: spell
 img: icons/magic/lightning/bolt-strike-sword-blue.webp
 system:
   description:
-    value: <p>Você atravessa um inimigo com uma lâmina, em uma jogada de ataque corpo-a-corpo, o que não o fere — mas permite causar uma descarga elétrica diretamente no corpo da criatura, sem nenhuma defesa. Qualquer redução de dano de Haki do Armamento ou Pontos de Vida temporários é ignorada.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "K-ROOM", Arma Cortante, Ação Poderosa</p><p><strong>Dano:</strong> 21d10 de dano Verdadeiro</p><p><strong>Custo:</strong> 21 PP</p>
+    value: <p>Você atravessa um inimigo com uma lâmina, em uma jogada de ataque corpo-a-corpo, o que não o fere — mas permite causar uma descarga elétrica diretamente no corpo da criatura, sem nenhuma defesa. Qualquer redução de dano de Haki do Armamento ou Pontos de Vida temporários é ignorada.</p><hr><p><strong>Duração:</strong> Instantâneo</p><p><strong>Alcance:</strong> Toque</p><p><strong>Requisito:</strong> Ope-Ope no Mi, "K-ROOM", Arma Cortante, Ação Poderosa</p><p><strong>Dano:</strong> 14d10 de dano Verdadeiro</p><p><strong>Custo:</strong> 14 PP</p>
     chat: ''
   activation:
     type: action
@@ -51,7 +51,7 @@ system:
         targets:
           - type: attribute
             target: energy.total
-            value: '21'
+            value: '14'
             scaling:
               mode: ''
               formula: ''
@@ -108,7 +108,7 @@ system:
           - custom:
               enabled: false
               formula: ''
-            number: 21
+            number: 14
             denomination: 10
             bonus: ''
             types: []
