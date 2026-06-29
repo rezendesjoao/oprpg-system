@@ -21,8 +21,13 @@ O sistema já traz **compêndios prontos**, importáveis para a ficha de forma a
 - **Características de Estilo** (`op-features`) — as características de classe/espécie concedidas pelos Avanços.
 - **Técnicas** (`op-techniques`) — Técnicas (Grau 1–7) com **atividade rolável** (ataque ou salvaguarda + dano) que **consome Pontos de Poder** automaticamente.
 - **Espécies** (`op-species`) — Anões, Celestiais, Gigantes, Humanos, Lunarianos, Minks, Povo do Mar e Mestiços, com tamanho, deslocamento, traços e aumento de atributo.
+- **Antecedentes, Caminhos, Singularidades, Defeitos, Códigos de Honra, Profissões e Equipamentos** — compêndios de personalização e itens (Cap. 4, 5 e 8 do livro).
 
 **Uso:** arraste um Estilo de Combate para a ficha → o assistente de Avanços concede Técnicas e características conforme o nível. Arraste uma Espécie → ganha traços e o aumento de atributo. Suba de nível pelo XP/nível e o sistema concede o próximo Avanço.
+
+### Criação de Personagem (assistente)
+
+Fichas de **nível 0 / sem classe** mostram o botão **"Criar Personagem"** no topo. Ele abre um assistente passo-a-passo — **Espécie → Estilo de Combate → Antecedente → Atributos → Descrição → Equipamento** — que monta a ficha inteira automaticamente seguindo as regras do livro (distribui atributos, aplica espécie/antecedente/classe e suas escolhas, concede Técnicas e características, e linka tudo na ficha).
 
 ### Regerar os compêndios (manutenção)
 
@@ -37,7 +42,17 @@ Edite `utils/op-data.mjs` (classes/espécies) e regere. Os `_id` e as referênci
 
 Roadmap (v3): Haki dedicado (Pontos de Ambição), conteúdo de frutas, equipamentos e embarcações.
 
-## Instalação (manual)
+## Instalação
+
+No Foundry VTT, vá em **Configuração → Sistemas de Jogo → Instalar Sistema** e cole a URL do **manifesto**:
+
+```
+https://github.com/rezendesjoao/oprpg-system/releases/latest/download/system.json
+```
+
+O Foundry instala e mantém atualizada a versão mais recente automaticamente. Depois, crie um mundo com o sistema **One Piece RPG**.
+
+### Instalação manual (alternativa)
 
 Copie (ou crie um symlink d)esta pasta para o diretório de sistemas do Foundry:
 

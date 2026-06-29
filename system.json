@@ -2,7 +2,7 @@
   "id": "onepiece-system",
   "title": "One Piece RPG",
   "description": "One Piece RPG — sistema de RPG de mesa inspirado em One Piece para o Foundry Virtual Tabletop, adaptado de D&D 5e (baseado no Livro do Jogador OP RPG 2.0). Projeto de fã, sem afiliação oficial. Construído sobre o motor do dnd5e (MIT) e do jujutsu-system.",
-  "version": "1.6.0",
+  "version": "1.2.21",
   "compatibility": {
     "minimum": "14.360",
     "verified": "14"
