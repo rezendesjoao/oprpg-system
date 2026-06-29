@@ -1,7 +1,7 @@
 _id: IltvDpLkCcQqCV6a
 name: Marcas da Derrota
 type: feat
-img: icons/sundries/scrolls/scroll-bound-brown.webp
+img: icons/sundries/scrolls/scroll-bound-black-brown.webp
 system:
   description:
     value: '<p>Sua experiência com o fracasso lhe deu uma visão única sobre erros e consequências. Ao falhar em um Teste de Atributo, você pode fazer um Teste de Atributo de Vontade (Sorte), com CD definida pelo Narrador.</p><p>Em caso de sucesso, você aprende algo com a falha: recebe uma pista, uma informação parcial ou reduz as consequências narrativas negativas daquele erro. Essa característica não pode ser usada novamente até o término de um descanso longo.</p>'

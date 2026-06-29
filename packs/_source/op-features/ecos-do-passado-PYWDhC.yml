@@ -1,7 +1,7 @@
 _id: PYWDhCmA5TbQmJ2c
 name: Ecos do Passado
 type: feat
-img: icons/sundries/scrolls/scroll-bound-brown.webp
+img: icons/sundries/scrolls/scroll-bound-black-brown.webp
 system:
   description:
     value: <p>Em momentos cruciais, fragmentos da sua antiga vida podem emergir. Uma vez por descanso longo, você pode pedir ao Narrador uma lembrança vaga, sensação instintiva ou conhecimento inesperado relacionado a uma situação atual. Para isso, faça um Teste de Atributo de Vontade (Sorte), com CD definida pelo Narrador.</p><p>Em caso de sucesso, você recebe uma informação útil, ainda que incompleta ou simbólica, sobre o que fazer ou evitar. Em uma falha, a lembrança é confusa ou enganosa.</p>

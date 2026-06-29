@@ -421,7 +421,7 @@ function backgroundItem(bg) {
   const f = bg.feature;
   const featDoc = featItem({ code: "BG-" + bg.code, name: f.name, desc: f.desc, level: 0, requirements: bg.name, uses: mkUses(f.uses) });
   featDoc.system.type = { value: "background", subtype: "" }; // Característica Especial de Antecedente
-  featDoc.img = "icons/sundries/scrolls/scroll-bound-brown.webp";
+  featDoc.img = "icons/sundries/scrolls/scroll-bound-black-brown.webp";
   writeDoc("op-features", featDoc);
   const featureUuid = uuid("op-features", featDoc._id);
 
