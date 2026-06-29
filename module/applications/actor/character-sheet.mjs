@@ -10,7 +10,7 @@ import * as Trait from "../../documents/actor/trait.mjs";
 import { injectSkillRefs, injectTrainingRefs, injectAbilityRefs, injectAbilityKanjis, applyJJTextTooltips } from "./jj/tooltips.mjs";
 import { JJ_CONDITIONS, injectJJConditions } from "./jj/conditions.mjs";
 import { setupFeatureSectionCollapse } from "./jj/features.mjs";
-import { onExplosaoDefensiva, onEnergiaReversa, onFocoDefensivo } from "./jj/explosao-defensiva.mjs";
+import { onExplosaoDefensiva, onEnergiaReversa } from "./jj/explosao-defensiva.mjs";
 import { canShowExpansaoDominio, onExpansaoDominio, configureExpansaoDominio } from "./jj/expansao-dominio.mjs";
 import { checkFulgorNegro, applyFulgorZonaEffect, setupFulgorNegro, getFulgorSecundaria } from "./jj/fulgor-negro.mjs";
 import { applySeiOlhosEffects } from "./jj/seis-olhos.mjs";
@@ -609,9 +609,6 @@ context.energyDicePct = ed?.max > 0 ? ((ed.value / ed.max) * 100).toFixed(2) : 0
 const energy = this.actor.system.energy;
 context.energyPct = energy?.max > 0 ? ((energy.total / energy.max) * 100).toFixed(2) : 0;
 
-const armor = this.actor.system.armorPoints;
-context.armorPct = armor?.max > 0 ? ((armor.value / armor.max) * 100).toFixed(2) : 0;
-
 // Expansão de Domínio (Maestria 7)
 context.showExpansaoDominio = canShowExpansaoDominio(this.actor);
 context.dominioExpandido = this.actor.getFlag("onepiece-system", "dominioExpandido") === true;
@@ -1058,10 +1055,6 @@ async _onRender(context, options) {
     // Botão de Energia Reversa
     this.element.querySelector("[data-action='jj-enrev-trigger']")
       ?.addEventListener("click", () => onEnergiaReversa(this.actor));
-
-    // Botão de Foco Defensivo — ativar/desativar Pontos de Armadura
-    this.element.querySelector("[data-action='jj-foco-defensivo']")
-      ?.addEventListener("click", () => onFocoDefensivo(this.actor));
 
     // Botão de Expansão de Domínio (Maestria 7) — clique expande; botão direito configura
     const expDomBtn = this.element.querySelector("[data-action='jj-expansao-dominio']");
