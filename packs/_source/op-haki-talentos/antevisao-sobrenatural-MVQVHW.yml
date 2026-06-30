@@ -1,0 +1,28 @@
+_id: MVQVHW6hLDxdOPl6
+name: Antevisão Sobrenatural
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  description:
+    value: '<p>Quando for alvo de um efeito que exige Salvaguarda de Destreza para sofrer metade do dano: você não sofre dano algum se passar, e somente metade se falhar.</p><p><strong>Requisito:</strong> 3 PA, Estágio Treinado e "Antevisão".</p>'
+    chat: ''
+  identifier: antevisao-sobrenatural
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki da Observação · Treinado · 3 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 3
+    hakiType: observacao
+    hakiStage: treinado
+    prereq:
+      - antevisao
+_key: '!items!MVQVHW6hLDxdOPl6'
+ownership:
+  default: 0

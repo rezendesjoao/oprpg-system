@@ -1,0 +1,28 @@
+_id: vJ0kVyYpAlhHfwFM
+name: Antevisão Especial
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  description:
+    value: <p>Jogadas de ataque (comum) feitas contra você por criaturas sem Haki da Observação recebem desvantagem.</p><p><strong>Requisito:</strong> 5 PA, Estágio Perito e "Antevisão Sobrenatural".</p><p><strong>Forma Dominada (✩):</strong> Você faz Salvaguardas de Destreza com vantagem contra essas mesmas criaturas.</p>
+    chat: ''
+  identifier: antevisao-especial
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki da Observação · Perito · 5 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 5
+    hakiType: observacao
+    hakiStage: perito
+    prereq:
+      - antevisao-sobrenatural
+_key: '!items!vJ0kVyYpAlhHfwFM'
+ownership:
+  default: 0

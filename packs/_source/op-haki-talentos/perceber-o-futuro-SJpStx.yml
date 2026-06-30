@@ -1,0 +1,28 @@
+_id: SJpStxUOfksQrgI4
+name: Perceber o Futuro
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  description:
+    value: <p>Fora de um encontro de combate, você pode solicitar ao Narrador uma visão dos próximos 30 segundos. As visões podem ser enganosas ou incompletas.</p><p><strong>Requisito:</strong> 4 PA, Estágio Perito e "Perceber Desafio".</p><p><strong>Forma Dominada (✩):</strong> Passa a enxergar até 2 minutos no futuro.</p><p><strong>Forma Avançada (★):</strong> Passa a enxergar até 10 minutos no futuro.</p>
+    chat: ''
+  identifier: perceber-o-futuro
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki da Observação · Perito · 4 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 4
+    hakiType: observacao
+    hakiStage: perito
+    prereq:
+      - perceber-desafio
+_key: '!items!SJpStxUOfksQrgI4'
+ownership:
+  default: 0

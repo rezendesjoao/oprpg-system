@@ -1,0 +1,29 @@
+_id: sJ2Qq3i33x1Xs1A1
+name: Presença Esmagadora
+type: feat
+img: icons/magic/control/fear-fright-monster-purple.webp
+system:
+  description:
+    value: <p>Qualquer criatura hostil sem Haki do Rei que comece o turno a até 3 metros de você deve passar numa Salvaguarda de Vontade ou sofre 2d6 de dano psíquico.</p><p><strong>Requisito:</strong> 5 PA, Estágio Perito e "Soberania do Rei", "Superação Majestosa".</p><p><strong>Forma Dominada (✩):</strong> Escolha uma característica da Maestria "Ambição Suprema" ou "Imaculado" (sem receber PA dela).</p><p><strong>Forma Avançada (★):</strong> Ao realizar uma Técnica contra um único alvo, adicione dados extras de dano iguais ao ND da criatura. Não pode ser usada novamente até um descanso longo.</p>
+    chat: ''
+  identifier: presenca-esmagadora
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki do Rei · Perito · 5 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 5
+    hakiType: rei
+    hakiStage: perito
+    prereq:
+      - soberania-do-rei
+      - superacao-majestosa
+_key: '!items!sJ2Qq3i33x1Xs1A1'
+ownership:
+  default: 0

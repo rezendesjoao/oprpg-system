@@ -1,0 +1,28 @@
+_id: yEiivDIFyTMS7WxK
+name: Armamento do Rei
+type: feat
+img: icons/magic/control/fear-fright-monster-purple.webp
+system:
+  description:
+    value: <p>Uma vez por turno, ao fazer uma jogada de ataque (comum), gaste 3 PP para transformá-la em um acerto crítico automático, causando o dano máximo dos dados.</p><p><strong>Requisito:</strong> 7 PA, Estágio Perito e "Imposição do Rei".</p><p><strong>Forma Dominada (✩):</strong> Pontos de dano causados por você não podem ser recuperados de nenhuma forma até o fim do encontro.</p><p><strong>Forma Avançada (★):</strong> Condições causadas por você não podem ser encerradas por Salvaguardas ou outras características — duram até o fim de sua duração natural.</p>
+    chat: ''
+  identifier: armamento-do-rei
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki do Rei · Perito · 7 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 7
+    hakiType: rei
+    hakiStage: perito
+    prereq:
+      - imposicao-do-rei
+_key: '!items!yEiivDIFyTMS7WxK'
+ownership:
+  default: 0

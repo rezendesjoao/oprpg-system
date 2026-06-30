@@ -1,0 +1,28 @@
+_id: YE1DcYx4zpkRpfSg
+name: Vontade do Rei
+type: feat
+img: icons/magic/control/fear-fright-monster-purple.webp
+system:
+  description:
+    value: <p>Ao cair inconsciente com 0 PV, após o seu 5º turno desacordado você pode recuperar todos os PV e metade dos PP, voltando à batalha. Dois minutos depois, recebe "Paralisado" por 1 hora e 5 Níveis de Exaustão (recupera 1 por descanso longo, com tempo dobrado).</p><p><strong>Requisito:</strong> 6 PA, Estágio Treinado e "Rei".</p><p><strong>Forma Dominada (✩):</strong> Pode terminar os descansos longos no tempo normal.</p><p><strong>Forma Avançada (★):</strong> O tempo de turnos desacordado reduz para 2.</p>
+    chat: ''
+  identifier: vontade-do-rei
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki do Rei · Treinado · 6 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 6
+    hakiType: rei
+    hakiStage: treinado
+    prereq:
+      - rei
+_key: '!items!YE1DcYx4zpkRpfSg'
+ownership:
+  default: 0

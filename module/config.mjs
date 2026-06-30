@@ -1829,6 +1829,9 @@ DND5E.featureTypes = {
   profissao: {
     label: "DND5E.Feature.OP.Profissao"
   },
+  haki: {
+    label: "DND5E.Feature.OP.Haki"
+  },
   class: {
     label: "DND5E.Feature.Class.Label",
     subtypes: {

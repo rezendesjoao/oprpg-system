@@ -278,6 +278,18 @@ export default class CharacterData extends CreatureTemplate {
         })
       }, { label: "ONEPIECE.DevilFruit.Label" }),
 
+      // Haki (Cap. 7) — One Piece. Pontos de Ambição (PA) + Talentos. A maior parte é
+      // DERIVADA em prepareDerivedData(): PA ganho por nível, PA gasto = soma do custo dos
+      // Talentos possuídos (feats com flag hakiTalent), e o Estágio. Aqui só o que persiste.
+      haki: new SchemaField({
+        awakened:     new BooleanField({ initial: false }),                           // Haki desperto (8º nível ou prematuro)
+        aptidao:      new StringField({ required: true, initial: "", blank: true }),  // afinidade do 1º nível: armamento|observacao|rei
+        principal:    new StringField({ required: true, initial: "", blank: true }),  // Haki Principal escolhido ao despertar: armamento|observacao
+        reiAvailable: new BooleanField({ initial: false }),                           // pode investir no Haki do Rei (singularidade "Ambição do Rei"/Narrador)
+        paBonus:      new NumberField({ required: true, nullable: false, integer: true, min: 0, initial: 0, label: "ONEPIECE.Haki.PaBonus" }),    // PA extra concedido pelo Narrador
+        paConverted:  new NumberField({ required: true, nullable: false, integer: true, min: 0, initial: 0 })  // PA gastos permanentemente em conversões (PV/PP — "Pontos Sobressalentes")
+      }, { label: "ONEPIECE.Haki.Label" }),
+
       favorites: new ArrayField(new SchemaField({
         type: new StringField({ required: true, blank: false }),
         id: new StringField({ required: true, blank: false }),
@@ -479,6 +491,42 @@ export default class CharacterData extends CreatureTemplate {
     // Pontos de Manifestação (virtuais) disponíveis = máximo − gastos
     this.devilFruit.mp.spent = Math.min(this.devilFruit.mp.spent ?? 0, this.devilFruit.mp.max ?? 0);
     this.devilFruit.mp.available = Math.max(0, (this.devilFruit.mp.max ?? 0) - (this.devilFruit.mp.spent ?? 0));
+
+    // ── Haki (Cap. 7) ─────────────────────────────────────────────────────────
+    // PA ganho (regra 7.1): 5 no 8º nível + 12 por nível posterior; +2 da aptidão ao
+    // despertar; +2/nível a partir do 10º com Haki do Rei ("Ambição Crescente"); + bônus
+    // do Narrador (paBonus, que também cobre o Despertar Prematuro antes do 8º nível).
+    const hk = this.haki;
+    let paEarned = hk.paBonus ?? 0;
+    if ( hk.awakened ) {
+      if ( level >= 8 ) paEarned += 5 + (12 * (level - 8));
+      paEarned += 2;                                                       // aptidão (tipo escolhido)
+      if ( hk.reiAvailable && level >= 10 ) paEarned += 2 * (level - 9);   // Ambição Crescente (Haki do Rei)
+    }
+    // PA gastos = soma do custo dos Talentos de Haki possuídos (feats com flag hakiTalent).
+    // Na mesma passada, detecta "Endurecimento Defensivo" para os Pontos de Escudo (Cap. 7).
+    let paSpent = 0, hasEndurecimento = false;
+    for ( const it of (this.parent?.items ?? []) ) {
+      const f = it.flags?.["onepiece-system"];
+      if ( !f?.hakiTalent ) continue;
+      paSpent += (f.paCost ?? 0);
+      if ( it.system?.identifier === "endurecimento-defensivo" ) hasEndurecimento = true;
+    }
+    hk.paEarned = paEarned;
+    hk.paSpent = paSpent;
+    hk.paAvailable = Math.max(0, paEarned - paSpent - (hk.paConverted ?? 0));
+    // Estágio pelo total investido em Talentos (tabela "Estágio do Usuário", regra 7.2).
+    hk.stage = paSpent >= 71 ? "perito" : paSpent >= 21 ? "treinado" : "inexperiente";
+    // CD do Haki do Rei = 8 + Proficiência + mod. de Vontade (int). Exibida na aba.
+    hk.kingDC = 8 + (this.attributes?.prof ?? 0) + (this.abilities?.int?.mod ?? 0);
+
+    // Pontos de Escudo (Talento "Endurecimento Defensivo" — 20 base; Dominada/Avançada
+    // 40/60 ficam descritas no talento). Soma ao máximo de armorPoints (já reaproveitado
+    // como Pontos de Escudo na aplicação de dano). O valor atual é (re)preenchido na aba.
+    if ( hasEndurecimento ) {
+      this.armorPoints.max = (this.armorPoints.max ?? 0) + 20;
+      this.armorPoints.value = Math.min(this.armorPoints.value ?? 0, this.armorPoints.max);
+    }
   }
 
   /* -------------------------------------------- */

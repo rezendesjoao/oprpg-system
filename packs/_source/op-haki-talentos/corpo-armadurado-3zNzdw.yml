@@ -1,0 +1,28 @@
+_id: 3zNzdwYZ7gd6GOVr
+name: Corpo Armadurado
+type: feat
+img: icons/equipment/hand/gauntlet-armored-steel-grey.webp
+system:
+  description:
+    value: '<p>Ação bônus: por 1 minuto, qualquer Salvaguarda que você faça recebe +2 no resultado. Não pode ser usada novamente até um descanso longo.</p><p><strong>Requisito:</strong> 4 PA, Estágio Treinado e "Escudo de Vontade".</p><p><strong>Forma Dominada (✩):</strong> Enquanto ativo, os Pontos de Escudo de "Endurecimento Defensivo" aumentam em +20.</p><p><strong>Forma Avançada (★):</strong> Enquanto ativo, o dado de "Endurecimento Ofensivo" aumenta um passo (1 → 1d4 → 1d6 → 1d8).</p>'
+    chat: ''
+  identifier: corpo-armadurado
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki do Armamento · Treinado · 4 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 4
+    hakiType: armamento
+    hakiStage: treinado
+    prereq:
+      - escudo-de-vontade
+_key: '!items!3zNzdwYZ7gd6GOVr'
+ownership:
+  default: 0

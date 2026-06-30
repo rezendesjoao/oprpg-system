@@ -1,0 +1,72 @@
+/* op-haki.css — Aba "Haki" da ficha (One Piece, Cap. 7).
+ * Tema neutro/taupe (base do sistema) com acentos: dourado p/ disponível,
+ * verde p/ aprendido, esmaecido p/ bloqueado. CSS puro (sem build). */
+
+.haki-tab { gap: 8px; padding: 6px 8px; }
+
+.haki-header { display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--jj-border, #c9bdae); padding-bottom: 6px; }
+.haki-header i { color: #b08a5a; font-size: 18px; }
+.haki-header h2 { margin: 0; flex: 0 0 auto; font-size: 18px; }
+.haki-badge { margin-left: auto; font-size: 11px; padding: 2px 8px; border-radius: 8px; }
+.haki-badge.is-on { background: #2e7d56; color: #fff; }
+.haki-badge.is-off { background: #6f655a; color: #efe7da; }
+
+/* Configuração */
+.haki-config { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; background: rgba(159,143,128,.12); border: 1px solid var(--jj-border, #c9bdae); border-radius: 8px; padding: 8px 10px; }
+.haki-config .haki-field { display: flex; flex-direction: column; gap: 2px; }
+.haki-config .haki-field-narrow { width: 96px; }
+.haki-config .haki-field label { font-size: 11px; color: #6f655a; }
+.haki-config select, .haki-config input[type="number"] { height: 26px; }
+.haki-check { display: flex; align-items: center; gap: 5px; font-size: 12px; cursor: pointer; }
+.haki-check input { margin: 0; }
+
+/* Resumo de PA */
+.haki-pa-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.haki-stat { display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(159,143,128,.14); border: 1px solid var(--jj-border, #c9bdae); border-radius: 8px; padding: 6px 4px; }
+.haki-stat.is-avail { background: rgba(176,138,90,.20); border-color: #b08a5a; }
+.haki-stat-num { font-size: 20px; font-weight: 700; line-height: 1.1; color: #3a332b; }
+.haki-stat.is-avail .haki-stat-num { color: #8a5a1d; }
+.haki-stat-lbl { font-size: 10px; color: #6f655a; text-align: center; }
+
+.haki-stage-hint { margin: 0; font-size: 11px; color: #6f655a; }
+.haki-stage-hint i { color: #6fb0d4; }
+.haki-warn { margin: 0; font-size: 11px; color: #a4622a; }
+.haki-warn i { color: #c8862f; }
+
+/* Recursos: escudo, CD do Rei, conversões */
+.haki-resources { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding: 4px 0; }
+.haki-shield { display: flex; align-items: center; gap: 6px; }
+.haki-shield i { color: #6fb0d4; }
+.haki-shield-val { font-weight: 700; color: #3a332b; }
+.haki-shield-lbl { font-size: 11px; color: #6f655a; }
+.haki-kingdc { font-size: 12px; color: #3a332b; }
+.haki-kingdc i { color: #c8a341; }
+.haki-convert { display: flex; gap: 6px; margin-left: auto; }
+.haki-mini-btn { display: inline-flex; align-items: center; gap: 4px; width: auto; height: 24px; padding: 0 8px; font-size: 11px; border: 1px solid var(--jj-border, #c9bdae); border-radius: 6px; background: rgba(159,143,128,.14); cursor: pointer; }
+.haki-mini-btn:hover { background: rgba(176,138,90,.22); }
+.haki-mini-btn.is-disabled { opacity: .45; pointer-events: none; }
+
+/* Árvores de talentos */
+.haki-type { border: 1px solid var(--jj-border, #c9bdae); border-radius: 8px; overflow: hidden; }
+.haki-type-head { display: flex; align-items: center; gap: 6px; background: rgba(159,143,128,.18); padding: 5px 9px; font-weight: 600; font-size: 13px; }
+.haki-type-head i { color: #8a6a45; }
+.haki-type-inv { margin-left: auto; font-size: 11px; color: #6f655a; font-weight: 400; }
+.haki-talents { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 6px; padding: 8px; }
+
+.haki-talent { display: flex; align-items: center; gap: 8px; padding: 5px 7px; border: 1px solid var(--jj-border, #c9bdae); border-radius: 7px; background: rgba(255,255,255,.4); cursor: pointer; transition: border-color .12s, background .12s; }
+.haki-talent:hover { border-color: #b08a5a; }
+.haki-talent-img { width: 30px; height: 30px; border: none; border-radius: 5px; object-fit: cover; flex: 0 0 auto; }
+.haki-talent-info { display: flex; flex-direction: column; min-width: 0; flex: 1; }
+.haki-talent-name { font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.haki-talent-meta { font-size: 10px; color: #6f655a; }
+.haki-talent-state { flex: 0 0 auto; width: 18px; text-align: center; }
+
+.haki-talent.is-owned { background: rgba(46,125,86,.12); border-color: #2e7d56; }
+.haki-talent.is-owned .haki-talent-state i { color: #2e7d56; }
+.haki-talent.is-open { background: rgba(200,163,65,.14); border-color: #c8a341; }
+.haki-talent.is-open .haki-talent-state i { color: #b08a1d; }
+.haki-talent.is-locked { opacity: .55; cursor: default; }
+.haki-talent.is-locked:hover { border-color: var(--jj-border, #c9bdae); }
+.haki-talent.is-locked .haki-talent-state i { color: #8a8073; }
+
+.haki-manage-info { margin: 2px 0 0; font-size: 10px; color: #8a8073; font-style: italic; }

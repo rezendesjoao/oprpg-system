@@ -1,0 +1,107 @@
+<section class="tab haki-tab flexcol {{ tab.cssClass }}" data-tab="{{ tab.id }}" data-group="{{ tab.group }}">
+
+  {{!-- Cabeçalho --}}
+  <div class="haki-header">
+    <i class="fas fa-hand-sparkles"></i>
+    <h2>{{ localize "ONEPIECE.Haki.Label" }}</h2>
+    {{#if haki.awakened}}
+    <span class="haki-badge is-on">{{ localize "ONEPIECE.Haki.Awakened" }}</span>
+    {{else}}
+    <span class="haki-badge is-off">{{ localize "ONEPIECE.Haki.NotAwakened" }}</span>
+    {{/if}}
+  </div>
+
+  {{#if editable}}
+  {{!-- Configuração (Narrador / 1º nível) --}}
+  <div class="haki-config">
+    <label class="haki-check">
+      <input type="checkbox" data-haki-edit="system.haki.awakened" {{#if haki.awakened}}checked{{/if}}>
+      <span>{{ localize "ONEPIECE.Haki.Awakened" }}</span>
+    </label>
+    <div class="haki-field">
+      <label>{{ localize "ONEPIECE.Haki.Aptidao" }}</label>
+      <select data-haki-edit="system.haki.aptidao">
+        <option value="" {{#if (eq haki.aptidao "")}}selected{{/if}}>—</option>
+        <option value="armamento" {{#if (eq haki.aptidao "armamento")}}selected{{/if}}>{{ localize "ONEPIECE.Haki.TypeArmamento" }}</option>
+        <option value="observacao" {{#if (eq haki.aptidao "observacao")}}selected{{/if}}>{{ localize "ONEPIECE.Haki.TypeObservacao" }}</option>
+        <option value="rei" {{#if (eq haki.aptidao "rei")}}selected{{/if}}>{{ localize "ONEPIECE.Haki.TypeRei" }}</option>
+      </select>
+    </div>
+    <div class="haki-field">
+      <label>{{ localize "ONEPIECE.Haki.Principal" }}</label>
+      <select data-haki-edit="system.haki.principal">
+        <option value="" {{#if (eq haki.principal "")}}selected{{/if}}>—</option>
+        <option value="armamento" {{#if (eq haki.principal "armamento")}}selected{{/if}}>{{ localize "ONEPIECE.Haki.TypeArmamento" }}</option>
+        <option value="observacao" {{#if (eq haki.principal "observacao")}}selected{{/if}}>{{ localize "ONEPIECE.Haki.TypeObservacao" }}</option>
+      </select>
+    </div>
+    <label class="haki-check" data-tooltip="{{ localize "ONEPIECE.Haki.ReiHint" }}">
+      <input type="checkbox" data-haki-edit="system.haki.reiAvailable" {{#if haki.reiAvailable}}checked{{/if}}>
+      <span>{{ localize "ONEPIECE.Haki.ReiAvailable" }}</span>
+    </label>
+    <div class="haki-field haki-field-narrow" data-tooltip="{{ localize "ONEPIECE.Haki.PaBonusHint" }}">
+      <label>{{ localize "ONEPIECE.Haki.PaBonus" }}</label>
+      <input type="number" min="0" step="1" data-haki-edit="system.haki.paBonus" value="{{ haki.paBonus }}">
+    </div>
+  </div>
+  {{/if}}
+
+  {{!-- Resumo de Pontos de Ambição --}}
+  <div class="haki-pa-grid">
+    <div class="haki-stat"><span class="haki-stat-num">{{ haki.paEarned }}</span><span class="haki-stat-lbl">{{ localize "ONEPIECE.Haki.PaEarned" }}</span></div>
+    <div class="haki-stat"><span class="haki-stat-num">{{ haki.paSpent }}</span><span class="haki-stat-lbl">{{ localize "ONEPIECE.Haki.PaSpent" }}</span></div>
+    <div class="haki-stat is-avail"><span class="haki-stat-num">{{ haki.paAvailable }}</span><span class="haki-stat-lbl">{{ localize "ONEPIECE.Haki.PaAvailable" }}</span></div>
+    <div class="haki-stat"><span class="haki-stat-num">{{ haki.stageLabel }}</span><span class="haki-stat-lbl">{{ localize "ONEPIECE.Haki.Stage" }}</span></div>
+  </div>
+
+  <p class="haki-stage-hint"><i class="fas fa-circle-info"></i> {{ localize haki.stageHintKey }}</p>
+  {{#if haki.paIdle}}<p class="haki-warn"><i class="fas fa-triangle-exclamation"></i> {{ localize "ONEPIECE.Haki.PaIdleWarning" }}</p>{{/if}}
+
+  {{!-- Barra de recursos: Escudo, CD do Rei, conversões --}}
+  <div class="haki-resources">
+    <div class="haki-shield">
+      <i class="fas fa-shield-halved"></i>
+      <span class="haki-shield-val">{{ haki.shield.value }} / {{ haki.shield.max }}</span>
+      <span class="haki-shield-lbl">{{ localize "ONEPIECE.Haki.ShieldPoints" }}</span>
+      {{#if editable}}<button type="button" class="haki-mini-btn" data-action="haki-refresh-shield" data-tooltip="{{ localize "ONEPIECE.Haki.RefreshShield" }}"><i class="fas fa-rotate"></i></button>{{/if}}
+    </div>
+    {{#if haki.reiAvailable}}
+    <div class="haki-kingdc"><i class="fas fa-crown"></i> {{ localize "ONEPIECE.Haki.KingDC" }}: <strong>{{ haki.kingDC }}</strong></div>
+    {{/if}}
+    {{#if editable}}
+    <div class="haki-convert">
+      <button type="button" class="haki-mini-btn {{#unless haki.canConvertHP}}is-disabled{{/unless}}" data-action="haki-convert-hp"><i class="fas fa-heart"></i> {{ localize "ONEPIECE.Haki.ConvertHP" }}</button>
+      <button type="button" class="haki-mini-btn {{#unless haki.canConvertPP}}is-disabled{{/unless}}" data-action="haki-convert-pp"><i class="fas fa-bolt"></i> {{ localize "ONEPIECE.Haki.ConvertPP" }}</button>
+    </div>
+    {{/if}}
+  </div>
+
+  {{!-- Árvores de Talentos por tipo --}}
+  {{#each haki.types as |type|}}
+  <div class="haki-type">
+    <div class="haki-type-head"><i class="{{ type.icon }}"></i> <span>{{ type.label }}</span> <span class="haki-type-inv">{{ type.invested }} PA</span></div>
+    <div class="haki-talents">
+      {{#each type.talents as |t|}}
+      <div class="haki-talent {{#if t.owned}}is-owned{{else if t.canLearn}}is-open{{else}}is-locked{{/if}}"
+           data-action="haki-entry" data-uuid="{{ t.uuid }}" data-owned-id="{{ t.ownedId }}"
+           data-can-learn="{{ t.canLearn }}" data-lock-reason="{{ t.lockReason }}"
+           data-tooltip="{{#if t.owned}}{{ localize "ONEPIECE.Haki.OpenTalent" }}{{else if t.canLearn}}{{ localize "ONEPIECE.Haki.Learn" }} — {{ t.cost }} PA{{else}}{{ t.lockReason }}{{/if}}">
+        <img class="haki-talent-img" src="{{ t.img }}" alt="{{ t.name }}">
+        <div class="haki-talent-info">
+          <span class="haki-talent-name">{{ t.name }}</span>
+          <span class="haki-talent-meta">{{ t.stageLabel }} · {{ t.cost }} PA</span>
+        </div>
+        <span class="haki-talent-state">
+          {{#if t.owned}}<i class="fas fa-check"></i>
+          {{else if t.canLearn}}<i class="fas fa-plus"></i>
+          {{else}}<i class="fas fa-lock"></i>{{/if}}
+        </span>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+  {{/each}}
+
+  <p class="haki-manage-info">{{ localize "ONEPIECE.Haki.ManageInfo" }}</p>
+
+</section>

@@ -1,0 +1,28 @@
+_id: fikLAvFtWNZaaFEH
+name: Previsão Especial
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  description:
+    value: <p>Ao fazer uma jogada de ataque (comum), você ignora qualquer reação que seria ativada pela sua ação de ataque, e a criatura perde a reação até o início do próximo turno.</p><p><strong>Requisito:</strong> 5 PA, Estágio Perito e "Previsão Sobrenatural".</p><p><strong>Forma Dominada (✩):</strong> Escolha uma característica da Maestria "Profeta" ou "Imaculado" (sem receber PA dela).</p>
+    chat: ''
+  identifier: previsao-especial
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki da Observação · Perito · 5 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 5
+    hakiType: observacao
+    hakiStage: perito
+    prereq:
+      - previsao-sobrenatural
+_key: '!items!fikLAvFtWNZaaFEH'
+ownership:
+  default: 0

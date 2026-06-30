@@ -24,6 +24,7 @@ import {
 } from "./jj/manipulation-handlers.mjs";
 // ── One Piece: Akuma no Mi ───────────────────────────────────────────────────
 import { prepareAkumaContext, setupAkumaTab } from "./jj/akuma.mjs";
+import { prepareHakiContext, setupHakiTab } from "./jj/haki.mjs";
 // módulos de side-effects (registram Hooks no import)
 import "./jj/estagio-desperto.mjs";
 import "./jj/executor.mjs";
@@ -136,6 +137,12 @@ export default class CharacterActorSheet extends BaseActorSheet {
       template: "systems/onepiece-system/templates/actors/tabs/character-akuma.hbs",
       scrollable: [""]
     },
+    haki: {
+      classes: ["flexcol"],
+      container: { classes: ["tab-body"], id: "tabs" },
+      template: "systems/onepiece-system/templates/actors/tabs/character-haki.hbs",
+      scrollable: [""]
+    },
     abilityScores: {
       template: "systems/onepiece-system/templates/actors/character-ability-scores.hbs"
     },
@@ -179,6 +186,7 @@ export default class CharacterActorSheet extends BaseActorSheet {
   icon: "fas fa-apple-whole"
   // Aba Akuma no Mi sempre visível (mostra estado "sem fruta" quando o personagem não tem uma).
 },
+    { tab: "haki", label: "ONEPIECE.Haki.Tab", icon: "fas fa-hand-sparkles" },
     { tab: "biography", label: "DND5E.Biography", icon: "fas fa-feather" }
   ];
 
@@ -255,6 +263,7 @@ export default class CharacterActorSheet extends BaseActorSheet {
       case "specialTraits": return this._prepareSpecialTraitsContext(context, options);
       case "spells": return this._prepareSpellsContext(context, options);
       case "manipulation": return this._prepareAkumaContext(context, options);
+      case "haki": return this._prepareHakiContext(context, options);
       default: return context;
     }
   }
@@ -1083,6 +1092,7 @@ async _onRender(context, options) {
 
     // One Piece: aba Akuma no Mi — edição da fruta, MP e Estágio Desperto
     setupAkumaTab(this.element, this.actor);
+    setupHakiTab(this.element, this.actor);
 
     // Formatar inputs de Berries com pontuação (ex: 5000 → 5.000)
     const _formatYen = val => {
@@ -1582,6 +1592,15 @@ async _onRender(context, options) {
    */
   async _prepareAkumaContext(context, options) {
     return prepareAkumaContext(this.actor, context);
+  }
+
+  /* -------------------------------------------- */
+
+  /**
+   * Prepara o contexto da aba "Haki" (One Piece, Cap. 7).
+   */
+  async _prepareHakiContext(context, options) {
+    return prepareHakiContext(this.actor, context);
   }
 
   /* -------------------------------------------- */

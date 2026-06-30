@@ -1,0 +1,28 @@
+_id: mDIdB4dwtMQOHxl9
+name: Antecipar Movimentos
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  description:
+    value: <p>Gaste 2 PP para impedir que uma criatura a até 1,5 metro se levante, escale, salte ou use a reação; o deslocamento dela vira 0 até o início do próximo turno dela. Uma vez por rodada em cada criatura.</p><p><strong>Requisito:</strong> 4 PA, Estágio Perito e "Passo Antecipado".</p>
+    chat: ''
+  identifier: antecipar-movimentos
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki da Observação · Perito · 4 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 4
+    hakiType: observacao
+    hakiStage: perito
+    prereq:
+      - passo-antecipado
+_key: '!items!mDIdB4dwtMQOHxl9'
+ownership:
+  default: 0

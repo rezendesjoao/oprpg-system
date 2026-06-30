@@ -1,0 +1,28 @@
+_id: e3k7eoPuRm8OWPTX
+name: Ver o Futuro
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  description:
+    value: <p>Ao falhar em uma Salvaguarda ou jogada de ataque (comum), você pode optar por tratá-la como um sucesso. Até 3 usos, recuperados ao término de um descanso longo.</p><p><strong>Requisito:</strong> 5 PA, Estágio Perito e "Vidente".</p>
+    chat: ''
+  identifier: ver-o-futuro
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki da Observação · Perito · 5 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 5
+    hakiType: observacao
+    hakiStage: perito
+    prereq:
+      - vidente
+_key: '!items!e3k7eoPuRm8OWPTX'
+ownership:
+  default: 0

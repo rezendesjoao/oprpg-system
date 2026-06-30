@@ -1,0 +1,28 @@
+_id: 2lUSstUr7DZGhsqX
+name: Superação Majestosa
+type: feat
+img: icons/magic/control/fear-fright-monster-purple.webp
+system:
+  description:
+    value: '<p>Ação bônus: utilize novamente uma característica de uso limitado por dia ou descanso (ou um de seus usos). Não pode ser usada novamente até um descanso longo.</p><p><strong>Requisito:</strong> 6 PA, Estágio Treinado e "Rei".</p><p><strong>Forma Dominada (✩):</strong> Pode usar duas vezes antes de um descanso longo.</p>'
+    chat: ''
+  identifier: superacao-majestosa
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki do Rei · Treinado · 6 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 6
+    hakiType: rei
+    hakiStage: treinado
+    prereq:
+      - rei
+_key: '!items!2lUSstUr7DZGhsqX'
+ownership:
+  default: 0

@@ -126,6 +126,14 @@
       "flags": { "OnePiece": { "types": ["akumaNoMi", "spell", "feat"] } }
     },
     {
+      "name": "op-haki-talentos",
+      "label": "Haki — Talentos",
+      "path": "packs/op-haki-talentos",
+      "type": "Item",
+      "system": "onepiece-system",
+      "flags": { "OnePiece": { "types": ["feat"] } }
+    },
+    {
       "name": "tecnicas-manipulacao",
       "label": "Técnicas (Exemplos)",
       "path": "packs/tecnicas-manipulacao",
@@ -191,6 +199,9 @@
     },
     {
       "src": "less/op-akuma.css"
+    },
+    {
+      "src": "less/op-haki.css"
     },
     {
       "src": "less/op-character-creation.css"

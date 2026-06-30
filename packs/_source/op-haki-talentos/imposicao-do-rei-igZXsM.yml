@@ -1,0 +1,28 @@
+_id: igZXsMqQmlCw3t3t
+name: Imposição do Rei
+type: feat
+img: icons/magic/control/fear-fright-monster-purple.webp
+system:
+  description:
+    value: '<p>Ao acertar uma jogada de ataque (comum ou Técnicas), você pode derrotar instantaneamente criaturas com ND 2 ou inferior suscetíveis ao desmaio (ver "Desmaiando Inimigos"): a criatura cai a 0 PV, completamente inconsciente, e só se recupera após 1 hora.</p><p><strong>Requisito:</strong> 4 PA, Estágio Treinado e "Rei".</p><p><strong>Forma Dominada (✩):</strong> O ND máximo das criaturas afetadas aumenta para 4.</p><p><strong>Forma Avançada (★):</strong> O ND máximo aumenta para 6.</p>'
+    chat: ''
+  identifier: imposicao-do-rei
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki do Rei · Treinado · 4 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 4
+    hakiType: rei
+    hakiStage: treinado
+    prereq:
+      - rei
+_key: '!items!igZXsMqQmlCw3t3t'
+ownership:
+  default: 0

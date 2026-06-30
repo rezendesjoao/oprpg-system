@@ -1,0 +1,28 @@
+_id: buzlk8s1gpO06rUH
+name: Emissão Defensiva
+type: feat
+img: icons/equipment/hand/gauntlet-armored-steel-grey.webp
+system:
+  description:
+    value: '<p>Reação ao ser alvo de uma jogada de ataque (comum ou Técnicas) ou de Salvaguarda de Força/Destreza: emite uma barreira que protege você e as criaturas num cone de 6 metros à sua frente e atrás, anulando todo o dano. Não pode ser usada novamente até um descanso longo.</p><p><strong>Requisito:</strong> 4 PA, Estágio Treinado e "Endurecimento Defensivo".</p><p><strong>Forma Dominada (✩):</strong> Recupera também em descansos curtos.</p><p><strong>Forma Avançada (★):</strong> Contra ataques corpo a corpo, pode repelir o ataque antes que ocorra, cancelando-o e encerrando imediatamente o turno do atacante.</p>'
+    chat: ''
+  identifier: emissao-defensiva
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki do Armamento · Treinado · 4 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 4
+    hakiType: armamento
+    hakiStage: treinado
+    prereq:
+      - endurecimento-defensivo
+_key: '!items!buzlk8s1gpO06rUH'
+ownership:
+  default: 0

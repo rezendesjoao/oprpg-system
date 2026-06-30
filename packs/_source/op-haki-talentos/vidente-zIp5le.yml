@@ -1,0 +1,28 @@
+_id: zIp5leNS03BLZCFk
+name: Vidente
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  description:
+    value: <p>No início de cada dia (após um descanso longo), role 1d20 e anote. Até o próximo descanso longo, pode substituir o resultado de qualquer Teste de Atributo ou Salvaguarda (sua ou de criatura que possa ver) por esse valor.</p><p><strong>Requisito:</strong> 2 PA, Estágio Treinado e "Clarividência".</p><p><strong>Forma Dominada (✩):</strong> Rola e guarda 2 dados por descanso longo.</p>
+    chat: ''
+  identifier: vidente
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki da Observação · Treinado · 2 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 2
+    hakiType: observacao
+    hakiStage: treinado
+    prereq:
+      - clarividencia
+_key: '!items!zIp5leNS03BLZCFk'
+ownership:
+  default: 0

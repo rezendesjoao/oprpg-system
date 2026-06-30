@@ -1,0 +1,29 @@
+_id: hMjYkZk6Kjj2fIUS
+name: Emissão de Autoridade
+type: feat
+img: icons/magic/control/fear-fright-monster-purple.webp
+system:
+  description:
+    value: '<p>Ação: escolha uma criatura a até 120 metros que possa ver ou sentir pelo Haki da Observação e imponha uma Salvaguarda de Vontade CD 18. Em sucesso, ela recebe desvantagem em uma jogada à sua escolha; em falha, no próximo turno dela perde o deslocamento e só pode fazer uma entre Ação, Ação Poderosa, Ação Bônus ou Reação.</p><p><strong>Requisito:</strong> 5 PA, Estágio Perito e "Imposição do Rei", "Vontade do Rei".</p>'
+    chat: ''
+  identifier: emissao-de-autoridade
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki do Rei · Perito · 5 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 5
+    hakiType: rei
+    hakiStage: perito
+    prereq:
+      - imposicao-do-rei
+      - vontade-do-rei
+_key: '!items!hMjYkZk6Kjj2fIUS'
+ownership:
+  default: 0

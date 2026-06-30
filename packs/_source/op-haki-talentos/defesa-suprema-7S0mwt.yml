@@ -1,0 +1,29 @@
+_id: 7S0mwt2xmKGgv5TQ
+name: Defesa Suprema
+type: feat
+img: icons/equipment/hand/gauntlet-armored-steel-grey.webp
+system:
+  description:
+    value: '<p>Reação ao sofrer dano, gastando 2 PP: mantém qualquer resistência ou invulnerabilidade (exceto contra dano "Verdadeiro") — um efeito absoluto que supera qualquer outro.</p><p><strong>Requisito:</strong> 3 PA, Estágio Perito e "Emissão Defensiva", "Corpo Armadurado".</p><p><strong>Forma Dominada (✩):</strong> Não gasta PP e o efeito dura até o início do seu próximo turno.</p><p><strong>Forma Avançada (★):</strong> Pode executar uma jogada de ataque (comum) como parte da mesma reação.</p>'
+    chat: ''
+  identifier: defesa-suprema
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki do Armamento · Perito · 3 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 3
+    hakiType: armamento
+    hakiStage: perito
+    prereq:
+      - emissao-defensiva
+      - corpo-armadurado
+_key: '!items!7S0mwt2xmKGgv5TQ'
+ownership:
+  default: 0

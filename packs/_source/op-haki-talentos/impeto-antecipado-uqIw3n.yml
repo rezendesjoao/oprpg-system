@@ -1,0 +1,28 @@
+_id: uqIw3nbgdHECd6og
+name: Ímpeto Antecipado
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  description:
+    value: <p>Ao usar uma Técnica de Combate que cause dano direto e exija uma Ação Poderosa, você pode fazer uma jogada de ataque (comum) adicional contra o alvo da Técnica, como parte da mesma Ação Poderosa. Até 3 usos por descanso longo (acumulativo com "Ímpeto Desperto", das Akuma no Mi).</p><p><strong>Requisito:</strong> 5 PA, Estágio Perito e "Previsão Sobrenatural".</p><p><strong>Forma Dominada (✩):</strong> Passa a não ter mais limitação de uso.</p>
+    chat: ''
+  identifier: impeto-antecipado
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki da Observação · Perito · 5 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 5
+    hakiType: observacao
+    hakiStage: perito
+    prereq:
+      - previsao-sobrenatural
+_key: '!items!uqIw3nbgdHECd6og'
+ownership:
+  default: 0

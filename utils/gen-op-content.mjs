@@ -14,6 +14,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import YAML from "js-yaml";
 import { CLASSES, SPECIES, BACKGROUNDS, CAMINHOS, SINGULARIDADES, DEFEITOS, CODIGOS, PROFISSOES, EQUIPMENT, AKUMAS } from "./op-data.mjs";
+import { HAKI } from "./op-haki-data.mjs";
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SRC = path.join(ROOT, "packs", "_source");
@@ -58,7 +59,7 @@ function slug(s) { return String(s).toLowerCase().normalize("NFD").replace(/[̀-
 const written = {
   "op-classes": 0, "op-subclasses": 0, "op-features": 0, "op-techniques": 0, "op-species": 0,
   "op-backgrounds": 0, "op-caminhos": 0, "op-singularidades": 0, "op-defeitos": 0, "op-codigos": 0,
-  "op-profissoes": 0, "op-equipment": 0, "op-akuma-no-mi": 0
+  "op-profissoes": 0, "op-equipment": 0, "op-akuma-no-mi": 0, "op-haki-talentos": 0
 };
 function writeDoc(pack, doc) {
   const dir = path.join(SRC, pack);
@@ -478,6 +479,45 @@ function personalizacaoItem(entry, typeValue) {
   return item;
 }
 
+/* -------------------------------------------- */
+/*  Haki (Cap. 7)                               */
+/* -------------------------------------------- */
+
+const HAKI_ICON = {
+  armamento:  "icons/equipment/hand/gauntlet-armored-steel-grey.webp",
+  observacao: "icons/magic/perception/eye-ringed-glow-angry-red.webp",
+  rei:        "icons/magic/control/fear-fright-monster-purple.webp"
+};
+const HAKI_TYPE_LABEL  = { armamento: "Haki do Armamento", observacao: "Haki da Observação", rei: "Haki do Rei" };
+const HAKI_STAGE_LABEL = { inexperiente: "Inexperiente", treinado: "Treinado", perito: "Perito" };
+
+// Talento de Haki = feat (featureType "haki") no pack op-haki-talentos. As flags sob o
+// scope real "onepiece-system" (lidas por acesso direto na ficha) marcam o talento e seu
+// custo: o personagem deriva PA gasto + Estágio dos talentos possuídos. O identifier é o
+// slug do nome (casa com os `prereq`). "Endurecimento Defensivo" aciona os Pontos de Escudo.
+function hakiTalentItem(t) {
+  const prereqNames = t.prereq || [];
+  let reqLine;
+  if ( t.cost === 0 ) reqLine = "Concedido ao revelar o Haki do Rei (sem custo de PA).";
+  else {
+    reqLine = `${t.cost} PA, Estágio ${HAKI_STAGE_LABEL[t.stage]}`;
+    if ( prereqNames.length ) reqLine += ` e ${prereqNames.map(n => `"${n}"`).join(", ")}`;
+    reqLine += ".";
+  }
+  let html = t.desc || `<p>${t.name}</p>`;
+  html += `<p><strong>Requisito:</strong> ${reqLine}</p>`;
+  if ( t.dominada ) html += `<p><strong>Forma Dominada (✩):</strong> ${t.dominada}</p>`;
+  if ( t.avancada ) html += `<p><strong>Forma Avançada (★):</strong> ${t.avancada}</p>`;
+  const reqLabel = `${HAKI_TYPE_LABEL[t.type]} · ${HAKI_STAGE_LABEL[t.stage]} · ${t.cost} PA`;
+  const item = featItem({ code: `HAKI-${t.type.toUpperCase()}`, name: t.name, desc: html, level: 0, requirements: reqLabel });
+  item.system.type = { value: "haki", subtype: "" };
+  item.img = t.img || HAKI_ICON[t.type] || "icons/sundries/scrolls/scroll-bound-red.webp";
+  item.flags = { "onepiece-system": {
+    hakiTalent: true, paCost: t.cost, hakiType: t.type, hakiStage: t.stage, prereq: prereqNames.map(slug)
+  } };
+  return item;
+}
+
 // DamageData completa a partir de {number,denomination,types}. Sem dano → campos nulos.
 function mkDmg(d) {
   return {
@@ -640,5 +680,7 @@ for ( const e of EQUIPMENT )       writeDoc("op-equipment",      equipmentItem(e
 
 // Akuma no Mi — frutas + técnicas automatizadas + manifestações
 for ( const fruit of AKUMAS )      writeAkuma(fruit);
+
+for ( const t of HAKI )            writeDoc("op-haki-talentos", hakiTalentItem(t));
 
 console.log("Gerado:", JSON.stringify(written, null, 0));

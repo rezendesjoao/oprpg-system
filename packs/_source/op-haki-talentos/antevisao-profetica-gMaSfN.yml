@@ -1,0 +1,29 @@
+_id: gMaSfNH3IGKmBF2n
+name: Antevisão Profética
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  description:
+    value: <p>Uma vez por rodada, ao realizar uma Técnica ou característica com a sua reação, você pode executar outra Técnica ou característica (com requisito de reação) como parte da mesma reação — sem repetir a anterior nem causar dano. Não pode ser usada novamente até um descanso longo.</p><p><strong>Requisito:</strong> 5 PA, Estágio Perito e "Antecipar Movimentos", "Antevisão Especial".</p><p><strong>Forma Dominada (✩):</strong> Até 3 usos, recuperados em descanso longo.</p><p><strong>Forma Avançada (★):</strong> Até 5 usos, recuperados em descanso curto ou longo.</p>
+    chat: ''
+  identifier: antevisao-profetica
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki da Observação · Perito · 5 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 5
+    hakiType: observacao
+    hakiStage: perito
+    prereq:
+      - antecipar-movimentos
+      - antevisao-especial
+_key: '!items!gMaSfNH3IGKmBF2n'
+ownership:
+  default: 0

@@ -1,0 +1,27 @@
+_id: ZRRuaWah6bH2mvJZ
+name: Ataque Infuso
+type: feat
+img: icons/equipment/hand/gauntlet-armored-steel-grey.webp
+system:
+  description:
+    value: '<p>Suas jogadas de ataque (comum ou Técnicas) e o dano Contundente, Cortante ou Perfurante (ou outro tipo, a critério do Narrador) afetam normalmente usuários de Akuma no Mi, ignorando o Aspecto Inato "Intangibilidade", resistências e invulnerabilidades — exceto resistências não-sobrenaturais de Zoan. O benefício se aplica a uma forma de ataque à sua escolha: desarmado, arma corpo a corpo ou à distância.</p><p><strong>Requisito:</strong> 5 PA, Estágio Inexperiente.</p><p><strong>Forma Dominada (✩):</strong> Escolha uma forma de ataque adicional.</p><p><strong>Forma Avançada (★):</strong> Escolha uma forma de ataque adicional.</p>'
+    chat: ''
+  identifier: ataque-infuso
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki do Armamento · Inexperiente · 5 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 5
+    hakiType: armamento
+    hakiStage: inexperiente
+    prereq: []
+_key: '!items!ZRRuaWah6bH2mvJZ'
+ownership:
+  default: 0

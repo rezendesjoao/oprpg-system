@@ -1,0 +1,28 @@
+_id: xzEkL6IeU01iIKcF
+name: Chama do Armamento
+type: feat
+img: icons/equipment/hand/gauntlet-armored-steel-grey.webp
+system:
+  description:
+    value: <p>Ao usar "Endurecimento Ofensivo", você pode converter o dano adicional dele para o tipo Fogo.</p><p><strong>Requisito:</strong> 2 PA, Estágio Treinado e "Ataque Infuso".</p><p><strong>Forma Dominada (✩):</strong> Suas Técnicas não causam menos que metade do dano máximo possível; além disso, até metade do dano total pode ter o tipo convertido para Fogo.</p><p><strong>Forma Avançada (★):</strong> Ao executar uma Técnica, role dados adicionais iguais ao grau dela (dobrados em acertos críticos), sem ultrapassar o máximo possível.</p>
+    chat: ''
+  identifier: chama-do-armamento
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki do Armamento · Treinado · 2 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 2
+    hakiType: armamento
+    hakiStage: treinado
+    prereq:
+      - ataque-infuso
+_key: '!items!xzEkL6IeU01iIKcF'
+ownership:
+  default: 0

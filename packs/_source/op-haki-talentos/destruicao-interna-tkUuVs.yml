@@ -1,0 +1,28 @@
+_id: tkUuVsriqI1H5ReZ
+name: Destruição Interna
+type: feat
+img: icons/equipment/hand/gauntlet-armored-steel-grey.webp
+system:
+  description:
+    value: <p>Suas jogadas de ataque (comum ou Técnicas) com dano Contundente, Cortante ou Perfurante passam a causar dano do tipo "Verdadeiro".</p><p><strong>Requisito:</strong> 5 PA, Estágio Perito e "Emissão Ofensiva".</p><p><strong>Forma Dominada (✩):</strong> Escolha uma característica da Maestria "Armamento Máximo" ou "Imaculado" (sem receber PA dela).</p>
+    chat: ''
+  identifier: destruicao-interna
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki do Armamento · Perito · 5 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 5
+    hakiType: armamento
+    hakiStage: perito
+    prereq:
+      - emissao-ofensiva
+_key: '!items!tkUuVsriqI1H5ReZ'
+ownership:
+  default: 0

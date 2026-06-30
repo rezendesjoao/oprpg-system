@@ -1,0 +1,28 @@
+_id: LgwuQuljUOyNz1RM
+name: Armadura Suprema
+type: feat
+img: icons/equipment/hand/gauntlet-armored-steel-grey.webp
+system:
+  description:
+    value: <p>Sempre que sofrer dano de um ataque (comum) corpo a corpo de uma criatura sem "Emissão Ofensiva", ela sofre 1d10 de dano Contundente.</p><p><strong>Requisito:</strong> 6 PA, Estágio Perito e "Emissão Defensiva".</p><p><strong>Forma Dominada (✩):</strong> Enquanto puder usar o Haki do Armamento, fica imune aos efeitos de acertos críticos em ataques (comum), recebendo dano normal.</p><p><strong>Forma Avançada (★):</strong> Os Pontos de Escudo de "Endurecimento Defensivo" (Forma Avançada) sobem para 80 e contam como parte do seu PV máximo, reduzido primeiro.</p>
+    chat: ''
+  identifier: armadura-suprema
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki do Armamento · Perito · 6 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 6
+    hakiType: armamento
+    hakiStage: perito
+    prereq:
+      - emissao-defensiva
+_key: '!items!LgwuQuljUOyNz1RM'
+ownership:
+  default: 0

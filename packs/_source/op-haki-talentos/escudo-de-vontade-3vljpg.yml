@@ -1,0 +1,28 @@
+_id: 3vljpgCkNKKq3lXl
+name: Escudo de Vontade
+type: feat
+img: icons/equipment/hand/gauntlet-armored-steel-grey.webp
+system:
+  description:
+    value: '<p>Ação: Salvaguarda de Vontade CD 21. Em sucesso, desfaz qualquer característica ou efeito ativo de Akuma no Mi que afete diretamente o seu corpo (exceto os que só causam dano).</p><p><strong>Requisito:</strong> 4 PA, Estágio Treinado e "Endurecimento Defensivo".</p><p><strong>Forma Dominada (✩):</strong> Pode usar como ação bônus ou reação gastando 2 PP; a CD passa a 17.</p><p><strong>Forma Avançada (★):</strong> Também ao sofrer dano de Técnicas de Akuma no Mi, reduzindo-o pela metade.</p>'
+    chat: ''
+  identifier: escudo-de-vontade
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki do Armamento · Treinado · 4 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 4
+    hakiType: armamento
+    hakiStage: treinado
+    prereq:
+      - endurecimento-defensivo
+_key: '!items!3vljpgCkNKKq3lXl'
+ownership:
+  default: 0

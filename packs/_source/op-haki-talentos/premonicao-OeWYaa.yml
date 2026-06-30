@@ -1,0 +1,28 @@
+_id: OeWYaaufFZUW89pU
+name: Premonição
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  description:
+    value: '<p>Você não pode ser surpreendido e não precisa rolar iniciativa: age sempre primeiro na ordem de turnos. Havendo múltiplas criaturas com essa característica, o Narrador decide a ordem entre elas.</p><p><strong>Requisito:</strong> 2 PA, Estágio Perito e "Vidente".</p>'
+    chat: ''
+  identifier: premonicao
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki da Observação · Perito · 2 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 2
+    hakiType: observacao
+    hakiStage: perito
+    prereq:
+      - vidente
+_key: '!items!OeWYaaufFZUW89pU'
+ownership:
+  default: 0

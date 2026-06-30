@@ -1,0 +1,28 @@
+_id: uLM00WxmfT92aQgW
+name: Passo Antecipado
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  description:
+    value: <p>Uma vez por rodada, você ignora uma jogada de ataque (comum) provocada pelo seu deslocamento, mesmo de características como "Ataque de Oportunidade Superior".</p><p><strong>Requisito:</strong> 2 PA, Estágio Treinado e "Antevisão".</p>
+    chat: ''
+  identifier: passo-antecipado
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki da Observação · Treinado · 2 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 2
+    hakiType: observacao
+    hakiStage: treinado
+    prereq:
+      - antevisao
+_key: '!items!uLM00WxmfT92aQgW'
+ownership:
+  default: 0

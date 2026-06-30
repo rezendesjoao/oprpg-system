@@ -1,0 +1,28 @@
+_id: L4W1X34PNa5RhTwY
+name: Previsão Sobrenatural
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  description:
+    value: <p>Sempre que errar uma jogada de ataque (Técnicas) ou ela não afetar nada, acumula 1 dado de dano/cura extraordinário (máximo 5, até o fim do encontro), usável apenas para atingir o valor máximo de uma Técnica, nunca para ultrapassá-lo.</p><p><strong>Requisito:</strong> 2 PA, Estágio Treinado e "Previsão".</p><p><strong>Forma Dominada (✩):</strong> Pode consumir esses dados para recuperar 1 PP por dado.</p><p><strong>Forma Avançada (★):</strong> Recupera 2 PP por dado.</p>
+    chat: ''
+  identifier: previsao-sobrenatural
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki da Observação · Treinado · 2 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 2
+    hakiType: observacao
+    hakiStage: treinado
+    prereq:
+      - previsao
+_key: '!items!L4W1X34PNa5RhTwY'
+ownership:
+  default: 0

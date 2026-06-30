@@ -1,0 +1,28 @@
+_id: 7ER7ovFcZUYrbirB
+name: Endurecimento Ofensivo
+type: feat
+img: icons/equipment/hand/gauntlet-armored-steel-grey.webp
+system:
+  description:
+    value: <p>Qualquer jogada de ataque (comum) com dano Contundente, Cortante ou Perfurante recebe +1 de dano.</p><p><strong>Requisito:</strong> 4 PA, Estágio Treinado e "Ataque Infuso".</p><p><strong>Forma Dominada (✩):</strong> Muda para 1d4 de dano extra.</p><p><strong>Forma Avançada (★):</strong> Muda para 1d6 de dano extra.</p>
+    chat: ''
+  identifier: endurecimento-ofensivo
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki do Armamento · Treinado · 4 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 4
+    hakiType: armamento
+    hakiStage: treinado
+    prereq:
+      - ataque-infuso
+_key: '!items!7ER7ovFcZUYrbirB'
+ownership:
+  default: 0

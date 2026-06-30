@@ -1,0 +1,27 @@
+_id: vObU7Qr6H88ZqiUP
+name: Antecipação
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  description:
+    value: <p>Você pode ativar características que dependam do acerto de um ataque ou de uma Salvaguarda somente depois de saber se o ataque ou efeito teve sucesso, evitando o desperdício de PP, usos limitados ou outros recursos.</p><p><strong>Requisito:</strong> 5 PA, Estágio Inexperiente.</p><p><strong>Forma Dominada (✩):</strong> Ao sofrer dano, pode perguntar ao Narrador o valor exato antes de decidir se usará suas características.</p><p><strong>Forma Avançada (★):</strong> Se a reação não causar dano nem produzir efeito, recupera o uso da reação (após o fim do turno atual).</p>
+    chat: ''
+  identifier: antecipacao
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki da Observação · Inexperiente · 5 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 5
+    hakiType: observacao
+    hakiStage: inexperiente
+    prereq: []
+_key: '!items!vObU7Qr6H88ZqiUP'
+ownership:
+  default: 0

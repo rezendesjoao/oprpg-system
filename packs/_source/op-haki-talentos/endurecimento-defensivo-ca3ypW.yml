@@ -1,0 +1,27 @@
+_id: ca3ypWF1kurfKY5M
+name: Endurecimento Defensivo
+type: feat
+img: icons/equipment/hand/gauntlet-armored-steel-grey.webp
+system:
+  description:
+    value: '<p>Você cria 20 Pontos de Escudo, que funcionam como PV temporários: coexistem com PV temporários, são consumidos antes deles e se renovam após 10 minutos fora de combate. Enquanto ativos, você tem resistência a dano Cortante, Perfurante e Contundente.</p><p><strong>Requisito:</strong> 5 PA, Estágio Inexperiente.</p><p><strong>Forma Dominada (✩):</strong> Muda para 40 Pontos de Escudo.</p><p><strong>Forma Avançada (★):</strong> Muda para 60 Pontos de Escudo.</p>'
+    chat: ''
+  identifier: endurecimento-defensivo
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki do Armamento · Inexperiente · 5 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 5
+    hakiType: armamento
+    hakiStage: inexperiente
+    prereq: []
+_key: '!items!ca3ypWF1kurfKY5M'
+ownership:
+  default: 0

@@ -1,0 +1,27 @@
+_id: rAzQ3MeBRajsrvx1
+name: Previsão
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  description:
+    value: <p>Sempre que fizer uma jogada de ataque (comum ou Técnicas), você recebe +1 de bônus para acertar.</p><p><strong>Requisito:</strong> 3 PA, Estágio Inexperiente.</p><p><strong>Forma Dominada (✩):</strong> O bônus passa a +2.</p><p><strong>Forma Avançada (★):</strong> O bônus passa a +3.</p>
+    chat: ''
+  identifier: previsao
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki da Observação · Inexperiente · 3 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 3
+    hakiType: observacao
+    hakiStage: inexperiente
+    prereq: []
+_key: '!items!rAzQ3MeBRajsrvx1'
+ownership:
+  default: 0

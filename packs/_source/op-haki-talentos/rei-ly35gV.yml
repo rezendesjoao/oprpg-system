@@ -1,0 +1,27 @@
+_id: ly35gVjFKrzwQNiF
+name: Rei
+type: feat
+img: icons/magic/control/fear-fright-monster-purple.webp
+system:
+  description:
+    value: <p>Ao ser revelado que você possui o Haki do Rei, recebe imediatamente, sem pré-requisitos:</p><ul><li><strong>Presença Real:</strong> sob estresse extremo, pode liberar involuntariamente uma onda de pura vontade que afeta criaturas em até 9 metros (ver "Desmaiando Inimigos").</li><li><strong>Carisma do Conquistador:</strong> +2 de Vontade, e o limite de características que aumentam esse atributo passa a 26 (no mínimo).</li><li><strong>Ambição Crescente:</strong> +2 PA no 10º nível e em cada nível posterior.</li><li><strong>Espírito Selvagem:</strong> vantagem em Salvaguardas de Vontade contra animais; animais com Vontade inferior à sua fazem Salvaguardas contra suas jogadas de Intimidação com desvantagem (não vale para animais lendários ou abissais).</li></ul><p><strong>Requisito:</strong> Concedido ao revelar o Haki do Rei (sem custo de PA).</p>
+    chat: ''
+  identifier: rei
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki do Rei · Inexperiente · 0 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 0
+    hakiType: rei
+    hakiStage: inexperiente
+    prereq: []
+_key: '!items!ly35gVjFKrzwQNiF'
+ownership:
+  default: 0

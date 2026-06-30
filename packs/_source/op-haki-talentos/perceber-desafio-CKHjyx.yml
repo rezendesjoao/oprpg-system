@@ -1,0 +1,28 @@
+_id: CKHjyxGXguLt7f8K
+name: Perceber Desafio
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  description:
+    value: '<p>Uma vez por encontro, ação para focar a percepção numa criatura a até 6 metros: o Narrador revela um valor aproximado do Nível de Desafio ou dos Pontos de Vida dela.</p><p><strong>Requisito:</strong> 1 PA, Estágio Treinado e "Perceber Presença".</p><p><strong>Forma Dominada (✩):</strong> Percebe a presença de qualquer criatura poderosa (ND superior ao seu nível, ou conforme o Narrador) que esteja ou adentre a ilha em que estiver.</p>'
+    chat: ''
+  identifier: perceber-desafio
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki da Observação · Treinado · 1 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 1
+    hakiType: observacao
+    hakiStage: treinado
+    prereq:
+      - perceber-presenca
+_key: '!items!CKHjyxGXguLt7f8K'
+ownership:
+  default: 0

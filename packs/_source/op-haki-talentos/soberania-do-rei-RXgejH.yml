@@ -1,0 +1,28 @@
+_id: RXgejHbAW04G8sWQ
+name: Soberania do Rei
+type: feat
+img: icons/magic/control/fear-fright-monster-purple.webp
+system:
+  description:
+    value: '<p>Ação: libere uma onda que pode amedrontar ou desmaiar todas as criaturas de sua escolha em até 15 metros (ver "Desmaiando Inimigos"). Quem passa na Salvaguarda ainda tem o deslocamento reduzido à metade enquanto permanecer na área da sua presença.</p><p><strong>Requisito:</strong> 3 PA, Estágio Treinado e "Autoridade do Rei".</p><p><strong>Forma Dominada (✩):</strong> Aumenta o alcance para 30 metros.</p><p><strong>Forma Avançada (★):</strong> Aumenta o alcance para 60 metros.</p>'
+    chat: ''
+  identifier: soberania-do-rei
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki do Rei · Treinado · 3 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 3
+    hakiType: rei
+    hakiStage: treinado
+    prereq:
+      - autoridade-do-rei
+_key: '!items!RXgejHbAW04G8sWQ'
+ownership:
+  default: 0

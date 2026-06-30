@@ -1,0 +1,27 @@
+_id: 6dSndHx9QMvOekik
+name: Antevisão
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  description:
+    value: '<p>Ação bônus mantida com Concentração: sua CR aumenta +1 enquanto concentrar (nenhuma ação encerra). Alternativamente, sem manter Concentração, use a reação para +2 de CR até o início do seu próximo turno.</p><p><strong>Requisito:</strong> 4 PA, Estágio Inexperiente.</p><p><strong>Forma Dominada (✩):</strong> O bônus passa a +2 (padrão) e +3 (alternativo).</p><p><strong>Forma Avançada (★):</strong> O bônus passa a +3 (padrão) e +4 (alternativo).</p>'
+    chat: ''
+  identifier: antevisao
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki da Observação · Inexperiente · 4 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 4
+    hakiType: observacao
+    hakiStage: inexperiente
+    prereq: []
+_key: '!items!6dSndHx9QMvOekik'
+ownership:
+  default: 0

@@ -1,0 +1,27 @@
+_id: OrdzwGeUM1NqKYaR
+name: Perceber Emoções
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  description:
+    value: <p>Sem teste, você percebe instantaneamente se uma criatura tem postura hostil, neutra ou amigável em relação a você.</p><p><strong>Requisito:</strong> 2 PA, Estágio Inexperiente.</p><p><strong>Forma Dominada (✩):</strong> Vantagem em Testes de Presença ao interagir com criaturas amigáveis.</p><p><strong>Forma Avançada (★):</strong> Vantagem em Testes de Presença ao interagir com criaturas neutras.</p>
+    chat: ''
+  identifier: perceber-emocoes
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki da Observação · Inexperiente · 2 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 2
+    hakiType: observacao
+    hakiStage: inexperiente
+    prereq: []
+_key: '!items!OrdzwGeUM1NqKYaR'
+ownership:
+  default: 0

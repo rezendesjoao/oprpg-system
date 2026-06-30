@@ -1,0 +1,28 @@
+_id: 5AAbV922DJnU1Q0D
+name: Perceber Presença
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  description:
+    value: '<p>Ação mantida com Concentração: faça um Teste de Vontade (Haki) com vantagem para sentir criaturas vivas em até 6 metros. Você recebe percepção às cegas na área e as enxerga como auras, mesmo invisíveis ou ocultas.</p><p><strong>Requisito:</strong> 2 PA, Estágio Treinado e "Perceber Emoções".</p><p><strong>Forma Dominada (✩):</strong> Aumenta a distância para 12 metros.</p><p><strong>Forma Avançada (★):</strong> Percebe o estado físico (vivo, morto, ferido ou saudável) de qualquer criatura que conheça dentro da ilha em que estiver.</p>'
+    chat: ''
+  identifier: perceber-presenca
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki da Observação · Treinado · 2 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 2
+    hakiType: observacao
+    hakiStage: treinado
+    prereq:
+      - perceber-emocoes
+_key: '!items!5AAbV922DJnU1Q0D'
+ownership:
+  default: 0

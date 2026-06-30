@@ -1,0 +1,28 @@
+_id: HQK0yQuaeyB2DRzy
+name: Clarividência
+type: feat
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  description:
+    value: <p>Quando uma Técnica que exige jogada de ataque (comum ou Técnicas) não afeta nenhuma criatura, ambiente, estrutura ou objeto, você gasta apenas metade do custo em PP.</p><p><strong>Requisito:</strong> 2 PA, Estágio Treinado e "Antecipação".</p><p><strong>Forma Dominada (✩):</strong> Pode optar por não gastar PP ao errar; até 3 usos, recuperados em descanso longo.</p><p><strong>Forma Avançada (★):</strong> Aplica-se também a Técnicas que imponham Salvaguardas e não afetem nada.</p>
+    chat: ''
+  identifier: clarividencia
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki da Observação · Treinado · 2 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 2
+    hakiType: observacao
+    hakiStage: treinado
+    prereq:
+      - antecipacao
+_key: '!items!HQK0yQuaeyB2DRzy'
+ownership:
+  default: 0

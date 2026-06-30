@@ -1,0 +1,28 @@
+_id: sUzxhuSWN4NUQVAj
+name: Autoridade do Rei
+type: feat
+img: icons/magic/control/fear-fright-monster-purple.webp
+system:
+  description:
+    value: '<p>Ação: imponha sua vontade sobre uma criatura a até 18 metros, forçando-a a uma Salvaguarda de Vontade. Em falha, você escolhe: a condição "Amedrontado" até o fim do próximo turno dela, ou cair inconsciente (ver "Desmaiando Inimigos").</p><p><strong>Requisito:</strong> 3 PA, Estágio Treinado e "Rei".</p><p><strong>Forma Dominada (✩):</strong> Pode usar com uma ação bônus.</p><p><strong>Forma Avançada (★):</strong> Pode usar como reação ao ser alvo de uma jogada de ataque (comum).</p>'
+    chat: ''
+  identifier: autoridade-do-rei
+  type:
+    value: haki
+    subtype: ''
+  requirements: Haki do Rei · Treinado · 3 PA
+  properties: []
+  activities: {}
+effects: []
+folder: null
+flags:
+  onepiece-system:
+    hakiTalent: true
+    paCost: 3
+    hakiType: rei
+    hakiStage: treinado
+    prereq:
+      - rei
+_key: '!items!sUzxhuSWN4NUQVAj'
+ownership:
+  default: 0
