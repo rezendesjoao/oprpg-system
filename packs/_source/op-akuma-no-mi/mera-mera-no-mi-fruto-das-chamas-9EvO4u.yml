@@ -18,7 +18,84 @@ system:
     naturalEnemy: Água / Magma
 effects: []
 folder: null
+flags:
+  onepiece-system:
+    akumaRoster:
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.uR9uGizbc1G4fmMT
+        identifier: higan-disparo-de-fogo
+        name: Higan (Disparo de Fogo)
+        img: icons/magic/fire/projectile-bolt-orange.webp
+        grau: 1
+        cost: 2
+        aux: false
+        level: 1
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.szl0boMCOkMKFfl2
+        identifier: hiken-punho-de-fogo
+        name: Hiken (Punho de Fogo)
+        img: icons/magic/fire/projectile-fireball-orange.webp
+        grau: 2
+        cost: 4
+        aux: false
+        level: 3
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.SrWCdBOzkD7mtObc
+        identifier: hidaruma
+        name: Hidaruma
+        img: icons/magic/fire/flame-burning-eye.webp
+        grau: 3
+        cost: 6
+        aux: false
+        level: 6
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.PyJsDV9C6LQlBCD5
+        identifier: enkai-hibashira
+        name: 'Enkai: Hibashira'
+        img: icons/magic/fire/flame-burning-campfire-orange.webp
+        grau: 4
+        cost: 8
+        aux: false
+        level: 9
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.tLlGRnq36HLLOybK
+        identifier: dai-enkai-entei
+        name: 'Dai Enkai: Entei'
+        img: icons/magic/fire/explosion-fireball-large-orange.webp
+        grau: 5
+        cost: 10
+        aux: false
+        level: 12
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.9JZLGc9TkZTHwUNJ
+        identifier: hikyaku
+        name: Hikyaku
+        img: icons/magic/movement/trail-streak-impact-orange.webp
+        grau: 1
+        cost: 2
+        aux: true
+        level: 1
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.Kwh3yj71w41zm9Eg
+        identifier: hotarubi
+        name: Hotarubi
+        img: icons/magic/light/orbs-firefly-glow-green.webp
+        grau: 3
+        cost: 4
+        aux: true
+        level: 6
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.mILZGnFjTrRl3k0k
+        identifier: onibi
+        name: Onibi
+        img: icons/magic/fire/dragon-breath-fire-orange.webp
+        grau: 5
+        cost: 7
+        aux: true
+        level: 12
+    akumaManifestations:
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.xPRmIydqid4bKgHT
+        identifier: habilidade-refinada-mera-mera
+        name: Habilidade Refinada (Mera-Mera)
+        img: icons/magic/fire/flame-burning-hand-orange.webp
+        desperto: false
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.Hqpmz1YFVizGfxrv
+        identifier: potencializacao-elemental-mera-mera
+        name: Potencialização Elemental (Mera-Mera)
+        img: icons/magic/fire/flame-burning-creature-orange.webp
+        desperto: false
 _key: '!items!9EvO4uSNvGjIdFJq'
 ownership:
   default: 0
-flags: {}

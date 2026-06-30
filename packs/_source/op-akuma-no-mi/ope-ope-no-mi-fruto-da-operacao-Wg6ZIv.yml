@@ -18,7 +18,121 @@ system:
     naturalEnemy: ''
 effects: []
 folder: null
+flags:
+  onepiece-system:
+    akumaRoster:
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.xY55QoLR1LdloEu4
+        identifier: shambles
+        name: Shambles
+        img: icons/magic/movement/chevrons-swirl-blue.webp
+        grau: 1
+        cost: 2
+        aux: false
+        level: 1
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.fQqeYHgpmfuH7ezx
+        identifier: amputate
+        name: Amputate
+        img: icons/skills/melee/strike-blade-knife-white-red.webp
+        grau: 2
+        cost: 4
+        aux: false
+        level: 3
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.VICyBkVYD4aGDIGi
+        identifier: injection-shot
+        name: Injection Shot
+        img: icons/skills/melee/strike-dagger-arcane-blue.webp
+        grau: 3
+        cost: 6
+        aux: false
+        level: 6
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.Ow7Gi10hpAX1JD02
+        identifier: counter-shock
+        name: Counter Shock
+        img: icons/magic/lightning/bolt-strike-blue.webp
+        grau: 4
+        cost: 8
+        aux: false
+        level: 9
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.ajdXYMo59nm6WaAm
+        identifier: gamma-knife
+        name: Gamma Knife
+        img: icons/magic/light/beam-rays-blue-large.webp
+        grau: 5
+        cost: 10
+        aux: false
+        level: 12
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.rDgKCQx7e3gMUNoY
+        identifier: silent
+        name: Silent
+        img: icons/magic/control/no-speak-mute-gag-blue.webp
+        grau: 6
+        cost: 12
+        aux: false
+        level: 16
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.s3h8bnai0CWiC3Hk
+        identifier: anesthesia-shock-wille
+        name: 'Anesthesia: Shock Wille'
+        img: icons/magic/lightning/bolt-strike-sword-blue.webp
+        grau: 7
+        cost: 14
+        aux: false
+        level: 20
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.1e6quT3TEORZRMKb
+        identifier: prazision
+        name: Prazision
+        img: icons/magic/perception/eye-ringed-glow-angry-small-blue.webp
+        grau: 1
+        cost: 1
+        aux: true
+        level: 1
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.MwaU31JLmKwGJ4eb
+        identifier: radio-knife
+        name: Radio Knife
+        img: icons/magic/lightning/bolt-blue.webp
+        grau: 2
+        cost: 2
+        aux: true
+        level: 3
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.C9IiSrTrRxUeI9wB
+        identifier: curtain
+        name: Curtain
+        img: icons/magic/defensive/shield-barrier-glowing-blue.webp
+        grau: 3
+        cost: 2
+        aux: true
+        level: 6
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.C0mWoWh9I21DWQ4v
+        identifier: r-room
+        name: R-ROOM
+        img: icons/magic/control/energy-stream-link-large-blue.webp
+        grau: 6
+        cost: 10
+        aux: true
+        level: 16
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.xHWs1MStKevzOyHZ
+        identifier: k-room
+        name: K-ROOM
+        img: icons/magic/control/energy-stream-link-blue.webp
+        grau: 7
+        cost: 15
+        aux: true
+        level: 20
+    akumaManifestations:
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.0oZcyACEnpf7Ycyf
+        identifier: room
+        name: ROOM
+        img: icons/magic/light/explosion-star-glow-blue-purple.webp
+        desperto: false
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.F5ndhia4zKolIIjk
+        identifier: cirurgiao-da-morte
+        name: Cirurgião da Morte
+        img: icons/tools/cooking/knife-cleaver-steel-grey.webp
+        desperto: false
+      - uuid: Compendium.onepiece-system.op-akuma-no-mi.Item.0ACvOX7gdPUlPF6l
+        identifier: adrenalin-estagio-desperto
+        name: Adrenalin (Estágio Desperto)
+        img: icons/magic/life/heart-cross-blue.webp
+        desperto: true
 _key: '!items!Wg6ZIvzsGePxyX2F'
 ownership:
   default: 0
-flags: {}

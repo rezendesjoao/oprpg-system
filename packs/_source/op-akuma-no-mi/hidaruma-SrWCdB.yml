@@ -121,7 +121,10 @@ system:
   prepared: 2
 effects: []
 folder: null
+flags:
+  onepiece-system:
+    akuma: true
+    fruit: mera-mera-no-mi-fruto-das-chamas
 _key: '!items!SrWCdBOzkD7mtObc'
 ownership:
   default: 0
-flags: {}

@@ -567,9 +567,17 @@ function akumaItem(fruit) {
   };
 }
 
+// Grau → nível em que a técnica é destravada (regra 6.6/6.11 do livro).
+const GRAU_LEVEL = { 1: 1, 2: 3, 3: 6, 4: 9, 5: 12, 6: 16, 7: 20 };
+
 // Gera a fruta + suas Técnicas (spell, automatizadas) + Manifestações (feat), todas no pack op-akuma-no-mi.
+// A fruta carrega o ROSTER (lista denormalizada) das suas técnicas/manifestações em flags, p/ a aba Akuma
+// exibir a evolução por nível e distinguir as técnicas DA FRUTA das do Estilo de Combate.
 function writeAkuma(fruit) {
-  writeDoc("op-akuma-no-mi", akumaItem(fruit));
+  const fruitKey = slug(fruit.name);
+  const roster = [];
+  const manifestRoster = [];
+
   for ( const t of (fruit.tecnicas || []) ) {
     const item = techItem({
       code: "AK-" + fruit.code, name: t.name, desc: t.desc, grau: t.grau, cost: t.cost,
@@ -577,14 +585,31 @@ function writeAkuma(fruit) {
       damage: t.damage, save: t.save, activation: t.activation || "action", rangeUnits: t.rangeUnits || "touch"
     });
     if ( t.img ) item.img = t.img;
+    item.flags = { "onepiece-system": { akuma: true, fruit: fruitKey } };
     writeDoc("op-akuma-no-mi", item);
+    roster.push({
+      uuid: uuid("op-akuma-no-mi", item._id), identifier: slug(t.name),
+      name: t.name, img: item.img, grau: t.grau, cost: t.cost,
+      aux: /Técnica Auxiliar/.test(t.desc || ""), level: GRAU_LEVEL[t.grau] ?? 1
+    });
   }
   for ( const m of (fruit.manifestacoes || []) ) {
     const item = featItem({ code: "AK-" + fruit.code, name: m.name, desc: m.desc, level: 0, requirements: fruit.name, uses: m.uses ? mkUses(m.uses) : null });
     item.system.type = { value: "feat", subtype: "" };
     if ( m.img ) item.img = m.img;
+    item.flags = { "onepiece-system": { akuma: true, fruit: fruitKey } };
     writeDoc("op-akuma-no-mi", item);
+    manifestRoster.push({
+      uuid: uuid("op-akuma-no-mi", item._id), identifier: slug(m.name),
+      name: m.name, img: item.img,
+      desperto: /Desperto/.test(m.name) || /Estágio Desperto/.test(m.desc || "")
+    });
   }
+
+  // Fruta com o roster completo embutido (técnicas em ordem de grau; manifestações).
+  const fruitDoc = akumaItem(fruit);
+  fruitDoc.flags = { "onepiece-system": { akumaRoster: roster, akumaManifestations: manifestRoster } };
+  writeDoc("op-akuma-no-mi", fruitDoc);
 }
 
 /* -------------------------------------------- */

@@ -15,7 +15,10 @@ system:
   activities: {}
 effects: []
 folder: null
+flags:
+  onepiece-system:
+    akuma: true
+    fruit: mera-mera-no-mi-fruto-das-chamas
 _key: '!items!Hqpmz1YFVizGfxrv'
 ownership:
   default: 0
-flags: {}

@@ -101,7 +101,10 @@ system:
   prepared: 2
 effects: []
 folder: null
+flags:
+  onepiece-system:
+    akuma: true
+    fruit: ope-ope-no-mi-fruto-da-operacao
 _key: '!items!C0mWoWh9I21DWQ4v'
 ownership:
   default: 0
-flags: {}

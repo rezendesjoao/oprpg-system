@@ -134,3 +134,44 @@
 .akuma-tecnica-name { flex: 1; color: #e8e2f5; font-size: 13px; }
 .akuma-tecnica-grau { font-size: 11px; font-weight: 700; color: #ffd27f; background: rgba(255,210,127,0.12); padding: 1px 8px; border-radius: 8px; }
 .akuma-tecnica-empty { color: #8a8a9a; font-size: 12px; font-style: italic; padding: 4px 0; }
+
+/* ── Evolução / progressão da fruta (por nível) ── */
+.akuma-section { display: flex; flex-direction: column; gap: 6px; }
+.akuma-sec-head {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px; margin-top: 4px;
+}
+.akuma-sec-head h3 { margin: 0; border: none; padding: 0; font-size: 14px; color: #f3e7c9; display: flex; align-items: center; gap: 8px; }
+.akuma-sec-head h3 i { color: #ffd27f; }
+.akuma-subhead { margin: 8px 0 2px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #9a90b0; }
+
+.akuma-learn-btn {
+  font-size: 11px; font-weight: 700; cursor: pointer; white-space: nowrap;
+  padding: 3px 10px; border-radius: 8px; color: #fff;
+  background: linear-gradient(135deg, #b23a48, #7a1f2a); border: 1px solid rgba(255,180,120,0.4);
+}
+.akuma-learn-btn:hover { filter: brightness(1.15); }
+
+.akuma-prog-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.akuma-prog {
+  display: flex; align-items: center; gap: 8px; padding: 5px 8px; border-radius: 6px; cursor: pointer;
+  background: rgba(14,14,28,0.5); border: 1px solid rgba(255,255,255,0.07);
+  transition: background 120ms, border-color 120ms, opacity 120ms;
+}
+.akuma-prog:hover { background: rgba(42,36,56,0.7); }
+.akuma-prog img { width: 26px; height: 26px; border-radius: 5px; flex: 0 0 auto; }
+.akuma-prog-name { flex: 1; color: #e8e2f5; font-size: 13px; }
+.akuma-prog-lv { font-size: 10px; color: #8a8a9a; white-space: nowrap; }
+.akuma-state { width: 16px; text-align: center; flex: 0 0 auto; }
+
+.akuma-prog.is-owned { border-color: rgba(155,226,155,0.4); }
+.akuma-prog.is-owned .akuma-state { color: #6fce6f; }
+.akuma-prog.is-owned .akuma-prog-name { color: #f3e7c9; }
+.akuma-prog.is-open { border-color: rgba(255,210,127,0.45); }
+.akuma-prog.is-open .akuma-state { color: #ffd27f; }
+.akuma-prog.is-locked { opacity: 0.5; cursor: default; }
+.akuma-prog.is-locked .akuma-state { color: #8a8a9a; }
+.akuma-prog.is-locked img { filter: grayscale(0.8); }
+
+.akuma-tag { font-size: 9px; font-weight: 700; text-transform: uppercase; padding: 1px 6px; border-radius: 8px; }
+.akuma-tag.tag-desperto { background: #5a1414; color: #ff9b9b; }

@@ -15,7 +15,10 @@ system:
   activities: {}
 effects: []
 folder: null
+flags:
+  onepiece-system:
+    akuma: true
+    fruit: ope-ope-no-mi-fruto-da-operacao
 _key: '!items!F5ndhia4zKolIIjk'
 ownership:
   default: 0
-flags: {}

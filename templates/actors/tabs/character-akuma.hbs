@@ -99,21 +99,67 @@
   <div class="akuma-weakness"><i class="fas fa-water"></i> {{ localize "ONEPIECE.DevilFruit.Seawater" }}</div>
   {{/if}}
 
-  {{!-- Técnicas da fruta --}}
-  <div class="akuma-tecnicas">
-    <h3><i class="fas fa-bolt"></i> {{ localize "ONEPIECE.DevilFruit.Techniques" }}</h3>
-    {{#if akuma.tecnicas.length}}
-    <ul class="akuma-tecnica-list">
-      {{#each akuma.tecnicas}}
-      <li class="akuma-tecnica" data-action="akuma-open-tecnica" data-item-id="{{ this.id }}">
+  {{!-- Manifestações de Poder (lista de evolução) --}}
+  {{#if akuma.manifest.length}}
+  <div class="akuma-section">
+    <div class="akuma-sec-head">
+      <h3><i class="fas fa-star"></i> {{ localize "ONEPIECE.DevilFruit.MP" }}</h3>
+      {{#if editable}}{{#if akuma.manifestLearnable}}<button type="button" class="akuma-learn-btn" data-action="akuma-learn-all" data-scope="manifest">Adquirir ({{ akuma.manifestLearnable }})</button>{{/if}}{{/if}}
+    </div>
+    <ul class="akuma-prog-list">
+      {{#each akuma.manifest}}
+      <li class="akuma-prog{{#if this.owned}} is-owned{{else}}{{#if this.locked}} is-locked{{else}} is-open{{/if}}{{/if}}"
+          data-action="akuma-entry" data-kind="manifest" data-uuid="{{ this.uuid }}" data-owned-id="{{ this.ownedId }}" data-locked="{{ this.locked }}">
         <img src="{{ this.img }}" alt="{{ this.name }}">
-        <span class="akuma-tecnica-name">{{ this.name }}</span>
+        <span class="akuma-prog-name">{{ this.name }}</span>
+        {{#if this.desperto}}<span class="akuma-tag tag-desperto">Desperto</span>{{/if}}
+        {{#if this.owned}}<i class="fas fa-check akuma-state"></i>{{else}}{{#if this.locked}}<i class="fas fa-lock akuma-state"></i>{{else}}<i class="fas fa-plus akuma-state"></i>{{/if}}{{/if}}
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+  {{/if}}
+
+  {{!-- Técnicas da fruta — evolução por nível --}}
+  <div class="akuma-section">
+    <div class="akuma-sec-head">
+      <h3><i class="fas fa-bolt"></i> {{ localize "ONEPIECE.DevilFruit.Techniques" }}</h3>
+      {{#if editable}}{{#if akuma.learnable}}<button type="button" class="akuma-learn-btn" data-action="akuma-learn-all" data-scope="tech">Aprender desbloqueadas ({{ akuma.learnable }})</button>{{/if}}{{/if}}
+    </div>
+    {{#if akuma.combat.length}}
+    <ul class="akuma-prog-list">
+      {{#each akuma.combat}}
+      <li class="akuma-prog{{#if this.owned}} is-owned{{else}}{{#if this.locked}} is-locked{{else}} is-open{{/if}}{{/if}}"
+          data-action="akuma-entry" data-kind="tech" data-uuid="{{ this.uuid }}" data-owned-id="{{ this.ownedId }}"
+          data-locked="{{ this.locked }}" data-unlock="{{ this.unlock }}">
+        <img src="{{ this.img }}" alt="{{ this.name }}">
+        <span class="akuma-prog-name">{{ this.name }}</span>
+        <span class="akuma-prog-lv">Nv {{ this.unlock }}</span>
         <span class="akuma-tecnica-grau">{{ localize "ONEPIECE.DevilFruit.Grau" }} {{ this.grau }}</span>
+        {{#if this.desperto}}<span class="akuma-tag tag-desperto">Desperto</span>{{/if}}
+        {{#if this.owned}}<i class="fas fa-check akuma-state"></i>{{else}}{{#if this.locked}}<i class="fas fa-lock akuma-state"></i>{{else}}<i class="fas fa-plus akuma-state"></i>{{/if}}{{/if}}
       </li>
       {{/each}}
     </ul>
     {{else}}
-    <p class="akuma-tecnica-empty">Nenhuma Técnica. Arraste itens de Técnica (Grau) para a ficha.</p>
+    <p class="akuma-tecnica-empty">Esta fruta não tem técnicas cadastradas no compêndio.</p>
+    {{/if}}
+
+    {{#if akuma.auxiliares.length}}
+    <h4 class="akuma-subhead">Técnicas Auxiliares</h4>
+    <ul class="akuma-prog-list">
+      {{#each akuma.auxiliares}}
+      <li class="akuma-prog{{#if this.owned}} is-owned{{else}}{{#if this.locked}} is-locked{{else}} is-open{{/if}}{{/if}}"
+          data-action="akuma-entry" data-kind="tech" data-uuid="{{ this.uuid }}" data-owned-id="{{ this.ownedId }}"
+          data-locked="{{ this.locked }}" data-unlock="{{ this.unlock }}">
+        <img src="{{ this.img }}" alt="{{ this.name }}">
+        <span class="akuma-prog-name">{{ this.name }}</span>
+        <span class="akuma-prog-lv">Nv {{ this.unlock }}</span>
+        {{#if this.desperto}}<span class="akuma-tag tag-desperto">Desperto</span>{{/if}}
+        {{#if this.owned}}<i class="fas fa-check akuma-state"></i>{{else}}{{#if this.locked}}<i class="fas fa-lock akuma-state"></i>{{else}}<i class="fas fa-plus akuma-state"></i>{{/if}}{{/if}}
+      </li>
+      {{/each}}
+    </ul>
     {{/if}}
   </div>
 
