@@ -1,0 +1,609 @@
+name: Sargento Major
+type: npc
+img: icons/environment/people/commoner.webp
+system:
+  abilities:
+    str:
+      value: 16
+      proficient: 1
+    dex:
+      value: 16
+      proficient: 1
+    con:
+      value: 16
+      proficient: 1
+    int:
+      value: 12
+      proficient: 0
+    wis:
+      value: 11
+      proficient: 0
+    cha:
+      value: 16
+      proficient: 0
+  attributes:
+    ac:
+      flat: 16
+      calc: natural
+    hp:
+      value: 124
+      max: 124
+      temp: 0
+      tempmax: 0
+      formula: 13d12+39
+    movement:
+      walk: 12
+      swim: 12
+      units: m
+    senses:
+      units: m
+  details:
+    cr: 3
+    alignment: Leal e Mau
+    type:
+      value: humanoid
+      subtype: Marinha
+      swarm: ''
+      custom: ''
+    biography:
+      value: <p>Um oficial veterano da Marinha, endurecido por incontáveis abordagens. Lidera pelotões na linha de frente com sabre e pólvora, cobrindo os recrutas e punindo a insubordinação.</p>
+      public: ''
+  skills:
+    ath:
+      value: 1
+    prc:
+      value: 1
+      bonuses:
+        check: ''
+        passive: '2'
+    sur:
+      value: 1
+  traits:
+    size: med
+    important: true
+  energy:
+    max: 15
+    total: 15
+    generated: 0
+    genPerTurn: 3
+    genMax: 20
+    intensiveTraining:
+      maxEnergy: 0
+      generatedEnergy: 0
+prototypeToken:
+  name: Sargento Major
+  displayName: 20
+  displayBars: 40
+  actorLink: false
+  width: 1
+  height: 1
+  lockRotation: false
+  disposition: -1
+  texture:
+    src: icons/environment/people/commoner.webp
+    scaleX: 1
+    scaleY: 1
+  sight:
+    enabled: false
+  bar1:
+    attribute: attributes.hp
+  flags: {}
+items:
+  - _id: SargMajInvestida
+    name: Investida
+    type: feat
+    img: icons/skills/movement/figure-running-gray.webp
+    system:
+      description:
+        value: <p>Se o marinheiro se mover, pelo menos, 6 metros em linha reta até um alvo e então atingi-lo com um ataque corpo a corpo no mesmo turno, o alvo sofre 10 (3d6) de dano extra.</p>
+      type:
+        value: monster
+        subtype: ''
+      properties:
+        - trait
+      activities: {}
+    effects: []
+    flags: {}
+    sort: 100000
+    _key: '!actors.items!SargentoMajor001.SargMajInvestida'
+  - _id: SargMajTaticasMr
+    name: Táticas Marciais
+    type: feat
+    img: icons/skills/melee/blade-tips-triple-steel.webp
+    system:
+      description:
+        value: <p>O marinheiro tem vantagem nas jogadas de ataque (comum) contra uma criatura se, pelo menos, um dos aliados do marinheiro estiver a 1,5 metro da criatura e não estiver com a condição "Incapacitado".</p>
+      type:
+        value: monster
+        subtype: ''
+      properties:
+        - trait
+      activities: {}
+    effects: []
+    flags: {}
+    sort: 110000
+    _key: '!actors.items!SargentoMajor001.SargMajTaticasMr'
+  - _id: SargMajMultiataq
+    name: Ataques Múltiplos
+    type: feat
+    img: icons/skills/melee/blades-crossed-black-gray.webp
+    system:
+      description:
+        value: <p>O marinheiro pode atacar duas vezes por turno com sabre, pistola, mosquete ou ataque desarmado.</p>
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      activities:
+        MultiataqueUtil0:
+          _id: MultiataqueUtil0
+          type: utility
+          activation:
+            type: action
+            value: 1
+            override: false
+          consumption:
+            targets: []
+            scaling:
+              allowed: false
+              max: ''
+            spellSlot: false
+          description:
+            chatFlavor: ''
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            override: false
+          target:
+            prompt: true
+            affects:
+              choice: false
+            override: false
+          uses:
+            spent: 0
+            max: ''
+            recovery: []
+          roll:
+            formula: ''
+            name: ''
+            prompt: false
+            visible: false
+          sort: 0
+          name: ''
+          img: null
+          flags: {}
+          visibility:
+            level: {}
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+    effects: []
+    flags: {}
+    sort: 200000
+    _key: '!actors.items!SargentoMajor001.SargMajMultiataq'
+  - _id: SargMajDesarmado
+    name: Ataque Desarmado
+    type: weapon
+    img: icons/skills/melee/unarmed-punch-fist.webp
+    system:
+      description:
+        value: '<p>Ataque Corpo a Corpo, alcance 1,5 metro, um alvo. Acerto: 7 (1d6+3) de dano Contundente.</p>'
+      identifier: ataque-desarmado
+      type:
+        value: natural
+        baseItem: ''
+      damage:
+        base:
+          number: 1
+          denomination: 6
+          bonus: ''
+          types:
+            - bludgeoning
+          custom:
+            enabled: false
+            formula: ''
+          scaling:
+            mode: ''
+            number: 1
+            formula: ''
+        versatile:
+          number: null
+          denomination: null
+          bonus: ''
+          types: []
+          custom:
+            enabled: false
+            formula: ''
+          scaling:
+            mode: ''
+            number: 1
+            formula: ''
+      range:
+        value: null
+        long: null
+        reach: null
+        units: m
+      proficient: 1
+      properties: []
+    effects: []
+    flags: {}
+    sort: 300000
+    _key: '!actors.items!SargentoMajor001.SargMajDesarmado'
+  - _id: SargMajSabre0001
+    name: Sabre
+    type: weapon
+    img: icons/weapons/swords/scimitar-worn-blue.webp
+    system:
+      description:
+        value: '<p>Ataque Corpo a Corpo com Arma, alcance 1,5 metro, um alvo. Acerto: 7 (1d6+3) de dano Cortante.</p>'
+      identifier: sabre
+      type:
+        value: martialM
+        baseItem: ''
+      damage:
+        base:
+          number: 1
+          denomination: 6
+          bonus: ''
+          types:
+            - slashing
+          custom:
+            enabled: false
+            formula: ''
+          scaling:
+            mode: ''
+            number: 1
+            formula: ''
+        versatile:
+          number: null
+          denomination: null
+          bonus: ''
+          types: []
+          custom:
+            enabled: false
+            formula: ''
+          scaling:
+            mode: ''
+            number: 1
+            formula: ''
+      range:
+        value: null
+        long: null
+        reach: null
+        units: m
+      proficient: 1
+      properties: []
+    effects: []
+    flags: {}
+    sort: 310000
+    _key: '!actors.items!SargentoMajor001.SargMajSabre0001'
+  - _id: SargMajPistola01
+    name: Pistola
+    type: weapon
+    img: icons/weapons/guns/gun-pistol-flintlock-metal.webp
+    system:
+      description:
+        value: '<p>Ataque à Distância com Arma, distância 9/15 metros, um alvo. Acerto: 7 (1d6+3) de dano Contundente.</p>'
+      identifier: pistola-marinha
+      type:
+        value: martialR
+        baseItem: ''
+      damage:
+        base:
+          number: 1
+          denomination: 6
+          bonus: ''
+          types:
+            - bludgeoning
+          custom:
+            enabled: false
+            formula: ''
+          scaling:
+            mode: ''
+            number: 1
+            formula: ''
+        versatile:
+          number: null
+          denomination: null
+          bonus: ''
+          types: []
+          custom:
+            enabled: false
+            formula: ''
+          scaling:
+            mode: ''
+            number: 1
+            formula: ''
+      range:
+        value: 9
+        long: 15
+        reach: null
+        units: m
+      proficient: 1
+      properties:
+        - fir
+    effects: []
+    flags: {}
+    sort: 320000
+    _key: '!actors.items!SargentoMajor001.SargMajPistola01'
+  - _id: SargMajMosquete1
+    name: Mosquete
+    type: weapon
+    img: icons/weapons/guns/gun-blunderbuss-gold.webp
+    system:
+      description:
+        value: '<p>Ataque à Distância com Arma, distância 18/24 metros, um alvo. Acerto: 8 (1d8+3) de dano Contundente.</p>'
+      identifier: mosquete-marinha
+      type:
+        value: martialR
+        baseItem: ''
+      damage:
+        base:
+          number: 1
+          denomination: 8
+          bonus: ''
+          types:
+            - bludgeoning
+          custom:
+            enabled: false
+            formula: ''
+          scaling:
+            mode: ''
+            number: 1
+            formula: ''
+        versatile:
+          number: null
+          denomination: null
+          bonus: ''
+          types: []
+          custom:
+            enabled: false
+            formula: ''
+          scaling:
+            mode: ''
+            number: 1
+            formula: ''
+      range:
+        value: 18
+        long: 24
+        reach: null
+        units: m
+      proficient: 1
+      properties:
+        - two
+        - fir
+    effects: []
+    flags: {}
+    sort: 330000
+    _key: '!actors.items!SargentoMajor001.SargMajMosquete1'
+  - _id: SargMajOportunid
+    name: Ataque de Oportunidade
+    type: feat
+    img: icons/skills/melee/sword-slashing-red.webp
+    system:
+      description:
+        value: <p>O marinheiro pode realizar um ataque de oportunidade com uma jogada de ataque corpo a corpo quando um inimigo que ele possa ver se move para fora de seu alcance corpo a corpo, de forma voluntária.</p>
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      activities:
+        OportunidadeUtl0:
+          _id: OportunidadeUtl0
+          type: utility
+          activation:
+            type: reaction
+            value: 1
+            override: false
+          consumption:
+            targets: []
+            scaling:
+              allowed: false
+              max: ''
+            spellSlot: false
+          description:
+            chatFlavor: ''
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            override: false
+          target:
+            prompt: true
+            affects:
+              choice: false
+            override: false
+          uses:
+            spent: 0
+            max: ''
+            recovery: []
+          roll:
+            formula: ''
+            name: ''
+            prompt: false
+            visible: false
+          sort: 0
+          name: ''
+          img: null
+          flags: {}
+          visibility:
+            level: {}
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+    effects: []
+    flags: {}
+    sort: 500000
+    _key: '!actors.items!SargentoMajor001.SargMajOportunid'
+  - _id: SargMajRedirecio
+    name: Redirecionar Ataque
+    type: feat
+    img: icons/skills/melee/shield-block-gray-yellow.webp
+    system:
+      description:
+        value: <p>Quando uma criatura que o marinheiro possa ver o escolhe como alvo de uma jogada de ataque (comum ou Técnicas), o marinheiro pode puxar um aliado de ND menor a até 1,5 metro dele. Os dois trocam de lugar, e o aliado escolhido torna-se o alvo do ataque.</p>
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      activities:
+        RedirecionarUtl0:
+          _id: RedirecionarUtl0
+          type: utility
+          activation:
+            type: reaction
+            value: 1
+            override: false
+          consumption:
+            targets: []
+            scaling:
+              allowed: false
+              max: ''
+            spellSlot: false
+          description:
+            chatFlavor: ''
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            override: false
+          target:
+            prompt: true
+            affects:
+              choice: false
+            override: false
+          uses:
+            spent: 0
+            max: ''
+            recovery: []
+          roll:
+            formula: ''
+            name: ''
+            prompt: false
+            visible: false
+          sort: 0
+          name: ''
+          img: null
+          flags: {}
+          visibility:
+            level: {}
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+    effects: []
+    flags: {}
+    sort: 510000
+    _key: '!actors.items!SargentoMajor001.SargMajRedirecio'
+  - _id: SargMajGolpePod1
+    name: Golpe Poderoso
+    type: feat
+    img: icons/skills/melee/strike-hammer-destructive-orange.webp
+    system:
+      description:
+        value: '<p><strong>Técnica de Combate – 1º Grau | Custo: 1 PP</strong></p><p>Ataque Corpo a Corpo: +5 para atingir, alcance 1,5 metro, um alvo.</p><p>Acerto: 11 (2d10) de dano Contundente, Cortante ou Perfurante.</p>'
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      activities:
+        GolpePoderosoAtk:
+          _id: GolpePoderosoAtk
+          type: attack
+          activation:
+            type: action
+            value: 1
+            override: false
+          consumption:
+            targets:
+              - type: attribute
+                target: energy.total
+                value: '1'
+                scaling:
+                  mode: ''
+                  formula: ''
+            scaling:
+              allowed: false
+              max: ''
+            spellSlot: false
+          description:
+            chatFlavor: ''
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            override: false
+            units: m
+            value: 1.5
+          target:
+            prompt: true
+            affects:
+              choice: false
+              count: ''
+              type: ''
+            override: false
+          uses:
+            spent: 0
+            max: ''
+            recovery: []
+          attack:
+            ability: str
+            bonus: '5'
+            critical:
+              threshold: 20
+            flat: true
+            type:
+              value: melee
+              classification: weapon
+          damage:
+            critical:
+              bonus: ''
+            includeBase: false
+            parts:
+              - number: 2
+                denomination: 10
+                bonus: ''
+                types:
+                  - bludgeoning
+                custom:
+                  enabled: false
+                  formula: ''
+                scaling:
+                  mode: ''
+                  number: 1
+          sort: 0
+          name: ''
+          img: null
+          flags: {}
+          visibility:
+            level: {}
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+    effects: []
+    flags: {}
+    sort: 700000
+    _key: '!actors.items!SargentoMajor001.SargMajGolpePod1'
+effects: []
+folder: null
+sort: 0
+flags: {}
+ownership:
+  default: 0
+_stats:
+  systemId: onepiece-system
+  systemVersion: 1.2.21
+  coreVersion: '14.360'
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: dnd5ebuilder0000
+_id: SargentoMajor001
+_key: '!actors!SargentoMajor001'

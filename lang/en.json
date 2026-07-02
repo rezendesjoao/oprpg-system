@@ -2967,7 +2967,7 @@
     "LegendaryActions": "Ações Lendárias",
     "MythicActions": "Ações Míticas",
     "Reactions": "Reações",
-    "Traits": "Características"
+    "Traits": "Aspectos"
   }
 },
 
@@ -5614,11 +5614,15 @@
 "ONEPIECE.DevilFruit.Techniques": "Técnicas da Fruta",
 "ONEPIECE.DevilFruit.Grau": "Grau",
 
+"ONEPIECE.NPC.PowerfulActions": "Ações Poderosas",
+"ONEPIECE.NPC.DifficultyClass": "Classe de Dificuldade",
+"ONEPIECE.NPC.DifficultyClassAbbr": "CD",
+
 "ONEPIECE.Haki.Label": "Haki",
 "ONEPIECE.Haki.Tab": "Haki",
 "ONEPIECE.Haki.PaBonus": "PA de Bônus (Narrador)",
 "ONEPIECE.Haki.PaBonusHint": "Pontos de Ambição concedidos pelo Narrador (recompensas, Superando-se, Despertar Prematuro).",
-"ONEPIECE.Haki.NotAwakened": "Haki adormecido. Desperta no 8º nível — ou prematuramente, a critério do Narrador.",
+"ONEPIECE.Haki.NotAwakened": "Haki adormecido. Desperta no 8º nível",
 "ONEPIECE.Haki.Awaken": "Despertar o Haki",
 "ONEPIECE.Haki.Awakened": "Haki Desperto",
 "ONEPIECE.Haki.Aptidao": "Aptidão (1º nível)",

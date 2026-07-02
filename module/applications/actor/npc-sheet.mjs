@@ -219,7 +219,12 @@ export default class NPCActorSheet extends BaseActorSheet {
       return obj;
     }, {});
     sections.passive = {
-      id: "passive", label: "DND5E.Features", order: 0, items: [], minWidth: 210,
+      id: "passive", label: "DND5E.NPC.SECTIONS.Traits", order: 0, items: [], minWidth: 210,
+      columns: ["recovery", "uses", "roll", "formula", "controls"]
+    };
+    // One Piece: seção dedicada às Ações Poderosas (Técnicas que consomem Pontos de Poder).
+    sections.powerful = {
+      id: "powerful", label: "ONEPIECE.NPC.PowerfulActions", order: 250, items: [], minWidth: 210,
       columns: ["recovery", "uses", "roll", "formula", "controls"]
     };
     context.itemCategories.features?.forEach(i => {
@@ -267,6 +272,11 @@ export default class NPCActorSheet extends BaseActorSheet {
 
     context.abilities = this._prepareAbilities(context);
     context.classes = context.itemCategories.classes;
+
+    // One Piece: Classe de Dificuldade = 8 + proficiência + maior modificador de atributo.
+    const dcProf = context.system.attributes.prof ?? 0;
+    const dcMods = Object.values(context.system.abilities ?? {}).map(a => a.mod ?? 0);
+    context.difficultyClass = 8 + dcProf + (dcMods.length ? Math.max(...dcMods) : 0);
 
     // Legendary Actions & Resistances
     const plurals = getPluralRules({ type: "ordinal" });
@@ -502,6 +512,10 @@ export default class NPCActorSheet extends BaseActorSheet {
     const isPassive = item.system.properties?.has("trait")
       || CONFIG.DND5E.activityActivationTypes[item.system.activities?.contents[0]?.activation.type]?.passive;
     ctx.group = isPassive ? "passive" : item.system.activities?.contents[0]?.activation.type || "passive";
+    // One Piece: técnicas/ações que consomem Pontos de Poder vão para a seção "Ações Poderosas".
+    if ( !isPassive && item.system.activities?.contents?.some(a =>
+      a.consumption?.targets?.some?.(t => (t.type === "attribute") && String(t.target ?? "").startsWith("energy"))
+    ) ) ctx.group = "powerful";
   }
 
   /* -------------------------------------------- */

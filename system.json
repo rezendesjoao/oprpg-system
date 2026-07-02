@@ -134,6 +134,14 @@
       "flags": { "OnePiece": { "types": ["feat"] } }
     },
     {
+      "name": "op-bestiario",
+      "label": "Bestiário",
+      "path": "packs/op-bestiario",
+      "type": "Actor",
+      "system": "onepiece-system",
+      "flags": { "OnePiece": { "types": ["npc"] } }
+    },
+    {
       "name": "tecnicas-manipulacao",
       "label": "Técnicas (Exemplos)",
       "path": "packs/tecnicas-manipulacao",
