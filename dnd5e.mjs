@@ -669,7 +669,7 @@ Hooks.on("renderGamePause", (app, html) => {
   container.append(...html.children);
   html.append(container);
   const img = html.querySelector("img");
-  img.src = "systems/onepiece-system/ui/official/ampersand.png";  img.style.width = "200px";
+  img.src = "systems/onepiece-system/ui/official/ampersand-op.png";  img.style.width = "200px";
   img.style.height = "200px";
   img.style.objectFit = "contain";
   img.className = "";
